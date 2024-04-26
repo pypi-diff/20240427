@@ -1080,3 +1080,29 @@ EOFError: EOF read where object expected
 [2024-04-27 00:43:28] INFO root fetch - processPackages [qualitative-coding]: Remove: archive file [/home/abi/fetcher/tmp/qualitative_coding-1.2.9.tar.gz]
 [2024-04-27 00:43:28] INFO root fetch - main [MainThread]: End processing [qualitative-coding]: success
 [2024-04-27 00:43:28] INFO root fetch - main [MainThread]: Store serial: [22953703]
+[2024-04-27 00:45:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953703]
+[2024-04-27 00:45:36] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 00:45:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sktime
+[2024-04-27 00:45:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyprland
+[2024-04-27 00:45:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-kubernetes-the-hard-way
+[2024-04-27 00:45:36] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: New version: [0.0.21a1714144344] Old Version: [0.0.21a1714101693]
+[2024-04-27 00:45:36] INFO root fetch - processPackages [pyprland]: New version: [2.2.9] Old Version: [2.2.8]
+[2024-04-27 00:45:36] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/cd/25/47592bd717e7ea10b3c73ffc56c82980b2b90d45a4df8d62930a37bebd16/pulumi_kubernetes_the_hard_way-0.0.21a1714101693.tar.gz
+[2024-04-27 00:45:36] INFO root fetch - processPackages [sktime]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-04-27 00:45:37] INFO root fetch - processPackages [sktime]: Downloading https://files.pythonhosted.org/packages/14/3c/02b40dd3133f7607421dcc3c5b44747f5bc0f6af14cc7a14e83b686f1ed1/sktime-0.8.1.tar.gz
+[2024-04-27 00:45:37] INFO root fetch - processPackages [pyprland]: Downloading https://files.pythonhosted.org/packages/50/9c/37941f87694596c8b3fb82481dbf8e340bfbd2ff72524d70105ecc40a267/pyprland-2.2.8.tar.gz
+[2024-04-27 00:45:37] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/17/7b/2aa705efb85659e3fde011f37ce0b0d3d1ae8267c23e0c159f12593eeffe/pulumi_kubernetes_the_hard_way-0.0.21a1714144344.tar.gz
+[2024-04-27 00:45:37] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: executing diffoscope
+[2024-04-27 00:45:37] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kubernetes_the_hard_way-0.0.21a1714101693.tar.gz tmp/pulumi_kubernetes_the_hard_way-0.0.21a1714144344.tar.gz --markdown 20240427/p/pulumi-kubernetes-the-hard-way/0.0.21a1714101693-0.0.21a1714144344/README.md --exclude *.pyd
+[2024-04-27 00:45:37] INFO root fetch - processPackages [pyprland]: Downloading https://files.pythonhosted.org/packages/95/54/b41c74cea0d530094950d0f33daa1e4b290d0fafa217c2a9c6605192e37e/pyprland-2.2.9.tar.gz
+[2024-04-27 00:45:37] INFO root fetch - processPackages [pyprland]: executing diffoscope
+[2024-04-27 00:45:37] INFO root fetch - processPackages [pyprland]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyprland-2.2.8.tar.gz tmp/pyprland-2.2.9.tar.gz --markdown 20240427/p/pyprland/2.2.8-2.2.9/README.md --exclude *.pyd
+[2024-04-27 00:45:37] WARNING root fetch - processPackages [sktime]: Skipping package: exceeds size limit 11076866>=10485760
+[2024-04-27 00:45:37] INFO root fetch - main [MainThread]: End processing [sktime] error
+[2024-04-27 00:45:38] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.21a1714101693.tar.gz]
+[2024-04-27 00:45:38] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.21a1714144344.tar.gz]
+[2024-04-27 00:45:38] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
+[2024-04-27 00:45:38] INFO root fetch - processPackages [pyprland]: Remove: archive file [/home/abi/fetcher/tmp/pyprland-2.2.8.tar.gz]
+[2024-04-27 00:45:38] INFO root fetch - processPackages [pyprland]: Remove: archive file [/home/abi/fetcher/tmp/pyprland-2.2.9.tar.gz]
+[2024-04-27 00:45:38] INFO root fetch - main [MainThread]: End processing [pyprland]: success
+[2024-04-27 00:45:38] INFO root fetch - main [MainThread]: Store serial: [22953712]
