@@ -1655,3 +1655,26 @@ EOFError: EOF read where object expected
 [2024-04-27 01:35:58] INFO root fetch - processPackages [pulumi-kubernetes]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes-4.9.1.tar.gz]
 [2024-04-27 01:35:58] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes]: success
 [2024-04-27 01:35:58] INFO root fetch - main [MainThread]: Store serial: [22953890]
+[2024-04-27 01:38:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953890]
+[2024-04-27 01:38:07] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-27 01:40:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953890]
+[2024-04-27 01:40:12] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 01:40:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edgedb-pydantic-codegen
+[2024-04-27 01:40:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: indexify-extractor-sdk
+[2024-04-27 01:40:13] INFO root fetch - processPackages [indexify-extractor-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 01:40:13] INFO root fetch - processPackages [indexify-extractor-sdk]: Downloading https://files.pythonhosted.org/packages/25/fb/8dcfb1ddf593ada77ca7aebff3d9add072c6922c5b3efddeb31e991f5968/indexify-extractor-sdk-0.0.8.tar.gz
+[2024-04-27 01:40:13] INFO root fetch - processPackages [edgedb-pydantic-codegen]: New version: [2024.4.3] Old Version: [2024.4.2]
+[2024-04-27 01:40:13] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Downloading https://files.pythonhosted.org/packages/13/aa/7961cf7d1dfaeb9d0a494903f244f6f9b9118e78450d0c4b5b14e7dbfafe/edgedb_pydantic_codegen-2024.4.2.tar.gz
+[2024-04-27 01:40:13] INFO root fetch - processPackages [indexify-extractor-sdk]: Downloading https://files.pythonhosted.org/packages/6b/69/1a816cb64f283ffbd7a285fc0aacdf84a8f4bc7214eaab78ac42be5e93ba/indexify-extractor-sdk-0.0.9.tar.gz
+[2024-04-27 01:40:13] INFO root fetch - processPackages [indexify-extractor-sdk]: executing diffoscope
+[2024-04-27 01:40:13] INFO root fetch - processPackages [indexify-extractor-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indexify-extractor-sdk-0.0.8.tar.gz tmp/indexify-extractor-sdk-0.0.9.tar.gz --markdown 20240427/i/indexify-extractor-sdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 01:40:13] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Downloading https://files.pythonhosted.org/packages/fa/3d/ca03f59621da97b2b071e675554f3657a3eeb7bff23166a4d105c53158de/edgedb_pydantic_codegen-2024.4.3.tar.gz
+[2024-04-27 01:40:13] INFO root fetch - processPackages [edgedb-pydantic-codegen]: executing diffoscope
+[2024-04-27 01:40:13] INFO root fetch - processPackages [edgedb-pydantic-codegen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgedb_pydantic_codegen-2024.4.2.tar.gz tmp/edgedb_pydantic_codegen-2024.4.3.tar.gz --markdown 20240427/e/edgedb-pydantic-codegen/2024.4.2-2024.4.3/README.md --exclude *.pyd
+[2024-04-27 01:40:13] INFO root fetch - processPackages [indexify-extractor-sdk]: Remove: archive file [/home/abi/fetcher/tmp/indexify-extractor-sdk-0.0.8.tar.gz]
+[2024-04-27 01:40:13] INFO root fetch - processPackages [indexify-extractor-sdk]: Remove: archive file [/home/abi/fetcher/tmp/indexify-extractor-sdk-0.0.9.tar.gz]
+[2024-04-27 01:40:13] INFO root fetch - main [MainThread]: End processing [indexify-extractor-sdk]: success
+[2024-04-27 01:40:14] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Remove: archive file [/home/abi/fetcher/tmp/edgedb_pydantic_codegen-2024.4.2.tar.gz]
+[2024-04-27 01:40:14] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Remove: archive file [/home/abi/fetcher/tmp/edgedb_pydantic_codegen-2024.4.3.tar.gz]
+[2024-04-27 01:40:14] INFO root fetch - main [MainThread]: End processing [edgedb-pydantic-codegen]: success
+[2024-04-27 01:40:14] INFO root fetch - main [MainThread]: Store serial: [22953896]
