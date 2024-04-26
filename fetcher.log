@@ -1678,3 +1678,63 @@ EOFError: EOF read where object expected
 [2024-04-27 01:40:14] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Remove: archive file [/home/abi/fetcher/tmp/edgedb_pydantic_codegen-2024.4.3.tar.gz]
 [2024-04-27 01:40:14] INFO root fetch - main [MainThread]: End processing [edgedb-pydantic-codegen]: success
 [2024-04-27 01:40:14] INFO root fetch - main [MainThread]: Store serial: [22953896]
+[2024-04-27 01:42:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953896]
+[2024-04-27 01:42:23] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-27 01:42:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyscinloopsr
+[2024-04-27 01:42:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fulcra-api
+[2024-04-27 01:42:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dspygen
+[2024-04-27 01:42:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: demakein
+[2024-04-27 01:42:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: smtp-proxy
+[2024-04-27 01:42:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: CyRK
+[2024-04-27 01:42:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ZMPY3D-CP
+[2024-04-27 01:42:23] INFO root fetch - processPackages [dspygen]: New version: [2024.4.8] Old Version: [2024.4.26]
+[2024-04-27 01:42:23] INFO root fetch - processPackages [pyscinloopsr]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-04-27 01:42:23] INFO root fetch - processPackages [demakein]: New version: [0.9] Old Version: [0.7]
+[2024-04-27 01:42:23] INFO root fetch - processPackages [dspygen]: Downloading https://files.pythonhosted.org/packages/bc/6a/f7ed7f9a79fce1af91a56dc2b82cd46386af0c259e468469f560b842a921/dspygen-2024.4.26.tar.gz
+[2024-04-27 01:42:23] INFO root fetch - processPackages [pyscinloopsr]: Downloading https://files.pythonhosted.org/packages/b6/19/c47ad6394ad51b66b941bc9ba2c34f91945920946b85cb1f16ec690e213d/pyscinloopsr-1.0.6.tar.gz
+[2024-04-27 01:42:23] WARNING root fetch - processPackages [ZMPY3D-CP]: Skipping, unable to determine old version
+[2024-04-27 01:42:23] INFO root fetch - main [MainThread]: End processing [ZMPY3D-CP] error
+[2024-04-27 01:42:23] INFO root fetch - processPackages [smtp-proxy]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-27 01:42:23] INFO root fetch - processPackages [fulcra-api]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-27 01:42:23] INFO root fetch - processPackages [CyRK]: New version: [0.8.7] Old Version: [0.8.6]
+[2024-04-27 01:42:23] INFO root fetch - processPackages [demakein]: Downloading https://files.pythonhosted.org/packages/29/05/fcc1acb81b37caf000a7c99bb5ed0c0b1e44993326a60bc67afb709bd90a/demakein-0.7.tar.gz
+[2024-04-27 01:42:23] INFO root fetch - processPackages [smtp-proxy]: Downloading https://files.pythonhosted.org/packages/ed/2d/379e7c01270c649812ae9840e6c800bfb2b6db41fe2e82b6fb14be32c1a9/smtp_proxy-0.1.1.tar.gz
+[2024-04-27 01:42:23] INFO root fetch - processPackages [fulcra-api]: Downloading https://files.pythonhosted.org/packages/61/3e/ebb0beb0e8cbce1f4377d932f62a68fbe87a0db69654fc15a05db7961a42/fulcra_api-0.1.8.tar.gz
+[2024-04-27 01:42:23] INFO root fetch - processPackages [CyRK]: Downloading https://files.pythonhosted.org/packages/00/ae/c244f51917b30d5cd0fd5846fc24e615a0bd17e53acc30ba012326cd5505/CyRK-0.8.6.tar.gz
+[2024-04-27 01:42:23] INFO root fetch - processPackages [dspygen]: Downloading https://files.pythonhosted.org/packages/b8/d2/67abba8675544ab98e98ff7bc3479521e1562052e572ea82c30eccce5120/dspygen-2024.4.8.tar.gz
+[2024-04-27 01:42:23] INFO root fetch - processPackages [pyscinloopsr]: Downloading https://files.pythonhosted.org/packages/e0/7c/75ce822197b8859194f3cd131eb6f4f6111dc9c21d4fbda4c8c9e9b884c9/pyscinloopsr-1.0.7.tar.gz
+[2024-04-27 01:42:23] INFO root fetch - processPackages [pyscinloopsr]: executing diffoscope
+[2024-04-27 01:42:23] INFO root fetch - processPackages [pyscinloopsr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscinloopsr-1.0.6.tar.gz tmp/pyscinloopsr-1.0.7.tar.gz --markdown 20240427/p/pyscinloopsr/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-04-27 01:42:23] INFO root fetch - processPackages [smtp-proxy]: Downloading https://files.pythonhosted.org/packages/02/79/f4135c2630a6a27133b404bcc2a17110af992a7b80b3c5ed05014b7b8ef2/smtp_proxy-0.1.2.tar.gz
+[2024-04-27 01:42:23] INFO root fetch - processPackages [fulcra-api]: Downloading https://files.pythonhosted.org/packages/24/98/aa169234b49807c4d50a0c002f58dda26d0011e2f27221784576d9ccd099/fulcra_api-0.1.9.tar.gz
+[2024-04-27 01:42:23] INFO root fetch - processPackages [demakein]: Downloading https://files.pythonhosted.org/packages/2b/82/73855f15aa978efb5ce9fc1fefb813529f3c1139aa89553ceed6acab8523/demakein-0.9.tar.gz
+[2024-04-27 01:42:23] INFO root fetch - processPackages [dspygen]: executing diffoscope
+[2024-04-27 01:42:23] INFO root fetch - processPackages [dspygen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dspygen-2024.4.26.tar.gz tmp/dspygen-2024.4.8.tar.gz --markdown 20240427/d/dspygen/2024.4.26-2024.4.8/README.md --exclude *.pyd
+[2024-04-27 01:42:23] INFO root fetch - processPackages [smtp-proxy]: executing diffoscope
+[2024-04-27 01:42:23] INFO root fetch - processPackages [smtp-proxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smtp_proxy-0.1.1.tar.gz tmp/smtp_proxy-0.1.2.tar.gz --markdown 20240427/s/smtp-proxy/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-27 01:42:23] INFO root fetch - processPackages [fulcra-api]: executing diffoscope
+[2024-04-27 01:42:23] INFO root fetch - processPackages [fulcra-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fulcra_api-0.1.8.tar.gz tmp/fulcra_api-0.1.9.tar.gz --markdown 20240427/f/fulcra-api/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-27 01:42:23] INFO root fetch - processPackages [CyRK]: Downloading https://files.pythonhosted.org/packages/1e/40/afa62e647783526c7979a94664a3c3783b7ae932698009fc9444af2621bb/cyrk-0.8.7.tar.gz
+[2024-04-27 01:42:23] INFO root fetch - processPackages [demakein]: executing diffoscope
+[2024-04-27 01:42:23] INFO root fetch - processPackages [demakein]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/demakein-0.7.tar.gz tmp/demakein-0.9.tar.gz --markdown 20240427/d/demakein/0.7-0.9/README.md --exclude *.pyd
+[2024-04-27 01:42:24] INFO root fetch - processPackages [CyRK]: executing diffoscope
+[2024-04-27 01:42:24] INFO root fetch - processPackages [CyRK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CyRK-0.8.6.tar.gz tmp/cyrk-0.8.7.tar.gz --markdown 20240427/C/CyRK/0.8.6-0.8.7/README.md --exclude *.pyd
+[2024-04-27 01:42:24] INFO root fetch - processPackages [pyscinloopsr]: Remove: archive file [/home/abi/fetcher/tmp/pyscinloopsr-1.0.6.tar.gz]
+[2024-04-27 01:42:24] INFO root fetch - processPackages [pyscinloopsr]: Remove: archive file [/home/abi/fetcher/tmp/pyscinloopsr-1.0.7.tar.gz]
+[2024-04-27 01:42:24] INFO root fetch - main [MainThread]: End processing [pyscinloopsr]: success
+[2024-04-27 01:42:24] INFO root fetch - processPackages [smtp-proxy]: Remove: archive file [/home/abi/fetcher/tmp/smtp_proxy-0.1.1.tar.gz]
+[2024-04-27 01:42:24] INFO root fetch - processPackages [smtp-proxy]: Remove: archive file [/home/abi/fetcher/tmp/smtp_proxy-0.1.2.tar.gz]
+[2024-04-27 01:42:24] INFO root fetch - main [MainThread]: End processing [smtp-proxy]: success
+[2024-04-27 01:42:24] INFO root fetch - processPackages [fulcra-api]: Remove: archive file [/home/abi/fetcher/tmp/fulcra_api-0.1.8.tar.gz]
+[2024-04-27 01:42:24] INFO root fetch - processPackages [fulcra-api]: Remove: archive file [/home/abi/fetcher/tmp/fulcra_api-0.1.9.tar.gz]
+[2024-04-27 01:42:24] INFO root fetch - main [MainThread]: End processing [fulcra-api]: success
+[2024-04-27 01:42:24] INFO root fetch - processPackages [demakein]: Remove: archive file [/home/abi/fetcher/tmp/demakein-0.7.tar.gz]
+[2024-04-27 01:42:24] INFO root fetch - processPackages [demakein]: Remove: archive file [/home/abi/fetcher/tmp/demakein-0.9.tar.gz]
+[2024-04-27 01:42:24] INFO root fetch - main [MainThread]: End processing [demakein]: success
+[2024-04-27 01:42:25] INFO root fetch - processPackages [dspygen]: Remove: archive file [/home/abi/fetcher/tmp/dspygen-2024.4.26.tar.gz]
+[2024-04-27 01:42:25] INFO root fetch - processPackages [dspygen]: Remove: archive file [/home/abi/fetcher/tmp/dspygen-2024.4.8.tar.gz]
+[2024-04-27 01:42:25] INFO root fetch - main [MainThread]: End processing [dspygen]: success
+[2024-04-27 01:42:28] INFO root fetch - processPackages [CyRK]: Remove: archive file [/home/abi/fetcher/tmp/CyRK-0.8.6.tar.gz]
+[2024-04-27 01:42:28] INFO root fetch - processPackages [CyRK]: Remove: archive file [/home/abi/fetcher/tmp/cyrk-0.8.7.tar.gz]
+[2024-04-27 01:42:28] INFO root fetch - main [MainThread]: End processing [CyRK]: success
+[2024-04-27 01:42:28] INFO root fetch - main [MainThread]: Store serial: [22953953]
