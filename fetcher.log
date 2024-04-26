@@ -28,3 +28,69 @@
 [2024-04-27 00:01:40] INFO root fetch - processPackages [bauplan]: Remove: archive file [/home/abi/fetcher/tmp/bauplan-0.0.3a92-py3-none-win_amd64.whl.zip]
 [2024-04-27 00:01:40] INFO root fetch - main [MainThread]: End processing [bauplan]: success
 [2024-04-27 00:01:40] INFO root fetch - main [MainThread]: Store serial: [22953369]
+[2024-04-27 00:03:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953369]
+[2024-04-27 00:03:50] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-27 00:03:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: honeybee-energy
+[2024-04-27 00:03:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyload-ng
+[2024-04-27 00:03:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: semantic-text-splitter
+[2024-04-27 00:03:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aiosalesforce
+[2024-04-27 00:03:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pytgpt-bot
+[2024-04-27 00:03:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pydanticutils
+[2024-04-27 00:03:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: malevich-space
+[2024-04-27 00:03:50] INFO root fetch - processPackages [pydanticutils]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-27 00:03:50] INFO root fetch - processPackages [pytgpt-bot]: New version: [0.1.0] Old Version: [0.0.9]
+[2024-04-27 00:03:50] INFO root fetch - processPackages [honeybee-energy]: New version: [1.99.9] Old Version: [1.99.8]
+[2024-04-27 00:03:50] INFO root fetch - processPackages [pytgpt-bot]: Downloading https://files.pythonhosted.org/packages/b6/b6/c09906208206cb2f1fe5bf38abe90aa14789d52e775492e0d07375f8423d/pytgpt_bot-0.0.9.tar.gz
+[2024-04-27 00:03:50] INFO root fetch - processPackages [aiosalesforce]: New version: [0.6.0] Old Version: [0.5.7]
+[2024-04-27 00:03:50] INFO root fetch - processPackages [pyload-ng]: New version: [0.5.0b3.dev85] Old Version: [0.5.0b3.dev82]
+[2024-04-27 00:03:50] INFO root fetch - processPackages [semantic-text-splitter]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-27 00:03:50] INFO root fetch - processPackages [malevich-space]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-04-27 00:03:50] INFO root fetch - processPackages [pydanticutils]: Downloading https://files.pythonhosted.org/packages/c0/bc/1a54d697ba67e0d6f4e33a7b6b3700f130b994ee5ee1347078f9469504a8/pydanticutils-0.0.1.tar.gz
+[2024-04-27 00:03:50] INFO root fetch - processPackages [aiosalesforce]: Downloading https://files.pythonhosted.org/packages/ce/84/247122dc5b2f8ba27d72ef5ec86438925b3716de19dd8720e812a8f7559c/aiosalesforce-0.5.7.tar.gz
+[2024-04-27 00:03:50] INFO root fetch - processPackages [honeybee-energy]: Downloading https://files.pythonhosted.org/packages/b1/ab/c8fb70e349d71cce95bac52782f7ea0659a6987ed84dd41c7fe2ef40806c/honeybee-energy-1.99.8.tar.gz
+[2024-04-27 00:03:50] INFO root fetch - processPackages [semantic-text-splitter]: Downloading https://files.pythonhosted.org/packages/8d/61/d7c98d7141429ad2f0247f0e41447f23f5c1f6358d687e2e9664544d9bf8/semantic_text_splitter-0.9.0.tar.gz
+[2024-04-27 00:03:50] INFO root fetch - processPackages [malevich-space]: Downloading https://files.pythonhosted.org/packages/3e/e8/4a3118e7e00fb6f4ee4717ac9f41c1f7d851c0d4827c6dcd036dc26325b1/malevich_space-0.4.8.tar.gz
+[2024-04-27 00:03:50] INFO root fetch - processPackages [pyload-ng]: Downloading https://files.pythonhosted.org/packages/b3/3f/0cc92eabb8f6939c66dce213e3f33f55b2e010e09b60285893d2c96f6584/pyload_ng-0.5.0b3.dev82.tar.gz
+[2024-04-27 00:03:50] INFO root fetch - processPackages [pytgpt-bot]: Downloading https://files.pythonhosted.org/packages/88/2a/17231e36b337a1e7aae217da34c7da2225ce8f3e61c1eace7b94fda31ec4/pytgpt_bot-0.1.0.tar.gz
+[2024-04-27 00:03:50] INFO root fetch - processPackages [pydanticutils]: Downloading https://files.pythonhosted.org/packages/d7/2e/aca5601d3cbc919d6f1a7ad631f6a6c2630a9ea802f3eca4b654439368b2/pydanticutils-0.0.2.tar.gz
+[2024-04-27 00:03:50] INFO root fetch - processPackages [pytgpt-bot]: executing diffoscope
+[2024-04-27 00:03:50] INFO root fetch - processPackages [pytgpt-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytgpt_bot-0.0.9.tar.gz tmp/pytgpt_bot-0.1.0.tar.gz --markdown 20240427/p/pytgpt-bot/0.0.9-0.1.0/README.md --exclude *.pyd
+[2024-04-27 00:03:50] INFO root fetch - processPackages [pydanticutils]: executing diffoscope
+[2024-04-27 00:03:50] INFO root fetch - processPackages [pydanticutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydanticutils-0.0.1.tar.gz tmp/pydanticutils-0.0.2.tar.gz --markdown 20240427/p/pydanticutils/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-27 00:03:50] INFO root fetch - processPackages [aiosalesforce]: Downloading https://files.pythonhosted.org/packages/1e/b7/180a11d7b49a82caf7d09d9d188a50ebde5dae90750b81f3d7f44d7e2095/aiosalesforce-0.6.0.tar.gz
+[2024-04-27 00:03:51] INFO root fetch - processPackages [malevich-space]: Downloading https://files.pythonhosted.org/packages/dc/ab/47d152787e634bfae81bae05d2fb910c21ab44dc32a6e6ee46e0596288b9/malevich_space-0.4.9.tar.gz
+[2024-04-27 00:03:51] INFO root fetch - processPackages [semantic-text-splitter]: Downloading https://files.pythonhosted.org/packages/12/97/37b9e48a5128e88cf8877a0b87c2a037e2d5027924233a18fe722a57f369/semantic_text_splitter-0.9.1.tar.gz
+[2024-04-27 00:03:51] INFO root fetch - processPackages [honeybee-energy]: Downloading https://files.pythonhosted.org/packages/8d/5e/1bc90eeaf45799cc7d5cda125017c1e4e2cf0ef068cd3db60d971b9596ba/honeybee-energy-1.99.9.tar.gz
+[2024-04-27 00:03:51] INFO root fetch - processPackages [aiosalesforce]: executing diffoscope
+[2024-04-27 00:03:51] INFO root fetch - processPackages [aiosalesforce]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiosalesforce-0.5.7.tar.gz tmp/aiosalesforce-0.6.0.tar.gz --markdown 20240427/a/aiosalesforce/0.5.7-0.6.0/README.md --exclude *.pyd
+[2024-04-27 00:03:51] INFO root fetch - processPackages [pyload-ng]: Downloading https://files.pythonhosted.org/packages/41/a3/87665698f31edcfe43a2ae02800429ef4f86ab0eef406c2a3d340ef5dc8b/pyload_ng-0.5.0b3.dev85.tar.gz
+[2024-04-27 00:03:51] INFO root fetch - processPackages [malevich-space]: executing diffoscope
+[2024-04-27 00:03:51] INFO root fetch - processPackages [malevich-space]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/malevich_space-0.4.8.tar.gz tmp/malevich_space-0.4.9.tar.gz --markdown 20240427/m/malevich-space/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-04-27 00:03:51] INFO root fetch - processPackages [semantic-text-splitter]: executing diffoscope
+[2024-04-27 00:03:51] INFO root fetch - processPackages [semantic-text-splitter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semantic_text_splitter-0.9.0.tar.gz tmp/semantic_text_splitter-0.9.1.tar.gz --markdown 20240427/s/semantic-text-splitter/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-04-27 00:03:51] INFO root fetch - processPackages [pydanticutils]: Remove: archive file [/home/abi/fetcher/tmp/pydanticutils-0.0.1.tar.gz]
+[2024-04-27 00:03:51] INFO root fetch - processPackages [pydanticutils]: Remove: archive file [/home/abi/fetcher/tmp/pydanticutils-0.0.2.tar.gz]
+[2024-04-27 00:03:51] INFO root fetch - main [MainThread]: End processing [pydanticutils]: success
+[2024-04-27 00:03:51] INFO root fetch - processPackages [pytgpt-bot]: Remove: archive file [/home/abi/fetcher/tmp/pytgpt_bot-0.0.9.tar.gz]
+[2024-04-27 00:03:51] INFO root fetch - processPackages [pytgpt-bot]: Remove: archive file [/home/abi/fetcher/tmp/pytgpt_bot-0.1.0.tar.gz]
+[2024-04-27 00:03:51] INFO root fetch - main [MainThread]: End processing [pytgpt-bot]: success
+[2024-04-27 00:03:51] INFO root fetch - processPackages [aiosalesforce]: Remove: archive file [/home/abi/fetcher/tmp/aiosalesforce-0.5.7.tar.gz]
+[2024-04-27 00:03:51] INFO root fetch - processPackages [aiosalesforce]: Remove: archive file [/home/abi/fetcher/tmp/aiosalesforce-0.6.0.tar.gz]
+[2024-04-27 00:03:51] INFO root fetch - main [MainThread]: End processing [aiosalesforce]: success
+[2024-04-27 00:03:52] INFO root fetch - processPackages [malevich-space]: Remove: archive file [/home/abi/fetcher/tmp/malevich_space-0.4.8.tar.gz]
+[2024-04-27 00:03:52] INFO root fetch - processPackages [malevich-space]: Remove: archive file [/home/abi/fetcher/tmp/malevich_space-0.4.9.tar.gz]
+[2024-04-27 00:03:52] INFO root fetch - main [MainThread]: End processing [malevich-space]: success
+[2024-04-27 00:03:52] INFO root fetch - processPackages [honeybee-energy]: executing diffoscope
+[2024-04-27 00:03:52] INFO root fetch - processPackages [honeybee-energy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeybee-energy-1.99.8.tar.gz tmp/honeybee-energy-1.99.9.tar.gz --markdown 20240427/h/honeybee-energy/1.99.8-1.99.9/README.md --exclude *.pyd
+[2024-04-27 00:03:52] INFO root fetch - processPackages [semantic-text-splitter]: Remove: archive file [/home/abi/fetcher/tmp/semantic_text_splitter-0.9.0.tar.gz]
+[2024-04-27 00:03:52] INFO root fetch - processPackages [semantic-text-splitter]: Remove: archive file [/home/abi/fetcher/tmp/semantic_text_splitter-0.9.1.tar.gz]
+[2024-04-27 00:03:52] INFO root fetch - main [MainThread]: End processing [semantic-text-splitter]: success
+[2024-04-27 00:03:52] INFO root fetch - processPackages [pyload-ng]: executing diffoscope
+[2024-04-27 00:03:52] INFO root fetch - processPackages [pyload-ng]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyload_ng-0.5.0b3.dev82.tar.gz tmp/pyload_ng-0.5.0b3.dev85.tar.gz --markdown 20240427/p/pyload-ng/0.5.0b3.dev82-0.5.0b3.dev85/README.md --exclude *.pyd
+[2024-04-27 00:03:53] INFO root fetch - processPackages [honeybee-energy]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-energy-1.99.8.tar.gz]
+[2024-04-27 00:03:53] INFO root fetch - processPackages [honeybee-energy]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-energy-1.99.9.tar.gz]
+[2024-04-27 00:03:53] INFO root fetch - main [MainThread]: End processing [honeybee-energy]: success
+[2024-04-27 00:03:55] INFO root fetch - processPackages [pyload-ng]: Remove: archive file [/home/abi/fetcher/tmp/pyload_ng-0.5.0b3.dev82.tar.gz]
+[2024-04-27 00:03:55] INFO root fetch - processPackages [pyload-ng]: Remove: archive file [/home/abi/fetcher/tmp/pyload_ng-0.5.0b3.dev85.tar.gz]
+[2024-04-27 00:03:55] INFO root fetch - main [MainThread]: End processing [pyload-ng]: success
+[2024-04-27 00:03:55] INFO root fetch - main [MainThread]: Store serial: [22953397]
