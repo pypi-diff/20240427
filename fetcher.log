@@ -1,0 +1,30 @@
+[2024-04-27 00:00:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953358]
+[2024-04-27 00:00:47] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 00:00:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bauplan
+[2024-04-27 00:00:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: quantconnect-stubs
+[2024-04-27 00:00:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-magnet-data
+[2024-04-27 00:00:47] INFO root fetch - processPackages [bauplan]: New version: [0.0.3a92] Old Version: [0.0.3a91]
+[2024-04-27 00:00:47] INFO root fetch - processPackages [quantconnect-stubs]: New version: [9998] Old Version: [9997]
+[2024-04-27 00:00:47] INFO root fetch - processPackages [bauplan]: Downloading https://files.pythonhosted.org/packages/82/ca/490a89a5b650e3b3a32435a3bb27379cc78e9ef2b986881438bc45930d82/bauplan-0.0.3a91-py3-none-win_amd64.whl
+[2024-04-27 00:00:47] INFO root fetch - processPackages [django-magnet-data]: New version: [1.1.8] Old Version: [1.1.7]
+[2024-04-27 00:00:47] INFO root fetch - processPackages [quantconnect-stubs]: Downloading https://files.pythonhosted.org/packages/c1/05/f15c16a3f852decfd032ce1688dfdf02fd7289f1780742453533e8c55209/quantconnect-stubs-9997.tar.gz
+[2024-04-27 00:00:47] INFO root fetch - processPackages [django-magnet-data]: Downloading https://files.pythonhosted.org/packages/94/78/58180cf0f36efad9f31933ebe7f1a8106f9847cb9f6eef4d614295efee3a/django-magnet-data-1.1.7.tar.gz
+[2024-04-27 00:00:48] INFO root fetch - processPackages [quantconnect-stubs]: Downloading https://files.pythonhosted.org/packages/b7/4c/71e6bb724f14efcd8865f2aa692528a4c45877c58f5cf8c964a8e0fc0e74/quantconnect-stubs-9998.tar.gz
+[2024-04-27 00:00:48] INFO root fetch - processPackages [quantconnect-stubs]: executing diffoscope
+[2024-04-27 00:00:48] INFO root fetch - processPackages [quantconnect-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantconnect-stubs-9997.tar.gz tmp/quantconnect-stubs-9998.tar.gz --markdown 20240427/q/quantconnect-stubs/9997-9998/README.md --exclude *.pyd
+[2024-04-27 00:00:48] INFO root fetch - processPackages [bauplan]: Downloading https://files.pythonhosted.org/packages/cc/0c/6b69d847fc60af0797d870442b8c47c6fe32547ee424e9b7a0382246b495/bauplan-0.0.3a92-py3-none-win_amd64.whl
+[2024-04-27 00:00:48] INFO root fetch - processPackages [django-magnet-data]: Downloading https://files.pythonhosted.org/packages/35/ef/4531755281b9999a5d6fe4ba95a7a8f3379c106f0ec49f693de553c1cd43/django-magnet-data-1.1.8.tar.gz
+[2024-04-27 00:00:48] INFO root fetch - processPackages [django-magnet-data]: executing diffoscope
+[2024-04-27 00:00:48] INFO root fetch - processPackages [django-magnet-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-magnet-data-1.1.7.tar.gz tmp/django-magnet-data-1.1.8.tar.gz --markdown 20240427/d/django-magnet-data/1.1.7-1.1.8/README.md --exclude *.pyd
+[2024-04-27 00:00:48] INFO root fetch - processPackages [bauplan]: executing diffoscope
+[2024-04-27 00:00:48] INFO root fetch - processPackages [bauplan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bauplan-0.0.3a91-py3-none-win_amd64.whl.zip tmp/bauplan-0.0.3a92-py3-none-win_amd64.whl.zip --markdown 20240427/b/bauplan/0.0.3a91-0.0.3a92/README.md --exclude *.pyd
+[2024-04-27 00:00:49] INFO root fetch - processPackages [django-magnet-data]: Remove: archive file [/home/abi/fetcher/tmp/django-magnet-data-1.1.7.tar.gz]
+[2024-04-27 00:00:49] INFO root fetch - processPackages [django-magnet-data]: Remove: archive file [/home/abi/fetcher/tmp/django-magnet-data-1.1.8.tar.gz]
+[2024-04-27 00:00:49] INFO root fetch - main [MainThread]: End processing [django-magnet-data]: success
+[2024-04-27 00:00:51] INFO root fetch - processPackages [quantconnect-stubs]: Remove: archive file [/home/abi/fetcher/tmp/quantconnect-stubs-9997.tar.gz]
+[2024-04-27 00:00:51] INFO root fetch - processPackages [quantconnect-stubs]: Remove: archive file [/home/abi/fetcher/tmp/quantconnect-stubs-9998.tar.gz]
+[2024-04-27 00:00:51] INFO root fetch - main [MainThread]: End processing [quantconnect-stubs]: success
+[2024-04-27 00:01:40] INFO root fetch - processPackages [bauplan]: Remove: archive file [/home/abi/fetcher/tmp/bauplan-0.0.3a91-py3-none-win_amd64.whl.zip]
+[2024-04-27 00:01:40] INFO root fetch - processPackages [bauplan]: Remove: archive file [/home/abi/fetcher/tmp/bauplan-0.0.3a92-py3-none-win_amd64.whl.zip]
+[2024-04-27 00:01:40] INFO root fetch - main [MainThread]: End processing [bauplan]: success
+[2024-04-27 00:01:40] INFO root fetch - main [MainThread]: Store serial: [22953369]
