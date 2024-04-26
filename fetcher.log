@@ -1321,3 +1321,42 @@ EOFError: EOF read where object expected
 [2024-04-27 01:05:25] INFO root fetch - processPackages [ethraid]: Remove: archive file [/home/abi/fetcher/tmp/ethraid-2.5.2.tar.gz]
 [2024-04-27 01:05:25] INFO root fetch - main [MainThread]: End processing [ethraid]: success
 [2024-04-27 01:05:25] INFO root fetch - main [MainThread]: Store serial: [22953786]
+[2024-04-27 01:07:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953786]
+[2024-04-27 01:07:34] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 01:07:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tmnt
+[2024-04-27 01:07:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flwr-nightly
+[2024-04-27 01:07:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: core-aws-cdk
+[2024-04-27 01:07:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cutseq
+[2024-04-27 01:07:34] INFO root fetch - processPackages [flwr-nightly]: New version: [1.9.0.dev20240425] Old Version: [1.9.0.dev20240424]
+[2024-04-27 01:07:34] INFO root fetch - processPackages [tmnt]: New version: [0.7.52b20240425] Old Version: [0.7.52b20240424]
+[2024-04-27 01:07:34] INFO root fetch - processPackages [cutseq]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 01:07:34] INFO root fetch - processPackages [flwr-nightly]: Downloading https://files.pythonhosted.org/packages/ac/f5/a8866a9cfe6edb79978edf5b5daf21bac9168e19c4d4ee01bd640d895cf4/flwr_nightly-1.9.0.dev20240424.tar.gz
+[2024-04-27 01:07:34] INFO root fetch - processPackages [core-aws-cdk]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-04-27 01:07:34] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/0f/54/41766dd4a1b695da9feb3da561615bb6e33db93354c3939295d9a231fd5c/tmnt-0.7.52b20240424.tar.gz
+[2024-04-27 01:07:35] INFO root fetch - processPackages [cutseq]: Downloading https://files.pythonhosted.org/packages/95/33/6984c0732c17eb925be43f23c0c27167392d2900fcd21ebf93d9b68f6c2a/cutseq-0.0.8.tar.gz
+[2024-04-27 01:07:35] INFO root fetch - processPackages [core-aws-cdk]: Downloading https://files.pythonhosted.org/packages/dc/49/050cf6702fbcece1a9f7096454e61018bc403e9a797cbc2bb9b7b9100a07/core-aws-cdk-1.0.0.tar.gz
+[2024-04-27 01:07:35] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/2d/f9/e7d152d8d03caf5c0bfc6d170ee41bfd56ce60df0ca5ea364216ae273979/tmnt-0.7.52b20240425.tar.gz
+[2024-04-27 01:07:35] INFO root fetch - processPackages [flwr-nightly]: Downloading https://files.pythonhosted.org/packages/7b/e3/3c41d8debb835bd9dc280476d5aec5321560a1fc0b085c8a926992f0a12a/flwr_nightly-1.9.0.dev20240425.tar.gz
+[2024-04-27 01:07:35] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2024-04-27 01:07:35] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.52b20240424.tar.gz tmp/tmnt-0.7.52b20240425.tar.gz --markdown 20240427/t/tmnt/0.7.52b20240424-0.7.52b20240425/README.md --exclude *.pyd
+[2024-04-27 01:07:35] INFO root fetch - processPackages [cutseq]: Downloading https://files.pythonhosted.org/packages/e5/82/45b103e58b439dac0cf4c7f6ef6957633721ec0f4553abfabba5ed961a0f/cutseq-0.0.9.tar.gz
+[2024-04-27 01:07:35] INFO root fetch - processPackages [flwr-nightly]: executing diffoscope
+[2024-04-27 01:07:35] INFO root fetch - processPackages [flwr-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flwr_nightly-1.9.0.dev20240424.tar.gz tmp/flwr_nightly-1.9.0.dev20240425.tar.gz --markdown 20240427/f/flwr-nightly/1.9.0.dev20240424-1.9.0.dev20240425/README.md --exclude *.pyd
+[2024-04-27 01:07:35] INFO root fetch - processPackages [core-aws-cdk]: Downloading https://files.pythonhosted.org/packages/11/8d/ae68f3378eafdf76d2e75b7b2d47abeae7ba689a7df4cea1243bc2a1fdc3/core_aws_cdk-1.1.0.tar.gz
+[2024-04-27 01:07:35] INFO root fetch - processPackages [cutseq]: executing diffoscope
+[2024-04-27 01:07:35] INFO root fetch - processPackages [cutseq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cutseq-0.0.8.tar.gz tmp/cutseq-0.0.9.tar.gz --markdown 20240427/c/cutseq/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 01:07:35] INFO root fetch - processPackages [core-aws-cdk]: executing diffoscope
+[2024-04-27 01:07:35] INFO root fetch - processPackages [core-aws-cdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/core-aws-cdk-1.0.0.tar.gz tmp/core_aws_cdk-1.1.0.tar.gz --markdown 20240427/c/core-aws-cdk/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-04-27 01:07:36] INFO root fetch - processPackages [tmnt]: Remove: archive file [/home/abi/fetcher/tmp/tmnt-0.7.52b20240424.tar.gz]
+[2024-04-27 01:07:36] INFO root fetch - processPackages [tmnt]: Remove: archive file [/home/abi/fetcher/tmp/tmnt-0.7.52b20240425.tar.gz]
+[2024-04-27 01:07:36] INFO root fetch - main [MainThread]: End processing [tmnt]: success
+[2024-04-27 01:07:36] INFO root fetch - processPackages [core-aws-cdk]: Remove: archive file [/home/abi/fetcher/tmp/core-aws-cdk-1.0.0.tar.gz]
+[2024-04-27 01:07:36] INFO root fetch - processPackages [core-aws-cdk]: Remove: archive file [/home/abi/fetcher/tmp/core_aws_cdk-1.1.0.tar.gz]
+[2024-04-27 01:07:36] INFO root fetch - main [MainThread]: End processing [core-aws-cdk]: success
+[2024-04-27 01:07:36] INFO root fetch - processPackages [cutseq]: Remove: archive file [/home/abi/fetcher/tmp/cutseq-0.0.8.tar.gz]
+[2024-04-27 01:07:36] INFO root fetch - processPackages [cutseq]: Remove: archive file [/home/abi/fetcher/tmp/cutseq-0.0.9.tar.gz]
+[2024-04-27 01:07:36] INFO root fetch - main [MainThread]: End processing [cutseq]: success
+[2024-04-27 01:07:36] INFO root fetch - processPackages [flwr-nightly]: Remove: archive file [/home/abi/fetcher/tmp/flwr_nightly-1.9.0.dev20240424.tar.gz]
+[2024-04-27 01:07:36] INFO root fetch - processPackages [flwr-nightly]: Remove: archive file [/home/abi/fetcher/tmp/flwr_nightly-1.9.0.dev20240425.tar.gz]
+[2024-04-27 01:07:36] INFO root fetch - main [MainThread]: End processing [flwr-nightly]: success
+[2024-04-27 01:07:36] INFO root fetch - main [MainThread]: Store serial: [22953798]
