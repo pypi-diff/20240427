@@ -1990,3 +1990,42 @@ EOFError: EOF read where object expected
 [2024-04-27 01:55:41] INFO root fetch - processPackages [psf]: Remove: archive file [/home/abi/fetcher/tmp/psf-2024.4.24.tar.gz]
 [2024-04-27 01:55:41] INFO root fetch - main [MainThread]: End processing [psf]: success
 [2024-04-27 01:55:41] INFO root fetch - main [MainThread]: Store serial: [22954088]
+[2024-04-27 01:57:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22954088]
+[2024-04-27 01:57:50] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 01:57:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lbt-dragonfly
+[2024-04-27 01:57:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: libreflow
+[2024-04-27 01:57:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wagtail-editorjs
+[2024-04-27 01:57:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rats-processors
+[2024-04-27 01:57:50] INFO root fetch - processPackages [rats-processors]: New version: [0.1.3.dev9] Old Version: [0.1.3.dev8]
+[2024-04-27 01:57:50] INFO root fetch - processPackages [lbt-dragonfly]: New version: [0.9.99] Old Version: [0.9.98]
+[2024-04-27 01:57:50] INFO root fetch - processPackages [wagtail-editorjs]: New version: [1.6.1rc1] Old Version: [1.6.0]
+[2024-04-27 01:57:50] INFO root fetch - processPackages [rats-processors]: Downloading https://files.pythonhosted.org/packages/ee/14/9e43a65d4c611c1fd72f73131b77c7f2d0b9dec99834658b01571114c849/rats_processors-0.1.3.dev8-py3-none-any.whl
+[2024-04-27 01:57:50] INFO root fetch - processPackages [libreflow]: New version: [2.4.1] Old Version: [2.4.0]
+[2024-04-27 01:57:50] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/be/ae/7267dfd241a0641f3fbadea4128db5ffa29609911cadb5fc4840656bb44a/lbt-dragonfly-0.9.98.tar.gz
+[2024-04-27 01:57:50] INFO root fetch - processPackages [wagtail-editorjs]: Downloading https://files.pythonhosted.org/packages/f2/18/c373f2b6ffc7d0d1eefaf24b35d7f8f71f4ed8ccce5cc2605127ddf7dd66/wagtail_editorjs-1.6.0.tar.gz
+[2024-04-27 01:57:50] INFO root fetch - processPackages [rats-processors]: Downloading https://files.pythonhosted.org/packages/83/b6/122ea8648f16d78861cb7c33e0f599e2421b03f295f46bbf34d66c3d399a/rats_processors-0.1.3.dev9-py3-none-any.whl
+[2024-04-27 01:57:50] INFO root fetch - processPackages [libreflow]: Downloading https://files.pythonhosted.org/packages/1b/cf/215c8428f4afcc716416106c14c6875844f13dfe52423a502146f3636239/libreflow-2.4.0.tar.gz
+[2024-04-27 01:57:50] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/b4/08/0ca46e9f7eef7b2cce7f0c6110106c42aa35a79bd88110559177f64d733a/lbt-dragonfly-0.9.99.tar.gz
+[2024-04-27 01:57:50] INFO root fetch - processPackages [rats-processors]: executing diffoscope
+[2024-04-27 01:57:50] INFO root fetch - processPackages [rats-processors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rats_processors-0.1.3.dev8-py3-none-any.whl.zip tmp/rats_processors-0.1.3.dev9-py3-none-any.whl.zip --markdown 20240427/r/rats-processors/0.1.3.dev8-0.1.3.dev9/README.md --exclude *.pyd
+[2024-04-27 01:57:50] INFO root fetch - processPackages [lbt-dragonfly]: executing diffoscope
+[2024-04-27 01:57:50] INFO root fetch - processPackages [lbt-dragonfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-dragonfly-0.9.98.tar.gz tmp/lbt-dragonfly-0.9.99.tar.gz --markdown 20240427/l/lbt-dragonfly/0.9.98-0.9.99/README.md --exclude *.pyd
+[2024-04-27 01:57:51] INFO root fetch - processPackages [wagtail-editorjs]: Downloading https://files.pythonhosted.org/packages/4a/e7/95129256730af107e95a0a9475458fee63c7190f6d8d7a68c6d845fa3de1/wagtail_editorjs-1.6.1rc1.tar.gz
+[2024-04-27 01:57:51] INFO root fetch - processPackages [wagtail-editorjs]: executing diffoscope
+[2024-04-27 01:57:51] INFO root fetch - processPackages [wagtail-editorjs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtail_editorjs-1.6.0.tar.gz tmp/wagtail_editorjs-1.6.1rc1.tar.gz --markdown 20240427/w/wagtail-editorjs/1.6.0-1.6.1rc1/README.md --exclude *.pyd
+[2024-04-27 01:57:51] INFO root fetch - processPackages [libreflow]: Downloading https://files.pythonhosted.org/packages/ec/7f/675fd8c0fca5da4fce0ec39e8ee42c51f1402fa9c4ab249ba5dac117d1be/libreflow-2.4.1.tar.gz
+[2024-04-27 01:57:51] INFO root fetch - processPackages [libreflow]: executing diffoscope
+[2024-04-27 01:57:51] INFO root fetch - processPackages [libreflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libreflow-2.4.0.tar.gz tmp/libreflow-2.4.1.tar.gz --markdown 20240427/l/libreflow/2.4.0-2.4.1/README.md --exclude *.pyd
+[2024-04-27 01:57:51] INFO root fetch - processPackages [rats-processors]: Remove: archive file [/home/abi/fetcher/tmp/rats_processors-0.1.3.dev8-py3-none-any.whl.zip]
+[2024-04-27 01:57:51] INFO root fetch - processPackages [rats-processors]: Remove: archive file [/home/abi/fetcher/tmp/rats_processors-0.1.3.dev9-py3-none-any.whl.zip]
+[2024-04-27 01:57:51] INFO root fetch - main [MainThread]: End processing [rats-processors]: success
+[2024-04-27 01:57:51] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.98.tar.gz]
+[2024-04-27 01:57:51] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.99.tar.gz]
+[2024-04-27 01:57:51] INFO root fetch - main [MainThread]: End processing [lbt-dragonfly]: success
+[2024-04-27 01:57:52] INFO root fetch - processPackages [wagtail-editorjs]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_editorjs-1.6.0.tar.gz]
+[2024-04-27 01:57:52] INFO root fetch - processPackages [wagtail-editorjs]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_editorjs-1.6.1rc1.tar.gz]
+[2024-04-27 01:57:52] INFO root fetch - main [MainThread]: End processing [wagtail-editorjs]: success
+[2024-04-27 01:57:52] INFO root fetch - processPackages [libreflow]: Remove: archive file [/home/abi/fetcher/tmp/libreflow-2.4.0.tar.gz]
+[2024-04-27 01:57:52] INFO root fetch - processPackages [libreflow]: Remove: archive file [/home/abi/fetcher/tmp/libreflow-2.4.1.tar.gz]
+[2024-04-27 01:57:52] INFO root fetch - main [MainThread]: End processing [libreflow]: success
+[2024-04-27 01:57:52] INFO root fetch - main [MainThread]: Store serial: [22954097]
