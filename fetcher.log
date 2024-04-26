@@ -1399,3 +1399,24 @@ EOFError: EOF read where object expected
 [2024-04-27 01:11:58] INFO root fetch - processPackages [dg-face-tracking]: Remove: archive file [/home/abi/fetcher/tmp/dg_face_tracking-0.1.9-py3-none-any.whl.zip]
 [2024-04-27 01:11:58] INFO root fetch - main [MainThread]: End processing [dg-face-tracking]: success
 [2024-04-27 01:11:58] INFO root fetch - main [MainThread]: Store serial: [22953815]
+[2024-04-27 01:14:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953815]
+[2024-04-27 01:14:06] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 01:14:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyvista
+[2024-04-27 01:14:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: datasette-test
+[2024-04-27 01:14:07] INFO root fetch - processPackages [pyvista]: New version: [0.44.dev0] Old Version: [0.43.6]
+[2024-04-27 01:14:07] INFO root fetch - processPackages [datasette-test]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-04-27 01:14:07] INFO root fetch - processPackages [pyvista]: Downloading https://files.pythonhosted.org/packages/46/66/c8e53a6f2e4fb1c9bc2203ed0d0bca63d71564fd3cec98623aee6d485c1d/pyvista-0.43.6.tar.gz
+[2024-04-27 01:14:07] INFO root fetch - processPackages [datasette-test]: Downloading https://files.pythonhosted.org/packages/4b/64/6df90eed62bede7918b3da617253a109720cdc8fde8d1fd165af292625bc/datasette_test-0.3.1.tar.gz
+[2024-04-27 01:14:07] INFO root fetch - processPackages [datasette-test]: Downloading https://files.pythonhosted.org/packages/67/76/40202239b88b9ccebe980e377df5d5c3661477497f0f42d333175524901c/datasette_test-0.3.2.tar.gz
+[2024-04-27 01:14:07] INFO root fetch - processPackages [datasette-test]: executing diffoscope
+[2024-04-27 01:14:07] INFO root fetch - processPackages [datasette-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datasette_test-0.3.1.tar.gz tmp/datasette_test-0.3.2.tar.gz --markdown 20240427/d/datasette-test/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-04-27 01:14:07] INFO root fetch - processPackages [pyvista]: Downloading https://files.pythonhosted.org/packages/65/e0/c0a9c27d38de6b868bc098c7f24f30fd42fe78e84e1c1ab993aa33619ed8/pyvista-0.44.dev0.tar.gz
+[2024-04-27 01:14:08] INFO root fetch - processPackages [pyvista]: executing diffoscope
+[2024-04-27 01:14:08] INFO root fetch - processPackages [pyvista]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvista-0.43.6.tar.gz tmp/pyvista-0.44.dev0.tar.gz --markdown 20240427/p/pyvista/0.43.6-0.44.dev0/README.md --exclude *.pyd
+[2024-04-27 01:14:08] INFO root fetch - processPackages [datasette-test]: Remove: archive file [/home/abi/fetcher/tmp/datasette_test-0.3.1.tar.gz]
+[2024-04-27 01:14:08] INFO root fetch - processPackages [datasette-test]: Remove: archive file [/home/abi/fetcher/tmp/datasette_test-0.3.2.tar.gz]
+[2024-04-27 01:14:08] INFO root fetch - main [MainThread]: End processing [datasette-test]: success
+[2024-04-27 01:14:10] INFO root fetch - processPackages [pyvista]: Remove: archive file [/home/abi/fetcher/tmp/pyvista-0.43.6.tar.gz]
+[2024-04-27 01:14:10] INFO root fetch - processPackages [pyvista]: Remove: archive file [/home/abi/fetcher/tmp/pyvista-0.44.dev0.tar.gz]
+[2024-04-27 01:14:10] INFO root fetch - main [MainThread]: End processing [pyvista]: success
+[2024-04-27 01:14:10] INFO root fetch - main [MainThread]: Store serial: [22953821]
