@@ -1532,3 +1532,33 @@ EOFError: EOF read where object expected
 [2024-04-27 01:27:11] INFO root fetch - processPackages [aries-cloudagent]: Remove: archive file [/home/abi/fetcher/tmp/aries_cloudagent-1.0.0rc3.tar.gz]
 [2024-04-27 01:27:11] INFO root fetch - main [MainThread]: End processing [aries-cloudagent]: success
 [2024-04-27 01:27:11] INFO root fetch - main [MainThread]: Store serial: [22953852]
+[2024-04-27 01:29:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953852]
+[2024-04-27 01:29:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 01:29:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aries-cloudagent
+[2024-04-27 01:29:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: netpbmfile
+[2024-04-27 01:29:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odmantic
+[2024-04-27 01:29:20] INFO root fetch - processPackages [aries-cloudagent]: New version: [1.0.0rc3] Old Version: [1.0.0rc2]
+[2024-04-27 01:29:20] INFO root fetch - processPackages [netpbmfile]: New version: [2024.4.24] Old Version: [2023.8.30]
+[2024-04-27 01:29:20] INFO root fetch - processPackages [aries-cloudagent]: Downloading https://files.pythonhosted.org/packages/93/05/659ccc126e716daebe92215caaf65fba86b46c515a3e36abbae43be11e95/aries_cloudagent-1.0.0rc2.tar.gz
+[2024-04-27 01:29:20] INFO root fetch - processPackages [odmantic]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-27 01:29:20] INFO root fetch - processPackages [netpbmfile]: Downloading https://files.pythonhosted.org/packages/46/38/905ec6400be655402cd4f8abf162e037c89b1d425fd49c05f429c33940fd/netpbmfile-2023.8.30.tar.gz
+[2024-04-27 01:29:20] INFO root fetch - processPackages [odmantic]: Downloading https://files.pythonhosted.org/packages/21/e7/fb4f43b50cd7c76dcc18f1d1d1e78d9fc583064b95ef291ca9973cded702/odmantic-1.0.1.tar.gz
+[2024-04-27 01:29:20] INFO root fetch - processPackages [aries-cloudagent]: Downloading https://files.pythonhosted.org/packages/df/e6/2f8ad139caaeabc991da062211cd01e4413b670530de558c0984561c2ff5/aries_cloudagent-1.0.0rc3.tar.gz
+[2024-04-27 01:29:20] INFO root fetch - processPackages [netpbmfile]: Downloading https://files.pythonhosted.org/packages/75/29/33290c1250de60280e7cd728c2f2154365c303606e90f054ca637747c576/netpbmfile-2024.4.24.tar.gz
+[2024-04-27 01:29:20] INFO root fetch - processPackages [aries-cloudagent]: executing diffoscope
+[2024-04-27 01:29:20] INFO root fetch - processPackages [aries-cloudagent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aries_cloudagent-1.0.0rc2.tar.gz tmp/aries_cloudagent-1.0.0rc3.tar.gz --markdown 20240427/a/aries-cloudagent/1.0.0rc2-1.0.0rc3/README.md --exclude *.pyd
+[2024-04-27 01:29:20] INFO root fetch - processPackages [netpbmfile]: executing diffoscope
+[2024-04-27 01:29:20] INFO root fetch - processPackages [netpbmfile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netpbmfile-2023.8.30.tar.gz tmp/netpbmfile-2024.4.24.tar.gz --markdown 20240427/n/netpbmfile/2023.8.30-2024.4.24/README.md --exclude *.pyd
+[2024-04-27 01:29:20] INFO root fetch - processPackages [odmantic]: Downloading https://files.pythonhosted.org/packages/bf/2d/c8ccdb60ccd873bff3dcabfd46fc7cf24fe09150a31446f6b3b947322fe2/odmantic-1.0.2-py3-none-any.whl
+[2024-04-27 01:29:21] INFO root fetch - processPackages [odmantic]: executing diffoscope
+[2024-04-27 01:29:21] INFO root fetch - processPackages [odmantic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odmantic-1.0.1.tar.gz tmp/odmantic-1.0.2-py3-none-any.whl.zip --markdown 20240427/o/odmantic/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-27 01:29:21] INFO root fetch - processPackages [netpbmfile]: Remove: archive file [/home/abi/fetcher/tmp/netpbmfile-2023.8.30.tar.gz]
+[2024-04-27 01:29:21] INFO root fetch - processPackages [netpbmfile]: Remove: archive file [/home/abi/fetcher/tmp/netpbmfile-2024.4.24.tar.gz]
+[2024-04-27 01:29:21] INFO root fetch - main [MainThread]: End processing [netpbmfile]: success
+[2024-04-27 01:29:21] INFO root fetch - processPackages [odmantic]: Remove: archive file [/home/abi/fetcher/tmp/odmantic-1.0.1.tar.gz]
+[2024-04-27 01:29:21] INFO root fetch - processPackages [odmantic]: Remove: archive file [/home/abi/fetcher/tmp/odmantic-1.0.2-py3-none-any.whl.zip]
+[2024-04-27 01:29:21] INFO root fetch - main [MainThread]: End processing [odmantic]: success
+[2024-04-27 01:29:25] INFO root fetch - processPackages [aries-cloudagent]: Remove: archive file [/home/abi/fetcher/tmp/aries_cloudagent-1.0.0rc2.tar.gz]
+[2024-04-27 01:29:25] INFO root fetch - processPackages [aries-cloudagent]: Remove: archive file [/home/abi/fetcher/tmp/aries_cloudagent-1.0.0rc3.tar.gz]
+[2024-04-27 01:29:25] INFO root fetch - main [MainThread]: End processing [aries-cloudagent]: success
+[2024-04-27 01:29:25] INFO root fetch - main [MainThread]: Store serial: [22953858]
