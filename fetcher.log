@@ -1481,3 +1481,15 @@ EOFError: EOF read where object expected
 [2024-04-27 01:22:44] INFO root fetch - processPackages [honeybee-core]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-core-1.9.0.tar.gz]
 [2024-04-27 01:22:44] INFO root fetch - main [MainThread]: End processing [honeybee-core]: success
 [2024-04-27 01:22:44] INFO root fetch - main [MainThread]: Store serial: [22953839]
+[2024-04-27 01:24:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953839]
+[2024-04-27 01:24:53] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 01:24:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: keras
+[2024-04-27 01:24:53] INFO root fetch - processPackages [keras]: New version: [3.3.3] Old Version: [3.3.2]
+[2024-04-27 01:24:54] INFO root fetch - processPackages [keras]: Downloading https://files.pythonhosted.org/packages/57/4e/67f994e211f2108d3cf6c9e646de9efd028977120c1ac18e453b1cf1335c/keras-3.3.2.tar.gz
+[2024-04-27 01:24:54] INFO root fetch - processPackages [keras]: Downloading https://files.pythonhosted.org/packages/5d/c3/1a90b6bf8caeef29cb7b3a33697f81d5d97c4476fce06f1eb9f3805e2c16/keras-3.3.3.tar.gz
+[2024-04-27 01:24:54] INFO root fetch - processPackages [keras]: executing diffoscope
+[2024-04-27 01:24:54] INFO root fetch - processPackages [keras]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras-3.3.2.tar.gz tmp/keras-3.3.3.tar.gz --markdown 20240427/k/keras/3.3.2-3.3.3/README.md --exclude *.pyd
+[2024-04-27 01:24:57] INFO root fetch - processPackages [keras]: Remove: archive file [/home/abi/fetcher/tmp/keras-3.3.2.tar.gz]
+[2024-04-27 01:24:57] INFO root fetch - processPackages [keras]: Remove: archive file [/home/abi/fetcher/tmp/keras-3.3.3.tar.gz]
+[2024-04-27 01:24:57] INFO root fetch - main [MainThread]: End processing [keras]: success
+[2024-04-27 01:24:57] INFO root fetch - main [MainThread]: Store serial: [22953842]
