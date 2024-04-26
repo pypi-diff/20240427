@@ -1360,3 +1360,21 @@ EOFError: EOF read where object expected
 [2024-04-27 01:07:36] INFO root fetch - processPackages [flwr-nightly]: Remove: archive file [/home/abi/fetcher/tmp/flwr_nightly-1.9.0.dev20240425.tar.gz]
 [2024-04-27 01:07:36] INFO root fetch - main [MainThread]: End processing [flwr-nightly]: success
 [2024-04-27 01:07:36] INFO root fetch - main [MainThread]: Store serial: [22953798]
+[2024-04-27 01:09:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953798]
+[2024-04-27 01:09:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 01:09:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yt-data-collector
+[2024-04-27 01:09:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tge
+[2024-04-27 01:09:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mbari-pbp
+[2024-04-27 01:09:46] WARNING root fetch - processPackages [yt-data-collector]: Skipping, unable to determine old version
+[2024-04-27 01:09:46] INFO root fetch - main [MainThread]: End processing [yt-data-collector] error
+[2024-04-27 01:09:46] INFO root fetch - processPackages [mbari-pbp]: New version: [0.3.0b9] Old Version: [0.3.0b8]
+[2024-04-27 01:09:46] WARNING root fetch - processPackages [tge]: Skipping, unable to determine old version
+[2024-04-27 01:09:46] INFO root fetch - main [MainThread]: End processing [tge] error
+[2024-04-27 01:09:46] INFO root fetch - processPackages [mbari-pbp]: Downloading https://files.pythonhosted.org/packages/cf/29/ff20d8314376f876aa3a6579740fad1181c084a7d4b03a4ac89e27e35ba7/mbari_pbp-0.3.0b8.tar.gz
+[2024-04-27 01:09:46] INFO root fetch - processPackages [mbari-pbp]: Downloading https://files.pythonhosted.org/packages/b4/9a/e36916a9b680f4d1b9465eadb829fcabefd7cc5f6ec46ae5d8c328600254/mbari_pbp-0.3.0b9.tar.gz
+[2024-04-27 01:09:47] INFO root fetch - processPackages [mbari-pbp]: executing diffoscope
+[2024-04-27 01:09:47] INFO root fetch - processPackages [mbari-pbp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mbari_pbp-0.3.0b8.tar.gz tmp/mbari_pbp-0.3.0b9.tar.gz --markdown 20240427/m/mbari-pbp/0.3.0b8-0.3.0b9/README.md --exclude *.pyd
+[2024-04-27 01:09:47] INFO root fetch - processPackages [mbari-pbp]: Remove: archive file [/home/abi/fetcher/tmp/mbari_pbp-0.3.0b8.tar.gz]
+[2024-04-27 01:09:47] INFO root fetch - processPackages [mbari-pbp]: Remove: archive file [/home/abi/fetcher/tmp/mbari_pbp-0.3.0b9.tar.gz]
+[2024-04-27 01:09:47] INFO root fetch - main [MainThread]: End processing [mbari-pbp]: success
+[2024-04-27 01:09:47] INFO root fetch - main [MainThread]: Store serial: [22953810]
