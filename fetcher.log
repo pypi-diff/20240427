@@ -1378,3 +1378,24 @@ EOFError: EOF read where object expected
 [2024-04-27 01:09:47] INFO root fetch - processPackages [mbari-pbp]: Remove: archive file [/home/abi/fetcher/tmp/mbari_pbp-0.3.0b9.tar.gz]
 [2024-04-27 01:09:47] INFO root fetch - main [MainThread]: End processing [mbari-pbp]: success
 [2024-04-27 01:09:47] INFO root fetch - main [MainThread]: Store serial: [22953810]
+[2024-04-27 01:11:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953810]
+[2024-04-27 01:11:57] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 01:11:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: indexify-extractor-sdk
+[2024-04-27 01:11:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dg-face-tracking
+[2024-04-27 01:11:57] INFO root fetch - processPackages [dg-face-tracking]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-27 01:11:57] INFO root fetch - processPackages [indexify-extractor-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 01:11:57] INFO root fetch - processPackages [dg-face-tracking]: Downloading https://files.pythonhosted.org/packages/79/27/2afdd2ef045df22466ff57a5d17c3531e6f5c0fc6804ca52491357078c38/dg_face_tracking-0.1.8-py3-none-any.whl
+[2024-04-27 01:11:57] INFO root fetch - processPackages [indexify-extractor-sdk]: Downloading https://files.pythonhosted.org/packages/25/fb/8dcfb1ddf593ada77ca7aebff3d9add072c6922c5b3efddeb31e991f5968/indexify-extractor-sdk-0.0.8.tar.gz
+[2024-04-27 01:11:57] INFO root fetch - processPackages [indexify-extractor-sdk]: Downloading https://files.pythonhosted.org/packages/6b/69/1a816cb64f283ffbd7a285fc0aacdf84a8f4bc7214eaab78ac42be5e93ba/indexify-extractor-sdk-0.0.9.tar.gz
+[2024-04-27 01:11:57] INFO root fetch - processPackages [dg-face-tracking]: Downloading https://files.pythonhosted.org/packages/0d/58/eb7cdb04b923201a004e8e2a15d07cd67a34137de53e041139b1ee76a783/dg_face_tracking-0.1.9-py3-none-any.whl
+[2024-04-27 01:11:57] INFO root fetch - processPackages [indexify-extractor-sdk]: executing diffoscope
+[2024-04-27 01:11:57] INFO root fetch - processPackages [indexify-extractor-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indexify-extractor-sdk-0.0.8.tar.gz tmp/indexify-extractor-sdk-0.0.9.tar.gz --markdown 20240427/i/indexify-extractor-sdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 01:11:57] INFO root fetch - processPackages [dg-face-tracking]: executing diffoscope
+[2024-04-27 01:11:57] INFO root fetch - processPackages [dg-face-tracking]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dg_face_tracking-0.1.8-py3-none-any.whl.zip tmp/dg_face_tracking-0.1.9-py3-none-any.whl.zip --markdown 20240427/d/dg-face-tracking/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-27 01:11:58] INFO root fetch - processPackages [indexify-extractor-sdk]: Remove: archive file [/home/abi/fetcher/tmp/indexify-extractor-sdk-0.0.8.tar.gz]
+[2024-04-27 01:11:58] INFO root fetch - processPackages [indexify-extractor-sdk]: Remove: archive file [/home/abi/fetcher/tmp/indexify-extractor-sdk-0.0.9.tar.gz]
+[2024-04-27 01:11:58] INFO root fetch - main [MainThread]: End processing [indexify-extractor-sdk]: success
+[2024-04-27 01:11:58] INFO root fetch - processPackages [dg-face-tracking]: Remove: archive file [/home/abi/fetcher/tmp/dg_face_tracking-0.1.8-py3-none-any.whl.zip]
+[2024-04-27 01:11:58] INFO root fetch - processPackages [dg-face-tracking]: Remove: archive file [/home/abi/fetcher/tmp/dg_face_tracking-0.1.9-py3-none-any.whl.zip]
+[2024-04-27 01:11:58] INFO root fetch - main [MainThread]: End processing [dg-face-tracking]: success
+[2024-04-27 01:11:58] INFO root fetch - main [MainThread]: Store serial: [22953815]
