@@ -1777,3 +1777,27 @@ EOFError: EOF read where object expected
 [2024-04-27 01:44:41] INFO root fetch - processPackages [fixinventorycore]: Remove: archive file [/home/abi/fetcher/tmp/fixinventorycore-4.0.5.tar.gz]
 [2024-04-27 01:44:41] INFO root fetch - main [MainThread]: End processing [fixinventorycore]: success
 [2024-04-27 01:44:41] INFO root fetch - main [MainThread]: Store serial: [22953967]
+[2024-04-27 01:46:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953967]
+[2024-04-27 01:46:50] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 01:46:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: honeybee-radiance-postprocess
+[2024-04-27 01:46:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ZMPY3D-TF
+[2024-04-27 01:46:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flash-attn
+[2024-04-27 01:46:50] WARNING root fetch - processPackages [ZMPY3D-TF]: Skipping, unable to determine old version
+[2024-04-27 01:46:50] INFO root fetch - main [MainThread]: End processing [ZMPY3D-TF] error
+[2024-04-27 01:46:50] INFO root fetch - processPackages [flash-attn]: New version: [2.5.8] Old Version: [2.5.7]
+[2024-04-27 01:46:50] INFO root fetch - processPackages [honeybee-radiance-postprocess]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-04-27 01:46:50] INFO root fetch - processPackages [flash-attn]: Downloading https://files.pythonhosted.org/packages/21/cb/33a1f833ac4742c8adba063715bf769831f96d99dbbbb4be1b197b637872/flash_attn-2.5.7.tar.gz
+[2024-04-27 01:46:50] INFO root fetch - processPackages [honeybee-radiance-postprocess]: Downloading https://files.pythonhosted.org/packages/b6/91/e656cf214b08dde444b27576e74fc06004fa6bbc0d5f04f1d6514eb05429/honeybee-radiance-postprocess-0.4.98.tar.gz
+[2024-04-27 01:46:50] INFO root fetch - processPackages [honeybee-radiance-postprocess]: Downloading https://files.pythonhosted.org/packages/e0/41/5be881e0724bb4d271ee5bb707666eff4c4b9ca79bc8c67f7316687d2f67/honeybee-radiance-postprocess-0.4.99.tar.gz
+[2024-04-27 01:46:51] INFO root fetch - processPackages [honeybee-radiance-postprocess]: executing diffoscope
+[2024-04-27 01:46:51] INFO root fetch - processPackages [honeybee-radiance-postprocess]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeybee-radiance-postprocess-0.4.98.tar.gz tmp/honeybee-radiance-postprocess-0.4.99.tar.gz --markdown 20240427/h/honeybee-radiance-postprocess/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-04-27 01:46:51] INFO root fetch - processPackages [flash-attn]: Downloading https://files.pythonhosted.org/packages/72/94/06f618bb338ec7203b48ac542e73087362b7750f9c568b13d213a3f181bb/flash_attn-2.5.8.tar.gz
+[2024-04-27 01:46:51] INFO root fetch - processPackages [honeybee-radiance-postprocess]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-radiance-postprocess-0.4.98.tar.gz]
+[2024-04-27 01:46:51] INFO root fetch - processPackages [honeybee-radiance-postprocess]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-radiance-postprocess-0.4.99.tar.gz]
+[2024-04-27 01:46:51] INFO root fetch - main [MainThread]: End processing [honeybee-radiance-postprocess]: success
+[2024-04-27 01:46:51] INFO root fetch - processPackages [flash-attn]: executing diffoscope
+[2024-04-27 01:46:51] INFO root fetch - processPackages [flash-attn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flash_attn-2.5.7.tar.gz tmp/flash_attn-2.5.8.tar.gz --markdown 20240427/f/flash-attn/2.5.7-2.5.8/README.md --exclude *.pyd
+[2024-04-27 01:46:59] INFO root fetch - processPackages [flash-attn]: Remove: archive file [/home/abi/fetcher/tmp/flash_attn-2.5.7.tar.gz]
+[2024-04-27 01:46:59] INFO root fetch - processPackages [flash-attn]: Remove: archive file [/home/abi/fetcher/tmp/flash_attn-2.5.8.tar.gz]
+[2024-04-27 01:46:59] INFO root fetch - main [MainThread]: End processing [flash-attn]: success
+[2024-04-27 01:46:59] INFO root fetch - main [MainThread]: Store serial: [22953978]
