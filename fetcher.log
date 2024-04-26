@@ -1562,3 +1562,33 @@ EOFError: EOF read where object expected
 [2024-04-27 01:29:25] INFO root fetch - processPackages [aries-cloudagent]: Remove: archive file [/home/abi/fetcher/tmp/aries_cloudagent-1.0.0rc3.tar.gz]
 [2024-04-27 01:29:25] INFO root fetch - main [MainThread]: End processing [aries-cloudagent]: success
 [2024-04-27 01:29:25] INFO root fetch - main [MainThread]: Store serial: [22953858]
+[2024-04-27 01:31:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953858]
+[2024-04-27 01:31:33] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 01:31:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odmantic
+[2024-04-27 01:31:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyPDFForm
+[2024-04-27 01:31:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zcmds
+[2024-04-27 01:31:33] INFO root fetch - processPackages [odmantic]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-27 01:31:33] INFO root fetch - processPackages [zcmds]: New version: [1.4.9] Old Version: [1.4.81]
+[2024-04-27 01:31:33] INFO root fetch - processPackages [odmantic]: Downloading https://files.pythonhosted.org/packages/21/e7/fb4f43b50cd7c76dcc18f1d1d1e78d9fc583064b95ef291ca9973cded702/odmantic-1.0.1.tar.gz
+[2024-04-27 01:31:33] INFO root fetch - processPackages [PyPDFForm]: New version: [1.4.9] Old Version: [1.4.8]
+[2024-04-27 01:31:33] INFO root fetch - processPackages [zcmds]: Downloading https://files.pythonhosted.org/packages/6b/82/b39184fc4d616ea4427106503c6479178ec0db96c12339e96017082a93a5/zcmds-1.4.81.tar.gz
+[2024-04-27 01:31:33] INFO root fetch - processPackages [PyPDFForm]: Downloading https://files.pythonhosted.org/packages/69/9f/2ae6600de9a7bcb149411374a44be0c0f9f2c9ce362f6374e578ec5a4e26/PyPDFForm-1.4.8.tar.gz
+[2024-04-27 01:31:33] INFO root fetch - processPackages [odmantic]: Downloading https://files.pythonhosted.org/packages/bf/2d/c8ccdb60ccd873bff3dcabfd46fc7cf24fe09150a31446f6b3b947322fe2/odmantic-1.0.2-py3-none-any.whl
+[2024-04-27 01:31:33] INFO root fetch - processPackages [odmantic]: executing diffoscope
+[2024-04-27 01:31:33] INFO root fetch - processPackages [odmantic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odmantic-1.0.1.tar.gz tmp/odmantic-1.0.2-py3-none-any.whl.zip --markdown 20240427/o/odmantic/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-27 01:31:33] INFO root fetch - processPackages [zcmds]: Downloading https://files.pythonhosted.org/packages/ee/c7/785afe3eb6342eebc74522af1d496ca09cf10ab8aab660d94d91cfbef640/zcmds-1.4.9.tar.gz
+[2024-04-27 01:31:34] INFO root fetch - processPackages [PyPDFForm]: Downloading https://files.pythonhosted.org/packages/f0/86/8219b0802370fbdcae59e87d8b203196b52045c8375f1c043b5db3eb54ff/PyPDFForm-1.4.9.tar.gz
+[2024-04-27 01:31:34] INFO root fetch - processPackages [zcmds]: executing diffoscope
+[2024-04-27 01:31:34] INFO root fetch - processPackages [zcmds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zcmds-1.4.81.tar.gz tmp/zcmds-1.4.9.tar.gz --markdown 20240427/z/zcmds/1.4.81-1.4.9/README.md --exclude *.pyd
+[2024-04-27 01:31:34] INFO root fetch - processPackages [PyPDFForm]: executing diffoscope
+[2024-04-27 01:31:34] INFO root fetch - processPackages [PyPDFForm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyPDFForm-1.4.8.tar.gz tmp/PyPDFForm-1.4.9.tar.gz --markdown 20240427/P/PyPDFForm/1.4.8-1.4.9/README.md --exclude *.pyd
+[2024-04-27 01:31:34] INFO root fetch - processPackages [odmantic]: Remove: archive file [/home/abi/fetcher/tmp/odmantic-1.0.1.tar.gz]
+[2024-04-27 01:31:34] INFO root fetch - processPackages [odmantic]: Remove: archive file [/home/abi/fetcher/tmp/odmantic-1.0.2-py3-none-any.whl.zip]
+[2024-04-27 01:31:34] INFO root fetch - main [MainThread]: End processing [odmantic]: success
+[2024-04-27 01:31:34] INFO root fetch - processPackages [PyPDFForm]: Remove: archive file [/home/abi/fetcher/tmp/PyPDFForm-1.4.8.tar.gz]
+[2024-04-27 01:31:34] INFO root fetch - processPackages [PyPDFForm]: Remove: archive file [/home/abi/fetcher/tmp/PyPDFForm-1.4.9.tar.gz]
+[2024-04-27 01:31:34] INFO root fetch - main [MainThread]: End processing [PyPDFForm]: success
+[2024-04-27 01:31:34] INFO root fetch - processPackages [zcmds]: Remove: archive file [/home/abi/fetcher/tmp/zcmds-1.4.81.tar.gz]
+[2024-04-27 01:31:34] INFO root fetch - processPackages [zcmds]: Remove: archive file [/home/abi/fetcher/tmp/zcmds-1.4.9.tar.gz]
+[2024-04-27 01:31:34] INFO root fetch - main [MainThread]: End processing [zcmds]: success
+[2024-04-27 01:31:34] INFO root fetch - main [MainThread]: Store serial: [22953867]
