@@ -1106,3 +1106,15 @@ EOFError: EOF read where object expected
 [2024-04-27 00:45:38] INFO root fetch - processPackages [pyprland]: Remove: archive file [/home/abi/fetcher/tmp/pyprland-2.2.9.tar.gz]
 [2024-04-27 00:45:38] INFO root fetch - main [MainThread]: End processing [pyprland]: success
 [2024-04-27 00:45:38] INFO root fetch - main [MainThread]: Store serial: [22953712]
+[2024-04-27 00:47:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953712]
+[2024-04-27 00:47:46] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 00:47:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lusid-sdk
+[2024-04-27 00:47:46] INFO root fetch - processPackages [lusid-sdk]: New version: [2.1.7] Old Version: [2.1.61]
+[2024-04-27 00:47:46] INFO root fetch - processPackages [lusid-sdk]: Downloading https://files.pythonhosted.org/packages/67/4b/8ec6ab15873e20f04b712b3ab420445fbb6f8f497393eeab6279f9ee8928/lusid_sdk-2.1.61.tar.gz
+[2024-04-27 00:47:47] INFO root fetch - processPackages [lusid-sdk]: Downloading https://files.pythonhosted.org/packages/ef/9e/cac4eb8acb9b4225644a8ecd621bda7df1f3ecf1d132898e9a3ec1ed6723/lusid_sdk-2.1.7.tar.gz
+[2024-04-27 00:47:47] INFO root fetch - processPackages [lusid-sdk]: executing diffoscope
+[2024-04-27 00:47:47] INFO root fetch - processPackages [lusid-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid_sdk-2.1.61.tar.gz tmp/lusid_sdk-2.1.7.tar.gz --markdown 20240427/l/lusid-sdk/2.1.61-2.1.7/README.md --exclude *.pyd
+[2024-04-27 00:47:52] INFO root fetch - processPackages [lusid-sdk]: Remove: archive file [/home/abi/fetcher/tmp/lusid_sdk-2.1.61.tar.gz]
+[2024-04-27 00:47:52] INFO root fetch - processPackages [lusid-sdk]: Remove: archive file [/home/abi/fetcher/tmp/lusid_sdk-2.1.7.tar.gz]
+[2024-04-27 00:47:52] INFO root fetch - main [MainThread]: End processing [lusid-sdk]: success
+[2024-04-27 00:47:52] INFO root fetch - main [MainThread]: Store serial: [22953715]
