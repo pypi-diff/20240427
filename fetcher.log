@@ -1864,3 +1864,24 @@ EOFError: EOF read where object expected
 [2024-04-27 01:49:10] INFO root fetch - processPackages [dragonfly-uwg]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-uwg-0.5.99.tar.gz]
 [2024-04-27 01:49:10] INFO root fetch - main [MainThread]: End processing [dragonfly-uwg]: success
 [2024-04-27 01:49:10] INFO root fetch - main [MainThread]: Store serial: [22954005]
+[2024-04-27 01:51:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22954005]
+[2024-04-27 01:51:18] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 01:51:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pied-poker
+[2024-04-27 01:51:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dragonfly-energy
+[2024-04-27 01:51:19] INFO root fetch - processPackages [dragonfly-energy]: New version: [1.9.9] Old Version: [1.9.8]
+[2024-04-27 01:51:19] INFO root fetch - processPackages [pied-poker]: New version: [1.2.5] Old Version: [1.2.4]
+[2024-04-27 01:51:19] INFO root fetch - processPackages [dragonfly-energy]: Downloading https://files.pythonhosted.org/packages/20/4e/115840f938ee254b23bd515351ba786228441464717f8557431f914e75f4/dragonfly-energy-1.9.8.tar.gz
+[2024-04-27 01:51:19] INFO root fetch - processPackages [pied-poker]: Downloading https://files.pythonhosted.org/packages/ea/8a/d0c7d936c33715ccf51eb92eabde0749b18205300fbf8e1ec29cc96d1449/pied_poker-1.2.4.tar.gz
+[2024-04-27 01:51:19] INFO root fetch - processPackages [dragonfly-energy]: Downloading https://files.pythonhosted.org/packages/09/b6/c12f13159c5beb3b855a32f792faef162ad37358d2e0d3311cbd68a969db/dragonfly-energy-1.9.9.tar.gz
+[2024-04-27 01:51:19] INFO root fetch - processPackages [dragonfly-energy]: executing diffoscope
+[2024-04-27 01:51:19] INFO root fetch - processPackages [dragonfly-energy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-energy-1.9.8.tar.gz tmp/dragonfly-energy-1.9.9.tar.gz --markdown 20240427/d/dragonfly-energy/1.9.8-1.9.9/README.md --exclude *.pyd
+[2024-04-27 01:51:19] INFO root fetch - processPackages [pied-poker]: Downloading https://files.pythonhosted.org/packages/97/c0/c7debb0375ddaaa7e3fc317706436553932df9313a415941a5165053a585/pied_poker-1.2.5.tar.gz
+[2024-04-27 01:51:19] INFO root fetch - processPackages [pied-poker]: executing diffoscope
+[2024-04-27 01:51:19] INFO root fetch - processPackages [pied-poker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pied_poker-1.2.4.tar.gz tmp/pied_poker-1.2.5.tar.gz --markdown 20240427/p/pied-poker/1.2.4-1.2.5/README.md --exclude *.pyd
+[2024-04-27 01:51:20] INFO root fetch - processPackages [dragonfly-energy]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-energy-1.9.8.tar.gz]
+[2024-04-27 01:51:20] INFO root fetch - processPackages [dragonfly-energy]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-energy-1.9.9.tar.gz]
+[2024-04-27 01:51:20] INFO root fetch - main [MainThread]: End processing [dragonfly-energy]: success
+[2024-04-27 01:51:20] INFO root fetch - processPackages [pied-poker]: Remove: archive file [/home/abi/fetcher/tmp/pied_poker-1.2.4.tar.gz]
+[2024-04-27 01:51:20] INFO root fetch - processPackages [pied-poker]: Remove: archive file [/home/abi/fetcher/tmp/pied_poker-1.2.5.tar.gz]
+[2024-04-27 01:51:20] INFO root fetch - main [MainThread]: End processing [pied-poker]: success
+[2024-04-27 01:51:20] INFO root fetch - main [MainThread]: Store serial: [22954011]
