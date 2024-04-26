@@ -1139,3 +1139,54 @@ EOFError: EOF read where object expected
 [2024-04-27 00:50:06] INFO root fetch - processPackages [cf-python]: Remove: archive file [/home/abi/fetcher/tmp/cf-python-3.9.0.tar.gz]
 [2024-04-27 00:50:06] INFO root fetch - main [MainThread]: End processing [cf-python]: success
 [2024-04-27 00:50:06] INFO root fetch - main [MainThread]: Store serial: [22953720]
+[2024-04-27 00:52:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953720]
+[2024-04-27 00:52:16] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-27 00:52:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xmonkey-namonica
+[2024-04-27 00:52:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: LingerGRN
+[2024-04-27 00:52:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: abnosql
+[2024-04-27 00:52:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dekvenv
+[2024-04-27 00:52:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: yt-data-collector
+[2024-04-27 00:52:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rocm-docs-core
+[2024-04-27 00:52:16] INFO root fetch - processPackages [xmonkey-namonica]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-27 00:52:16] WARNING root fetch - processPackages [yt-data-collector]: Skipping, unable to determine old version
+[2024-04-27 00:52:16] INFO root fetch - main [MainThread]: End processing [yt-data-collector] error
+[2024-04-27 00:52:16] INFO root fetch - processPackages [dekvenv]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-27 00:52:16] INFO root fetch - processPackages [rocm-docs-core]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-04-27 00:52:16] INFO root fetch - processPackages [abnosql]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 00:52:16] INFO root fetch - processPackages [LingerGRN]: New version: [1.9] Old Version: [1.8]
+[2024-04-27 00:52:16] INFO root fetch - processPackages [xmonkey-namonica]: Downloading https://files.pythonhosted.org/packages/2f/4c/68d756496c2e8d069cf51a060807b643d3cc58c6a8355c1cb7f8fe5ef633/xmonkey_namonica-0.1.0.tar.gz
+[2024-04-27 00:52:16] INFO root fetch - processPackages [dekvenv]: Downloading https://files.pythonhosted.org/packages/4f/0b/06902f2f4ceee290cfab39fc5e233eaa2bb642fa6b79c9a76349ffa49eac/dekvenv-0.1.8.tar.gz
+[2024-04-27 00:52:16] INFO root fetch - processPackages [rocm-docs-core]: Downloading https://files.pythonhosted.org/packages/ce/3d/721b2215157515264898bee76b4db58d248dfab57f27460b76cd1e35345e/rocm_docs_core-1.1.0.tar.gz
+[2024-04-27 00:52:16] INFO root fetch - processPackages [abnosql]: Downloading https://files.pythonhosted.org/packages/af/dd/3692a75af01e23f8d33b1dc66286d9756632760cd20b3076055ab7400c3f/abnosql-0.0.8.tar.gz
+[2024-04-27 00:52:16] INFO root fetch - processPackages [LingerGRN]: Downloading https://files.pythonhosted.org/packages/df/69/a80f2b27505be0e6d4762954dc10e7e95186ec0d94c1930d038e59cc8f5d/LingerGRN-1.8.tar.gz
+[2024-04-27 00:52:17] INFO root fetch - processPackages [dekvenv]: Downloading https://files.pythonhosted.org/packages/89/c5/ae26e7ab62e243bef554710c58d728eba22e25ad33a5e2f25b45dcb001d1/dekvenv-0.1.9.tar.gz
+[2024-04-27 00:52:17] INFO root fetch - processPackages [xmonkey-namonica]: Downloading https://files.pythonhosted.org/packages/f0/0f/d7760727f5468a27cead6823d3144213d21c2c8360cc4ecb6da4a670d1ac/xmonkey_namonica-0.1.1.tar.gz
+[2024-04-27 00:52:17] INFO root fetch - processPackages [dekvenv]: executing diffoscope
+[2024-04-27 00:52:17] INFO root fetch - processPackages [dekvenv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dekvenv-0.1.8.tar.gz tmp/dekvenv-0.1.9.tar.gz --markdown 20240427/d/dekvenv/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-27 00:52:17] INFO root fetch - processPackages [LingerGRN]: Downloading https://files.pythonhosted.org/packages/63/d4/436d53c01941016a6ae8377f82d2b0e575b4398b54914a012eeeea4d45f7/LingerGRN-1.9.tar.gz
+[2024-04-27 00:52:17] INFO root fetch - processPackages [xmonkey-namonica]: executing diffoscope
+[2024-04-27 00:52:17] INFO root fetch - processPackages [xmonkey-namonica]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xmonkey_namonica-0.1.0.tar.gz tmp/xmonkey_namonica-0.1.1.tar.gz --markdown 20240427/x/xmonkey-namonica/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-27 00:52:17] INFO root fetch - processPackages [abnosql]: Downloading https://files.pythonhosted.org/packages/35/79/a10bd8ee227d2a8dbc8591b29518d506355a8daca24d7440b787736fa266/abnosql-0.0.9.tar.gz
+[2024-04-27 00:52:17] INFO root fetch - processPackages [rocm-docs-core]: Downloading https://files.pythonhosted.org/packages/61/91/dddb08484fddc6d8108ef2b2aa9b5fccf161de42dd9791129dd3713ab674/rocm_docs_core-1.1.1.tar.gz
+[2024-04-27 00:52:17] INFO root fetch - processPackages [LingerGRN]: executing diffoscope
+[2024-04-27 00:52:17] INFO root fetch - processPackages [LingerGRN]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LingerGRN-1.8.tar.gz tmp/LingerGRN-1.9.tar.gz --markdown 20240427/L/LingerGRN/1.8-1.9/README.md --exclude *.pyd
+[2024-04-27 00:52:17] INFO root fetch - processPackages [abnosql]: executing diffoscope
+[2024-04-27 00:52:17] INFO root fetch - processPackages [abnosql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abnosql-0.0.8.tar.gz tmp/abnosql-0.0.9.tar.gz --markdown 20240427/a/abnosql/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 00:52:17] INFO root fetch - processPackages [rocm-docs-core]: executing diffoscope
+[2024-04-27 00:52:17] INFO root fetch - processPackages [rocm-docs-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rocm_docs_core-1.1.0.tar.gz tmp/rocm_docs_core-1.1.1.tar.gz --markdown 20240427/r/rocm-docs-core/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-04-27 00:52:17] INFO root fetch - processPackages [dekvenv]: Remove: archive file [/home/abi/fetcher/tmp/dekvenv-0.1.8.tar.gz]
+[2024-04-27 00:52:17] INFO root fetch - processPackages [dekvenv]: Remove: archive file [/home/abi/fetcher/tmp/dekvenv-0.1.9.tar.gz]
+[2024-04-27 00:52:17] INFO root fetch - main [MainThread]: End processing [dekvenv]: success
+[2024-04-27 00:52:17] INFO root fetch - processPackages [xmonkey-namonica]: Remove: archive file [/home/abi/fetcher/tmp/xmonkey_namonica-0.1.0.tar.gz]
+[2024-04-27 00:52:17] INFO root fetch - processPackages [xmonkey-namonica]: Remove: archive file [/home/abi/fetcher/tmp/xmonkey_namonica-0.1.1.tar.gz]
+[2024-04-27 00:52:17] INFO root fetch - main [MainThread]: End processing [xmonkey-namonica]: success
+[2024-04-27 00:52:18] INFO root fetch - processPackages [LingerGRN]: Remove: archive file [/home/abi/fetcher/tmp/LingerGRN-1.8.tar.gz]
+[2024-04-27 00:52:18] INFO root fetch - processPackages [LingerGRN]: Remove: archive file [/home/abi/fetcher/tmp/LingerGRN-1.9.tar.gz]
+[2024-04-27 00:52:18] INFO root fetch - main [MainThread]: End processing [LingerGRN]: success
+[2024-04-27 00:52:18] INFO root fetch - processPackages [abnosql]: Remove: archive file [/home/abi/fetcher/tmp/abnosql-0.0.8.tar.gz]
+[2024-04-27 00:52:18] INFO root fetch - processPackages [abnosql]: Remove: archive file [/home/abi/fetcher/tmp/abnosql-0.0.9.tar.gz]
+[2024-04-27 00:52:18] INFO root fetch - main [MainThread]: End processing [abnosql]: success
+[2024-04-27 00:52:18] INFO root fetch - processPackages [rocm-docs-core]: Remove: archive file [/home/abi/fetcher/tmp/rocm_docs_core-1.1.0.tar.gz]
+[2024-04-27 00:52:18] INFO root fetch - processPackages [rocm-docs-core]: Remove: archive file [/home/abi/fetcher/tmp/rocm_docs_core-1.1.1.tar.gz]
+[2024-04-27 00:52:18] INFO root fetch - main [MainThread]: End processing [rocm-docs-core]: success
+[2024-04-27 00:52:18] INFO root fetch - main [MainThread]: Store serial: [22953738]
