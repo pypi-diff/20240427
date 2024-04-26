@@ -379,3 +379,42 @@ EOFError: EOF read where object expected
 [2024-04-27 00:19:17] INFO root fetch - processPackages [pulumi-pulumiservice]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_pulumiservice-0.9.1a1689804796.tar.gz]
 [2024-04-27 00:19:17] INFO root fetch - main [MainThread]: End processing [pulumi-pulumiservice]: success
 [2024-04-27 00:19:17] INFO root fetch - main [MainThread]: Store serial: [22953472]
+[2024-04-27 00:21:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953472]
+[2024-04-27 00:21:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 00:21:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lbt-dragonfly
+[2024-04-27 00:21:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wring
+[2024-04-27 00:21:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: predibase-api
+[2024-04-27 00:21:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: predibase
+[2024-04-27 00:21:27] INFO root fetch - processPackages [predibase]: New version: [2024.4.8] Old Version: [2024.4.7]
+[2024-04-27 00:21:27] INFO root fetch - processPackages [predibase-api]: New version: [2024.4.8] Old Version: [2024.4.7]
+[2024-04-27 00:21:27] INFO root fetch - processPackages [wring]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-27 00:21:27] INFO root fetch - processPackages [predibase]: Downloading https://files.pythonhosted.org/packages/aa/c9/397c7ccd97273320d2617aab083c03247a5a554b344cabb4fd5ca9fd873d/predibase-2024.4.7.tar.gz
+[2024-04-27 00:21:27] INFO root fetch - processPackages [predibase-api]: Downloading https://files.pythonhosted.org/packages/12/73/1e8ca9686d6fdbd41b63304d8a69affc8a09b91134e599f0ab3a73fdfc20/predibase-api-2024.4.7.tar.gz
+[2024-04-27 00:21:27] INFO root fetch - processPackages [lbt-dragonfly]: New version: [0.9.99] Old Version: [0.9.98]
+[2024-04-27 00:21:27] INFO root fetch - processPackages [wring]: Downloading https://files.pythonhosted.org/packages/df/f3/75642a439dce44e187969b78328f7da7ded199a0df53f79436840a619d0a/wring-0.0.5.tar.gz
+[2024-04-27 00:21:27] INFO root fetch - processPackages [predibase-api]: Downloading https://files.pythonhosted.org/packages/50/0a/2bbc4d934413ba88af00e4955f22d28e77237cdb9ae1ed22a04d9c1075a2/predibase-api-2024.4.8.tar.gz
+[2024-04-27 00:21:27] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/be/ae/7267dfd241a0641f3fbadea4128db5ffa29609911cadb5fc4840656bb44a/lbt-dragonfly-0.9.98.tar.gz
+[2024-04-27 00:21:27] INFO root fetch - processPackages [predibase]: Downloading https://files.pythonhosted.org/packages/57/81/d2f1533a2c021c901fa45981d33807f0cda149030b94ba7b2a72fa3428af/predibase-2024.4.8.tar.gz
+[2024-04-27 00:21:27] INFO root fetch - processPackages [predibase-api]: executing diffoscope
+[2024-04-27 00:21:27] INFO root fetch - processPackages [predibase-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/predibase-api-2024.4.7.tar.gz tmp/predibase-api-2024.4.8.tar.gz --markdown 20240427/p/predibase-api/2024.4.7-2024.4.8/README.md --exclude *.pyd
+[2024-04-27 00:21:27] INFO root fetch - processPackages [predibase]: executing diffoscope
+[2024-04-27 00:21:27] INFO root fetch - processPackages [predibase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/predibase-2024.4.7.tar.gz tmp/predibase-2024.4.8.tar.gz --markdown 20240427/p/predibase/2024.4.7-2024.4.8/README.md --exclude *.pyd
+[2024-04-27 00:21:28] INFO root fetch - processPackages [wring]: Downloading https://files.pythonhosted.org/packages/b8/58/98c7214a3ba8ada3b378556e9cfd1144f39556196ba998b69b069143fe18/wring-0.0.6.tar.gz
+[2024-04-27 00:21:28] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/b4/08/0ca46e9f7eef7b2cce7f0c6110106c42aa35a79bd88110559177f64d733a/lbt-dragonfly-0.9.99.tar.gz
+[2024-04-27 00:21:28] INFO root fetch - processPackages [wring]: executing diffoscope
+[2024-04-27 00:21:28] INFO root fetch - processPackages [wring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wring-0.0.5.tar.gz tmp/wring-0.0.6.tar.gz --markdown 20240427/w/wring/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-27 00:21:28] INFO root fetch - processPackages [lbt-dragonfly]: executing diffoscope
+[2024-04-27 00:21:28] INFO root fetch - processPackages [lbt-dragonfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-dragonfly-0.9.98.tar.gz tmp/lbt-dragonfly-0.9.99.tar.gz --markdown 20240427/l/lbt-dragonfly/0.9.98-0.9.99/README.md --exclude *.pyd
+[2024-04-27 00:21:28] INFO root fetch - processPackages [predibase-api]: Remove: archive file [/home/abi/fetcher/tmp/predibase-api-2024.4.7.tar.gz]
+[2024-04-27 00:21:28] INFO root fetch - processPackages [predibase-api]: Remove: archive file [/home/abi/fetcher/tmp/predibase-api-2024.4.8.tar.gz]
+[2024-04-27 00:21:28] INFO root fetch - main [MainThread]: End processing [predibase-api]: success
+[2024-04-27 00:21:28] INFO root fetch - processPackages [predibase]: Remove: archive file [/home/abi/fetcher/tmp/predibase-2024.4.7.tar.gz]
+[2024-04-27 00:21:28] INFO root fetch - processPackages [predibase]: Remove: archive file [/home/abi/fetcher/tmp/predibase-2024.4.8.tar.gz]
+[2024-04-27 00:21:28] INFO root fetch - main [MainThread]: End processing [predibase]: success
+[2024-04-27 00:21:28] INFO root fetch - processPackages [wring]: Remove: archive file [/home/abi/fetcher/tmp/wring-0.0.5.tar.gz]
+[2024-04-27 00:21:28] INFO root fetch - processPackages [wring]: Remove: archive file [/home/abi/fetcher/tmp/wring-0.0.6.tar.gz]
+[2024-04-27 00:21:28] INFO root fetch - main [MainThread]: End processing [wring]: success
+[2024-04-27 00:21:28] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.98.tar.gz]
+[2024-04-27 00:21:28] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.99.tar.gz]
+[2024-04-27 00:21:28] INFO root fetch - main [MainThread]: End processing [lbt-dragonfly]: success
+[2024-04-27 00:21:28] INFO root fetch - main [MainThread]: Store serial: [22953482]
