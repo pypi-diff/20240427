@@ -1045,3 +1045,38 @@ EOFError: EOF read where object expected
 [2024-04-27 00:41:16] INFO root fetch - processPackages [NEMO-billing]: Remove: archive file [/home/abi/fetcher/tmp/NEMO_billing-2.9.2-py3-none-any.whl.zip]
 [2024-04-27 00:41:16] INFO root fetch - main [MainThread]: End processing [NEMO-billing]: success
 [2024-04-27 00:41:16] INFO root fetch - main [MainThread]: Store serial: [22953692]
+[2024-04-27 00:43:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953692]
+[2024-04-27 00:43:26] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 00:43:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MobileInventoryCLI
+[2024-04-27 00:43:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xl-router
+[2024-04-27 00:43:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qualitative-coding
+[2024-04-27 00:43:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: airbyte-source-slack
+[2024-04-27 00:43:26] INFO root fetch - processPackages [xl-router]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-04-27 00:43:27] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.69] Old Version: [0.4.68]
+[2024-04-27 00:43:27] INFO root fetch - processPackages [xl-router]: Downloading https://files.pythonhosted.org/packages/39/d5/9e538199f2a5caf705812ce84095fdca98c4511a52d715f1081eecd65ba6/xl_router-0.7.0.tar.gz
+[2024-04-27 00:43:27] INFO root fetch - processPackages [airbyte-source-slack]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-04-27 00:43:27] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/ed/4d/4208861fc6562f8303dbdacc23f3e9dee3077ace47926616b5c86bbe087b/MobileInventoryCLI-0.4.68.tar.gz
+[2024-04-27 00:43:27] INFO root fetch - processPackages [qualitative-coding]: New version: [1.2.9] Old Version: [1.2.8]
+[2024-04-27 00:43:27] INFO root fetch - processPackages [airbyte-source-slack]: Downloading https://files.pythonhosted.org/packages/aa/70/fb2782fce89a412d0eaad02cb7f17b79627fee36adc532debc753ca4df9e/airbyte_source_slack-1.0.0.tar.gz
+[2024-04-27 00:43:27] INFO root fetch - processPackages [qualitative-coding]: Downloading https://files.pythonhosted.org/packages/83/6c/16e9cc2ba4e0b6b741120ead5c1dd1873ee97ad2ba25681f735cd916c765/qualitative_coding-1.2.8.tar.gz
+[2024-04-27 00:43:27] INFO root fetch - processPackages [xl-router]: Downloading https://files.pythonhosted.org/packages/e6/06/839af2dcde893edbd982cbbbce76d4d1c4d3a314cc367405bd47ec252af2/xl_router-0.7.1.tar.gz
+[2024-04-27 00:43:27] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/2e/a2/7012588f5d8e7742249d5d8d218e402cdea378bac1e6adcf32aeeed6bb4f/MobileInventoryCLI-0.4.69.tar.gz
+[2024-04-27 00:43:27] INFO root fetch - processPackages [xl-router]: executing diffoscope
+[2024-04-27 00:43:27] INFO root fetch - processPackages [xl-router]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xl_router-0.7.0.tar.gz tmp/xl_router-0.7.1.tar.gz --markdown 20240427/x/xl-router/0.7.0-0.7.1/README.md --exclude *.pyd
+[2024-04-27 00:43:27] ERROR root fetch - processPackages [airbyte-source-slack]: Unable to fetch info: No such project/version 'airbyte-source-slack' 1.1.0
+[2024-04-27 00:43:27] INFO root fetch - main [MainThread]: End processing [airbyte-source-slack] error
+[2024-04-27 00:43:27] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-04-27 00:43:27] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.68.tar.gz tmp/MobileInventoryCLI-0.4.69.tar.gz --markdown 20240427/M/MobileInventoryCLI/0.4.68-0.4.69/README.md --exclude *.pyd
+[2024-04-27 00:43:27] INFO root fetch - processPackages [qualitative-coding]: Downloading https://files.pythonhosted.org/packages/5b/f1/031858ce926fb3ac852b3f93e661ea3b78bf905bdd467186cea25488fc6a/qualitative_coding-1.2.9.tar.gz
+[2024-04-27 00:43:27] INFO root fetch - processPackages [qualitative-coding]: executing diffoscope
+[2024-04-27 00:43:27] INFO root fetch - processPackages [qualitative-coding]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qualitative_coding-1.2.8.tar.gz tmp/qualitative_coding-1.2.9.tar.gz --markdown 20240427/q/qualitative-coding/1.2.8-1.2.9/README.md --exclude *.pyd
+[2024-04-27 00:43:28] INFO root fetch - processPackages [xl-router]: Remove: archive file [/home/abi/fetcher/tmp/xl_router-0.7.0.tar.gz]
+[2024-04-27 00:43:28] INFO root fetch - processPackages [xl-router]: Remove: archive file [/home/abi/fetcher/tmp/xl_router-0.7.1.tar.gz]
+[2024-04-27 00:43:28] INFO root fetch - main [MainThread]: End processing [xl-router]: success
+[2024-04-27 00:43:28] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.68.tar.gz]
+[2024-04-27 00:43:28] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.69.tar.gz]
+[2024-04-27 00:43:28] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-04-27 00:43:28] INFO root fetch - processPackages [qualitative-coding]: Remove: archive file [/home/abi/fetcher/tmp/qualitative_coding-1.2.8.tar.gz]
+[2024-04-27 00:43:28] INFO root fetch - processPackages [qualitative-coding]: Remove: archive file [/home/abi/fetcher/tmp/qualitative_coding-1.2.9.tar.gz]
+[2024-04-27 00:43:28] INFO root fetch - main [MainThread]: End processing [qualitative-coding]: success
+[2024-04-27 00:43:28] INFO root fetch - main [MainThread]: Store serial: [22953703]
