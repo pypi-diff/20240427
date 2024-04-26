@@ -349,3 +349,33 @@ EOFError: EOF read where object expected
 [2024-04-27 00:17:07] INFO root fetch - processPackages [dragonfly-energy]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-energy-1.9.9.tar.gz]
 [2024-04-27 00:17:07] INFO root fetch - main [MainThread]: End processing [dragonfly-energy]: success
 [2024-04-27 00:17:07] INFO root fetch - main [MainThread]: Store serial: [22953464]
+[2024-04-27 00:19:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953464]
+[2024-04-27 00:19:16] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 00:19:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-pulumiservice
+[2024-04-27 00:19:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dektools
+[2024-04-27 00:19:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: latch-cloud-clients
+[2024-04-27 00:19:16] INFO root fetch - processPackages [dektools]: New version: [0.1.9] Old Version: [0.1.88]
+[2024-04-27 00:19:16] INFO root fetch - processPackages [pulumi-pulumiservice]: New version: [0.9.1a1689804796] Old Version: [0.9.0]
+[2024-04-27 00:19:16] INFO root fetch - processPackages [latch-cloud-clients]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-27 00:19:16] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/b4/f8/92e872cd38eb17274d716f1d4e1ae22a81fd3543d105bede9663eae91191/dektools-0.1.88.tar.gz
+[2024-04-27 00:19:16] INFO root fetch - processPackages [pulumi-pulumiservice]: Downloading https://files.pythonhosted.org/packages/7f/2a/9f172c6f432bb1aedfdc2e6f674950d4011b0a5dfb418490d7becd77c215/pulumi_pulumiservice-0.9.0.tar.gz
+[2024-04-27 00:19:16] INFO root fetch - processPackages [latch-cloud-clients]: Downloading https://files.pythonhosted.org/packages/25/b5/663f1ab0c734e24cc096e9ef2712dbe21d4916d1a88da89244ddddbe67ec/latch_cloud_clients-0.1.6.tar.gz
+[2024-04-27 00:19:16] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/68/56/90836602efe1f93ffb0ab3da68807fa41e85e124836bcc0c3cc2d1b2c539/dektools-0.1.9-py3-none-any.whl
+[2024-04-27 00:19:16] INFO root fetch - processPackages [dektools]: executing diffoscope
+[2024-04-27 00:19:16] INFO root fetch - processPackages [dektools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dektools-0.1.88.tar.gz tmp/dektools-0.1.9-py3-none-any.whl.zip --markdown 20240427/d/dektools/0.1.88-0.1.9/README.md --exclude *.pyd
+[2024-04-27 00:19:16] INFO root fetch - processPackages [latch-cloud-clients]: Downloading https://files.pythonhosted.org/packages/14/39/6038670b9eb4c1e4a72a17c6c8a653baa8b2ddf756c30c93dcd99123a525/latch_cloud_clients-0.1.7.tar.gz
+[2024-04-27 00:19:16] INFO root fetch - processPackages [pulumi-pulumiservice]: Downloading https://files.pythonhosted.org/packages/0d/88/d9123d1fbed34a277c17acb768dc334c7d111b33c5820b8a76ce41794601/pulumi_pulumiservice-0.9.1a1689804796.tar.gz
+[2024-04-27 00:19:17] INFO root fetch - processPackages [pulumi-pulumiservice]: executing diffoscope
+[2024-04-27 00:19:17] INFO root fetch - processPackages [pulumi-pulumiservice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_pulumiservice-0.9.0.tar.gz tmp/pulumi_pulumiservice-0.9.1a1689804796.tar.gz --markdown 20240427/p/pulumi-pulumiservice/0.9.0-0.9.1a1689804796/README.md --exclude *.pyd
+[2024-04-27 00:19:17] INFO root fetch - processPackages [latch-cloud-clients]: executing diffoscope
+[2024-04-27 00:19:17] INFO root fetch - processPackages [latch-cloud-clients]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latch_cloud_clients-0.1.6.tar.gz tmp/latch_cloud_clients-0.1.7.tar.gz --markdown 20240427/l/latch-cloud-clients/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-27 00:19:17] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.88.tar.gz]
+[2024-04-27 00:19:17] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.9-py3-none-any.whl.zip]
+[2024-04-27 00:19:17] INFO root fetch - main [MainThread]: End processing [dektools]: success
+[2024-04-27 00:19:17] INFO root fetch - processPackages [latch-cloud-clients]: Remove: archive file [/home/abi/fetcher/tmp/latch_cloud_clients-0.1.6.tar.gz]
+[2024-04-27 00:19:17] INFO root fetch - processPackages [latch-cloud-clients]: Remove: archive file [/home/abi/fetcher/tmp/latch_cloud_clients-0.1.7.tar.gz]
+[2024-04-27 00:19:17] INFO root fetch - main [MainThread]: End processing [latch-cloud-clients]: success
+[2024-04-27 00:19:17] INFO root fetch - processPackages [pulumi-pulumiservice]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_pulumiservice-0.9.0.tar.gz]
+[2024-04-27 00:19:17] INFO root fetch - processPackages [pulumi-pulumiservice]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_pulumiservice-0.9.1a1689804796.tar.gz]
+[2024-04-27 00:19:17] INFO root fetch - main [MainThread]: End processing [pulumi-pulumiservice]: success
+[2024-04-27 00:19:17] INFO root fetch - main [MainThread]: Store serial: [22953472]
