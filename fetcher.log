@@ -1451,3 +1451,33 @@ EOFError: EOF read where object expected
 [2024-04-27 01:20:34] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.9-py3-none-any.whl.zip]
 [2024-04-27 01:20:34] INFO root fetch - main [MainThread]: End processing [dektools]: success
 [2024-04-27 01:20:34] INFO root fetch - main [MainThread]: Store serial: [22953829]
+[2024-04-27 01:22:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953829]
+[2024-04-27 01:22:42] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 01:22:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dekshell
+[2024-04-27 01:22:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: honeybee-core
+[2024-04-27 01:22:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: datasette-secrets
+[2024-04-27 01:22:42] INFO root fetch - processPackages [dekshell]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-27 01:22:42] INFO root fetch - processPackages [datasette-secrets]: New version: [0.2] Old Version: [0.1a4]
+[2024-04-27 01:22:42] INFO root fetch - processPackages [dekshell]: Downloading https://files.pythonhosted.org/packages/f0/16/5c4ed0e980c75156dfbacc07d0e809eba0ceee2b4e7a8309c4a0a2ecdb34/dekshell-0.1.8.tar.gz
+[2024-04-27 01:22:42] INFO root fetch - processPackages [honeybee-core]: New version: [1.9.0] Old Version: [1.8.1]
+[2024-04-27 01:22:43] INFO root fetch - processPackages [dekshell]: Downloading https://files.pythonhosted.org/packages/e3/0a/b0b6b239daa50a425257d382890f5acf9e723bbf730c781eda304df290e4/dekshell-0.1.9.tar.gz
+[2024-04-27 01:22:43] INFO root fetch - processPackages [datasette-secrets]: Downloading https://files.pythonhosted.org/packages/26/08/4457e7149741d29fb8a570e3428aa9c758a4895c81113878ffd484f9d20b/datasette_secrets-0.1a4.tar.gz
+[2024-04-27 01:22:43] INFO root fetch - processPackages [honeybee-core]: Downloading https://files.pythonhosted.org/packages/25/88/7ed0aeb6b1cf0d4f003a3d3e96312cea0aff67017d50c5c9cd245c04f048/honeybee-core-1.8.1.tar.gz
+[2024-04-27 01:22:43] INFO root fetch - processPackages [dekshell]: executing diffoscope
+[2024-04-27 01:22:43] INFO root fetch - processPackages [dekshell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dekshell-0.1.8.tar.gz tmp/dekshell-0.1.9.tar.gz --markdown 20240427/d/dekshell/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-27 01:22:43] INFO root fetch - processPackages [datasette-secrets]: Downloading https://files.pythonhosted.org/packages/f3/c7/8b9b3fbe357d103f98d575721694331604ec81fa8deaa506d310e76cadcd/datasette_secrets-0.2.tar.gz
+[2024-04-27 01:22:43] INFO root fetch - processPackages [honeybee-core]: Downloading https://files.pythonhosted.org/packages/d8/9b/f2a81f9cdf6c2556a083efabd9c0d69bdf3eb0acefed3b55c9d5ed1bcb15/honeybee-core-1.9.0.tar.gz
+[2024-04-27 01:22:43] INFO root fetch - processPackages [datasette-secrets]: executing diffoscope
+[2024-04-27 01:22:43] INFO root fetch - processPackages [datasette-secrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datasette_secrets-0.1a4.tar.gz tmp/datasette_secrets-0.2.tar.gz --markdown 20240427/d/datasette-secrets/0.1a4-0.2/README.md --exclude *.pyd
+[2024-04-27 01:22:43] INFO root fetch - processPackages [honeybee-core]: executing diffoscope
+[2024-04-27 01:22:43] INFO root fetch - processPackages [honeybee-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeybee-core-1.8.1.tar.gz tmp/honeybee-core-1.9.0.tar.gz --markdown 20240427/h/honeybee-core/1.8.1-1.9.0/README.md --exclude *.pyd
+[2024-04-27 01:22:43] INFO root fetch - processPackages [dekshell]: Remove: archive file [/home/abi/fetcher/tmp/dekshell-0.1.8.tar.gz]
+[2024-04-27 01:22:43] INFO root fetch - processPackages [dekshell]: Remove: archive file [/home/abi/fetcher/tmp/dekshell-0.1.9.tar.gz]
+[2024-04-27 01:22:43] INFO root fetch - main [MainThread]: End processing [dekshell]: success
+[2024-04-27 01:22:44] INFO root fetch - processPackages [datasette-secrets]: Remove: archive file [/home/abi/fetcher/tmp/datasette_secrets-0.1a4.tar.gz]
+[2024-04-27 01:22:44] INFO root fetch - processPackages [datasette-secrets]: Remove: archive file [/home/abi/fetcher/tmp/datasette_secrets-0.2.tar.gz]
+[2024-04-27 01:22:44] INFO root fetch - main [MainThread]: End processing [datasette-secrets]: success
+[2024-04-27 01:22:44] INFO root fetch - processPackages [honeybee-core]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-core-1.8.1.tar.gz]
+[2024-04-27 01:22:44] INFO root fetch - processPackages [honeybee-core]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-core-1.9.0.tar.gz]
+[2024-04-27 01:22:44] INFO root fetch - main [MainThread]: End processing [honeybee-core]: success
+[2024-04-27 01:22:44] INFO root fetch - main [MainThread]: Store serial: [22953839]
