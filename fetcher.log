@@ -1420,3 +1420,15 @@ EOFError: EOF read where object expected
 [2024-04-27 01:14:10] INFO root fetch - processPackages [pyvista]: Remove: archive file [/home/abi/fetcher/tmp/pyvista-0.44.dev0.tar.gz]
 [2024-04-27 01:14:10] INFO root fetch - main [MainThread]: End processing [pyvista]: success
 [2024-04-27 01:14:10] INFO root fetch - main [MainThread]: Store serial: [22953821]
+[2024-04-27 01:16:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953821]
+[2024-04-27 01:16:18] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 01:16:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fgo-api-types
+[2024-04-27 01:16:18] INFO root fetch - processPackages [fgo-api-types]: New version: [2024.4.6.2.22.3] Old Version: [2024.4.26.5.20.19]
+[2024-04-27 01:16:18] INFO root fetch - processPackages [fgo-api-types]: Downloading https://files.pythonhosted.org/packages/38/cb/6d42b279a6a79c5894afba1e6f702230bd1caa4c1a591ebd1a37f5425859/fgo_api_types-2024.4.26.5.20.19.tar.gz
+[2024-04-27 01:16:19] INFO root fetch - processPackages [fgo-api-types]: Downloading https://files.pythonhosted.org/packages/b9/41/3dbb26f0f980c564a1e8ae75299afc724991934ffaf1a8a59ab70aafb784/fgo_api_types-2024.4.6.2.22.3.tar.gz
+[2024-04-27 01:16:19] INFO root fetch - processPackages [fgo-api-types]: executing diffoscope
+[2024-04-27 01:16:19] INFO root fetch - processPackages [fgo-api-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fgo_api_types-2024.4.26.5.20.19.tar.gz tmp/fgo_api_types-2024.4.6.2.22.3.tar.gz --markdown 20240427/f/fgo-api-types/2024.4.26.5.20.19-2024.4.6.2.22.3/README.md --exclude *.pyd
+[2024-04-27 01:16:19] INFO root fetch - processPackages [fgo-api-types]: Remove: archive file [/home/abi/fetcher/tmp/fgo_api_types-2024.4.26.5.20.19.tar.gz]
+[2024-04-27 01:16:19] INFO root fetch - processPackages [fgo-api-types]: Remove: archive file [/home/abi/fetcher/tmp/fgo_api_types-2024.4.6.2.22.3.tar.gz]
+[2024-04-27 01:16:19] INFO root fetch - main [MainThread]: End processing [fgo-api-types]: success
+[2024-04-27 01:16:19] INFO root fetch - main [MainThread]: Store serial: [22953824]
