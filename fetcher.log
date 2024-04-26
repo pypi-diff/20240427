@@ -847,3 +847,24 @@ EOFError: EOF read where object expected
 [2024-04-27 00:25:58] INFO root fetch - processPackages [trame-tweakpane]: Remove: archive file [/home/abi/fetcher/tmp/trame_tweakpane-0.1.2.tar.gz]
 [2024-04-27 00:25:58] INFO root fetch - main [MainThread]: End processing [trame-tweakpane]: success
 [2024-04-27 00:25:58] INFO root fetch - main [MainThread]: Store serial: [22953621]
+[2024-04-27 00:28:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953621]
+[2024-04-27 00:28:07] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 00:28:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gradio-leaderboard
+[2024-04-27 00:28:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vision-agent
+[2024-04-27 00:28:07] INFO root fetch - processPackages [gradio-leaderboard]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-27 00:28:07] INFO root fetch - processPackages [vision-agent]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-04-27 00:28:07] INFO root fetch - processPackages [gradio-leaderboard]: Downloading https://files.pythonhosted.org/packages/3b/b2/f97ad1d37e1732dcfe57474691de882a6d96fd79651536d4ccb9bcfa5cdf/gradio_leaderboard-0.0.5.tar.gz
+[2024-04-27 00:28:07] INFO root fetch - processPackages [vision-agent]: Downloading https://files.pythonhosted.org/packages/28/27/d7503c34b84bf2a9ad8ecae8a2308017f813277f53de929fe97742b6bc39/vision_agent-0.2.7.tar.gz
+[2024-04-27 00:28:08] INFO root fetch - processPackages [gradio-leaderboard]: Downloading https://files.pythonhosted.org/packages/92/46/bdeee0b8a7523c3a91c47229acdd1b43cd170eecd4349f3e1b9f7c089d27/gradio_leaderboard-0.0.6.tar.gz
+[2024-04-27 00:28:08] INFO root fetch - processPackages [gradio-leaderboard]: executing diffoscope
+[2024-04-27 00:28:08] INFO root fetch - processPackages [gradio-leaderboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gradio_leaderboard-0.0.5.tar.gz tmp/gradio_leaderboard-0.0.6.tar.gz --markdown 20240427/g/gradio-leaderboard/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-27 00:28:08] INFO root fetch - processPackages [vision-agent]: Downloading https://files.pythonhosted.org/packages/0c/95/4cc93c0448acda0068720c68eff075929f25ab799564de37eef47b7b2c10/vision_agent-0.2.8.tar.gz
+[2024-04-27 00:28:08] INFO root fetch - processPackages [vision-agent]: executing diffoscope
+[2024-04-27 00:28:08] INFO root fetch - processPackages [vision-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vision_agent-0.2.7.tar.gz tmp/vision_agent-0.2.8.tar.gz --markdown 20240427/v/vision-agent/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-04-27 00:28:09] INFO root fetch - processPackages [vision-agent]: Remove: archive file [/home/abi/fetcher/tmp/vision_agent-0.2.7.tar.gz]
+[2024-04-27 00:28:09] INFO root fetch - processPackages [vision-agent]: Remove: archive file [/home/abi/fetcher/tmp/vision_agent-0.2.8.tar.gz]
+[2024-04-27 00:28:09] INFO root fetch - main [MainThread]: End processing [vision-agent]: success
+[2024-04-27 00:28:14] INFO root fetch - processPackages [gradio-leaderboard]: Remove: archive file [/home/abi/fetcher/tmp/gradio_leaderboard-0.0.5.tar.gz]
+[2024-04-27 00:28:14] INFO root fetch - processPackages [gradio-leaderboard]: Remove: archive file [/home/abi/fetcher/tmp/gradio_leaderboard-0.0.6.tar.gz]
+[2024-04-27 00:28:14] INFO root fetch - main [MainThread]: End processing [gradio-leaderboard]: success
+[2024-04-27 00:28:14] INFO root fetch - main [MainThread]: Store serial: [22953627]
