@@ -1118,3 +1118,24 @@ EOFError: EOF read where object expected
 [2024-04-27 00:47:52] INFO root fetch - processPackages [lusid-sdk]: Remove: archive file [/home/abi/fetcher/tmp/lusid_sdk-2.1.7.tar.gz]
 [2024-04-27 00:47:52] INFO root fetch - main [MainThread]: End processing [lusid-sdk]: success
 [2024-04-27 00:47:52] INFO root fetch - main [MainThread]: Store serial: [22953715]
+[2024-04-27 00:49:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953715]
+[2024-04-27 00:50:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 00:50:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zscaler-sdk-python
+[2024-04-27 00:50:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cf-python
+[2024-04-27 00:50:01] INFO root fetch - processPackages [zscaler-sdk-python]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-27 00:50:01] INFO root fetch - processPackages [zscaler-sdk-python]: Downloading https://files.pythonhosted.org/packages/f1/b5/3e67bde446668a08a5853e49e22001cdc30c4ff4038d61d643aae8d56482/zscaler_sdk_python-0.1.3.tar.gz
+[2024-04-27 00:50:01] INFO root fetch - processPackages [cf-python]: New version: [3.9.0] Old Version: [3.8.0]
+[2024-04-27 00:50:01] INFO root fetch - processPackages [cf-python]: Downloading https://files.pythonhosted.org/packages/cc/a0/74a8ffc5769afc0f14232a85fb925f20f525d634590d05c5e5e53421e05a/cf-python-3.8.0.tar.gz
+[2024-04-27 00:50:02] INFO root fetch - processPackages [zscaler-sdk-python]: Downloading https://files.pythonhosted.org/packages/1f/6c/c18be5dfc85fcbdc69ef43e64d44733da8bade38a02ca3718d36fe04a8f8/zscaler_sdk_python-0.1.4.tar.gz
+[2024-04-27 00:50:02] INFO root fetch - processPackages [zscaler-sdk-python]: executing diffoscope
+[2024-04-27 00:50:02] INFO root fetch - processPackages [zscaler-sdk-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zscaler_sdk_python-0.1.3.tar.gz tmp/zscaler_sdk_python-0.1.4.tar.gz --markdown 20240427/z/zscaler-sdk-python/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-27 00:50:02] INFO root fetch - processPackages [cf-python]: Downloading https://files.pythonhosted.org/packages/57/88/0f449b2d50a3bc23032b766d00a28e0fbb8453eb874337193b5bf1767412/cf-python-3.9.0.tar.gz
+[2024-04-27 00:50:02] INFO root fetch - processPackages [zscaler-sdk-python]: Remove: archive file [/home/abi/fetcher/tmp/zscaler_sdk_python-0.1.3.tar.gz]
+[2024-04-27 00:50:02] INFO root fetch - processPackages [zscaler-sdk-python]: Remove: archive file [/home/abi/fetcher/tmp/zscaler_sdk_python-0.1.4.tar.gz]
+[2024-04-27 00:50:02] INFO root fetch - main [MainThread]: End processing [zscaler-sdk-python]: success
+[2024-04-27 00:50:03] INFO root fetch - processPackages [cf-python]: executing diffoscope
+[2024-04-27 00:50:03] INFO root fetch - processPackages [cf-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cf-python-3.8.0.tar.gz tmp/cf-python-3.9.0.tar.gz --markdown 20240427/c/cf-python/3.8.0-3.9.0/README.md --exclude *.pyd
+[2024-04-27 00:50:06] INFO root fetch - processPackages [cf-python]: Remove: archive file [/home/abi/fetcher/tmp/cf-python-3.8.0.tar.gz]
+[2024-04-27 00:50:06] INFO root fetch - processPackages [cf-python]: Remove: archive file [/home/abi/fetcher/tmp/cf-python-3.9.0.tar.gz]
+[2024-04-27 00:50:06] INFO root fetch - main [MainThread]: End processing [cf-python]: success
+[2024-04-27 00:50:06] INFO root fetch - main [MainThread]: Store serial: [22953720]
