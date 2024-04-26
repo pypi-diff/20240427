@@ -959,3 +959,11 @@ EOFError: EOF read where object expected
 [2024-04-27 00:34:44] INFO root fetch - processPackages [llvm-installer]: Remove: archive file [/home/abi/fetcher/tmp/llvm_installer-1.4.3.tar.gz]
 [2024-04-27 00:34:44] INFO root fetch - main [MainThread]: End processing [llvm-installer]: success
 [2024-04-27 00:34:44] INFO root fetch - main [MainThread]: Store serial: [22953665]
+[2024-04-27 00:36:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953665]
+[2024-04-27 00:36:54] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 00:36:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pydeephaven-ticking
+[2024-04-27 00:36:54] INFO root fetch - processPackages [pydeephaven-ticking]: New version: [0.34.0] Old Version: [0.33.3]
+[2024-04-27 00:36:54] INFO root fetch - processPackages [pydeephaven-ticking]: Downloading https://files.pythonhosted.org/packages/9a/20/a0e21ff5913b0fb49021246bfe8d8df03b05b29f72facce293cce2d97190/pydeephaven_ticking-0.33.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-27 00:36:55] WARNING root fetch - processPackages [pydeephaven-ticking]: Skipping package: exceeds size limit 10768084>=10485760
+[2024-04-27 00:36:55] INFO root fetch - main [MainThread]: End processing [pydeephaven-ticking] error
+[2024-04-27 00:36:55] INFO root fetch - main [MainThread]: Store serial: [22953672]
