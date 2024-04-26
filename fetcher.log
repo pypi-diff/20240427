@@ -967,3 +967,42 @@ EOFError: EOF read where object expected
 [2024-04-27 00:36:55] WARNING root fetch - processPackages [pydeephaven-ticking]: Skipping package: exceeds size limit 10768084>=10485760
 [2024-04-27 00:36:55] INFO root fetch - main [MainThread]: End processing [pydeephaven-ticking] error
 [2024-04-27 00:36:55] INFO root fetch - main [MainThread]: Store serial: [22953672]
+[2024-04-27 00:38:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953672]
+[2024-04-27 00:39:03] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 00:39:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vision-agent
+[2024-04-27 00:39:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tonic-textual
+[2024-04-27 00:39:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openmindat
+[2024-04-27 00:39:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: idinn
+[2024-04-27 00:39:03] INFO root fetch - processPackages [openmindat]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-27 00:39:03] INFO root fetch - processPackages [vision-agent]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-27 00:39:03] INFO root fetch - processPackages [openmindat]: Downloading https://files.pythonhosted.org/packages/8b/ac/853b13248422bc909618c2a83b6d7ae8e11ca8ea85fb333e9d172bb32c22/openmindat-0.0.5.tar.gz
+[2024-04-27 00:39:03] INFO root fetch - processPackages [vision-agent]: Downloading https://files.pythonhosted.org/packages/0c/95/4cc93c0448acda0068720c68eff075929f25ab799564de37eef47b7b2c10/vision_agent-0.2.8.tar.gz
+[2024-04-27 00:39:03] INFO root fetch - processPackages [tonic-textual]: New version: [1.3.0] Old Version: [1.2.1]
+[2024-04-27 00:39:03] INFO root fetch - processPackages [idinn]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-27 00:39:03] INFO root fetch - processPackages [tonic-textual]: Downloading https://files.pythonhosted.org/packages/bf/9a/565b2c4c8c58694a6c329fb973d7a6b40d25367e216c531f838880309b29/tonic_textual-1.2.1.tar.gz
+[2024-04-27 00:39:03] INFO root fetch - processPackages [idinn]: Downloading https://files.pythonhosted.org/packages/c7/ab/c62e9c7e5e36ff53516e2b7280f19c87ed642e4b83c779ab80eb29938c6f/idinn-0.1.3.tar.gz
+[2024-04-27 00:39:03] INFO root fetch - processPackages [openmindat]: Downloading https://files.pythonhosted.org/packages/1e/ee/693a78d737acd185e7d2a966f7e16ffb2ea1481d0311d44bd8aaaac5b58e/openmindat-0.0.6.tar.gz
+[2024-04-27 00:39:03] INFO root fetch - processPackages [vision-agent]: Downloading https://files.pythonhosted.org/packages/72/9f/90c2e26c1f92cadcd8c25d12307c9505ef1d189c73981f02b32432391cae/vision_agent-0.2.9.tar.gz
+[2024-04-27 00:39:04] INFO root fetch - processPackages [openmindat]: executing diffoscope
+[2024-04-27 00:39:04] INFO root fetch - processPackages [openmindat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openmindat-0.0.5.tar.gz tmp/openmindat-0.0.6.tar.gz --markdown 20240427/o/openmindat/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-27 00:39:04] INFO root fetch - processPackages [tonic-textual]: Downloading https://files.pythonhosted.org/packages/57/7e/1abb5a77042b58244a56bde2c9b60a9d97d3570fc624d0cde94b17f4d796/tonic_textual-1.3.0.tar.gz
+[2024-04-27 00:39:04] INFO root fetch - processPackages [tonic-textual]: executing diffoscope
+[2024-04-27 00:39:04] INFO root fetch - processPackages [tonic-textual]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tonic_textual-1.2.1.tar.gz tmp/tonic_textual-1.3.0.tar.gz --markdown 20240427/t/tonic-textual/1.2.1-1.3.0/README.md --exclude *.pyd
+[2024-04-27 00:39:04] INFO root fetch - processPackages [vision-agent]: executing diffoscope
+[2024-04-27 00:39:04] INFO root fetch - processPackages [vision-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vision_agent-0.2.8.tar.gz tmp/vision_agent-0.2.9.tar.gz --markdown 20240427/v/vision-agent/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-27 00:39:04] INFO root fetch - processPackages [idinn]: Downloading https://files.pythonhosted.org/packages/ae/82/085fdc4f669bafcf4685ad3ddb03e7f2fc6c36c80b22064537e47d2159c7/idinn-0.1.4.tar.gz
+[2024-04-27 00:39:04] INFO root fetch - processPackages [idinn]: executing diffoscope
+[2024-04-27 00:39:04] INFO root fetch - processPackages [idinn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/idinn-0.1.3.tar.gz tmp/idinn-0.1.4.tar.gz --markdown 20240427/i/idinn/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-27 00:39:04] INFO root fetch - processPackages [openmindat]: Remove: archive file [/home/abi/fetcher/tmp/openmindat-0.0.5.tar.gz]
+[2024-04-27 00:39:04] INFO root fetch - processPackages [openmindat]: Remove: archive file [/home/abi/fetcher/tmp/openmindat-0.0.6.tar.gz]
+[2024-04-27 00:39:04] INFO root fetch - main [MainThread]: End processing [openmindat]: success
+[2024-04-27 00:39:04] INFO root fetch - processPackages [tonic-textual]: Remove: archive file [/home/abi/fetcher/tmp/tonic_textual-1.2.1.tar.gz]
+[2024-04-27 00:39:04] INFO root fetch - processPackages [tonic-textual]: Remove: archive file [/home/abi/fetcher/tmp/tonic_textual-1.3.0.tar.gz]
+[2024-04-27 00:39:04] INFO root fetch - main [MainThread]: End processing [tonic-textual]: success
+[2024-04-27 00:39:04] INFO root fetch - processPackages [vision-agent]: Remove: archive file [/home/abi/fetcher/tmp/vision_agent-0.2.8.tar.gz]
+[2024-04-27 00:39:04] INFO root fetch - processPackages [vision-agent]: Remove: archive file [/home/abi/fetcher/tmp/vision_agent-0.2.9.tar.gz]
+[2024-04-27 00:39:04] INFO root fetch - main [MainThread]: End processing [vision-agent]: success
+[2024-04-27 00:39:05] INFO root fetch - processPackages [idinn]: Remove: archive file [/home/abi/fetcher/tmp/idinn-0.1.3.tar.gz]
+[2024-04-27 00:39:05] INFO root fetch - processPackages [idinn]: Remove: archive file [/home/abi/fetcher/tmp/idinn-0.1.4.tar.gz]
+[2024-04-27 00:39:05] INFO root fetch - main [MainThread]: End processing [idinn]: success
+[2024-04-27 00:39:05] INFO root fetch - main [MainThread]: Store serial: [22953683]
