@@ -1592,3 +1592,24 @@ EOFError: EOF read where object expected
 [2024-04-27 01:31:34] INFO root fetch - processPackages [zcmds]: Remove: archive file [/home/abi/fetcher/tmp/zcmds-1.4.9.tar.gz]
 [2024-04-27 01:31:34] INFO root fetch - main [MainThread]: End processing [zcmds]: success
 [2024-04-27 01:31:34] INFO root fetch - main [MainThread]: Store serial: [22953867]
+[2024-04-27 01:33:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953867]
+[2024-04-27 01:33:43] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 01:33:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: codeanim
+[2024-04-27 01:33:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pdftext
+[2024-04-27 01:33:43] INFO root fetch - processPackages [pdftext]: New version: [0.2.0] Old Version: [0.1.2]
+[2024-04-27 01:33:43] INFO root fetch - processPackages [pdftext]: Downloading https://files.pythonhosted.org/packages/c6/aa/7a23d18ce8c88d59bf774b21c850cf1d32ef0b90c773ee49ba2f7a633b84/pdftext-0.1.2.tar.gz
+[2024-04-27 01:33:43] INFO root fetch - processPackages [codeanim]: New version: [0.0.9] Old Version: [0.0.16]
+[2024-04-27 01:33:44] INFO root fetch - processPackages [codeanim]: Downloading https://files.pythonhosted.org/packages/fc/2a/677748ef8d2dc912b3c9abc861bda8fc502a47f8995f84e39ac2e36780ee/codeanim-0.0.16.tar.gz
+[2024-04-27 01:33:44] INFO root fetch - processPackages [pdftext]: Downloading https://files.pythonhosted.org/packages/af/87/3fcda6251a2c36dfe7f01ed872fcc0deda9a61d0bb9ae87b767263262011/pdftext-0.2.0.tar.gz
+[2024-04-27 01:33:44] INFO root fetch - processPackages [pdftext]: executing diffoscope
+[2024-04-27 01:33:44] INFO root fetch - processPackages [pdftext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdftext-0.1.2.tar.gz tmp/pdftext-0.2.0.tar.gz --markdown 20240427/p/pdftext/0.1.2-0.2.0/README.md --exclude *.pyd
+[2024-04-27 01:33:44] INFO root fetch - processPackages [codeanim]: Downloading https://files.pythonhosted.org/packages/0d/0a/113fb1061a227875dba0e8349c9477a7eb7d1b7d9bf479b7bbc7157fc9a1/codeanim-0.0.9.tar.gz
+[2024-04-27 01:33:44] INFO root fetch - processPackages [codeanim]: executing diffoscope
+[2024-04-27 01:33:44] INFO root fetch - processPackages [codeanim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codeanim-0.0.16.tar.gz tmp/codeanim-0.0.9.tar.gz --markdown 20240427/c/codeanim/0.0.16-0.0.9/README.md --exclude *.pyd
+[2024-04-27 01:33:44] INFO root fetch - processPackages [pdftext]: Remove: archive file [/home/abi/fetcher/tmp/pdftext-0.1.2.tar.gz]
+[2024-04-27 01:33:44] INFO root fetch - processPackages [pdftext]: Remove: archive file [/home/abi/fetcher/tmp/pdftext-0.2.0.tar.gz]
+[2024-04-27 01:33:44] INFO root fetch - main [MainThread]: End processing [pdftext]: success
+[2024-04-27 01:33:44] INFO root fetch - processPackages [codeanim]: Remove: archive file [/home/abi/fetcher/tmp/codeanim-0.0.16.tar.gz]
+[2024-04-27 01:33:44] INFO root fetch - processPackages [codeanim]: Remove: archive file [/home/abi/fetcher/tmp/codeanim-0.0.9.tar.gz]
+[2024-04-27 01:33:44] INFO root fetch - main [MainThread]: End processing [codeanim]: success
+[2024-04-27 01:33:44] INFO root fetch - main [MainThread]: Store serial: [22953873]
