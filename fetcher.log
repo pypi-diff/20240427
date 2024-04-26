@@ -874,3 +874,24 @@ EOFError: EOF read where object expected
 [2024-04-27 00:30:23] WARNING root fetch - processPackages [yt-data-collector]: Skipping, unable to determine old version
 [2024-04-27 00:30:23] INFO root fetch - main [MainThread]: End processing [yt-data-collector] error
 [2024-04-27 00:30:23] INFO root fetch - main [MainThread]: Store serial: [22953631]
+[2024-04-27 00:32:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953631]
+[2024-04-27 00:32:31] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 00:32:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rdat-kit
+[2024-04-27 00:32:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-gitlab-submodule
+[2024-04-27 00:32:31] INFO root fetch - processPackages [rdat-kit]: New version: [1.6.3] Old Version: [1.6.2]
+[2024-04-27 00:32:31] INFO root fetch - processPackages [python-gitlab-submodule]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-04-27 00:32:31] INFO root fetch - processPackages [rdat-kit]: Downloading https://files.pythonhosted.org/packages/7a/9d/3cee6e9472622ecd397f95c2c491bb90e5c6837e1f64cbb5c8120682ec59/rdat_kit-1.6.2.tar.gz
+[2024-04-27 00:32:31] INFO root fetch - processPackages [python-gitlab-submodule]: Downloading https://files.pythonhosted.org/packages/78/3e/06b3eb224356d2f519bf4202319b50a2aa2295cab62249c8e2c70e5b1a25/python-gitlab-submodule-0.2.4.tar.gz
+[2024-04-27 00:32:32] INFO root fetch - processPackages [rdat-kit]: Downloading https://files.pythonhosted.org/packages/3f/fc/fd4b3e4283ca4253ebdbd0774594b869f6d8ee4830fd72557f70b01b40d2/rdat_kit-1.6.3.tar.gz
+[2024-04-27 00:32:32] INFO root fetch - processPackages [python-gitlab-submodule]: Downloading https://files.pythonhosted.org/packages/70/7c/8cdd87089526fd61cc40153a02dea88914b172ed4969c767ede5f977f981/python_gitlab_submodule-0.2.5.tar.gz
+[2024-04-27 00:32:32] INFO root fetch - processPackages [rdat-kit]: executing diffoscope
+[2024-04-27 00:32:32] INFO root fetch - processPackages [rdat-kit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rdat_kit-1.6.2.tar.gz tmp/rdat_kit-1.6.3.tar.gz --markdown 20240427/r/rdat-kit/1.6.2-1.6.3/README.md --exclude *.pyd
+[2024-04-27 00:32:32] INFO root fetch - processPackages [python-gitlab-submodule]: executing diffoscope
+[2024-04-27 00:32:32] INFO root fetch - processPackages [python-gitlab-submodule]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-gitlab-submodule-0.2.4.tar.gz tmp/python_gitlab_submodule-0.2.5.tar.gz --markdown 20240427/p/python-gitlab-submodule/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-04-27 00:32:32] INFO root fetch - processPackages [rdat-kit]: Remove: archive file [/home/abi/fetcher/tmp/rdat_kit-1.6.2.tar.gz]
+[2024-04-27 00:32:32] INFO root fetch - processPackages [rdat-kit]: Remove: archive file [/home/abi/fetcher/tmp/rdat_kit-1.6.3.tar.gz]
+[2024-04-27 00:32:32] INFO root fetch - main [MainThread]: End processing [rdat-kit]: success
+[2024-04-27 00:32:33] INFO root fetch - processPackages [python-gitlab-submodule]: Remove: archive file [/home/abi/fetcher/tmp/python-gitlab-submodule-0.2.4.tar.gz]
+[2024-04-27 00:32:33] INFO root fetch - processPackages [python-gitlab-submodule]: Remove: archive file [/home/abi/fetcher/tmp/python_gitlab_submodule-0.2.5.tar.gz]
+[2024-04-27 00:32:33] INFO root fetch - main [MainThread]: End processing [python-gitlab-submodule]: success
+[2024-04-27 00:32:33] INFO root fetch - main [MainThread]: Store serial: [22953636]
