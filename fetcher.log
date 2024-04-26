@@ -895,3 +895,67 @@ EOFError: EOF read where object expected
 [2024-04-27 00:32:33] INFO root fetch - processPackages [python-gitlab-submodule]: Remove: archive file [/home/abi/fetcher/tmp/python_gitlab_submodule-0.2.5.tar.gz]
 [2024-04-27 00:32:33] INFO root fetch - main [MainThread]: End processing [python-gitlab-submodule]: success
 [2024-04-27 00:32:33] INFO root fetch - main [MainThread]: Store serial: [22953636]
+[2024-04-27 00:34:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953636]
+[2024-04-27 00:34:41] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-27 00:34:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mh-moe
+[2024-04-27 00:34:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-commandx
+[2024-04-27 00:34:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llvm-installer
+[2024-04-27 00:34:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-commandx
+[2024-04-27 00:34:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: viper-in-python
+[2024-04-27 00:34:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: scgt
+[2024-04-27 00:34:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gigax
+[2024-04-27 00:34:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pulumi-commandx
+[2024-04-27 00:34:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: google-cloud-jupyter-config
+[2024-04-27 00:34:41] INFO root fetch - processPackages [viper-in-python]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-04-27 00:34:41] WARNING root fetch - processPackages [gigax]: Skipping, unable to determine old version
+[2024-04-27 00:34:41] INFO root fetch - main [MainThread]: End processing [gigax] error
+[2024-04-27 00:34:41] INFO root fetch - processPackages [llvm-installer]: New version: [1.4.3] Old Version: [1.4.2]
+[2024-04-27 00:34:41] INFO root fetch - processPackages [pulumi-commandx]: New version: [0.1.1a1714170267] Old Version: [0.1.1a1714170257]
+[2024-04-27 00:34:41] INFO root fetch - processPackages [pulumi-commandx]: New version: [0.1.1a1714170267] Old Version: [0.1.1a1714170257]
+[2024-04-27 00:34:41] INFO root fetch - processPackages [pulumi-commandx]: New version: [0.1.1a1714170267] Old Version: [0.1.1a1714170257]
+[2024-04-27 00:34:41] INFO root fetch - processPackages [viper-in-python]: Downloading https://files.pythonhosted.org/packages/8c/1d/1c46a7c098270a736d7318d92df962833616207acb033ee4d11d79cb3395/viper-in-python-1.0.6.tar.gz
+[2024-04-27 00:34:41] WARNING root fetch - processPackages [mh-moe]: Skipping, unable to determine old version
+[2024-04-27 00:34:41] INFO root fetch - main [MainThread]: End processing [mh-moe] error
+[2024-04-27 00:34:42] INFO root fetch - processPackages [scgt]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-27 00:34:42] INFO root fetch - processPackages [google-cloud-jupyter-config]: New version: [0.0.7] Old Version: [0.0.5]
+[2024-04-27 00:34:42] WARNING root fetch - processPackages [viper-in-python]: Skipping package: exceeds size limit 10671976>=10485760
+[2024-04-27 00:34:42] INFO root fetch - main [MainThread]: End processing [viper-in-python] error
+[2024-04-27 00:34:42] INFO root fetch - processPackages [pulumi-commandx]: Downloading https://files.pythonhosted.org/packages/1c/ae/493fb113ccff264de1cef5e685a47f71e1405ec671bd8546bc1720a8e7e6/pulumi_commandx-0.1.1a1714170257.tar.gz
+[2024-04-27 00:34:42] INFO root fetch - processPackages [pulumi-commandx]: Downloading https://files.pythonhosted.org/packages/1c/ae/493fb113ccff264de1cef5e685a47f71e1405ec671bd8546bc1720a8e7e6/pulumi_commandx-0.1.1a1714170257.tar.gz
+[2024-04-27 00:34:42] INFO root fetch - processPackages [pulumi-commandx]: Downloading https://files.pythonhosted.org/packages/1c/ae/493fb113ccff264de1cef5e685a47f71e1405ec671bd8546bc1720a8e7e6/pulumi_commandx-0.1.1a1714170257.tar.gz
+[2024-04-27 00:34:42] INFO root fetch - processPackages [llvm-installer]: Downloading https://files.pythonhosted.org/packages/80/7a/fa52dd1b3caad3c49e3b54ad7c88cfc4eeb44f01d01d56dec0f0606e226c/llvm_installer-1.4.2.tar.gz
+[2024-04-27 00:34:42] INFO root fetch - processPackages [google-cloud-jupyter-config]: Downloading https://files.pythonhosted.org/packages/95/1e/eccbd310ab37a36a2bb06f245bc3077111ad7c26705abbfa12fbffe08649/google-cloud-jupyter-config-0.0.5.tar.gz
+[2024-04-27 00:34:42] INFO root fetch - processPackages [scgt]: Downloading https://files.pythonhosted.org/packages/54/80/0b3fd032b1fce41c918467fc4bedacf5a0d3093fe57373d4a3c36b0596d2/scgt-0.0.7.tar.gz
+[2024-04-27 00:34:42] INFO root fetch - processPackages [llvm-installer]: Downloading https://files.pythonhosted.org/packages/82/9d/9d76f9f1be27563394224992bfed897b49f8c55abed33cc908182aa155ca/llvm_installer-1.4.3.tar.gz
+[2024-04-27 00:34:42] INFO root fetch - processPackages [pulumi-commandx]: Downloading https://files.pythonhosted.org/packages/e2/65/586628bf7307e199535e6e92fd5a2c7f89620be79819fcbc08c2d776d93c/pulumi_commandx-0.1.1a1714170267.tar.gz
+[2024-04-27 00:34:42] INFO root fetch - processPackages [pulumi-commandx]: Downloading https://files.pythonhosted.org/packages/e2/65/586628bf7307e199535e6e92fd5a2c7f89620be79819fcbc08c2d776d93c/pulumi_commandx-0.1.1a1714170267.tar.gz
+[2024-04-27 00:34:42] INFO root fetch - processPackages [google-cloud-jupyter-config]: Downloading https://files.pythonhosted.org/packages/29/45/1f845b373438533da2bd18ddc8c6998ec0bf87f990d1d114459f98462e0e/google_cloud_jupyter_config-0.0.7.tar.gz
+[2024-04-27 00:34:42] INFO root fetch - processPackages [scgt]: Downloading https://files.pythonhosted.org/packages/ae/e4/c914a126774ed72d28c26c9050c74dfdfd52c6abc2eabfcba773f37a2ccb/scgt-0.0.8.tar.gz
+[2024-04-27 00:34:42] INFO root fetch - processPackages [pulumi-commandx]: Downloading https://files.pythonhosted.org/packages/e2/65/586628bf7307e199535e6e92fd5a2c7f89620be79819fcbc08c2d776d93c/pulumi_commandx-0.1.1a1714170267.tar.gz
+[2024-04-27 00:34:42] INFO root fetch - processPackages [llvm-installer]: executing diffoscope
+[2024-04-27 00:34:42] INFO root fetch - processPackages [llvm-installer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llvm_installer-1.4.2.tar.gz tmp/llvm_installer-1.4.3.tar.gz --markdown 20240427/l/llvm-installer/1.4.2-1.4.3/README.md --exclude *.pyd
+[2024-04-27 00:34:42] INFO root fetch - processPackages [scgt]: executing diffoscope
+[2024-04-27 00:34:42] INFO root fetch - processPackages [scgt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scgt-0.0.7.tar.gz tmp/scgt-0.0.8.tar.gz --markdown 20240427/s/scgt/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-27 00:34:42] INFO root fetch - processPackages [pulumi-commandx]: executing diffoscope
+[2024-04-27 00:34:42] INFO root fetch - processPackages [pulumi-commandx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_commandx-0.1.1a1714170257.tar.gz tmp/pulumi_commandx-0.1.1a1714170267.tar.gz --markdown 20240427/p/pulumi-commandx/0.1.1a1714170257-0.1.1a1714170267/README.md --exclude *.pyd
+[2024-04-27 00:34:42] INFO root fetch - processPackages [google-cloud-jupyter-config]: executing diffoscope
+[2024-04-27 00:34:42] INFO root fetch - processPackages [google-cloud-jupyter-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/google-cloud-jupyter-config-0.0.5.tar.gz tmp/google_cloud_jupyter_config-0.0.7.tar.gz --markdown 20240427/g/google-cloud-jupyter-config/0.0.5-0.0.7/README.md --exclude *.pyd
+[2024-04-27 00:34:42] INFO root fetch - processPackages [pulumi-commandx]: executing diffoscope
+[2024-04-27 00:34:42] INFO root fetch - processPackages [pulumi-commandx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_commandx-0.1.1a1714170257.tar.gz tmp/pulumi_commandx-0.1.1a1714170267.tar.gz --markdown 20240427/p/pulumi-commandx/0.1.1a1714170257-0.1.1a1714170267/README.md --exclude *.pyd
+[2024-04-27 00:34:42] INFO root fetch - processPackages [pulumi-commandx]: executing diffoscope
+[2024-04-27 00:34:42] INFO root fetch - processPackages [pulumi-commandx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_commandx-0.1.1a1714170257.tar.gz tmp/pulumi_commandx-0.1.1a1714170267.tar.gz --markdown 20240427/p/pulumi-commandx/0.1.1a1714170257-0.1.1a1714170267/README.md --exclude *.pyd
+[2024-04-27 00:34:43] INFO root fetch - processPackages [scgt]: Remove: archive file [/home/abi/fetcher/tmp/scgt-0.0.7.tar.gz]
+[2024-04-27 00:34:43] INFO root fetch - processPackages [scgt]: Remove: archive file [/home/abi/fetcher/tmp/scgt-0.0.8.tar.gz]
+[2024-04-27 00:34:43] INFO root fetch - main [MainThread]: End processing [scgt]: success
+[2024-04-27 00:34:43] INFO root fetch - processPackages [google-cloud-jupyter-config]: Remove: archive file [/home/abi/fetcher/tmp/google-cloud-jupyter-config-0.0.5.tar.gz]
+[2024-04-27 00:34:43] INFO root fetch - processPackages [google-cloud-jupyter-config]: Remove: archive file [/home/abi/fetcher/tmp/google_cloud_jupyter_config-0.0.7.tar.gz]
+[2024-04-27 00:34:43] INFO root fetch - main [MainThread]: End processing [google-cloud-jupyter-config]: success
+[2024-04-27 00:34:43] INFO root fetch - processPackages [pulumi-commandx]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_commandx-0.1.1a1714170257.tar.gz]
+[2024-04-27 00:34:43] INFO root fetch - processPackages [pulumi-commandx]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_commandx-0.1.1a1714170267.tar.gz]
+[2024-04-27 00:34:43] INFO root fetch - main [MainThread]: End processing [pulumi-commandx]: success
+[2024-04-27 00:34:43] INFO root fetch - main [MainThread]: End processing [pulumi-commandx]: success
+[2024-04-27 00:34:43] INFO root fetch - main [MainThread]: End processing [pulumi-commandx]: success
+[2024-04-27 00:34:44] INFO root fetch - processPackages [llvm-installer]: Remove: archive file [/home/abi/fetcher/tmp/llvm_installer-1.4.2.tar.gz]
+[2024-04-27 00:34:44] INFO root fetch - processPackages [llvm-installer]: Remove: archive file [/home/abi/fetcher/tmp/llvm_installer-1.4.3.tar.gz]
+[2024-04-27 00:34:44] INFO root fetch - main [MainThread]: End processing [llvm-installer]: success
+[2024-04-27 00:34:44] INFO root fetch - main [MainThread]: Store serial: [22953665]
