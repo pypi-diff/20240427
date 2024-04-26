@@ -94,3 +94,33 @@
 [2024-04-27 00:03:55] INFO root fetch - processPackages [pyload-ng]: Remove: archive file [/home/abi/fetcher/tmp/pyload_ng-0.5.0b3.dev85.tar.gz]
 [2024-04-27 00:03:55] INFO root fetch - main [MainThread]: End processing [pyload-ng]: success
 [2024-04-27 00:03:55] INFO root fetch - main [MainThread]: Store serial: [22953397]
+[2024-04-27 00:05:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953397]
+[2024-04-27 00:06:03] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 00:06:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: malevich-space
+[2024-04-27 00:06:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: magnets
+[2024-04-27 00:06:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xl-router
+[2024-04-27 00:06:03] INFO root fetch - processPackages [malevich-space]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-04-27 00:06:03] INFO root fetch - processPackages [xl-router]: New version: [0.7.0] Old Version: [0.6.9]
+[2024-04-27 00:06:03] INFO root fetch - processPackages [malevich-space]: Downloading https://files.pythonhosted.org/packages/3e/e8/4a3118e7e00fb6f4ee4717ac9f41c1f7d851c0d4827c6dcd036dc26325b1/malevich_space-0.4.8.tar.gz
+[2024-04-27 00:06:03] INFO root fetch - processPackages [magnets]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-27 00:06:03] INFO root fetch - processPackages [xl-router]: Downloading https://files.pythonhosted.org/packages/33/53/7dc9a2a3e734b01c1f7e5ad5044ed83c6a717d326e4fea6b2c02e94aeb72/xl_router-0.6.9.tar.gz
+[2024-04-27 00:06:04] INFO root fetch - processPackages [magnets]: Downloading https://files.pythonhosted.org/packages/0b/7a/4c14bd944806584d2a433560e04e6fec7c6148a24699f479b5c6b7757b04/magnets-0.1.7.tar.gz
+[2024-04-27 00:06:04] INFO root fetch - processPackages [xl-router]: Downloading https://files.pythonhosted.org/packages/39/d5/9e538199f2a5caf705812ce84095fdca98c4511a52d715f1081eecd65ba6/xl_router-0.7.0.tar.gz
+[2024-04-27 00:06:04] INFO root fetch - processPackages [malevich-space]: Downloading https://files.pythonhosted.org/packages/dc/ab/47d152787e634bfae81bae05d2fb910c21ab44dc32a6e6ee46e0596288b9/malevich_space-0.4.9.tar.gz
+[2024-04-27 00:06:04] INFO root fetch - processPackages [xl-router]: executing diffoscope
+[2024-04-27 00:06:04] INFO root fetch - processPackages [xl-router]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xl_router-0.6.9.tar.gz tmp/xl_router-0.7.0.tar.gz --markdown 20240427/x/xl-router/0.6.9-0.7.0/README.md --exclude *.pyd
+[2024-04-27 00:06:04] INFO root fetch - processPackages [malevich-space]: executing diffoscope
+[2024-04-27 00:06:04] INFO root fetch - processPackages [malevich-space]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/malevich_space-0.4.8.tar.gz tmp/malevich_space-0.4.9.tar.gz --markdown 20240427/m/malevich-space/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-04-27 00:06:04] INFO root fetch - processPackages [magnets]: Downloading https://files.pythonhosted.org/packages/37/01/aa5110b5cfe62c4c5dac3c48b6e4642ae86ee2fb7993edc7cb28cf01e1df/magnets-0.1.8.tar.gz
+[2024-04-27 00:06:04] INFO root fetch - processPackages [magnets]: executing diffoscope
+[2024-04-27 00:06:04] INFO root fetch - processPackages [magnets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magnets-0.1.7.tar.gz tmp/magnets-0.1.8.tar.gz --markdown 20240427/m/magnets/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-27 00:06:04] INFO root fetch - processPackages [xl-router]: Remove: archive file [/home/abi/fetcher/tmp/xl_router-0.6.9.tar.gz]
+[2024-04-27 00:06:04] INFO root fetch - processPackages [xl-router]: Remove: archive file [/home/abi/fetcher/tmp/xl_router-0.7.0.tar.gz]
+[2024-04-27 00:06:04] INFO root fetch - main [MainThread]: End processing [xl-router]: success
+[2024-04-27 00:06:05] INFO root fetch - processPackages [malevich-space]: Remove: archive file [/home/abi/fetcher/tmp/malevich_space-0.4.8.tar.gz]
+[2024-04-27 00:06:05] INFO root fetch - processPackages [malevich-space]: Remove: archive file [/home/abi/fetcher/tmp/malevich_space-0.4.9.tar.gz]
+[2024-04-27 00:06:05] INFO root fetch - main [MainThread]: End processing [malevich-space]: success
+[2024-04-27 00:06:05] INFO root fetch - processPackages [magnets]: Remove: archive file [/home/abi/fetcher/tmp/magnets-0.1.7.tar.gz]
+[2024-04-27 00:06:05] INFO root fetch - processPackages [magnets]: Remove: archive file [/home/abi/fetcher/tmp/magnets-0.1.8.tar.gz]
+[2024-04-27 00:06:05] INFO root fetch - main [MainThread]: End processing [magnets]: success
+[2024-04-27 00:06:05] INFO root fetch - main [MainThread]: Store serial: [22953405]
