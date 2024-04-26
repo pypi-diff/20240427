@@ -1190,3 +1190,27 @@ EOFError: EOF read where object expected
 [2024-04-27 00:52:18] INFO root fetch - processPackages [rocm-docs-core]: Remove: archive file [/home/abi/fetcher/tmp/rocm_docs_core-1.1.1.tar.gz]
 [2024-04-27 00:52:18] INFO root fetch - main [MainThread]: End processing [rocm-docs-core]: success
 [2024-04-27 00:52:18] INFO root fetch - main [MainThread]: Store serial: [22953738]
+[2024-04-27 00:54:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953738]
+[2024-04-27 00:54:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 00:54:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ragdaemon
+[2024-04-27 00:54:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: invoicing-pdf-TPMC-test
+[2024-04-27 00:54:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: miso-tool
+[2024-04-27 00:54:28] INFO root fetch - processPackages [ragdaemon]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-27 00:54:28] INFO root fetch - processPackages [miso-tool]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-27 00:54:28] ERROR root fetch - processPackages [invoicing-pdf-TPMC-test]: Unable to get metadata: No such project 'invoicing-pdf-TPMC-test'
+[2024-04-27 00:54:28] INFO root fetch - main [MainThread]: End processing [invoicing-pdf-TPMC-test] error
+[2024-04-27 00:54:28] INFO root fetch - processPackages [ragdaemon]: Downloading https://files.pythonhosted.org/packages/7a/29/f49d54ca06ef77820e25c57361896c4d61e8583820bd01a4a4fc1d36e9a8/ragdaemon-0.2.8.tar.gz
+[2024-04-27 00:54:28] INFO root fetch - processPackages [miso-tool]: Downloading https://files.pythonhosted.org/packages/10/c9/4fe0d23ff6e9b7f986bdc96568a1d2867b52d5651d0ef8d238d1a0de528e/miso_tool-0.0.5.tar.gz
+[2024-04-27 00:54:28] INFO root fetch - processPackages [miso-tool]: Downloading https://files.pythonhosted.org/packages/0f/dc/0d62fe47213377c71ca4047746b2249b0dd9b97ac5496ab845a2438071fa/miso_tool-0.0.6.tar.gz
+[2024-04-27 00:54:28] INFO root fetch - processPackages [ragdaemon]: Downloading https://files.pythonhosted.org/packages/f2/08/31ceffa8343c60010ddc1fe192cca186e03cbb0848c560a82f7c26eb81e2/ragdaemon-0.2.9.tar.gz
+[2024-04-27 00:54:28] INFO root fetch - processPackages [miso-tool]: executing diffoscope
+[2024-04-27 00:54:28] INFO root fetch - processPackages [miso-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/miso_tool-0.0.5.tar.gz tmp/miso_tool-0.0.6.tar.gz --markdown 20240427/m/miso-tool/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-27 00:54:28] INFO root fetch - processPackages [ragdaemon]: executing diffoscope
+[2024-04-27 00:54:28] INFO root fetch - processPackages [ragdaemon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ragdaemon-0.2.8.tar.gz tmp/ragdaemon-0.2.9.tar.gz --markdown 20240427/r/ragdaemon/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-27 00:54:29] INFO root fetch - processPackages [miso-tool]: Remove: archive file [/home/abi/fetcher/tmp/miso_tool-0.0.5.tar.gz]
+[2024-04-27 00:54:29] INFO root fetch - processPackages [miso-tool]: Remove: archive file [/home/abi/fetcher/tmp/miso_tool-0.0.6.tar.gz]
+[2024-04-27 00:54:29] INFO root fetch - main [MainThread]: End processing [miso-tool]: success
+[2024-04-27 00:54:29] INFO root fetch - processPackages [ragdaemon]: Remove: archive file [/home/abi/fetcher/tmp/ragdaemon-0.2.8.tar.gz]
+[2024-04-27 00:54:29] INFO root fetch - processPackages [ragdaemon]: Remove: archive file [/home/abi/fetcher/tmp/ragdaemon-0.2.9.tar.gz]
+[2024-04-27 00:54:29] INFO root fetch - main [MainThread]: End processing [ragdaemon]: success
+[2024-04-27 00:54:29] INFO root fetch - main [MainThread]: Store serial: [22953748]
