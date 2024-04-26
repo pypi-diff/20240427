@@ -232,3 +232,50 @@ EOFError: EOF read where object expected
 [2024-04-27 00:10:29] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.1.9.tar.gz]
 [2024-04-27 00:10:29] INFO root fetch - main [MainThread]: End processing [pygpt-net]: success
 [2024-04-27 00:10:29] INFO root fetch - main [MainThread]: Store serial: [22953425]
+[2024-04-27 00:12:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953425]
+[2024-04-27 00:12:37] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-27 00:12:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gradio-leaderboard
+[2024-04-27 00:12:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deephaven-core
+[2024-04-27 00:12:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: deephaven-server
+[2024-04-27 00:12:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pydeephaven
+[2024-04-27 00:12:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: streamlit-chat-handler
+[2024-04-27 00:12:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: trame-tweakpane
+[2024-04-27 00:12:37] INFO root fetch - processPackages [streamlit-chat-handler]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-27 00:12:37] WARNING root fetch - processPackages [trame-tweakpane]: Skipping, unable to determine old version
+[2024-04-27 00:12:37] INFO root fetch - main [MainThread]: End processing [trame-tweakpane] error
+[2024-04-27 00:12:37] INFO root fetch - processPackages [gradio-leaderboard]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-27 00:12:37] INFO root fetch - processPackages [streamlit-chat-handler]: Downloading https://files.pythonhosted.org/packages/85/28/6bae5fdce021d84e0810eedad7eb50a9351f331bebcfff622ffa62acd08e/streamlit_chat_handler-0.0.5.tar.gz
+[2024-04-27 00:12:37] INFO root fetch - processPackages [deephaven-core]: New version: [0.34.0] Old Version: [0.33.3]
+[2024-04-27 00:12:37] INFO root fetch - processPackages [deephaven-server]: New version: [0.34.0] Old Version: [0.33.3]
+[2024-04-27 00:12:37] INFO root fetch - processPackages [pydeephaven]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-27 00:12:37] INFO root fetch - processPackages [gradio-leaderboard]: Downloading https://files.pythonhosted.org/packages/3b/b2/f97ad1d37e1732dcfe57474691de882a6d96fd79651536d4ccb9bcfa5cdf/gradio_leaderboard-0.0.5.tar.gz
+[2024-04-27 00:12:37] INFO root fetch - processPackages [deephaven-core]: Downloading https://files.pythonhosted.org/packages/f9/e2/76a78a8702225d73177743e72d646553689756e93c3b6a19a0aa54584afe/deephaven_core-0.33.3-py3-none-any.whl
+[2024-04-27 00:12:37] INFO root fetch - processPackages [pydeephaven]: Downloading https://files.pythonhosted.org/packages/f4/d6/073c81e81e07ab90a283b7ca9315e273567b95873c9dc0afbf6cccb67255/pydeephaven-0.8.0-py3-none-any.whl
+[2024-04-27 00:12:37] INFO root fetch - processPackages [deephaven-server]: Downloading https://files.pythonhosted.org/packages/70/f9/daa7a2906b7d09905c059c3a6e959cff849559549d35f54f231457059a22/deephaven_server-0.33.3-py3-none-any.whl
+[2024-04-27 00:12:38] WARNING root fetch - processPackages [deephaven-server]: Skipping package: exceeds size limit 259565637>=10485760
+[2024-04-27 00:12:38] INFO root fetch - main [MainThread]: End processing [deephaven-server] error
+[2024-04-27 00:12:38] INFO root fetch - processPackages [streamlit-chat-handler]: Downloading https://files.pythonhosted.org/packages/24/f2/88e73c5f276e88b376e13c28ea5da19f4c165be7a4e208960bb90919b459/streamlit_chat_handler-0.0.6.tar.gz
+[2024-04-27 00:12:38] INFO root fetch - processPackages [streamlit-chat-handler]: executing diffoscope
+[2024-04-27 00:12:38] INFO root fetch - processPackages [streamlit-chat-handler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit_chat_handler-0.0.5.tar.gz tmp/streamlit_chat_handler-0.0.6.tar.gz --markdown 20240427/s/streamlit-chat-handler/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-27 00:12:38] INFO root fetch - processPackages [deephaven-core]: Downloading https://files.pythonhosted.org/packages/e6/f1/3f08b79c8c90c1b68f756b299531ae8de60f8a03e4daa9474754353c7c19/deephaven_core-0.34.0-py3-none-any.whl
+[2024-04-27 00:12:38] INFO root fetch - processPackages [gradio-leaderboard]: Downloading https://files.pythonhosted.org/packages/92/46/bdeee0b8a7523c3a91c47229acdd1b43cd170eecd4349f3e1b9f7c089d27/gradio_leaderboard-0.0.6.tar.gz
+[2024-04-27 00:12:38] INFO root fetch - processPackages [deephaven-core]: executing diffoscope
+[2024-04-27 00:12:38] INFO root fetch - processPackages [deephaven-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deephaven_core-0.33.3-py3-none-any.whl.zip tmp/deephaven_core-0.34.0-py3-none-any.whl.zip --markdown 20240427/d/deephaven-core/0.33.3-0.34.0/README.md --exclude *.pyd
+[2024-04-27 00:12:38] INFO root fetch - processPackages [pydeephaven]: Downloading https://files.pythonhosted.org/packages/ba/d1/29e55a8d2d903d0fe4a0231e278a16816ae5fa4ee5b06795a577e848fefe/pydeephaven-0.9.0-py3-none-any.whl
+[2024-04-27 00:12:38] INFO root fetch - processPackages [pydeephaven]: executing diffoscope
+[2024-04-27 00:12:38] INFO root fetch - processPackages [pydeephaven]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydeephaven-0.8.0-py3-none-any.whl.zip tmp/pydeephaven-0.9.0-py3-none-any.whl.zip --markdown 20240427/p/pydeephaven/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-27 00:12:38] INFO root fetch - processPackages [gradio-leaderboard]: executing diffoscope
+[2024-04-27 00:12:38] INFO root fetch - processPackages [gradio-leaderboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gradio_leaderboard-0.0.5.tar.gz tmp/gradio_leaderboard-0.0.6.tar.gz --markdown 20240427/g/gradio-leaderboard/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-27 00:12:38] INFO root fetch - processPackages [streamlit-chat-handler]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_chat_handler-0.0.5.tar.gz]
+[2024-04-27 00:12:38] INFO root fetch - processPackages [streamlit-chat-handler]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_chat_handler-0.0.6.tar.gz]
+[2024-04-27 00:12:38] INFO root fetch - main [MainThread]: End processing [streamlit-chat-handler]: success
+[2024-04-27 00:12:39] INFO root fetch - processPackages [pydeephaven]: Remove: archive file [/home/abi/fetcher/tmp/pydeephaven-0.8.0-py3-none-any.whl.zip]
+[2024-04-27 00:12:39] INFO root fetch - processPackages [pydeephaven]: Remove: archive file [/home/abi/fetcher/tmp/pydeephaven-0.9.0-py3-none-any.whl.zip]
+[2024-04-27 00:12:39] INFO root fetch - main [MainThread]: End processing [pydeephaven]: success
+[2024-04-27 00:12:39] INFO root fetch - processPackages [deephaven-core]: Remove: archive file [/home/abi/fetcher/tmp/deephaven_core-0.33.3-py3-none-any.whl.zip]
+[2024-04-27 00:12:39] INFO root fetch - processPackages [deephaven-core]: Remove: archive file [/home/abi/fetcher/tmp/deephaven_core-0.34.0-py3-none-any.whl.zip]
+[2024-04-27 00:12:39] INFO root fetch - main [MainThread]: End processing [deephaven-core]: success
+[2024-04-27 00:12:44] INFO root fetch - processPackages [gradio-leaderboard]: Remove: archive file [/home/abi/fetcher/tmp/gradio_leaderboard-0.0.5.tar.gz]
+[2024-04-27 00:12:44] INFO root fetch - processPackages [gradio-leaderboard]: Remove: archive file [/home/abi/fetcher/tmp/gradio_leaderboard-0.0.6.tar.gz]
+[2024-04-27 00:12:44] INFO root fetch - main [MainThread]: End processing [gradio-leaderboard]: success
+[2024-04-27 00:12:44] INFO root fetch - main [MainThread]: Store serial: [22953441]
