@@ -1951,3 +1951,42 @@ EOFError: EOF read where object expected
 [2024-04-27 01:53:31] INFO root fetch - processPackages [atksh-utils]: Remove: archive file [/home/abi/fetcher/tmp/atksh_utils-0.8.6.tar.gz]
 [2024-04-27 01:53:31] INFO root fetch - main [MainThread]: End processing [atksh-utils]: success
 [2024-04-27 01:53:31] INFO root fetch - main [MainThread]: Store serial: [22954055]
+[2024-04-27 01:55:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22954055]
+[2024-04-27 01:55:40] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 01:55:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: computer-vision-design-patterns
+[2024-04-27 01:55:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: psf
+[2024-04-27 01:55:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: archaic
+[2024-04-27 01:55:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aiotgbot
+[2024-04-27 01:55:40] INFO root fetch - processPackages [archaic]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-27 01:55:40] INFO root fetch - processPackages [archaic]: Downloading https://files.pythonhosted.org/packages/e0/6a/dcdcce7a09a797b7a2281c2c1467abd090411a066d806635705d9546c1ac/archaic-0.1.0.tar.gz
+[2024-04-27 01:55:40] INFO root fetch - processPackages [psf]: New version: [2024.4.24] Old Version: [2024.1.6]
+[2024-04-27 01:55:40] INFO root fetch - processPackages [computer-vision-design-patterns]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-27 01:55:40] INFO root fetch - processPackages [aiotgbot]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-04-27 01:55:40] INFO root fetch - processPackages [computer-vision-design-patterns]: Downloading https://files.pythonhosted.org/packages/f5/a2/b169dc1e4e595b9d595171e1c8b3f233b9b6a4504d5eddc0b623676dffde/computer_vision_design_patterns-0.1.1.tar.gz
+[2024-04-27 01:55:40] INFO root fetch - processPackages [archaic]: Downloading https://files.pythonhosted.org/packages/2b/a0/ccb8f99e7440d5e3f6d7e78d2e4735d8d145156966aba967b8047a78aca7/archaic-0.1.1.tar.gz
+[2024-04-27 01:55:40] INFO root fetch - processPackages [psf]: Downloading https://files.pythonhosted.org/packages/88/3f/e9d79e753477ac8dfe6237dd6fd41cd941e5b802ea515fa52aa8cd44e6c6/psf-2024.1.6.tar.gz
+[2024-04-27 01:55:40] INFO root fetch - processPackages [aiotgbot]: Downloading https://files.pythonhosted.org/packages/2c/b4/eb1fcd2ce7e71bb09e5b555b150815f457fe43c9877f345e57ee8a732c2a/aiotgbot-0.9.5.tar.gz
+[2024-04-27 01:55:40] INFO root fetch - processPackages [archaic]: executing diffoscope
+[2024-04-27 01:55:40] INFO root fetch - processPackages [archaic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/archaic-0.1.0.tar.gz tmp/archaic-0.1.1.tar.gz --markdown 20240427/a/archaic/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-27 01:55:41] INFO root fetch - processPackages [computer-vision-design-patterns]: Downloading https://files.pythonhosted.org/packages/d4/a3/ced454bb159b91136177fa0c8a4d15b0d6700b96ce964b71fa7ae38b8543/computer_vision_design_patterns-0.1.2.tar.gz
+[2024-04-27 01:55:41] INFO root fetch - processPackages [psf]: Downloading https://files.pythonhosted.org/packages/21/f5/a53dc1c780b56c0a6dc4c3a5298f0ca68521acd3acb040e9a02c7f228677/psf-2024.4.24.tar.gz
+[2024-04-27 01:55:41] INFO root fetch - processPackages [aiotgbot]: Downloading https://files.pythonhosted.org/packages/0f/85/301c585e2f01d3a250660e7afb2c7cefe9ffbc63b809bca915b8c5868450/aiotgbot-0.9.6.tar.gz
+[2024-04-27 01:55:41] INFO root fetch - processPackages [computer-vision-design-patterns]: executing diffoscope
+[2024-04-27 01:55:41] INFO root fetch - processPackages [computer-vision-design-patterns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/computer_vision_design_patterns-0.1.1.tar.gz tmp/computer_vision_design_patterns-0.1.2.tar.gz --markdown 20240427/c/computer-vision-design-patterns/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-27 01:55:41] INFO root fetch - processPackages [aiotgbot]: executing diffoscope
+[2024-04-27 01:55:41] INFO root fetch - processPackages [aiotgbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiotgbot-0.9.5.tar.gz tmp/aiotgbot-0.9.6.tar.gz --markdown 20240427/a/aiotgbot/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-04-27 01:55:41] INFO root fetch - processPackages [psf]: executing diffoscope
+[2024-04-27 01:55:41] INFO root fetch - processPackages [psf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psf-2024.1.6.tar.gz tmp/psf-2024.4.24.tar.gz --markdown 20240427/p/psf/2024.1.6-2024.4.24/README.md --exclude *.pyd
+[2024-04-27 01:55:41] INFO root fetch - processPackages [archaic]: Remove: archive file [/home/abi/fetcher/tmp/archaic-0.1.0.tar.gz]
+[2024-04-27 01:55:41] INFO root fetch - processPackages [archaic]: Remove: archive file [/home/abi/fetcher/tmp/archaic-0.1.1.tar.gz]
+[2024-04-27 01:55:41] INFO root fetch - main [MainThread]: End processing [archaic]: success
+[2024-04-27 01:55:41] INFO root fetch - processPackages [computer-vision-design-patterns]: Remove: archive file [/home/abi/fetcher/tmp/computer_vision_design_patterns-0.1.1.tar.gz]
+[2024-04-27 01:55:41] INFO root fetch - processPackages [computer-vision-design-patterns]: Remove: archive file [/home/abi/fetcher/tmp/computer_vision_design_patterns-0.1.2.tar.gz]
+[2024-04-27 01:55:41] INFO root fetch - main [MainThread]: End processing [computer-vision-design-patterns]: success
+[2024-04-27 01:55:41] INFO root fetch - processPackages [aiotgbot]: Remove: archive file [/home/abi/fetcher/tmp/aiotgbot-0.9.5.tar.gz]
+[2024-04-27 01:55:41] INFO root fetch - processPackages [aiotgbot]: Remove: archive file [/home/abi/fetcher/tmp/aiotgbot-0.9.6.tar.gz]
+[2024-04-27 01:55:41] INFO root fetch - main [MainThread]: End processing [aiotgbot]: success
+[2024-04-27 01:55:41] INFO root fetch - processPackages [psf]: Remove: archive file [/home/abi/fetcher/tmp/psf-2024.1.6.tar.gz]
+[2024-04-27 01:55:41] INFO root fetch - processPackages [psf]: Remove: archive file [/home/abi/fetcher/tmp/psf-2024.4.24.tar.gz]
+[2024-04-27 01:55:41] INFO root fetch - main [MainThread]: End processing [psf]: success
+[2024-04-27 01:55:41] INFO root fetch - main [MainThread]: Store serial: [22954088]
