@@ -1300,3 +1300,24 @@ EOFError: EOF read where object expected
 [2024-04-27 01:03:09] INFO root fetch - processPackages [django-hierarchical-models]: Remove: archive file [/home/abi/fetcher/tmp/django_hierarchical_models-1.2.0.tar.gz]
 [2024-04-27 01:03:09] INFO root fetch - main [MainThread]: End processing [django-hierarchical-models]: success
 [2024-04-27 01:03:09] INFO root fetch - main [MainThread]: Store serial: [22953781]
+[2024-04-27 01:05:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953781]
+[2024-04-27 01:05:19] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 01:05:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: indexify-extractor-sdk
+[2024-04-27 01:05:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ethraid
+[2024-04-27 01:05:19] INFO root fetch - processPackages [indexify-extractor-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 01:05:19] INFO root fetch - processPackages [indexify-extractor-sdk]: Downloading https://files.pythonhosted.org/packages/25/fb/8dcfb1ddf593ada77ca7aebff3d9add072c6922c5b3efddeb31e991f5968/indexify-extractor-sdk-0.0.8.tar.gz
+[2024-04-27 01:05:19] INFO root fetch - processPackages [ethraid]: New version: [2.5.2] Old Version: [2.5.1]
+[2024-04-27 01:05:19] INFO root fetch - processPackages [indexify-extractor-sdk]: Downloading https://files.pythonhosted.org/packages/6b/69/1a816cb64f283ffbd7a285fc0aacdf84a8f4bc7214eaab78ac42be5e93ba/indexify-extractor-sdk-0.0.9.tar.gz
+[2024-04-27 01:05:19] INFO root fetch - processPackages [ethraid]: Downloading https://files.pythonhosted.org/packages/2c/2c/7aa6f35c939074c1bdf724fa45d43872b851803053ecf8e9f6cc097ca96b/ethraid-2.5.1.tar.gz
+[2024-04-27 01:05:19] INFO root fetch - processPackages [indexify-extractor-sdk]: executing diffoscope
+[2024-04-27 01:05:19] INFO root fetch - processPackages [indexify-extractor-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indexify-extractor-sdk-0.0.8.tar.gz tmp/indexify-extractor-sdk-0.0.9.tar.gz --markdown 20240427/i/indexify-extractor-sdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 01:05:20] INFO root fetch - processPackages [ethraid]: Downloading https://files.pythonhosted.org/packages/4b/a8/0a390f1648a8facef5c33c8603fcbd54785743b04b9fb81cf83445e3ef62/ethraid-2.5.2.tar.gz
+[2024-04-27 01:05:20] INFO root fetch - processPackages [indexify-extractor-sdk]: Remove: archive file [/home/abi/fetcher/tmp/indexify-extractor-sdk-0.0.8.tar.gz]
+[2024-04-27 01:05:20] INFO root fetch - processPackages [indexify-extractor-sdk]: Remove: archive file [/home/abi/fetcher/tmp/indexify-extractor-sdk-0.0.9.tar.gz]
+[2024-04-27 01:05:20] INFO root fetch - main [MainThread]: End processing [indexify-extractor-sdk]: success
+[2024-04-27 01:05:20] INFO root fetch - processPackages [ethraid]: executing diffoscope
+[2024-04-27 01:05:20] INFO root fetch - processPackages [ethraid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ethraid-2.5.1.tar.gz tmp/ethraid-2.5.2.tar.gz --markdown 20240427/e/ethraid/2.5.1-2.5.2/README.md --exclude *.pyd
+[2024-04-27 01:05:25] INFO root fetch - processPackages [ethraid]: Remove: archive file [/home/abi/fetcher/tmp/ethraid-2.5.1.tar.gz]
+[2024-04-27 01:05:25] INFO root fetch - processPackages [ethraid]: Remove: archive file [/home/abi/fetcher/tmp/ethraid-2.5.2.tar.gz]
+[2024-04-27 01:05:25] INFO root fetch - main [MainThread]: End processing [ethraid]: success
+[2024-04-27 01:05:25] INFO root fetch - main [MainThread]: Store serial: [22953786]
