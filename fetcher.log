@@ -1738,3 +1738,42 @@ EOFError: EOF read where object expected
 [2024-04-27 01:42:28] INFO root fetch - processPackages [CyRK]: Remove: archive file [/home/abi/fetcher/tmp/cyrk-0.8.7.tar.gz]
 [2024-04-27 01:42:28] INFO root fetch - main [MainThread]: End processing [CyRK]: success
 [2024-04-27 01:42:28] INFO root fetch - main [MainThread]: Store serial: [22953953]
+[2024-04-27 01:44:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953953]
+[2024-04-27 01:44:36] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 01:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fixinventorycore
+[2024-04-27 01:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: KnockoffOrigins
+[2024-04-27 01:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zcmds
+[2024-04-27 01:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pylabeladjust
+[2024-04-27 01:44:36] INFO root fetch - processPackages [KnockoffOrigins]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-27 01:44:36] INFO root fetch - processPackages [pylabeladjust]: New version: [0.1.12] Old Version: [0.1.10]
+[2024-04-27 01:44:36] INFO root fetch - processPackages [zcmds]: New version: [1.4.9] Old Version: [1.4.82]
+[2024-04-27 01:44:36] INFO root fetch - processPackages [fixinventorycore]: New version: [4.0.5] Old Version: [4.0.4]
+[2024-04-27 01:44:36] INFO root fetch - processPackages [pylabeladjust]: Downloading https://files.pythonhosted.org/packages/54/3c/35d641ace08ec9161e3caaab43d39773821e911b37fe9949fd0da9b8fe08/pylabeladjust-0.1.10.tar.gz
+[2024-04-27 01:44:36] INFO root fetch - processPackages [zcmds]: Downloading https://files.pythonhosted.org/packages/95/4f/5ab9adff1c51c57f4c42be74385cd21e5fc985ff50f8422a0504f62848a4/zcmds-1.4.82.tar.gz
+[2024-04-27 01:44:36] INFO root fetch - processPackages [fixinventorycore]: Downloading https://files.pythonhosted.org/packages/8f/d7/d7bbdefd650da8c07d2c06beffc8434030d8daefc932b5a296fcd1d6fbcb/fixinventorycore-4.0.4.tar.gz
+[2024-04-27 01:44:36] INFO root fetch - processPackages [pylabeladjust]: Downloading https://files.pythonhosted.org/packages/05/bc/a0482f8b5c0a98ca29e77a6353c3ec35d954bf6962a58b0bbc8ea2c308f2/pylabeladjust-0.1.12.tar.gz
+[2024-04-27 01:44:37] INFO root fetch - processPackages [KnockoffOrigins]: Downloading https://files.pythonhosted.org/packages/f4/c6/66e80d7ee2f7017285eb597b37e1e662141be7ee20293dd73cb1c298012a/knockofforigins-0.1.0.tar.gz
+[2024-04-27 01:44:37] INFO root fetch - processPackages [pylabeladjust]: executing diffoscope
+[2024-04-27 01:44:37] INFO root fetch - processPackages [pylabeladjust]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylabeladjust-0.1.10.tar.gz tmp/pylabeladjust-0.1.12.tar.gz --markdown 20240427/p/pylabeladjust/0.1.10-0.1.12/README.md --exclude *.pyd
+[2024-04-27 01:44:37] INFO root fetch - processPackages [zcmds]: Downloading https://files.pythonhosted.org/packages/ee/c7/785afe3eb6342eebc74522af1d496ca09cf10ab8aab660d94d91cfbef640/zcmds-1.4.9.tar.gz
+[2024-04-27 01:44:37] INFO root fetch - processPackages [zcmds]: executing diffoscope
+[2024-04-27 01:44:37] INFO root fetch - processPackages [zcmds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zcmds-1.4.82.tar.gz tmp/zcmds-1.4.9.tar.gz --markdown 20240427/z/zcmds/1.4.82-1.4.9/README.md --exclude *.pyd
+[2024-04-27 01:44:37] INFO root fetch - processPackages [KnockoffOrigins]: Downloading https://files.pythonhosted.org/packages/97/b1/4d9b8d630c4658a4cf279e9cdab127890f9166ec72a07fff8e96c55e2c4a/knockofforigins-0.1.1.tar.gz
+[2024-04-27 01:44:37] INFO root fetch - processPackages [KnockoffOrigins]: executing diffoscope
+[2024-04-27 01:44:37] INFO root fetch - processPackages [KnockoffOrigins]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/knockofforigins-0.1.0.tar.gz tmp/knockofforigins-0.1.1.tar.gz --markdown 20240427/K/KnockoffOrigins/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-27 01:44:37] INFO root fetch - processPackages [fixinventorycore]: Downloading https://files.pythonhosted.org/packages/11/ef/0914fb34b44de777c03b174bec7714fa60395ddc02d3a0fda05ea43e2f62/fixinventorycore-4.0.5.tar.gz
+[2024-04-27 01:44:37] INFO root fetch - processPackages [pylabeladjust]: Remove: archive file [/home/abi/fetcher/tmp/pylabeladjust-0.1.10.tar.gz]
+[2024-04-27 01:44:37] INFO root fetch - processPackages [pylabeladjust]: Remove: archive file [/home/abi/fetcher/tmp/pylabeladjust-0.1.12.tar.gz]
+[2024-04-27 01:44:37] INFO root fetch - main [MainThread]: End processing [pylabeladjust]: success
+[2024-04-27 01:44:38] INFO root fetch - processPackages [zcmds]: Remove: archive file [/home/abi/fetcher/tmp/zcmds-1.4.82.tar.gz]
+[2024-04-27 01:44:38] INFO root fetch - processPackages [zcmds]: Remove: archive file [/home/abi/fetcher/tmp/zcmds-1.4.9.tar.gz]
+[2024-04-27 01:44:38] INFO root fetch - main [MainThread]: End processing [zcmds]: success
+[2024-04-27 01:44:38] INFO root fetch - processPackages [KnockoffOrigins]: Remove: archive file [/home/abi/fetcher/tmp/knockofforigins-0.1.0.tar.gz]
+[2024-04-27 01:44:38] INFO root fetch - processPackages [KnockoffOrigins]: Remove: archive file [/home/abi/fetcher/tmp/knockofforigins-0.1.1.tar.gz]
+[2024-04-27 01:44:38] INFO root fetch - main [MainThread]: End processing [KnockoffOrigins]: success
+[2024-04-27 01:44:38] INFO root fetch - processPackages [fixinventorycore]: executing diffoscope
+[2024-04-27 01:44:38] INFO root fetch - processPackages [fixinventorycore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fixinventorycore-4.0.4.tar.gz tmp/fixinventorycore-4.0.5.tar.gz --markdown 20240427/f/fixinventorycore/4.0.4-4.0.5/README.md --exclude *.pyd
+[2024-04-27 01:44:41] INFO root fetch - processPackages [fixinventorycore]: Remove: archive file [/home/abi/fetcher/tmp/fixinventorycore-4.0.4.tar.gz]
+[2024-04-27 01:44:41] INFO root fetch - processPackages [fixinventorycore]: Remove: archive file [/home/abi/fetcher/tmp/fixinventorycore-4.0.5.tar.gz]
+[2024-04-27 01:44:41] INFO root fetch - main [MainThread]: End processing [fixinventorycore]: success
+[2024-04-27 01:44:41] INFO root fetch - main [MainThread]: Store serial: [22953967]
