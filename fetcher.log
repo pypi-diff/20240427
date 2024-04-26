@@ -279,3 +279,52 @@ EOFError: EOF read where object expected
 [2024-04-27 00:12:44] INFO root fetch - processPackages [gradio-leaderboard]: Remove: archive file [/home/abi/fetcher/tmp/gradio_leaderboard-0.0.6.tar.gz]
 [2024-04-27 00:12:44] INFO root fetch - main [MainThread]: End processing [gradio-leaderboard]: success
 [2024-04-27 00:12:44] INFO root fetch - main [MainThread]: Store serial: [22953441]
+[2024-04-27 00:14:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953441]
+[2024-04-27 00:14:55] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-27 00:14:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: selenium-network-intercept
+[2024-04-27 00:14:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: viper-in-python
+[2024-04-27 00:14:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: coastsat-package
+[2024-04-27 00:14:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Mira-SimPEG
+[2024-04-27 00:14:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: macaw-auth
+[2024-04-27 00:14:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pathologyfoundation
+[2024-04-27 00:14:55] INFO root fetch - processPackages [coastsat-package]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-27 00:14:55] INFO root fetch - processPackages [pathologyfoundation]: New version: [0.2] Old Version: [0.1.9]
+[2024-04-27 00:14:55] INFO root fetch - processPackages [selenium-network-intercept]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-27 00:14:55] INFO root fetch - processPackages [coastsat-package]: Downloading https://files.pythonhosted.org/packages/c5/b9/bbe0f91e773f2ff00b4883939c25278cb13099ac01d05593e3bae87ad82c/coastsat_package-0.1.8.tar.gz
+[2024-04-27 00:14:55] INFO root fetch - processPackages [pathologyfoundation]: Downloading https://files.pythonhosted.org/packages/96/57/ee9b7173ebcc66dbaafdaa1e177f117923a567c43f49cec6eb0c743a5ea5/pathologyfoundation-0.1.9.tar.gz
+[2024-04-27 00:14:55] INFO root fetch - processPackages [Mira-SimPEG]: New version: [1!0.19.0.8a2] Old Version: [0.19.0.dev8]
+[2024-04-27 00:14:55] INFO root fetch - processPackages [macaw-auth]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-04-27 00:14:55] INFO root fetch - processPackages [viper-in-python]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-04-27 00:14:55] WARNING root fetch - processPackages [coastsat-package]: Skipping package: exceeds size limit 32859514>=10485760
+[2024-04-27 00:14:55] INFO root fetch - main [MainThread]: End processing [coastsat-package] error
+[2024-04-27 00:14:55] INFO root fetch - processPackages [selenium-network-intercept]: Downloading https://files.pythonhosted.org/packages/2e/ef/2e191d0155d1a64df023af7c4a6fad9e0fc9525a13e10d02c0b072a405f3/selenium-network-intercept-1.0.1.tar.gz
+[2024-04-27 00:14:56] INFO root fetch - processPackages [Mira-SimPEG]: Downloading https://files.pythonhosted.org/packages/cb/e3/7ddecfbf8f726d9c8478030aede517e1354bfe12f435927fc3f4a84b8fe9/mira_simpeg-0.19.0.dev8.tar.gz
+[2024-04-27 00:14:56] INFO root fetch - processPackages [macaw-auth]: Downloading https://files.pythonhosted.org/packages/28/b6/f7268247e0dec436cfe0d8a4d162035e18fc5cee9cdd92e901ba802cd5dc/macaw_auth-1.1.0.tar.gz
+[2024-04-27 00:14:56] INFO root fetch - processPackages [pathologyfoundation]: Downloading https://files.pythonhosted.org/packages/3b/9c/d7406fe35510839c46c61bb03679e4227af244c63bcb5aeaec92eb6c719e/pathologyfoundation-0.2.tar.gz
+[2024-04-27 00:14:56] INFO root fetch - processPackages [viper-in-python]: Downloading https://files.pythonhosted.org/packages/8c/1d/1c46a7c098270a736d7318d92df962833616207acb033ee4d11d79cb3395/viper-in-python-1.0.6.tar.gz
+[2024-04-27 00:14:56] WARNING root fetch - processPackages [viper-in-python]: Skipping package: exceeds size limit 10671976>=10485760
+[2024-04-27 00:14:56] INFO root fetch - main [MainThread]: End processing [viper-in-python] error
+[2024-04-27 00:14:56] INFO root fetch - processPackages [pathologyfoundation]: executing diffoscope
+[2024-04-27 00:14:56] INFO root fetch - processPackages [pathologyfoundation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pathologyfoundation-0.1.9.tar.gz tmp/pathologyfoundation-0.2.tar.gz --markdown 20240427/p/pathologyfoundation/0.1.9-0.2/README.md --exclude *.pyd
+[2024-04-27 00:14:56] INFO root fetch - processPackages [selenium-network-intercept]: Downloading https://files.pythonhosted.org/packages/db/4e/2ea535bd790e8457aa7e6d4e16042c4f716150016b634fdbcf7fe902f5d7/selenium_network_intercept-1.0.2.tar.gz
+[2024-04-27 00:14:56] INFO root fetch - processPackages [Mira-SimPEG]: Downloading https://files.pythonhosted.org/packages/5e/6c/cb3b0b6cc85d8a4baac76da56a340663ceac349a84ccc79f52a08c5ce4ed/mira_simpeg-1!0.19.0.8a2.tar.gz
+[2024-04-27 00:14:56] INFO root fetch - processPackages [selenium-network-intercept]: executing diffoscope
+[2024-04-27 00:14:56] INFO root fetch - processPackages [selenium-network-intercept]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/selenium-network-intercept-1.0.1.tar.gz tmp/selenium_network_intercept-1.0.2.tar.gz --markdown 20240427/s/selenium-network-intercept/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-27 00:14:56] INFO root fetch - processPackages [macaw-auth]: Downloading https://files.pythonhosted.org/packages/5b/a4/f23090671b20dcd37970332fdc00d87aae106769d472d2bcd3834a4fb3d3/macaw_auth-1.2.0.tar.gz
+[2024-04-27 00:14:56] INFO root fetch - processPackages [macaw-auth]: executing diffoscope
+[2024-04-27 00:14:56] INFO root fetch - processPackages [macaw-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macaw_auth-1.1.0.tar.gz tmp/macaw_auth-1.2.0.tar.gz --markdown 20240427/m/macaw-auth/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-04-27 00:14:56] INFO root fetch - processPackages [Mira-SimPEG]: executing diffoscope
+[2024-04-27 00:14:56] INFO root fetch - processPackages [Mira-SimPEG]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mira_simpeg-0.19.0.dev8.tar.gz tmp/mira_simpeg-1!0.19.0.8a2.tar.gz --markdown 20240427/M/Mira-SimPEG/0.19.0.dev8-1!0.19.0.8a2/README.md --exclude *.pyd
+[2024-04-27 00:14:56] INFO root fetch - processPackages [pathologyfoundation]: Remove: archive file [/home/abi/fetcher/tmp/pathologyfoundation-0.1.9.tar.gz]
+[2024-04-27 00:14:56] INFO root fetch - processPackages [pathologyfoundation]: Remove: archive file [/home/abi/fetcher/tmp/pathologyfoundation-0.2.tar.gz]
+[2024-04-27 00:14:56] INFO root fetch - main [MainThread]: End processing [pathologyfoundation]: success
+[2024-04-27 00:14:56] INFO root fetch - processPackages [selenium-network-intercept]: Remove: archive file [/home/abi/fetcher/tmp/selenium-network-intercept-1.0.1.tar.gz]
+[2024-04-27 00:14:56] INFO root fetch - processPackages [selenium-network-intercept]: Remove: archive file [/home/abi/fetcher/tmp/selenium_network_intercept-1.0.2.tar.gz]
+[2024-04-27 00:14:56] INFO root fetch - main [MainThread]: End processing [selenium-network-intercept]: success
+[2024-04-27 00:14:57] INFO root fetch - processPackages [macaw-auth]: Remove: archive file [/home/abi/fetcher/tmp/macaw_auth-1.1.0.tar.gz]
+[2024-04-27 00:14:57] INFO root fetch - processPackages [macaw-auth]: Remove: archive file [/home/abi/fetcher/tmp/macaw_auth-1.2.0.tar.gz]
+[2024-04-27 00:14:57] INFO root fetch - main [MainThread]: End processing [macaw-auth]: success
+[2024-04-27 00:14:57] INFO root fetch - processPackages [Mira-SimPEG]: Remove: archive file [/home/abi/fetcher/tmp/mira_simpeg-0.19.0.dev8.tar.gz]
+[2024-04-27 00:14:57] INFO root fetch - processPackages [Mira-SimPEG]: Remove: archive file [/home/abi/fetcher/tmp/mira_simpeg-1!0.19.0.8a2.tar.gz]
+[2024-04-27 00:14:57] INFO root fetch - main [MainThread]: End processing [Mira-SimPEG]: success
+[2024-04-27 00:14:57] INFO root fetch - main [MainThread]: Store serial: [22953458]
