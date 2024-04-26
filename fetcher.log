@@ -1006,3 +1006,42 @@ EOFError: EOF read where object expected
 [2024-04-27 00:39:05] INFO root fetch - processPackages [idinn]: Remove: archive file [/home/abi/fetcher/tmp/idinn-0.1.4.tar.gz]
 [2024-04-27 00:39:05] INFO root fetch - main [MainThread]: End processing [idinn]: success
 [2024-04-27 00:39:05] INFO root fetch - main [MainThread]: Store serial: [22953683]
+[2024-04-27 00:41:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953683]
+[2024-04-27 00:41:15] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 00:41:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mecode-viewer
+[2024-04-27 00:41:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-commandx
+[2024-04-27 00:41:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: NEMO-billing
+[2024-04-27 00:41:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: MobileInventoryCLI
+[2024-04-27 00:41:15] INFO root fetch - processPackages [pulumi-commandx]: New version: [0.1.1a1714170267] Old Version: [0.1.1a1714170257]
+[2024-04-27 00:41:15] INFO root fetch - processPackages [mecode-viewer]: New version: [0.3.8] Old Version: [0.3.7]
+[2024-04-27 00:41:15] INFO root fetch - processPackages [NEMO-billing]: New version: [2.9.2] Old Version: [2.9.1]
+[2024-04-27 00:41:15] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.68] Old Version: [0.4.67]
+[2024-04-27 00:41:15] INFO root fetch - processPackages [pulumi-commandx]: Downloading https://files.pythonhosted.org/packages/1c/ae/493fb113ccff264de1cef5e685a47f71e1405ec671bd8546bc1720a8e7e6/pulumi_commandx-0.1.1a1714170257.tar.gz
+[2024-04-27 00:41:15] INFO root fetch - processPackages [NEMO-billing]: Downloading https://files.pythonhosted.org/packages/6a/b1/01730e48ca5379b406cbd3106434d2d180a03af950d2772203efbb7fb0c9/NEMO_billing-2.9.1-py3-none-any.whl
+[2024-04-27 00:41:15] INFO root fetch - processPackages [mecode-viewer]: Downloading https://files.pythonhosted.org/packages/bf/84/22500261b845196a3fc5e60922d5d5556e503184c142daeafe4c5cda402a/mecode_viewer-0.3.7-py3-none-any.whl
+[2024-04-27 00:41:15] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/06/f5/69f56e710487838c1189fd65a9499fd8e651dfa286ead3250638316320a2/MobileInventoryCLI-0.4.67.tar.gz
+[2024-04-27 00:41:15] INFO root fetch - processPackages [NEMO-billing]: Downloading https://files.pythonhosted.org/packages/9e/1e/027b6907f3401bcfeef9c69aa0b366237b5bb4b7dd3cf42dc009449af531/NEMO_billing-2.9.2-py3-none-any.whl
+[2024-04-27 00:41:15] INFO root fetch - processPackages [pulumi-commandx]: Downloading https://files.pythonhosted.org/packages/e2/65/586628bf7307e199535e6e92fd5a2c7f89620be79819fcbc08c2d776d93c/pulumi_commandx-0.1.1a1714170267.tar.gz
+[2024-04-27 00:41:15] INFO root fetch - processPackages [mecode-viewer]: Downloading https://files.pythonhosted.org/packages/bf/ea/bd6a698228b6bde9892be93208113bbada51eff34b3c0706f776444f94e0/mecode_viewer-0.3.8.tar.gz
+[2024-04-27 00:41:15] INFO root fetch - processPackages [NEMO-billing]: executing diffoscope
+[2024-04-27 00:41:15] INFO root fetch - processPackages [NEMO-billing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NEMO_billing-2.9.1-py3-none-any.whl.zip tmp/NEMO_billing-2.9.2-py3-none-any.whl.zip --markdown 20240427/N/NEMO-billing/2.9.1-2.9.2/README.md --exclude *.pyd
+[2024-04-27 00:41:15] INFO root fetch - processPackages [pulumi-commandx]: executing diffoscope
+[2024-04-27 00:41:15] INFO root fetch - processPackages [pulumi-commandx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_commandx-0.1.1a1714170257.tar.gz tmp/pulumi_commandx-0.1.1a1714170267.tar.gz --markdown 20240427/p/pulumi-commandx/0.1.1a1714170257-0.1.1a1714170267/README.md --exclude *.pyd
+[2024-04-27 00:41:15] INFO root fetch - processPackages [mecode-viewer]: executing diffoscope
+[2024-04-27 00:41:15] INFO root fetch - processPackages [mecode-viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mecode_viewer-0.3.7-py3-none-any.whl.zip tmp/mecode_viewer-0.3.8.tar.gz --markdown 20240427/m/mecode-viewer/0.3.7-0.3.8/README.md --exclude *.pyd
+[2024-04-27 00:41:15] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/ed/4d/4208861fc6562f8303dbdacc23f3e9dee3077ace47926616b5c86bbe087b/MobileInventoryCLI-0.4.68.tar.gz
+[2024-04-27 00:41:15] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-04-27 00:41:15] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.67.tar.gz tmp/MobileInventoryCLI-0.4.68.tar.gz --markdown 20240427/M/MobileInventoryCLI/0.4.67-0.4.68/README.md --exclude *.pyd
+[2024-04-27 00:41:16] INFO root fetch - processPackages [pulumi-commandx]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_commandx-0.1.1a1714170257.tar.gz]
+[2024-04-27 00:41:16] INFO root fetch - processPackages [pulumi-commandx]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_commandx-0.1.1a1714170267.tar.gz]
+[2024-04-27 00:41:16] INFO root fetch - main [MainThread]: End processing [pulumi-commandx]: success
+[2024-04-27 00:41:16] INFO root fetch - processPackages [mecode-viewer]: Remove: archive file [/home/abi/fetcher/tmp/mecode_viewer-0.3.7-py3-none-any.whl.zip]
+[2024-04-27 00:41:16] INFO root fetch - processPackages [mecode-viewer]: Remove: archive file [/home/abi/fetcher/tmp/mecode_viewer-0.3.8.tar.gz]
+[2024-04-27 00:41:16] INFO root fetch - main [MainThread]: End processing [mecode-viewer]: success
+[2024-04-27 00:41:16] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.67.tar.gz]
+[2024-04-27 00:41:16] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.68.tar.gz]
+[2024-04-27 00:41:16] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-04-27 00:41:16] INFO root fetch - processPackages [NEMO-billing]: Remove: archive file [/home/abi/fetcher/tmp/NEMO_billing-2.9.1-py3-none-any.whl.zip]
+[2024-04-27 00:41:16] INFO root fetch - processPackages [NEMO-billing]: Remove: archive file [/home/abi/fetcher/tmp/NEMO_billing-2.9.2-py3-none-any.whl.zip]
+[2024-04-27 00:41:16] INFO root fetch - main [MainThread]: End processing [NEMO-billing]: success
+[2024-04-27 00:41:16] INFO root fetch - main [MainThread]: Store serial: [22953692]
