@@ -1220,3 +1220,33 @@ EOFError: EOF read where object expected
 [2024-04-27 00:56:37] WARNING root fetch - processPackages [typerutils]: Skipping, unable to determine old version
 [2024-04-27 00:56:37] INFO root fetch - main [MainThread]: End processing [typerutils] error
 [2024-04-27 00:56:37] INFO root fetch - main [MainThread]: Store serial: [22953753]
+[2024-04-27 00:58:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953753]
+[2024-04-27 00:58:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 00:58:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sdmc-adhoc-processing
+[2024-04-27 00:58:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mssql-django
+[2024-04-27 00:58:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: eidolon-ai-sdk
+[2024-04-27 00:58:46] INFO root fetch - processPackages [mssql-django]: New version: [1.5] Old Version: [1.4.2]
+[2024-04-27 00:58:46] INFO root fetch - processPackages [sdmc-adhoc-processing]: New version: [0.1.47] Old Version: [0.1.46]
+[2024-04-27 00:58:46] INFO root fetch - processPackages [eidolon-ai-sdk]: New version: [0.1.40] Old Version: [0.1.39]
+[2024-04-27 00:58:46] INFO root fetch - processPackages [sdmc-adhoc-processing]: Downloading https://files.pythonhosted.org/packages/86/d5/0dd6b75c2b5033c1c4b00ad8aa21fff3ea156681f47959a23b64564b6192/sdmc_adhoc_processing-0.1.46.tar.gz
+[2024-04-27 00:58:46] INFO root fetch - processPackages [eidolon-ai-sdk]: Downloading https://files.pythonhosted.org/packages/a5/16/b218cb9b1e17345a4f1c2789d7864b49a2d233fbfc92390b57b9cba60ed9/eidolon_ai_sdk-0.1.39.tar.gz
+[2024-04-27 00:58:46] INFO root fetch - processPackages [mssql-django]: Downloading https://files.pythonhosted.org/packages/25/00/05350c21b76c0852b88846f153455dedb86410c548f272e0dbf382abc86a/mssql-django-1.4.2.tar.gz
+[2024-04-27 00:58:46] INFO root fetch - processPackages [eidolon-ai-sdk]: Downloading https://files.pythonhosted.org/packages/cc/c3/4bfa6301fabec5b2e834239cc6770736c58c10ec263842ab4a4614d3979a/eidolon_ai_sdk-0.1.40.tar.gz
+[2024-04-27 00:58:46] INFO root fetch - processPackages [mssql-django]: Downloading https://files.pythonhosted.org/packages/c8/d1/e8ccf5c9320edd652c7d64977a08954b9716e136ed62dcf17bc06b1f841a/mssql_django-1.5.tar.gz
+[2024-04-27 00:58:47] INFO root fetch - processPackages [sdmc-adhoc-processing]: Downloading https://files.pythonhosted.org/packages/01/e4/ac01bf144f3e36ad0cc238694ca1c866036a202334a6c7521c12cded62b7/sdmc_adhoc_processing-0.1.47.tar.gz
+[2024-04-27 00:58:47] INFO root fetch - processPackages [eidolon-ai-sdk]: executing diffoscope
+[2024-04-27 00:58:47] INFO root fetch - processPackages [eidolon-ai-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eidolon_ai_sdk-0.1.39.tar.gz tmp/eidolon_ai_sdk-0.1.40.tar.gz --markdown 20240427/e/eidolon-ai-sdk/0.1.39-0.1.40/README.md --exclude *.pyd
+[2024-04-27 00:58:47] INFO root fetch - processPackages [mssql-django]: executing diffoscope
+[2024-04-27 00:58:47] INFO root fetch - processPackages [mssql-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mssql-django-1.4.2.tar.gz tmp/mssql_django-1.5.tar.gz --markdown 20240427/m/mssql-django/1.4.2-1.5/README.md --exclude *.pyd
+[2024-04-27 00:58:47] INFO root fetch - processPackages [sdmc-adhoc-processing]: executing diffoscope
+[2024-04-27 00:58:47] INFO root fetch - processPackages [sdmc-adhoc-processing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdmc_adhoc_processing-0.1.46.tar.gz tmp/sdmc_adhoc_processing-0.1.47.tar.gz --markdown 20240427/s/sdmc-adhoc-processing/0.1.46-0.1.47/README.md --exclude *.pyd
+[2024-04-27 00:58:47] INFO root fetch - processPackages [sdmc-adhoc-processing]: Remove: archive file [/home/abi/fetcher/tmp/sdmc_adhoc_processing-0.1.46.tar.gz]
+[2024-04-27 00:58:47] INFO root fetch - processPackages [sdmc-adhoc-processing]: Remove: archive file [/home/abi/fetcher/tmp/sdmc_adhoc_processing-0.1.47.tar.gz]
+[2024-04-27 00:58:47] INFO root fetch - main [MainThread]: End processing [sdmc-adhoc-processing]: success
+[2024-04-27 00:58:47] INFO root fetch - processPackages [eidolon-ai-sdk]: Remove: archive file [/home/abi/fetcher/tmp/eidolon_ai_sdk-0.1.39.tar.gz]
+[2024-04-27 00:58:47] INFO root fetch - processPackages [eidolon-ai-sdk]: Remove: archive file [/home/abi/fetcher/tmp/eidolon_ai_sdk-0.1.40.tar.gz]
+[2024-04-27 00:58:47] INFO root fetch - main [MainThread]: End processing [eidolon-ai-sdk]: success
+[2024-04-27 00:58:47] INFO root fetch - processPackages [mssql-django]: Remove: archive file [/home/abi/fetcher/tmp/mssql-django-1.4.2.tar.gz]
+[2024-04-27 00:58:47] INFO root fetch - processPackages [mssql-django]: Remove: archive file [/home/abi/fetcher/tmp/mssql_django-1.5.tar.gz]
+[2024-04-27 00:58:47] INFO root fetch - main [MainThread]: End processing [mssql-django]: success
+[2024-04-27 00:58:47] INFO root fetch - main [MainThread]: Store serial: [22953764]
