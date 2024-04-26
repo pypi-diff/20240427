@@ -1493,3 +1493,42 @@ EOFError: EOF read where object expected
 [2024-04-27 01:24:57] INFO root fetch - processPackages [keras]: Remove: archive file [/home/abi/fetcher/tmp/keras-3.3.3.tar.gz]
 [2024-04-27 01:24:57] INFO root fetch - main [MainThread]: End processing [keras]: success
 [2024-04-27 01:24:57] INFO root fetch - main [MainThread]: Store serial: [22953842]
+[2024-04-27 01:27:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953842]
+[2024-04-27 01:27:05] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 01:27:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: picnik
+[2024-04-27 01:27:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: edir
+[2024-04-27 01:27:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cupcake
+[2024-04-27 01:27:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aries-cloudagent
+[2024-04-27 01:27:06] INFO root fetch - processPackages [picnik]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-27 01:27:06] INFO root fetch - processPackages [cupcake]: New version: [1.0.0] Old Version: [0.6.0]
+[2024-04-27 01:27:06] INFO root fetch - processPackages [aries-cloudagent]: New version: [1.0.0rc3] Old Version: [1.0.0rc2]
+[2024-04-27 01:27:06] INFO root fetch - processPackages [edir]: New version: [2.9.1] Old Version: [2.9]
+[2024-04-27 01:27:06] INFO root fetch - processPackages [picnik]: Downloading https://files.pythonhosted.org/packages/2b/f0/eba1b6978d505ce405a213511599c161b0b4650a987a9452bee4d3db71c4/PICNIK-0.1.8.tar.gz
+[2024-04-27 01:27:06] INFO root fetch - processPackages [edir]: Downloading https://files.pythonhosted.org/packages/c3/c7/4bc9c5b81b8615ac27cafe90feab04ab1ac9e8f0ed217e5be999daa0d51e/edir-2.9.tar.gz
+[2024-04-27 01:27:06] INFO root fetch - processPackages [cupcake]: Downloading https://files.pythonhosted.org/packages/af/44/75833b3b0963352a3ce3bbc367e7d5d36a029c15d6bf069733a0934c811e/cupcake-0.6.0.tar.gz
+[2024-04-27 01:27:06] INFO root fetch - processPackages [aries-cloudagent]: Downloading https://files.pythonhosted.org/packages/93/05/659ccc126e716daebe92215caaf65fba86b46c515a3e36abbae43be11e95/aries_cloudagent-1.0.0rc2.tar.gz
+[2024-04-27 01:27:06] INFO root fetch - processPackages [picnik]: Downloading https://files.pythonhosted.org/packages/32/fa/9983df262626ef44b2c5cb2f64adcfebfe3b1593f4ce67e4295a2a3a5c49/pICNIK-0.1.9.tar.gz
+[2024-04-27 01:27:06] INFO root fetch - processPackages [cupcake]: Downloading https://files.pythonhosted.org/packages/01/ed/0bacafb5bf5f542ce980dd5db47d0111e4bfe66162ff6c2ccecc26f27deb/cupcake-1.0.0.tar.gz
+[2024-04-27 01:27:06] INFO root fetch - processPackages [edir]: Downloading https://files.pythonhosted.org/packages/bf/fa/60c088f766d0e4e431a27ad0b4d302389c5774c309d1aaec3e1b74bf3b5d/edir-2.9.1.tar.gz
+[2024-04-27 01:27:06] INFO root fetch - processPackages [picnik]: executing diffoscope
+[2024-04-27 01:27:06] INFO root fetch - processPackages [picnik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PICNIK-0.1.8.tar.gz tmp/pICNIK-0.1.9.tar.gz --markdown 20240427/p/picnik/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-27 01:27:06] INFO root fetch - processPackages [cupcake]: executing diffoscope
+[2024-04-27 01:27:06] INFO root fetch - processPackages [cupcake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cupcake-0.6.0.tar.gz tmp/cupcake-1.0.0.tar.gz --markdown 20240427/c/cupcake/0.6.0-1.0.0/README.md --exclude *.pyd
+[2024-04-27 01:27:06] INFO root fetch - processPackages [edir]: executing diffoscope
+[2024-04-27 01:27:06] INFO root fetch - processPackages [edir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edir-2.9.tar.gz tmp/edir-2.9.1.tar.gz --markdown 20240427/e/edir/2.9-2.9.1/README.md --exclude *.pyd
+[2024-04-27 01:27:06] INFO root fetch - processPackages [aries-cloudagent]: Downloading https://files.pythonhosted.org/packages/df/e6/2f8ad139caaeabc991da062211cd01e4413b670530de558c0984561c2ff5/aries_cloudagent-1.0.0rc3.tar.gz
+[2024-04-27 01:27:06] INFO root fetch - processPackages [aries-cloudagent]: executing diffoscope
+[2024-04-27 01:27:06] INFO root fetch - processPackages [aries-cloudagent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aries_cloudagent-1.0.0rc2.tar.gz tmp/aries_cloudagent-1.0.0rc3.tar.gz --markdown 20240427/a/aries-cloudagent/1.0.0rc2-1.0.0rc3/README.md --exclude *.pyd
+[2024-04-27 01:27:07] INFO root fetch - processPackages [picnik]: Remove: archive file [/home/abi/fetcher/tmp/PICNIK-0.1.8.tar.gz]
+[2024-04-27 01:27:07] INFO root fetch - processPackages [picnik]: Remove: archive file [/home/abi/fetcher/tmp/pICNIK-0.1.9.tar.gz]
+[2024-04-27 01:27:07] INFO root fetch - main [MainThread]: End processing [picnik]: success
+[2024-04-27 01:27:07] INFO root fetch - processPackages [edir]: Remove: archive file [/home/abi/fetcher/tmp/edir-2.9.tar.gz]
+[2024-04-27 01:27:07] INFO root fetch - processPackages [edir]: Remove: archive file [/home/abi/fetcher/tmp/edir-2.9.1.tar.gz]
+[2024-04-27 01:27:07] INFO root fetch - main [MainThread]: End processing [edir]: success
+[2024-04-27 01:27:07] INFO root fetch - processPackages [cupcake]: Remove: archive file [/home/abi/fetcher/tmp/cupcake-0.6.0.tar.gz]
+[2024-04-27 01:27:07] INFO root fetch - processPackages [cupcake]: Remove: archive file [/home/abi/fetcher/tmp/cupcake-1.0.0.tar.gz]
+[2024-04-27 01:27:07] INFO root fetch - main [MainThread]: End processing [cupcake]: success
+[2024-04-27 01:27:11] INFO root fetch - processPackages [aries-cloudagent]: Remove: archive file [/home/abi/fetcher/tmp/aries_cloudagent-1.0.0rc2.tar.gz]
+[2024-04-27 01:27:11] INFO root fetch - processPackages [aries-cloudagent]: Remove: archive file [/home/abi/fetcher/tmp/aries_cloudagent-1.0.0rc3.tar.gz]
+[2024-04-27 01:27:11] INFO root fetch - main [MainThread]: End processing [aries-cloudagent]: success
+[2024-04-27 01:27:11] INFO root fetch - main [MainThread]: Store serial: [22953852]
