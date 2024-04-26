@@ -1885,3 +1885,69 @@ EOFError: EOF read where object expected
 [2024-04-27 01:51:20] INFO root fetch - processPackages [pied-poker]: Remove: archive file [/home/abi/fetcher/tmp/pied_poker-1.2.5.tar.gz]
 [2024-04-27 01:51:20] INFO root fetch - main [MainThread]: End processing [pied-poker]: success
 [2024-04-27 01:51:20] INFO root fetch - main [MainThread]: Store serial: [22954011]
+[2024-04-27 01:53:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22954011]
+[2024-04-27 01:53:29] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-27 01:53:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qualitative-coding
+[2024-04-27 01:53:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: atksh-utils
+[2024-04-27 01:53:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lbt-dragonfly
+[2024-04-27 01:53:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: drawing3d
+[2024-04-27 01:53:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lbt-honeybee
+[2024-04-27 01:53:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pied-poker
+[2024-04-27 01:53:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyscinloopsr
+[2024-04-27 01:53:30] INFO root fetch - processPackages [pied-poker]: New version: [1.2.5] Old Version: [1.2.4]
+[2024-04-27 01:53:30] INFO root fetch - processPackages [pyscinloopsr]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-04-27 01:53:30] INFO root fetch - processPackages [qualitative-coding]: New version: [1.2.9] Old Version: [1.2.8]
+[2024-04-27 01:53:30] INFO root fetch - processPackages [lbt-honeybee]: New version: [0.8.99] Old Version: [0.8.98]
+[2024-04-27 01:53:30] INFO root fetch - processPackages [lbt-dragonfly]: New version: [0.9.99] Old Version: [0.9.98]
+[2024-04-27 01:53:30] INFO root fetch - processPackages [pied-poker]: Downloading https://files.pythonhosted.org/packages/ea/8a/d0c7d936c33715ccf51eb92eabde0749b18205300fbf8e1ec29cc96d1449/pied_poker-1.2.4.tar.gz
+[2024-04-27 01:53:30] INFO root fetch - processPackages [drawing3d]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-27 01:53:30] INFO root fetch - processPackages [atksh-utils]: New version: [0.8.6] Old Version: [0.8.5]
+[2024-04-27 01:53:30] INFO root fetch - processPackages [pyscinloopsr]: Downloading https://files.pythonhosted.org/packages/e0/7c/75ce822197b8859194f3cd131eb6f4f6111dc9c21d4fbda4c8c9e9b884c9/pyscinloopsr-1.0.7.tar.gz
+[2024-04-27 01:53:30] INFO root fetch - processPackages [qualitative-coding]: Downloading https://files.pythonhosted.org/packages/83/6c/16e9cc2ba4e0b6b741120ead5c1dd1873ee97ad2ba25681f735cd916c765/qualitative_coding-1.2.8.tar.gz
+[2024-04-27 01:53:30] INFO root fetch - processPackages [lbt-honeybee]: Downloading https://files.pythonhosted.org/packages/b5/a0/c6742c4b1a93565a552f073a8cad3689b9e2edcf401d45bd9fddf0485a8d/lbt-honeybee-0.8.98.tar.gz
+[2024-04-27 01:53:30] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/be/ae/7267dfd241a0641f3fbadea4128db5ffa29609911cadb5fc4840656bb44a/lbt-dragonfly-0.9.98.tar.gz
+[2024-04-27 01:53:30] INFO root fetch - processPackages [atksh-utils]: Downloading https://files.pythonhosted.org/packages/61/f8/37369c4b799936fa81545040ef6384f50d3f4c2c050104a2d481f9a5434a/atksh_utils-0.8.5.tar.gz
+[2024-04-27 01:53:30] INFO root fetch - processPackages [drawing3d]: Downloading https://files.pythonhosted.org/packages/e2/89/f9d3b8bcf5b6b355cb9f53479997e9db19e12cd3d23de773ee5c4916e058/drawing3d-0.1.1.tar.gz
+[2024-04-27 01:53:30] INFO root fetch - processPackages [pied-poker]: Downloading https://files.pythonhosted.org/packages/97/c0/c7debb0375ddaaa7e3fc317706436553932df9313a415941a5165053a585/pied_poker-1.2.5.tar.gz
+[2024-04-27 01:53:30] INFO root fetch - processPackages [lbt-honeybee]: Downloading https://files.pythonhosted.org/packages/f1/61/4f36e668d3e1767b0f4d921481ad087bec472a2afc14ea20f916e083c690/lbt-honeybee-0.8.99.tar.gz
+[2024-04-27 01:53:30] INFO root fetch - processPackages [qualitative-coding]: Downloading https://files.pythonhosted.org/packages/5b/f1/031858ce926fb3ac852b3f93e661ea3b78bf905bdd467186cea25488fc6a/qualitative_coding-1.2.9.tar.gz
+[2024-04-27 01:53:30] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/b4/08/0ca46e9f7eef7b2cce7f0c6110106c42aa35a79bd88110559177f64d733a/lbt-dragonfly-0.9.99.tar.gz
+[2024-04-27 01:53:30] INFO root fetch - processPackages [pyscinloopsr]: Downloading https://files.pythonhosted.org/packages/98/21/5809d8e4c42d0207d6fd61e35cf0683da0e0cc5f1d10fa87e864b000cfa6/pyscinloopsr-1.0.8.tar.gz
+[2024-04-27 01:53:30] INFO root fetch - processPackages [pied-poker]: executing diffoscope
+[2024-04-27 01:53:30] INFO root fetch - processPackages [pied-poker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pied_poker-1.2.4.tar.gz tmp/pied_poker-1.2.5.tar.gz --markdown 20240427/p/pied-poker/1.2.4-1.2.5/README.md --exclude *.pyd
+[2024-04-27 01:53:30] INFO root fetch - processPackages [lbt-honeybee]: executing diffoscope
+[2024-04-27 01:53:30] INFO root fetch - processPackages [lbt-honeybee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-honeybee-0.8.98.tar.gz tmp/lbt-honeybee-0.8.99.tar.gz --markdown 20240427/l/lbt-honeybee/0.8.98-0.8.99/README.md --exclude *.pyd
+[2024-04-27 01:53:30] INFO root fetch - processPackages [lbt-dragonfly]: executing diffoscope
+[2024-04-27 01:53:30] INFO root fetch - processPackages [lbt-dragonfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-dragonfly-0.9.98.tar.gz tmp/lbt-dragonfly-0.9.99.tar.gz --markdown 20240427/l/lbt-dragonfly/0.9.98-0.9.99/README.md --exclude *.pyd
+[2024-04-27 01:53:30] INFO root fetch - processPackages [qualitative-coding]: executing diffoscope
+[2024-04-27 01:53:30] INFO root fetch - processPackages [qualitative-coding]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qualitative_coding-1.2.8.tar.gz tmp/qualitative_coding-1.2.9.tar.gz --markdown 20240427/q/qualitative-coding/1.2.8-1.2.9/README.md --exclude *.pyd
+[2024-04-27 01:53:30] INFO root fetch - processPackages [pyscinloopsr]: executing diffoscope
+[2024-04-27 01:53:30] INFO root fetch - processPackages [pyscinloopsr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscinloopsr-1.0.7.tar.gz tmp/pyscinloopsr-1.0.8.tar.gz --markdown 20240427/p/pyscinloopsr/1.0.7-1.0.8/README.md --exclude *.pyd
+[2024-04-27 01:53:30] INFO root fetch - processPackages [drawing3d]: Downloading https://files.pythonhosted.org/packages/db/78/75e68f22c596ff8bb7ccc9a6b1bbc710b0babd01362cf44736875b5773b0/drawing3d-0.1.2-cp39-cp39-musllinux_1_1_x86_64.whl
+[2024-04-27 01:53:31] INFO root fetch - processPackages [atksh-utils]: Downloading https://files.pythonhosted.org/packages/d1/f3/85de0055688ce2a780a907021f235d0c8bb2eb62b1e48a8587d0c6d25417/atksh_utils-0.8.6.tar.gz
+[2024-04-27 01:53:31] INFO root fetch - processPackages [drawing3d]: executing diffoscope
+[2024-04-27 01:53:31] INFO root fetch - processPackages [drawing3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drawing3d-0.1.1.tar.gz tmp/drawing3d-0.1.2-cp39-cp39-musllinux_1_1_x86_64.whl.zip --markdown 20240427/d/drawing3d/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-27 01:53:31] INFO root fetch - processPackages [atksh-utils]: executing diffoscope
+[2024-04-27 01:53:31] INFO root fetch - processPackages [atksh-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atksh_utils-0.8.5.tar.gz tmp/atksh_utils-0.8.6.tar.gz --markdown 20240427/a/atksh-utils/0.8.5-0.8.6/README.md --exclude *.pyd
+[2024-04-27 01:53:31] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.98.tar.gz]
+[2024-04-27 01:53:31] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.99.tar.gz]
+[2024-04-27 01:53:31] INFO root fetch - main [MainThread]: End processing [lbt-dragonfly]: success
+[2024-04-27 01:53:31] INFO root fetch - processPackages [lbt-honeybee]: Remove: archive file [/home/abi/fetcher/tmp/lbt-honeybee-0.8.98.tar.gz]
+[2024-04-27 01:53:31] INFO root fetch - processPackages [lbt-honeybee]: Remove: archive file [/home/abi/fetcher/tmp/lbt-honeybee-0.8.99.tar.gz]
+[2024-04-27 01:53:31] INFO root fetch - main [MainThread]: End processing [lbt-honeybee]: success
+[2024-04-27 01:53:31] INFO root fetch - processPackages [pyscinloopsr]: Remove: archive file [/home/abi/fetcher/tmp/pyscinloopsr-1.0.7.tar.gz]
+[2024-04-27 01:53:31] INFO root fetch - processPackages [pyscinloopsr]: Remove: archive file [/home/abi/fetcher/tmp/pyscinloopsr-1.0.8.tar.gz]
+[2024-04-27 01:53:31] INFO root fetch - main [MainThread]: End processing [pyscinloopsr]: success
+[2024-04-27 01:53:31] INFO root fetch - processPackages [pied-poker]: Remove: archive file [/home/abi/fetcher/tmp/pied_poker-1.2.4.tar.gz]
+[2024-04-27 01:53:31] INFO root fetch - processPackages [pied-poker]: Remove: archive file [/home/abi/fetcher/tmp/pied_poker-1.2.5.tar.gz]
+[2024-04-27 01:53:31] INFO root fetch - main [MainThread]: End processing [pied-poker]: success
+[2024-04-27 01:53:31] INFO root fetch - processPackages [drawing3d]: Remove: archive file [/home/abi/fetcher/tmp/drawing3d-0.1.1.tar.gz]
+[2024-04-27 01:53:31] INFO root fetch - processPackages [drawing3d]: Remove: archive file [/home/abi/fetcher/tmp/drawing3d-0.1.2-cp39-cp39-musllinux_1_1_x86_64.whl.zip]
+[2024-04-27 01:53:31] INFO root fetch - main [MainThread]: End processing [drawing3d]: success
+[2024-04-27 01:53:31] INFO root fetch - processPackages [qualitative-coding]: Remove: archive file [/home/abi/fetcher/tmp/qualitative_coding-1.2.8.tar.gz]
+[2024-04-27 01:53:31] INFO root fetch - processPackages [qualitative-coding]: Remove: archive file [/home/abi/fetcher/tmp/qualitative_coding-1.2.9.tar.gz]
+[2024-04-27 01:53:31] INFO root fetch - main [MainThread]: End processing [qualitative-coding]: success
+[2024-04-27 01:53:31] INFO root fetch - processPackages [atksh-utils]: Remove: archive file [/home/abi/fetcher/tmp/atksh_utils-0.8.5.tar.gz]
+[2024-04-27 01:53:31] INFO root fetch - processPackages [atksh-utils]: Remove: archive file [/home/abi/fetcher/tmp/atksh_utils-0.8.6.tar.gz]
+[2024-04-27 01:53:31] INFO root fetch - main [MainThread]: End processing [atksh-utils]: success
+[2024-04-27 01:53:31] INFO root fetch - main [MainThread]: Store serial: [22954055]
