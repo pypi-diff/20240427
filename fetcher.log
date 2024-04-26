@@ -1279,3 +1279,24 @@ EOFError: EOF read where object expected
 [2024-04-27 01:00:58] INFO root fetch - processPackages [NREL-pydss]: Remove: archive file [/home/abi/fetcher/tmp/nrel_pydss-3.1.5.tar.gz]
 [2024-04-27 01:00:58] INFO root fetch - main [MainThread]: End processing [NREL-pydss]: success
 [2024-04-27 01:00:58] INFO root fetch - main [MainThread]: Store serial: [22953775]
+[2024-04-27 01:03:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953775]
+[2024-04-27 01:03:08] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 01:03:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-hierarchical-models
+[2024-04-27 01:03:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xl-router
+[2024-04-27 01:03:08] INFO root fetch - processPackages [xl-router]: New version: [0.7.3] Old Version: [0.7.1]
+[2024-04-27 01:03:08] INFO root fetch - processPackages [xl-router]: Downloading https://files.pythonhosted.org/packages/e6/06/839af2dcde893edbd982cbbbce76d4d1c4d3a314cc367405bd47ec252af2/xl_router-0.7.1.tar.gz
+[2024-04-27 01:03:08] INFO root fetch - processPackages [django-hierarchical-models]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-04-27 01:03:08] INFO root fetch - processPackages [django-hierarchical-models]: Downloading https://files.pythonhosted.org/packages/54/ec/7196409954b17a38fe576cd74cd9662bb2c91231082fdc957c5d8bde6c89/django_hierarchical_models-1.1.0.tar.gz
+[2024-04-27 01:03:08] INFO root fetch - processPackages [xl-router]: Downloading https://files.pythonhosted.org/packages/97/ca/02e821de1c08db90bf39463014a86de5f2440a2e9d786d50f4042ee6caf3/xl_router-0.7.3.tar.gz
+[2024-04-27 01:03:08] INFO root fetch - processPackages [xl-router]: executing diffoscope
+[2024-04-27 01:03:08] INFO root fetch - processPackages [xl-router]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xl_router-0.7.1.tar.gz tmp/xl_router-0.7.3.tar.gz --markdown 20240427/x/xl-router/0.7.1-0.7.3/README.md --exclude *.pyd
+[2024-04-27 01:03:08] INFO root fetch - processPackages [django-hierarchical-models]: Downloading https://files.pythonhosted.org/packages/e4/d9/3de76cfaaf313e595055bc0c9795432fef318c15675c053420ec0a13e564/django_hierarchical_models-1.2.0.tar.gz
+[2024-04-27 01:03:08] INFO root fetch - processPackages [django-hierarchical-models]: executing diffoscope
+[2024-04-27 01:03:08] INFO root fetch - processPackages [django-hierarchical-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_hierarchical_models-1.1.0.tar.gz tmp/django_hierarchical_models-1.2.0.tar.gz --markdown 20240427/d/django-hierarchical-models/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-04-27 01:03:09] INFO root fetch - processPackages [xl-router]: Remove: archive file [/home/abi/fetcher/tmp/xl_router-0.7.1.tar.gz]
+[2024-04-27 01:03:09] INFO root fetch - processPackages [xl-router]: Remove: archive file [/home/abi/fetcher/tmp/xl_router-0.7.3.tar.gz]
+[2024-04-27 01:03:09] INFO root fetch - main [MainThread]: End processing [xl-router]: success
+[2024-04-27 01:03:09] INFO root fetch - processPackages [django-hierarchical-models]: Remove: archive file [/home/abi/fetcher/tmp/django_hierarchical_models-1.1.0.tar.gz]
+[2024-04-27 01:03:09] INFO root fetch - processPackages [django-hierarchical-models]: Remove: archive file [/home/abi/fetcher/tmp/django_hierarchical_models-1.2.0.tar.gz]
+[2024-04-27 01:03:09] INFO root fetch - main [MainThread]: End processing [django-hierarchical-models]: success
+[2024-04-27 01:03:09] INFO root fetch - main [MainThread]: Store serial: [22953781]
