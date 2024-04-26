@@ -1214,3 +1214,9 @@ EOFError: EOF read where object expected
 [2024-04-27 00:54:29] INFO root fetch - processPackages [ragdaemon]: Remove: archive file [/home/abi/fetcher/tmp/ragdaemon-0.2.9.tar.gz]
 [2024-04-27 00:54:29] INFO root fetch - main [MainThread]: End processing [ragdaemon]: success
 [2024-04-27 00:54:29] INFO root fetch - main [MainThread]: Store serial: [22953748]
+[2024-04-27 00:56:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22953748]
+[2024-04-27 00:56:37] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 00:56:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: typerutils
+[2024-04-27 00:56:37] WARNING root fetch - processPackages [typerutils]: Skipping, unable to determine old version
+[2024-04-27 00:56:37] INFO root fetch - main [MainThread]: End processing [typerutils] error
+[2024-04-27 00:56:37] INFO root fetch - main [MainThread]: Store serial: [22953753]
