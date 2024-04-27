@@ -16151,3 +16151,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 16:58:57] INFO root fetch - processPackages [harlequin-databricks]: Remove: archive file [/home/abi/fetcher/tmp/harlequin_databricks-0.3.0.tar.gz]
 [2024-04-27 16:58:57] INFO root fetch - main [MainThread]: End processing [harlequin-databricks]: success
 [2024-04-27 16:58:57] INFO root fetch - main [MainThread]: Store serial: [22959635]
+[2024-04-27 17:01:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959635]
+[2024-04-27 17:01:07] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 17:01:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: banks
+[2024-04-27 17:01:07] INFO root fetch - processPackages [banks]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-27 17:01:07] INFO root fetch - processPackages [banks]: Downloading https://files.pythonhosted.org/packages/f3/73/91f15ca9fd0c8efdcdd1fead95f14c4f2e35108dfa95a39591e926b73174/banks-0.2.0.tar.gz
+[2024-04-27 17:01:07] INFO root fetch - processPackages [banks]: Downloading https://files.pythonhosted.org/packages/6a/8e/94a0ecc14c213dfc5237897035245eaae574cc2783f750a9b9993b2bfb24/banks-0.3.0.tar.gz
+[2024-04-27 17:01:08] INFO root fetch - processPackages [banks]: executing diffoscope
+[2024-04-27 17:01:08] INFO root fetch - processPackages [banks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/banks-0.2.0.tar.gz tmp/banks-0.3.0.tar.gz --markdown 20240427/b/banks/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-04-27 17:01:08] INFO root fetch - processPackages [banks]: Remove: archive file [/home/abi/fetcher/tmp/banks-0.2.0.tar.gz]
+[2024-04-27 17:01:08] INFO root fetch - processPackages [banks]: Remove: archive file [/home/abi/fetcher/tmp/banks-0.3.0.tar.gz]
+[2024-04-27 17:01:08] INFO root fetch - main [MainThread]: End processing [banks]: success
+[2024-04-27 17:01:08] INFO root fetch - main [MainThread]: Store serial: [22959640]
