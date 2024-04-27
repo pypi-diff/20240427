@@ -8984,3 +8984,24 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 07:03:13] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.9.tar.gz]
 [2024-04-27 07:03:13] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
 [2024-04-27 07:03:13] INFO root fetch - main [MainThread]: Store serial: [22956597]
+[2024-04-27 07:05:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956597]
+[2024-04-27 07:05:22] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 07:05:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aio-taginfo
+[2024-04-27 07:05:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: honeybee-radiance
+[2024-04-27 07:05:22] INFO root fetch - processPackages [aio-taginfo]: New version: [0.3.0.post1] Old Version: [0.2.0]
+[2024-04-27 07:05:22] INFO root fetch - processPackages [honeybee-radiance]: New version: [1.9.2] Old Version: [1.9.1]
+[2024-04-27 07:05:22] INFO root fetch - processPackages [aio-taginfo]: Downloading https://files.pythonhosted.org/packages/ae/76/9b7b48fe33b5596ea404dec033d1f07694358b81c4fca0abcd1b020fb3a7/aio_taginfo-0.2.0.tar.gz
+[2024-04-27 07:05:22] INFO root fetch - processPackages [honeybee-radiance]: Downloading https://files.pythonhosted.org/packages/48/ae/cca3e8aac6a72593fde7860cbf91882050c1a465c316efc2e0472bfa36e1/honeybee-radiance-1.9.1.tar.gz
+[2024-04-27 07:05:22] INFO root fetch - processPackages [aio-taginfo]: Downloading https://files.pythonhosted.org/packages/04/5b/06ec0caf8cb339a591bfe6e744ad19030486c182c118b528ffbe89f722a3/aio_taginfo-0.3.0.post1.tar.gz
+[2024-04-27 07:05:22] INFO root fetch - processPackages [honeybee-radiance]: Downloading https://files.pythonhosted.org/packages/50/24/71a3a4863bb39caef68dcd79f1b380133b1f1968426af26bc9c4812376d1/honeybee-radiance-1.9.2.tar.gz
+[2024-04-27 07:05:22] INFO root fetch - processPackages [aio-taginfo]: executing diffoscope
+[2024-04-27 07:05:22] INFO root fetch - processPackages [aio-taginfo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aio_taginfo-0.2.0.tar.gz tmp/aio_taginfo-0.3.0.post1.tar.gz --markdown 20240427/a/aio-taginfo/0.2.0-0.3.0.post1/README.md --exclude *.pyd
+[2024-04-27 07:05:22] INFO root fetch - processPackages [honeybee-radiance]: executing diffoscope
+[2024-04-27 07:05:22] INFO root fetch - processPackages [honeybee-radiance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeybee-radiance-1.9.1.tar.gz tmp/honeybee-radiance-1.9.2.tar.gz --markdown 20240427/h/honeybee-radiance/1.9.1-1.9.2/README.md --exclude *.pyd
+[2024-04-27 07:05:23] INFO root fetch - processPackages [aio-taginfo]: Remove: archive file [/home/abi/fetcher/tmp/aio_taginfo-0.2.0.tar.gz]
+[2024-04-27 07:05:23] INFO root fetch - processPackages [aio-taginfo]: Remove: archive file [/home/abi/fetcher/tmp/aio_taginfo-0.3.0.post1.tar.gz]
+[2024-04-27 07:05:23] INFO root fetch - main [MainThread]: End processing [aio-taginfo]: success
+[2024-04-27 07:05:24] INFO root fetch - processPackages [honeybee-radiance]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-radiance-1.9.1.tar.gz]
+[2024-04-27 07:05:24] INFO root fetch - processPackages [honeybee-radiance]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-radiance-1.9.2.tar.gz]
+[2024-04-27 07:05:24] INFO root fetch - main [MainThread]: End processing [honeybee-radiance]: success
+[2024-04-27 07:05:24] INFO root fetch - main [MainThread]: Store serial: [22956603]
