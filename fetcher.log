@@ -2466,3 +2466,24 @@ EOFError: EOF read where object expected
 [2024-04-27 02:19:41] INFO root fetch - processPackages [cdk-budibase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-budibase-0.0.99.tar.gz]
 [2024-04-27 02:19:41] INFO root fetch - main [MainThread]: End processing [cdk-budibase]: success
 [2024-04-27 02:19:41] INFO root fetch - main [MainThread]: Store serial: [22954235]
+[2024-04-27 02:21:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22954235]
+[2024-04-27 02:21:51] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 02:21:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-aurora-globaldatabase
+[2024-04-27 02:21:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ebtorch
+[2024-04-27 02:21:51] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: New version: [2.3.99] Old Version: [2.3.98]
+[2024-04-27 02:21:51] INFO root fetch - processPackages [ebtorch]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-27 02:21:51] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Downloading https://files.pythonhosted.org/packages/e4/39/e997b5acac972df8d777c4a4ad6dfd9f51e03e75fc8e23c973a7772267d5/cdk-aurora-globaldatabase-2.3.98.tar.gz
+[2024-04-27 02:21:51] INFO root fetch - processPackages [ebtorch]: Downloading https://files.pythonhosted.org/packages/f6/0b/a141fd3156848e8d2e2fc182cbf6bf93f48c8fe81f58d13605672b1a15c6/ebtorch-0.9.8.tar.gz
+[2024-04-27 02:21:51] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Downloading https://files.pythonhosted.org/packages/51/53/0158facaec2becec86707148eb931de78a7ad1c2b63f80b9911a53e4c17b/cdk-aurora-globaldatabase-2.3.99.tar.gz
+[2024-04-27 02:21:52] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: executing diffoscope
+[2024-04-27 02:21:52] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz --markdown 20240427/c/cdk-aurora-globaldatabase/2.3.98-2.3.99/README.md --exclude *.pyd
+[2024-04-27 02:21:52] INFO root fetch - processPackages [ebtorch]: Downloading https://files.pythonhosted.org/packages/de/e0/a625d79a43753923a509b28ef3011cc592fc185573d78146dda1a45d149a/ebtorch-0.9.9.tar.gz
+[2024-04-27 02:21:52] INFO root fetch - processPackages [ebtorch]: executing diffoscope
+[2024-04-27 02:21:52] INFO root fetch - processPackages [ebtorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ebtorch-0.9.8.tar.gz tmp/ebtorch-0.9.9.tar.gz --markdown 20240427/e/ebtorch/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-27 02:21:52] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz]
+[2024-04-27 02:21:52] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz]
+[2024-04-27 02:21:52] INFO root fetch - main [MainThread]: End processing [cdk-aurora-globaldatabase]: success
+[2024-04-27 02:21:52] INFO root fetch - processPackages [ebtorch]: Remove: archive file [/home/abi/fetcher/tmp/ebtorch-0.9.8.tar.gz]
+[2024-04-27 02:21:52] INFO root fetch - processPackages [ebtorch]: Remove: archive file [/home/abi/fetcher/tmp/ebtorch-0.9.9.tar.gz]
+[2024-04-27 02:21:52] INFO root fetch - main [MainThread]: End processing [ebtorch]: success
+[2024-04-27 02:21:52] INFO root fetch - main [MainThread]: Store serial: [22954241]
