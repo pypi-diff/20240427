@@ -12258,3 +12258,51 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 12:41:13] INFO root fetch - processPackages [skypilot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/skypilot_nightly-1.0.0.dev20240426.tar.gz]
 [2024-04-27 12:41:13] INFO root fetch - main [MainThread]: End processing [skypilot-nightly]: success
 [2024-04-27 12:41:13] INFO root fetch - main [MainThread]: Store serial: [22958005]
+[2024-04-27 12:43:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958005]
+[2024-04-27 12:43:22] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 12:43:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ctrip-app-ui
+[2024-04-27 12:43:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: backpipe
+[2024-04-27 12:43:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flatpack
+[2024-04-27 12:43:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zensvi
+[2024-04-27 12:43:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: python-easyverein
+[2024-04-27 12:43:22] INFO root fetch - processPackages [ctrip-app-ui]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-27 12:43:22] INFO root fetch - processPackages [flatpack]: New version: [3.3.9] Old Version: [3.3.8]
+[2024-04-27 12:43:22] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/5d/99/e8664bc414b9b6e94e8dcc22c43abf61e51e33e21700080dd11ace5eda78/ctrip-app-ui-0.3.8.tar.gz
+[2024-04-27 12:43:22] INFO root fetch - processPackages [backpipe]: New version: [0.5.0] Old Version: [0.4.1]
+[2024-04-27 12:43:22] INFO root fetch - processPackages [zensvi]: New version: [0.9.8] Old Version: [0.9.7]
+[2024-04-27 12:43:22] INFO root fetch - processPackages [python-easyverein]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-04-27 12:43:22] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/42/48/84e949164975b341645163f536ee4ca8329c4e3dfa6d143c2806a0849a54/flatpack-3.3.8.tar.gz
+[2024-04-27 12:43:22] INFO root fetch - processPackages [backpipe]: Downloading https://files.pythonhosted.org/packages/24/cb/f1dbe0e55349be063212d7a140a44c0a0fe5521b577a856414e28d55b4c3/backpipe-0.4.1.tar.gz
+[2024-04-27 12:43:22] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/11/54/065825e8640b062c83c07c97d8dea514db8a5c0ea3c272834b88c568d82e/flatpack-3.3.9.tar.gz
+[2024-04-27 12:43:22] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/39/fa/02e78ae42456c969e0180ec619563c793ea5f9306347abbe61b594fc4569/ctrip-app-ui-0.3.9.tar.gz
+[2024-04-27 12:43:22] INFO root fetch - processPackages [python-easyverein]: Downloading https://files.pythonhosted.org/packages/8f/64/90e8419be694fddeac0c4ebf10dc1ff1db166379112463c9f72526a4f3af/python_easyverein-0.2.5.tar.gz
+[2024-04-27 12:43:22] INFO root fetch - processPackages [zensvi]: Downloading https://files.pythonhosted.org/packages/c4/b3/5f6efb302a54041edfdb7cee7e64caaad9afec14cd8770bb2ceb8f6b6fc8/zensvi-0.9.7.tar.gz
+[2024-04-27 12:43:22] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-04-27 12:43:22] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.3.8.tar.gz tmp/flatpack-3.3.9.tar.gz --markdown 20240427/f/flatpack/3.3.8-3.3.9/README.md --exclude *.pyd
+[2024-04-27 12:43:22] INFO root fetch - processPackages [ctrip-app-ui]: executing diffoscope
+[2024-04-27 12:43:22] INFO root fetch - processPackages [ctrip-app-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctrip-app-ui-0.3.8.tar.gz tmp/ctrip-app-ui-0.3.9.tar.gz --markdown 20240427/c/ctrip-app-ui/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-27 12:43:23] INFO root fetch - processPackages [backpipe]: Downloading https://files.pythonhosted.org/packages/bf/69/efcae84c84b9c7ab5b8c91a7631b720fcf79ca9b0ebaea2c82b832e40bd1/backpipe-0.5.0.tar.gz
+[2024-04-27 12:43:23] INFO root fetch - processPackages [python-easyverein]: Downloading https://files.pythonhosted.org/packages/aa/1e/977193b8b775c8396983e210e54e4fb344d5be8e07295931e6ccfad97056/python_easyverein-0.2.6-py3-none-any.whl
+[2024-04-27 12:43:23] INFO root fetch - processPackages [backpipe]: executing diffoscope
+[2024-04-27 12:43:23] INFO root fetch - processPackages [backpipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backpipe-0.4.1.tar.gz tmp/backpipe-0.5.0.tar.gz --markdown 20240427/b/backpipe/0.4.1-0.5.0/README.md --exclude *.pyd
+[2024-04-27 12:43:23] INFO root fetch - processPackages [zensvi]: Downloading https://files.pythonhosted.org/packages/58/a0/fa16c5167950fd72ac2b9de84f31f095275d7e96dede1c5f126683fca082/zensvi-0.9.8.tar.gz
+[2024-04-27 12:43:23] INFO root fetch - processPackages [python-easyverein]: executing diffoscope
+[2024-04-27 12:43:23] INFO root fetch - processPackages [python-easyverein]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_easyverein-0.2.5.tar.gz tmp/python_easyverein-0.2.6-py3-none-any.whl.zip --markdown 20240427/p/python-easyverein/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-04-27 12:43:23] INFO root fetch - processPackages [zensvi]: executing diffoscope
+[2024-04-27 12:43:23] INFO root fetch - processPackages [zensvi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zensvi-0.9.7.tar.gz tmp/zensvi-0.9.8.tar.gz --markdown 20240427/z/zensvi/0.9.7-0.9.8/README.md --exclude *.pyd
+[2024-04-27 12:43:23] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.3.8.tar.gz]
+[2024-04-27 12:43:23] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.3.9.tar.gz]
+[2024-04-27 12:43:23] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
+[2024-04-27 12:43:23] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.8.tar.gz]
+[2024-04-27 12:43:23] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.9.tar.gz]
+[2024-04-27 12:43:23] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-04-27 12:43:23] INFO root fetch - processPackages [backpipe]: Remove: archive file [/home/abi/fetcher/tmp/backpipe-0.4.1.tar.gz]
+[2024-04-27 12:43:23] INFO root fetch - processPackages [backpipe]: Remove: archive file [/home/abi/fetcher/tmp/backpipe-0.5.0.tar.gz]
+[2024-04-27 12:43:23] INFO root fetch - main [MainThread]: End processing [backpipe]: success
+[2024-04-27 12:43:23] INFO root fetch - processPackages [python-easyverein]: Remove: archive file [/home/abi/fetcher/tmp/python_easyverein-0.2.5.tar.gz]
+[2024-04-27 12:43:23] INFO root fetch - processPackages [python-easyverein]: Remove: archive file [/home/abi/fetcher/tmp/python_easyverein-0.2.6-py3-none-any.whl.zip]
+[2024-04-27 12:43:23] INFO root fetch - main [MainThread]: End processing [python-easyverein]: success
+[2024-04-27 12:43:24] INFO root fetch - processPackages [zensvi]: Remove: archive file [/home/abi/fetcher/tmp/zensvi-0.9.7.tar.gz]
+[2024-04-27 12:43:24] INFO root fetch - processPackages [zensvi]: Remove: archive file [/home/abi/fetcher/tmp/zensvi-0.9.8.tar.gz]
+[2024-04-27 12:43:24] INFO root fetch - main [MainThread]: End processing [zensvi]: success
+[2024-04-27 12:43:24] INFO root fetch - main [MainThread]: Store serial: [22958017]
