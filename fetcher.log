@@ -8938,3 +8938,49 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 07:01:02] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.9.tar.gz]
 [2024-04-27 07:01:02] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
 [2024-04-27 07:01:02] INFO root fetch - main [MainThread]: Store serial: [22956584]
+[2024-04-27 07:03:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956584]
+[2024-04-27 07:03:10] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 07:03:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dash-spread-grid
+[2024-04-27 07:03:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: demakein
+[2024-04-27 07:03:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-l10n-es-aeat-mod347
+[2024-04-27 07:03:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-l10n-es-aeat-mod347
+[2024-04-27 07:03:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-l10n-es-pos-by-device
+[2024-04-27 07:03:10] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod347]: New version: [17.0.1.0.1.2] Old Version: [17.0.1.0.0.4]
+[2024-04-27 07:03:10] INFO root fetch - processPackages [odoo-addon-l10n-es-pos-by-device]: New version: [16.0.1.0.1] Old Version: [16.0.1.0.0.2]
+[2024-04-27 07:03:10] INFO root fetch - processPackages [dash-spread-grid]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 07:03:10] INFO root fetch - processPackages [demakein]: New version: [0.9] Old Version: [0.7]
+[2024-04-27 07:03:10] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod347]: New version: [17.0.1.0.1.2] Old Version: [17.0.1.0.0.4]
+[2024-04-27 07:03:11] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod347]: Downloading https://files.pythonhosted.org/packages/8a/93/f85f1d660f1ec50f43eb52231409dfaf04d14358ba11505b3e26381108bb/odoo_addon_l10n_es_aeat_mod347-17.0.1.0.0.4-py3-none-any.whl
+[2024-04-27 07:03:11] INFO root fetch - processPackages [odoo-addon-l10n-es-pos-by-device]: Downloading https://files.pythonhosted.org/packages/9f/78/4e8e951659de9a04b91d825b9daecd15f93e6f874e53bbc0328fb63e3bf4/odoo_addon_l10n_es_pos_by_device-16.0.1.0.0.2-py3-none-any.whl
+[2024-04-27 07:03:11] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/9f/39/3477f65f22676264317bcb1d617b220ddcc8d09f85a7eb7904d8c2676dae/dash_spread_grid-0.0.8.tar.gz
+[2024-04-27 07:03:11] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod347]: Downloading https://files.pythonhosted.org/packages/8a/93/f85f1d660f1ec50f43eb52231409dfaf04d14358ba11505b3e26381108bb/odoo_addon_l10n_es_aeat_mod347-17.0.1.0.0.4-py3-none-any.whl
+[2024-04-27 07:03:11] INFO root fetch - processPackages [demakein]: Downloading https://files.pythonhosted.org/packages/29/05/fcc1acb81b37caf000a7c99bb5ed0c0b1e44993326a60bc67afb709bd90a/demakein-0.7.tar.gz
+[2024-04-27 07:03:11] INFO root fetch - processPackages [odoo-addon-l10n-es-pos-by-device]: Downloading https://files.pythonhosted.org/packages/c5/47/b03a9b9a6f02194aa4d8c274af522b4ec5856d76dbb68bb7113632603dca/odoo_addon_l10n_es_pos_by_device-16.0.1.0.1-py3-none-any.whl
+[2024-04-27 07:03:11] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/37/f7/3991c1c5cd26d592773df3381df4e17ae14f51d47af4fd52b7419949494b/dash_spread_grid-0.0.9.tar.gz
+[2024-04-27 07:03:11] INFO root fetch - processPackages [demakein]: Downloading https://files.pythonhosted.org/packages/2b/82/73855f15aa978efb5ce9fc1fefb813529f3c1139aa89553ceed6acab8523/demakein-0.9.tar.gz
+[2024-04-27 07:03:11] INFO root fetch - processPackages [odoo-addon-l10n-es-pos-by-device]: executing diffoscope
+[2024-04-27 07:03:11] INFO root fetch - processPackages [odoo-addon-l10n-es-pos-by-device]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_es_pos_by_device-16.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_l10n_es_pos_by_device-16.0.1.0.1-py3-none-any.whl.zip --markdown 20240427/o/odoo-addon-l10n-es-pos-by-device/16.0.1.0.0.2-16.0.1.0.1/README.md --exclude *.pyd
+[2024-04-27 07:03:11] INFO root fetch - processPackages [dash-spread-grid]: executing diffoscope
+[2024-04-27 07:03:11] INFO root fetch - processPackages [dash-spread-grid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_spread_grid-0.0.8.tar.gz tmp/dash_spread_grid-0.0.9.tar.gz --markdown 20240427/d/dash-spread-grid/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 07:03:11] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod347]: Downloading https://files.pythonhosted.org/packages/78/95/13b4ea0a75cdd0b51bd57d11db32386d19d6f35eccfec475c9889b0dc134/odoo_addon_l10n_es_aeat_mod347-17.0.1.0.1.2-py3-none-any.whl
+[2024-04-27 07:03:11] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod347]: Downloading https://files.pythonhosted.org/packages/78/95/13b4ea0a75cdd0b51bd57d11db32386d19d6f35eccfec475c9889b0dc134/odoo_addon_l10n_es_aeat_mod347-17.0.1.0.1.2-py3-none-any.whl
+[2024-04-27 07:03:11] INFO root fetch - processPackages [demakein]: executing diffoscope
+[2024-04-27 07:03:11] INFO root fetch - processPackages [demakein]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/demakein-0.7.tar.gz tmp/demakein-0.9.tar.gz --markdown 20240427/d/demakein/0.7-0.9/README.md --exclude *.pyd
+[2024-04-27 07:03:11] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod347]: executing diffoscope
+[2024-04-27 07:03:11] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod347]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_es_aeat_mod347-17.0.1.0.0.4-py3-none-any.whl.zip tmp/odoo_addon_l10n_es_aeat_mod347-17.0.1.0.1.2-py3-none-any.whl.zip --markdown 20240427/o/odoo-addon-l10n-es-aeat-mod347/17.0.1.0.0.4-17.0.1.0.1.2/README.md --exclude *.pyd
+[2024-04-27 07:03:11] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod347]: executing diffoscope
+[2024-04-27 07:03:11] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod347]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_es_aeat_mod347-17.0.1.0.0.4-py3-none-any.whl.zip tmp/odoo_addon_l10n_es_aeat_mod347-17.0.1.0.1.2-py3-none-any.whl.zip --markdown 20240427/o/odoo-addon-l10n-es-aeat-mod347/17.0.1.0.0.4-17.0.1.0.1.2/README.md --exclude *.pyd
+[2024-04-27 07:03:12] INFO root fetch - processPackages [demakein]: Remove: archive file [/home/abi/fetcher/tmp/demakein-0.7.tar.gz]
+[2024-04-27 07:03:12] INFO root fetch - processPackages [demakein]: Remove: archive file [/home/abi/fetcher/tmp/demakein-0.9.tar.gz]
+[2024-04-27 07:03:12] INFO root fetch - main [MainThread]: End processing [demakein]: success
+[2024-04-27 07:03:12] INFO root fetch - processPackages [odoo-addon-l10n-es-pos-by-device]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_es_pos_by_device-16.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-04-27 07:03:12] INFO root fetch - processPackages [odoo-addon-l10n-es-pos-by-device]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_es_pos_by_device-16.0.1.0.1-py3-none-any.whl.zip]
+[2024-04-27 07:03:12] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-es-pos-by-device]: success
+[2024-04-27 07:03:12] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod347]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_es_aeat_mod347-17.0.1.0.0.4-py3-none-any.whl.zip]
+[2024-04-27 07:03:12] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod347]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_es_aeat_mod347-17.0.1.0.1.2-py3-none-any.whl.zip]
+[2024-04-27 07:03:12] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-es-aeat-mod347]: success
+[2024-04-27 07:03:12] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-es-aeat-mod347]: success
+[2024-04-27 07:03:13] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.8.tar.gz]
+[2024-04-27 07:03:13] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.9.tar.gz]
+[2024-04-27 07:03:13] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
+[2024-04-27 07:03:13] INFO root fetch - main [MainThread]: Store serial: [22956597]
