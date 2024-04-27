@@ -10075,3 +10075,15 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 08:54:57] INFO root fetch - processPackages [PyMLRS]: Remove: archive file [/home/abi/fetcher/tmp/pymlrs-0.0.3.tar.gz]
 [2024-04-27 08:54:57] INFO root fetch - main [MainThread]: End processing [PyMLRS]: success
 [2024-04-27 08:54:57] INFO root fetch - main [MainThread]: Store serial: [22957040]
+[2024-04-27 08:57:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957040]
+[2024-04-27 08:57:06] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 08:57:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-stock-move-packaging-qty
+[2024-04-27 08:57:06] INFO root fetch - processPackages [odoo-addon-stock-move-packaging-qty]: New version: [16.0.1.4.0] Old Version: [16.0.1.3.2]
+[2024-04-27 08:57:06] INFO root fetch - processPackages [odoo-addon-stock-move-packaging-qty]: Downloading https://files.pythonhosted.org/packages/75/b6/2e1ed6e811faad06f221e0abed1c1d8bb4c2ffba476f59dfa5796a25b9a4/odoo_addon_stock_move_packaging_qty-16.0.1.3.2-py3-none-any.whl
+[2024-04-27 08:57:06] INFO root fetch - processPackages [odoo-addon-stock-move-packaging-qty]: Downloading https://files.pythonhosted.org/packages/e9/ff/a57829f8e60b06844ba5bbe9838dd03d05b39120ad5c272e6481e00825ff/odoo_addon_stock_move_packaging_qty-16.0.1.4.0-py3-none-any.whl
+[2024-04-27 08:57:06] INFO root fetch - processPackages [odoo-addon-stock-move-packaging-qty]: executing diffoscope
+[2024-04-27 08:57:06] INFO root fetch - processPackages [odoo-addon-stock-move-packaging-qty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_stock_move_packaging_qty-16.0.1.3.2-py3-none-any.whl.zip tmp/odoo_addon_stock_move_packaging_qty-16.0.1.4.0-py3-none-any.whl.zip --markdown 20240427/o/odoo-addon-stock-move-packaging-qty/16.0.1.3.2-16.0.1.4.0/README.md --exclude *.pyd
+[2024-04-27 08:57:07] INFO root fetch - processPackages [odoo-addon-stock-move-packaging-qty]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_move_packaging_qty-16.0.1.3.2-py3-none-any.whl.zip]
+[2024-04-27 08:57:07] INFO root fetch - processPackages [odoo-addon-stock-move-packaging-qty]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_move_packaging_qty-16.0.1.4.0-py3-none-any.whl.zip]
+[2024-04-27 08:57:07] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-move-packaging-qty]: success
+[2024-04-27 08:57:07] INFO root fetch - main [MainThread]: Store serial: [22957042]
