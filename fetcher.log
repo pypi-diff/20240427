@@ -11869,3 +11869,23 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 12:10:45] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras_nightly-2.17.0.dev2024042609.tar.gz]
 [2024-04-27 12:10:45] INFO root fetch - main [MainThread]: End processing [tf-keras-nightly]: success
 [2024-04-27 12:10:45] INFO root fetch - main [MainThread]: Store serial: [22957831]
+[2024-04-27 12:12:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957831]
+[2024-04-27 12:12:55] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-27 12:14:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957831]
+[2024-04-27 12:15:00] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 12:15:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mistralrs
+[2024-04-27 12:15:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mistralrs-accelerate
+[2024-04-27 12:15:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mistralrs-cuda
+[2024-04-27 12:15:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mistralrs-metal
+[2024-04-27 12:15:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mistralrs-mkl
+[2024-04-27 12:15:00] WARNING root fetch - processPackages [mistralrs-mkl]: Skipping, unable to determine old version
+[2024-04-27 12:15:00] INFO root fetch - main [MainThread]: End processing [mistralrs-mkl] error
+[2024-04-27 12:15:00] WARNING root fetch - processPackages [mistralrs]: Skipping, unable to determine old version
+[2024-04-27 12:15:00] WARNING root fetch - processPackages [mistralrs-metal]: Skipping, unable to determine old version
+[2024-04-27 12:15:00] INFO root fetch - main [MainThread]: End processing [mistralrs] error
+[2024-04-27 12:15:00] INFO root fetch - main [MainThread]: End processing [mistralrs-metal] error
+[2024-04-27 12:15:00] WARNING root fetch - processPackages [mistralrs-cuda]: Skipping, unable to determine old version
+[2024-04-27 12:15:00] INFO root fetch - main [MainThread]: End processing [mistralrs-cuda] error
+[2024-04-27 12:15:00] WARNING root fetch - processPackages [mistralrs-accelerate]: Skipping, unable to determine old version
+[2024-04-27 12:15:00] INFO root fetch - main [MainThread]: End processing [mistralrs-accelerate] error
+[2024-04-27 12:15:00] INFO root fetch - main [MainThread]: Store serial: [22957851]
