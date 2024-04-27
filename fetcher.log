@@ -9130,3 +9130,33 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 07:20:35] INFO root fetch - processPackages [zwave-js-server-python]: Remove: archive file [/home/abi/fetcher/tmp/zwave-js-server-python-0.9.0.tar.gz]
 [2024-04-27 07:20:35] INFO root fetch - main [MainThread]: End processing [zwave-js-server-python]: success
 [2024-04-27 07:20:35] INFO root fetch - main [MainThread]: Store serial: [22956655]
+[2024-04-27 07:22:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956655]
+[2024-04-27 07:22:44] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 07:22:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: whatshow-toolbox
+[2024-04-27 07:22:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lbt-honeybee
+[2024-04-27 07:22:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scrapework
+[2024-04-27 07:22:44] INFO root fetch - processPackages [whatshow-toolbox]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-27 07:22:44] INFO root fetch - processPackages [scrapework]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-27 07:22:44] INFO root fetch - processPackages [lbt-honeybee]: New version: [0.8.99] Old Version: [0.8.98]
+[2024-04-27 07:22:44] INFO root fetch - processPackages [scrapework]: Downloading https://files.pythonhosted.org/packages/8c/25/47b19ea90ffbb901b22399c39a6e20728832a1024db80c56ec12f227064e/scrapework-0.5.0.tar.gz
+[2024-04-27 07:22:44] INFO root fetch - processPackages [whatshow-toolbox]: Downloading https://files.pythonhosted.org/packages/a1/ac/513b275cf05020b238267e299bd3499022740a6b21f2201042ecbad877d9/whatshow_toolbox-1.0.2.tar.gz
+[2024-04-27 07:22:44] INFO root fetch - processPackages [lbt-honeybee]: Downloading https://files.pythonhosted.org/packages/b5/a0/c6742c4b1a93565a552f073a8cad3689b9e2edcf401d45bd9fddf0485a8d/lbt-honeybee-0.8.98.tar.gz
+[2024-04-27 07:22:44] INFO root fetch - processPackages [whatshow-toolbox]: Downloading https://files.pythonhosted.org/packages/50/7c/af46d5e712e34f2eb603522654c42f0f53d5b75b21d098551cb3e5633e2f/whatshow_toolbox-1.0.3.tar.gz
+[2024-04-27 07:22:44] INFO root fetch - processPackages [lbt-honeybee]: Downloading https://files.pythonhosted.org/packages/f1/61/4f36e668d3e1767b0f4d921481ad087bec472a2afc14ea20f916e083c690/lbt-honeybee-0.8.99.tar.gz
+[2024-04-27 07:22:44] INFO root fetch - processPackages [whatshow-toolbox]: executing diffoscope
+[2024-04-27 07:22:44] INFO root fetch - processPackages [whatshow-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whatshow_toolbox-1.0.2.tar.gz tmp/whatshow_toolbox-1.0.3.tar.gz --markdown 20240427/w/whatshow-toolbox/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-04-27 07:22:44] INFO root fetch - processPackages [lbt-honeybee]: executing diffoscope
+[2024-04-27 07:22:44] INFO root fetch - processPackages [lbt-honeybee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-honeybee-0.8.98.tar.gz tmp/lbt-honeybee-0.8.99.tar.gz --markdown 20240427/l/lbt-honeybee/0.8.98-0.8.99/README.md --exclude *.pyd
+[2024-04-27 07:22:44] INFO root fetch - processPackages [scrapework]: Downloading https://files.pythonhosted.org/packages/54/47/e8b8dd9be4c536f2f2cf4ea8432426e87be94d00f3e1910cff16320d1b78/scrapework-0.5.1.tar.gz
+[2024-04-27 07:22:45] INFO root fetch - processPackages [scrapework]: executing diffoscope
+[2024-04-27 07:22:45] INFO root fetch - processPackages [scrapework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapework-0.5.0.tar.gz tmp/scrapework-0.5.1.tar.gz --markdown 20240427/s/scrapework/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-04-27 07:22:45] INFO root fetch - processPackages [lbt-honeybee]: Remove: archive file [/home/abi/fetcher/tmp/lbt-honeybee-0.8.98.tar.gz]
+[2024-04-27 07:22:45] INFO root fetch - processPackages [lbt-honeybee]: Remove: archive file [/home/abi/fetcher/tmp/lbt-honeybee-0.8.99.tar.gz]
+[2024-04-27 07:22:45] INFO root fetch - main [MainThread]: End processing [lbt-honeybee]: success
+[2024-04-27 07:22:45] INFO root fetch - processPackages [scrapework]: Remove: archive file [/home/abi/fetcher/tmp/scrapework-0.5.0.tar.gz]
+[2024-04-27 07:22:45] INFO root fetch - processPackages [scrapework]: Remove: archive file [/home/abi/fetcher/tmp/scrapework-0.5.1.tar.gz]
+[2024-04-27 07:22:45] INFO root fetch - main [MainThread]: End processing [scrapework]: success
+[2024-04-27 07:22:45] INFO root fetch - processPackages [whatshow-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/whatshow_toolbox-1.0.2.tar.gz]
+[2024-04-27 07:22:45] INFO root fetch - processPackages [whatshow-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/whatshow_toolbox-1.0.3.tar.gz]
+[2024-04-27 07:22:45] INFO root fetch - main [MainThread]: End processing [whatshow-toolbox]: success
+[2024-04-27 07:22:45] INFO root fetch - main [MainThread]: Store serial: [22956664]
