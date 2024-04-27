@@ -8669,3 +8669,56 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 06:41:25] INFO root fetch - processPackages [tkchart]: Remove: archive file [/home/abi/fetcher/tmp/tkchart-2.1.1.tar.gz]
 [2024-04-27 06:41:25] INFO root fetch - main [MainThread]: End processing [tkchart]: success
 [2024-04-27 06:41:25] INFO root fetch - main [MainThread]: Store serial: [22956462]
+[2024-04-27 06:43:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956462]
+[2024-04-27 06:43:33] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-27 06:43:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scrapework
+[2024-04-27 06:43:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hcp-vault-secrets
+[2024-04-27 06:43:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: image-eval
+[2024-04-27 06:43:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: transformations
+[2024-04-27 06:43:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: image-eval
+[2024-04-27 06:43:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hcp-vault-secrets
+[2024-04-27 06:43:34] INFO root fetch - processPackages [scrapework]: New version: [0.5.0] Old Version: [0.4.7]
+[2024-04-27 06:43:34] INFO root fetch - processPackages [hcp-vault-secrets]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-27 06:43:34] INFO root fetch - processPackages [hcp-vault-secrets]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-27 06:43:34] INFO root fetch - processPackages [scrapework]: Downloading https://files.pythonhosted.org/packages/d5/bf/73e2c648a504b52d6677e25d055bb403cda4d244ac86e45023ab41f09294/scrapework-0.4.7.tar.gz
+[2024-04-27 06:43:34] INFO root fetch - processPackages [hcp-vault-secrets]: Downloading https://files.pythonhosted.org/packages/39/8e/09e50575e2b200b27667b17620d74c1fe3aff68b5f35268964b5ce6d72ff/hcp_vault_secrets-0.0.1.tar.gz
+[2024-04-27 06:43:34] INFO root fetch - processPackages [hcp-vault-secrets]: Downloading https://files.pythonhosted.org/packages/39/8e/09e50575e2b200b27667b17620d74c1fe3aff68b5f35268964b5ce6d72ff/hcp_vault_secrets-0.0.1.tar.gz
+[2024-04-27 06:43:34] INFO root fetch - processPackages [image-eval]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-27 06:43:34] INFO root fetch - processPackages [image-eval]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-27 06:43:34] INFO root fetch - processPackages [transformations]: New version: [2024.6.1] Old Version: [2024.4.24]
+[2024-04-27 06:43:34] INFO root fetch - processPackages [transformations]: Downloading https://files.pythonhosted.org/packages/3d/f6/6e73a65ee3241fc16110d848f96f95c708b9f3a3712e58c27480dea1da73/transformations-2024.4.24.tar.gz
+[2024-04-27 06:43:34] INFO root fetch - processPackages [image-eval]: Downloading https://files.pythonhosted.org/packages/93/9c/61cba1e69b5681fd12592f6e693dcf980018dbc5f281490cfe613bc08aec/image_eval-0.1.6-py3-none-any.whl
+[2024-04-27 06:43:34] INFO root fetch - processPackages [image-eval]: Downloading https://files.pythonhosted.org/packages/93/9c/61cba1e69b5681fd12592f6e693dcf980018dbc5f281490cfe613bc08aec/image_eval-0.1.6-py3-none-any.whl
+[2024-04-27 06:43:34] INFO root fetch - processPackages [hcp-vault-secrets]: Downloading https://files.pythonhosted.org/packages/80/fc/131a5a93fae7775dc3d8434333a93f2ffcc7ef091a88b20278aa882f72be/hcp_vault_secrets-0.0.2.tar.gz
+[2024-04-27 06:43:34] INFO root fetch - processPackages [hcp-vault-secrets]: Downloading https://files.pythonhosted.org/packages/80/fc/131a5a93fae7775dc3d8434333a93f2ffcc7ef091a88b20278aa882f72be/hcp_vault_secrets-0.0.2.tar.gz
+[2024-04-27 06:43:34] INFO root fetch - processPackages [scrapework]: Downloading https://files.pythonhosted.org/packages/8c/25/47b19ea90ffbb901b22399c39a6e20728832a1024db80c56ec12f227064e/scrapework-0.5.0.tar.gz
+[2024-04-27 06:43:34] INFO root fetch - processPackages [hcp-vault-secrets]: executing diffoscope
+[2024-04-27 06:43:34] INFO root fetch - processPackages [hcp-vault-secrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcp_vault_secrets-0.0.1.tar.gz tmp/hcp_vault_secrets-0.0.2.tar.gz --markdown 20240427/h/hcp-vault-secrets/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-27 06:43:34] INFO root fetch - processPackages [hcp-vault-secrets]: executing diffoscope
+[2024-04-27 06:43:34] INFO root fetch - processPackages [hcp-vault-secrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcp_vault_secrets-0.0.1.tar.gz tmp/hcp_vault_secrets-0.0.2.tar.gz --markdown 20240427/h/hcp-vault-secrets/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-27 06:43:34] INFO root fetch - processPackages [scrapework]: executing diffoscope
+[2024-04-27 06:43:34] INFO root fetch - processPackages [scrapework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapework-0.4.7.tar.gz tmp/scrapework-0.5.0.tar.gz --markdown 20240427/s/scrapework/0.4.7-0.5.0/README.md --exclude *.pyd
+[2024-04-27 06:43:34] INFO root fetch - processPackages [image-eval]: Downloading https://files.pythonhosted.org/packages/c3/5f/ade3f975489dd37606a3cbb530f63e5a0ce6a6004df04dda671ac8ae953a/image_eval-0.1.7-py3-none-any.whl
+[2024-04-27 06:43:34] INFO root fetch - processPackages [image-eval]: Downloading https://files.pythonhosted.org/packages/c3/5f/ade3f975489dd37606a3cbb530f63e5a0ce6a6004df04dda671ac8ae953a/image_eval-0.1.7-py3-none-any.whl
+[2024-04-27 06:43:34] INFO root fetch - processPackages [transformations]: Downloading https://files.pythonhosted.org/packages/37/47/031a2d99b7ca4080a69209b52b7cc05106a16f33ea3ddd260fea1fb9dd44/transformations-2024.6.1.tar.gz
+[2024-04-27 06:43:35] INFO root fetch - processPackages [image-eval]: executing diffoscope
+[2024-04-27 06:43:35] INFO root fetch - processPackages [image-eval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image_eval-0.1.6-py3-none-any.whl.zip tmp/image_eval-0.1.7-py3-none-any.whl.zip --markdown 20240427/i/image-eval/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-27 06:43:35] INFO root fetch - processPackages [image-eval]: executing diffoscope
+[2024-04-27 06:43:35] INFO root fetch - processPackages [image-eval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image_eval-0.1.6-py3-none-any.whl.zip tmp/image_eval-0.1.7-py3-none-any.whl.zip --markdown 20240427/i/image-eval/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-27 06:43:35] INFO root fetch - processPackages [transformations]: executing diffoscope
+[2024-04-27 06:43:35] INFO root fetch - processPackages [transformations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transformations-2024.4.24.tar.gz tmp/transformations-2024.6.1.tar.gz --markdown 20240427/t/transformations/2024.4.24-2024.6.1/README.md --exclude *.pyd
+[2024-04-27 06:43:35] INFO root fetch - processPackages [hcp-vault-secrets]: Remove: archive file [/home/abi/fetcher/tmp/hcp_vault_secrets-0.0.1.tar.gz]
+[2024-04-27 06:43:35] INFO root fetch - processPackages [hcp-vault-secrets]: Remove: archive file [/home/abi/fetcher/tmp/hcp_vault_secrets-0.0.2.tar.gz]
+[2024-04-27 06:43:35] INFO root fetch - main [MainThread]: End processing [hcp-vault-secrets]: success
+[2024-04-27 06:43:35] INFO root fetch - main [MainThread]: End processing [hcp-vault-secrets]: success
+[2024-04-27 06:43:35] INFO root fetch - processPackages [scrapework]: Remove: archive file [/home/abi/fetcher/tmp/scrapework-0.4.7.tar.gz]
+[2024-04-27 06:43:35] INFO root fetch - processPackages [scrapework]: Remove: archive file [/home/abi/fetcher/tmp/scrapework-0.5.0.tar.gz]
+[2024-04-27 06:43:35] INFO root fetch - main [MainThread]: End processing [scrapework]: success
+[2024-04-27 06:43:35] INFO root fetch - processPackages [image-eval]: Remove: archive file [/home/abi/fetcher/tmp/image_eval-0.1.6-py3-none-any.whl.zip]
+[2024-04-27 06:43:35] INFO root fetch - processPackages [image-eval]: Remove: archive file [/home/abi/fetcher/tmp/image_eval-0.1.7-py3-none-any.whl.zip]
+[2024-04-27 06:43:35] INFO root fetch - main [MainThread]: End processing [image-eval]: success
+[2024-04-27 06:43:35] INFO root fetch - main [MainThread]: End processing [image-eval]: success
+[2024-04-27 06:43:35] INFO root fetch - processPackages [transformations]: Remove: archive file [/home/abi/fetcher/tmp/transformations-2024.4.24.tar.gz]
+[2024-04-27 06:43:35] INFO root fetch - processPackages [transformations]: Remove: archive file [/home/abi/fetcher/tmp/transformations-2024.6.1.tar.gz]
+[2024-04-27 06:43:35] INFO root fetch - main [MainThread]: End processing [transformations]: success
+[2024-04-27 06:43:35] INFO root fetch - main [MainThread]: Store serial: [22956500]
