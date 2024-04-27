@@ -9262,3 +9262,17 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 07:34:00] INFO root fetch - processPackages [tflite-runtime-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tflite_runtime_nightly-2.17.0.dev20240425-cp39-cp39-manylinux_2_34_armv7l.whl.zip]
 [2024-04-27 07:34:00] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
 [2024-04-27 07:34:00] INFO root fetch - main [MainThread]: Store serial: [22956716]
+[2024-04-27 07:36:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956716]
+[2024-04-27 07:36:12] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-27 07:38:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956717]
+[2024-04-27 07:38:18] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 07:38:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyMLRS
+[2024-04-27 07:38:18] INFO root fetch - processPackages [PyMLRS]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-27 07:38:19] INFO root fetch - processPackages [PyMLRS]: Downloading https://files.pythonhosted.org/packages/46/b0/cf128827f0463a4a6b350c1c7d2523bb09d8bf6dce488fd7630f6fcd86c6/PyMLRS-0.0.1.tar.gz
+[2024-04-27 07:38:19] INFO root fetch - processPackages [PyMLRS]: Downloading https://files.pythonhosted.org/packages/4d/2e/518b2f215480e7b52b4f50f04172e15056549ac646fe9a7a039aa7b59edc/pymlrs-0.0.2.tar.gz
+[2024-04-27 07:38:19] INFO root fetch - processPackages [PyMLRS]: executing diffoscope
+[2024-04-27 07:38:19] INFO root fetch - processPackages [PyMLRS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyMLRS-0.0.1.tar.gz tmp/pymlrs-0.0.2.tar.gz --markdown 20240427/P/PyMLRS/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-27 07:38:20] INFO root fetch - processPackages [PyMLRS]: Remove: archive file [/home/abi/fetcher/tmp/PyMLRS-0.0.1.tar.gz]
+[2024-04-27 07:38:20] INFO root fetch - processPackages [PyMLRS]: Remove: archive file [/home/abi/fetcher/tmp/pymlrs-0.0.2.tar.gz]
+[2024-04-27 07:38:20] INFO root fetch - main [MainThread]: End processing [PyMLRS]: success
+[2024-04-27 07:38:20] INFO root fetch - main [MainThread]: Store serial: [22956720]
