@@ -20187,3 +20187,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 21:48:12] INFO root fetch - processPackages [lektor-chameleon]: Remove: archive file [/home/abi/fetcher/tmp/lektor_chameleon-0.8.tar.gz]
 [2024-04-27 21:48:12] INFO root fetch - main [MainThread]: End processing [lektor-chameleon]: success
 [2024-04-27 21:48:12] INFO root fetch - main [MainThread]: Store serial: [22961516]
+[2024-04-27 21:50:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961516]
+[2024-04-27 21:50:27] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 21:50:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ultralytics
+[2024-04-27 21:50:27] INFO root fetch - processPackages [ultralytics]: New version: [8.2.3] Old Version: [8.2.2]
+[2024-04-27 21:50:27] INFO root fetch - processPackages [ultralytics]: Downloading https://files.pythonhosted.org/packages/e2/49/bb410da2d7a60ba875102b33d4aa8dfc45bddfc49d16cdc41209080273ca/ultralytics-8.2.2.tar.gz
+[2024-04-27 21:50:27] INFO root fetch - processPackages [ultralytics]: Downloading https://files.pythonhosted.org/packages/bc/0c/abe8b6e644fdeec57da41e765ceeee4684aa7c1b34c958c34d881266c9c2/ultralytics-8.2.3.tar.gz
+[2024-04-27 21:50:27] INFO root fetch - processPackages [ultralytics]: executing diffoscope
+[2024-04-27 21:50:27] INFO root fetch - processPackages [ultralytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ultralytics-8.2.2.tar.gz tmp/ultralytics-8.2.3.tar.gz --markdown 20240427/u/ultralytics/8.2.2-8.2.3/README.md --exclude *.pyd
+[2024-04-27 21:50:29] INFO root fetch - processPackages [ultralytics]: Remove: archive file [/home/abi/fetcher/tmp/ultralytics-8.2.2.tar.gz]
+[2024-04-27 21:50:29] INFO root fetch - processPackages [ultralytics]: Remove: archive file [/home/abi/fetcher/tmp/ultralytics-8.2.3.tar.gz]
+[2024-04-27 21:50:29] INFO root fetch - main [MainThread]: End processing [ultralytics]: success
+[2024-04-27 21:50:29] INFO root fetch - main [MainThread]: Store serial: [22961519]
