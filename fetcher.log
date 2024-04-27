@@ -11269,3 +11269,15 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 11:12:18] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.9.tar.gz]
 [2024-04-27 11:12:18] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
 [2024-04-27 11:12:18] INFO root fetch - main [MainThread]: Store serial: [22957615]
+[2024-04-27 11:14:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957615]
+[2024-04-27 11:14:28] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 11:14:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: starrail_damage_cal
+[2024-04-27 11:14:28] INFO root fetch - processPackages [starrail_damage_cal]: New version: [1.5.4] Old Version: [1.5.3]
+[2024-04-27 11:14:29] INFO root fetch - processPackages [starrail_damage_cal]: Downloading https://files.pythonhosted.org/packages/a3/37/f576c63123ebf6065dcea4558b00d414e4c8d19018ee38ac5abcd9263a66/starrail_damage_cal-1.5.3.tar.gz
+[2024-04-27 11:14:29] INFO root fetch - processPackages [starrail_damage_cal]: Downloading https://files.pythonhosted.org/packages/7e/de/f19f18cc19df9531d3b175d4163a482b4c32b76feeec7f4db21415bba438/starrail_damage_cal-1.5.4.tar.gz
+[2024-04-27 11:14:29] INFO root fetch - processPackages [starrail_damage_cal]: executing diffoscope
+[2024-04-27 11:14:29] INFO root fetch - processPackages [starrail_damage_cal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/starrail_damage_cal-1.5.3.tar.gz tmp/starrail_damage_cal-1.5.4.tar.gz --markdown 20240427/s/starrail_damage_cal/1.5.3-1.5.4/README.md --exclude *.pyd
+[2024-04-27 11:14:30] INFO root fetch - processPackages [starrail_damage_cal]: Remove: archive file [/home/abi/fetcher/tmp/starrail_damage_cal-1.5.3.tar.gz]
+[2024-04-27 11:14:30] INFO root fetch - processPackages [starrail_damage_cal]: Remove: archive file [/home/abi/fetcher/tmp/starrail_damage_cal-1.5.4.tar.gz]
+[2024-04-27 11:14:30] INFO root fetch - main [MainThread]: End processing [starrail_damage_cal]: success
+[2024-04-27 11:14:30] INFO root fetch - main [MainThread]: Store serial: [22957618]
