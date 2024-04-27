@@ -16193,3 +16193,78 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 17:03:20] INFO root fetch - processPackages [eastmoneypy]: Remove: archive file [/home/abi/fetcher/tmp/eastmoneypy-0.1.5.tar.gz]
 [2024-04-27 17:03:20] INFO root fetch - main [MainThread]: End processing [eastmoneypy]: success
 [2024-04-27 17:03:20] INFO root fetch - main [MainThread]: Store serial: [22959665]
+[2024-04-27 17:05:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959665]
+[2024-04-27 17:05:28] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-04-27 17:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flatpack
+[2024-04-27 17:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mistralrs
+[2024-04-27 17:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mistralrs-accelerate
+[2024-04-27 17:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mistralrs-cuda
+[2024-04-27 17:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mistralrs-metal
+[2024-04-27 17:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mistralrs-mkl
+[2024-04-27 17:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ft260
+[2024-04-27 17:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: numwords
+[2024-04-27 17:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: DocumentAI-std
+[2024-04-27 17:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: hipims-io
+[2024-04-27 17:05:29] WARNING root fetch - processPackages [mistralrs]: Skipping, unable to determine old version
+[2024-04-27 17:05:29] INFO root fetch - main [MainThread]: End processing [mistralrs] error
+[2024-04-27 17:05:29] WARNING root fetch - processPackages [mistralrs-mkl]: Skipping, unable to determine old version
+[2024-04-27 17:05:29] INFO root fetch - main [MainThread]: End processing [mistralrs-mkl] error
+[2024-04-27 17:05:29] INFO root fetch - processPackages [DocumentAI-std]: New version: [0.2.6.dev1] Old Version: [0.2.5.dev1]
+[2024-04-27 17:05:29] WARNING root fetch - processPackages [ft260]: Skipping, unable to determine old version
+[2024-04-27 17:05:29] INFO root fetch - main [MainThread]: End processing [ft260] error
+[2024-04-27 17:05:29] INFO root fetch - processPackages [flatpack]: New version: [3.3.9] Old Version: [3.3.8]
+[2024-04-27 17:05:29] INFO root fetch - processPackages [DocumentAI-std]: Downloading https://files.pythonhosted.org/packages/8b/59/4818c3b03585a056c0e5707912306f0381b12e4a3859b930c8ee3ac997e9/DocumentAI_std-0.2.5.dev1.tar.gz
+[2024-04-27 17:05:29] INFO root fetch - processPackages [numwords]: New version: [2.0.0] Old Version: [1.0.0]
+[2024-04-27 17:05:29] INFO root fetch - processPackages [mistralrs-accelerate]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-27 17:05:29] INFO root fetch - processPackages [mistralrs-cuda]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-27 17:05:29] INFO root fetch - processPackages [mistralrs-metal]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-27 17:05:29] INFO root fetch - processPackages [hipims-io]: New version: [0.6.3] Old Version: [0.6.2]
+[2024-04-27 17:05:29] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/42/48/84e949164975b341645163f536ee4ca8329c4e3dfa6d143c2806a0849a54/flatpack-3.3.8.tar.gz
+[2024-04-27 17:05:29] INFO root fetch - processPackages [mistralrs-metal]: Downloading https://files.pythonhosted.org/packages/f9/2a/b2ae291b80b0dcb578f12a386d916fa6d20b8f9269cd702e7f58b5ec1637/mistralrs_metal-0.1.0.tar.gz
+[2024-04-27 17:05:29] INFO root fetch - processPackages [numwords]: Downloading https://files.pythonhosted.org/packages/3c/72/3cfef0a7b8f6ee3f96db6da09da0ecfa183cfd2dbf9d70dd5a43b9196bb5/numwords-1.0.0.tar.gz
+[2024-04-27 17:05:29] INFO root fetch - processPackages [mistralrs-cuda]: Downloading https://files.pythonhosted.org/packages/a0/23/8d1ae6dedad54a20cdc1f7544367b6387ea030b09aa8eda61ddd476459d6/mistralrs_cuda-0.1.0.tar.gz
+[2024-04-27 17:05:29] INFO root fetch - processPackages [mistralrs-accelerate]: Downloading https://files.pythonhosted.org/packages/0b/1d/8f1fce38b59a5ce767a869a2c9455e0a22d5b34cb5a9532fbc2c93f27ca3/mistralrs_accelerate-0.1.0.tar.gz
+[2024-04-27 17:05:29] INFO root fetch - processPackages [DocumentAI-std]: Downloading https://files.pythonhosted.org/packages/56/73/655ca02885612ec7205b622f53ed23da881d9f3b727f2d23cd7c0edaa48e/DocumentAI_std-0.2.6.dev1.tar.gz
+[2024-04-27 17:05:29] INFO root fetch - processPackages [hipims-io]: Downloading https://files.pythonhosted.org/packages/64/0d/ab1d38c1dc445e0184f5adb549eabac29ee29db5157bbaa861705b389e1f/hipims_io-0.6.2.tar.gz
+[2024-04-27 17:05:29] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/11/54/065825e8640b062c83c07c97d8dea514db8a5c0ea3c272834b88c568d82e/flatpack-3.3.9.tar.gz
+[2024-04-27 17:05:29] INFO root fetch - processPackages [DocumentAI-std]: executing diffoscope
+[2024-04-27 17:05:29] INFO root fetch - processPackages [DocumentAI-std]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DocumentAI_std-0.2.5.dev1.tar.gz tmp/DocumentAI_std-0.2.6.dev1.tar.gz --markdown 20240427/D/DocumentAI-std/0.2.5.dev1-0.2.6.dev1/README.md --exclude *.pyd
+[2024-04-27 17:05:29] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-04-27 17:05:29] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.3.8.tar.gz tmp/flatpack-3.3.9.tar.gz --markdown 20240427/f/flatpack/3.3.8-3.3.9/README.md --exclude *.pyd
+[2024-04-27 17:05:29] INFO root fetch - processPackages [mistralrs-metal]: Downloading https://files.pythonhosted.org/packages/e7/61/b643c37b38c1e1fb5ec52cf4ae0d7d03a8bca61138513ae9ed77a10b1cc4/mistralrs_metal-0.1.1.tar.gz
+[2024-04-27 17:05:29] INFO root fetch - processPackages [hipims-io]: Downloading https://files.pythonhosted.org/packages/cc/89/8fa880603c5f5ed19d0cbcc884bf61a6ba9945a7b8c30cc69f9f0e4df3a8/hipims_io-0.6.3.tar.gz
+[2024-04-27 17:05:29] INFO root fetch - processPackages [mistralrs-accelerate]: Downloading https://files.pythonhosted.org/packages/80/58/cc60d1a41318e1424bcd2c8ddeb9bf4dd99c950b331b9b0f26dae7eb8a7a/mistralrs_accelerate-0.1.1.tar.gz
+[2024-04-27 17:05:29] INFO root fetch - processPackages [mistralrs-cuda]: Downloading https://files.pythonhosted.org/packages/71/ac/a6138e4d3e9dc1ab9bc067ad2479c1d692bc1d430ecc9aaa802b9cb5295c/mistralrs_cuda-0.1.1.tar.gz
+[2024-04-27 17:05:29] INFO root fetch - processPackages [numwords]: Downloading https://files.pythonhosted.org/packages/71/18/8f58f80a0c2b3c82bcac6e03752a08c4c196b69265278e35203b2d55bd61/numwords-2.0.0.tar.gz
+[2024-04-27 17:05:30] INFO root fetch - processPackages [mistralrs-accelerate]: executing diffoscope
+[2024-04-27 17:05:30] INFO root fetch - processPackages [mistralrs-accelerate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mistralrs_accelerate-0.1.0.tar.gz tmp/mistralrs_accelerate-0.1.1.tar.gz --markdown 20240427/m/mistralrs-accelerate/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-27 17:05:30] INFO root fetch - processPackages [mistralrs-cuda]: executing diffoscope
+[2024-04-27 17:05:30] INFO root fetch - processPackages [mistralrs-cuda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mistralrs_cuda-0.1.0.tar.gz tmp/mistralrs_cuda-0.1.1.tar.gz --markdown 20240427/m/mistralrs-cuda/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-27 17:05:30] INFO root fetch - processPackages [mistralrs-metal]: executing diffoscope
+[2024-04-27 17:05:30] INFO root fetch - processPackages [mistralrs-metal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mistralrs_metal-0.1.0.tar.gz tmp/mistralrs_metal-0.1.1.tar.gz --markdown 20240427/m/mistralrs-metal/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-27 17:05:30] INFO root fetch - processPackages [hipims-io]: executing diffoscope
+[2024-04-27 17:05:30] INFO root fetch - processPackages [hipims-io]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hipims_io-0.6.2.tar.gz tmp/hipims_io-0.6.3.tar.gz --markdown 20240427/h/hipims-io/0.6.2-0.6.3/README.md --exclude *.pyd
+[2024-04-27 17:05:30] INFO root fetch - processPackages [numwords]: executing diffoscope
+[2024-04-27 17:05:30] INFO root fetch - processPackages [numwords]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numwords-1.0.0.tar.gz tmp/numwords-2.0.0.tar.gz --markdown 20240427/n/numwords/1.0.0-2.0.0/README.md --exclude *.pyd
+[2024-04-27 17:05:30] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.8.tar.gz]
+[2024-04-27 17:05:30] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.9.tar.gz]
+[2024-04-27 17:05:30] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-04-27 17:05:30] INFO root fetch - processPackages [DocumentAI-std]: Remove: archive file [/home/abi/fetcher/tmp/DocumentAI_std-0.2.5.dev1.tar.gz]
+[2024-04-27 17:05:30] INFO root fetch - processPackages [DocumentAI-std]: Remove: archive file [/home/abi/fetcher/tmp/DocumentAI_std-0.2.6.dev1.tar.gz]
+[2024-04-27 17:05:30] INFO root fetch - main [MainThread]: End processing [DocumentAI-std]: success
+[2024-04-27 17:05:30] INFO root fetch - processPackages [hipims-io]: Remove: archive file [/home/abi/fetcher/tmp/hipims_io-0.6.2.tar.gz]
+[2024-04-27 17:05:30] INFO root fetch - processPackages [hipims-io]: Remove: archive file [/home/abi/fetcher/tmp/hipims_io-0.6.3.tar.gz]
+[2024-04-27 17:05:30] INFO root fetch - main [MainThread]: End processing [hipims-io]: success
+[2024-04-27 17:05:30] INFO root fetch - processPackages [numwords]: Remove: archive file [/home/abi/fetcher/tmp/numwords-1.0.0.tar.gz]
+[2024-04-27 17:05:30] INFO root fetch - processPackages [numwords]: Remove: archive file [/home/abi/fetcher/tmp/numwords-2.0.0.tar.gz]
+[2024-04-27 17:05:30] INFO root fetch - main [MainThread]: End processing [numwords]: success
+[2024-04-27 17:05:31] INFO root fetch - processPackages [mistralrs-accelerate]: Remove: archive file [/home/abi/fetcher/tmp/mistralrs_accelerate-0.1.0.tar.gz]
+[2024-04-27 17:05:31] INFO root fetch - processPackages [mistralrs-accelerate]: Remove: archive file [/home/abi/fetcher/tmp/mistralrs_accelerate-0.1.1.tar.gz]
+[2024-04-27 17:05:31] INFO root fetch - main [MainThread]: End processing [mistralrs-accelerate]: success
+[2024-04-27 17:05:31] INFO root fetch - processPackages [mistralrs-cuda]: Remove: archive file [/home/abi/fetcher/tmp/mistralrs_cuda-0.1.0.tar.gz]
+[2024-04-27 17:05:31] INFO root fetch - processPackages [mistralrs-cuda]: Remove: archive file [/home/abi/fetcher/tmp/mistralrs_cuda-0.1.1.tar.gz]
+[2024-04-27 17:05:31] INFO root fetch - main [MainThread]: End processing [mistralrs-cuda]: success
+[2024-04-27 17:05:31] INFO root fetch - processPackages [mistralrs-metal]: Remove: archive file [/home/abi/fetcher/tmp/mistralrs_metal-0.1.0.tar.gz]
+[2024-04-27 17:05:31] INFO root fetch - processPackages [mistralrs-metal]: Remove: archive file [/home/abi/fetcher/tmp/mistralrs_metal-0.1.1.tar.gz]
+[2024-04-27 17:05:31] INFO root fetch - main [MainThread]: End processing [mistralrs-metal]: success
+[2024-04-27 17:05:31] INFO root fetch - main [MainThread]: Store serial: [22959690]
