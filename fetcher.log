@@ -13091,3 +13091,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 13:34:50] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torch_workflow_archiver_nightly-2024.4.8-py3-none-any.whl.zip]
 [2024-04-27 13:34:50] INFO root fetch - main [MainThread]: End processing [torch-workflow-archiver-nightly]: success
 [2024-04-27 13:34:50] INFO root fetch - main [MainThread]: Store serial: [22958344]
+[2024-04-27 13:36:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958344]
+[2024-04-27 13:36:59] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 13:36:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nijtaio
+[2024-04-27 13:36:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shimpiproductions-2.0
+[2024-04-27 13:36:59] INFO root fetch - processPackages [nijtaio]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-27 13:36:59] WARNING root fetch - processPackages [shimpiproductions-2.0]: Skipping, unable to determine old version
+[2024-04-27 13:36:59] INFO root fetch - main [MainThread]: End processing [shimpiproductions-2.0] error
+[2024-04-27 13:36:59] INFO root fetch - processPackages [nijtaio]: Downloading https://files.pythonhosted.org/packages/b5/94/2d5974f05add101802fcdcf32b525c6f6647f247073da56c40561aed4c17/nijtaio-1.1.8.tar.gz
+[2024-04-27 13:37:00] INFO root fetch - processPackages [nijtaio]: Downloading https://files.pythonhosted.org/packages/7d/90/318610f2116795a61404cac335d454e7e88d456f80d8726a59b277af40e0/nijtaio-1.1.9.tar.gz
+[2024-04-27 13:37:00] INFO root fetch - processPackages [nijtaio]: executing diffoscope
+[2024-04-27 13:37:00] INFO root fetch - processPackages [nijtaio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nijtaio-1.1.8.tar.gz tmp/nijtaio-1.1.9.tar.gz --markdown 20240427/n/nijtaio/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-04-27 13:37:01] INFO root fetch - processPackages [nijtaio]: Remove: archive file [/home/abi/fetcher/tmp/nijtaio-1.1.8.tar.gz]
+[2024-04-27 13:37:01] INFO root fetch - processPackages [nijtaio]: Remove: archive file [/home/abi/fetcher/tmp/nijtaio-1.1.9.tar.gz]
+[2024-04-27 13:37:01] INFO root fetch - main [MainThread]: End processing [nijtaio]: success
+[2024-04-27 13:37:01] INFO root fetch - main [MainThread]: Store serial: [22958355]
