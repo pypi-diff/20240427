@@ -8722,3 +8722,24 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 06:43:35] INFO root fetch - processPackages [transformations]: Remove: archive file [/home/abi/fetcher/tmp/transformations-2024.6.1.tar.gz]
 [2024-04-27 06:43:35] INFO root fetch - main [MainThread]: End processing [transformations]: success
 [2024-04-27 06:43:35] INFO root fetch - main [MainThread]: Store serial: [22956500]
+[2024-04-27 06:45:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956500]
+[2024-04-27 06:45:44] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 06:45:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: image-eval
+[2024-04-27 06:45:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hcp-vault-secrets
+[2024-04-27 06:45:44] INFO root fetch - processPackages [hcp-vault-secrets]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-27 06:45:44] INFO root fetch - processPackages [image-eval]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-27 06:45:44] INFO root fetch - processPackages [image-eval]: Downloading https://files.pythonhosted.org/packages/93/9c/61cba1e69b5681fd12592f6e693dcf980018dbc5f281490cfe613bc08aec/image_eval-0.1.6-py3-none-any.whl
+[2024-04-27 06:45:44] INFO root fetch - processPackages [hcp-vault-secrets]: Downloading https://files.pythonhosted.org/packages/6b/37/76c17b3d527f2665634cb78d2cb3d56a794094428d644020a722bb84a4da/hcp_vault_secrets-0.0.3.tar.gz
+[2024-04-27 06:45:44] INFO root fetch - processPackages [image-eval]: Downloading https://files.pythonhosted.org/packages/c3/5f/ade3f975489dd37606a3cbb530f63e5a0ce6a6004df04dda671ac8ae953a/image_eval-0.1.7-py3-none-any.whl
+[2024-04-27 06:45:44] INFO root fetch - processPackages [image-eval]: executing diffoscope
+[2024-04-27 06:45:44] INFO root fetch - processPackages [image-eval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image_eval-0.1.6-py3-none-any.whl.zip tmp/image_eval-0.1.7-py3-none-any.whl.zip --markdown 20240427/i/image-eval/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-27 06:45:44] INFO root fetch - processPackages [hcp-vault-secrets]: Downloading https://files.pythonhosted.org/packages/d2/d2/764fb0551a70dcf80fdb7804208784e757b81960a6ae0c97c87beda09d86/hcp_vault_secrets-0.0.4.tar.gz
+[2024-04-27 06:45:44] INFO root fetch - processPackages [hcp-vault-secrets]: executing diffoscope
+[2024-04-27 06:45:44] INFO root fetch - processPackages [hcp-vault-secrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcp_vault_secrets-0.0.3.tar.gz tmp/hcp_vault_secrets-0.0.4.tar.gz --markdown 20240427/h/hcp-vault-secrets/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-27 06:45:45] INFO root fetch - processPackages [image-eval]: Remove: archive file [/home/abi/fetcher/tmp/image_eval-0.1.6-py3-none-any.whl.zip]
+[2024-04-27 06:45:45] INFO root fetch - processPackages [image-eval]: Remove: archive file [/home/abi/fetcher/tmp/image_eval-0.1.7-py3-none-any.whl.zip]
+[2024-04-27 06:45:45] INFO root fetch - main [MainThread]: End processing [image-eval]: success
+[2024-04-27 06:45:45] INFO root fetch - processPackages [hcp-vault-secrets]: Remove: archive file [/home/abi/fetcher/tmp/hcp_vault_secrets-0.0.3.tar.gz]
+[2024-04-27 06:45:45] INFO root fetch - processPackages [hcp-vault-secrets]: Remove: archive file [/home/abi/fetcher/tmp/hcp_vault_secrets-0.0.4.tar.gz]
+[2024-04-27 06:45:45] INFO root fetch - main [MainThread]: End processing [hcp-vault-secrets]: success
+[2024-04-27 06:45:45] INFO root fetch - main [MainThread]: Store serial: [22956509]
