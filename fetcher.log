@@ -10848,3 +10848,18 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 10:19:51] INFO root fetch - processPackages [ncmlistdownloader]: Remove: archive file [/home/abi/fetcher/tmp/ncmlistdownloader-1.0.3.240426.tar.gz]
 [2024-04-27 10:19:51] INFO root fetch - main [MainThread]: End processing [ncmlistdownloader]: success
 [2024-04-27 10:19:51] INFO root fetch - main [MainThread]: Store serial: [22957419]
+[2024-04-27 10:21:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957419]
+[2024-04-27 10:21:59] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 10:21:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: media-manager
+[2024-04-27 10:21:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vbproblemcomposer
+[2024-04-27 10:21:59] INFO root fetch - processPackages [media-manager]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-27 10:21:59] INFO root fetch - processPackages [media-manager]: Downloading https://files.pythonhosted.org/packages/75/11/acc8a436463477db369c803d9007e03acdd0b43a677cd0cbb78b7ea5b3bb/media_manager-0.8.0-py2.py3-none-any.whl
+[2024-04-27 10:21:59] WARNING root fetch - processPackages [vbproblemcomposer]: Skipping, unable to determine old version
+[2024-04-27 10:21:59] INFO root fetch - main [MainThread]: End processing [vbproblemcomposer] error
+[2024-04-27 10:21:59] INFO root fetch - processPackages [media-manager]: Downloading https://files.pythonhosted.org/packages/9b/a7/1155a373b195bebb88c0274982964c45aecd8d7206b2f4731838007628fd/media_manager-0.9.0-py2.py3-none-any.whl
+[2024-04-27 10:21:59] INFO root fetch - processPackages [media-manager]: executing diffoscope
+[2024-04-27 10:21:59] INFO root fetch - processPackages [media-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/media_manager-0.8.0-py2.py3-none-any.whl.zip tmp/media_manager-0.9.0-py2.py3-none-any.whl.zip --markdown 20240427/m/media-manager/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-27 10:22:00] INFO root fetch - processPackages [media-manager]: Remove: archive file [/home/abi/fetcher/tmp/media_manager-0.8.0-py2.py3-none-any.whl.zip]
+[2024-04-27 10:22:00] INFO root fetch - processPackages [media-manager]: Remove: archive file [/home/abi/fetcher/tmp/media_manager-0.9.0-py2.py3-none-any.whl.zip]
+[2024-04-27 10:22:00] INFO root fetch - main [MainThread]: End processing [media-manager]: success
+[2024-04-27 10:22:00] INFO root fetch - main [MainThread]: Store serial: [22957426]
