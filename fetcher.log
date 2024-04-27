@@ -8301,3 +8301,24 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 06:21:53] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.99.tar.gz]
 [2024-04-27 06:21:53] INFO root fetch - main [MainThread]: End processing [lbt-dragonfly]: success
 [2024-04-27 06:21:53] INFO root fetch - main [MainThread]: Store serial: [22956372]
+[2024-04-27 06:23:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956372]
+[2024-04-27 06:24:02] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 06:24:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lbt-dragonfly
+[2024-04-27 06:24:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: CodeBat
+[2024-04-27 06:24:02] INFO root fetch - processPackages [CodeBat]: New version: [0.0.2.3] Old Version: [0.0.2.2]
+[2024-04-27 06:24:02] INFO root fetch - processPackages [lbt-dragonfly]: New version: [0.9.99] Old Version: [0.9.98]
+[2024-04-27 06:24:02] INFO root fetch - processPackages [CodeBat]: Downloading https://files.pythonhosted.org/packages/d9/55/b6638fa0b90e41a12e32947f8a0addfa603363fd271b675fd438518ab329/codebat-0.0.2.2.tar.gz
+[2024-04-27 06:24:02] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/be/ae/7267dfd241a0641f3fbadea4128db5ffa29609911cadb5fc4840656bb44a/lbt-dragonfly-0.9.98.tar.gz
+[2024-04-27 06:24:02] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/b4/08/0ca46e9f7eef7b2cce7f0c6110106c42aa35a79bd88110559177f64d733a/lbt-dragonfly-0.9.99.tar.gz
+[2024-04-27 06:24:03] INFO root fetch - processPackages [CodeBat]: Downloading https://files.pythonhosted.org/packages/37/55/06cee4fa9e043a5aad66a805b82b91fcea1e246cb744d6bef27ddccc90ff/codebat-0.0.2.3.tar.gz
+[2024-04-27 06:24:03] INFO root fetch - processPackages [lbt-dragonfly]: executing diffoscope
+[2024-04-27 06:24:03] INFO root fetch - processPackages [lbt-dragonfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-dragonfly-0.9.98.tar.gz tmp/lbt-dragonfly-0.9.99.tar.gz --markdown 20240427/l/lbt-dragonfly/0.9.98-0.9.99/README.md --exclude *.pyd
+[2024-04-27 06:24:03] INFO root fetch - processPackages [CodeBat]: executing diffoscope
+[2024-04-27 06:24:03] INFO root fetch - processPackages [CodeBat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codebat-0.0.2.2.tar.gz tmp/codebat-0.0.2.3.tar.gz --markdown 20240427/C/CodeBat/0.0.2.2-0.0.2.3/README.md --exclude *.pyd
+[2024-04-27 06:24:03] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.98.tar.gz]
+[2024-04-27 06:24:03] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.99.tar.gz]
+[2024-04-27 06:24:03] INFO root fetch - main [MainThread]: End processing [lbt-dragonfly]: success
+[2024-04-27 06:24:03] INFO root fetch - processPackages [CodeBat]: Remove: archive file [/home/abi/fetcher/tmp/codebat-0.0.2.2.tar.gz]
+[2024-04-27 06:24:03] INFO root fetch - processPackages [CodeBat]: Remove: archive file [/home/abi/fetcher/tmp/codebat-0.0.2.3.tar.gz]
+[2024-04-27 06:24:03] INFO root fetch - main [MainThread]: End processing [CodeBat]: success
+[2024-04-27 06:24:03] INFO root fetch - main [MainThread]: Store serial: [22956378]
