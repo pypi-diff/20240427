@@ -16463,3 +16463,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 17:17:08] INFO root fetch - processPackages [ziafont]: Remove: archive file [/home/abi/fetcher/tmp/ziafont-0.8.tar.gz]
 [2024-04-27 17:17:08] INFO root fetch - main [MainThread]: End processing [ziafont]: success
 [2024-04-27 17:17:08] INFO root fetch - main [MainThread]: Store serial: [22959759]
+[2024-04-27 17:19:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959759]
+[2024-04-27 17:19:16] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 17:19:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: freegenius
+[2024-04-27 17:19:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PACMANCharge
+[2024-04-27 17:19:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openai-api-with-easy-tools-and-web-browsing
+[2024-04-27 17:19:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: JyotiYatra
+[2024-04-27 17:19:16] INFO root fetch - processPackages [freegenius]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-27 17:19:17] WARNING root fetch - processPackages [PACMANCharge]: Skipping, unable to determine old version
+[2024-04-27 17:19:17] WARNING root fetch - processPackages [JyotiYatra]: Skipping, unable to determine old version
+[2024-04-27 17:19:17] INFO root fetch - main [MainThread]: End processing [PACMANCharge] error
+[2024-04-27 17:19:17] INFO root fetch - main [MainThread]: End processing [JyotiYatra] error
+[2024-04-27 17:19:17] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/b7/a1/d4c3a5718c3c1cec4fac405354526076c1d2049a976e1c117785bf6d16b2/freegenius-0.1.2.tar.gz
+[2024-04-27 17:19:17] INFO root fetch - processPackages [openai-api-with-easy-tools-and-web-browsing]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-27 17:19:17] INFO root fetch - processPackages [openai-api-with-easy-tools-and-web-browsing]: Downloading https://files.pythonhosted.org/packages/d1/ea/97c83b1fbf6625523373527d9d0003342f3788d6e1dc1b5821b554ed82a7/openai_api_with_easy_tools_and_web_browsing-1.0.2.tar.gz
+[2024-04-27 17:19:17] INFO root fetch - processPackages [openai-api-with-easy-tools-and-web-browsing]: Downloading https://files.pythonhosted.org/packages/2b/bc/31182a5268fe033843d4530f15541af35bf15060041d5fcf8f3ba2fed89a/openai_api_with_easy_tools_and_web_browsing-1.0.3.tar.gz
+[2024-04-27 17:19:17] INFO root fetch - processPackages [openai-api-with-easy-tools-and-web-browsing]: executing diffoscope
+[2024-04-27 17:19:17] INFO root fetch - processPackages [openai-api-with-easy-tools-and-web-browsing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openai_api_with_easy_tools_and_web_browsing-1.0.2.tar.gz tmp/openai_api_with_easy_tools_and_web_browsing-1.0.3.tar.gz --markdown 20240427/o/openai-api-with-easy-tools-and-web-browsing/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-04-27 17:19:17] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/0f/70/777a2305594a15847831fd7372a0a66a6df3dfa337a35fcebbcde88761d4/freegenius-0.1.3.tar.gz
+[2024-04-27 17:19:18] INFO root fetch - processPackages [openai-api-with-easy-tools-and-web-browsing]: Remove: archive file [/home/abi/fetcher/tmp/openai_api_with_easy_tools_and_web_browsing-1.0.2.tar.gz]
+[2024-04-27 17:19:18] INFO root fetch - processPackages [openai-api-with-easy-tools-and-web-browsing]: Remove: archive file [/home/abi/fetcher/tmp/openai_api_with_easy_tools_and_web_browsing-1.0.3.tar.gz]
+[2024-04-27 17:19:18] INFO root fetch - main [MainThread]: End processing [openai-api-with-easy-tools-and-web-browsing]: success
+[2024-04-27 17:19:19] INFO root fetch - processPackages [freegenius]: executing diffoscope
+[2024-04-27 17:19:19] INFO root fetch - processPackages [freegenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freegenius-0.1.2.tar.gz tmp/freegenius-0.1.3.tar.gz --markdown 20240427/f/freegenius/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-27 17:19:20] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.1.2.tar.gz]
+[2024-04-27 17:19:20] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.1.3.tar.gz]
+[2024-04-27 17:19:20] INFO root fetch - main [MainThread]: End processing [freegenius]: success
+[2024-04-27 17:19:20] INFO root fetch - main [MainThread]: Store serial: [22959781]
