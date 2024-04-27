@@ -7346,3 +7346,18 @@ EOFError: EOF read where object expected
 [2024-04-27 04:43:37] INFO root fetch - processPackages [redhat-assisted-installer]: Remove: archive file [/home/abi/fetcher/tmp/redhat_assisted_installer-0.1.1.tar.gz]
 [2024-04-27 04:43:37] INFO root fetch - main [MainThread]: End processing [redhat-assisted-installer]: success
 [2024-04-27 04:43:37] INFO root fetch - main [MainThread]: Store serial: [22956125]
+[2024-04-27 04:45:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956125]
+[2024-04-27 04:45:46] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 04:45:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qLDPC
+[2024-04-27 04:45:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pathlib-next
+[2024-04-27 04:45:46] INFO root fetch - processPackages [qLDPC]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 04:45:46] WARNING root fetch - processPackages [pathlib-next]: Skipping, unable to determine old version
+[2024-04-27 04:45:46] INFO root fetch - main [MainThread]: End processing [pathlib-next] error
+[2024-04-27 04:45:46] INFO root fetch - processPackages [qLDPC]: Downloading https://files.pythonhosted.org/packages/88/f7/51a90d4d6d46c878068c0a2ee891256d1321ec65adc2438457a548c7243b/qldpc-0.0.8.tar.gz
+[2024-04-27 04:45:46] INFO root fetch - processPackages [qLDPC]: Downloading https://files.pythonhosted.org/packages/80/7b/9cfc980134de12a4c1585c2afcb1058a619c603ac7f9c3df17f02114dc3d/qldpc-0.0.9.tar.gz
+[2024-04-27 04:45:47] INFO root fetch - processPackages [qLDPC]: executing diffoscope
+[2024-04-27 04:45:47] INFO root fetch - processPackages [qLDPC]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qldpc-0.0.8.tar.gz tmp/qldpc-0.0.9.tar.gz --markdown 20240427/q/qLDPC/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 04:45:47] INFO root fetch - processPackages [qLDPC]: Remove: archive file [/home/abi/fetcher/tmp/qldpc-0.0.8.tar.gz]
+[2024-04-27 04:45:47] INFO root fetch - processPackages [qLDPC]: Remove: archive file [/home/abi/fetcher/tmp/qldpc-0.0.9.tar.gz]
+[2024-04-27 04:45:47] INFO root fetch - main [MainThread]: End processing [qLDPC]: success
+[2024-04-27 04:45:47] INFO root fetch - main [MainThread]: Store serial: [22956134]
