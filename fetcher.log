@@ -2998,3 +2998,51 @@ EOFError: EOF read where object expected
 [2024-04-27 02:59:21] INFO root fetch - processPackages [hebill]: Remove: archive file [/home/abi/fetcher/tmp/hebill-1.2.6.tar.gz]
 [2024-04-27 02:59:21] INFO root fetch - main [MainThread]: End processing [hebill]: success
 [2024-04-27 02:59:21] INFO root fetch - main [MainThread]: Store serial: [22954537]
+[2024-04-27 03:01:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22954537]
+[2024-04-27 03:01:30] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 03:01:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mecode-viewer
+[2024-04-27 03:01:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: botocore-a-la-carte-iot1click-projects
+[2024-04-27 03:01:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: botocore-a-la-carte-iam
+[2024-04-27 03:01:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: botocore-a-la-carte-license-manager
+[2024-04-27 03:01:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: botocore-a-la-carte-mgh
+[2024-04-27 03:01:31] INFO root fetch - processPackages [mecode-viewer]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-27 03:01:31] INFO root fetch - processPackages [mecode-viewer]: Downloading https://files.pythonhosted.org/packages/bf/ea/bd6a698228b6bde9892be93208113bbada51eff34b3c0706f776444f94e0/mecode_viewer-0.3.8.tar.gz
+[2024-04-27 03:01:31] INFO root fetch - processPackages [botocore-a-la-carte-iam]: New version: [1.34.93] Old Version: [1.34.92]
+[2024-04-27 03:01:31] INFO root fetch - processPackages [botocore-a-la-carte-iot1click-projects]: New version: [1.34.93] Old Version: [1.34.92]
+[2024-04-27 03:01:31] INFO root fetch - processPackages [botocore-a-la-carte-license-manager]: New version: [1.34.93] Old Version: [1.34.92]
+[2024-04-27 03:01:31] INFO root fetch - processPackages [botocore-a-la-carte-mgh]: New version: [1.34.93] Old Version: [1.34.92]
+[2024-04-27 03:01:31] INFO root fetch - processPackages [botocore-a-la-carte-iam]: Downloading https://files.pythonhosted.org/packages/43/fd/4df8020f50024561141d519d6c2ed3b0339b940ea709ab074d9d61c12914/botocore-a-la-carte-iam-1.34.92.tar.gz
+[2024-04-27 03:01:31] INFO root fetch - processPackages [botocore-a-la-carte-license-manager]: Downloading https://files.pythonhosted.org/packages/0c/fd/f80485dbad6445f4761b2c95d68ba44bb16a851d22e82e0cbf1d4caeb17c/botocore-a-la-carte-license-manager-1.34.92.tar.gz
+[2024-04-27 03:01:31] INFO root fetch - processPackages [botocore-a-la-carte-iot1click-projects]: Downloading https://files.pythonhosted.org/packages/03/61/1a9f5f99b1c433a18aff8b2e76b1d0bf641b6c9b6d88b3cb8104e72ac60d/botocore-a-la-carte-iot1click-projects-1.34.92.tar.gz
+[2024-04-27 03:01:31] INFO root fetch - processPackages [mecode-viewer]: Downloading https://files.pythonhosted.org/packages/43/39/a0fdd296e65a33f0a7fd448c436efeac4611c0e6544732e75f97ecc2a24b/mecode_viewer-0.3.9.tar.gz
+[2024-04-27 03:01:31] INFO root fetch - processPackages [botocore-a-la-carte-mgh]: Downloading https://files.pythonhosted.org/packages/34/2d/f3c5ad40c3eeaab290ccbadc41c3804b305fa4f4a125c06a408c379460fb/botocore-a-la-carte-mgh-1.34.92.tar.gz
+[2024-04-27 03:01:31] INFO root fetch - processPackages [mecode-viewer]: executing diffoscope
+[2024-04-27 03:01:31] INFO root fetch - processPackages [mecode-viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mecode_viewer-0.3.8.tar.gz tmp/mecode_viewer-0.3.9.tar.gz --markdown 20240427/m/mecode-viewer/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-27 03:01:31] INFO root fetch - processPackages [botocore-a-la-carte-iam]: Downloading https://files.pythonhosted.org/packages/29/d4/ce4916d1cbf36aeda1bc0dce04d186ed97ab62d679ebbdf2454c5b5e5a52/botocore_a_la_carte_iam-1.34.93-py3-none-any.whl
+[2024-04-27 03:01:31] INFO root fetch - processPackages [botocore-a-la-carte-license-manager]: Downloading https://files.pythonhosted.org/packages/f1/52/f886d8c1239104dcbdf4ef950e631fa70a299e929e85f72267d173d8c120/botocore_a_la_carte_license_manager-1.34.93-py3-none-any.whl
+[2024-04-27 03:01:31] INFO root fetch - processPackages [botocore-a-la-carte-iot1click-projects]: Downloading https://files.pythonhosted.org/packages/b0/1c/e2fb5e11df1c96549aa1b8583b0b3624a9dd30e56d9cb34ad1c3fc4983c8/botocore_a_la_carte_iot1click_projects-1.34.93-py3-none-any.whl
+[2024-04-27 03:01:31] INFO root fetch - processPackages [botocore-a-la-carte-mgh]: Downloading https://files.pythonhosted.org/packages/98/56/30e911104350d91c32bd13d128a7cb74e58acd9e9bf8fce7310922ecace1/botocore_a_la_carte_mgh-1.34.93-py3-none-any.whl
+[2024-04-27 03:01:32] INFO root fetch - processPackages [botocore-a-la-carte-iot1click-projects]: executing diffoscope
+[2024-04-27 03:01:32] INFO root fetch - processPackages [botocore-a-la-carte-iot1click-projects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botocore-a-la-carte-iot1click-projects-1.34.92.tar.gz tmp/botocore_a_la_carte_iot1click_projects-1.34.93-py3-none-any.whl.zip --markdown 20240427/b/botocore-a-la-carte-iot1click-projects/1.34.92-1.34.93/README.md --exclude *.pyd
+[2024-04-27 03:01:32] INFO root fetch - processPackages [mecode-viewer]: Remove: archive file [/home/abi/fetcher/tmp/mecode_viewer-0.3.8.tar.gz]
+[2024-04-27 03:01:32] INFO root fetch - processPackages [mecode-viewer]: Remove: archive file [/home/abi/fetcher/tmp/mecode_viewer-0.3.9.tar.gz]
+[2024-04-27 03:01:32] INFO root fetch - main [MainThread]: End processing [mecode-viewer]: success
+[2024-04-27 03:01:32] INFO root fetch - processPackages [botocore-a-la-carte-mgh]: executing diffoscope
+[2024-04-27 03:01:32] INFO root fetch - processPackages [botocore-a-la-carte-mgh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botocore-a-la-carte-mgh-1.34.92.tar.gz tmp/botocore_a_la_carte_mgh-1.34.93-py3-none-any.whl.zip --markdown 20240427/b/botocore-a-la-carte-mgh/1.34.92-1.34.93/README.md --exclude *.pyd
+[2024-04-27 03:01:32] INFO root fetch - processPackages [botocore-a-la-carte-iam]: executing diffoscope
+[2024-04-27 03:01:32] INFO root fetch - processPackages [botocore-a-la-carte-iam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botocore-a-la-carte-iam-1.34.92.tar.gz tmp/botocore_a_la_carte_iam-1.34.93-py3-none-any.whl.zip --markdown 20240427/b/botocore-a-la-carte-iam/1.34.92-1.34.93/README.md --exclude *.pyd
+[2024-04-27 03:01:32] INFO root fetch - processPackages [botocore-a-la-carte-license-manager]: executing diffoscope
+[2024-04-27 03:01:32] INFO root fetch - processPackages [botocore-a-la-carte-license-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botocore-a-la-carte-license-manager-1.34.92.tar.gz tmp/botocore_a_la_carte_license_manager-1.34.93-py3-none-any.whl.zip --markdown 20240427/b/botocore-a-la-carte-license-manager/1.34.92-1.34.93/README.md --exclude *.pyd
+[2024-04-27 03:01:32] INFO root fetch - processPackages [botocore-a-la-carte-iot1click-projects]: Remove: archive file [/home/abi/fetcher/tmp/botocore-a-la-carte-iot1click-projects-1.34.92.tar.gz]
+[2024-04-27 03:01:32] INFO root fetch - processPackages [botocore-a-la-carte-iot1click-projects]: Remove: archive file [/home/abi/fetcher/tmp/botocore_a_la_carte_iot1click_projects-1.34.93-py3-none-any.whl.zip]
+[2024-04-27 03:01:32] INFO root fetch - main [MainThread]: End processing [botocore-a-la-carte-iot1click-projects]: success
+[2024-04-27 03:01:32] INFO root fetch - processPackages [botocore-a-la-carte-mgh]: Remove: archive file [/home/abi/fetcher/tmp/botocore-a-la-carte-mgh-1.34.92.tar.gz]
+[2024-04-27 03:01:32] INFO root fetch - processPackages [botocore-a-la-carte-mgh]: Remove: archive file [/home/abi/fetcher/tmp/botocore_a_la_carte_mgh-1.34.93-py3-none-any.whl.zip]
+[2024-04-27 03:01:32] INFO root fetch - main [MainThread]: End processing [botocore-a-la-carte-mgh]: success
+[2024-04-27 03:01:32] INFO root fetch - processPackages [botocore-a-la-carte-license-manager]: Remove: archive file [/home/abi/fetcher/tmp/botocore-a-la-carte-license-manager-1.34.92.tar.gz]
+[2024-04-27 03:01:32] INFO root fetch - processPackages [botocore-a-la-carte-license-manager]: Remove: archive file [/home/abi/fetcher/tmp/botocore_a_la_carte_license_manager-1.34.93-py3-none-any.whl.zip]
+[2024-04-27 03:01:32] INFO root fetch - main [MainThread]: End processing [botocore-a-la-carte-license-manager]: success
+[2024-04-27 03:01:33] INFO root fetch - processPackages [botocore-a-la-carte-iam]: Remove: archive file [/home/abi/fetcher/tmp/botocore-a-la-carte-iam-1.34.92.tar.gz]
+[2024-04-27 03:01:33] INFO root fetch - processPackages [botocore-a-la-carte-iam]: Remove: archive file [/home/abi/fetcher/tmp/botocore_a_la_carte_iam-1.34.93-py3-none-any.whl.zip]
+[2024-04-27 03:01:33] INFO root fetch - main [MainThread]: End processing [botocore-a-la-carte-iam]: success
+[2024-04-27 03:01:33] INFO root fetch - main [MainThread]: Store serial: [22954549]
