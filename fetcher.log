@@ -11901,3 +11901,27 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 12:17:10] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.3.6.tar.gz]
 [2024-04-27 12:17:10] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
 [2024-04-27 12:17:10] INFO root fetch - main [MainThread]: Store serial: [22957853]
+[2024-04-27 12:19:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957853]
+[2024-04-27 12:19:19] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 12:19:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openai-cost-logger
+[2024-04-27 12:19:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: project-fastapi
+[2024-04-27 12:19:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: myPYPI9
+[2024-04-27 12:19:19] INFO root fetch - processPackages [myPYPI9]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-04-27 12:19:19] WARNING root fetch - processPackages [project-fastapi]: Skipping, unable to determine old version
+[2024-04-27 12:19:19] INFO root fetch - main [MainThread]: End processing [project-fastapi] error
+[2024-04-27 12:19:19] INFO root fetch - processPackages [openai-cost-logger]: New version: [0.3.0] Old Version: [0.2.1]
+[2024-04-27 12:19:19] INFO root fetch - processPackages [myPYPI9]: Downloading https://files.pythonhosted.org/packages/d2/03/5b0462b74e5bbe20e7683813ed6047ef9b8e0e11bbf832307c81a6eb57b0/mypypi9-0.7.8.tar.gz
+[2024-04-27 12:19:19] INFO root fetch - processPackages [openai-cost-logger]: Downloading https://files.pythonhosted.org/packages/6b/4a/87e0adbdc6ca9b2fe08d1d8163e125cb5de97b57cacf84f97f2fa36f2b46/openai-cost-logger-0.2.1.tar.gz
+[2024-04-27 12:19:19] INFO root fetch - processPackages [myPYPI9]: Downloading https://files.pythonhosted.org/packages/59/50/e6ade8fa894f63707b31ffb2a965aa60c3b56b9ba31f82374779f571167e/mypypi9-0.7.9.tar.gz
+[2024-04-27 12:19:19] INFO root fetch - processPackages [myPYPI9]: executing diffoscope
+[2024-04-27 12:19:19] INFO root fetch - processPackages [myPYPI9]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypypi9-0.7.8.tar.gz tmp/mypypi9-0.7.9.tar.gz --markdown 20240427/m/myPYPI9/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-04-27 12:19:19] INFO root fetch - processPackages [openai-cost-logger]: Downloading https://files.pythonhosted.org/packages/a7/2a/d3992429a68b05df26002d6541390ca4ab26c361020174c1cc8ec6092027/openai-cost-logger-0.3.0.tar.gz
+[2024-04-27 12:19:19] INFO root fetch - processPackages [openai-cost-logger]: executing diffoscope
+[2024-04-27 12:19:19] INFO root fetch - processPackages [openai-cost-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openai-cost-logger-0.2.1.tar.gz tmp/openai-cost-logger-0.3.0.tar.gz --markdown 20240427/o/openai-cost-logger/0.2.1-0.3.0/README.md --exclude *.pyd
+[2024-04-27 12:19:20] INFO root fetch - processPackages [myPYPI9]: Remove: archive file [/home/abi/fetcher/tmp/mypypi9-0.7.8.tar.gz]
+[2024-04-27 12:19:20] INFO root fetch - processPackages [myPYPI9]: Remove: archive file [/home/abi/fetcher/tmp/mypypi9-0.7.9.tar.gz]
+[2024-04-27 12:19:20] INFO root fetch - main [MainThread]: End processing [myPYPI9]: success
+[2024-04-27 12:19:20] INFO root fetch - processPackages [openai-cost-logger]: Remove: archive file [/home/abi/fetcher/tmp/openai-cost-logger-0.2.1.tar.gz]
+[2024-04-27 12:19:20] INFO root fetch - processPackages [openai-cost-logger]: Remove: archive file [/home/abi/fetcher/tmp/openai-cost-logger-0.3.0.tar.gz]
+[2024-04-27 12:19:20] INFO root fetch - main [MainThread]: End processing [openai-cost-logger]: success
+[2024-04-27 12:19:20] INFO root fetch - main [MainThread]: Store serial: [22957863]
