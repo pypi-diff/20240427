@@ -12569,3 +12569,42 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 13:03:14] INFO root fetch - processPackages [hurray]: Remove: archive file [/home/abi/fetcher/tmp/hurray-1.1.0.tar.gz]
 [2024-04-27 13:03:14] INFO root fetch - main [MainThread]: End processing [hurray]: success
 [2024-04-27 13:03:14] INFO root fetch - main [MainThread]: Store serial: [22958123]
+[2024-04-27 13:05:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958123]
+[2024-04-27 13:05:23] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 13:05:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rapidgzip
+[2024-04-27 13:05:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: colossalai
+[2024-04-27 13:05:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyscript-ltk
+[2024-04-27 13:05:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-alist
+[2024-04-27 13:05:23] INFO root fetch - processPackages [python-alist]: New version: [0.0.9.9] Old Version: [0.0.9.8.1]
+[2024-04-27 13:05:23] INFO root fetch - processPackages [pyscript-ltk]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-27 13:05:23] INFO root fetch - processPackages [python-alist]: Downloading https://files.pythonhosted.org/packages/16/4c/767ed3dbd217eb3ea1f030c845f5a098d8e656f2fb4ab63c7fa0eadcf367/python_alist-0.0.9.8.1.tar.gz
+[2024-04-27 13:05:23] INFO root fetch - processPackages [colossalai]: New version: [0.3.7] Old Version: [0.3.6]
+[2024-04-27 13:05:23] INFO root fetch - processPackages [pyscript-ltk]: Downloading https://files.pythonhosted.org/packages/28/6e/96be52ee89b9a24fc42d6a4a18618ca41a2b1437aed89200641a3ad7cc13/pyscript-ltk-0.1.8.tar.gz
+[2024-04-27 13:05:23] INFO root fetch - processPackages [rapidgzip]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-04-27 13:05:23] INFO root fetch - processPackages [colossalai]: Downloading https://files.pythonhosted.org/packages/05/ed/57e80620ea8e35c3aa63a3207720b1890700fd12eea38b6592e9833e5c1b/colossalai-0.3.6.tar.gz
+[2024-04-27 13:05:23] INFO root fetch - processPackages [pyscript-ltk]: Downloading https://files.pythonhosted.org/packages/a3/ee/ecb05ed84434f45a5ad24d6b5fdb04a89d83f6efe69dd691866b7eaee6e9/pyscript-ltk-0.1.9.tar.gz
+[2024-04-27 13:05:23] INFO root fetch - processPackages [rapidgzip]: Downloading https://files.pythonhosted.org/packages/b3/44/0cd756c6ab35666b2aba0138317d2b8ccb36f25811195f16b81709d26c6b/rapidgzip-0.8.1.tar.gz
+[2024-04-27 13:05:23] INFO root fetch - processPackages [python-alist]: Downloading https://files.pythonhosted.org/packages/a4/c8/c4ceead1bdae1d44cce58995ae016d39c6e4134cefa9b31ef2daf97d4c36/python_alist-0.0.9.9.tar.gz
+[2024-04-27 13:05:23] INFO root fetch - processPackages [pyscript-ltk]: executing diffoscope
+[2024-04-27 13:05:23] INFO root fetch - processPackages [pyscript-ltk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscript-ltk-0.1.8.tar.gz tmp/pyscript-ltk-0.1.9.tar.gz --markdown 20240427/p/pyscript-ltk/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-27 13:05:23] INFO root fetch - processPackages [python-alist]: executing diffoscope
+[2024-04-27 13:05:23] INFO root fetch - processPackages [python-alist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_alist-0.0.9.8.1.tar.gz tmp/python_alist-0.0.9.9.tar.gz --markdown 20240427/p/python-alist/0.0.9.8.1-0.0.9.9/README.md --exclude *.pyd
+[2024-04-27 13:05:23] INFO root fetch - processPackages [rapidgzip]: Downloading https://files.pythonhosted.org/packages/64/46/755a881732bf45bdce912b6b91090af0f0da1d2ee0b4ec3ccd3ee173112d/rapidgzip-0.9.0.tar.gz
+[2024-04-27 13:05:23] INFO root fetch - processPackages [colossalai]: Downloading https://files.pythonhosted.org/packages/3e/64/9bae1e3713511878aa0810d6638b7dfcf3b561e9dac832f03ff0dda8df9a/colossalai-0.3.7.tar.gz
+[2024-04-27 13:05:24] INFO root fetch - processPackages [colossalai]: executing diffoscope
+[2024-04-27 13:05:24] INFO root fetch - processPackages [colossalai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/colossalai-0.3.6.tar.gz tmp/colossalai-0.3.7.tar.gz --markdown 20240427/c/colossalai/0.3.6-0.3.7/README.md --exclude *.pyd
+[2024-04-27 13:05:24] INFO root fetch - processPackages [rapidgzip]: executing diffoscope
+[2024-04-27 13:05:24] INFO root fetch - processPackages [rapidgzip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidgzip-0.8.1.tar.gz tmp/rapidgzip-0.9.0.tar.gz --markdown 20240427/r/rapidgzip/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-04-27 13:05:24] INFO root fetch - processPackages [pyscript-ltk]: Remove: archive file [/home/abi/fetcher/tmp/pyscript-ltk-0.1.8.tar.gz]
+[2024-04-27 13:05:24] INFO root fetch - processPackages [pyscript-ltk]: Remove: archive file [/home/abi/fetcher/tmp/pyscript-ltk-0.1.9.tar.gz]
+[2024-04-27 13:05:24] INFO root fetch - main [MainThread]: End processing [pyscript-ltk]: success
+[2024-04-27 13:05:24] INFO root fetch - processPackages [python-alist]: Remove: archive file [/home/abi/fetcher/tmp/python_alist-0.0.9.8.1.tar.gz]
+[2024-04-27 13:05:24] INFO root fetch - processPackages [python-alist]: Remove: archive file [/home/abi/fetcher/tmp/python_alist-0.0.9.9.tar.gz]
+[2024-04-27 13:05:24] INFO root fetch - main [MainThread]: End processing [python-alist]: success
+[2024-04-27 13:05:25] INFO root fetch - processPackages [rapidgzip]: Remove: archive file [/home/abi/fetcher/tmp/rapidgzip-0.8.1.tar.gz]
+[2024-04-27 13:05:25] INFO root fetch - processPackages [rapidgzip]: Remove: archive file [/home/abi/fetcher/tmp/rapidgzip-0.9.0.tar.gz]
+[2024-04-27 13:05:25] INFO root fetch - main [MainThread]: End processing [rapidgzip]: success
+[2024-04-27 13:05:28] INFO root fetch - processPackages [colossalai]: Remove: archive file [/home/abi/fetcher/tmp/colossalai-0.3.6.tar.gz]
+[2024-04-27 13:05:28] INFO root fetch - processPackages [colossalai]: Remove: archive file [/home/abi/fetcher/tmp/colossalai-0.3.7.tar.gz]
+[2024-04-27 13:05:28] INFO root fetch - main [MainThread]: End processing [colossalai]: success
+[2024-04-27 13:05:28] INFO root fetch - main [MainThread]: Store serial: [22958140]
