@@ -19408,3 +19408,9 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 20:42:44] INFO root fetch - processPackages [gpt-engineer]: Remove: archive file [/home/abi/fetcher/tmp/gpt_engineer-0.3.0.tar.gz]
 [2024-04-27 20:42:44] INFO root fetch - main [MainThread]: End processing [gpt-engineer]: success
 [2024-04-27 20:42:44] INFO root fetch - main [MainThread]: Store serial: [22961154]
+[2024-04-27 20:44:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961154]
+[2024-04-27 20:44:57] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 20:44:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: automated-interpretability
+[2024-04-27 20:44:58] WARNING root fetch - processPackages [automated-interpretability]: Skipping, unable to determine old version
+[2024-04-27 20:44:58] INFO root fetch - main [MainThread]: End processing [automated-interpretability] error
+[2024-04-27 20:44:58] INFO root fetch - main [MainThread]: Store serial: [22961159]
