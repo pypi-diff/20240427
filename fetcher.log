@@ -2800,3 +2800,33 @@ EOFError: EOF read where object expected
 [2024-04-27 02:45:58] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.4.dev202404260044.tar.gz]
 [2024-04-27 02:45:58] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
 [2024-04-27 02:45:58] INFO root fetch - main [MainThread]: Store serial: [22954470]
+[2024-04-27 02:48:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22954470]
+[2024-04-27 02:48:06] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 02:48:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: falcon-challenge
+[2024-04-27 02:48:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kkpyai
+[2024-04-27 02:48:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bioversions
+[2024-04-27 02:48:06] INFO root fetch - processPackages [kkpyai]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-27 02:48:06] INFO root fetch - processPackages [bioversions]: New version: [0.5.99] Old Version: [0.5.98]
+[2024-04-27 02:48:07] INFO root fetch - processPackages [kkpyai]: Downloading https://files.pythonhosted.org/packages/41/d3/9eaff2d61cda5a93cc3aa554dac6f205851c8b6303358abc745bc574c29b/kkpyai-0.8.0.tar.gz
+[2024-04-27 02:48:07] INFO root fetch - processPackages [falcon-challenge]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-27 02:48:07] INFO root fetch - processPackages [bioversions]: Downloading https://files.pythonhosted.org/packages/e6/34/7c40209c13edc9fe7c611a00fd4b0d6e59d501613427ed6713ad6398b655/bioversions-0.5.98.tar.gz
+[2024-04-27 02:48:07] INFO root fetch - processPackages [falcon-challenge]: Downloading https://files.pythonhosted.org/packages/53/e3/9d185f6149b6448ca117dee55c56063077688509664269f20fd5f66f0e8a/falcon_challenge-0.2.8.tar.gz
+[2024-04-27 02:48:07] INFO root fetch - processPackages [kkpyai]: Downloading https://files.pythonhosted.org/packages/5d/fb/68ee41a5230bff7f50616754d4177eecd0f6602c85b5310d16ae044f2361/kkpyai-0.9.0.tar.gz
+[2024-04-27 02:48:07] INFO root fetch - processPackages [bioversions]: Downloading https://files.pythonhosted.org/packages/0d/f5/5956eccd9643084cc5f7aba6325ec9de1ed3a2bb3568a8ee7ab88d0eac77/bioversions-0.5.99.tar.gz
+[2024-04-27 02:48:07] INFO root fetch - processPackages [kkpyai]: executing diffoscope
+[2024-04-27 02:48:07] INFO root fetch - processPackages [kkpyai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kkpyai-0.8.0.tar.gz tmp/kkpyai-0.9.0.tar.gz --markdown 20240427/k/kkpyai/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-27 02:48:07] INFO root fetch - processPackages [bioversions]: executing diffoscope
+[2024-04-27 02:48:07] INFO root fetch - processPackages [bioversions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioversions-0.5.98.tar.gz tmp/bioversions-0.5.99.tar.gz --markdown 20240427/b/bioversions/0.5.98-0.5.99/README.md --exclude *.pyd
+[2024-04-27 02:48:07] INFO root fetch - processPackages [falcon-challenge]: Downloading https://files.pythonhosted.org/packages/70/39/289ac647333f796983e8f9f4fea739a7549c7f93f85b76049604117def43/falcon_challenge-0.2.9.tar.gz
+[2024-04-27 02:48:07] INFO root fetch - processPackages [falcon-challenge]: executing diffoscope
+[2024-04-27 02:48:07] INFO root fetch - processPackages [falcon-challenge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/falcon_challenge-0.2.8.tar.gz tmp/falcon_challenge-0.2.9.tar.gz --markdown 20240427/f/falcon-challenge/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-27 02:48:07] INFO root fetch - processPackages [kkpyai]: Remove: archive file [/home/abi/fetcher/tmp/kkpyai-0.8.0.tar.gz]
+[2024-04-27 02:48:07] INFO root fetch - processPackages [kkpyai]: Remove: archive file [/home/abi/fetcher/tmp/kkpyai-0.9.0.tar.gz]
+[2024-04-27 02:48:07] INFO root fetch - main [MainThread]: End processing [kkpyai]: success
+[2024-04-27 02:48:08] INFO root fetch - processPackages [falcon-challenge]: Remove: archive file [/home/abi/fetcher/tmp/falcon_challenge-0.2.8.tar.gz]
+[2024-04-27 02:48:08] INFO root fetch - processPackages [falcon-challenge]: Remove: archive file [/home/abi/fetcher/tmp/falcon_challenge-0.2.9.tar.gz]
+[2024-04-27 02:48:08] INFO root fetch - main [MainThread]: End processing [falcon-challenge]: success
+[2024-04-27 02:48:26] INFO root fetch - processPackages [bioversions]: Remove: archive file [/home/abi/fetcher/tmp/bioversions-0.5.98.tar.gz]
+[2024-04-27 02:48:26] INFO root fetch - processPackages [bioversions]: Remove: archive file [/home/abi/fetcher/tmp/bioversions-0.5.99.tar.gz]
+[2024-04-27 02:48:26] INFO root fetch - main [MainThread]: End processing [bioversions]: success
+[2024-04-27 02:48:26] INFO root fetch - main [MainThread]: Store serial: [22954479]
