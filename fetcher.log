@@ -7689,3 +7689,33 @@ EOFError: EOF read where object expected
 [2024-04-27 05:27:46] INFO root fetch - processPackages [updrytwist-UpDryTwist]: Remove: archive file [/home/abi/fetcher/tmp/updrytwist-UpDryTwist-0.0.9.tar.gz]
 [2024-04-27 05:27:46] INFO root fetch - main [MainThread]: End processing [updrytwist-UpDryTwist]: success
 [2024-04-27 05:27:46] INFO root fetch - main [MainThread]: Store serial: [22956227]
+[2024-04-27 05:29:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956227]
+[2024-04-27 05:29:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 05:29:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gitman
+[2024-04-27 05:29:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyxt
+[2024-04-27 05:29:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: keras-nlp-nightly
+[2024-04-27 05:29:55] INFO root fetch - processPackages [keras-nlp-nightly]: New version: [0.9.0.dev2024041003] Old Version: [0.9.0.dev2024040803]
+[2024-04-27 05:29:55] INFO root fetch - processPackages [keras-nlp-nightly]: Downloading https://files.pythonhosted.org/packages/e9/c8/7f581d2ae825faa0b7973bcc73c15e31c01c7e1f5c085a746ded34473011/keras-nlp-nightly-0.9.0.dev2024040803.tar.gz
+[2024-04-27 05:29:55] INFO root fetch - processPackages [gitman]: New version: [3.4b3] Old Version: [3.4b2]
+[2024-04-27 05:29:55] INFO root fetch - processPackages [pyxt]: New version: [0.6.9] Old Version: [0.6.8]
+[2024-04-27 05:29:55] INFO root fetch - processPackages [gitman]: Downloading https://files.pythonhosted.org/packages/7a/92/16ac178e0a4da7d8a2465593f2ab0f15cc310d99e79c114641a52397f7b5/gitman-3.4b2.tar.gz
+[2024-04-27 05:29:55] INFO root fetch - processPackages [keras-nlp-nightly]: Downloading https://files.pythonhosted.org/packages/74/95/bdeb12dec2c7c5b69ee11a239dcb09345f2e4180ca0e26e6f12bef8f5013/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz
+[2024-04-27 05:29:55] INFO root fetch - processPackages [pyxt]: Downloading https://files.pythonhosted.org/packages/ca/6a/5deb9dd1bbb1e18a43f0c32af000c80950489483a9abc000203cb32cd9e9/pyxt-0.6.8.tar.gz
+[2024-04-27 05:29:55] INFO root fetch - processPackages [keras-nlp-nightly]: executing diffoscope
+[2024-04-27 05:29:55] INFO root fetch - processPackages [keras-nlp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras-nlp-nightly-0.9.0.dev2024040803.tar.gz tmp/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz --markdown 20240427/k/keras-nlp-nightly/0.9.0.dev2024040803-0.9.0.dev2024041003/README.md --exclude *.pyd
+[2024-04-27 05:29:56] INFO root fetch - processPackages [gitman]: Downloading https://files.pythonhosted.org/packages/76/a9/45028992c7b9c9b89e25547a9023188831b65d31a8105dca510cbb3b540c/gitman-3.4b3.tar.gz
+[2024-04-27 05:29:56] INFO root fetch - processPackages [pyxt]: Downloading https://files.pythonhosted.org/packages/79/2a/acf857dc80e11172a9db513617d6eb1bef4668b069211badabfd931cf66a/pyxt-0.6.9.tar.gz
+[2024-04-27 05:29:56] INFO root fetch - processPackages [pyxt]: executing diffoscope
+[2024-04-27 05:29:56] INFO root fetch - processPackages [pyxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyxt-0.6.8.tar.gz tmp/pyxt-0.6.9.tar.gz --markdown 20240427/p/pyxt/0.6.8-0.6.9/README.md --exclude *.pyd
+[2024-04-27 05:29:56] INFO root fetch - processPackages [gitman]: executing diffoscope
+[2024-04-27 05:29:56] INFO root fetch - processPackages [gitman]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitman-3.4b2.tar.gz tmp/gitman-3.4b3.tar.gz --markdown 20240427/g/gitman/3.4b2-3.4b3/README.md --exclude *.pyd
+[2024-04-27 05:29:56] INFO root fetch - processPackages [pyxt]: Remove: archive file [/home/abi/fetcher/tmp/pyxt-0.6.8.tar.gz]
+[2024-04-27 05:29:56] INFO root fetch - processPackages [pyxt]: Remove: archive file [/home/abi/fetcher/tmp/pyxt-0.6.9.tar.gz]
+[2024-04-27 05:29:56] INFO root fetch - main [MainThread]: End processing [pyxt]: success
+[2024-04-27 05:29:57] INFO root fetch - processPackages [gitman]: Remove: archive file [/home/abi/fetcher/tmp/gitman-3.4b2.tar.gz]
+[2024-04-27 05:29:57] INFO root fetch - processPackages [gitman]: Remove: archive file [/home/abi/fetcher/tmp/gitman-3.4b3.tar.gz]
+[2024-04-27 05:29:57] INFO root fetch - main [MainThread]: End processing [gitman]: success
+[2024-04-27 05:29:57] INFO root fetch - processPackages [keras-nlp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-nightly-0.9.0.dev2024040803.tar.gz]
+[2024-04-27 05:29:57] INFO root fetch - processPackages [keras-nlp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz]
+[2024-04-27 05:29:57] INFO root fetch - main [MainThread]: End processing [keras-nlp-nightly]: success
+[2024-04-27 05:29:57] INFO root fetch - main [MainThread]: Store serial: [22956234]
