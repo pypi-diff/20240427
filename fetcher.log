@@ -21395,3 +21395,25 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 23:27:36] INFO root fetch - processPackages [langflow-base]: Remove: archive file [/home/abi/fetcher/tmp/langflow_base-0.0.38.tar.gz]
 [2024-04-27 23:27:37] INFO root fetch - main [MainThread]: End processing [langflow-base]: success
 [2024-04-27 23:27:37] INFO root fetch - main [MainThread]: Store serial: [22962086]
+[2024-04-27 23:29:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962086]
+[2024-04-27 23:29:45] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 23:29:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: omniblack.secret
+[2024-04-27 23:29:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: akkd-file-tree
+[2024-04-27 23:29:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: akkd-file-tree
+[2024-04-27 23:29:46] INFO root fetch - processPackages [akkd-file-tree]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-27 23:29:46] INFO root fetch - processPackages [akkd-file-tree]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-27 23:29:46] WARNING root fetch - processPackages [omniblack.secret]: Skipping, unable to determine old version
+[2024-04-27 23:29:46] INFO root fetch - main [MainThread]: End processing [omniblack.secret] error
+[2024-04-27 23:29:46] INFO root fetch - processPackages [akkd-file-tree]: Downloading https://files.pythonhosted.org/packages/99/0b/ee0e2045843c598f81a64616c5b4e594d84b46afab6456d1f28eb4d7f8ca/akkd_file_tree-0.0.5.tar.gz
+[2024-04-27 23:29:46] INFO root fetch - processPackages [akkd-file-tree]: Downloading https://files.pythonhosted.org/packages/99/0b/ee0e2045843c598f81a64616c5b4e594d84b46afab6456d1f28eb4d7f8ca/akkd_file_tree-0.0.5.tar.gz
+[2024-04-27 23:29:46] INFO root fetch - processPackages [akkd-file-tree]: Downloading https://files.pythonhosted.org/packages/31/98/afba9a82405d45fc20794651ab44aac3946d2e95b3e2905cb876386b21ce/akkd_file_tree-0.0.6.tar.gz
+[2024-04-27 23:29:46] INFO root fetch - processPackages [akkd-file-tree]: Downloading https://files.pythonhosted.org/packages/31/98/afba9a82405d45fc20794651ab44aac3946d2e95b3e2905cb876386b21ce/akkd_file_tree-0.0.6.tar.gz
+[2024-04-27 23:29:46] INFO root fetch - processPackages [akkd-file-tree]: executing diffoscope
+[2024-04-27 23:29:46] INFO root fetch - processPackages [akkd-file-tree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akkd_file_tree-0.0.5.tar.gz tmp/akkd_file_tree-0.0.6.tar.gz --markdown 20240427/a/akkd-file-tree/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-27 23:29:46] INFO root fetch - processPackages [akkd-file-tree]: executing diffoscope
+[2024-04-27 23:29:46] INFO root fetch - processPackages [akkd-file-tree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akkd_file_tree-0.0.5.tar.gz tmp/akkd_file_tree-0.0.6.tar.gz --markdown 20240427/a/akkd-file-tree/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-27 23:29:47] INFO root fetch - processPackages [akkd-file-tree]: Remove: archive file [/home/abi/fetcher/tmp/akkd_file_tree-0.0.5.tar.gz]
+[2024-04-27 23:29:47] INFO root fetch - processPackages [akkd-file-tree]: Remove: archive file [/home/abi/fetcher/tmp/akkd_file_tree-0.0.6.tar.gz]
+[2024-04-27 23:29:47] INFO root fetch - main [MainThread]: End processing [akkd-file-tree]: success
+[2024-04-27 23:29:47] INFO root fetch - main [MainThread]: End processing [akkd-file-tree]: success
+[2024-04-27 23:29:47] INFO root fetch - main [MainThread]: Store serial: [22962098]
