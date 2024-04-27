@@ -12306,3 +12306,33 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 12:43:24] INFO root fetch - processPackages [zensvi]: Remove: archive file [/home/abi/fetcher/tmp/zensvi-0.9.8.tar.gz]
 [2024-04-27 12:43:24] INFO root fetch - main [MainThread]: End processing [zensvi]: success
 [2024-04-27 12:43:24] INFO root fetch - main [MainThread]: Store serial: [22958017]
+[2024-04-27 12:45:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958017]
+[2024-04-27 12:45:32] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 12:45:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openbox
+[2024-04-27 12:45:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-dbchat
+[2024-04-27 12:45:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hellosp
+[2024-04-27 12:45:33] INFO root fetch - processPackages [hellosp]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-27 12:45:33] INFO root fetch - processPackages [py-dbchat]: New version: [0.0.2rc96.post1] Old Version: [0.0.2rc95.post1]
+[2024-04-27 12:45:33] INFO root fetch - processPackages [hellosp]: Downloading https://files.pythonhosted.org/packages/07/58/23095258a9e1cb1b43ac79c4d20235745c86a1715935de0c0737bc43062d/hellosp-0.1.1.tar.gz
+[2024-04-27 12:45:33] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/49/4b/ec4826ca925eff6003a7660a85ad6cad2ead1e1c1eb8581ea79c6a917caf/py_dbchat-0.0.2rc95.post1.tar.gz
+[2024-04-27 12:45:33] INFO root fetch - processPackages [openbox]: New version: [0.8.3] Old Version: [0.8.2]
+[2024-04-27 12:45:33] INFO root fetch - processPackages [openbox]: Downloading https://files.pythonhosted.org/packages/cd/cf/46dd4e4e56f934ae18be5385219e7747cf0d82057b8b464603965c562c20/openbox-0.8.2.tar.gz
+[2024-04-27 12:45:33] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/62/c9/abb5addce1d123a3570c0632d105f5389be93435bd93972a8729002d89ea/py_dbchat-0.0.2rc96.post1.tar.gz
+[2024-04-27 12:45:33] INFO root fetch - processPackages [hellosp]: Downloading https://files.pythonhosted.org/packages/46/ec/16d1216377771f8669388ff4677d7684a6e2ad3a33e7984166cbd47322c0/hellosp-0.1.2.tar.gz
+[2024-04-27 12:45:33] INFO root fetch - processPackages [hellosp]: executing diffoscope
+[2024-04-27 12:45:33] INFO root fetch - processPackages [hellosp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hellosp-0.1.1.tar.gz tmp/hellosp-0.1.2.tar.gz --markdown 20240427/h/hellosp/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-27 12:45:33] INFO root fetch - processPackages [py-dbchat]: executing diffoscope
+[2024-04-27 12:45:33] INFO root fetch - processPackages [py-dbchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_dbchat-0.0.2rc95.post1.tar.gz tmp/py_dbchat-0.0.2rc96.post1.tar.gz --markdown 20240427/p/py-dbchat/0.0.2rc95.post1-0.0.2rc96.post1/README.md --exclude *.pyd
+[2024-04-27 12:45:33] INFO root fetch - processPackages [openbox]: Downloading https://files.pythonhosted.org/packages/ca/c7/b4699abe70e0f129713b4f97d889b52881928de5775802e6b543fe49149f/openbox-0.8.3.tar.gz
+[2024-04-27 12:45:34] INFO root fetch - processPackages [hellosp]: Remove: archive file [/home/abi/fetcher/tmp/hellosp-0.1.1.tar.gz]
+[2024-04-27 12:45:34] INFO root fetch - processPackages [hellosp]: Remove: archive file [/home/abi/fetcher/tmp/hellosp-0.1.2.tar.gz]
+[2024-04-27 12:45:34] INFO root fetch - main [MainThread]: End processing [hellosp]: success
+[2024-04-27 12:45:34] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc95.post1.tar.gz]
+[2024-04-27 12:45:34] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc96.post1.tar.gz]
+[2024-04-27 12:45:34] INFO root fetch - main [MainThread]: End processing [py-dbchat]: success
+[2024-04-27 12:45:34] INFO root fetch - processPackages [openbox]: executing diffoscope
+[2024-04-27 12:45:34] INFO root fetch - processPackages [openbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openbox-0.8.2.tar.gz tmp/openbox-0.8.3.tar.gz --markdown 20240427/o/openbox/0.8.2-0.8.3/README.md --exclude *.pyd
+[2024-04-27 12:45:35] INFO root fetch - processPackages [openbox]: Remove: archive file [/home/abi/fetcher/tmp/openbox-0.8.2.tar.gz]
+[2024-04-27 12:45:35] INFO root fetch - processPackages [openbox]: Remove: archive file [/home/abi/fetcher/tmp/openbox-0.8.3.tar.gz]
+[2024-04-27 12:45:35] INFO root fetch - main [MainThread]: End processing [openbox]: success
+[2024-04-27 12:45:35] INFO root fetch - main [MainThread]: Store serial: [22958029]
