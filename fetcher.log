@@ -7399,3 +7399,45 @@ EOFError: EOF read where object expected
 [2024-04-27 04:59:30] INFO root fetch - processPackages [milvus-api]: Remove: archive file [/home/abi/fetcher/tmp/milvus_api-0.1.4.tar.gz]
 [2024-04-27 04:59:30] INFO root fetch - main [MainThread]: End processing [milvus-api]: success
 [2024-04-27 04:59:30] INFO root fetch - main [MainThread]: Store serial: [22956143]
+[2024-04-27 05:01:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956143]
+[2024-04-27 05:01:38] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 05:01:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aikicore
+[2024-04-27 05:01:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyscinloopsr
+[2024-04-27 05:01:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-account-reconcile-oca
+[2024-04-27 05:01:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: layeutils
+[2024-04-27 05:01:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: espy-contact
+[2024-04-27 05:01:38] INFO root fetch - processPackages [pyscinloopsr]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-27 05:01:38] WARNING root fetch - processPackages [espy-contact]: Skipping, unable to determine old version
+[2024-04-27 05:01:38] INFO root fetch - main [MainThread]: End processing [espy-contact] error
+[2024-04-27 05:01:38] INFO root fetch - processPackages [odoo-addon-account-reconcile-oca]: New version: [17.0.1.0.0.20] Old Version: [16.0.1.2.9]
+[2024-04-27 05:01:38] INFO root fetch - processPackages [pyscinloopsr]: Downloading https://files.pythonhosted.org/packages/98/21/5809d8e4c42d0207d6fd61e35cf0683da0e0cc5f1d10fa87e864b000cfa6/pyscinloopsr-1.0.8.tar.gz
+[2024-04-27 05:01:38] INFO root fetch - processPackages [odoo-addon-account-reconcile-oca]: Downloading https://files.pythonhosted.org/packages/53/5f/42e9047f73576c856db6492ae0ad0ee9ad2b1a8debd058d7f71a894e3c5b/odoo_addon_account_reconcile_oca-16.0.1.2.9-py3-none-any.whl
+[2024-04-27 05:01:38] INFO root fetch - processPackages [aikicore]: New version: [1.0.0a5] Old Version: [1.0.0a4]
+[2024-04-27 05:01:38] INFO root fetch - processPackages [layeutils]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-27 05:01:38] INFO root fetch - processPackages [pyscinloopsr]: Downloading https://files.pythonhosted.org/packages/c2/79/a3b3e1c4377a54b84d92a6ce4a8d70f9bb57364bdbe1ec2657397e8360cd/pyscinloopsr-1.0.9.tar.gz
+[2024-04-27 05:01:38] INFO root fetch - processPackages [aikicore]: Downloading https://files.pythonhosted.org/packages/4c/3e/2db76ab44129deda5a82f46c9b2dfc37d62ac478bc2e9920696886f8a145/aikicore-1.0.0a4.tar.gz
+[2024-04-27 05:01:38] INFO root fetch - processPackages [odoo-addon-account-reconcile-oca]: Downloading https://files.pythonhosted.org/packages/78/ea/49bcf4dca2972a395285b1e7be6175616cb9779ab10e9987bbff1e709ded/odoo_addon_account_reconcile_oca-17.0.1.0.0.20-py3-none-any.whl
+[2024-04-27 05:01:38] INFO root fetch - processPackages [layeutils]: Downloading https://files.pythonhosted.org/packages/df/8a/5750fd27fb4c3487b4dbdfad44f376e0526542c6ee8cc4234e63d034eff8/layeutils-0.2.8.tar.gz
+[2024-04-27 05:01:39] INFO root fetch - processPackages [pyscinloopsr]: executing diffoscope
+[2024-04-27 05:01:39] INFO root fetch - processPackages [pyscinloopsr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscinloopsr-1.0.8.tar.gz tmp/pyscinloopsr-1.0.9.tar.gz --markdown 20240427/p/pyscinloopsr/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-27 05:01:39] INFO root fetch - processPackages [odoo-addon-account-reconcile-oca]: executing diffoscope
+[2024-04-27 05:01:39] INFO root fetch - processPackages [odoo-addon-account-reconcile-oca]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_reconcile_oca-16.0.1.2.9-py3-none-any.whl.zip tmp/odoo_addon_account_reconcile_oca-17.0.1.0.0.20-py3-none-any.whl.zip --markdown 20240427/o/odoo-addon-account-reconcile-oca/16.0.1.2.9-17.0.1.0.0.20/README.md --exclude *.pyd
+[2024-04-27 05:01:39] INFO root fetch - processPackages [aikicore]: Downloading https://files.pythonhosted.org/packages/c9/1c/e74f2506c12e280f8e4a23ebf98d3f04adeefea52e0295430647c227218c/aikicore-1.0.0a5.tar.gz
+[2024-04-27 05:01:39] INFO root fetch - processPackages [layeutils]: Downloading https://files.pythonhosted.org/packages/49/3d/c713aa3374b8d3b84cd8820b2906eff00ed129c458180bc7ae7c4568a911/layeutils-0.2.9.tar.gz
+[2024-04-27 05:01:39] INFO root fetch - processPackages [aikicore]: executing diffoscope
+[2024-04-27 05:01:39] INFO root fetch - processPackages [aikicore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aikicore-1.0.0a4.tar.gz tmp/aikicore-1.0.0a5.tar.gz --markdown 20240427/a/aikicore/1.0.0a4-1.0.0a5/README.md --exclude *.pyd
+[2024-04-27 05:01:39] INFO root fetch - processPackages [layeutils]: executing diffoscope
+[2024-04-27 05:01:39] INFO root fetch - processPackages [layeutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/layeutils-0.2.8.tar.gz tmp/layeutils-0.2.9.tar.gz --markdown 20240427/l/layeutils/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-27 05:01:39] INFO root fetch - processPackages [pyscinloopsr]: Remove: archive file [/home/abi/fetcher/tmp/pyscinloopsr-1.0.8.tar.gz]
+[2024-04-27 05:01:39] INFO root fetch - processPackages [pyscinloopsr]: Remove: archive file [/home/abi/fetcher/tmp/pyscinloopsr-1.0.9.tar.gz]
+[2024-04-27 05:01:39] INFO root fetch - main [MainThread]: End processing [pyscinloopsr]: success
+[2024-04-27 05:01:39] INFO root fetch - processPackages [aikicore]: Remove: archive file [/home/abi/fetcher/tmp/aikicore-1.0.0a4.tar.gz]
+[2024-04-27 05:01:39] INFO root fetch - processPackages [aikicore]: Remove: archive file [/home/abi/fetcher/tmp/aikicore-1.0.0a5.tar.gz]
+[2024-04-27 05:01:39] INFO root fetch - main [MainThread]: End processing [aikicore]: success
+[2024-04-27 05:01:40] INFO root fetch - processPackages [layeutils]: Remove: archive file [/home/abi/fetcher/tmp/layeutils-0.2.8.tar.gz]
+[2024-04-27 05:01:40] INFO root fetch - processPackages [layeutils]: Remove: archive file [/home/abi/fetcher/tmp/layeutils-0.2.9.tar.gz]
+[2024-04-27 05:01:40] INFO root fetch - main [MainThread]: End processing [layeutils]: success
+[2024-04-27 05:01:41] INFO root fetch - processPackages [odoo-addon-account-reconcile-oca]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_reconcile_oca-16.0.1.2.9-py3-none-any.whl.zip]
+[2024-04-27 05:01:41] INFO root fetch - processPackages [odoo-addon-account-reconcile-oca]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_reconcile_oca-17.0.1.0.0.20-py3-none-any.whl.zip]
+[2024-04-27 05:01:41] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-reconcile-oca]: success
+[2024-04-27 05:01:41] INFO root fetch - main [MainThread]: Store serial: [22956157]
