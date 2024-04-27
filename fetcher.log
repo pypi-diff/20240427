@@ -10344,3 +10344,15 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 09:21:12] INFO root fetch - processPackages [pydal]: Remove: archive file [/home/abi/fetcher/tmp/pydal-20240427.1.tar.gz]
 [2024-04-27 09:21:12] INFO root fetch - main [MainThread]: End processing [pydal]: success
 [2024-04-27 09:21:12] INFO root fetch - main [MainThread]: Store serial: [22957202]
+[2024-04-27 09:23:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957202]
+[2024-04-27 09:23:21] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 09:23:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mutechromecastads
+[2024-04-27 09:23:21] INFO root fetch - processPackages [mutechromecastads]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-27 09:23:21] INFO root fetch - processPackages [mutechromecastads]: Downloading https://files.pythonhosted.org/packages/de/3f/4702759af1e3792c521ed9e0c971737449df4862f7cf340e82bba273ca16/mutechromecastads-0.1.0.tar.gz
+[2024-04-27 09:23:21] INFO root fetch - processPackages [mutechromecastads]: Downloading https://files.pythonhosted.org/packages/fd/04/81bea194f4e3d094471d422842e1bb8edc29dfa58ba40e2a46b4bd286993/mutechromecastads-0.1.1.tar.gz
+[2024-04-27 09:23:22] INFO root fetch - processPackages [mutechromecastads]: executing diffoscope
+[2024-04-27 09:23:22] INFO root fetch - processPackages [mutechromecastads]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mutechromecastads-0.1.0.tar.gz tmp/mutechromecastads-0.1.1.tar.gz --markdown 20240427/m/mutechromecastads/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-27 09:23:22] INFO root fetch - processPackages [mutechromecastads]: Remove: archive file [/home/abi/fetcher/tmp/mutechromecastads-0.1.0.tar.gz]
+[2024-04-27 09:23:22] INFO root fetch - processPackages [mutechromecastads]: Remove: archive file [/home/abi/fetcher/tmp/mutechromecastads-0.1.1.tar.gz]
+[2024-04-27 09:23:22] INFO root fetch - main [MainThread]: End processing [mutechromecastads]: success
+[2024-04-27 09:23:22] INFO root fetch - main [MainThread]: Store serial: [22957205]
