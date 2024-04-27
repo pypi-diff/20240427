@@ -17765,3 +17765,20 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 18:52:49] INFO root fetch - main [MainThread]: End processing [naucse-render]: success
 [2024-04-27 18:52:49] INFO root fetch - main [MainThread]: End processing [naucse-render]: success
 [2024-04-27 18:52:49] INFO root fetch - main [MainThread]: Store serial: [22960307]
+[2024-04-27 18:54:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960307]
+[2024-04-27 18:55:01] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-27 18:57:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960308]
+[2024-04-27 18:57:07] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 18:57:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: datafusion-stubs
+[2024-04-27 18:57:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mteb
+[2024-04-27 18:57:07] WARNING root fetch - processPackages [datafusion-stubs]: Skipping, unable to determine old version
+[2024-04-27 18:57:07] INFO root fetch - main [MainThread]: End processing [datafusion-stubs] error
+[2024-04-27 18:57:07] INFO root fetch - processPackages [mteb]: New version: [1.7.9] Old Version: [1.7.8]
+[2024-04-27 18:57:07] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/b5/e7/1ffcd000a118bd6a4b183610de5d0891ab9c767ccabb6c7e3f63ba9edb45/mteb-1.7.8.tar.gz
+[2024-04-27 18:57:08] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/eb/d9/b925270f0a2467b3204b0f467cc702668d24bd9a8e876306ea7e3da17507/mteb-1.7.9.tar.gz
+[2024-04-27 18:57:08] INFO root fetch - processPackages [mteb]: executing diffoscope
+[2024-04-27 18:57:08] INFO root fetch - processPackages [mteb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mteb-1.7.8.tar.gz tmp/mteb-1.7.9.tar.gz --markdown 20240427/m/mteb/1.7.8-1.7.9/README.md --exclude *.pyd
+[2024-04-27 18:57:09] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.8.tar.gz]
+[2024-04-27 18:57:09] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.9.tar.gz]
+[2024-04-27 18:57:09] INFO root fetch - main [MainThread]: End processing [mteb]: success
+[2024-04-27 18:57:09] INFO root fetch - main [MainThread]: Store serial: [22960314]
