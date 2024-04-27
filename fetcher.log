@@ -15683,3 +15683,66 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 16:21:50] INFO root fetch - processPackages [kss]: Remove: archive file [/home/abi/fetcher/tmp/kss-5.3.0.dev1.tar.gz]
 [2024-04-27 16:21:50] INFO root fetch - main [MainThread]: End processing [kss]: success
 [2024-04-27 16:21:50] INFO root fetch - main [MainThread]: Store serial: [22959443]
+[2024-04-27 16:23:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959443]
+[2024-04-27 16:23:59] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-27 16:23:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: agentic_security
+[2024-04-27 16:23:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Color-palette-generator
+[2024-04-27 16:23:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: clovers
+[2024-04-27 16:23:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: otpcr
+[2024-04-27 16:23:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: grizli
+[2024-04-27 16:23:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sliceitoff
+[2024-04-27 16:23:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vio
+[2024-04-27 16:23:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: simc-support
+[2024-04-27 16:23:59] INFO root fetch - processPackages [clovers]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-27 16:23:59] INFO root fetch - processPackages [sliceitoff]: New version: [0.3b6] Old Version: [0.3b4]
+[2024-04-27 16:23:59] WARNING root fetch - processPackages [Color-palette-generator]: Skipping, unable to determine old version
+[2024-04-27 16:23:59] INFO root fetch - main [MainThread]: End processing [Color-palette-generator] error
+[2024-04-27 16:23:59] INFO root fetch - processPackages [agentic_security]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-27 16:23:59] INFO root fetch - processPackages [sliceitoff]: Downloading https://files.pythonhosted.org/packages/ad/fe/52076c88909479988feb4f02bd77f6016801fc75c68fca9e5fbb502b231e/sliceitoff-0.3b4.tar.gz
+[2024-04-27 16:23:59] INFO root fetch - processPackages [clovers]: Downloading https://files.pythonhosted.org/packages/6b/38/ae8e6c9dd30acc8ba14217419c1642856e06840217750baa2df825c03124/clovers-0.1.6.tar.gz
+[2024-04-27 16:23:59] INFO root fetch - processPackages [otpcr]: New version: [8] Old Version: [7]
+[2024-04-27 16:23:59] WARNING root fetch - processPackages [vio]: Skipping, unable to determine old version
+[2024-04-27 16:23:59] INFO root fetch - main [MainThread]: End processing [vio] error
+[2024-04-27 16:23:59] INFO root fetch - processPackages [simc-support]: New version: [9.2.5.3] Old Version: [9.2.5.2]
+[2024-04-27 16:23:59] INFO root fetch - processPackages [grizli]: New version: [1.9.9] Old Version: [1.9.8]
+[2024-04-27 16:23:59] INFO root fetch - processPackages [agentic_security]: Downloading https://files.pythonhosted.org/packages/10/40/d1d225e64d2bf9836849157b41f26fec8a39495572edbacca74f0ab87c94/agentic_security-0.1.1.tar.gz
+[2024-04-27 16:23:59] INFO root fetch - processPackages [otpcr]: Downloading https://files.pythonhosted.org/packages/e0/d6/3f02010eb7e6b227fdbe8066c53ed18e080b21bd2230f12807623178ea76/otpcr-7.tar.gz
+[2024-04-27 16:23:59] INFO root fetch - processPackages [grizli]: Downloading https://files.pythonhosted.org/packages/27/60/a68a0d4dc37daa162c1cb4f6be7a4415cfb3382398bd271e0086d8114221/grizli-1.9.8.tar.gz
+[2024-04-27 16:24:00] INFO root fetch - processPackages [simc-support]: Downloading https://files.pythonhosted.org/packages/f2/2a/7c51939ccb108431387a296bc5c850bc5de94d88f9f5349f20368b0d95e5/simc_support-9.2.5.2.tar.gz
+[2024-04-27 16:24:00] INFO root fetch - processPackages [sliceitoff]: Downloading https://files.pythonhosted.org/packages/68/ea/a85c323148bec117c3137f97aab334edad2420450c2d474c64116b7b7e20/sliceitoff-0.3b6.tar.gz
+[2024-04-27 16:24:00] INFO root fetch - processPackages [clovers]: Downloading https://files.pythonhosted.org/packages/79/27/e251d97887a2565b0a9b4fef00e695478e3be650a4af34b5a49b6cc420d8/clovers-0.1.7.tar.gz
+[2024-04-27 16:24:00] INFO root fetch - processPackages [clovers]: executing diffoscope
+[2024-04-27 16:24:00] INFO root fetch - processPackages [clovers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clovers-0.1.6.tar.gz tmp/clovers-0.1.7.tar.gz --markdown 20240427/c/clovers/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-27 16:24:00] INFO root fetch - processPackages [agentic_security]: Downloading https://files.pythonhosted.org/packages/b7/b5/5571cc6f72bfa87e126b2c6eac2395fad165385115e85ee1cdcb60207851/agentic_security-0.1.2.tar.gz
+[2024-04-27 16:24:00] INFO root fetch - processPackages [sliceitoff]: executing diffoscope
+[2024-04-27 16:24:00] INFO root fetch - processPackages [sliceitoff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sliceitoff-0.3b4.tar.gz tmp/sliceitoff-0.3b6.tar.gz --markdown 20240427/s/sliceitoff/0.3b4-0.3b6/README.md --exclude *.pyd
+[2024-04-27 16:24:00] INFO root fetch - processPackages [agentic_security]: executing diffoscope
+[2024-04-27 16:24:00] INFO root fetch - processPackages [agentic_security]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agentic_security-0.1.1.tar.gz tmp/agentic_security-0.1.2.tar.gz --markdown 20240427/a/agentic_security/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-27 16:24:00] INFO root fetch - processPackages [otpcr]: Downloading https://files.pythonhosted.org/packages/37/0b/8bd06d4112258b1b2c7a9453b3a01eae742c0312cd1f9fdac10d84e634b6/otpcr-8.tar.gz
+[2024-04-27 16:24:00] INFO root fetch - processPackages [simc-support]: Downloading https://files.pythonhosted.org/packages/7f/f2/94679bd3aff7cfce75541c456a83745c5be1b451e014726a9dceb888be9e/simc_support-9.2.5.3.tar.gz
+[2024-04-27 16:24:00] INFO root fetch - processPackages [simc-support]: executing diffoscope
+[2024-04-27 16:24:00] INFO root fetch - processPackages [simc-support]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simc_support-9.2.5.2.tar.gz tmp/simc_support-9.2.5.3.tar.gz --markdown 20240427/s/simc-support/9.2.5.2-9.2.5.3/README.md --exclude *.pyd
+[2024-04-27 16:24:00] INFO root fetch - processPackages [grizli]: Downloading https://files.pythonhosted.org/packages/77/09/a51e319f465f00836922464f1e7c9acff140ce55926932f88a036d1fe24f/grizli-1.9.9.tar.gz
+[2024-04-27 16:24:00] INFO root fetch - processPackages [otpcr]: executing diffoscope
+[2024-04-27 16:24:00] INFO root fetch - processPackages [otpcr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otpcr-7.tar.gz tmp/otpcr-8.tar.gz --markdown 20240427/o/otpcr/7-8/README.md --exclude *.pyd
+[2024-04-27 16:24:00] INFO root fetch - processPackages [clovers]: Remove: archive file [/home/abi/fetcher/tmp/clovers-0.1.6.tar.gz]
+[2024-04-27 16:24:00] INFO root fetch - processPackages [clovers]: Remove: archive file [/home/abi/fetcher/tmp/clovers-0.1.7.tar.gz]
+[2024-04-27 16:24:00] INFO root fetch - main [MainThread]: End processing [clovers]: success
+[2024-04-27 16:24:01] INFO root fetch - processPackages [agentic_security]: Remove: archive file [/home/abi/fetcher/tmp/agentic_security-0.1.1.tar.gz]
+[2024-04-27 16:24:01] INFO root fetch - processPackages [agentic_security]: Remove: archive file [/home/abi/fetcher/tmp/agentic_security-0.1.2.tar.gz]
+[2024-04-27 16:24:01] INFO root fetch - main [MainThread]: End processing [agentic_security]: success
+[2024-04-27 16:24:01] INFO root fetch - processPackages [grizli]: executing diffoscope
+[2024-04-27 16:24:01] INFO root fetch - processPackages [grizli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grizli-1.9.8.tar.gz tmp/grizli-1.9.9.tar.gz --markdown 20240427/g/grizli/1.9.8-1.9.9/README.md --exclude *.pyd
+[2024-04-27 16:24:01] INFO root fetch - processPackages [sliceitoff]: Remove: archive file [/home/abi/fetcher/tmp/sliceitoff-0.3b4.tar.gz]
+[2024-04-27 16:24:01] INFO root fetch - processPackages [sliceitoff]: Remove: archive file [/home/abi/fetcher/tmp/sliceitoff-0.3b6.tar.gz]
+[2024-04-27 16:24:01] INFO root fetch - main [MainThread]: End processing [sliceitoff]: success
+[2024-04-27 16:24:01] INFO root fetch - processPackages [simc-support]: Remove: archive file [/home/abi/fetcher/tmp/simc_support-9.2.5.2.tar.gz]
+[2024-04-27 16:24:01] INFO root fetch - processPackages [simc-support]: Remove: archive file [/home/abi/fetcher/tmp/simc_support-9.2.5.3.tar.gz]
+[2024-04-27 16:24:01] INFO root fetch - main [MainThread]: End processing [simc-support]: success
+[2024-04-27 16:24:01] INFO root fetch - processPackages [otpcr]: Remove: archive file [/home/abi/fetcher/tmp/otpcr-7.tar.gz]
+[2024-04-27 16:24:01] INFO root fetch - processPackages [otpcr]: Remove: archive file [/home/abi/fetcher/tmp/otpcr-8.tar.gz]
+[2024-04-27 16:24:01] INFO root fetch - main [MainThread]: End processing [otpcr]: success
+[2024-04-27 16:24:03] INFO root fetch - processPackages [grizli]: Remove: archive file [/home/abi/fetcher/tmp/grizli-1.9.8.tar.gz]
+[2024-04-27 16:24:03] INFO root fetch - processPackages [grizli]: Remove: archive file [/home/abi/fetcher/tmp/grizli-1.9.9.tar.gz]
+[2024-04-27 16:24:03] INFO root fetch - main [MainThread]: End processing [grizli]: success
+[2024-04-27 16:24:03] INFO root fetch - main [MainThread]: Store serial: [22959467]
