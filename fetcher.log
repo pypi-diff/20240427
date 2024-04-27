@@ -10087,3 +10087,18 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 08:57:07] INFO root fetch - processPackages [odoo-addon-stock-move-packaging-qty]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_move_packaging_qty-16.0.1.4.0-py3-none-any.whl.zip]
 [2024-04-27 08:57:07] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-move-packaging-qty]: success
 [2024-04-27 08:57:07] INFO root fetch - main [MainThread]: Store serial: [22957042]
+[2024-04-27 08:59:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957042]
+[2024-04-27 08:59:15] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 08:59:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arcade-accelerate
+[2024-04-27 08:59:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: toph
+[2024-04-27 08:59:16] WARNING root fetch - processPackages [toph]: Skipping, unable to determine old version
+[2024-04-27 08:59:16] INFO root fetch - main [MainThread]: End processing [toph] error
+[2024-04-27 08:59:16] INFO root fetch - processPackages [arcade-accelerate]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-27 08:59:16] INFO root fetch - processPackages [arcade-accelerate]: Downloading https://files.pythonhosted.org/packages/37/16/4394c7f788e63fd26dece23cf6dcb91f9f81fc98de5bf9b5477212df41c0/arcade_accelerate-1.0.1.tar.gz
+[2024-04-27 08:59:16] INFO root fetch - processPackages [arcade-accelerate]: Downloading https://files.pythonhosted.org/packages/f2/5f/69c4c8554beff95b3a9c321cb127beccbe540bb3c7964eefbca84cbfe54c/arcade_accelerate-1.0.2.tar.gz
+[2024-04-27 08:59:16] INFO root fetch - processPackages [arcade-accelerate]: executing diffoscope
+[2024-04-27 08:59:16] INFO root fetch - processPackages [arcade-accelerate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arcade_accelerate-1.0.1.tar.gz tmp/arcade_accelerate-1.0.2.tar.gz --markdown 20240427/a/arcade-accelerate/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-27 08:59:17] INFO root fetch - processPackages [arcade-accelerate]: Remove: archive file [/home/abi/fetcher/tmp/arcade_accelerate-1.0.1.tar.gz]
+[2024-04-27 08:59:17] INFO root fetch - processPackages [arcade-accelerate]: Remove: archive file [/home/abi/fetcher/tmp/arcade_accelerate-1.0.2.tar.gz]
+[2024-04-27 08:59:17] INFO root fetch - main [MainThread]: End processing [arcade-accelerate]: success
+[2024-04-27 08:59:17] INFO root fetch - main [MainThread]: Store serial: [22957099]
