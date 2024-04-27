@@ -7042,3 +7042,33 @@ EOFError: EOF read where object expected
 [2024-04-27 04:17:27] INFO root fetch - processPackages [exllamav2]: Remove: archive file [/home/abi/fetcher/tmp/exllamav2-0.0.9-py3-none-any.whl.zip]
 [2024-04-27 04:17:27] INFO root fetch - main [MainThread]: End processing [exllamav2]: success
 [2024-04-27 04:17:27] INFO root fetch - main [MainThread]: Store serial: [22956016]
+[2024-04-27 04:19:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956016]
+[2024-04-27 04:19:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 04:19:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bucketed-scene-flow-eval
+[2024-04-27 04:19:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: iam-actions
+[2024-04-27 04:19:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: geojp
+[2024-04-27 04:19:36] INFO root fetch - processPackages [geojp]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-27 04:19:36] INFO root fetch - processPackages [bucketed-scene-flow-eval]: New version: [2.0.7] Old Version: [2.0.6]
+[2024-04-27 04:19:36] INFO root fetch - processPackages [iam-actions]: New version: [1.2.20240427] Old Version: [1.2.20240426]
+[2024-04-27 04:19:36] INFO root fetch - processPackages [geojp]: Downloading https://files.pythonhosted.org/packages/2f/61/be6008266ad54bb6bbbc62344dc613f97a48cc0f6f7182071b1805ffa39a/geojp-0.0.3.tar.gz
+[2024-04-27 04:19:36] INFO root fetch - processPackages [bucketed-scene-flow-eval]: Downloading https://files.pythonhosted.org/packages/e6/04/202386f6a007c113cf582797ff1a4b9cfa51bd8945da2f940aeadc44c262/bucketed_scene_flow_eval-2.0.6.tar.gz
+[2024-04-27 04:19:36] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/ad/e6/e6ba247508b8302240578a8200c63af21ce849cfce8c08274993b0b1b04e/iam_actions-1.2.20240426.tar.gz
+[2024-04-27 04:19:36] INFO root fetch - processPackages [geojp]: Downloading https://files.pythonhosted.org/packages/4b/aa/d64cd5a731b62fd01fdbfb3eb1ea30e9214236065073223fbc7be921f88e/geojp-0.0.4.tar.gz
+[2024-04-27 04:19:36] INFO root fetch - processPackages [bucketed-scene-flow-eval]: Downloading https://files.pythonhosted.org/packages/dc/d9/80d59a8b70f06ef3254a88f57a3425b973563cc40b9b6ef94a08f562a433/bucketed_scene_flow_eval-2.0.7.tar.gz
+[2024-04-27 04:19:36] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/6d/43/5cefd474692b99c9a2ab0d38648f6d5cd9619f4f8b499f6f31576849879a/iam_actions-1.2.20240427.tar.gz
+[2024-04-27 04:19:36] INFO root fetch - processPackages [bucketed-scene-flow-eval]: executing diffoscope
+[2024-04-27 04:19:36] INFO root fetch - processPackages [bucketed-scene-flow-eval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bucketed_scene_flow_eval-2.0.6.tar.gz tmp/bucketed_scene_flow_eval-2.0.7.tar.gz --markdown 20240427/b/bucketed-scene-flow-eval/2.0.6-2.0.7/README.md --exclude *.pyd
+[2024-04-27 04:19:37] INFO root fetch - processPackages [geojp]: executing diffoscope
+[2024-04-27 04:19:37] INFO root fetch - processPackages [geojp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geojp-0.0.3.tar.gz tmp/geojp-0.0.4.tar.gz --markdown 20240427/g/geojp/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-27 04:19:37] INFO root fetch - processPackages [iam-actions]: executing diffoscope
+[2024-04-27 04:19:37] INFO root fetch - processPackages [iam-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iam_actions-1.2.20240426.tar.gz tmp/iam_actions-1.2.20240427.tar.gz --markdown 20240427/i/iam-actions/1.2.20240426-1.2.20240427/README.md --exclude *.pyd
+[2024-04-27 04:19:37] INFO root fetch - processPackages [bucketed-scene-flow-eval]: Remove: archive file [/home/abi/fetcher/tmp/bucketed_scene_flow_eval-2.0.6.tar.gz]
+[2024-04-27 04:19:37] INFO root fetch - processPackages [bucketed-scene-flow-eval]: Remove: archive file [/home/abi/fetcher/tmp/bucketed_scene_flow_eval-2.0.7.tar.gz]
+[2024-04-27 04:19:37] INFO root fetch - main [MainThread]: End processing [bucketed-scene-flow-eval]: success
+[2024-04-27 04:19:37] INFO root fetch - processPackages [geojp]: Remove: archive file [/home/abi/fetcher/tmp/geojp-0.0.3.tar.gz]
+[2024-04-27 04:19:37] INFO root fetch - processPackages [geojp]: Remove: archive file [/home/abi/fetcher/tmp/geojp-0.0.4.tar.gz]
+[2024-04-27 04:19:37] INFO root fetch - main [MainThread]: End processing [geojp]: success
+[2024-04-27 04:19:41] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240426.tar.gz]
+[2024-04-27 04:19:41] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240427.tar.gz]
+[2024-04-27 04:19:41] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
+[2024-04-27 04:19:41] INFO root fetch - main [MainThread]: Store serial: [22956027]
