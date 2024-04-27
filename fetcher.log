@@ -20644,3 +20644,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 22:26:08] INFO root fetch - processPackages [appstream-python]: Remove: archive file [/home/abi/fetcher/tmp/appstream_python-0.8.1.tar.gz]
 [2024-04-27 22:26:08] INFO root fetch - main [MainThread]: End processing [appstream-python]: success
 [2024-04-27 22:26:08] INFO root fetch - main [MainThread]: Store serial: [22961687]
+[2024-04-27 22:28:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961687]
+[2024-04-27 22:28:24] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 22:28:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: inform
+[2024-04-27 22:28:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyodide-mkdocs-theme
+[2024-04-27 22:28:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: midsummer
+[2024-04-27 22:28:24] INFO root fetch - processPackages [pyodide-mkdocs-theme]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-27 22:28:25] INFO root fetch - processPackages [pyodide-mkdocs-theme]: Downloading https://files.pythonhosted.org/packages/92/18/8ffe24342d4c8a7f36f7894bf2c68610c5fcb3d16937ba9924132fb5a3e7/pyodide_mkdocs_theme-0.4.0.tar.gz
+[2024-04-27 22:28:25] INFO root fetch - processPackages [midsummer]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-27 22:28:25] INFO root fetch - processPackages [inform]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-04-27 22:28:25] INFO root fetch - processPackages [midsummer]: Downloading https://files.pythonhosted.org/packages/0c/0b/404407e6632bad7a094f4ca81a093f1d660c182fc77071c2cce36076b12d/midsummer-0.1.0.tar.gz
+[2024-04-27 22:28:25] INFO root fetch - processPackages [inform]: Downloading https://files.pythonhosted.org/packages/05/29/77bd41f67d8cc46457a962320bccd990aa997c268f43d1fa9d91a1527a09/inform-1.8.0.tar.gz
+[2024-04-27 22:28:25] INFO root fetch - processPackages [pyodide-mkdocs-theme]: Downloading https://files.pythonhosted.org/packages/67/2c/993e29369c9405afa3f582686e25722b367ee296c1039f7df167c145e495/pyodide_mkdocs_theme-0.5.0.tar.gz
+[2024-04-27 22:28:25] INFO root fetch - processPackages [midsummer]: Downloading https://files.pythonhosted.org/packages/02/2e/43caea8c6e14ca76f5d1b95d72384ba1a3bfbd3654921d7ad6a342cde793/midsummer-0.1.1.tar.gz
+[2024-04-27 22:28:25] INFO root fetch - processPackages [pyodide-mkdocs-theme]: executing diffoscope
+[2024-04-27 22:28:25] INFO root fetch - processPackages [pyodide-mkdocs-theme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyodide_mkdocs_theme-0.4.0.tar.gz tmp/pyodide_mkdocs_theme-0.5.0.tar.gz --markdown 20240427/p/pyodide-mkdocs-theme/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-04-27 22:28:25] INFO root fetch - processPackages [midsummer]: executing diffoscope
+[2024-04-27 22:28:25] INFO root fetch - processPackages [midsummer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/midsummer-0.1.0.tar.gz tmp/midsummer-0.1.1.tar.gz --markdown 20240427/m/midsummer/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-27 22:28:25] INFO root fetch - processPackages [inform]: Downloading https://files.pythonhosted.org/packages/17/bb/609b63761cf3dec57f04f6088e17d1127fb207aa89467c6cb9a2d17b01b4/inform-1.9.0.tar.gz
+[2024-04-27 22:28:25] INFO root fetch - processPackages [inform]: executing diffoscope
+[2024-04-27 22:28:25] INFO root fetch - processPackages [inform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inform-1.8.0.tar.gz tmp/inform-1.9.0.tar.gz --markdown 20240427/i/inform/1.8.0-1.9.0/README.md --exclude *.pyd
+[2024-04-27 22:28:26] INFO root fetch - processPackages [midsummer]: Remove: archive file [/home/abi/fetcher/tmp/midsummer-0.1.0.tar.gz]
+[2024-04-27 22:28:26] INFO root fetch - processPackages [midsummer]: Remove: archive file [/home/abi/fetcher/tmp/midsummer-0.1.1.tar.gz]
+[2024-04-27 22:28:26] INFO root fetch - main [MainThread]: End processing [midsummer]: success
+[2024-04-27 22:28:26] INFO root fetch - processPackages [inform]: Remove: archive file [/home/abi/fetcher/tmp/inform-1.8.0.tar.gz]
+[2024-04-27 22:28:26] INFO root fetch - processPackages [inform]: Remove: archive file [/home/abi/fetcher/tmp/inform-1.9.0.tar.gz]
+[2024-04-27 22:28:26] INFO root fetch - main [MainThread]: End processing [inform]: success
+[2024-04-27 22:28:28] INFO root fetch - processPackages [pyodide-mkdocs-theme]: Remove: archive file [/home/abi/fetcher/tmp/pyodide_mkdocs_theme-0.4.0.tar.gz]
+[2024-04-27 22:28:28] INFO root fetch - processPackages [pyodide-mkdocs-theme]: Remove: archive file [/home/abi/fetcher/tmp/pyodide_mkdocs_theme-0.5.0.tar.gz]
+[2024-04-27 22:28:28] INFO root fetch - main [MainThread]: End processing [pyodide-mkdocs-theme]: success
+[2024-04-27 22:28:28] INFO root fetch - main [MainThread]: Store serial: [22961696]
