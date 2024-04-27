@@ -12423,3 +12423,24 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 12:49:57] INFO root fetch - processPackages [evo]: Remove: archive file [/home/abi/fetcher/tmp/evo-1.9.1.tar.gz]
 [2024-04-27 12:49:57] INFO root fetch - main [MainThread]: End processing [evo]: success
 [2024-04-27 12:49:57] INFO root fetch - main [MainThread]: Store serial: [22958056]
+[2024-04-27 12:52:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958056]
+[2024-04-27 12:52:07] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 12:52:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: drf-spectacular-websocket
+[2024-04-27 12:52:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: loggingpython
+[2024-04-27 12:52:07] INFO root fetch - processPackages [drf-spectacular-websocket]: New version: [1.2.4] Old Version: [1.2.3]
+[2024-04-27 12:52:07] INFO root fetch - processPackages [loggingpython]: New version: [1.4.9] Old Version: [1.4.8]
+[2024-04-27 12:52:08] INFO root fetch - processPackages [loggingpython]: Downloading https://files.pythonhosted.org/packages/10/b3/e54821e1b03030b58397113d0da262c489722cd490ce0b2331243ac4c877/loggingpython-1.4.8.tar.gz
+[2024-04-27 12:52:08] INFO root fetch - processPackages [drf-spectacular-websocket]: Downloading https://files.pythonhosted.org/packages/09/25/4f062cfba1a9435f1282284793334fa634f916da36f17aa5a3acb9305e88/drf_spectacular_websocket-1.2.3.tar.gz
+[2024-04-27 12:52:08] INFO root fetch - processPackages [loggingpython]: Downloading https://files.pythonhosted.org/packages/2f/ac/3674366d368315eb59c525fca3daf8d7382cd969b41779ad6807302e60bd/loggingpython-1.4.9.tar.gz
+[2024-04-27 12:52:08] INFO root fetch - processPackages [drf-spectacular-websocket]: Downloading https://files.pythonhosted.org/packages/a2/e9/ba23b9b2f0262050a916a4cfbcc3f08bc94c247ca33df9e8e6e887fb4a0a/drf_spectacular_websocket-1.2.4.tar.gz
+[2024-04-27 12:52:08] INFO root fetch - processPackages [loggingpython]: executing diffoscope
+[2024-04-27 12:52:08] INFO root fetch - processPackages [loggingpython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/loggingpython-1.4.8.tar.gz tmp/loggingpython-1.4.9.tar.gz --markdown 20240427/l/loggingpython/1.4.8-1.4.9/README.md --exclude *.pyd
+[2024-04-27 12:52:08] INFO root fetch - processPackages [drf-spectacular-websocket]: executing diffoscope
+[2024-04-27 12:52:08] INFO root fetch - processPackages [drf-spectacular-websocket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drf_spectacular_websocket-1.2.3.tar.gz tmp/drf_spectacular_websocket-1.2.4.tar.gz --markdown 20240427/d/drf-spectacular-websocket/1.2.3-1.2.4/README.md --exclude *.pyd
+[2024-04-27 12:52:09] INFO root fetch - processPackages [loggingpython]: Remove: archive file [/home/abi/fetcher/tmp/loggingpython-1.4.8.tar.gz]
+[2024-04-27 12:52:09] INFO root fetch - processPackages [loggingpython]: Remove: archive file [/home/abi/fetcher/tmp/loggingpython-1.4.9.tar.gz]
+[2024-04-27 12:52:09] INFO root fetch - main [MainThread]: End processing [loggingpython]: success
+[2024-04-27 12:52:09] INFO root fetch - processPackages [drf-spectacular-websocket]: Remove: archive file [/home/abi/fetcher/tmp/drf_spectacular_websocket-1.2.3.tar.gz]
+[2024-04-27 12:52:09] INFO root fetch - processPackages [drf-spectacular-websocket]: Remove: archive file [/home/abi/fetcher/tmp/drf_spectacular_websocket-1.2.4.tar.gz]
+[2024-04-27 12:52:09] INFO root fetch - main [MainThread]: End processing [drf-spectacular-websocket]: success
+[2024-04-27 12:52:09] INFO root fetch - main [MainThread]: Store serial: [22958062]
