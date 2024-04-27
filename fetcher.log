@@ -13675,3 +13675,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 14:18:56] INFO root fetch - processPackages [uv]: Remove: archive file [/home/abi/fetcher/tmp/uv-0.1.9.tar.gz]
 [2024-04-27 14:18:56] INFO root fetch - main [MainThread]: End processing [uv]: success
 [2024-04-27 14:18:56] INFO root fetch - main [MainThread]: Store serial: [22958605]
+[2024-04-27 14:21:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958605]
+[2024-04-27 14:21:05] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 14:21:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: st-ant-tree
+[2024-04-27 14:21:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qpiai-opt-api
+[2024-04-27 14:21:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: shoots
+[2024-04-27 14:21:06] INFO root fetch - processPackages [st-ant-tree]: New version: [0.0.6] Old Version: [0.0.4]
+[2024-04-27 14:21:06] INFO root fetch - processPackages [st-ant-tree]: Downloading https://files.pythonhosted.org/packages/33/03/e6830d06fa12b3b043c2055529d0c363949a7807efd9242699a7b80fa4d5/st_ant_tree-0.0.4-py3-none-any.whl
+[2024-04-27 14:21:06] INFO root fetch - processPackages [qpiai-opt-api]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-27 14:21:06] INFO root fetch - processPackages [shoots]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-27 14:21:06] INFO root fetch - processPackages [qpiai-opt-api]: Downloading https://files.pythonhosted.org/packages/be/70/bbd0f4aa29beb33559b99c898eeef5e81125a8a7a7d83c125892f5d15be1/qpiai-opt-api-1.0.1.tar.gz
+[2024-04-27 14:21:06] INFO root fetch - processPackages [shoots]: Downloading https://files.pythonhosted.org/packages/9d/ef/f4f1aac078c0d30f51d17121abf2499c78ad1e0954c8ae2f4b65b8eec4fe/shoots-0.1.0.tar.gz
+[2024-04-27 14:21:06] INFO root fetch - processPackages [st-ant-tree]: Downloading https://files.pythonhosted.org/packages/41/00/07ebaeae5cfc267a71e44a2a601c06224397785c22aeb0e21a32537144e1/st_ant_tree-0.0.6-py3-none-any.whl
+[2024-04-27 14:21:06] INFO root fetch - processPackages [qpiai-opt-api]: Downloading https://files.pythonhosted.org/packages/15/8a/e46524ca417354ac9ed69112c911b9e402f925d7a433dae800eb9c09a25c/qpiai_opt_api-1.0.2.tar.gz
+[2024-04-27 14:21:06] INFO root fetch - processPackages [qpiai-opt-api]: executing diffoscope
+[2024-04-27 14:21:06] INFO root fetch - processPackages [qpiai-opt-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qpiai-opt-api-1.0.1.tar.gz tmp/qpiai_opt_api-1.0.2.tar.gz --markdown 20240427/q/qpiai-opt-api/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-27 14:21:06] INFO root fetch - processPackages [st-ant-tree]: executing diffoscope
+[2024-04-27 14:21:06] INFO root fetch - processPackages [st-ant-tree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/st_ant_tree-0.0.4-py3-none-any.whl.zip tmp/st_ant_tree-0.0.6-py3-none-any.whl.zip --markdown 20240427/s/st-ant-tree/0.0.4-0.0.6/README.md --exclude *.pyd
+[2024-04-27 14:21:06] INFO root fetch - processPackages [shoots]: Downloading https://files.pythonhosted.org/packages/fd/23/ca06e80c441ea7782c562975e4b6d273c1f1424681e778a2e623f6bc86ac/shoots-0.1.1.tar.gz
+[2024-04-27 14:21:07] INFO root fetch - processPackages [shoots]: executing diffoscope
+[2024-04-27 14:21:07] INFO root fetch - processPackages [shoots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shoots-0.1.0.tar.gz tmp/shoots-0.1.1.tar.gz --markdown 20240427/s/shoots/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-27 14:21:07] INFO root fetch - processPackages [qpiai-opt-api]: Remove: archive file [/home/abi/fetcher/tmp/qpiai-opt-api-1.0.1.tar.gz]
+[2024-04-27 14:21:07] INFO root fetch - processPackages [qpiai-opt-api]: Remove: archive file [/home/abi/fetcher/tmp/qpiai_opt_api-1.0.2.tar.gz]
+[2024-04-27 14:21:07] INFO root fetch - main [MainThread]: End processing [qpiai-opt-api]: success
+[2024-04-27 14:21:07] INFO root fetch - processPackages [shoots]: Remove: archive file [/home/abi/fetcher/tmp/shoots-0.1.0.tar.gz]
+[2024-04-27 14:21:07] INFO root fetch - processPackages [shoots]: Remove: archive file [/home/abi/fetcher/tmp/shoots-0.1.1.tar.gz]
+[2024-04-27 14:21:07] INFO root fetch - main [MainThread]: End processing [shoots]: success
+[2024-04-27 14:21:25] INFO root fetch - processPackages [st-ant-tree]: Remove: archive file [/home/abi/fetcher/tmp/st_ant_tree-0.0.4-py3-none-any.whl.zip]
+[2024-04-27 14:21:25] INFO root fetch - processPackages [st-ant-tree]: Remove: archive file [/home/abi/fetcher/tmp/st_ant_tree-0.0.6-py3-none-any.whl.zip]
+[2024-04-27 14:21:25] INFO root fetch - main [MainThread]: End processing [st-ant-tree]: success
+[2024-04-27 14:21:25] INFO root fetch - main [MainThread]: Store serial: [22958612]
