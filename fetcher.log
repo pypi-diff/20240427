@@ -15161,3 +15161,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 15:57:30] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.6.dev9.tar.gz]
 [2024-04-27 15:57:30] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2024-04-27 15:57:30] INFO root fetch - main [MainThread]: Store serial: [22959260]
+[2024-04-27 15:59:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959260]
+[2024-04-27 15:59:40] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-27 15:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: helmet
+[2024-04-27 15:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: anmoku
+[2024-04-27 15:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pymeteobridgesql
+[2024-04-27 15:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: adafruit-circuitpython-wiznet5k
+[2024-04-27 15:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: flatpack
+[2024-04-27 15:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tiny-dag
+[2024-04-27 15:59:40] INFO root fetch - processPackages [tiny-dag]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-27 15:59:40] INFO root fetch - processPackages [pymeteobridgesql]: New version: [1.1.6] Old Version: [1.1.5]
+[2024-04-27 15:59:41] INFO root fetch - processPackages [flatpack]: New version: [3.3.9] Old Version: [3.3.8]
+[2024-04-27 15:59:41] INFO root fetch - processPackages [adafruit-circuitpython-wiznet5k]: New version: [6.0.0] Old Version: [5.2.1]
+[2024-04-27 15:59:41] INFO root fetch - processPackages [anmoku]: New version: [1.0.0.dev1] Old Version: [1.0.0]
+[2024-04-27 15:59:41] INFO root fetch - processPackages [tiny-dag]: Downloading https://files.pythonhosted.org/packages/b3/d4/de8a8dd47656ea956bcbda3b075be5080b9a7dcbacf076fe45ae987208bc/tiny-dag-0.0.1.tar.gz
+[2024-04-27 15:59:41] INFO root fetch - processPackages [helmet]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-27 15:59:41] INFO root fetch - processPackages [pymeteobridgesql]: Downloading https://files.pythonhosted.org/packages/7d/2e/e9104dbac5d215f6da88171853464a38683dda7ed2fb447e55b0b22c528e/pymeteobridgesql-1.1.5.tar.gz
+[2024-04-27 15:59:41] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/42/48/84e949164975b341645163f536ee4ca8329c4e3dfa6d143c2806a0849a54/flatpack-3.3.8.tar.gz
+[2024-04-27 15:59:41] INFO root fetch - processPackages [anmoku]: Downloading https://files.pythonhosted.org/packages/3b/60/35e783e2b32fd71062081f53bb111bdeb9334b9996b1425d96f9c3281e19/anmoku-1.0.0-py3-none-any.whl
+[2024-04-27 15:59:41] INFO root fetch - processPackages [adafruit-circuitpython-wiznet5k]: Downloading https://files.pythonhosted.org/packages/e4/d7/b88a5d7992b04cf480f81eeb4724aa6840deb6b0d1ad09fe6677cf8fbf2f/adafruit_circuitpython_wiznet5k-5.2.1.tar.gz
+[2024-04-27 15:59:41] INFO root fetch - processPackages [helmet]: Downloading https://files.pythonhosted.org/packages/b4/72/f6f66a0277017171226e487d33e4a816d71923bd4321f4a6843466bfee90/helmet-1.0.2.tar.gz
+[2024-04-27 15:59:41] INFO root fetch - processPackages [tiny-dag]: Downloading https://files.pythonhosted.org/packages/c6/42/d516489f7e388bf149b148a388c0d2d96d88b803b4bdb4f8ed2971229af4/tiny_dag-0.0.2.tar.gz
+[2024-04-27 15:59:41] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/11/54/065825e8640b062c83c07c97d8dea514db8a5c0ea3c272834b88c568d82e/flatpack-3.3.9.tar.gz
+[2024-04-27 15:59:41] INFO root fetch - processPackages [pymeteobridgesql]: Downloading https://files.pythonhosted.org/packages/c5/f7/0408334f786627bff5c592daab07e278201dc220388af54aacef22950106/pymeteobridgesql-1.1.6.tar.gz
+[2024-04-27 15:59:41] INFO root fetch - processPackages [tiny-dag]: executing diffoscope
+[2024-04-27 15:59:41] INFO root fetch - processPackages [tiny-dag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tiny-dag-0.0.1.tar.gz tmp/tiny_dag-0.0.2.tar.gz --markdown 20240427/t/tiny-dag/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-27 15:59:41] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-04-27 15:59:41] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.3.8.tar.gz tmp/flatpack-3.3.9.tar.gz --markdown 20240427/f/flatpack/3.3.8-3.3.9/README.md --exclude *.pyd
+[2024-04-27 15:59:41] INFO root fetch - processPackages [pymeteobridgesql]: executing diffoscope
+[2024-04-27 15:59:41] INFO root fetch - processPackages [pymeteobridgesql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymeteobridgesql-1.1.5.tar.gz tmp/pymeteobridgesql-1.1.6.tar.gz --markdown 20240427/p/pymeteobridgesql/1.1.5-1.1.6/README.md --exclude *.pyd
+[2024-04-27 15:59:41] INFO root fetch - processPackages [anmoku]: Downloading https://files.pythonhosted.org/packages/eb/e6/303f37f6904f2051b3b8f314fd2ea858324d57efbf4510884736e41b29e5/anmoku-1.0.0.dev1.tar.gz
+[2024-04-27 15:59:41] INFO root fetch - processPackages [adafruit-circuitpython-wiznet5k]: Downloading https://files.pythonhosted.org/packages/7d/41/24bb50efc3f3384e0b60cda0af4192d2066ea30a4cce38f86eb6f45cf8ad/adafruit_circuitpython_wiznet5k-6.0.0.tar.gz
+[2024-04-27 15:59:41] INFO root fetch - processPackages [helmet]: Downloading https://files.pythonhosted.org/packages/48/bb/d3e0919635f57fa89be6680a63f4d35f248c22423ed782e92af0f28517e7/helmet-1.0.3.tar.gz
+[2024-04-27 15:59:41] INFO root fetch - processPackages [helmet]: executing diffoscope
+[2024-04-27 15:59:41] INFO root fetch - processPackages [helmet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/helmet-1.0.2.tar.gz tmp/helmet-1.0.3.tar.gz --markdown 20240427/h/helmet/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-04-27 15:59:41] INFO root fetch - processPackages [adafruit-circuitpython-wiznet5k]: executing diffoscope
+[2024-04-27 15:59:41] INFO root fetch - processPackages [adafruit-circuitpython-wiznet5k]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adafruit_circuitpython_wiznet5k-5.2.1.tar.gz tmp/adafruit_circuitpython_wiznet5k-6.0.0.tar.gz --markdown 20240427/a/adafruit-circuitpython-wiznet5k/5.2.1-6.0.0/README.md --exclude *.pyd
+[2024-04-27 15:59:42] INFO root fetch - processPackages [tiny-dag]: Remove: archive file [/home/abi/fetcher/tmp/tiny-dag-0.0.1.tar.gz]
+[2024-04-27 15:59:42] INFO root fetch - processPackages [tiny-dag]: Remove: archive file [/home/abi/fetcher/tmp/tiny_dag-0.0.2.tar.gz]
+[2024-04-27 15:59:42] INFO root fetch - main [MainThread]: End processing [tiny-dag]: success
+[2024-04-27 15:59:42] INFO root fetch - processPackages [pymeteobridgesql]: Remove: archive file [/home/abi/fetcher/tmp/pymeteobridgesql-1.1.5.tar.gz]
+[2024-04-27 15:59:42] INFO root fetch - processPackages [pymeteobridgesql]: Remove: archive file [/home/abi/fetcher/tmp/pymeteobridgesql-1.1.6.tar.gz]
+[2024-04-27 15:59:42] INFO root fetch - main [MainThread]: End processing [pymeteobridgesql]: success
+[2024-04-27 15:59:42] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.8.tar.gz]
+[2024-04-27 15:59:42] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.9.tar.gz]
+[2024-04-27 15:59:42] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-04-27 15:59:42] INFO root fetch - processPackages [helmet]: Remove: archive file [/home/abi/fetcher/tmp/helmet-1.0.2.tar.gz]
+[2024-04-27 15:59:42] INFO root fetch - processPackages [helmet]: Remove: archive file [/home/abi/fetcher/tmp/helmet-1.0.3.tar.gz]
+[2024-04-27 15:59:42] INFO root fetch - main [MainThread]: End processing [helmet]: success
+[2024-04-27 15:59:42] INFO root fetch - processPackages [adafruit-circuitpython-wiznet5k]: Remove: archive file [/home/abi/fetcher/tmp/adafruit_circuitpython_wiznet5k-5.2.1.tar.gz]
+[2024-04-27 15:59:42] INFO root fetch - processPackages [adafruit-circuitpython-wiznet5k]: Remove: archive file [/home/abi/fetcher/tmp/adafruit_circuitpython_wiznet5k-6.0.0.tar.gz]
+[2024-04-27 15:59:42] INFO root fetch - main [MainThread]: End processing [adafruit-circuitpython-wiznet5k]: success
+[2024-04-27 15:59:42] INFO root fetch - processPackages [anmoku]: executing diffoscope
+[2024-04-27 15:59:42] INFO root fetch - processPackages [anmoku]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anmoku-1.0.0-py3-none-any.whl.zip tmp/anmoku-1.0.0.dev1.tar.gz --markdown 20240427/a/anmoku/1.0.0-1.0.0.dev1/README.md --exclude *.pyd
+[2024-04-27 15:59:46] INFO root fetch - processPackages [anmoku]: Remove: archive file [/home/abi/fetcher/tmp/anmoku-1.0.0-py3-none-any.whl.zip]
+[2024-04-27 15:59:46] INFO root fetch - processPackages [anmoku]: Remove: archive file [/home/abi/fetcher/tmp/anmoku-1.0.0.dev1.tar.gz]
+[2024-04-27 15:59:46] INFO root fetch - main [MainThread]: End processing [anmoku]: success
+[2024-04-27 15:59:46] INFO root fetch - main [MainThread]: Store serial: [22959283]
