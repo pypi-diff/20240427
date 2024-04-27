@@ -11758,3 +11758,51 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 11:57:55] INFO root fetch - processPackages [tweety-ns]: Remove: archive file [/home/abi/fetcher/tmp/tweety_ns-1.1.4.tar.gz]
 [2024-04-27 11:57:55] INFO root fetch - main [MainThread]: End processing [tweety-ns]: success
 [2024-04-27 11:57:55] INFO root fetch - main [MainThread]: Store serial: [22957792]
+[2024-04-27 11:59:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957792]
+[2024-04-27 12:00:04] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 12:00:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dataidea
+[2024-04-27 12:00:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: llm-json-adapter
+[2024-04-27 12:00:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyblu
+[2024-04-27 12:00:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: taskingai
+[2024-04-27 12:00:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hellosp
+[2024-04-27 12:00:04] INFO root fetch - processPackages [pyblu]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-04-27 12:00:04] INFO root fetch - processPackages [hellosp]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-27 12:00:04] INFO root fetch - processPackages [taskingai]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-27 12:00:04] INFO root fetch - processPackages [pyblu]: Downloading https://files.pythonhosted.org/packages/e1/f9/4a3f40ad345c6b38ec271d2a18778007bcd3122be30776f4b92376a97f6e/pyblu-0.3.2.tar.gz
+[2024-04-27 12:00:04] INFO root fetch - processPackages [taskingai]: Downloading https://files.pythonhosted.org/packages/af/80/ca3a243332d571f589827aa8c435bf045e1cab35d1005e3249a2ba18a6bf/taskingai-0.2.1.tar.gz
+[2024-04-27 12:00:04] INFO root fetch - processPackages [dataidea]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-04-27 12:00:04] INFO root fetch - processPackages [llm-json-adapter]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-27 12:00:04] INFO root fetch - processPackages [hellosp]: Downloading https://files.pythonhosted.org/packages/ac/09/b8a36ee06bbdd4f85b092a5b591c93fda6d77bc9928596baa1598aee0864/hellosp-0.1.0.tar.gz
+[2024-04-27 12:00:04] INFO root fetch - processPackages [llm-json-adapter]: Downloading https://files.pythonhosted.org/packages/50/2e/ed13f7fd4f0cf52c6b493279d72fc0608f72daf5f38faca49b0ce3a0d88b/llm_json_adapter-0.1.0.tar.gz
+[2024-04-27 12:00:04] INFO root fetch - processPackages [dataidea]: Downloading https://files.pythonhosted.org/packages/d3/b1/a70cca141bbb14e80a360efc8abd7bbe62c4201f3c9ace77dedb3bf9e31c/dataidea-0.2.5.tar.gz
+[2024-04-27 12:00:04] INFO root fetch - processPackages [pyblu]: Downloading https://files.pythonhosted.org/packages/5f/49/7b7a23048c203982f9e4d3104335bf5a9037b77064c5da1cf22bd8fd4d10/pyblu-0.3.3.tar.gz
+[2024-04-27 12:00:04] INFO root fetch - processPackages [taskingai]: Downloading https://files.pythonhosted.org/packages/98/71/70c223d7596b98f48d153840f4fa05ce4b6aa181c6acd8efed8a25a48ec5/taskingai-0.2.2.tar.gz
+[2024-04-27 12:00:04] INFO root fetch - processPackages [pyblu]: executing diffoscope
+[2024-04-27 12:00:04] INFO root fetch - processPackages [pyblu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyblu-0.3.2.tar.gz tmp/pyblu-0.3.3.tar.gz --markdown 20240427/p/pyblu/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-04-27 12:00:04] INFO root fetch - processPackages [hellosp]: Downloading https://files.pythonhosted.org/packages/07/58/23095258a9e1cb1b43ac79c4d20235745c86a1715935de0c0737bc43062d/hellosp-0.1.1.tar.gz
+[2024-04-27 12:00:04] INFO root fetch - processPackages [taskingai]: executing diffoscope
+[2024-04-27 12:00:04] INFO root fetch - processPackages [taskingai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taskingai-0.2.1.tar.gz tmp/taskingai-0.2.2.tar.gz --markdown 20240427/t/taskingai/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-04-27 12:00:04] INFO root fetch - processPackages [hellosp]: executing diffoscope
+[2024-04-27 12:00:04] INFO root fetch - processPackages [hellosp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hellosp-0.1.0.tar.gz tmp/hellosp-0.1.1.tar.gz --markdown 20240427/h/hellosp/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-27 12:00:04] INFO root fetch - processPackages [llm-json-adapter]: Downloading https://files.pythonhosted.org/packages/ff/02/36fa27c92ba14ef98b13bd60464f837fec9219bb2647185b48553494134b/llm_json_adapter-0.2.0.tar.gz
+[2024-04-27 12:00:05] INFO root fetch - processPackages [dataidea]: Downloading https://files.pythonhosted.org/packages/39/2d/3976ce3827d9fae1158cb5ea8c1616b4eba15573aed321436cffe43b4389/dataidea-0.2.6.tar.gz
+[2024-04-27 12:00:05] INFO root fetch - processPackages [llm-json-adapter]: executing diffoscope
+[2024-04-27 12:00:05] INFO root fetch - processPackages [llm-json-adapter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_json_adapter-0.1.0.tar.gz tmp/llm_json_adapter-0.2.0.tar.gz --markdown 20240427/l/llm-json-adapter/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-27 12:00:05] INFO root fetch - processPackages [dataidea]: executing diffoscope
+[2024-04-27 12:00:05] INFO root fetch - processPackages [dataidea]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataidea-0.2.5.tar.gz tmp/dataidea-0.2.6.tar.gz --markdown 20240427/d/dataidea/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-04-27 12:00:05] INFO root fetch - processPackages [pyblu]: Remove: archive file [/home/abi/fetcher/tmp/pyblu-0.3.2.tar.gz]
+[2024-04-27 12:00:05] INFO root fetch - processPackages [pyblu]: Remove: archive file [/home/abi/fetcher/tmp/pyblu-0.3.3.tar.gz]
+[2024-04-27 12:00:05] INFO root fetch - main [MainThread]: End processing [pyblu]: success
+[2024-04-27 12:00:05] INFO root fetch - processPackages [hellosp]: Remove: archive file [/home/abi/fetcher/tmp/hellosp-0.1.0.tar.gz]
+[2024-04-27 12:00:05] INFO root fetch - processPackages [hellosp]: Remove: archive file [/home/abi/fetcher/tmp/hellosp-0.1.1.tar.gz]
+[2024-04-27 12:00:05] INFO root fetch - main [MainThread]: End processing [hellosp]: success
+[2024-04-27 12:00:05] INFO root fetch - processPackages [llm-json-adapter]: Remove: archive file [/home/abi/fetcher/tmp/llm_json_adapter-0.1.0.tar.gz]
+[2024-04-27 12:00:05] INFO root fetch - processPackages [llm-json-adapter]: Remove: archive file [/home/abi/fetcher/tmp/llm_json_adapter-0.2.0.tar.gz]
+[2024-04-27 12:00:05] INFO root fetch - main [MainThread]: End processing [llm-json-adapter]: success
+[2024-04-27 12:00:05] INFO root fetch - processPackages [taskingai]: Remove: archive file [/home/abi/fetcher/tmp/taskingai-0.2.1.tar.gz]
+[2024-04-27 12:00:05] INFO root fetch - processPackages [taskingai]: Remove: archive file [/home/abi/fetcher/tmp/taskingai-0.2.2.tar.gz]
+[2024-04-27 12:00:05] INFO root fetch - main [MainThread]: End processing [taskingai]: success
+[2024-04-27 12:00:06] INFO root fetch - processPackages [dataidea]: Remove: archive file [/home/abi/fetcher/tmp/dataidea-0.2.5.tar.gz]
+[2024-04-27 12:00:06] INFO root fetch - processPackages [dataidea]: Remove: archive file [/home/abi/fetcher/tmp/dataidea-0.2.6.tar.gz]
+[2024-04-27 12:00:06] INFO root fetch - main [MainThread]: End processing [dataidea]: success
+[2024-04-27 12:00:06] INFO root fetch - main [MainThread]: Store serial: [22957806]
