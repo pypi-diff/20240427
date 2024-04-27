@@ -2941,3 +2941,48 @@ EOFError: EOF read where object expected
 [2024-04-27 02:55:00] INFO root fetch - processPackages [keras-nlp]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-0.9.3.dev0.tar.gz]
 [2024-04-27 02:55:00] INFO root fetch - main [MainThread]: End processing [keras-nlp]: success
 [2024-04-27 02:55:00] INFO root fetch - main [MainThread]: Store serial: [22954519]
+[2024-04-27 02:57:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22954519]
+[2024-04-27 02:57:08] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 02:57:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: labelme-toolkit
+[2024-04-27 02:57:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pycde
+[2024-04-27 02:57:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: eznf
+[2024-04-27 02:57:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyscinloopsr
+[2024-04-27 02:57:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hebill
+[2024-04-27 02:57:08] INFO root fetch - processPackages [eznf]: New version: [0.9.2] Old Version: [0.8.2]
+[2024-04-27 02:57:08] INFO root fetch - processPackages [pyscinloopsr]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-27 02:57:08] INFO root fetch - processPackages [pyscinloopsr]: Downloading https://files.pythonhosted.org/packages/98/21/5809d8e4c42d0207d6fd61e35cf0683da0e0cc5f1d10fa87e864b000cfa6/pyscinloopsr-1.0.8.tar.gz
+[2024-04-27 02:57:08] INFO root fetch - processPackages [eznf]: Downloading https://files.pythonhosted.org/packages/fb/1f/015a44833d26beef387b30463b57e926e132e3aab98a08a4ea23c702874b/eznf-0.8.2.tar.gz
+[2024-04-27 02:57:08] INFO root fetch - processPackages [labelme-toolkit]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-04-27 02:57:09] INFO root fetch - processPackages [hebill]: New version: [1.2.6] Old Version: [1.2.5]
+[2024-04-27 02:57:09] INFO root fetch - processPackages [pycde]: New version: [0.3.1.dev901] Old Version: [0.3.1.dev898]
+[2024-04-27 02:57:09] INFO root fetch - processPackages [labelme-toolkit]: Downloading https://files.pythonhosted.org/packages/df/70/4df907e6ee641549637fbc1991fdc4f1e41b95bdad5ab241aa576b1e6fe5/labelme_toolkit-1.1.0.tar.gz
+[2024-04-27 02:57:09] INFO root fetch - processPackages [eznf]: Downloading https://files.pythonhosted.org/packages/04/8a/7288f78c98496c7caa6460badc2c37c87078362006917606f3cb8c05a0f0/eznf-0.9.2.tar.gz
+[2024-04-27 02:57:09] INFO root fetch - processPackages [hebill]: Downloading https://files.pythonhosted.org/packages/be/d4/d1d43aad7a8a7d3d135150bdd3526bf0efbb8b446db0101a964d0937a29a/hebill-1.2.5.tar.gz
+[2024-04-27 02:57:09] INFO root fetch - processPackages [pycde]: Downloading https://files.pythonhosted.org/packages/62/3d/f2ae262e2be68aba0c98d2cee01bc4be27b754f1498cc9f3acf1d472fe17/pycde-0.3.1.dev898-cp39-cp39-win_amd64.whl
+[2024-04-27 02:57:09] INFO root fetch - processPackages [eznf]: executing diffoscope
+[2024-04-27 02:57:09] INFO root fetch - processPackages [eznf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eznf-0.8.2.tar.gz tmp/eznf-0.9.2.tar.gz --markdown 20240427/e/eznf/0.8.2-0.9.2/README.md --exclude *.pyd
+[2024-04-27 02:57:09] INFO root fetch - processPackages [pyscinloopsr]: Downloading https://files.pythonhosted.org/packages/c2/79/a3b3e1c4377a54b84d92a6ce4a8d70f9bb57364bdbe1ec2657397e8360cd/pyscinloopsr-1.0.9.tar.gz
+[2024-04-27 02:57:09] INFO root fetch - processPackages [pyscinloopsr]: executing diffoscope
+[2024-04-27 02:57:09] INFO root fetch - processPackages [pyscinloopsr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscinloopsr-1.0.8.tar.gz tmp/pyscinloopsr-1.0.9.tar.gz --markdown 20240427/p/pyscinloopsr/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-27 02:57:09] INFO root fetch - processPackages [labelme-toolkit]: Downloading https://files.pythonhosted.org/packages/e3/5f/30410574caf1a5db264ae894a61ebf9c4a857f1bc0256beb5144350818e0/labelme_toolkit-1.1.1.tar.gz
+[2024-04-27 02:57:09] INFO root fetch - processPackages [hebill]: Downloading https://files.pythonhosted.org/packages/98/5e/fb494267fe53c0206d7d589811dee2053edc91df7e554651a1dd2bf51acf/hebill-1.2.6.tar.gz
+[2024-04-27 02:57:09] INFO root fetch - processPackages [eznf]: Remove: archive file [/home/abi/fetcher/tmp/eznf-0.8.2.tar.gz]
+[2024-04-27 02:57:09] INFO root fetch - processPackages [eznf]: Remove: archive file [/home/abi/fetcher/tmp/eznf-0.9.2.tar.gz]
+[2024-04-27 02:57:09] INFO root fetch - processPackages [pycde]: Downloading https://files.pythonhosted.org/packages/cb/fd/84390e71576c21cf951de577d234e5daf4553de5169098cf48254a2b8ae5/pycde-0.3.1.dev901-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-27 02:57:09] INFO root fetch - main [MainThread]: End processing [eznf]: success
+[2024-04-27 02:57:09] INFO root fetch - processPackages [labelme-toolkit]: executing diffoscope
+[2024-04-27 02:57:09] INFO root fetch - processPackages [labelme-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/labelme_toolkit-1.1.0.tar.gz tmp/labelme_toolkit-1.1.1.tar.gz --markdown 20240427/l/labelme-toolkit/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-04-27 02:57:09] WARNING root fetch - processPackages [pycde]: Skipping package: exceeds size limit 21446123>=10485760
+[2024-04-27 02:57:10] INFO root fetch - main [MainThread]: End processing [pycde] error
+[2024-04-27 02:57:10] INFO root fetch - processPackages [pyscinloopsr]: Remove: archive file [/home/abi/fetcher/tmp/pyscinloopsr-1.0.8.tar.gz]
+[2024-04-27 02:57:10] INFO root fetch - processPackages [pyscinloopsr]: Remove: archive file [/home/abi/fetcher/tmp/pyscinloopsr-1.0.9.tar.gz]
+[2024-04-27 02:57:10] INFO root fetch - main [MainThread]: End processing [pyscinloopsr]: success
+[2024-04-27 02:57:10] INFO root fetch - processPackages [hebill]: executing diffoscope
+[2024-04-27 02:57:10] INFO root fetch - processPackages [hebill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hebill-1.2.5.tar.gz tmp/hebill-1.2.6.tar.gz --markdown 20240427/h/hebill/1.2.5-1.2.6/README.md --exclude *.pyd
+[2024-04-27 02:57:10] INFO root fetch - processPackages [labelme-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/labelme_toolkit-1.1.0.tar.gz]
+[2024-04-27 02:57:10] INFO root fetch - processPackages [labelme-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/labelme_toolkit-1.1.1.tar.gz]
+[2024-04-27 02:57:10] INFO root fetch - main [MainThread]: End processing [labelme-toolkit]: success
+[2024-04-27 02:57:11] INFO root fetch - processPackages [hebill]: Remove: archive file [/home/abi/fetcher/tmp/hebill-1.2.5.tar.gz]
+[2024-04-27 02:57:11] INFO root fetch - processPackages [hebill]: Remove: archive file [/home/abi/fetcher/tmp/hebill-1.2.6.tar.gz]
+[2024-04-27 02:57:11] INFO root fetch - main [MainThread]: End processing [hebill]: success
+[2024-04-27 02:57:11] INFO root fetch - main [MainThread]: Store serial: [22954534]
