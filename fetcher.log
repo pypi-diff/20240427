@@ -13354,3 +13354,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 13:57:03] INFO root fetch - processPackages [pyscript-ltk]: Remove: archive file [/home/abi/fetcher/tmp/pyscript-ltk-0.1.9.tar.gz]
 [2024-04-27 13:57:03] INFO root fetch - main [MainThread]: End processing [pyscript-ltk]: success
 [2024-04-27 13:57:03] INFO root fetch - main [MainThread]: Store serial: [22958468]
+[2024-04-27 13:59:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958468]
+[2024-04-27 13:59:11] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 13:59:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kernel-quantile-regression
+[2024-04-27 13:59:11] INFO root fetch - processPackages [kernel-quantile-regression]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-27 13:59:12] INFO root fetch - processPackages [kernel-quantile-regression]: Downloading https://files.pythonhosted.org/packages/96/b4/344d28998993a7b9b45be2690b56b449fcd44aba62c87350f5062f4f7277/kernel_quantile_regression-0.0.7.tar.gz
+[2024-04-27 13:59:12] INFO root fetch - processPackages [kernel-quantile-regression]: Downloading https://files.pythonhosted.org/packages/35/53/6352628a6762cfeff73aa1ae041a84857a32b6221b5450c8c6da6a463f91/kernel_quantile_regression-0.0.8.tar.gz
+[2024-04-27 13:59:12] INFO root fetch - processPackages [kernel-quantile-regression]: executing diffoscope
+[2024-04-27 13:59:12] INFO root fetch - processPackages [kernel-quantile-regression]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kernel_quantile_regression-0.0.7.tar.gz tmp/kernel_quantile_regression-0.0.8.tar.gz --markdown 20240427/k/kernel-quantile-regression/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-27 13:59:12] INFO root fetch - processPackages [kernel-quantile-regression]: Remove: archive file [/home/abi/fetcher/tmp/kernel_quantile_regression-0.0.7.tar.gz]
+[2024-04-27 13:59:12] INFO root fetch - processPackages [kernel-quantile-regression]: Remove: archive file [/home/abi/fetcher/tmp/kernel_quantile_regression-0.0.8.tar.gz]
+[2024-04-27 13:59:12] INFO root fetch - main [MainThread]: End processing [kernel-quantile-regression]: success
+[2024-04-27 13:59:12] INFO root fetch - main [MainThread]: Store serial: [22958475]
