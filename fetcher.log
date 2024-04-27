@@ -18173,3 +18173,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 19:21:52] INFO root fetch - processPackages [hgraph]: Remove: archive file [/home/abi/fetcher/tmp/hgraph-0.2.9.tar.gz]
 [2024-04-27 19:21:52] INFO root fetch - main [MainThread]: End processing [hgraph]: success
 [2024-04-27 19:21:52] INFO root fetch - main [MainThread]: Store serial: [22960484]
+[2024-04-27 19:24:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960484]
+[2024-04-27 19:24:05] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 19:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cocoon-data
+[2024-04-27 19:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dwdhandler
+[2024-04-27 19:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sae-lens
+[2024-04-27 19:24:05] INFO root fetch - processPackages [cocoon-data]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-27 19:24:05] INFO root fetch - processPackages [cocoon-data]: Downloading https://files.pythonhosted.org/packages/ac/3c/a1a6c95be4d731fc0db8d40b132730891186370f3cd304837773aa0dcce9/cocoon_data-0.1.8.tar.gz
+[2024-04-27 19:24:05] INFO root fetch - processPackages [dwdhandler]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-27 19:24:05] INFO root fetch - processPackages [sae-lens]: New version: [1.0.0] Old Version: [0.7.0]
+[2024-04-27 19:24:06] INFO root fetch - processPackages [dwdhandler]: Downloading https://files.pythonhosted.org/packages/e5/4c/e071a411fcdab51db63e5e138b02a864d7a91be018684aa01355af24328c/dwdhandler-0.2.0.tar.gz
+[2024-04-27 19:24:06] INFO root fetch - processPackages [sae-lens]: Downloading https://files.pythonhosted.org/packages/9b/c9/bd667c29a81c3ee6cd89a4e3f33f2c55779448c5bfa49b37cabf02459fda/sae_lens-0.7.0.tar.gz
+[2024-04-27 19:24:06] INFO root fetch - processPackages [cocoon-data]: Downloading https://files.pythonhosted.org/packages/0b/b9/048ffb4abe066854ebc4d24ca277250c5668844b84d602ff0be9adf8b231/cocoon_data-0.1.9.tar.gz
+[2024-04-27 19:24:06] INFO root fetch - processPackages [cocoon-data]: executing diffoscope
+[2024-04-27 19:24:06] INFO root fetch - processPackages [cocoon-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cocoon_data-0.1.8.tar.gz tmp/cocoon_data-0.1.9.tar.gz --markdown 20240427/c/cocoon-data/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-27 19:24:06] INFO root fetch - processPackages [dwdhandler]: Downloading https://files.pythonhosted.org/packages/9c/ff/abb66efcd6d7c00868319d9b4faf59c7186939a488180a72ed28bbbdf145/dwdhandler-0.2.1.tar.gz
+[2024-04-27 19:24:06] INFO root fetch - processPackages [sae-lens]: Downloading https://files.pythonhosted.org/packages/6d/34/27fe606f27f94c3622511f3206cd15377eba9f81666779b9ad7702bb827d/sae_lens-1.0.0.tar.gz
+[2024-04-27 19:24:06] INFO root fetch - processPackages [dwdhandler]: executing diffoscope
+[2024-04-27 19:24:06] INFO root fetch - processPackages [dwdhandler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dwdhandler-0.2.0.tar.gz tmp/dwdhandler-0.2.1.tar.gz --markdown 20240427/d/dwdhandler/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-04-27 19:24:06] INFO root fetch - processPackages [sae-lens]: executing diffoscope
+[2024-04-27 19:24:06] INFO root fetch - processPackages [sae-lens]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sae_lens-0.7.0.tar.gz tmp/sae_lens-1.0.0.tar.gz --markdown 20240427/s/sae-lens/0.7.0-1.0.0/README.md --exclude *.pyd
+[2024-04-27 19:24:06] INFO root fetch - processPackages [cocoon-data]: Remove: archive file [/home/abi/fetcher/tmp/cocoon_data-0.1.8.tar.gz]
+[2024-04-27 19:24:06] INFO root fetch - processPackages [cocoon-data]: Remove: archive file [/home/abi/fetcher/tmp/cocoon_data-0.1.9.tar.gz]
+[2024-04-27 19:24:06] INFO root fetch - main [MainThread]: End processing [cocoon-data]: success
+[2024-04-27 19:24:07] INFO root fetch - processPackages [dwdhandler]: Remove: archive file [/home/abi/fetcher/tmp/dwdhandler-0.2.0.tar.gz]
+[2024-04-27 19:24:07] INFO root fetch - processPackages [dwdhandler]: Remove: archive file [/home/abi/fetcher/tmp/dwdhandler-0.2.1.tar.gz]
+[2024-04-27 19:24:07] INFO root fetch - main [MainThread]: End processing [dwdhandler]: success
+[2024-04-27 19:24:07] INFO root fetch - processPackages [sae-lens]: Remove: archive file [/home/abi/fetcher/tmp/sae_lens-0.7.0.tar.gz]
+[2024-04-27 19:24:07] INFO root fetch - processPackages [sae-lens]: Remove: archive file [/home/abi/fetcher/tmp/sae_lens-1.0.0.tar.gz]
+[2024-04-27 19:24:07] INFO root fetch - main [MainThread]: End processing [sae-lens]: success
+[2024-04-27 19:24:07] INFO root fetch - main [MainThread]: Store serial: [22960493]
