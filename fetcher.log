@@ -14822,3 +14822,9 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 15:39:48] INFO root fetch - processPackages [flux-local]: Remove: archive file [/home/abi/fetcher/tmp/flux_local-5.1.0.tar.gz]
 [2024-04-27 15:39:48] INFO root fetch - main [MainThread]: End processing [flux-local]: success
 [2024-04-27 15:39:48] INFO root fetch - main [MainThread]: Store serial: [22959151]
+[2024-04-27 15:41:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959151]
+[2024-04-27 15:41:56] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 15:41:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: plotly-gruvbox-colorscheme
+[2024-04-27 15:41:56] WARNING root fetch - processPackages [plotly-gruvbox-colorscheme]: Skipping, unable to determine old version
+[2024-04-27 15:41:56] INFO root fetch - main [MainThread]: End processing [plotly-gruvbox-colorscheme] error
+[2024-04-27 15:41:56] INFO root fetch - main [MainThread]: Store serial: [22959157]
