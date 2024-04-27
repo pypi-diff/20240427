@@ -12803,3 +12803,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 
 [2024-04-27 13:16:24] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-esimd-21] error
 [2024-04-27 13:16:24] INFO root fetch - main [MainThread]: Store serial: [22958191]
+[2024-04-27 13:18:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958191]
+[2024-04-27 13:18:34] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 13:18:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zkyhaxpy
+[2024-04-27 13:18:34] INFO root fetch - processPackages [zkyhaxpy]: New version: [0.3.1.1.0] Old Version: [0.3.1.0.1]
+[2024-04-27 13:18:34] INFO root fetch - processPackages [zkyhaxpy]: Downloading https://files.pythonhosted.org/packages/49/19/1eca118938df530ee7394c4de4e771c409ccca2376d6bd0a9fe4de996ebb/zkyhaxpy-0.3.1.0.1.tar.gz
+[2024-04-27 13:18:35] INFO root fetch - processPackages [zkyhaxpy]: Downloading https://files.pythonhosted.org/packages/a1/c4/cb68d63af61b95fa5fe16dfc33e2a771d763545cd4f244592c4832bcf7ca/zkyhaxpy-0.3.1.1.0.tar.gz
+[2024-04-27 13:18:35] INFO root fetch - processPackages [zkyhaxpy]: executing diffoscope
+[2024-04-27 13:18:35] INFO root fetch - processPackages [zkyhaxpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zkyhaxpy-0.3.1.0.1.tar.gz tmp/zkyhaxpy-0.3.1.1.0.tar.gz --markdown 20240427/z/zkyhaxpy/0.3.1.0.1-0.3.1.1.0/README.md --exclude *.pyd
+[2024-04-27 13:18:35] INFO root fetch - processPackages [zkyhaxpy]: Remove: archive file [/home/abi/fetcher/tmp/zkyhaxpy-0.3.1.0.1.tar.gz]
+[2024-04-27 13:18:35] INFO root fetch - processPackages [zkyhaxpy]: Remove: archive file [/home/abi/fetcher/tmp/zkyhaxpy-0.3.1.1.0.tar.gz]
+[2024-04-27 13:18:35] INFO root fetch - main [MainThread]: End processing [zkyhaxpy]: success
+[2024-04-27 13:18:35] INFO root fetch - main [MainThread]: Store serial: [22958194]
