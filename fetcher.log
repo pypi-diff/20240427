@@ -12444,3 +12444,33 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 12:52:09] INFO root fetch - processPackages [drf-spectacular-websocket]: Remove: archive file [/home/abi/fetcher/tmp/drf_spectacular_websocket-1.2.4.tar.gz]
 [2024-04-27 12:52:09] INFO root fetch - main [MainThread]: End processing [drf-spectacular-websocket]: success
 [2024-04-27 12:52:09] INFO root fetch - main [MainThread]: Store serial: [22958062]
+[2024-04-27 12:54:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958062]
+[2024-04-27 12:54:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 12:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SimpleTKMessageBox
+[2024-04-27 12:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pygpt-net
+[2024-04-27 12:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: py-ucan
+[2024-04-27 12:54:19] INFO root fetch - processPackages [SimpleTKMessageBox]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-27 12:54:19] INFO root fetch - processPackages [SimpleTKMessageBox]: Downloading https://files.pythonhosted.org/packages/11/69/fa18f197f21badcd9af08ac79baaa84eb716368fe3dadceb585d671fbcc2/SimpleTKMessageBox-0.1.1.tar.gz
+[2024-04-27 12:54:19] INFO root fetch - processPackages [py-ucan]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-27 12:54:19] INFO root fetch - processPackages [pygpt-net]: New version: [2.1.9] Old Version: [2.1.82]
+[2024-04-27 12:54:19] INFO root fetch - processPackages [py-ucan]: Downloading https://files.pythonhosted.org/packages/1e/89/3f1129ee452a556d1a5b58dc1db4f7ea4101725937d1a671e528dcc8b3b7/py_ucan-0.2.0.tar.gz
+[2024-04-27 12:54:19] INFO root fetch - processPackages [pygpt-net]: Downloading https://files.pythonhosted.org/packages/5f/75/e8ee5c91535a8d5fbd7a5fadd806e2a5cbce3ae34f1b11458e9e66f01415/pygpt_net-2.1.82-py3-none-any.whl
+[2024-04-27 12:54:19] INFO root fetch - processPackages [SimpleTKMessageBox]: Downloading https://files.pythonhosted.org/packages/80/c7/9a52dc9bd956118a8be10a37a07c4ed50094e1599e0e85863a57c1af7e35/SimpleTKMessageBox-0.1.2.tar.gz
+[2024-04-27 12:54:19] INFO root fetch - processPackages [SimpleTKMessageBox]: executing diffoscope
+[2024-04-27 12:54:19] INFO root fetch - processPackages [SimpleTKMessageBox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SimpleTKMessageBox-0.1.1.tar.gz tmp/SimpleTKMessageBox-0.1.2.tar.gz --markdown 20240427/S/SimpleTKMessageBox/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-27 12:54:19] INFO root fetch - processPackages [py-ucan]: Downloading https://files.pythonhosted.org/packages/78/01/cb70767311e7c9846c8bcd7ffc272fef3f4da97d07ebef91b57e45a93b1c/py_ucan-0.3.0.tar.gz
+[2024-04-27 12:54:19] INFO root fetch - processPackages [py-ucan]: executing diffoscope
+[2024-04-27 12:54:19] INFO root fetch - processPackages [py-ucan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_ucan-0.2.0.tar.gz tmp/py_ucan-0.3.0.tar.gz --markdown 20240427/p/py-ucan/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-04-27 12:54:20] INFO root fetch - processPackages [SimpleTKMessageBox]: Remove: archive file [/home/abi/fetcher/tmp/SimpleTKMessageBox-0.1.1.tar.gz]
+[2024-04-27 12:54:20] INFO root fetch - processPackages [SimpleTKMessageBox]: Remove: archive file [/home/abi/fetcher/tmp/SimpleTKMessageBox-0.1.2.tar.gz]
+[2024-04-27 12:54:20] INFO root fetch - main [MainThread]: End processing [SimpleTKMessageBox]: success
+[2024-04-27 12:54:20] INFO root fetch - processPackages [py-ucan]: Remove: archive file [/home/abi/fetcher/tmp/py_ucan-0.2.0.tar.gz]
+[2024-04-27 12:54:20] INFO root fetch - processPackages [py-ucan]: Remove: archive file [/home/abi/fetcher/tmp/py_ucan-0.3.0.tar.gz]
+[2024-04-27 12:54:20] INFO root fetch - main [MainThread]: End processing [py-ucan]: success
+[2024-04-27 12:54:21] INFO root fetch - processPackages [pygpt-net]: Downloading https://files.pythonhosted.org/packages/b1/0c/70ca3376ad87325507daa188a0b208ac8aba51d8f326cbde31d57835c897/pygpt_net-2.1.9.tar.gz
+[2024-04-27 12:54:21] INFO root fetch - processPackages [pygpt-net]: executing diffoscope
+[2024-04-27 12:54:21] INFO root fetch - processPackages [pygpt-net]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygpt_net-2.1.82-py3-none-any.whl.zip tmp/pygpt_net-2.1.9.tar.gz --markdown 20240427/p/pygpt-net/2.1.82-2.1.9/README.md --exclude *.pyd
+[2024-04-27 12:54:24] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.1.82-py3-none-any.whl.zip]
+[2024-04-27 12:54:24] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.1.9.tar.gz]
+[2024-04-27 12:54:24] INFO root fetch - main [MainThread]: End processing [pygpt-net]: success
+[2024-04-27 12:54:24] INFO root fetch - main [MainThread]: Store serial: [22958069]
