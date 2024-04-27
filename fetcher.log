@@ -20632,3 +20632,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 22:23:51] INFO root fetch - processPackages [pyrecipes]: Remove: archive file [/home/abi/fetcher/tmp/pyrecipes-0.2.4.tar.gz]
 [2024-04-27 22:23:51] INFO root fetch - main [MainThread]: End processing [pyrecipes]: success
 [2024-04-27 22:23:51] INFO root fetch - main [MainThread]: Store serial: [22961684]
+[2024-04-27 22:26:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961684]
+[2024-04-27 22:26:07] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 22:26:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: appstream-python
+[2024-04-27 22:26:07] INFO root fetch - processPackages [appstream-python]: New version: [0.8.1] Old Version: [0.8]
+[2024-04-27 22:26:07] INFO root fetch - processPackages [appstream-python]: Downloading https://files.pythonhosted.org/packages/be/83/771821b526e4fa6d31100c5563be4edaa8c7262d094171e8e36b709c4809/appstream-python-0.8.tar.gz
+[2024-04-27 22:26:08] INFO root fetch - processPackages [appstream-python]: Downloading https://files.pythonhosted.org/packages/c1/61/b762db70f2966c4cda68e1190a1845530497330aab867decaf1c360be395/appstream_python-0.8.1.tar.gz
+[2024-04-27 22:26:08] INFO root fetch - processPackages [appstream-python]: executing diffoscope
+[2024-04-27 22:26:08] INFO root fetch - processPackages [appstream-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/appstream-python-0.8.tar.gz tmp/appstream_python-0.8.1.tar.gz --markdown 20240427/a/appstream-python/0.8-0.8.1/README.md --exclude *.pyd
+[2024-04-27 22:26:08] INFO root fetch - processPackages [appstream-python]: Remove: archive file [/home/abi/fetcher/tmp/appstream-python-0.8.tar.gz]
+[2024-04-27 22:26:08] INFO root fetch - processPackages [appstream-python]: Remove: archive file [/home/abi/fetcher/tmp/appstream_python-0.8.1.tar.gz]
+[2024-04-27 22:26:08] INFO root fetch - main [MainThread]: End processing [appstream-python]: success
+[2024-04-27 22:26:08] INFO root fetch - main [MainThread]: Store serial: [22961687]
