@@ -16550,3 +16550,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 17:25:52] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-hx-yinying-1.1.0.tar.gz]
 [2024-04-27 17:25:52] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-hx-yinying]: success
 [2024-04-27 17:25:52] INFO root fetch - main [MainThread]: Store serial: [22959806]
+[2024-04-27 17:27:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959806]
+[2024-04-27 17:28:02] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 17:28:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flatpack
+[2024-04-27 17:28:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PACMANCharge
+[2024-04-27 17:28:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dynamicWebsite
+[2024-04-27 17:28:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: freegenius
+[2024-04-27 17:28:02] INFO root fetch - processPackages [PACMANCharge]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-27 17:28:02] INFO root fetch - processPackages [flatpack]: New version: [3.3.9] Old Version: [3.3.8]
+[2024-04-27 17:28:02] INFO root fetch - processPackages [freegenius]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-27 17:28:02] INFO root fetch - processPackages [dynamicWebsite]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-27 17:28:02] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/42/48/84e949164975b341645163f536ee4ca8329c4e3dfa6d143c2806a0849a54/flatpack-3.3.8.tar.gz
+[2024-04-27 17:28:02] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/b1/4e/57ae3980ced8181376582a81d1cb3d47a19aa6991a356f23fb8f52d181f8/freegenius-0.1.4.tar.gz
+[2024-04-27 17:28:03] INFO root fetch - processPackages [PACMANCharge]: Downloading https://files.pythonhosted.org/packages/17/8c/754189e77ba9863e38f57a002bcffb60a94a901f99701d2989e5e64ff880/PACMANCharge-0.0.1.tar.gz
+[2024-04-27 17:28:03] INFO root fetch - processPackages [dynamicWebsite]: Downloading https://files.pythonhosted.org/packages/95/14/29cd2ba3630657dde1123ad8bf65e00ac3c6cf4fd347c2866f48b15ee857/dynamicwebsite-1.0.1.tar.gz
+[2024-04-27 17:28:03] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/11/54/065825e8640b062c83c07c97d8dea514db8a5c0ea3c272834b88c568d82e/flatpack-3.3.9.tar.gz
+[2024-04-27 17:28:03] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-04-27 17:28:03] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.3.8.tar.gz tmp/flatpack-3.3.9.tar.gz --markdown 20240427/f/flatpack/3.3.8-3.3.9/README.md --exclude *.pyd
+[2024-04-27 17:28:03] INFO root fetch - processPackages [PACMANCharge]: Downloading https://files.pythonhosted.org/packages/d5/e4/16de634f0046b90cfed41a8d76cb0866be362490fd82d603f433b0f951fa/PACMANCharge-0.0.2.tar.gz
+[2024-04-27 17:28:03] INFO root fetch - processPackages [dynamicWebsite]: Downloading https://files.pythonhosted.org/packages/37/45/94f675aafadae413caad106487b9c9b2db8242c8d67a090aaff88301e074/dynamicwebsite-1.0.2.tar.gz
+[2024-04-27 17:28:03] INFO root fetch - processPackages [PACMANCharge]: executing diffoscope
+[2024-04-27 17:28:03] INFO root fetch - processPackages [PACMANCharge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PACMANCharge-0.0.1.tar.gz tmp/PACMANCharge-0.0.2.tar.gz --markdown 20240427/P/PACMANCharge/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-27 17:28:03] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/a0/11/5ba8a88193161872ca0e3a8e3259d8675565af928d55781e5d7743df6b52/freegenius-0.1.5.tar.gz
+[2024-04-27 17:28:03] INFO root fetch - processPackages [dynamicWebsite]: executing diffoscope
+[2024-04-27 17:28:03] INFO root fetch - processPackages [dynamicWebsite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dynamicwebsite-1.0.1.tar.gz tmp/dynamicwebsite-1.0.2.tar.gz --markdown 20240427/d/dynamicWebsite/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-27 17:28:03] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.8.tar.gz]
+[2024-04-27 17:28:03] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.9.tar.gz]
+[2024-04-27 17:28:03] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-04-27 17:28:03] INFO root fetch - processPackages [freegenius]: executing diffoscope
+[2024-04-27 17:28:03] INFO root fetch - processPackages [freegenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freegenius-0.1.4.tar.gz tmp/freegenius-0.1.5.tar.gz --markdown 20240427/f/freegenius/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-27 17:28:04] INFO root fetch - processPackages [PACMANCharge]: Remove: archive file [/home/abi/fetcher/tmp/PACMANCharge-0.0.1.tar.gz]
+[2024-04-27 17:28:04] INFO root fetch - processPackages [PACMANCharge]: Remove: archive file [/home/abi/fetcher/tmp/PACMANCharge-0.0.2.tar.gz]
+[2024-04-27 17:28:04] INFO root fetch - main [MainThread]: End processing [PACMANCharge]: success
+[2024-04-27 17:28:04] INFO root fetch - processPackages [dynamicWebsite]: Remove: archive file [/home/abi/fetcher/tmp/dynamicwebsite-1.0.1.tar.gz]
+[2024-04-27 17:28:04] INFO root fetch - processPackages [dynamicWebsite]: Remove: archive file [/home/abi/fetcher/tmp/dynamicwebsite-1.0.2.tar.gz]
+[2024-04-27 17:28:04] INFO root fetch - main [MainThread]: End processing [dynamicWebsite]: success
+[2024-04-27 17:28:05] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.1.4.tar.gz]
+[2024-04-27 17:28:05] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.1.5.tar.gz]
+[2024-04-27 17:28:05] INFO root fetch - main [MainThread]: End processing [freegenius]: success
+[2024-04-27 17:28:05] INFO root fetch - main [MainThread]: Store serial: [22959818]
