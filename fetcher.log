@@ -12979,3 +12979,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 13:27:58] INFO root fetch - processPackages [nichord]: Remove: archive file [/home/abi/fetcher/tmp/nichord-0.3.0.tar.gz]
 [2024-04-27 13:27:58] INFO root fetch - main [MainThread]: End processing [nichord]: success
 [2024-04-27 13:27:58] INFO root fetch - main [MainThread]: Store serial: [22958305]
+[2024-04-27 13:30:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958305]
+[2024-04-27 13:30:07] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 13:30:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: froggius
+[2024-04-27 13:30:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: st-ant-tree
+[2024-04-27 13:30:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-bakery
+[2024-04-27 13:30:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: whatshow-phy-mod-otfs
+[2024-04-27 13:30:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zodchy-security
+[2024-04-27 13:30:07] INFO root fetch - processPackages [st-ant-tree]: New version: [0.0.6] Old Version: [0.0.4]
+[2024-04-27 13:30:07] INFO root fetch - processPackages [zodchy-security]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-27 13:30:07] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: New version: [2.0.1] Old Version: [1.0.1]
+[2024-04-27 13:30:07] INFO root fetch - processPackages [froggius]: New version: [0.1.7] Old Version: [0.1.6.post3]
+[2024-04-27 13:30:07] INFO root fetch - processPackages [django-bakery]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-04-27 13:30:07] INFO root fetch - processPackages [zodchy-security]: Downloading https://files.pythonhosted.org/packages/3f/54/2b1144d307a2c792a54d3852e714ea75b7469fdefe4d9519cfe5694f4b84/zodchy_security-0.1.1.tar.gz
+[2024-04-27 13:30:07] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: Downloading https://files.pythonhosted.org/packages/71/2b/ec4e3f44ea3f43ec6c3487e8cd9b49adcb17b3c6e61e3a2826b94a767ba3/whatshow_phy_mod_otfs-1.0.1.tar.gz
+[2024-04-27 13:30:07] INFO root fetch - processPackages [froggius]: Downloading https://files.pythonhosted.org/packages/40/f0/72ccdef449f4fb8b2643b88b2fb731ac380a99e7e06c7fa09d5bff18eef1/froggius-0.1.6.post3.tar.gz
+[2024-04-27 13:30:07] INFO root fetch - processPackages [django-bakery]: Downloading https://files.pythonhosted.org/packages/02/4b/a3394e78109721748c1b733fe71356b57f058d1e9c6df99409a1d9c2c869/django-bakery-0.9.2.tar.gz
+[2024-04-27 13:30:08] INFO root fetch - processPackages [st-ant-tree]: Downloading https://files.pythonhosted.org/packages/33/03/e6830d06fa12b3b043c2055529d0c363949a7807efd9242699a7b80fa4d5/st_ant_tree-0.0.4-py3-none-any.whl
+[2024-04-27 13:30:08] INFO root fetch - processPackages [zodchy-security]: Downloading https://files.pythonhosted.org/packages/08/3b/8c4c4356dec656e3a6bb4c5a32ade7acb1c50d9ed59b096a5e472b30c3bd/zodchy_security-0.1.2.tar.gz
+[2024-04-27 13:30:08] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: Downloading https://files.pythonhosted.org/packages/5f/55/dad1d186f47e1eb5b62364d6bcae4a81a76d7ec7b20059a87136575c3f07/whatshow_phy_mod_otfs-2.0.1.tar.gz
+[2024-04-27 13:30:08] INFO root fetch - processPackages [froggius]: Downloading https://files.pythonhosted.org/packages/f1/b7/20c27c532beff54fab7c6ffa0327786f058926e710c59ea9e65ce0bd27d7/froggius-0.1.7.tar.gz
+[2024-04-27 13:30:08] INFO root fetch - processPackages [zodchy-security]: executing diffoscope
+[2024-04-27 13:30:08] INFO root fetch - processPackages [zodchy-security]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zodchy_security-0.1.1.tar.gz tmp/zodchy_security-0.1.2.tar.gz --markdown 20240427/z/zodchy-security/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-27 13:30:08] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: executing diffoscope
+[2024-04-27 13:30:08] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whatshow_phy_mod_otfs-1.0.1.tar.gz tmp/whatshow_phy_mod_otfs-2.0.1.tar.gz --markdown 20240427/w/whatshow-phy-mod-otfs/1.0.1-2.0.1/README.md --exclude *.pyd
+[2024-04-27 13:30:08] INFO root fetch - processPackages [froggius]: executing diffoscope
+[2024-04-27 13:30:08] INFO root fetch - processPackages [froggius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/froggius-0.1.6.post3.tar.gz tmp/froggius-0.1.7.tar.gz --markdown 20240427/f/froggius/0.1.6.post3-0.1.7/README.md --exclude *.pyd
+[2024-04-27 13:30:08] INFO root fetch - processPackages [st-ant-tree]: Downloading https://files.pythonhosted.org/packages/41/00/07ebaeae5cfc267a71e44a2a601c06224397785c22aeb0e21a32537144e1/st_ant_tree-0.0.6-py3-none-any.whl
+[2024-04-27 13:30:08] INFO root fetch - processPackages [zodchy-security]: Remove: archive file [/home/abi/fetcher/tmp/zodchy_security-0.1.1.tar.gz]
+[2024-04-27 13:30:08] INFO root fetch - processPackages [zodchy-security]: Remove: archive file [/home/abi/fetcher/tmp/zodchy_security-0.1.2.tar.gz]
+[2024-04-27 13:30:08] INFO root fetch - main [MainThread]: End processing [zodchy-security]: success
+[2024-04-27 13:30:08] INFO root fetch - processPackages [st-ant-tree]: executing diffoscope
+[2024-04-27 13:30:08] INFO root fetch - processPackages [st-ant-tree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/st_ant_tree-0.0.4-py3-none-any.whl.zip tmp/st_ant_tree-0.0.6-py3-none-any.whl.zip --markdown 20240427/s/st-ant-tree/0.0.4-0.0.6/README.md --exclude *.pyd
+[2024-04-27 13:30:08] INFO root fetch - processPackages [froggius]: Remove: archive file [/home/abi/fetcher/tmp/froggius-0.1.6.post3.tar.gz]
+[2024-04-27 13:30:08] INFO root fetch - processPackages [froggius]: Remove: archive file [/home/abi/fetcher/tmp/froggius-0.1.7.tar.gz]
+[2024-04-27 13:30:08] INFO root fetch - main [MainThread]: End processing [froggius]: success
+[2024-04-27 13:30:08] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: Remove: archive file [/home/abi/fetcher/tmp/whatshow_phy_mod_otfs-1.0.1.tar.gz]
+[2024-04-27 13:30:08] INFO root fetch - processPackages [whatshow-phy-mod-otfs]: Remove: archive file [/home/abi/fetcher/tmp/whatshow_phy_mod_otfs-2.0.1.tar.gz]
+[2024-04-27 13:30:08] INFO root fetch - main [MainThread]: End processing [whatshow-phy-mod-otfs]: success
+[2024-04-27 13:30:09] INFO root fetch - processPackages [django-bakery]: Downloading https://files.pythonhosted.org/packages/e0/58/785fb808d60842a6aa82449952211c4f9a3011a33b71a0b72572a568c121/django-bakery-0.9.3.tar.gz
+[2024-04-27 13:30:10] INFO root fetch - processPackages [django-bakery]: executing diffoscope
+[2024-04-27 13:30:10] INFO root fetch - processPackages [django-bakery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-bakery-0.9.2.tar.gz tmp/django-bakery-0.9.3.tar.gz --markdown 20240427/d/django-bakery/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-04-27 13:30:10] INFO root fetch - processPackages [django-bakery]: Remove: archive file [/home/abi/fetcher/tmp/django-bakery-0.9.2.tar.gz]
+[2024-04-27 13:30:10] INFO root fetch - processPackages [django-bakery]: Remove: archive file [/home/abi/fetcher/tmp/django-bakery-0.9.3.tar.gz]
+[2024-04-27 13:30:10] INFO root fetch - main [MainThread]: End processing [django-bakery]: success
+[2024-04-27 13:30:28] INFO root fetch - processPackages [st-ant-tree]: Remove: archive file [/home/abi/fetcher/tmp/st_ant_tree-0.0.4-py3-none-any.whl.zip]
+[2024-04-27 13:30:28] INFO root fetch - processPackages [st-ant-tree]: Remove: archive file [/home/abi/fetcher/tmp/st_ant_tree-0.0.6-py3-none-any.whl.zip]
+[2024-04-27 13:30:28] INFO root fetch - main [MainThread]: End processing [st-ant-tree]: success
+[2024-04-27 13:30:28] INFO root fetch - main [MainThread]: Store serial: [22958323]
