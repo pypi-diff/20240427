@@ -17902,3 +17902,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 19:08:22] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.70.tar.gz]
 [2024-04-27 19:08:22] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
 [2024-04-27 19:08:22] INFO root fetch - main [MainThread]: Store serial: [22960382]
+[2024-04-27 19:10:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960382]
+[2024-04-27 19:10:35] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-27 19:10:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: data-diff-viewer
+[2024-04-27 19:10:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shelloracle
+[2024-04-27 19:10:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vollseg-napari-trackmate
+[2024-04-27 19:10:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: phbuilder
+[2024-04-27 19:10:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mteb
+[2024-04-27 19:10:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: napatrackmater
+[2024-04-27 19:10:35] INFO root fetch - processPackages [shelloracle]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-04-27 19:10:35] INFO root fetch - processPackages [mteb]: New version: [1.7.9] Old Version: [1.7.8]
+[2024-04-27 19:10:35] INFO root fetch - processPackages [phbuilder]: New version: [1.2.5] Old Version: [1.2.4]
+[2024-04-27 19:10:35] INFO root fetch - processPackages [data-diff-viewer]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-04-27 19:10:35] INFO root fetch - processPackages [vollseg-napari-trackmate]: New version: [2.5.5] Old Version: [2.5.4]
+[2024-04-27 19:10:35] INFO root fetch - processPackages [shelloracle]: Downloading https://files.pythonhosted.org/packages/1e/9e/d7e76dcf7441e4eadb4711a0ea137dfce237af0b7731644c969fe1d2ed57/shelloracle-1.1.1.tar.gz
+[2024-04-27 19:10:35] INFO root fetch - processPackages [napatrackmater]: New version: [5.1.2] Old Version: [5.1.1]
+[2024-04-27 19:10:35] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/b5/e7/1ffcd000a118bd6a4b183610de5d0891ab9c767ccabb6c7e3f63ba9edb45/mteb-1.7.8.tar.gz
+[2024-04-27 19:10:35] INFO root fetch - processPackages [data-diff-viewer]: Downloading https://files.pythonhosted.org/packages/11/61/02d10fb3a661f1ba26d79b776615d0bac2605333982788e64b253440d069/data_diff_viewer-0.3.0.tar.gz
+[2024-04-27 19:10:36] INFO root fetch - processPackages [vollseg-napari-trackmate]: Downloading https://files.pythonhosted.org/packages/ad/ab/60e1561926afab28f11b081091fa3918823e3481038b4da50d6941400308/vollseg-napari-trackmate-2.5.4.tar.gz
+[2024-04-27 19:10:36] INFO root fetch - processPackages [napatrackmater]: Downloading https://files.pythonhosted.org/packages/55/19/032fa9df2522d334231bf2fd0a1fff6e808b5cd10facddfe32112be8c9e5/napatrackmater-5.1.1.tar.gz
+[2024-04-27 19:10:36] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/eb/d9/b925270f0a2467b3204b0f467cc702668d24bd9a8e876306ea7e3da17507/mteb-1.7.9.tar.gz
+[2024-04-27 19:10:36] INFO root fetch - processPackages [phbuilder]: Downloading https://files.pythonhosted.org/packages/88/40/78117140f6a1ed3e29ab69ccb9936cbb7db816cd1daa7309322f45ca8a0e/phbuilder-1.2.4.tar.gz
+[2024-04-27 19:10:36] INFO root fetch - processPackages [shelloracle]: Downloading https://files.pythonhosted.org/packages/72/e4/91b508ddf90ec3e465fef37b64babff4d3394d7dcad856499f5c8b6245ba/shelloracle-1.1.2.tar.gz
+[2024-04-27 19:10:36] INFO root fetch - processPackages [mteb]: executing diffoscope
+[2024-04-27 19:10:36] INFO root fetch - processPackages [mteb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mteb-1.7.8.tar.gz tmp/mteb-1.7.9.tar.gz --markdown 20240427/m/mteb/1.7.8-1.7.9/README.md --exclude *.pyd
+[2024-04-27 19:10:36] INFO root fetch - processPackages [shelloracle]: executing diffoscope
+[2024-04-27 19:10:36] INFO root fetch - processPackages [shelloracle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shelloracle-1.1.1.tar.gz tmp/shelloracle-1.1.2.tar.gz --markdown 20240427/s/shelloracle/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-04-27 19:10:36] INFO root fetch - processPackages [vollseg-napari-trackmate]: Downloading https://files.pythonhosted.org/packages/30/5d/bedba23aff8cc122b275a9c7b86c1924b43e8e480ab1648a88764ceece97/vollseg_napari_trackmate-2.5.5.tar.gz
+[2024-04-27 19:10:36] INFO root fetch - processPackages [data-diff-viewer]: Downloading https://files.pythonhosted.org/packages/0a/47/d524e4f36f3159064a428f097060519cbbd6d3c4a0c585480bdd39af8c91/data_diff_viewer-0.3.1.tar.gz
+[2024-04-27 19:10:36] INFO root fetch - processPackages [phbuilder]: Downloading https://files.pythonhosted.org/packages/0a/21/84cbdb907aee10833cf316bd3e03a7c1f966a8a0ac7c473ee2a769625ab5/phbuilder-1.2.5.tar.gz
+[2024-04-27 19:10:36] INFO root fetch - processPackages [vollseg-napari-trackmate]: executing diffoscope
+[2024-04-27 19:10:36] INFO root fetch - processPackages [vollseg-napari-trackmate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vollseg-napari-trackmate-2.5.4.tar.gz tmp/vollseg_napari_trackmate-2.5.5.tar.gz --markdown 20240427/v/vollseg-napari-trackmate/2.5.4-2.5.5/README.md --exclude *.pyd
+[2024-04-27 19:10:36] INFO root fetch - processPackages [napatrackmater]: Downloading https://files.pythonhosted.org/packages/d1/f5/adcacd31634cf8e7027e53bc1177e72e3692b6424eb70aa2e29fca6e3e40/napatrackmater-5.1.2.tar.gz
+[2024-04-27 19:10:36] INFO root fetch - processPackages [data-diff-viewer]: executing diffoscope
+[2024-04-27 19:10:36] INFO root fetch - processPackages [data-diff-viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_diff_viewer-0.3.0.tar.gz tmp/data_diff_viewer-0.3.1.tar.gz --markdown 20240427/d/data-diff-viewer/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-04-27 19:10:36] INFO root fetch - processPackages [phbuilder]: executing diffoscope
+[2024-04-27 19:10:36] INFO root fetch - processPackages [phbuilder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phbuilder-1.2.4.tar.gz tmp/phbuilder-1.2.5.tar.gz --markdown 20240427/p/phbuilder/1.2.4-1.2.5/README.md --exclude *.pyd
+[2024-04-27 19:10:36] INFO root fetch - processPackages [shelloracle]: Remove: archive file [/home/abi/fetcher/tmp/shelloracle-1.1.1.tar.gz]
+[2024-04-27 19:10:36] INFO root fetch - processPackages [shelloracle]: Remove: archive file [/home/abi/fetcher/tmp/shelloracle-1.1.2.tar.gz]
+[2024-04-27 19:10:36] INFO root fetch - main [MainThread]: End processing [shelloracle]: success
+[2024-04-27 19:10:37] INFO root fetch - processPackages [napatrackmater]: executing diffoscope
+[2024-04-27 19:10:37] INFO root fetch - processPackages [napatrackmater]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napatrackmater-5.1.1.tar.gz tmp/napatrackmater-5.1.2.tar.gz --markdown 20240427/n/napatrackmater/5.1.1-5.1.2/README.md --exclude *.pyd
+[2024-04-27 19:10:37] INFO root fetch - processPackages [vollseg-napari-trackmate]: Remove: archive file [/home/abi/fetcher/tmp/vollseg-napari-trackmate-2.5.4.tar.gz]
+[2024-04-27 19:10:37] INFO root fetch - processPackages [vollseg-napari-trackmate]: Remove: archive file [/home/abi/fetcher/tmp/vollseg_napari_trackmate-2.5.5.tar.gz]
+[2024-04-27 19:10:37] INFO root fetch - main [MainThread]: End processing [vollseg-napari-trackmate]: success
+[2024-04-27 19:10:37] INFO root fetch - processPackages [data-diff-viewer]: Remove: archive file [/home/abi/fetcher/tmp/data_diff_viewer-0.3.0.tar.gz]
+[2024-04-27 19:10:37] INFO root fetch - processPackages [data-diff-viewer]: Remove: archive file [/home/abi/fetcher/tmp/data_diff_viewer-0.3.1.tar.gz]
+[2024-04-27 19:10:37] INFO root fetch - main [MainThread]: End processing [data-diff-viewer]: success
+[2024-04-27 19:10:37] INFO root fetch - processPackages [phbuilder]: Remove: archive file [/home/abi/fetcher/tmp/phbuilder-1.2.4.tar.gz]
+[2024-04-27 19:10:37] INFO root fetch - processPackages [phbuilder]: Remove: archive file [/home/abi/fetcher/tmp/phbuilder-1.2.5.tar.gz]
+[2024-04-27 19:10:37] INFO root fetch - main [MainThread]: End processing [phbuilder]: success
+[2024-04-27 19:10:38] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.8.tar.gz]
+[2024-04-27 19:10:38] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.9.tar.gz]
+[2024-04-27 19:10:38] INFO root fetch - main [MainThread]: End processing [mteb]: success
+[2024-04-27 19:10:38] INFO root fetch - processPackages [napatrackmater]: Remove: archive file [/home/abi/fetcher/tmp/napatrackmater-5.1.1.tar.gz]
+[2024-04-27 19:10:38] INFO root fetch - processPackages [napatrackmater]: Remove: archive file [/home/abi/fetcher/tmp/napatrackmater-5.1.2.tar.gz]
+[2024-04-27 19:10:38] INFO root fetch - main [MainThread]: End processing [napatrackmater]: success
+[2024-04-27 19:10:38] INFO root fetch - main [MainThread]: Store serial: [22960400]
