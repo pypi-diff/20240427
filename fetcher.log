@@ -12039,3 +12039,60 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 12:28:05] INFO root fetch - processPackages [pystokes]: Remove: archive file [/home/abi/fetcher/tmp/pystokes-2.3.1-cp310-cp310-macosx_11_0_arm64.whl.zip]
 [2024-04-27 12:28:05] INFO root fetch - main [MainThread]: End processing [pystokes]: success
 [2024-04-27 12:28:05] INFO root fetch - main [MainThread]: Store serial: [22957923]
+[2024-04-27 12:30:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957923]
+[2024-04-27 12:30:13] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-27 12:30:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SimpleTKMessageBox
+[2024-04-27 12:30:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tradedangerous
+[2024-04-27 12:30:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: snailshell
+[2024-04-27 12:30:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ctrip-app-ui
+[2024-04-27 12:30:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: funix
+[2024-04-27 12:30:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: adbpy3
+[2024-04-27 12:30:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: hanoikovoiduocdau
+[2024-04-27 12:30:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sharepoint-utils
+[2024-04-27 12:30:13] INFO root fetch - processPackages [snailshell]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-27 12:30:13] INFO root fetch - processPackages [ctrip-app-ui]: New version: [0.3.8] Old Version: [0.3.6]
+[2024-04-27 12:30:13] INFO root fetch - processPackages [tradedangerous]: New version: [11.0.4] Old Version: [11.0.3]
+[2024-04-27 12:30:13] INFO root fetch - processPackages [snailshell]: Downloading https://files.pythonhosted.org/packages/28/70/cae4b29d322efc44d70ca0ed64cb9279f19cd1f9e328c4662b19c5196c4d/snailshell-0.2.8.tar.gz
+[2024-04-27 12:30:13] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/44/77/a661d5fa4811510bcf319840f1055369b84fa03914d6eb8085662120bb6c/ctrip-app-ui-0.3.6.tar.gz
+[2024-04-27 12:30:13] WARNING root fetch - processPackages [SimpleTKMessageBox]: Skipping, unable to determine old version
+[2024-04-27 12:30:13] INFO root fetch - main [MainThread]: End processing [SimpleTKMessageBox] error
+[2024-04-27 12:30:13] INFO root fetch - processPackages [sharepoint-utils]: New version: [1.1] Old Version: [1.0]
+[2024-04-27 12:30:13] INFO root fetch - processPackages [funix]: New version: [0.5.7] Old Version: [0.5.6]
+[2024-04-27 12:30:13] WARNING root fetch - processPackages [adbpy3]: Skipping, unable to determine old version
+[2024-04-27 12:30:13] WARNING root fetch - processPackages [hanoikovoiduocdau]: Skipping, unable to determine old version
+[2024-04-27 12:30:13] INFO root fetch - main [MainThread]: End processing [adbpy3] error
+[2024-04-27 12:30:13] INFO root fetch - main [MainThread]: End processing [hanoikovoiduocdau] error
+[2024-04-27 12:30:13] INFO root fetch - processPackages [tradedangerous]: Downloading https://files.pythonhosted.org/packages/3e/0e/401a493cc985221762691fcd686a5864f8a28cd1346c48f37c95c72ef7f4/tradedangerous-11.0.3.tar.gz
+[2024-04-27 12:30:14] INFO root fetch - processPackages [funix]: Downloading https://files.pythonhosted.org/packages/1d/cd/9e4837a681cba3e19781801a3140e917cd51689b34c5dc4239628fb45127/funix-0.5.6.tar.gz
+[2024-04-27 12:30:14] INFO root fetch - processPackages [tradedangerous]: Downloading https://files.pythonhosted.org/packages/3b/67/c48b039d34ee1b49b14afe49dbf419ba4dca02f21b82434ce3626fc02279/tradedangerous-11.0.4.tar.gz
+[2024-04-27 12:30:14] INFO root fetch - processPackages [sharepoint-utils]: Downloading https://files.pythonhosted.org/packages/76/b5/a8feacfd09e5dc860bb624a4555fe673a3e3b0c6400072d4c729a7b1ca9f/sharepoint_utils-1.0.tar.gz
+[2024-04-27 12:30:14] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/5d/99/e8664bc414b9b6e94e8dcc22c43abf61e51e33e21700080dd11ace5eda78/ctrip-app-ui-0.3.8.tar.gz
+[2024-04-27 12:30:14] INFO root fetch - processPackages [tradedangerous]: executing diffoscope
+[2024-04-27 12:30:14] INFO root fetch - processPackages [tradedangerous]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tradedangerous-11.0.3.tar.gz tmp/tradedangerous-11.0.4.tar.gz --markdown 20240427/t/tradedangerous/11.0.3-11.0.4/README.md --exclude *.pyd
+[2024-04-27 12:30:14] INFO root fetch - processPackages [ctrip-app-ui]: executing diffoscope
+[2024-04-27 12:30:14] INFO root fetch - processPackages [ctrip-app-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctrip-app-ui-0.3.6.tar.gz tmp/ctrip-app-ui-0.3.8.tar.gz --markdown 20240427/c/ctrip-app-ui/0.3.6-0.3.8/README.md --exclude *.pyd
+[2024-04-27 12:30:14] INFO root fetch - processPackages [snailshell]: Downloading https://files.pythonhosted.org/packages/71/9f/b99191b0a59da68e371d48cedcea65ef2bbe17b981e11133e2eeb1d69f46/snailshell-0.2.9.tar.gz
+[2024-04-27 12:30:14] INFO root fetch - processPackages [sharepoint-utils]: Downloading https://files.pythonhosted.org/packages/53/7e/3442a1faa9859512daba9e61580d75b360de2e0f9d5620f62ead944e13c1/sharepoint_utils-1.1.tar.gz
+[2024-04-27 12:30:14] INFO root fetch - processPackages [sharepoint-utils]: executing diffoscope
+[2024-04-27 12:30:14] INFO root fetch - processPackages [sharepoint-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sharepoint_utils-1.0.tar.gz tmp/sharepoint_utils-1.1.tar.gz --markdown 20240427/s/sharepoint-utils/1.0-1.1/README.md --exclude *.pyd
+[2024-04-27 12:30:14] INFO root fetch - processPackages [snailshell]: executing diffoscope
+[2024-04-27 12:30:14] INFO root fetch - processPackages [snailshell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snailshell-0.2.8.tar.gz tmp/snailshell-0.2.9.tar.gz --markdown 20240427/s/snailshell/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-27 12:30:15] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.3.6.tar.gz]
+[2024-04-27 12:30:15] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.3.8.tar.gz]
+[2024-04-27 12:30:15] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
+[2024-04-27 12:30:15] INFO root fetch - processPackages [funix]: Downloading https://files.pythonhosted.org/packages/8a/d8/1bb8e8a671740bfa87b5fefbe0ad7215a765780ff0029e5085c555fa6cdc/funix-0.5.7.tar.gz
+[2024-04-27 12:30:15] INFO root fetch - processPackages [tradedangerous]: Remove: archive file [/home/abi/fetcher/tmp/tradedangerous-11.0.3.tar.gz]
+[2024-04-27 12:30:15] INFO root fetch - processPackages [tradedangerous]: Remove: archive file [/home/abi/fetcher/tmp/tradedangerous-11.0.4.tar.gz]
+[2024-04-27 12:30:15] INFO root fetch - main [MainThread]: End processing [tradedangerous]: success
+[2024-04-27 12:30:15] INFO root fetch - processPackages [funix]: executing diffoscope
+[2024-04-27 12:30:15] INFO root fetch - processPackages [funix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funix-0.5.6.tar.gz tmp/funix-0.5.7.tar.gz --markdown 20240427/f/funix/0.5.6-0.5.7/README.md --exclude *.pyd
+[2024-04-27 12:30:15] INFO root fetch - processPackages [sharepoint-utils]: Remove: archive file [/home/abi/fetcher/tmp/sharepoint_utils-1.0.tar.gz]
+[2024-04-27 12:30:15] INFO root fetch - processPackages [sharepoint-utils]: Remove: archive file [/home/abi/fetcher/tmp/sharepoint_utils-1.1.tar.gz]
+[2024-04-27 12:30:15] INFO root fetch - main [MainThread]: End processing [sharepoint-utils]: success
+[2024-04-27 12:30:16] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.8.tar.gz]
+[2024-04-27 12:30:16] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.9.tar.gz]
+[2024-04-27 12:30:16] INFO root fetch - main [MainThread]: End processing [snailshell]: success
+[2024-04-27 12:30:16] INFO root fetch - processPackages [funix]: Remove: archive file [/home/abi/fetcher/tmp/funix-0.5.6.tar.gz]
+[2024-04-27 12:30:16] INFO root fetch - processPackages [funix]: Remove: archive file [/home/abi/fetcher/tmp/funix-0.5.7.tar.gz]
+[2024-04-27 12:30:16] INFO root fetch - main [MainThread]: End processing [funix]: success
+[2024-04-27 12:30:16] INFO root fetch - main [MainThread]: Store serial: [22957951]
