@@ -15104,3 +15104,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 15:55:09] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.4.9-cp39-cp39-win_amd64.whl.zip]
 [2024-04-27 15:55:09] INFO root fetch - main [MainThread]: End processing [tensordict-nightly]: success
 [2024-04-27 15:55:09] INFO root fetch - main [MainThread]: Store serial: [22959241]
+[2024-04-27 15:57:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959241]
+[2024-04-27 15:57:18] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-27 15:57:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jupyterlab-judge
+[2024-04-27 15:57:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-trading212
+[2024-04-27 15:57:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: moto
+[2024-04-27 15:57:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: genomeshader
+[2024-04-27 15:57:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: twitchpy
+[2024-04-27 15:57:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cocoon-data
+[2024-04-27 15:57:18] INFO root fetch - processPackages [twitchpy]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-04-27 15:57:18] INFO root fetch - processPackages [genomeshader]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-27 15:57:18] INFO root fetch - processPackages [moto]: New version: [5.0.6.dev9] Old Version: [5.0.6.dev8]
+[2024-04-27 15:57:18] INFO root fetch - processPackages [python-trading212]: New version: [1.0.0] Old Version: [0.2.0]
+[2024-04-27 15:57:18] INFO root fetch - processPackages [twitchpy]: Downloading https://files.pythonhosted.org/packages/c7/38/ab2f44e01aca7a202be767939231a7678a5b143f660963717e6d2aa32a29/TwitchPy-1.1.0.tar.gz
+[2024-04-27 15:57:19] INFO root fetch - processPackages [jupyterlab-judge]: New version: [1.25.0] Old Version: [1.24.4]
+[2024-04-27 15:57:19] INFO root fetch - processPackages [cocoon-data]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-27 15:57:19] INFO root fetch - processPackages [genomeshader]: Downloading https://files.pythonhosted.org/packages/1c/84/39f1662d319381705e811acf6c7854194d08e68e45c79d57c5a763bdc863/genomeshader-0.1.8.tar.gz
+[2024-04-27 15:57:19] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/cc/b5/00faf7a32b2d43303224e4c85e6ca1586aa38ed6bd7c49336b7ac8cebea7/moto-5.0.6.dev8.tar.gz
+[2024-04-27 15:57:19] INFO root fetch - processPackages [python-trading212]: Downloading https://files.pythonhosted.org/packages/cf/10/606f2c88bae8bd29af61fd6d3c610aa1265ffc8c55a2af566228d0865ae2/python_trading212-0.2.0.tar.gz
+[2024-04-27 15:57:19] INFO root fetch - processPackages [jupyterlab-judge]: Downloading https://files.pythonhosted.org/packages/8d/dd/8f74b21c19dad9d4fc57de083d36db5492e185426389ef9d6dde82e6d74a/jupyterlab_judge-1.24.4.tar.gz
+[2024-04-27 15:57:19] INFO root fetch - processPackages [cocoon-data]: Downloading https://files.pythonhosted.org/packages/ac/3c/a1a6c95be4d731fc0db8d40b132730891186370f3cd304837773aa0dcce9/cocoon_data-0.1.8.tar.gz
+[2024-04-27 15:57:19] INFO root fetch - processPackages [genomeshader]: Downloading https://files.pythonhosted.org/packages/99/48/90c7c052b1a65bbffd3e20c6f11964c9fc1a3dc182ef8de7c3611b26d473/genomeshader-0.1.9.tar.gz
+[2024-04-27 15:57:19] INFO root fetch - processPackages [twitchpy]: Downloading https://files.pythonhosted.org/packages/51/18/5ed3af8e82daf64dd4de661af1072ade73e93b9f4ffb10d8474abe4bdfcf/TwitchPy-1.2.0.tar.gz
+[2024-04-27 15:57:19] INFO root fetch - processPackages [genomeshader]: executing diffoscope
+[2024-04-27 15:57:19] INFO root fetch - processPackages [genomeshader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/genomeshader-0.1.8.tar.gz tmp/genomeshader-0.1.9.tar.gz --markdown 20240427/g/genomeshader/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-27 15:57:19] INFO root fetch - processPackages [twitchpy]: executing diffoscope
+[2024-04-27 15:57:19] INFO root fetch - processPackages [twitchpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TwitchPy-1.1.0.tar.gz tmp/TwitchPy-1.2.0.tar.gz --markdown 20240427/t/twitchpy/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-04-27 15:57:19] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/67/63/03d8401d8574b4b96cd00404b9b4b0f0791e6dc794bc44ad3730b7dd8e46/moto-5.0.6.dev9.tar.gz
+[2024-04-27 15:57:19] INFO root fetch - processPackages [python-trading212]: Downloading https://files.pythonhosted.org/packages/3b/e9/c19abfea164ba1f6d4eb3246fd0f23246069ce7d092f9dd6c80170786106/python_trading212-1.0.0.tar.gz
+[2024-04-27 15:57:19] INFO root fetch - processPackages [jupyterlab-judge]: Downloading https://files.pythonhosted.org/packages/6d/c6/a3d532f470d172ed72f7b8e90765b43190fa3c1535fc45fa45cc4b13b3aa/jupyterlab_judge-1.25.0.tar.gz
+[2024-04-27 15:57:19] INFO root fetch - processPackages [cocoon-data]: Downloading https://files.pythonhosted.org/packages/0b/b9/048ffb4abe066854ebc4d24ca277250c5668844b84d602ff0be9adf8b231/cocoon_data-0.1.9.tar.gz
+[2024-04-27 15:57:19] INFO root fetch - processPackages [python-trading212]: executing diffoscope
+[2024-04-27 15:57:19] INFO root fetch - processPackages [python-trading212]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_trading212-0.2.0.tar.gz tmp/python_trading212-1.0.0.tar.gz --markdown 20240427/p/python-trading212/0.2.0-1.0.0/README.md --exclude *.pyd
+[2024-04-27 15:57:19] INFO root fetch - processPackages [moto]: executing diffoscope
+[2024-04-27 15:57:19] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-5.0.6.dev8.tar.gz tmp/moto-5.0.6.dev9.tar.gz --markdown 20240427/m/moto/5.0.6.dev8-5.0.6.dev9/README.md --exclude *.pyd
+[2024-04-27 15:57:19] INFO root fetch - processPackages [cocoon-data]: executing diffoscope
+[2024-04-27 15:57:19] INFO root fetch - processPackages [cocoon-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cocoon_data-0.1.8.tar.gz tmp/cocoon_data-0.1.9.tar.gz --markdown 20240427/c/cocoon-data/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-27 15:57:19] INFO root fetch - processPackages [jupyterlab-judge]: executing diffoscope
+[2024-04-27 15:57:19] INFO root fetch - processPackages [jupyterlab-judge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyterlab_judge-1.24.4.tar.gz tmp/jupyterlab_judge-1.25.0.tar.gz --markdown 20240427/j/jupyterlab-judge/1.24.4-1.25.0/README.md --exclude *.pyd
+[2024-04-27 15:57:20] INFO root fetch - processPackages [twitchpy]: Remove: archive file [/home/abi/fetcher/tmp/TwitchPy-1.1.0.tar.gz]
+[2024-04-27 15:57:20] INFO root fetch - processPackages [twitchpy]: Remove: archive file [/home/abi/fetcher/tmp/TwitchPy-1.2.0.tar.gz]
+[2024-04-27 15:57:20] INFO root fetch - main [MainThread]: End processing [twitchpy]: success
+[2024-04-27 15:57:20] INFO root fetch - processPackages [genomeshader]: Remove: archive file [/home/abi/fetcher/tmp/genomeshader-0.1.8.tar.gz]
+[2024-04-27 15:57:20] INFO root fetch - processPackages [genomeshader]: Remove: archive file [/home/abi/fetcher/tmp/genomeshader-0.1.9.tar.gz]
+[2024-04-27 15:57:20] INFO root fetch - main [MainThread]: End processing [genomeshader]: success
+[2024-04-27 15:57:20] INFO root fetch - processPackages [python-trading212]: Remove: archive file [/home/abi/fetcher/tmp/python_trading212-0.2.0.tar.gz]
+[2024-04-27 15:57:20] INFO root fetch - processPackages [python-trading212]: Remove: archive file [/home/abi/fetcher/tmp/python_trading212-1.0.0.tar.gz]
+[2024-04-27 15:57:20] INFO root fetch - main [MainThread]: End processing [python-trading212]: success
+[2024-04-27 15:57:20] INFO root fetch - processPackages [cocoon-data]: Remove: archive file [/home/abi/fetcher/tmp/cocoon_data-0.1.8.tar.gz]
+[2024-04-27 15:57:20] INFO root fetch - processPackages [cocoon-data]: Remove: archive file [/home/abi/fetcher/tmp/cocoon_data-0.1.9.tar.gz]
+[2024-04-27 15:57:20] INFO root fetch - main [MainThread]: End processing [cocoon-data]: success
+[2024-04-27 15:57:21] INFO root fetch - processPackages [jupyterlab-judge]: Remove: archive file [/home/abi/fetcher/tmp/jupyterlab_judge-1.24.4.tar.gz]
+[2024-04-27 15:57:21] INFO root fetch - processPackages [jupyterlab-judge]: Remove: archive file [/home/abi/fetcher/tmp/jupyterlab_judge-1.25.0.tar.gz]
+[2024-04-27 15:57:21] INFO root fetch - main [MainThread]: End processing [jupyterlab-judge]: success
+[2024-04-27 15:57:30] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.6.dev8.tar.gz]
+[2024-04-27 15:57:30] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.6.dev9.tar.gz]
+[2024-04-27 15:57:30] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2024-04-27 15:57:30] INFO root fetch - main [MainThread]: Store serial: [22959260]
