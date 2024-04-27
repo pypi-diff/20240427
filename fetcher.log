@@ -11593,3 +11593,27 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 11:44:52] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.6.9.tar.gz]
 [2024-04-27 11:44:52] INFO root fetch - main [MainThread]: End processing [python-115]: success
 [2024-04-27 11:44:52] INFO root fetch - main [MainThread]: Store serial: [22957736]
+[2024-04-27 11:46:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957736]
+[2024-04-27 11:47:00] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 11:47:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: create-project-fastapi
+[2024-04-27 11:47:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-115
+[2024-04-27 11:47:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyscinloopsr
+[2024-04-27 11:47:01] INFO root fetch - processPackages [pyscinloopsr]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-27 11:47:01] INFO root fetch - processPackages [python-115]: New version: [0.0.6.9] Old Version: [0.0.6.8]
+[2024-04-27 11:47:01] INFO root fetch - processPackages [pyscinloopsr]: Downloading https://files.pythonhosted.org/packages/98/21/5809d8e4c42d0207d6fd61e35cf0683da0e0cc5f1d10fa87e864b000cfa6/pyscinloopsr-1.0.8.tar.gz
+[2024-04-27 11:47:01] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/0d/82/b9dc2663abe8e57bd0094c411156e50e539a5716a7046c349ddff3125ecc/python_115-0.0.6.8.tar.gz
+[2024-04-27 11:47:01] WARNING root fetch - processPackages [create-project-fastapi]: Skipping, unable to determine old version
+[2024-04-27 11:47:01] INFO root fetch - main [MainThread]: End processing [create-project-fastapi] error
+[2024-04-27 11:47:01] INFO root fetch - processPackages [pyscinloopsr]: Downloading https://files.pythonhosted.org/packages/c2/79/a3b3e1c4377a54b84d92a6ce4a8d70f9bb57364bdbe1ec2657397e8360cd/pyscinloopsr-1.0.9.tar.gz
+[2024-04-27 11:47:01] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/6d/47/bfe72207e79c7a6549a4b4536eb72aaf5ca1421c08a97018e0e3bbcd89dd/python_115-0.0.6.9.tar.gz
+[2024-04-27 11:47:01] INFO root fetch - processPackages [pyscinloopsr]: executing diffoscope
+[2024-04-27 11:47:01] INFO root fetch - processPackages [pyscinloopsr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscinloopsr-1.0.8.tar.gz tmp/pyscinloopsr-1.0.9.tar.gz --markdown 20240427/p/pyscinloopsr/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-27 11:47:01] INFO root fetch - processPackages [python-115]: executing diffoscope
+[2024-04-27 11:47:01] INFO root fetch - processPackages [python-115]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_115-0.0.6.8.tar.gz tmp/python_115-0.0.6.9.tar.gz --markdown 20240427/p/python-115/0.0.6.8-0.0.6.9/README.md --exclude *.pyd
+[2024-04-27 11:47:02] INFO root fetch - processPackages [pyscinloopsr]: Remove: archive file [/home/abi/fetcher/tmp/pyscinloopsr-1.0.8.tar.gz]
+[2024-04-27 11:47:02] INFO root fetch - processPackages [pyscinloopsr]: Remove: archive file [/home/abi/fetcher/tmp/pyscinloopsr-1.0.9.tar.gz]
+[2024-04-27 11:47:02] INFO root fetch - main [MainThread]: End processing [pyscinloopsr]: success
+[2024-04-27 11:47:02] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.6.8.tar.gz]
+[2024-04-27 11:47:02] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.6.9.tar.gz]
+[2024-04-27 11:47:02] INFO root fetch - main [MainThread]: End processing [python-115]: success
+[2024-04-27 11:47:02] INFO root fetch - main [MainThread]: Store serial: [22957748]
