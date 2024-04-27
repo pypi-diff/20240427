@@ -11402,3 +11402,18 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 11:29:35] INFO root fetch - processPackages [werag]: Remove: archive file [/home/abi/fetcher/tmp/werag-0.0.1.tar.gz]
 [2024-04-27 11:29:35] INFO root fetch - main [MainThread]: End processing [werag]: success
 [2024-04-27 11:29:35] INFO root fetch - main [MainThread]: Store serial: [22957663]
+[2024-04-27 11:31:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957663]
+[2024-04-27 11:31:43] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 11:31:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-dbchat
+[2024-04-27 11:31:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: showCV
+[2024-04-27 11:31:43] WARNING root fetch - processPackages [showCV]: Skipping, unable to determine old version
+[2024-04-27 11:31:43] INFO root fetch - main [MainThread]: End processing [showCV] error
+[2024-04-27 11:31:43] INFO root fetch - processPackages [py-dbchat]: New version: [0.0.2rc96.post1] Old Version: [0.0.2rc95.post1]
+[2024-04-27 11:31:43] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/49/4b/ec4826ca925eff6003a7660a85ad6cad2ead1e1c1eb8581ea79c6a917caf/py_dbchat-0.0.2rc95.post1.tar.gz
+[2024-04-27 11:31:44] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/62/c9/abb5addce1d123a3570c0632d105f5389be93435bd93972a8729002d89ea/py_dbchat-0.0.2rc96.post1.tar.gz
+[2024-04-27 11:31:44] INFO root fetch - processPackages [py-dbchat]: executing diffoscope
+[2024-04-27 11:31:44] INFO root fetch - processPackages [py-dbchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_dbchat-0.0.2rc95.post1.tar.gz tmp/py_dbchat-0.0.2rc96.post1.tar.gz --markdown 20240427/p/py-dbchat/0.0.2rc95.post1-0.0.2rc96.post1/README.md --exclude *.pyd
+[2024-04-27 11:31:45] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc95.post1.tar.gz]
+[2024-04-27 11:31:45] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc96.post1.tar.gz]
+[2024-04-27 11:31:45] INFO root fetch - main [MainThread]: End processing [py-dbchat]: success
+[2024-04-27 11:31:45] INFO root fetch - main [MainThread]: Store serial: [22957670]
