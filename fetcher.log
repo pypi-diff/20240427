@@ -20872,3 +20872,71 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 22:41:50] INFO root fetch - processPackages [placo]: Remove: archive file [/home/abi/fetcher/tmp/placo-0.5.0.tar.gz]
 [2024-04-27 22:41:50] INFO root fetch - main [MainThread]: End processing [placo]: success
 [2024-04-27 22:41:50] INFO root fetch - main [MainThread]: Store serial: [22961826]
+[2024-04-27 22:44:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961826]
+[2024-04-27 22:44:08] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-27 22:44:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: graphscope
+[2024-04-27 22:44:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: graphscope-client
+[2024-04-27 22:44:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gs-apps
+[2024-04-27 22:44:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gs-coordinator
+[2024-04-27 22:44:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Robocon-24
+[2024-04-27 22:44:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gs-engine
+[2024-04-27 22:44:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gs-include
+[2024-04-27 22:44:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ziya
+[2024-04-27 22:44:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: openadapt
+[2024-04-27 22:44:08] INFO root fetch - processPackages [gs-coordinator]: New version: [0.28.0a20240426] Old Version: [0.28.0a20240425]
+[2024-04-27 22:44:08] INFO root fetch - processPackages [graphscope]: New version: [0.28.0a20240426] Old Version: [0.28.0a20240425]
+[2024-04-27 22:44:08] INFO root fetch - processPackages [Robocon-24]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-04-27 22:44:08] INFO root fetch - processPackages [ziya]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-27 22:44:08] INFO root fetch - processPackages [graphscope-client]: New version: [0.28.0a20240426] Old Version: [0.28.0a20240425]
+[2024-04-27 22:44:08] INFO root fetch - processPackages [gs-apps]: New version: [0.28.0a20240426] Old Version: [0.28.0a20240425]
+[2024-04-27 22:44:08] INFO root fetch - processPackages [gs-include]: New version: [0.28.0a20240426] Old Version: [0.28.0a20240425]
+[2024-04-27 22:44:08] INFO root fetch - processPackages [gs-engine]: New version: [0.28.0a20240426] Old Version: [0.28.0a20240425]
+[2024-04-27 22:44:08] INFO root fetch - processPackages [gs-coordinator]: Downloading https://files.pythonhosted.org/packages/bb/35/a4123edeb012e09172e3297a44978465dc990b14078ecf269b9185a2bf3d/gs_coordinator-0.28.0a20240425-py2.py3-none-any.whl
+[2024-04-27 22:44:08] INFO root fetch - processPackages [openadapt]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-04-27 22:44:08] INFO root fetch - processPackages [Robocon-24]: Downloading https://files.pythonhosted.org/packages/bc/fe/cf803fe9c25dea952161ec4cd3cf16909864c3824641dd64078d8273584f/Robocon_24-0.3.1.tar.gz
+[2024-04-27 22:44:08] INFO root fetch - processPackages [ziya]: Downloading https://files.pythonhosted.org/packages/63/6d/6fd704c1fd18561536701887467b12578e4e73eaea25a44e8c6a2d75d813/ziya-0.1.5.tar.gz
+[2024-04-27 22:44:08] INFO root fetch - processPackages [gs-engine]: Downloading https://files.pythonhosted.org/packages/85/0a/58f24315bfe8198f6f770ca92a0d621114650f692eaf508dd2e4316508d8/gs_engine-0.28.0a20240425-py2.py3-none-any.whl
+[2024-04-27 22:44:08] INFO root fetch - processPackages [graphscope]: Downloading https://files.pythonhosted.org/packages/3e/82/60343923e1404fc6e480179dceeb0ea598facac6d62ba591ef0afc016d4d/graphscope-0.28.0a20240425-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-27 22:44:08] INFO root fetch - processPackages [graphscope-client]: Downloading https://files.pythonhosted.org/packages/b7/3c/fca5d95172c9f0090d1c228cb5af1f2b509c07ba8b55f6a5b1bae0613be2/graphscope_client-0.28.0a20240425-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-27 22:44:08] INFO root fetch - processPackages [gs-include]: Downloading https://files.pythonhosted.org/packages/0c/ff/de4c79f7a2697ab247676790ca371320340a1d986d1ae5d8dfce25c27b3f/gs_include-0.28.0a20240425-py2.py3-none-any.whl
+[2024-04-27 22:44:08] INFO root fetch - processPackages [gs-apps]: Downloading https://files.pythonhosted.org/packages/6d/ff/a999dd384087265ec113f008d2af393a7da98e4a32d71fdc4c81dc5b7399/gs_apps-0.28.0a20240425-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-27 22:44:08] WARNING root fetch - processPackages [graphscope]: Skipping package: exceeds size limit 218517198>=10485760
+[2024-04-27 22:44:08] INFO root fetch - main [MainThread]: End processing [graphscope] error
+[2024-04-27 22:44:08] WARNING root fetch - processPackages [gs-include]: Skipping package: exceeds size limit 28865328>=10485760
+[2024-04-27 22:44:08] INFO root fetch - main [MainThread]: End processing [gs-include] error
+[2024-04-27 22:44:08] WARNING root fetch - processPackages [gs-apps]: Skipping package: exceeds size limit 47024150>=10485760
+[2024-04-27 22:44:08] INFO root fetch - main [MainThread]: End processing [gs-apps] error
+[2024-04-27 22:44:09] INFO root fetch - processPackages [openadapt]: Downloading https://files.pythonhosted.org/packages/79/02/9909659ccbba301efcb1ca065eb1d9413e5e760d2cefd4a01ba5e723511b/openadapt-0.8.1.tar.gz
+[2024-04-27 22:44:09] WARNING root fetch - processPackages [graphscope-client]: Skipping package: exceeds size limit 96583824>=10485760
+[2024-04-27 22:44:09] INFO root fetch - main [MainThread]: End processing [graphscope-client] error
+[2024-04-27 22:44:09] INFO root fetch - processPackages [Robocon-24]: Downloading https://files.pythonhosted.org/packages/5f/0d/6134f7d62ac85df5b5cbad13c215e5084dcdb0946e1b8bbc781749cae2fe/Robocon_24-0.3.2.tar.gz
+[2024-04-27 22:44:09] INFO root fetch - processPackages [ziya]: Downloading https://files.pythonhosted.org/packages/4c/de/6b1b9c50192ded640921193893b36c1807f46b7eedabc86f41c21225b2e6/ziya-0.1.6.tar.gz
+[2024-04-27 22:44:09] INFO root fetch - processPackages [gs-coordinator]: Downloading https://files.pythonhosted.org/packages/ff/45/664e9cf2985471f142aae5b7e3f9e8b664a8329da12932fc03fed5b88478/gs_coordinator-0.28.0a20240426-py2.py3-none-any.whl
+[2024-04-27 22:44:09] INFO root fetch - processPackages [gs-engine]: Downloading https://files.pythonhosted.org/packages/ca/a4/512200a26f3492f0979b417b0d936e635558c5a31433b0777cd914718861/gs_engine-0.28.0a20240426-py2.py3-none-any.whl
+[2024-04-27 22:44:09] INFO root fetch - processPackages [Robocon-24]: executing diffoscope
+[2024-04-27 22:44:09] INFO root fetch - processPackages [Robocon-24]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Robocon_24-0.3.1.tar.gz tmp/Robocon_24-0.3.2.tar.gz --markdown 20240427/R/Robocon-24/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-04-27 22:44:09] INFO root fetch - processPackages [ziya]: executing diffoscope
+[2024-04-27 22:44:09] INFO root fetch - processPackages [ziya]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ziya-0.1.5.tar.gz tmp/ziya-0.1.6.tar.gz --markdown 20240427/z/ziya/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-27 22:44:09] INFO root fetch - processPackages [gs-coordinator]: executing diffoscope
+[2024-04-27 22:44:09] INFO root fetch - processPackages [gs-coordinator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gs_coordinator-0.28.0a20240425-py2.py3-none-any.whl.zip tmp/gs_coordinator-0.28.0a20240426-py2.py3-none-any.whl.zip --markdown 20240427/g/gs-coordinator/0.28.0a20240425-0.28.0a20240426/README.md --exclude *.pyd
+[2024-04-27 22:44:09] INFO root fetch - processPackages [gs-engine]: executing diffoscope
+[2024-04-27 22:44:09] INFO root fetch - processPackages [gs-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gs_engine-0.28.0a20240425-py2.py3-none-any.whl.zip tmp/gs_engine-0.28.0a20240426-py2.py3-none-any.whl.zip --markdown 20240427/g/gs-engine/0.28.0a20240425-0.28.0a20240426/README.md --exclude *.pyd
+[2024-04-27 22:44:09] INFO root fetch - processPackages [openadapt]: Downloading https://files.pythonhosted.org/packages/b7/9c/6198cbb491bbd32347e3741b41ee70e6ad1916e573ef76ae3aeb9e0fc8ef/openadapt-0.9.0.tar.gz
+[2024-04-27 22:44:09] INFO root fetch - processPackages [openadapt]: executing diffoscope
+[2024-04-27 22:44:09] INFO root fetch - processPackages [openadapt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openadapt-0.8.1.tar.gz tmp/openadapt-0.9.0.tar.gz --markdown 20240427/o/openadapt/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-04-27 22:44:09] INFO root fetch - processPackages [Robocon-24]: Remove: archive file [/home/abi/fetcher/tmp/Robocon_24-0.3.1.tar.gz]
+[2024-04-27 22:44:09] INFO root fetch - processPackages [Robocon-24]: Remove: archive file [/home/abi/fetcher/tmp/Robocon_24-0.3.2.tar.gz]
+[2024-04-27 22:44:09] INFO root fetch - main [MainThread]: End processing [Robocon-24]: success
+[2024-04-27 22:44:10] INFO root fetch - processPackages [gs-engine]: Remove: archive file [/home/abi/fetcher/tmp/gs_engine-0.28.0a20240425-py2.py3-none-any.whl.zip]
+[2024-04-27 22:44:10] INFO root fetch - processPackages [gs-engine]: Remove: archive file [/home/abi/fetcher/tmp/gs_engine-0.28.0a20240426-py2.py3-none-any.whl.zip]
+[2024-04-27 22:44:10] INFO root fetch - main [MainThread]: End processing [gs-engine]: success
+[2024-04-27 22:44:10] INFO root fetch - processPackages [ziya]: Remove: archive file [/home/abi/fetcher/tmp/ziya-0.1.5.tar.gz]
+[2024-04-27 22:44:10] INFO root fetch - processPackages [ziya]: Remove: archive file [/home/abi/fetcher/tmp/ziya-0.1.6.tar.gz]
+[2024-04-27 22:44:10] INFO root fetch - main [MainThread]: End processing [ziya]: success
+[2024-04-27 22:44:10] INFO root fetch - processPackages [gs-coordinator]: Remove: archive file [/home/abi/fetcher/tmp/gs_coordinator-0.28.0a20240425-py2.py3-none-any.whl.zip]
+[2024-04-27 22:44:10] INFO root fetch - processPackages [gs-coordinator]: Remove: archive file [/home/abi/fetcher/tmp/gs_coordinator-0.28.0a20240426-py2.py3-none-any.whl.zip]
+[2024-04-27 22:44:10] INFO root fetch - main [MainThread]: End processing [gs-coordinator]: success
+[2024-04-27 22:44:10] INFO root fetch - processPackages [openadapt]: Remove: archive file [/home/abi/fetcher/tmp/openadapt-0.8.1.tar.gz]
+[2024-04-27 22:44:10] INFO root fetch - processPackages [openadapt]: Remove: archive file [/home/abi/fetcher/tmp/openadapt-0.9.0.tar.gz]
+[2024-04-27 22:44:10] INFO root fetch - main [MainThread]: End processing [openadapt]: success
+[2024-04-27 22:44:10] INFO root fetch - main [MainThread]: Store serial: [22961851]
