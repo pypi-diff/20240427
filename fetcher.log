@@ -19739,3 +19739,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 21:14:17] INFO root fetch - processPackages [danielutils]: Remove: archive file [/home/abi/fetcher/tmp/danielutils-0.9.77.tar.gz]
 [2024-04-27 21:14:17] INFO root fetch - main [MainThread]: End processing [danielutils]: success
 [2024-04-27 21:14:17] INFO root fetch - main [MainThread]: Store serial: [22961324]
+[2024-04-27 21:16:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961324]
+[2024-04-27 21:16:30] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 21:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MODApy
+[2024-04-27 21:16:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ziya
+[2024-04-27 21:16:31] INFO root fetch - processPackages [ziya]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-27 21:16:31] INFO root fetch - processPackages [ziya]: Downloading https://files.pythonhosted.org/packages/15/5a/f05431e2f7abb01e9267eaa2708baf9bd2f89c58084a777934f2bdf367e8/ziya-0.1.3.tar.gz
+[2024-04-27 21:16:31] INFO root fetch - processPackages [MODApy]: New version: [0.8.1] Old Version: [0.8.0]
+[2024-04-27 21:16:31] INFO root fetch - processPackages [ziya]: Downloading https://files.pythonhosted.org/packages/99/7f/e004b5e6edda7df96af17a8b8d536a1fa2028e48c71f42e918f3a0ccd668/ziya-0.1.4.tar.gz
+[2024-04-27 21:16:31] INFO root fetch - processPackages [MODApy]: Downloading https://files.pythonhosted.org/packages/33/37/cefda9a8307820931ad19fb614eb4e0b5fa3ef832c3a61d1ca4620c24b34/MODApy-0.8.0.tar.gz
+[2024-04-27 21:16:31] INFO root fetch - processPackages [ziya]: executing diffoscope
+[2024-04-27 21:16:31] INFO root fetch - processPackages [ziya]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ziya-0.1.3.tar.gz tmp/ziya-0.1.4.tar.gz --markdown 20240427/z/ziya/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-27 21:16:31] INFO root fetch - processPackages [MODApy]: Downloading https://files.pythonhosted.org/packages/6d/ec/af1b4c33872feaf05e4c167d5275701d8a4e910852c6a112af0c00d1ffb4/MODApy-0.8.1.tar.gz
+[2024-04-27 21:16:31] INFO root fetch - processPackages [MODApy]: executing diffoscope
+[2024-04-27 21:16:31] INFO root fetch - processPackages [MODApy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MODApy-0.8.0.tar.gz tmp/MODApy-0.8.1.tar.gz --markdown 20240427/M/MODApy/0.8.0-0.8.1/README.md --exclude *.pyd
+[2024-04-27 21:16:32] INFO root fetch - processPackages [ziya]: Remove: archive file [/home/abi/fetcher/tmp/ziya-0.1.3.tar.gz]
+[2024-04-27 21:16:32] INFO root fetch - processPackages [ziya]: Remove: archive file [/home/abi/fetcher/tmp/ziya-0.1.4.tar.gz]
+[2024-04-27 21:16:32] INFO root fetch - main [MainThread]: End processing [ziya]: success
+[2024-04-27 21:16:32] INFO root fetch - processPackages [MODApy]: Remove: archive file [/home/abi/fetcher/tmp/MODApy-0.8.0.tar.gz]
+[2024-04-27 21:16:32] INFO root fetch - processPackages [MODApy]: Remove: archive file [/home/abi/fetcher/tmp/MODApy-0.8.1.tar.gz]
+[2024-04-27 21:16:32] INFO root fetch - main [MainThread]: End processing [MODApy]: success
+[2024-04-27 21:16:32] INFO root fetch - main [MainThread]: Store serial: [22961331]
