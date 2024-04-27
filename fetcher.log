@@ -13053,3 +13053,41 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 13:32:39] INFO root fetch - processPackages [qs-codec]: Remove: archive file [/home/abi/fetcher/tmp/qs_codec-0.1.3.tar.gz]
 [2024-04-27 13:32:39] INFO root fetch - main [MainThread]: End processing [qs-codec]: success
 [2024-04-27 13:32:39] INFO root fetch - main [MainThread]: Store serial: [22958333]
+[2024-04-27 13:34:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958333]
+[2024-04-27 13:34:49] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 13:34:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torchserve-nightly
+[2024-04-27 13:34:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SimpleTKMessageBox
+[2024-04-27 13:34:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torch-model-archiver-nightly
+[2024-04-27 13:34:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torch-workflow-archiver-nightly
+[2024-04-27 13:34:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pkpdbib
+[2024-04-27 13:34:49] INFO root fetch - processPackages [SimpleTKMessageBox]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-27 13:34:49] INFO root fetch - processPackages [torchserve-nightly]: New version: [2024.4.8] Old Version: [2024.4.7]
+[2024-04-27 13:34:49] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: New version: [2024.4.8] Old Version: [2024.4.7]
+[2024-04-27 13:34:49] INFO root fetch - processPackages [torch-model-archiver-nightly]: New version: [2024.4.8] Old Version: [2024.4.7]
+[2024-04-27 13:34:49] ERROR root fetch - processPackages [pkpdbib]: Unable to get metadata: No such project 'pkpdbib'
+[2024-04-27 13:34:49] INFO root fetch - main [MainThread]: End processing [pkpdbib] error
+[2024-04-27 13:34:49] INFO root fetch - processPackages [torchserve-nightly]: Downloading https://files.pythonhosted.org/packages/45/5e/4f1364a73e0ee415abfe197b77d791f9294a79e4d8f7a3e886e5eec8d664/torchserve_nightly-2024.4.7-py3-none-any.whl
+[2024-04-27 13:34:49] INFO root fetch - processPackages [SimpleTKMessageBox]: Downloading https://files.pythonhosted.org/packages/80/c7/9a52dc9bd956118a8be10a37a07c4ed50094e1599e0e85863a57c1af7e35/SimpleTKMessageBox-0.1.2.tar.gz
+[2024-04-27 13:34:49] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/19/d4/48ed170e79102607db9758662c34c1e9a7d2cca453a976226f2d8dd11967/torch_workflow_archiver_nightly-2024.4.7-py3-none-any.whl
+[2024-04-27 13:34:49] INFO root fetch - processPackages [torch-model-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/18/8d/5c32ddd637a0599b7a839f802a7243a55780adba3d383c90ef75166e05a8/torch_model_archiver_nightly-2024.4.7-py3-none-any.whl
+[2024-04-27 13:34:49] WARNING root fetch - processPackages [torchserve-nightly]: Skipping package: exceeds size limit 24332257>=10485760
+[2024-04-27 13:34:49] INFO root fetch - main [MainThread]: End processing [torchserve-nightly] error
+[2024-04-27 13:34:49] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/d5/55/6c71d544e2fef7c773e7b994940d2019c84fd5eaa8f6db64fa9983595110/torch_workflow_archiver_nightly-2024.4.8-py3-none-any.whl
+[2024-04-27 13:34:49] INFO root fetch - processPackages [torch-model-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/46/e6/cfb9b8e2b84779c413931c88816ff46e987f3bf841f1fb714e6b662e8296/torch_model_archiver_nightly-2024.4.8-py3-none-any.whl
+[2024-04-27 13:34:50] INFO root fetch - processPackages [SimpleTKMessageBox]: Downloading https://files.pythonhosted.org/packages/b2/07/2f34fb91bb24c02a7b7e6ef5ca9c41f7ee3b38b81f094976ede1bb55860a/SimpleTKMessageBox-0.1.3.tar.gz
+[2024-04-27 13:34:50] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: executing diffoscope
+[2024-04-27 13:34:50] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_workflow_archiver_nightly-2024.4.7-py3-none-any.whl.zip tmp/torch_workflow_archiver_nightly-2024.4.8-py3-none-any.whl.zip --markdown 20240427/t/torch-workflow-archiver-nightly/2024.4.7-2024.4.8/README.md --exclude *.pyd
+[2024-04-27 13:34:50] INFO root fetch - processPackages [torch-model-archiver-nightly]: executing diffoscope
+[2024-04-27 13:34:50] INFO root fetch - processPackages [torch-model-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_archiver_nightly-2024.4.7-py3-none-any.whl.zip tmp/torch_model_archiver_nightly-2024.4.8-py3-none-any.whl.zip --markdown 20240427/t/torch-model-archiver-nightly/2024.4.7-2024.4.8/README.md --exclude *.pyd
+[2024-04-27 13:34:50] INFO root fetch - processPackages [SimpleTKMessageBox]: executing diffoscope
+[2024-04-27 13:34:50] INFO root fetch - processPackages [SimpleTKMessageBox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SimpleTKMessageBox-0.1.2.tar.gz tmp/SimpleTKMessageBox-0.1.3.tar.gz --markdown 20240427/S/SimpleTKMessageBox/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-27 13:34:50] INFO root fetch - processPackages [torch-model-archiver-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_archiver_nightly-2024.4.7-py3-none-any.whl.zip]
+[2024-04-27 13:34:50] INFO root fetch - processPackages [torch-model-archiver-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_archiver_nightly-2024.4.8-py3-none-any.whl.zip]
+[2024-04-27 13:34:50] INFO root fetch - main [MainThread]: End processing [torch-model-archiver-nightly]: success
+[2024-04-27 13:34:50] INFO root fetch - processPackages [SimpleTKMessageBox]: Remove: archive file [/home/abi/fetcher/tmp/SimpleTKMessageBox-0.1.2.tar.gz]
+[2024-04-27 13:34:50] INFO root fetch - processPackages [SimpleTKMessageBox]: Remove: archive file [/home/abi/fetcher/tmp/SimpleTKMessageBox-0.1.3.tar.gz]
+[2024-04-27 13:34:50] INFO root fetch - main [MainThread]: End processing [SimpleTKMessageBox]: success
+[2024-04-27 13:34:50] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torch_workflow_archiver_nightly-2024.4.7-py3-none-any.whl.zip]
+[2024-04-27 13:34:50] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torch_workflow_archiver_nightly-2024.4.8-py3-none-any.whl.zip]
+[2024-04-27 13:34:50] INFO root fetch - main [MainThread]: End processing [torch-workflow-archiver-nightly]: success
+[2024-04-27 13:34:50] INFO root fetch - main [MainThread]: Store serial: [22958344]
