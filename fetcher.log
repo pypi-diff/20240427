@@ -2077,3 +2077,43 @@ EOFError: EOF read where object expected
 [2024-04-27 02:00:03] INFO root fetch - processPackages [receipt-enhancer]: Remove: archive file [/home/abi/fetcher/tmp/receipt_enhancer-0.1.5.tar.gz]
 [2024-04-27 02:00:03] INFO root fetch - main [MainThread]: End processing [receipt-enhancer]: success
 [2024-04-27 02:00:03] INFO root fetch - main [MainThread]: Store serial: [22954110]
+[2024-04-27 02:02:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22954110]
+[2024-04-27 02:02:11] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 02:02:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wagtail-editorjs
+[2024-04-27 02:02:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mh-moe
+[2024-04-27 02:02:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wagtail-editorjs
+[2024-04-27 02:02:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pixeltable
+[2024-04-27 02:02:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: moptipy
+[2024-04-27 02:02:12] INFO root fetch - processPackages [wagtail-editorjs]: New version: [1.6.1rc1] Old Version: [1.6.0]
+[2024-04-27 02:02:12] WARNING root fetch - processPackages [mh-moe]: Skipping, unable to determine old version
+[2024-04-27 02:02:12] INFO root fetch - main [MainThread]: End processing [mh-moe] error
+[2024-04-27 02:02:12] INFO root fetch - processPackages [wagtail-editorjs]: New version: [1.6.1rc1] Old Version: [1.6.0]
+[2024-04-27 02:02:12] INFO root fetch - processPackages [pixeltable]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-04-27 02:02:12] INFO root fetch - processPackages [wagtail-editorjs]: Downloading https://files.pythonhosted.org/packages/f2/18/c373f2b6ffc7d0d1eefaf24b35d7f8f71f4ed8ccce5cc2605127ddf7dd66/wagtail_editorjs-1.6.0.tar.gz
+[2024-04-27 02:02:12] INFO root fetch - processPackages [wagtail-editorjs]: Downloading https://files.pythonhosted.org/packages/f2/18/c373f2b6ffc7d0d1eefaf24b35d7f8f71f4ed8ccce5cc2605127ddf7dd66/wagtail_editorjs-1.6.0.tar.gz
+[2024-04-27 02:02:12] INFO root fetch - processPackages [moptipy]: New version: [0.9.99] Old Version: [0.9.98]
+[2024-04-27 02:02:12] INFO root fetch - processPackages [pixeltable]: Downloading https://files.pythonhosted.org/packages/3a/b5/030000684f34c3e5a7ba354009eeec292844ef1fe36078ef550312dda72a/pixeltable-0.2.4.tar.gz
+[2024-04-27 02:02:12] INFO root fetch - processPackages [wagtail-editorjs]: Downloading https://files.pythonhosted.org/packages/4a/e7/95129256730af107e95a0a9475458fee63c7190f6d8d7a68c6d845fa3de1/wagtail_editorjs-1.6.1rc1.tar.gz
+[2024-04-27 02:02:12] INFO root fetch - processPackages [wagtail-editorjs]: Downloading https://files.pythonhosted.org/packages/4a/e7/95129256730af107e95a0a9475458fee63c7190f6d8d7a68c6d845fa3de1/wagtail_editorjs-1.6.1rc1.tar.gz
+[2024-04-27 02:02:12] INFO root fetch - processPackages [wagtail-editorjs]: executing diffoscope
+[2024-04-27 02:02:12] INFO root fetch - processPackages [wagtail-editorjs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtail_editorjs-1.6.0.tar.gz tmp/wagtail_editorjs-1.6.1rc1.tar.gz --markdown 20240427/w/wagtail-editorjs/1.6.0-1.6.1rc1/README.md --exclude *.pyd
+[2024-04-27 02:02:12] INFO root fetch - processPackages [wagtail-editorjs]: executing diffoscope
+[2024-04-27 02:02:12] INFO root fetch - processPackages [wagtail-editorjs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtail_editorjs-1.6.0.tar.gz tmp/wagtail_editorjs-1.6.1rc1.tar.gz --markdown 20240427/w/wagtail-editorjs/1.6.0-1.6.1rc1/README.md --exclude *.pyd
+[2024-04-27 02:02:12] INFO root fetch - processPackages [moptipy]: Downloading https://files.pythonhosted.org/packages/79/ff/c02163781ada2fee4bba702ad69e5a4f2f4c03a9cfd912ff8123846ab35e/moptipy-0.9.98.tar.gz
+[2024-04-27 02:02:12] INFO root fetch - processPackages [pixeltable]: Downloading https://files.pythonhosted.org/packages/d0/5a/e3d09d84c093bf73a24f4743e79dcad472af267f74c2acc595f0554cd400/pixeltable-0.2.5.tar.gz
+[2024-04-27 02:02:13] INFO root fetch - processPackages [pixeltable]: executing diffoscope
+[2024-04-27 02:02:13] INFO root fetch - processPackages [pixeltable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pixeltable-0.2.4.tar.gz tmp/pixeltable-0.2.5.tar.gz --markdown 20240427/p/pixeltable/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-04-27 02:02:13] INFO root fetch - processPackages [moptipy]: Downloading https://files.pythonhosted.org/packages/2a/cf/498083d5cae469a295d1f70ea131664c0ac6641c8a08698dee5e01d2204b/moptipy-0.9.99.tar.gz
+[2024-04-27 02:02:13] INFO root fetch - processPackages [moptipy]: executing diffoscope
+[2024-04-27 02:02:13] INFO root fetch - processPackages [moptipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moptipy-0.9.98.tar.gz tmp/moptipy-0.9.99.tar.gz --markdown 20240427/m/moptipy/0.9.98-0.9.99/README.md --exclude *.pyd
+[2024-04-27 02:02:13] INFO root fetch - processPackages [wagtail-editorjs]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_editorjs-1.6.0.tar.gz]
+[2024-04-27 02:02:13] INFO root fetch - processPackages [wagtail-editorjs]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_editorjs-1.6.1rc1.tar.gz]
+[2024-04-27 02:02:13] INFO root fetch - main [MainThread]: End processing [wagtail-editorjs]: success
+[2024-04-27 02:02:13] INFO root fetch - main [MainThread]: End processing [wagtail-editorjs]: success
+[2024-04-27 02:02:14] INFO root fetch - processPackages [pixeltable]: Remove: archive file [/home/abi/fetcher/tmp/pixeltable-0.2.4.tar.gz]
+[2024-04-27 02:02:14] INFO root fetch - processPackages [pixeltable]: Remove: archive file [/home/abi/fetcher/tmp/pixeltable-0.2.5.tar.gz]
+[2024-04-27 02:02:14] INFO root fetch - main [MainThread]: End processing [pixeltable]: success
+[2024-04-27 02:02:14] INFO root fetch - processPackages [moptipy]: Remove: archive file [/home/abi/fetcher/tmp/moptipy-0.9.98.tar.gz]
+[2024-04-27 02:02:14] INFO root fetch - processPackages [moptipy]: Remove: archive file [/home/abi/fetcher/tmp/moptipy-0.9.99.tar.gz]
+[2024-04-27 02:02:14] INFO root fetch - main [MainThread]: End processing [moptipy]: success
+[2024-04-27 02:02:14] INFO root fetch - main [MainThread]: Store serial: [22954120]
