@@ -16037,3 +16037,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 16:48:03] INFO root fetch - processPackages [libfwevt-python]: Remove: archive file [/home/abi/fetcher/tmp/libfwevt-python-20240427.tar.gz]
 [2024-04-27 16:48:03] INFO root fetch - main [MainThread]: End processing [libfwevt-python]: success
 [2024-04-27 16:48:03] INFO root fetch - main [MainThread]: Store serial: [22959574]
+[2024-04-27 16:50:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959574]
+[2024-04-27 16:50:11] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 16:50:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vio
+[2024-04-27 16:50:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytexmk
+[2024-04-27 16:50:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: updrytwist-UpDryTwist
+[2024-04-27 16:50:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: freegenius
+[2024-04-27 16:50:11] WARNING root fetch - processPackages [vio]: Skipping, unable to determine old version
+[2024-04-27 16:50:11] INFO root fetch - main [MainThread]: End processing [vio] error
+[2024-04-27 16:50:11] INFO root fetch - processPackages [updrytwist-UpDryTwist]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 16:50:11] INFO root fetch - processPackages [pytexmk]: New version: [0.5.4.240427] Old Version: [0.5.1.240426]
+[2024-04-27 16:50:11] INFO root fetch - processPackages [freegenius]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-27 16:50:11] INFO root fetch - processPackages [updrytwist-UpDryTwist]: Downloading https://files.pythonhosted.org/packages/1f/b5/eb031965b3b736a189906b7bf4ac2fa3721a547ed6cde73cf721ca951978/updrytwist-UpDryTwist-0.0.8.tar.gz
+[2024-04-27 16:50:11] INFO root fetch - processPackages [pytexmk]: Downloading https://files.pythonhosted.org/packages/32/90/1c8be9e1ab53df9771201442712fa9ba86f81216c60de486b96c61840004/pytexmk-0.5.1.240426.tar.gz
+[2024-04-27 16:50:11] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/71/1f/4e7f72777c44cdb7c32886f3769095c35f06cf583b3547c7a34ab0fc37b3/freegenius-0.1.0.tar.gz
+[2024-04-27 16:50:12] INFO root fetch - processPackages [updrytwist-UpDryTwist]: Downloading https://files.pythonhosted.org/packages/c9/29/eb5c8bfc3736233400efa2211b7a2a87a43398ed29ccc544e8ed3dbe5be4/updrytwist-UpDryTwist-0.0.9.tar.gz
+[2024-04-27 16:50:12] INFO root fetch - processPackages [pytexmk]: Downloading https://files.pythonhosted.org/packages/94/75/0aa99209e14a0ae3db6b5452869947bb376bb201bcf8794e945b2be3fa75/pytexmk-0.5.4.240427.tar.gz
+[2024-04-27 16:50:12] INFO root fetch - processPackages [updrytwist-UpDryTwist]: executing diffoscope
+[2024-04-27 16:50:12] INFO root fetch - processPackages [updrytwist-UpDryTwist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/updrytwist-UpDryTwist-0.0.8.tar.gz tmp/updrytwist-UpDryTwist-0.0.9.tar.gz --markdown 20240427/u/updrytwist-UpDryTwist/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 16:50:12] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/6a/d5/fb8be749684b76e4c7bf1036a5b1c6c38ff4a472a3e7ab70a7fabbec87d6/freegenius-0.1.1.tar.gz
+[2024-04-27 16:50:12] INFO root fetch - processPackages [pytexmk]: executing diffoscope
+[2024-04-27 16:50:12] INFO root fetch - processPackages [pytexmk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytexmk-0.5.1.240426.tar.gz tmp/pytexmk-0.5.4.240427.tar.gz --markdown 20240427/p/pytexmk/0.5.1.240426-0.5.4.240427/README.md --exclude *.pyd
+[2024-04-27 16:50:12] INFO root fetch - processPackages [freegenius]: executing diffoscope
+[2024-04-27 16:50:12] INFO root fetch - processPackages [freegenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freegenius-0.1.0.tar.gz tmp/freegenius-0.1.1.tar.gz --markdown 20240427/f/freegenius/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-27 16:50:12] INFO root fetch - processPackages [updrytwist-UpDryTwist]: Remove: archive file [/home/abi/fetcher/tmp/updrytwist-UpDryTwist-0.0.8.tar.gz]
+[2024-04-27 16:50:12] INFO root fetch - processPackages [updrytwist-UpDryTwist]: Remove: archive file [/home/abi/fetcher/tmp/updrytwist-UpDryTwist-0.0.9.tar.gz]
+[2024-04-27 16:50:12] INFO root fetch - main [MainThread]: End processing [updrytwist-UpDryTwist]: success
+[2024-04-27 16:50:13] INFO root fetch - processPackages [pytexmk]: Remove: archive file [/home/abi/fetcher/tmp/pytexmk-0.5.1.240426.tar.gz]
+[2024-04-27 16:50:13] INFO root fetch - processPackages [pytexmk]: Remove: archive file [/home/abi/fetcher/tmp/pytexmk-0.5.4.240427.tar.gz]
+[2024-04-27 16:50:13] INFO root fetch - main [MainThread]: End processing [pytexmk]: success
+[2024-04-27 16:50:14] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.1.0.tar.gz]
+[2024-04-27 16:50:14] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.1.1.tar.gz]
+[2024-04-27 16:50:14] INFO root fetch - main [MainThread]: End processing [freegenius]: success
+[2024-04-27 16:50:14] INFO root fetch - main [MainThread]: Store serial: [22959587]
