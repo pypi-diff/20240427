@@ -19414,3 +19414,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 20:44:58] WARNING root fetch - processPackages [automated-interpretability]: Skipping, unable to determine old version
 [2024-04-27 20:44:58] INFO root fetch - main [MainThread]: End processing [automated-interpretability] error
 [2024-04-27 20:44:58] INFO root fetch - main [MainThread]: Store serial: [22961159]
+[2024-04-27 20:47:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961159]
+[2024-04-27 20:47:11] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 20:47:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sparkle-log
+[2024-04-27 20:47:11] INFO root fetch - processPackages [sparkle-log]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-27 20:47:11] INFO root fetch - processPackages [sparkle-log]: Downloading https://files.pythonhosted.org/packages/05/1d/bcb94faccbc2202d9ac241ffc568b4f0d3518f6b4b143490dccc0679f43e/sparkle_log-0.2.0.tar.gz
+[2024-04-27 20:47:12] INFO root fetch - processPackages [sparkle-log]: Downloading https://files.pythonhosted.org/packages/5f/02/f60ae5a9e23dc17f562ddfcbf5679451f4c35f4685d949d8889e86466e4a/sparkle_log-0.3.0.tar.gz
+[2024-04-27 20:47:12] INFO root fetch - processPackages [sparkle-log]: executing diffoscope
+[2024-04-27 20:47:12] INFO root fetch - processPackages [sparkle-log]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparkle_log-0.2.0.tar.gz tmp/sparkle_log-0.3.0.tar.gz --markdown 20240427/s/sparkle-log/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-04-27 20:47:12] INFO root fetch - processPackages [sparkle-log]: Remove: archive file [/home/abi/fetcher/tmp/sparkle_log-0.2.0.tar.gz]
+[2024-04-27 20:47:12] INFO root fetch - processPackages [sparkle-log]: Remove: archive file [/home/abi/fetcher/tmp/sparkle_log-0.3.0.tar.gz]
+[2024-04-27 20:47:12] INFO root fetch - main [MainThread]: End processing [sparkle-log]: success
+[2024-04-27 20:47:12] INFO root fetch - main [MainThread]: Store serial: [22961162]
