@@ -8648,3 +8648,24 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 06:39:15] INFO root fetch - processPackages [xfields]: Remove: archive file [/home/abi/fetcher/tmp/xfields-0.9.4.tar.gz]
 [2024-04-27 06:39:15] INFO root fetch - main [MainThread]: End processing [xfields]: success
 [2024-04-27 06:39:15] INFO root fetch - main [MainThread]: Store serial: [22956455]
+[2024-04-27 06:41:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956455]
+[2024-04-27 06:41:23] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 06:41:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tkchart
+[2024-04-27 06:41:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: julep
+[2024-04-27 06:41:23] INFO root fetch - processPackages [julep]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-04-27 06:41:23] INFO root fetch - processPackages [julep]: Downloading https://files.pythonhosted.org/packages/5c/d6/92c2ab110a32384e7edeb9bbadc36fab6b4bfee912b8b7441d67c9fcb0cf/julep-0.3.0.tar.gz
+[2024-04-27 06:41:23] INFO root fetch - processPackages [tkchart]: New version: [2.1.1] Old Version: [2.1.0]
+[2024-04-27 06:41:24] INFO root fetch - processPackages [tkchart]: Downloading https://files.pythonhosted.org/packages/e8/64/16fc39985452ec7f1ca9e14ecab98ed0f04dade6ee7caf2fb332a9dea1c0/tkchart-2.1.0.tar.gz
+[2024-04-27 06:41:24] INFO root fetch - processPackages [julep]: Downloading https://files.pythonhosted.org/packages/7f/75/a476ab85af25d852f38aa971e9dc708d70567a337bef349ba1f4b65cb75b/julep-0.3.1.tar.gz
+[2024-04-27 06:41:24] INFO root fetch - processPackages [julep]: executing diffoscope
+[2024-04-27 06:41:24] INFO root fetch - processPackages [julep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/julep-0.3.0.tar.gz tmp/julep-0.3.1.tar.gz --markdown 20240427/j/julep/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-04-27 06:41:24] INFO root fetch - processPackages [tkchart]: Downloading https://files.pythonhosted.org/packages/98/9e/b1960b480b220bfd022f88b78c0c69d516ebed5bd139d21b31f42f749ad7/tkchart-2.1.1.tar.gz
+[2024-04-27 06:41:24] INFO root fetch - processPackages [tkchart]: executing diffoscope
+[2024-04-27 06:41:24] INFO root fetch - processPackages [tkchart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkchart-2.1.0.tar.gz tmp/tkchart-2.1.1.tar.gz --markdown 20240427/t/tkchart/2.1.0-2.1.1/README.md --exclude *.pyd
+[2024-04-27 06:41:25] INFO root fetch - processPackages [julep]: Remove: archive file [/home/abi/fetcher/tmp/julep-0.3.0.tar.gz]
+[2024-04-27 06:41:25] INFO root fetch - processPackages [julep]: Remove: archive file [/home/abi/fetcher/tmp/julep-0.3.1.tar.gz]
+[2024-04-27 06:41:25] INFO root fetch - main [MainThread]: End processing [julep]: success
+[2024-04-27 06:41:25] INFO root fetch - processPackages [tkchart]: Remove: archive file [/home/abi/fetcher/tmp/tkchart-2.1.0.tar.gz]
+[2024-04-27 06:41:25] INFO root fetch - processPackages [tkchart]: Remove: archive file [/home/abi/fetcher/tmp/tkchart-2.1.1.tar.gz]
+[2024-04-27 06:41:25] INFO root fetch - main [MainThread]: End processing [tkchart]: success
+[2024-04-27 06:41:25] INFO root fetch - main [MainThread]: Store serial: [22956462]
