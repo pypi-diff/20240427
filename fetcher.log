@@ -9723,3 +9723,24 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 08:28:40] INFO root fetch - processPackages [anycrc]: Remove: archive file [/home/abi/fetcher/tmp/anycrc-0.6.0-cp311-cp311-manylinux_2_17_i686.manylinux2014_i686.whl.zip]
 [2024-04-27 08:28:40] INFO root fetch - main [MainThread]: End processing [anycrc]: success
 [2024-04-27 08:28:40] INFO root fetch - main [MainThread]: Store serial: [22956893]
+[2024-04-27 08:30:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956893]
+[2024-04-27 08:30:51] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 08:30:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: radinNFP
+[2024-04-27 08:30:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: robotframework-rpycremote
+[2024-04-27 08:30:51] INFO root fetch - processPackages [radinNFP]: New version: [2.5] Old Version: [2.4.3]
+[2024-04-27 08:30:51] INFO root fetch - processPackages [robotframework-rpycremote]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-27 08:30:51] INFO root fetch - processPackages [radinNFP]: Downloading https://files.pythonhosted.org/packages/f4/58/417ee982e5c2e84bca31ecc7766fe2492d3f4ea5cbd9170f187ebd1533b6/radinNFP-2.4.3-py3-none-any.whl
+[2024-04-27 08:30:51] INFO root fetch - processPackages [robotframework-rpycremote]: Downloading https://files.pythonhosted.org/packages/1e/10/fa6b44d2ab0d65f63a47bf3bf488d42112d0899fd8ab9f5cb7aef85bfeeb/robotframework_rpycremote-0.0.3.tar.gz
+[2024-04-27 08:30:51] INFO root fetch - processPackages [radinNFP]: Downloading https://files.pythonhosted.org/packages/57/c2/0ea8a2aa6e785743af2f73fb30dcf9c9e3291043e532205e79fcd44d8e2f/radinNFP-2.5-py3-none-any.whl
+[2024-04-27 08:30:51] INFO root fetch - processPackages [robotframework-rpycremote]: Downloading https://files.pythonhosted.org/packages/5c/2e/3d7131c1b4277e7be86fd40a2923a576aec5d430f2fb2b0c3805763819bf/robotframework_rpycremote-0.0.4.tar.gz
+[2024-04-27 08:30:51] INFO root fetch - processPackages [radinNFP]: executing diffoscope
+[2024-04-27 08:30:51] INFO root fetch - processPackages [radinNFP]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/radinNFP-2.4.3-py3-none-any.whl.zip tmp/radinNFP-2.5-py3-none-any.whl.zip --markdown 20240427/r/radinNFP/2.4.3-2.5/README.md --exclude *.pyd
+[2024-04-27 08:30:52] INFO root fetch - processPackages [robotframework-rpycremote]: executing diffoscope
+[2024-04-27 08:30:52] INFO root fetch - processPackages [robotframework-rpycremote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotframework_rpycremote-0.0.3.tar.gz tmp/robotframework_rpycremote-0.0.4.tar.gz --markdown 20240427/r/robotframework-rpycremote/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-27 08:30:52] INFO root fetch - processPackages [radinNFP]: Remove: archive file [/home/abi/fetcher/tmp/radinNFP-2.4.3-py3-none-any.whl.zip]
+[2024-04-27 08:30:52] INFO root fetch - processPackages [radinNFP]: Remove: archive file [/home/abi/fetcher/tmp/radinNFP-2.5-py3-none-any.whl.zip]
+[2024-04-27 08:30:52] INFO root fetch - main [MainThread]: End processing [radinNFP]: success
+[2024-04-27 08:30:52] INFO root fetch - processPackages [robotframework-rpycremote]: Remove: archive file [/home/abi/fetcher/tmp/robotframework_rpycremote-0.0.3.tar.gz]
+[2024-04-27 08:30:52] INFO root fetch - processPackages [robotframework-rpycremote]: Remove: archive file [/home/abi/fetcher/tmp/robotframework_rpycremote-0.0.4.tar.gz]
+[2024-04-27 08:30:52] INFO root fetch - main [MainThread]: End processing [robotframework-rpycremote]: success
+[2024-04-27 08:30:52] INFO root fetch - main [MainThread]: Store serial: [22956937]
