@@ -9404,3 +9404,24 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 07:55:35] INFO root fetch - processPackages [gai-lib]: Remove: archive file [/home/abi/fetcher/tmp/gai-lib-0.99.tar.gz]
 [2024-04-27 07:55:35] INFO root fetch - main [MainThread]: End processing [gai-lib]: success
 [2024-04-27 07:55:35] INFO root fetch - main [MainThread]: Store serial: [22956771]
+[2024-04-27 07:57:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956771]
+[2024-04-27 07:57:44] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 07:57:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cleverminer
+[2024-04-27 07:57:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bgpy-pkg
+[2024-04-27 07:57:44] INFO root fetch - processPackages [bgpy-pkg]: New version: [7.1.2] Old Version: [7.1.1]
+[2024-04-27 07:57:44] INFO root fetch - processPackages [bgpy-pkg]: Downloading https://files.pythonhosted.org/packages/2a/72/897a8129d6a0fcae45cc27dada28e0a99776377236ba2e7f252b9fd8cfa6/bgpy_pkg-7.1.1.tar.gz
+[2024-04-27 07:57:44] INFO root fetch - processPackages [cleverminer]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-27 07:57:44] INFO root fetch - processPackages [cleverminer]: Downloading https://files.pythonhosted.org/packages/f5/76/387638be76b11d79792694f6232bd66a5e34d469aab21226d26ef4443b50/cleverminer-1.0.8.tar.gz
+[2024-04-27 07:57:44] INFO root fetch - processPackages [bgpy-pkg]: Downloading https://files.pythonhosted.org/packages/ef/56/17ea26ca76911b8be009c1a3cc2f8475338d960811a21dd29721b02b0bf4/bgpy_pkg-7.1.2.tar.gz
+[2024-04-27 07:57:45] INFO root fetch - processPackages [cleverminer]: Downloading https://files.pythonhosted.org/packages/06/2b/2f577cbc40dc4f75c4c2107f4ff4dcb2da0b2ada1269424e1200da3edcbe/cleverminer-1.0.9.tar.gz
+[2024-04-27 07:57:45] INFO root fetch - processPackages [bgpy-pkg]: executing diffoscope
+[2024-04-27 07:57:45] INFO root fetch - processPackages [bgpy-pkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bgpy_pkg-7.1.1.tar.gz tmp/bgpy_pkg-7.1.2.tar.gz --markdown 20240427/b/bgpy-pkg/7.1.1-7.1.2/README.md --exclude *.pyd
+[2024-04-27 07:57:45] INFO root fetch - processPackages [cleverminer]: executing diffoscope
+[2024-04-27 07:57:45] INFO root fetch - processPackages [cleverminer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cleverminer-1.0.8.tar.gz tmp/cleverminer-1.0.9.tar.gz --markdown 20240427/c/cleverminer/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-27 07:57:45] INFO root fetch - processPackages [bgpy-pkg]: Remove: archive file [/home/abi/fetcher/tmp/bgpy_pkg-7.1.1.tar.gz]
+[2024-04-27 07:57:45] INFO root fetch - processPackages [bgpy-pkg]: Remove: archive file [/home/abi/fetcher/tmp/bgpy_pkg-7.1.2.tar.gz]
+[2024-04-27 07:57:45] INFO root fetch - main [MainThread]: End processing [bgpy-pkg]: success
+[2024-04-27 07:57:46] INFO root fetch - processPackages [cleverminer]: Remove: archive file [/home/abi/fetcher/tmp/cleverminer-1.0.8.tar.gz]
+[2024-04-27 07:57:46] INFO root fetch - processPackages [cleverminer]: Remove: archive file [/home/abi/fetcher/tmp/cleverminer-1.0.9.tar.gz]
+[2024-04-27 07:57:46] INFO root fetch - main [MainThread]: End processing [cleverminer]: success
+[2024-04-27 07:57:46] INFO root fetch - main [MainThread]: Store serial: [22956782]
