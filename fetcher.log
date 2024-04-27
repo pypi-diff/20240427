@@ -19045,3 +19045,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 20:15:56] INFO root fetch - processPackages [cdklabs.ecs-codedeploy]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.ecs-codedeploy-0.0.99.tar.gz]
 [2024-04-27 20:15:56] INFO root fetch - main [MainThread]: End processing [cdklabs.ecs-codedeploy]: success
 [2024-04-27 20:15:56] INFO root fetch - main [MainThread]: Store serial: [22961015]
+[2024-04-27 20:18:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961015]
+[2024-04-27 20:18:09] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-27 20:18:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdklabs.cdk-enterprise-iac
+[2024-04-27 20:18:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alamos
+[2024-04-27 20:18:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: synnax-freighter
+[2024-04-27 20:18:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: simo-sonos
+[2024-04-27 20:18:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: synnax
+[2024-04-27 20:18:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: smp
+[2024-04-27 20:18:09] INFO root fetch - processPackages [simo-sonos]: New version: [1.2.4] Old Version: [1.1.3]
+[2024-04-27 20:18:09] INFO root fetch - processPackages [synnax-freighter]: New version: [0.6.9] Old Version: [0.6.8]
+[2024-04-27 20:18:09] INFO root fetch - processPackages [alamos]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-27 20:18:09] INFO root fetch - processPackages [synnax]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-27 20:18:09] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-27 20:18:09] INFO root fetch - processPackages [simo-sonos]: Downloading https://files.pythonhosted.org/packages/e2/c4/d2024883abf562e36a9476ba9a7fbae2f5d00572c193db04dba9faa1dd07/simo-sonos-1.1.3.tar.gz
+[2024-04-27 20:18:09] INFO root fetch - processPackages [synnax-freighter]: Downloading https://files.pythonhosted.org/packages/47/1d/b44d0a666ad7dfde7a8635a95d6241671db501c8ed9f7dd576bdf7fe184e/synnax_freighter-0.6.8.tar.gz
+[2024-04-27 20:18:09] INFO root fetch - processPackages [smp]: New version: [1.0.0] Old Version: [0.3.4]
+[2024-04-27 20:18:09] INFO root fetch - processPackages [alamos]: Downloading https://files.pythonhosted.org/packages/c5/2b/b12c4308c7fb396e018ffbe6ec0f046170906ae98b188985b537619e0f55/alamos-0.3.8.tar.gz
+[2024-04-27 20:18:10] INFO root fetch - processPackages [synnax]: Downloading https://files.pythonhosted.org/packages/89/a1/f0d76d0706e47ba3dcdbf0fe8c7b2e90c98bd073d40a3c4c7c1c1025aab8/synnax-0.8.0.tar.gz
+[2024-04-27 20:18:10] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Downloading https://files.pythonhosted.org/packages/26/1b/2d98082d5a50de544ac5b0df408479fcedd8e3cbc7361e0cb0e9f362a0af/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz
+[2024-04-27 20:18:10] INFO root fetch - processPackages [smp]: Downloading https://files.pythonhosted.org/packages/ec/94/a942e6a4d62e7bf8227b0e326a5ec1b087723e73dadc7ccd04c86bbf6e53/smp-0.3.4.tar.gz
+[2024-04-27 20:18:10] INFO root fetch - processPackages [synnax-freighter]: Downloading https://files.pythonhosted.org/packages/97/99/8375d1635ab3481a144b8507f5f4be9c85b138a7ecc2c616808ded325e74/synnax_freighter-0.6.9.tar.gz
+[2024-04-27 20:18:10] INFO root fetch - processPackages [simo-sonos]: Downloading https://files.pythonhosted.org/packages/71/90/1799cd10dc280e773e70a33bd8be13546f0133090e4ae071bbeeb76eccc5/simo_sonos-1.2.4.tar.gz
+[2024-04-27 20:18:10] INFO root fetch - processPackages [synnax]: Downloading https://files.pythonhosted.org/packages/b3/bc/76e9b03b96c7ab72f4b39e5e03c396b86efd6fb650bedcff8a7118679e9b/synnax-0.9.0.tar.gz
+[2024-04-27 20:18:10] INFO root fetch - processPackages [alamos]: Downloading https://files.pythonhosted.org/packages/c1/08/cf40db715e810dc50be82dd822b41aefe7a4903f73ac57533c85bc63cf9d/alamos-0.3.9.tar.gz
+[2024-04-27 20:18:10] INFO root fetch - processPackages [synnax-freighter]: executing diffoscope
+[2024-04-27 20:18:10] INFO root fetch - processPackages [synnax-freighter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synnax_freighter-0.6.8.tar.gz tmp/synnax_freighter-0.6.9.tar.gz --markdown 20240427/s/synnax-freighter/0.6.8-0.6.9/README.md --exclude *.pyd
+[2024-04-27 20:18:10] INFO root fetch - processPackages [simo-sonos]: executing diffoscope
+[2024-04-27 20:18:10] INFO root fetch - processPackages [simo-sonos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simo-sonos-1.1.3.tar.gz tmp/simo_sonos-1.2.4.tar.gz --markdown 20240427/s/simo-sonos/1.1.3-1.2.4/README.md --exclude *.pyd
+[2024-04-27 20:18:10] INFO root fetch - processPackages [alamos]: executing diffoscope
+[2024-04-27 20:18:10] INFO root fetch - processPackages [alamos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alamos-0.3.8.tar.gz tmp/alamos-0.3.9.tar.gz --markdown 20240427/a/alamos/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-27 20:18:10] INFO root fetch - processPackages [synnax]: executing diffoscope
+[2024-04-27 20:18:10] INFO root fetch - processPackages [synnax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synnax-0.8.0.tar.gz tmp/synnax-0.9.0.tar.gz --markdown 20240427/s/synnax/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-27 20:18:10] INFO root fetch - processPackages [smp]: Downloading https://files.pythonhosted.org/packages/b2/f3/a65ff8b3b3e1eff5affd5e1a727c14e99255c4d2f3167ac1530e6b34966c/smp-1.0.0.tar.gz
+[2024-04-27 20:18:10] INFO root fetch - processPackages [smp]: executing diffoscope
+[2024-04-27 20:18:10] INFO root fetch - processPackages [smp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smp-0.3.4.tar.gz tmp/smp-1.0.0.tar.gz --markdown 20240427/s/smp/0.3.4-1.0.0/README.md --exclude *.pyd
+[2024-04-27 20:18:10] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Downloading https://files.pythonhosted.org/packages/68/b7/1bc76974269d07601c13aaa5489dbaf5bfced52da0839a380231163281b2/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz
+[2024-04-27 20:18:11] INFO root fetch - processPackages [synnax-freighter]: Remove: archive file [/home/abi/fetcher/tmp/synnax_freighter-0.6.8.tar.gz]
+[2024-04-27 20:18:11] INFO root fetch - processPackages [synnax-freighter]: Remove: archive file [/home/abi/fetcher/tmp/synnax_freighter-0.6.9.tar.gz]
+[2024-04-27 20:18:11] INFO root fetch - main [MainThread]: End processing [synnax-freighter]: success
+[2024-04-27 20:18:11] INFO root fetch - processPackages [simo-sonos]: Remove: archive file [/home/abi/fetcher/tmp/simo-sonos-1.1.3.tar.gz]
+[2024-04-27 20:18:11] INFO root fetch - processPackages [simo-sonos]: Remove: archive file [/home/abi/fetcher/tmp/simo_sonos-1.2.4.tar.gz]
+[2024-04-27 20:18:11] INFO root fetch - main [MainThread]: End processing [simo-sonos]: success
+[2024-04-27 20:18:11] INFO root fetch - processPackages [alamos]: Remove: archive file [/home/abi/fetcher/tmp/alamos-0.3.8.tar.gz]
+[2024-04-27 20:18:11] INFO root fetch - processPackages [alamos]: Remove: archive file [/home/abi/fetcher/tmp/alamos-0.3.9.tar.gz]
+[2024-04-27 20:18:11] INFO root fetch - main [MainThread]: End processing [alamos]: success
+[2024-04-27 20:18:11] INFO root fetch - processPackages [synnax]: Remove: archive file [/home/abi/fetcher/tmp/synnax-0.8.0.tar.gz]
+[2024-04-27 20:18:11] INFO root fetch - processPackages [synnax]: Remove: archive file [/home/abi/fetcher/tmp/synnax-0.9.0.tar.gz]
+[2024-04-27 20:18:11] INFO root fetch - main [MainThread]: End processing [synnax]: success
+[2024-04-27 20:18:11] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: executing diffoscope
+[2024-04-27 20:18:11] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz --markdown 20240427/c/cdklabs.cdk-enterprise-iac/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-27 20:18:11] INFO root fetch - processPackages [smp]: Remove: archive file [/home/abi/fetcher/tmp/smp-0.3.4.tar.gz]
+[2024-04-27 20:18:11] INFO root fetch - processPackages [smp]: Remove: archive file [/home/abi/fetcher/tmp/smp-1.0.0.tar.gz]
+[2024-04-27 20:18:11] INFO root fetch - main [MainThread]: End processing [smp]: success
+[2024-04-27 20:18:12] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz]
+[2024-04-27 20:18:12] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz]
+[2024-04-27 20:18:12] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
+[2024-04-27 20:18:12] INFO root fetch - main [MainThread]: Store serial: [22961033]
