@@ -9555,3 +9555,33 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 08:13:04] INFO root fetch - processPackages [byzerllm]: Remove: archive file [/home/abi/fetcher/tmp/byzerllm-0.1.9.tar.gz]
 [2024-04-27 08:13:04] INFO root fetch - main [MainThread]: End processing [byzerllm]: success
 [2024-04-27 08:13:04] INFO root fetch - main [MainThread]: Store serial: [22956832]
+[2024-04-27 08:15:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956832]
+[2024-04-27 08:15:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 08:15:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: omnata-plugin-runtime
+[2024-04-27 08:15:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk8s-awscdk-resolver
+[2024-04-27 08:15:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jeedomdaemon
+[2024-04-27 08:15:13] INFO root fetch - processPackages [jeedomdaemon]: New version: [0.7.4] Old Version: [0.7.3]
+[2024-04-27 08:15:13] INFO root fetch - processPackages [cdk8s-awscdk-resolver]: New version: [0.0.9] Old Version: [0.0.88]
+[2024-04-27 08:15:13] INFO root fetch - processPackages [omnata-plugin-runtime]: New version: [0.3.9a44] Old Version: [0.3.9a43]
+[2024-04-27 08:15:13] INFO root fetch - processPackages [jeedomdaemon]: Downloading https://files.pythonhosted.org/packages/60/ae/c4e3827bb0dd0158fc2948c46b99137957b10f8bbd320d571502b6940746/jeedomdaemon-0.7.3.tar.gz
+[2024-04-27 08:15:13] INFO root fetch - processPackages [omnata-plugin-runtime]: Downloading https://files.pythonhosted.org/packages/8e/11/abde4b4d82373bc42a84a5591bf31c6cca540ba9f13337491df615af0b6c/omnata_plugin_runtime-0.3.9a43.tar.gz
+[2024-04-27 08:15:13] INFO root fetch - processPackages [cdk8s-awscdk-resolver]: Downloading https://files.pythonhosted.org/packages/22/a1/5e64da59bd1053c4192abc541b99e1512087589ce7ec8a04cf1128cdf7d7/cdk8s-awscdk-resolver-0.0.88.tar.gz
+[2024-04-27 08:15:14] INFO root fetch - processPackages [omnata-plugin-runtime]: Downloading https://files.pythonhosted.org/packages/de/f5/326ad467bb560d9dc8d7cebfe2aed77d524aeaf8a8ee7c6107f202eb6d0d/omnata_plugin_runtime-0.3.9a44.tar.gz
+[2024-04-27 08:15:14] INFO root fetch - processPackages [jeedomdaemon]: Downloading https://files.pythonhosted.org/packages/57/dd/11529bd623a8f046bb41227f912d8f2863f15c953fe6e3e86317e623bede/jeedomdaemon-0.7.4.tar.gz
+[2024-04-27 08:15:14] INFO root fetch - processPackages [cdk8s-awscdk-resolver]: Downloading https://files.pythonhosted.org/packages/e4/ba/3b1af2b8b411cdb77e57e6b1d4e656a18d1c62c5fddbd831b369378f4fbd/cdk8s-awscdk-resolver-0.0.9.tar.gz
+[2024-04-27 08:15:14] INFO root fetch - processPackages [omnata-plugin-runtime]: executing diffoscope
+[2024-04-27 08:15:14] INFO root fetch - processPackages [omnata-plugin-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omnata_plugin_runtime-0.3.9a43.tar.gz tmp/omnata_plugin_runtime-0.3.9a44.tar.gz --markdown 20240427/o/omnata-plugin-runtime/0.3.9a43-0.3.9a44/README.md --exclude *.pyd
+[2024-04-27 08:15:14] INFO root fetch - processPackages [jeedomdaemon]: executing diffoscope
+[2024-04-27 08:15:14] INFO root fetch - processPackages [jeedomdaemon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jeedomdaemon-0.7.3.tar.gz tmp/jeedomdaemon-0.7.4.tar.gz --markdown 20240427/j/jeedomdaemon/0.7.3-0.7.4/README.md --exclude *.pyd
+[2024-04-27 08:15:14] INFO root fetch - processPackages [cdk8s-awscdk-resolver]: executing diffoscope
+[2024-04-27 08:15:14] INFO root fetch - processPackages [cdk8s-awscdk-resolver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-awscdk-resolver-0.0.88.tar.gz tmp/cdk8s-awscdk-resolver-0.0.9.tar.gz --markdown 20240427/c/cdk8s-awscdk-resolver/0.0.88-0.0.9/README.md --exclude *.pyd
+[2024-04-27 08:15:14] INFO root fetch - processPackages [omnata-plugin-runtime]: Remove: archive file [/home/abi/fetcher/tmp/omnata_plugin_runtime-0.3.9a43.tar.gz]
+[2024-04-27 08:15:14] INFO root fetch - processPackages [omnata-plugin-runtime]: Remove: archive file [/home/abi/fetcher/tmp/omnata_plugin_runtime-0.3.9a44.tar.gz]
+[2024-04-27 08:15:14] INFO root fetch - main [MainThread]: End processing [omnata-plugin-runtime]: success
+[2024-04-27 08:15:14] INFO root fetch - processPackages [jeedomdaemon]: Remove: archive file [/home/abi/fetcher/tmp/jeedomdaemon-0.7.3.tar.gz]
+[2024-04-27 08:15:14] INFO root fetch - processPackages [jeedomdaemon]: Remove: archive file [/home/abi/fetcher/tmp/jeedomdaemon-0.7.4.tar.gz]
+[2024-04-27 08:15:14] INFO root fetch - main [MainThread]: End processing [jeedomdaemon]: success
+[2024-04-27 08:15:14] INFO root fetch - processPackages [cdk8s-awscdk-resolver]: Remove: archive file [/home/abi/fetcher/tmp/cdk8s-awscdk-resolver-0.0.88.tar.gz]
+[2024-04-27 08:15:14] INFO root fetch - processPackages [cdk8s-awscdk-resolver]: Remove: archive file [/home/abi/fetcher/tmp/cdk8s-awscdk-resolver-0.0.9.tar.gz]
+[2024-04-27 08:15:14] INFO root fetch - main [MainThread]: End processing [cdk8s-awscdk-resolver]: success
+[2024-04-27 08:15:14] INFO root fetch - main [MainThread]: Store serial: [22956841]
