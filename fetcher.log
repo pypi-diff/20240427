@@ -2765,3 +2765,17 @@ EOFError: EOF read where object expected
 [2024-04-27 02:39:23] WARNING root fetch - processPackages [pyaair]: Skipping, unable to determine old version
 [2024-04-27 02:39:23] INFO root fetch - main [MainThread]: End processing [pyaair] error
 [2024-04-27 02:39:23] INFO root fetch - main [MainThread]: Store serial: [22954460]
+[2024-04-27 02:41:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22954460]
+[2024-04-27 02:41:32] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-27 02:43:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22954460]
+[2024-04-27 02:43:38] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 02:43:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shared-helpers
+[2024-04-27 02:43:38] INFO root fetch - processPackages [shared-helpers]: New version: [0.0.4] Old Version: [0.0.2]
+[2024-04-27 02:43:39] INFO root fetch - processPackages [shared-helpers]: Downloading https://files.pythonhosted.org/packages/c0/eb/0fed15c2c0ebd89bef7599f415b7ea6bb92dfcc1362746c7ece69882758e/shared_helpers-0.0.2.tar.gz
+[2024-04-27 02:43:39] INFO root fetch - processPackages [shared-helpers]: Downloading https://files.pythonhosted.org/packages/ec/42/5b8f23ab99e5b956b79d54491e7c506ad9956fc9cc5aaec1c9714ad5b851/shared_helpers-0.0.4.tar.gz
+[2024-04-27 02:43:39] INFO root fetch - processPackages [shared-helpers]: executing diffoscope
+[2024-04-27 02:43:39] INFO root fetch - processPackages [shared-helpers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shared_helpers-0.0.2.tar.gz tmp/shared_helpers-0.0.4.tar.gz --markdown 20240427/s/shared-helpers/0.0.2-0.0.4/README.md --exclude *.pyd
+[2024-04-27 02:43:39] INFO root fetch - processPackages [shared-helpers]: Remove: archive file [/home/abi/fetcher/tmp/shared_helpers-0.0.2.tar.gz]
+[2024-04-27 02:43:39] INFO root fetch - processPackages [shared-helpers]: Remove: archive file [/home/abi/fetcher/tmp/shared_helpers-0.0.4.tar.gz]
+[2024-04-27 02:43:39] INFO root fetch - main [MainThread]: End processing [shared-helpers]: success
+[2024-04-27 02:43:39] INFO root fetch - main [MainThread]: Store serial: [22954463]
