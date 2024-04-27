@@ -13106,3 +13106,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 13:37:01] INFO root fetch - processPackages [nijtaio]: Remove: archive file [/home/abi/fetcher/tmp/nijtaio-1.1.9.tar.gz]
 [2024-04-27 13:37:01] INFO root fetch - main [MainThread]: End processing [nijtaio]: success
 [2024-04-27 13:37:01] INFO root fetch - main [MainThread]: Store serial: [22958355]
+[2024-04-27 13:39:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958355]
+[2024-04-27 13:39:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 13:39:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: apache-beam
+[2024-04-27 13:39:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xbrl-filings-api
+[2024-04-27 13:39:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dash-spread-grid
+[2024-04-27 13:39:09] INFO root fetch - processPackages [dash-spread-grid]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 13:39:10] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/9f/39/3477f65f22676264317bcb1d617b220ddcc8d09f85a7eb7904d8c2676dae/dash_spread_grid-0.0.8.tar.gz
+[2024-04-27 13:39:10] INFO root fetch - processPackages [xbrl-filings-api]: New version: [1.0a1] Old Version: [1.0]
+[2024-04-27 13:39:10] INFO root fetch - processPackages [apache-beam]: New version: [2.9.0] Old Version: [2.8.0]
+[2024-04-27 13:39:10] INFO root fetch - processPackages [xbrl-filings-api]: Downloading https://files.pythonhosted.org/packages/c0/79/ff1e4dd662c44a9aca564b4197927fc8df3fe3aff94c50fcdf4b1388a8fb/xbrl_filings_api-1.0.tar.gz
+[2024-04-27 13:39:10] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/37/f7/3991c1c5cd26d592773df3381df4e17ae14f51d47af4fd52b7419949494b/dash_spread_grid-0.0.9.tar.gz
+[2024-04-27 13:39:10] INFO root fetch - processPackages [apache-beam]: Downloading https://files.pythonhosted.org/packages/81/ea/11cec69a659af024f7f37e928ff533ad5e30b7a519d9982e2bb5b81fcb52/apache-beam-2.8.0.zip
+[2024-04-27 13:39:10] INFO root fetch - processPackages [dash-spread-grid]: executing diffoscope
+[2024-04-27 13:39:10] INFO root fetch - processPackages [dash-spread-grid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_spread_grid-0.0.8.tar.gz tmp/dash_spread_grid-0.0.9.tar.gz --markdown 20240427/d/dash-spread-grid/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 13:39:10] INFO root fetch - processPackages [xbrl-filings-api]: Downloading https://files.pythonhosted.org/packages/52/18/a98cfc5d35b17e493865824ebe6d775456f259be1c1f735801a9330181f3/xbrl_filings_api-1.0a1.tar.gz
+[2024-04-27 13:39:10] INFO root fetch - processPackages [xbrl-filings-api]: executing diffoscope
+[2024-04-27 13:39:10] INFO root fetch - processPackages [xbrl-filings-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xbrl_filings_api-1.0.tar.gz tmp/xbrl_filings_api-1.0a1.tar.gz --markdown 20240427/x/xbrl-filings-api/1.0-1.0a1/README.md --exclude *.pyd
+[2024-04-27 13:39:10] INFO root fetch - processPackages [apache-beam]: Downloading https://files.pythonhosted.org/packages/02/8f/a9cd498e0e576c8537e65c4e3aacbffe4b3dc9a189287cd8a91c93784308/apache-beam-2.9.0.zip
+[2024-04-27 13:39:11] INFO root fetch - processPackages [apache-beam]: executing diffoscope
+[2024-04-27 13:39:11] INFO root fetch - processPackages [apache-beam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apache-beam-2.8.0.zip tmp/apache-beam-2.9.0.zip --markdown 20240427/a/apache-beam/2.8.0-2.9.0/README.md --exclude *.pyd
+[2024-04-27 13:39:11] INFO root fetch - processPackages [xbrl-filings-api]: Remove: archive file [/home/abi/fetcher/tmp/xbrl_filings_api-1.0.tar.gz]
+[2024-04-27 13:39:11] INFO root fetch - processPackages [xbrl-filings-api]: Remove: archive file [/home/abi/fetcher/tmp/xbrl_filings_api-1.0a1.tar.gz]
+[2024-04-27 13:39:11] INFO root fetch - main [MainThread]: End processing [xbrl-filings-api]: success
+[2024-04-27 13:39:11] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.8.tar.gz]
+[2024-04-27 13:39:11] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.9.tar.gz]
+[2024-04-27 13:39:11] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
+[2024-04-27 13:39:14] INFO root fetch - processPackages [apache-beam]: Remove: archive file [/home/abi/fetcher/tmp/apache-beam-2.8.0.zip]
+[2024-04-27 13:39:14] INFO root fetch - processPackages [apache-beam]: Remove: archive file [/home/abi/fetcher/tmp/apache-beam-2.9.0.zip]
+[2024-04-27 13:39:14] INFO root fetch - main [MainThread]: End processing [apache-beam]: success
+[2024-04-27 13:39:14] INFO root fetch - main [MainThread]: Store serial: [22958376]
