@@ -2779,3 +2779,24 @@ EOFError: EOF read where object expected
 [2024-04-27 02:43:39] INFO root fetch - processPackages [shared-helpers]: Remove: archive file [/home/abi/fetcher/tmp/shared_helpers-0.0.4.tar.gz]
 [2024-04-27 02:43:39] INFO root fetch - main [MainThread]: End processing [shared-helpers]: success
 [2024-04-27 02:43:39] INFO root fetch - main [MainThread]: Store serial: [22954463]
+[2024-04-27 02:45:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22954463]
+[2024-04-27 02:45:48] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 02:45:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tfds-nightly
+[2024-04-27 02:45:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pygpt-net
+[2024-04-27 02:45:48] INFO root fetch - processPackages [pygpt-net]: New version: [2.1.9] Old Version: [2.1.8]
+[2024-04-27 02:45:48] INFO root fetch - processPackages [tfds-nightly]: New version: [4.9.4.dev202404260044] Old Version: [4.9.4.dev202404250044]
+[2024-04-27 02:45:48] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/c6/e2/b861c7f92e2fa466c8ebfcf2fdab882e10aa730f5289d697717b304ea9b4/tfds-nightly-4.9.4.dev202404250044.tar.gz
+[2024-04-27 02:45:48] INFO root fetch - processPackages [pygpt-net]: Downloading https://files.pythonhosted.org/packages/a5/de/e40709b6067cd6a2fe2ce05bb561b0d9d4c91f6cd91f7b3c4bd151d18a9b/pygpt_net-2.1.8.tar.gz
+[2024-04-27 02:45:48] INFO root fetch - processPackages [pygpt-net]: Downloading https://files.pythonhosted.org/packages/b1/0c/70ca3376ad87325507daa188a0b208ac8aba51d8f326cbde31d57835c897/pygpt_net-2.1.9.tar.gz
+[2024-04-27 02:45:48] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/a1/99/a460d5d2804942e1d46ca36ac9656e556c9c8d39501ede54d2dcf833d474/tfds-nightly-4.9.4.dev202404260044.tar.gz
+[2024-04-27 02:45:48] INFO root fetch - processPackages [pygpt-net]: executing diffoscope
+[2024-04-27 02:45:48] INFO root fetch - processPackages [pygpt-net]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygpt_net-2.1.8.tar.gz tmp/pygpt_net-2.1.9.tar.gz --markdown 20240427/p/pygpt-net/2.1.8-2.1.9/README.md --exclude *.pyd
+[2024-04-27 02:45:49] INFO root fetch - processPackages [tfds-nightly]: executing diffoscope
+[2024-04-27 02:45:49] INFO root fetch - processPackages [tfds-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfds-nightly-4.9.4.dev202404250044.tar.gz tmp/tfds-nightly-4.9.4.dev202404260044.tar.gz --markdown 20240427/t/tfds-nightly/4.9.4.dev202404250044-4.9.4.dev202404260044/README.md --exclude *.pyd
+[2024-04-27 02:45:51] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.1.8.tar.gz]
+[2024-04-27 02:45:51] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.1.9.tar.gz]
+[2024-04-27 02:45:51] INFO root fetch - main [MainThread]: End processing [pygpt-net]: success
+[2024-04-27 02:45:58] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.4.dev202404250044.tar.gz]
+[2024-04-27 02:45:58] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.4.dev202404260044.tar.gz]
+[2024-04-27 02:45:58] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
+[2024-04-27 02:45:58] INFO root fetch - main [MainThread]: Store serial: [22954470]
