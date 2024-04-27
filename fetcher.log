@@ -16424,3 +16424,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 17:14:57] INFO root fetch - processPackages [tesserocr]: Remove: archive file [/home/abi/fetcher/tmp/tesserocr-2.7.0-cp311-cp311-manylinux_2_28_aarch64.whl.zip]
 [2024-04-27 17:14:57] INFO root fetch - main [MainThread]: End processing [tesserocr]: success
 [2024-04-27 17:14:57] INFO root fetch - main [MainThread]: Store serial: [22959741]
+[2024-04-27 17:17:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959741]
+[2024-04-27 17:17:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 17:17:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: blurry-cli
+[2024-04-27 17:17:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bashinpy
+[2024-04-27 17:17:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ziafont
+[2024-04-27 17:17:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mckinseysolvegame
+[2024-04-27 17:17:06] INFO root fetch - processPackages [blurry-cli]: New version: [0.7.2] Old Version: [0.7.1]
+[2024-04-27 17:17:06] INFO root fetch - processPackages [mckinseysolvegame]: New version: [0.8.4] Old Version: [0.8.3]
+[2024-04-27 17:17:06] INFO root fetch - processPackages [blurry-cli]: Downloading https://files.pythonhosted.org/packages/27/c4/ac514adbe0c0a869370f67323e459e06527152ca1c256dac833167ce606b/blurry_cli-0.7.1.tar.gz
+[2024-04-27 17:17:06] INFO root fetch - processPackages [mckinseysolvegame]: Downloading https://files.pythonhosted.org/packages/ad/20/608c778213fd68419b2be03431155a80acf95c3836b1cb757372cdb0e14a/mckinseysolvegame-0.8.3.tar.gz
+[2024-04-27 17:17:06] INFO root fetch - processPackages [bashinpy]: New version: [0.3] Old Version: [0.2]
+[2024-04-27 17:17:06] INFO root fetch - processPackages [ziafont]: New version: [0.8] Old Version: [0.7]
+[2024-04-27 17:17:06] INFO root fetch - processPackages [bashinpy]: Downloading https://files.pythonhosted.org/packages/88/88/7a320829bcea89268444426d97a6896a414f687cc6f0e6e2187b154c1458/bashinpy-0.2.tar.gz
+[2024-04-27 17:17:06] INFO root fetch - processPackages [ziafont]: Downloading https://files.pythonhosted.org/packages/f7/07/351cbcbfa1ca7d92489c91580a6c9cf7fd7ab113e2ae412a09ffe8f65911/ziafont-0.7.tar.gz
+[2024-04-27 17:17:06] INFO root fetch - processPackages [blurry-cli]: Downloading https://files.pythonhosted.org/packages/c0/fe/27074ea5244e2cf2384d674d0aed08f4b5582d9ed4f5ed4239681f866b42/blurry_cli-0.7.2-py3-none-any.whl
+[2024-04-27 17:17:06] INFO root fetch - processPackages [blurry-cli]: executing diffoscope
+[2024-04-27 17:17:06] INFO root fetch - processPackages [blurry-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blurry_cli-0.7.1.tar.gz tmp/blurry_cli-0.7.2-py3-none-any.whl.zip --markdown 20240427/b/blurry-cli/0.7.1-0.7.2/README.md --exclude *.pyd
+[2024-04-27 17:17:06] INFO root fetch - processPackages [mckinseysolvegame]: Downloading https://files.pythonhosted.org/packages/3e/21/1663fc977fb84e124977c543de958f3eb92207e9f9afac99b59e9c2a9e4e/mckinseysolvegame-0.8.4.tar.gz
+[2024-04-27 17:17:07] INFO root fetch - processPackages [mckinseysolvegame]: executing diffoscope
+[2024-04-27 17:17:07] INFO root fetch - processPackages [mckinseysolvegame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mckinseysolvegame-0.8.3.tar.gz tmp/mckinseysolvegame-0.8.4.tar.gz --markdown 20240427/m/mckinseysolvegame/0.8.3-0.8.4/README.md --exclude *.pyd
+[2024-04-27 17:17:07] INFO root fetch - processPackages [bashinpy]: Downloading https://files.pythonhosted.org/packages/40/19/7592bd524c7b3854a051e7f0e9b5d0b0157f86777ee0cadb7906c87e742a/bashinpy-0.3.tar.gz
+[2024-04-27 17:17:07] INFO root fetch - processPackages [bashinpy]: executing diffoscope
+[2024-04-27 17:17:07] INFO root fetch - processPackages [bashinpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bashinpy-0.2.tar.gz tmp/bashinpy-0.3.tar.gz --markdown 20240427/b/bashinpy/0.2-0.3/README.md --exclude *.pyd
+[2024-04-27 17:17:07] INFO root fetch - processPackages [ziafont]: Downloading https://files.pythonhosted.org/packages/af/ce/5e1894c06cdb0dc18603fb61a10b20619359c9d16509e76bc51f93594983/ziafont-0.8.tar.gz
+[2024-04-27 17:17:07] INFO root fetch - processPackages [ziafont]: executing diffoscope
+[2024-04-27 17:17:07] INFO root fetch - processPackages [ziafont]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ziafont-0.7.tar.gz tmp/ziafont-0.8.tar.gz --markdown 20240427/z/ziafont/0.7-0.8/README.md --exclude *.pyd
+[2024-04-27 17:17:07] INFO root fetch - processPackages [blurry-cli]: Remove: archive file [/home/abi/fetcher/tmp/blurry_cli-0.7.1.tar.gz]
+[2024-04-27 17:17:07] INFO root fetch - processPackages [blurry-cli]: Remove: archive file [/home/abi/fetcher/tmp/blurry_cli-0.7.2-py3-none-any.whl.zip]
+[2024-04-27 17:17:07] INFO root fetch - main [MainThread]: End processing [blurry-cli]: success
+[2024-04-27 17:17:07] INFO root fetch - processPackages [bashinpy]: Remove: archive file [/home/abi/fetcher/tmp/bashinpy-0.2.tar.gz]
+[2024-04-27 17:17:07] INFO root fetch - processPackages [bashinpy]: Remove: archive file [/home/abi/fetcher/tmp/bashinpy-0.3.tar.gz]
+[2024-04-27 17:17:07] INFO root fetch - main [MainThread]: End processing [bashinpy]: success
+[2024-04-27 17:17:07] INFO root fetch - processPackages [mckinseysolvegame]: Remove: archive file [/home/abi/fetcher/tmp/mckinseysolvegame-0.8.3.tar.gz]
+[2024-04-27 17:17:07] INFO root fetch - processPackages [mckinseysolvegame]: Remove: archive file [/home/abi/fetcher/tmp/mckinseysolvegame-0.8.4.tar.gz]
+[2024-04-27 17:17:07] INFO root fetch - main [MainThread]: End processing [mckinseysolvegame]: success
+[2024-04-27 17:17:08] INFO root fetch - processPackages [ziafont]: Remove: archive file [/home/abi/fetcher/tmp/ziafont-0.7.tar.gz]
+[2024-04-27 17:17:08] INFO root fetch - processPackages [ziafont]: Remove: archive file [/home/abi/fetcher/tmp/ziafont-0.8.tar.gz]
+[2024-04-27 17:17:08] INFO root fetch - main [MainThread]: End processing [ziafont]: success
+[2024-04-27 17:17:08] INFO root fetch - main [MainThread]: Store serial: [22959759]
