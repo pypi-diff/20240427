@@ -7602,3 +7602,54 @@ EOFError: EOF read where object expected
 [2024-04-27 05:19:04] INFO root fetch - processPackages [xm-slurm]: Remove: archive file [/home/abi/fetcher/tmp/xm_slurm-0.2.1-py3-none-any.whl.zip]
 [2024-04-27 05:19:04] INFO root fetch - main [MainThread]: End processing [xm-slurm]: success
 [2024-04-27 05:19:04] INFO root fetch - main [MainThread]: Store serial: [22956201]
+[2024-04-27 05:21:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956201]
+[2024-04-27 05:21:14] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-27 05:21:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dbmaster
+[2024-04-27 05:21:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: predibase-api
+[2024-04-27 05:21:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: predibase
+[2024-04-27 05:21:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yggdrasil-mc
+[2024-04-27 05:21:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: updrytwist-UpDryTwist
+[2024-04-27 05:21:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: keras-nightly
+[2024-04-27 05:21:14] INFO root fetch - processPackages [predibase-api]: New version: [2024.4.8] Old Version: [2024.4.7]
+[2024-04-27 05:21:14] INFO root fetch - processPackages [predibase]: New version: [2024.4.8] Old Version: [2024.4.7]
+[2024-04-27 05:21:14] INFO root fetch - processPackages [predibase-api]: Downloading https://files.pythonhosted.org/packages/12/73/1e8ca9686d6fdbd41b63304d8a69affc8a09b91134e599f0ab3a73fdfc20/predibase-api-2024.4.7.tar.gz
+[2024-04-27 05:21:14] INFO root fetch - processPackages [keras-nightly]: New version: [3.3.3.dev2024042703] Old Version: [3.3.2.dev2024042503]
+[2024-04-27 05:21:14] INFO root fetch - processPackages [updrytwist-UpDryTwist]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 05:21:14] INFO root fetch - processPackages [yggdrasil-mc]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-04-27 05:21:14] INFO root fetch - processPackages [predibase]: Downloading https://files.pythonhosted.org/packages/aa/c9/397c7ccd97273320d2617aab083c03247a5a554b344cabb4fd5ca9fd873d/predibase-2024.4.7.tar.gz
+[2024-04-27 05:21:14] WARNING root fetch - processPackages [dbmaster]: Skipping, unable to determine old version
+[2024-04-27 05:21:14] INFO root fetch - main [MainThread]: End processing [dbmaster] error
+[2024-04-27 05:21:14] INFO root fetch - processPackages [keras-nightly]: Downloading https://files.pythonhosted.org/packages/12/4c/8b31e7643dfcdac32b5d55af1c2c2be990bca351ff5084f8fef42d1bd95f/keras_nightly-3.3.2.dev2024042503.tar.gz
+[2024-04-27 05:21:14] INFO root fetch - processPackages [predibase-api]: Downloading https://files.pythonhosted.org/packages/50/0a/2bbc4d934413ba88af00e4955f22d28e77237cdb9ae1ed22a04d9c1075a2/predibase-api-2024.4.8.tar.gz
+[2024-04-27 05:21:15] INFO root fetch - processPackages [predibase]: Downloading https://files.pythonhosted.org/packages/57/81/d2f1533a2c021c901fa45981d33807f0cda149030b94ba7b2a72fa3428af/predibase-2024.4.8.tar.gz
+[2024-04-27 05:21:15] INFO root fetch - processPackages [yggdrasil-mc]: Downloading https://files.pythonhosted.org/packages/b6/d9/5467aa2a83e0435b71ba2cedb5aab6776cc75642d9e8a7292d24b6e6644a/yggdrasil_mc-0.2.3.tar.gz
+[2024-04-27 05:21:15] INFO root fetch - processPackages [updrytwist-UpDryTwist]: Downloading https://files.pythonhosted.org/packages/1f/b5/eb031965b3b736a189906b7bf4ac2fa3721a547ed6cde73cf721ca951978/updrytwist-UpDryTwist-0.0.8.tar.gz
+[2024-04-27 05:21:15] INFO root fetch - processPackages [predibase-api]: executing diffoscope
+[2024-04-27 05:21:15] INFO root fetch - processPackages [predibase-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/predibase-api-2024.4.7.tar.gz tmp/predibase-api-2024.4.8.tar.gz --markdown 20240427/p/predibase-api/2024.4.7-2024.4.8/README.md --exclude *.pyd
+[2024-04-27 05:21:15] INFO root fetch - processPackages [predibase]: executing diffoscope
+[2024-04-27 05:21:15] INFO root fetch - processPackages [predibase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/predibase-2024.4.7.tar.gz tmp/predibase-2024.4.8.tar.gz --markdown 20240427/p/predibase/2024.4.7-2024.4.8/README.md --exclude *.pyd
+[2024-04-27 05:21:15] INFO root fetch - processPackages [yggdrasil-mc]: Downloading https://files.pythonhosted.org/packages/f4/5d/cdfb24fc9a9752e2d550d2b40ef71b9362e78731c34e3c210813744abd17/yggdrasil_mc-0.2.4.tar.gz
+[2024-04-27 05:21:15] INFO root fetch - processPackages [keras-nightly]: Downloading https://files.pythonhosted.org/packages/65/99/634fc6d3dd818531b50788454ca108912451e13b2c98f9b54aac5e1e257b/keras_nightly-3.3.3.dev2024042703.tar.gz
+[2024-04-27 05:21:15] INFO root fetch - processPackages [yggdrasil-mc]: executing diffoscope
+[2024-04-27 05:21:15] INFO root fetch - processPackages [yggdrasil-mc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yggdrasil_mc-0.2.3.tar.gz tmp/yggdrasil_mc-0.2.4.tar.gz --markdown 20240427/y/yggdrasil-mc/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-04-27 05:21:15] INFO root fetch - processPackages [updrytwist-UpDryTwist]: Downloading https://files.pythonhosted.org/packages/c9/29/eb5c8bfc3736233400efa2211b7a2a87a43398ed29ccc544e8ed3dbe5be4/updrytwist-UpDryTwist-0.0.9.tar.gz
+[2024-04-27 05:21:15] INFO root fetch - processPackages [updrytwist-UpDryTwist]: executing diffoscope
+[2024-04-27 05:21:15] INFO root fetch - processPackages [updrytwist-UpDryTwist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/updrytwist-UpDryTwist-0.0.8.tar.gz tmp/updrytwist-UpDryTwist-0.0.9.tar.gz --markdown 20240427/u/updrytwist-UpDryTwist/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 05:21:15] INFO root fetch - processPackages [predibase-api]: Remove: archive file [/home/abi/fetcher/tmp/predibase-api-2024.4.7.tar.gz]
+[2024-04-27 05:21:15] INFO root fetch - processPackages [predibase-api]: Remove: archive file [/home/abi/fetcher/tmp/predibase-api-2024.4.8.tar.gz]
+[2024-04-27 05:21:15] INFO root fetch - main [MainThread]: End processing [predibase-api]: success
+[2024-04-27 05:21:15] INFO root fetch - processPackages [keras-nightly]: executing diffoscope
+[2024-04-27 05:21:15] INFO root fetch - processPackages [keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_nightly-3.3.2.dev2024042503.tar.gz tmp/keras_nightly-3.3.3.dev2024042703.tar.gz --markdown 20240427/k/keras-nightly/3.3.2.dev2024042503-3.3.3.dev2024042703/README.md --exclude *.pyd
+[2024-04-27 05:21:16] INFO root fetch - processPackages [predibase]: Remove: archive file [/home/abi/fetcher/tmp/predibase-2024.4.7.tar.gz]
+[2024-04-27 05:21:16] INFO root fetch - processPackages [predibase]: Remove: archive file [/home/abi/fetcher/tmp/predibase-2024.4.8.tar.gz]
+[2024-04-27 05:21:16] INFO root fetch - main [MainThread]: End processing [predibase]: success
+[2024-04-27 05:21:16] INFO root fetch - processPackages [yggdrasil-mc]: Remove: archive file [/home/abi/fetcher/tmp/yggdrasil_mc-0.2.3.tar.gz]
+[2024-04-27 05:21:16] INFO root fetch - processPackages [yggdrasil-mc]: Remove: archive file [/home/abi/fetcher/tmp/yggdrasil_mc-0.2.4.tar.gz]
+[2024-04-27 05:21:16] INFO root fetch - main [MainThread]: End processing [yggdrasil-mc]: success
+[2024-04-27 05:21:16] INFO root fetch - processPackages [updrytwist-UpDryTwist]: Remove: archive file [/home/abi/fetcher/tmp/updrytwist-UpDryTwist-0.0.8.tar.gz]
+[2024-04-27 05:21:16] INFO root fetch - processPackages [updrytwist-UpDryTwist]: Remove: archive file [/home/abi/fetcher/tmp/updrytwist-UpDryTwist-0.0.9.tar.gz]
+[2024-04-27 05:21:16] INFO root fetch - main [MainThread]: End processing [updrytwist-UpDryTwist]: success
+[2024-04-27 05:21:18] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_nightly-3.3.2.dev2024042503.tar.gz]
+[2024-04-27 05:21:18] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_nightly-3.3.3.dev2024042703.tar.gz]
+[2024-04-27 05:21:18] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
+[2024-04-27 05:21:18] INFO root fetch - main [MainThread]: Store serial: [22956218]
