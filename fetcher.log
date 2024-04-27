@@ -10821,3 +10821,30 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 10:17:40] INFO root fetch - processPackages [adios4dolfinx]: Remove: archive file [/home/abi/fetcher/tmp/adios4dolfinx-0.8.1.tar.gz]
 [2024-04-27 10:17:40] INFO root fetch - main [MainThread]: End processing [adios4dolfinx]: success
 [2024-04-27 10:17:40] INFO root fetch - main [MainThread]: Store serial: [22957405]
+[2024-04-27 10:19:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957405]
+[2024-04-27 10:19:49] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 10:19:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flatpack
+[2024-04-27 10:19:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: soundhub
+[2024-04-27 10:19:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ncmlistdownloader
+[2024-04-27 10:19:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: agent_path
+[2024-04-27 10:19:49] INFO root fetch - processPackages [ncmlistdownloader]: New version: [1.0.3.240426] Old Version: [1.0.2.240426]
+[2024-04-27 10:19:49] INFO root fetch - processPackages [flatpack]: New version: [3.3.9] Old Version: [3.3.8]
+[2024-04-27 10:19:50] INFO root fetch - processPackages [ncmlistdownloader]: Downloading https://files.pythonhosted.org/packages/0f/c0/7659274247224a624b30c5edf9ab3094a3ea1c71e6ca49d476a8dc53b8b2/ncmlistdownloader-1.0.2.240426.tar.gz
+[2024-04-27 10:19:50] WARNING root fetch - processPackages [soundhub]: Skipping, unable to determine old version
+[2024-04-27 10:19:50] INFO root fetch - main [MainThread]: End processing [soundhub] error
+[2024-04-27 10:19:50] WARNING root fetch - processPackages [agent_path]: Skipping, unable to determine old version
+[2024-04-27 10:19:50] INFO root fetch - main [MainThread]: End processing [agent_path] error
+[2024-04-27 10:19:50] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/42/48/84e949164975b341645163f536ee4ca8329c4e3dfa6d143c2806a0849a54/flatpack-3.3.8.tar.gz
+[2024-04-27 10:19:50] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/11/54/065825e8640b062c83c07c97d8dea514db8a5c0ea3c272834b88c568d82e/flatpack-3.3.9.tar.gz
+[2024-04-27 10:19:50] INFO root fetch - processPackages [ncmlistdownloader]: Downloading https://files.pythonhosted.org/packages/5b/f5/2aee52dcf268673b1729de9248357cb9c939b408aec38e459522c7b63757/ncmlistdownloader-1.0.3.240426.tar.gz
+[2024-04-27 10:19:50] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-04-27 10:19:50] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.3.8.tar.gz tmp/flatpack-3.3.9.tar.gz --markdown 20240427/f/flatpack/3.3.8-3.3.9/README.md --exclude *.pyd
+[2024-04-27 10:19:50] INFO root fetch - processPackages [ncmlistdownloader]: executing diffoscope
+[2024-04-27 10:19:50] INFO root fetch - processPackages [ncmlistdownloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ncmlistdownloader-1.0.2.240426.tar.gz tmp/ncmlistdownloader-1.0.3.240426.tar.gz --markdown 20240427/n/ncmlistdownloader/1.0.2.240426-1.0.3.240426/README.md --exclude *.pyd
+[2024-04-27 10:19:51] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.8.tar.gz]
+[2024-04-27 10:19:51] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.9.tar.gz]
+[2024-04-27 10:19:51] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-04-27 10:19:51] INFO root fetch - processPackages [ncmlistdownloader]: Remove: archive file [/home/abi/fetcher/tmp/ncmlistdownloader-1.0.2.240426.tar.gz]
+[2024-04-27 10:19:51] INFO root fetch - processPackages [ncmlistdownloader]: Remove: archive file [/home/abi/fetcher/tmp/ncmlistdownloader-1.0.3.240426.tar.gz]
+[2024-04-27 10:19:51] INFO root fetch - main [MainThread]: End processing [ncmlistdownloader]: success
+[2024-04-27 10:19:51] INFO root fetch - main [MainThread]: Store serial: [22957419]
