@@ -9642,3 +9642,15 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 08:17:33] INFO root fetch - processPackages [fake-bpy-module]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module-20240426.tar.gz]
 [2024-04-27 08:17:33] INFO root fetch - main [MainThread]: End processing [fake-bpy-module]: success
 [2024-04-27 08:17:33] INFO root fetch - main [MainThread]: Store serial: [22956857]
+[2024-04-27 08:19:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956857]
+[2024-04-27 08:19:58] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 08:19:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nestipy-dynamic-module
+[2024-04-27 08:19:58] INFO root fetch - processPackages [nestipy-dynamic-module]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-27 08:19:58] INFO root fetch - processPackages [nestipy-dynamic-module]: Downloading https://files.pythonhosted.org/packages/96/97/77f88847360517298331f12d611069bd4246a4e1c1b1c67ee7f754ff15ad/nestipy_dynamic_module-0.1.3.tar.gz
+[2024-04-27 08:19:59] INFO root fetch - processPackages [nestipy-dynamic-module]: Downloading https://files.pythonhosted.org/packages/ae/cf/a311de95231f28cd7aafdf368f1eef259e2134d037db02f360a1a97797f1/nestipy_dynamic_module-0.1.4.tar.gz
+[2024-04-27 08:19:59] INFO root fetch - processPackages [nestipy-dynamic-module]: executing diffoscope
+[2024-04-27 08:19:59] INFO root fetch - processPackages [nestipy-dynamic-module]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nestipy_dynamic_module-0.1.3.tar.gz tmp/nestipy_dynamic_module-0.1.4.tar.gz --markdown 20240427/n/nestipy-dynamic-module/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-27 08:20:00] INFO root fetch - processPackages [nestipy-dynamic-module]: Remove: archive file [/home/abi/fetcher/tmp/nestipy_dynamic_module-0.1.3.tar.gz]
+[2024-04-27 08:20:00] INFO root fetch - processPackages [nestipy-dynamic-module]: Remove: archive file [/home/abi/fetcher/tmp/nestipy_dynamic_module-0.1.4.tar.gz]
+[2024-04-27 08:20:00] INFO root fetch - main [MainThread]: End processing [nestipy-dynamic-module]: success
+[2024-04-27 08:20:00] INFO root fetch - main [MainThread]: Store serial: [22956864]
