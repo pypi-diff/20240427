@@ -12027,3 +12027,15 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 12:25:52] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.9.tar.gz]
 [2024-04-27 12:25:52] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
 [2024-04-27 12:25:52] INFO root fetch - main [MainThread]: Store serial: [22957921]
+[2024-04-27 12:27:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957921]
+[2024-04-27 12:28:02] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 12:28:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pystokes
+[2024-04-27 12:28:02] INFO root fetch - processPackages [pystokes]: New version: [2.3.1] Old Version: [2.3.0]
+[2024-04-27 12:28:02] INFO root fetch - processPackages [pystokes]: Downloading https://files.pythonhosted.org/packages/f5/86/a363c92ef76884bfca09325b1c8e9251210dbd2b86b01dad40ea44e25e62/pystokes-2.3.0.tar.gz
+[2024-04-27 12:28:03] INFO root fetch - processPackages [pystokes]: Downloading https://files.pythonhosted.org/packages/45/fa/96c6298ce6e967c796efa731ee4700155f0970baa3f77e8cb26f6c2efbcb/pystokes-2.3.1-cp310-cp310-macosx_11_0_arm64.whl
+[2024-04-27 12:28:03] INFO root fetch - processPackages [pystokes]: executing diffoscope
+[2024-04-27 12:28:03] INFO root fetch - processPackages [pystokes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pystokes-2.3.0.tar.gz tmp/pystokes-2.3.1-cp310-cp310-macosx_11_0_arm64.whl.zip --markdown 20240427/p/pystokes/2.3.0-2.3.1/README.md --exclude *.pyd
+[2024-04-27 12:28:05] INFO root fetch - processPackages [pystokes]: Remove: archive file [/home/abi/fetcher/tmp/pystokes-2.3.0.tar.gz]
+[2024-04-27 12:28:05] INFO root fetch - processPackages [pystokes]: Remove: archive file [/home/abi/fetcher/tmp/pystokes-2.3.1-cp310-cp310-macosx_11_0_arm64.whl.zip]
+[2024-04-27 12:28:05] INFO root fetch - main [MainThread]: End processing [pystokes]: success
+[2024-04-27 12:28:05] INFO root fetch - main [MainThread]: Store serial: [22957923]
