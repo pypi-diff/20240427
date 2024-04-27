@@ -17292,3 +17292,29 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 18:14:48] INFO root fetch - processPackages [mkdocstrings]: Remove: archive file [/home/abi/fetcher/tmp/mkdocstrings-0.9.1.tar.gz]
 [2024-04-27 18:14:48] INFO root fetch - main [MainThread]: End processing [mkdocstrings]: success
 [2024-04-27 18:14:48] INFO root fetch - main [MainThread]: Store serial: [22960098]
+[2024-04-27 18:16:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960098]
+[2024-04-27 18:17:01] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 18:17:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: neuroflow-yalab
+[2024-04-27 18:17:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mlops-api-gemstack
+[2024-04-27 18:17:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CodeBat
+[2024-04-27 18:17:01] INFO root fetch - processPackages [CodeBat]: New version: [0.0.2.6] Old Version: [0.0.2.5]
+[2024-04-27 18:17:01] INFO root fetch - processPackages [CodeBat]: Downloading https://files.pythonhosted.org/packages/e2/be/549749112f9931510bf3ba980d1ec608c071997169c2846eceea8d6b8785/codebat-0.0.2.5.tar.gz
+[2024-04-27 18:17:01] INFO root fetch - processPackages [neuroflow-yalab]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-27 18:17:01] INFO root fetch - processPackages [mlops-api-gemstack]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-04-27 18:17:01] INFO root fetch - processPackages [mlops-api-gemstack]: Downloading https://files.pythonhosted.org/packages/d2/a6/24e2a8cf4edf559d69086d91d97bb5f9684b85e464dc4c715c3efc150443/mlops_api_gemstack-0.3.4.tar.gz
+[2024-04-27 18:17:01] INFO root fetch - processPackages [neuroflow-yalab]: Downloading https://files.pythonhosted.org/packages/33/d0/a93b7a49f3bbc4ef04df1db0ce6051e348219d85d485cfe5e055d20a57cd/neuroflow_yalab-0.1.1.tar.gz
+[2024-04-27 18:17:02] INFO root fetch - processPackages [CodeBat]: Downloading https://files.pythonhosted.org/packages/21/78/d7a8dabc9004a76854c4a2d1332cbd4ef2e3ff6e7e9a91b9e7ccf7e51fbe/codebat-0.0.2.6.tar.gz
+[2024-04-27 18:17:02] WARNING root fetch - processPackages [neuroflow-yalab]: Skipping package: exceeds size limit 32293184>=10485760
+[2024-04-27 18:17:02] INFO root fetch - main [MainThread]: End processing [neuroflow-yalab] error
+[2024-04-27 18:17:02] INFO root fetch - processPackages [CodeBat]: executing diffoscope
+[2024-04-27 18:17:02] INFO root fetch - processPackages [CodeBat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codebat-0.0.2.5.tar.gz tmp/codebat-0.0.2.6.tar.gz --markdown 20240427/C/CodeBat/0.0.2.5-0.0.2.6/README.md --exclude *.pyd
+[2024-04-27 18:17:02] INFO root fetch - processPackages [mlops-api-gemstack]: Downloading https://files.pythonhosted.org/packages/3c/ec/9eda348233114f4d794b19c9e5e4382b7833058ed5b2219ef390746cc87c/mlops_api_gemstack-0.3.5.tar.gz
+[2024-04-27 18:17:02] INFO root fetch - processPackages [mlops-api-gemstack]: executing diffoscope
+[2024-04-27 18:17:02] INFO root fetch - processPackages [mlops-api-gemstack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlops_api_gemstack-0.3.4.tar.gz tmp/mlops_api_gemstack-0.3.5.tar.gz --markdown 20240427/m/mlops-api-gemstack/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-04-27 18:17:02] INFO root fetch - processPackages [CodeBat]: Remove: archive file [/home/abi/fetcher/tmp/codebat-0.0.2.5.tar.gz]
+[2024-04-27 18:17:02] INFO root fetch - processPackages [CodeBat]: Remove: archive file [/home/abi/fetcher/tmp/codebat-0.0.2.6.tar.gz]
+[2024-04-27 18:17:02] INFO root fetch - main [MainThread]: End processing [CodeBat]: success
+[2024-04-27 18:17:02] INFO root fetch - processPackages [mlops-api-gemstack]: Remove: archive file [/home/abi/fetcher/tmp/mlops_api_gemstack-0.3.4.tar.gz]
+[2024-04-27 18:17:02] INFO root fetch - processPackages [mlops-api-gemstack]: Remove: archive file [/home/abi/fetcher/tmp/mlops_api_gemstack-0.3.5.tar.gz]
+[2024-04-27 18:17:02] INFO root fetch - main [MainThread]: End processing [mlops-api-gemstack]: success
+[2024-04-27 18:17:02] INFO root fetch - main [MainThread]: Store serial: [22960107]
