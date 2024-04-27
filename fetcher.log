@@ -11453,3 +11453,33 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 11:36:04] INFO root fetch - processPackages [anycorn]: Remove: archive file [/home/abi/fetcher/tmp/anycorn-0.17.1.tar.gz]
 [2024-04-27 11:36:04] INFO root fetch - main [MainThread]: End processing [anycorn]: success
 [2024-04-27 11:36:04] INFO root fetch - main [MainThread]: Store serial: [22957685]
+[2024-04-27 11:38:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957685]
+[2024-04-27 11:38:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 11:38:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: indipyclient
+[2024-04-27 11:38:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kernel-quantile-regression
+[2024-04-27 11:38:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: magictk
+[2024-04-27 11:38:13] INFO root fetch - processPackages [indipyclient]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-27 11:38:13] INFO root fetch - processPackages [kernel-quantile-regression]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-27 11:38:13] INFO root fetch - processPackages [indipyclient]: Downloading https://files.pythonhosted.org/packages/40/95/1f834f35892d93b1fb0894b89d03b3f00def1e6bcbf9a2ce089038e997c9/indipyclient-0.0.6.tar.gz
+[2024-04-27 11:38:13] INFO root fetch - processPackages [magictk]: New version: [1.0.1.57] Old Version: [1.0.0.56]
+[2024-04-27 11:38:13] INFO root fetch - processPackages [kernel-quantile-regression]: Downloading https://files.pythonhosted.org/packages/ee/58/51412c22f8d5f152d8f7029599de68d9db7e459578d7a4a8c9696454ab78/kernel_quantile_regression-0.0.3.tar.gz
+[2024-04-27 11:38:13] INFO root fetch - processPackages [indipyclient]: Downloading https://files.pythonhosted.org/packages/c1/53/fd8c02c8b6161d063530a8322c617d475260a8c7e3145ee34aabfdd2e1dc/indipyclient-0.0.7.tar.gz
+[2024-04-27 11:38:14] INFO root fetch - processPackages [magictk]: Downloading https://files.pythonhosted.org/packages/6b/ac/58871e8d92d811b56287bc9c8468449addc92d1bf979f899221cedc221ff/magictk-1.0.0.56.tar.gz
+[2024-04-27 11:38:14] INFO root fetch - processPackages [indipyclient]: executing diffoscope
+[2024-04-27 11:38:14] INFO root fetch - processPackages [indipyclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indipyclient-0.0.6.tar.gz tmp/indipyclient-0.0.7.tar.gz --markdown 20240427/i/indipyclient/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-27 11:38:14] INFO root fetch - processPackages [kernel-quantile-regression]: Downloading https://files.pythonhosted.org/packages/88/5f/387d43c9b1f5d239261ea6366040430162a8721da39f2b6e20fcecc5b44d/kernel_quantile_regression-0.0.4.tar.gz
+[2024-04-27 11:38:14] INFO root fetch - processPackages [kernel-quantile-regression]: executing diffoscope
+[2024-04-27 11:38:14] INFO root fetch - processPackages [kernel-quantile-regression]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kernel_quantile_regression-0.0.3.tar.gz tmp/kernel_quantile_regression-0.0.4.tar.gz --markdown 20240427/k/kernel-quantile-regression/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-27 11:38:14] INFO root fetch - processPackages [magictk]: Downloading https://files.pythonhosted.org/packages/c1/a7/48d621fb319b96d12fbe832dad5c26aa90a33d762e82656692a6dd1dc0f9/magictk-1.0.1.57.tar.gz
+[2024-04-27 11:38:14] INFO root fetch - processPackages [magictk]: executing diffoscope
+[2024-04-27 11:38:14] INFO root fetch - processPackages [magictk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magictk-1.0.0.56.tar.gz tmp/magictk-1.0.1.57.tar.gz --markdown 20240427/m/magictk/1.0.0.56-1.0.1.57/README.md --exclude *.pyd
+[2024-04-27 11:38:14] INFO root fetch - processPackages [indipyclient]: Remove: archive file [/home/abi/fetcher/tmp/indipyclient-0.0.6.tar.gz]
+[2024-04-27 11:38:14] INFO root fetch - processPackages [indipyclient]: Remove: archive file [/home/abi/fetcher/tmp/indipyclient-0.0.7.tar.gz]
+[2024-04-27 11:38:14] INFO root fetch - main [MainThread]: End processing [indipyclient]: success
+[2024-04-27 11:38:14] INFO root fetch - processPackages [kernel-quantile-regression]: Remove: archive file [/home/abi/fetcher/tmp/kernel_quantile_regression-0.0.3.tar.gz]
+[2024-04-27 11:38:14] INFO root fetch - processPackages [kernel-quantile-regression]: Remove: archive file [/home/abi/fetcher/tmp/kernel_quantile_regression-0.0.4.tar.gz]
+[2024-04-27 11:38:14] INFO root fetch - main [MainThread]: End processing [kernel-quantile-regression]: success
+[2024-04-27 11:38:15] INFO root fetch - processPackages [magictk]: Remove: archive file [/home/abi/fetcher/tmp/magictk-1.0.0.56.tar.gz]
+[2024-04-27 11:38:15] INFO root fetch - processPackages [magictk]: Remove: archive file [/home/abi/fetcher/tmp/magictk-1.0.1.57.tar.gz]
+[2024-04-27 11:38:15] INFO root fetch - main [MainThread]: End processing [magictk]: success
+[2024-04-27 11:38:15] INFO root fetch - main [MainThread]: Store serial: [22957695]
