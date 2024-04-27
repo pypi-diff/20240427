@@ -11281,3 +11281,26 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 11:14:30] INFO root fetch - processPackages [starrail_damage_cal]: Remove: archive file [/home/abi/fetcher/tmp/starrail_damage_cal-1.5.4.tar.gz]
 [2024-04-27 11:14:30] INFO root fetch - main [MainThread]: End processing [starrail_damage_cal]: success
 [2024-04-27 11:14:30] INFO root fetch - main [MainThread]: Store serial: [22957618]
+[2024-04-27 11:16:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957618]
+[2024-04-27 11:16:39] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-27 11:18:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957618]
+[2024-04-27 11:18:44] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 11:18:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shibuya
+[2024-04-27 11:18:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bitwarden-import-msecure
+[2024-04-27 11:18:44] INFO root fetch - processPackages [bitwarden-import-msecure]: New version: [1.7.1] Old Version: [1.7.0]
+[2024-04-27 11:18:44] INFO root fetch - processPackages [bitwarden-import-msecure]: Downloading https://files.pythonhosted.org/packages/02/df/206b9847547da5ca10e88c344e588b798c10d72d5301eb98e159988e6442/bitwarden_import_msecure-1.7.0.tar.gz
+[2024-04-27 11:18:44] INFO root fetch - processPackages [shibuya]: New version: [2024.4.8] Old Version: [2024.4.4]
+[2024-04-27 11:18:44] INFO root fetch - processPackages [shibuya]: Downloading https://files.pythonhosted.org/packages/05/3c/b5181db9c4522b52597518fb0957c29cb4ffd41e22d68ceca86c9c1067b0/shibuya-2024.4.4.tar.gz
+[2024-04-27 11:18:44] INFO root fetch - processPackages [bitwarden-import-msecure]: Downloading https://files.pythonhosted.org/packages/5c/24/a8820d7fa5e0a2f5490d1e5ee3b3bdd5ee94e739adccfcbb9309b1905a5d/bitwarden_import_msecure-1.7.1.tar.gz
+[2024-04-27 11:18:45] INFO root fetch - processPackages [bitwarden-import-msecure]: executing diffoscope
+[2024-04-27 11:18:45] INFO root fetch - processPackages [bitwarden-import-msecure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bitwarden_import_msecure-1.7.0.tar.gz tmp/bitwarden_import_msecure-1.7.1.tar.gz --markdown 20240427/b/bitwarden-import-msecure/1.7.0-1.7.1/README.md --exclude *.pyd
+[2024-04-27 11:18:45] INFO root fetch - processPackages [shibuya]: Downloading https://files.pythonhosted.org/packages/60/19/1778e5768a479550bbe7795c20bc5ec3e34ff3a62c71cb25491b48ba2009/shibuya-2024.4.8.tar.gz
+[2024-04-27 11:18:45] INFO root fetch - processPackages [shibuya]: executing diffoscope
+[2024-04-27 11:18:45] INFO root fetch - processPackages [shibuya]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shibuya-2024.4.4.tar.gz tmp/shibuya-2024.4.8.tar.gz --markdown 20240427/s/shibuya/2024.4.4-2024.4.8/README.md --exclude *.pyd
+[2024-04-27 11:18:45] INFO root fetch - processPackages [bitwarden-import-msecure]: Remove: archive file [/home/abi/fetcher/tmp/bitwarden_import_msecure-1.7.0.tar.gz]
+[2024-04-27 11:18:45] INFO root fetch - processPackages [bitwarden-import-msecure]: Remove: archive file [/home/abi/fetcher/tmp/bitwarden_import_msecure-1.7.1.tar.gz]
+[2024-04-27 11:18:45] INFO root fetch - main [MainThread]: End processing [bitwarden-import-msecure]: success
+[2024-04-27 11:18:46] INFO root fetch - processPackages [shibuya]: Remove: archive file [/home/abi/fetcher/tmp/shibuya-2024.4.4.tar.gz]
+[2024-04-27 11:18:46] INFO root fetch - processPackages [shibuya]: Remove: archive file [/home/abi/fetcher/tmp/shibuya-2024.4.8.tar.gz]
+[2024-04-27 11:18:46] INFO root fetch - main [MainThread]: End processing [shibuya]: success
+[2024-04-27 11:18:46] INFO root fetch - main [MainThread]: Store serial: [22957627]
