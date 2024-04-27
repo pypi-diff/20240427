@@ -14047,3 +14047,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 14:45:50] INFO root fetch - processPackages [TwitchPy]: Remove: archive file [/home/abi/fetcher/tmp/TwitchPy-1.2.0.tar.gz]
 [2024-04-27 14:45:50] INFO root fetch - main [MainThread]: End processing [TwitchPy]: success
 [2024-04-27 14:45:50] INFO root fetch - main [MainThread]: Store serial: [22958739]
+[2024-04-27 14:47:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958739]
+[2024-04-27 14:47:59] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 14:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scrapegraphai
+[2024-04-27 14:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: EasyDeL
+[2024-04-27 14:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rapidocr-pdf
+[2024-04-27 14:47:59] INFO root fetch - processPackages [scrapegraphai]: New version: [0.3.0b2] Old Version: [0.3.0b1]
+[2024-04-27 14:47:59] INFO root fetch - processPackages [rapidocr-pdf]: New version: [0.1.0] Old Version: [0.0.8]
+[2024-04-27 14:47:59] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/38/9a/2865250abec9bea91169e537931df52aa055751fcc8637b106e6bf4edd8d/scrapegraphai-0.3.0b1.tar.gz
+[2024-04-27 14:47:59] INFO root fetch - processPackages [EasyDeL]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 14:48:00] INFO root fetch - processPackages [rapidocr-pdf]: Downloading https://files.pythonhosted.org/packages/2e/42/9fb59f3600dfc82787e66db0e10d59d9f6e773688fca844c3757ad149ba7/rapidocr_pdf-0.0.8-py3-none-any.whl
+[2024-04-27 14:48:00] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/e0/81/eec25d662d7245c7ddb53ecf4a0eca84bda105b9a325bc6df9bc1e89036d/scrapegraphai-0.3.0b2.tar.gz
+[2024-04-27 14:48:00] INFO root fetch - processPackages [EasyDeL]: Downloading https://files.pythonhosted.org/packages/0b/01/765632e4f48f400658c26b4a653df55e20dc326b64fd0991020f7fb5c16b/EasyDeL-0.0.8.tar.gz
+[2024-04-27 14:48:00] INFO root fetch - processPackages [scrapegraphai]: executing diffoscope
+[2024-04-27 14:48:00] INFO root fetch - processPackages [scrapegraphai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapegraphai-0.3.0b1.tar.gz tmp/scrapegraphai-0.3.0b2.tar.gz --markdown 20240427/s/scrapegraphai/0.3.0b1-0.3.0b2/README.md --exclude *.pyd
+[2024-04-27 14:48:00] INFO root fetch - processPackages [rapidocr-pdf]: Downloading https://files.pythonhosted.org/packages/c7/2d/7e916675a28dd37dbdd6027260990e65459652acd000810df7e7f7cc517c/rapidocr_pdf-0.1.0-py3-none-any.whl
+[2024-04-27 14:48:00] INFO root fetch - processPackages [EasyDeL]: Downloading https://files.pythonhosted.org/packages/8a/e3/914fc5ccc4d98c608c3f2bac8f8e325f940afda206011c7e1425cf00d471/EasyDeL-0.0.9.tar.gz
+[2024-04-27 14:48:00] INFO root fetch - processPackages [rapidocr-pdf]: executing diffoscope
+[2024-04-27 14:48:00] INFO root fetch - processPackages [rapidocr-pdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidocr_pdf-0.0.8-py3-none-any.whl.zip tmp/rapidocr_pdf-0.1.0-py3-none-any.whl.zip --markdown 20240427/r/rapidocr-pdf/0.0.8-0.1.0/README.md --exclude *.pyd
+[2024-04-27 14:48:00] INFO root fetch - processPackages [EasyDeL]: executing diffoscope
+[2024-04-27 14:48:00] INFO root fetch - processPackages [EasyDeL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EasyDeL-0.0.8.tar.gz tmp/EasyDeL-0.0.9.tar.gz --markdown 20240427/E/EasyDeL/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 14:48:00] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-0.3.0b1.tar.gz]
+[2024-04-27 14:48:00] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-0.3.0b2.tar.gz]
+[2024-04-27 14:48:00] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
+[2024-04-27 14:48:01] INFO root fetch - processPackages [rapidocr-pdf]: Remove: archive file [/home/abi/fetcher/tmp/rapidocr_pdf-0.0.8-py3-none-any.whl.zip]
+[2024-04-27 14:48:01] INFO root fetch - processPackages [rapidocr-pdf]: Remove: archive file [/home/abi/fetcher/tmp/rapidocr_pdf-0.1.0-py3-none-any.whl.zip]
+[2024-04-27 14:48:01] INFO root fetch - main [MainThread]: End processing [rapidocr-pdf]: success
+[2024-04-27 14:48:01] INFO root fetch - processPackages [EasyDeL]: Remove: archive file [/home/abi/fetcher/tmp/EasyDeL-0.0.8.tar.gz]
+[2024-04-27 14:48:01] INFO root fetch - processPackages [EasyDeL]: Remove: archive file [/home/abi/fetcher/tmp/EasyDeL-0.0.9.tar.gz]
+[2024-04-27 14:48:01] INFO root fetch - main [MainThread]: End processing [EasyDeL]: success
+[2024-04-27 14:48:01] INFO root fetch - main [MainThread]: Store serial: [22958748]
