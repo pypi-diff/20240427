@@ -9160,3 +9160,15 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 07:22:45] INFO root fetch - processPackages [whatshow-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/whatshow_toolbox-1.0.3.tar.gz]
 [2024-04-27 07:22:45] INFO root fetch - main [MainThread]: End processing [whatshow-toolbox]: success
 [2024-04-27 07:22:45] INFO root fetch - main [MainThread]: Store serial: [22956664]
+[2024-04-27 07:24:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956664]
+[2024-04-27 07:24:55] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 07:24:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gemini-ai-app-downloader
+[2024-04-27 07:24:55] INFO root fetch - processPackages [gemini-ai-app-downloader]: New version: [1.1] Old Version: [1]
+[2024-04-27 07:24:55] INFO root fetch - processPackages [gemini-ai-app-downloader]: Downloading https://files.pythonhosted.org/packages/60/6a/bdae1837e38a895025517f74db63f5f8ad92de2791f5c3ff8278693fd88c/gemini_ai_app_downloader-1.tar.gz
+[2024-04-27 07:24:56] INFO root fetch - processPackages [gemini-ai-app-downloader]: Downloading https://files.pythonhosted.org/packages/3c/ad/b6ee1cfb8c8ea884d5e506beb43fe4d6dc493cbbea401007056d916f057a/gemini_ai_app_downloader-1.1.tar.gz
+[2024-04-27 07:24:56] INFO root fetch - processPackages [gemini-ai-app-downloader]: executing diffoscope
+[2024-04-27 07:24:56] INFO root fetch - processPackages [gemini-ai-app-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gemini_ai_app_downloader-1.tar.gz tmp/gemini_ai_app_downloader-1.1.tar.gz --markdown 20240427/g/gemini-ai-app-downloader/1-1.1/README.md --exclude *.pyd
+[2024-04-27 07:24:56] INFO root fetch - processPackages [gemini-ai-app-downloader]: Remove: archive file [/home/abi/fetcher/tmp/gemini_ai_app_downloader-1.tar.gz]
+[2024-04-27 07:24:56] INFO root fetch - processPackages [gemini-ai-app-downloader]: Remove: archive file [/home/abi/fetcher/tmp/gemini_ai_app_downloader-1.1.tar.gz]
+[2024-04-27 07:24:56] INFO root fetch - main [MainThread]: End processing [gemini-ai-app-downloader]: success
+[2024-04-27 07:24:56] INFO root fetch - main [MainThread]: Store serial: [22956668]
