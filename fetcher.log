@@ -19593,3 +19593,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 21:02:58] INFO root fetch - processPackages [github-provenance-demo]: Remove: archive file [/home/abi/fetcher/tmp/github-provenance-demo-0.0.9.tar.gz]
 [2024-04-27 21:02:58] INFO root fetch - main [MainThread]: End processing [github-provenance-demo]: success
 [2024-04-27 21:02:58] INFO root fetch - main [MainThread]: Store serial: [22961222]
+[2024-04-27 21:05:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961222]
+[2024-04-27 21:05:12] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 21:05:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openav
+[2024-04-27 21:05:12] INFO root fetch - processPackages [openav]: New version: [1.0.0a6] Old Version: [1.0.0a5]
+[2024-04-27 21:05:12] INFO root fetch - processPackages [openav]: Downloading https://files.pythonhosted.org/packages/02/da/55db671dbeeb5c6dfd71ab6d669487f09a70d0b409122751be822a36e936/openav-1.0.0a5.tar.gz
+[2024-04-27 21:05:12] INFO root fetch - processPackages [openav]: Downloading https://files.pythonhosted.org/packages/fd/51/a8aabb2599d182b0321cae342f7467d8ee6ece3d0908ca85ab9e794c24f9/openav-1.0.0a6.tar.gz
+[2024-04-27 21:05:12] INFO root fetch - processPackages [openav]: executing diffoscope
+[2024-04-27 21:05:12] INFO root fetch - processPackages [openav]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openav-1.0.0a5.tar.gz tmp/openav-1.0.0a6.tar.gz --markdown 20240427/o/openav/1.0.0a5-1.0.0a6/README.md --exclude *.pyd
+[2024-04-27 21:05:13] INFO root fetch - processPackages [openav]: Remove: archive file [/home/abi/fetcher/tmp/openav-1.0.0a5.tar.gz]
+[2024-04-27 21:05:13] INFO root fetch - processPackages [openav]: Remove: archive file [/home/abi/fetcher/tmp/openav-1.0.0a6.tar.gz]
+[2024-04-27 21:05:13] INFO root fetch - main [MainThread]: End processing [openav]: success
+[2024-04-27 21:05:13] INFO root fetch - main [MainThread]: Store serial: [22961225]
