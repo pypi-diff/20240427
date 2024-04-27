@@ -13705,3 +13705,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 14:21:25] INFO root fetch - processPackages [st-ant-tree]: Remove: archive file [/home/abi/fetcher/tmp/st_ant_tree-0.0.6-py3-none-any.whl.zip]
 [2024-04-27 14:21:25] INFO root fetch - main [MainThread]: End processing [st-ant-tree]: success
 [2024-04-27 14:21:25] INFO root fetch - main [MainThread]: Store serial: [22958612]
+[2024-04-27 14:23:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958612]
+[2024-04-27 14:23:34] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 14:23:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cast-bootstrap5
+[2024-04-27 14:23:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: communex
+[2024-04-27 14:23:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: state-graph
+[2024-04-27 14:23:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kernel-quantile-regression
+[2024-04-27 14:23:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mausy5043-common
+[2024-04-27 14:23:34] INFO root fetch - processPackages [kernel-quantile-regression]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 14:23:34] INFO root fetch - processPackages [communex]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-27 14:23:34] INFO root fetch - processPackages [state-graph]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-27 14:23:34] INFO root fetch - processPackages [cast-bootstrap5]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 14:23:34] INFO root fetch - processPackages [kernel-quantile-regression]: Downloading https://files.pythonhosted.org/packages/35/53/6352628a6762cfeff73aa1ae041a84857a32b6221b5450c8c6da6a463f91/kernel_quantile_regression-0.0.8.tar.gz
+[2024-04-27 14:23:34] INFO root fetch - processPackages [mausy5043-common]: New version: [1.6.5] Old Version: [1.6.2]
+[2024-04-27 14:23:34] INFO root fetch - processPackages [communex]: Downloading https://files.pythonhosted.org/packages/77/67/00051570e40b098c12038ef6aed5be120d14bfafef5d08885df5a9714f91/communex-0.1.8.tar.gz
+[2024-04-27 14:23:35] INFO root fetch - processPackages [state-graph]: Downloading https://files.pythonhosted.org/packages/06/84/60a9754e82e2a2938242671de85b3cc1d6238e4f5445aae0dba2cff6673c/state_graph-0.1.1.tar.gz
+[2024-04-27 14:23:35] INFO root fetch - processPackages [cast-bootstrap5]: Downloading https://files.pythonhosted.org/packages/a9/9b/db053c0c1d19540d1bda453cb759360dffb45faa565215b2913bf8c69866/cast_bootstrap5-0.0.8.tar.gz
+[2024-04-27 14:23:35] INFO root fetch - processPackages [mausy5043-common]: Downloading https://files.pythonhosted.org/packages/8a/6f/40cd67a90d3d2932d8173eaf59dd4e46502e420e91c65f2cdba5f294dea3/mausy5043_common-1.6.2.tar.gz
+[2024-04-27 14:23:35] INFO root fetch - processPackages [communex]: Downloading https://files.pythonhosted.org/packages/51/79/c7d8079cf08c4dcf6ea1f984e64a67fe00acfd76303d2f7f6159f574d5da/communex-0.1.9.tar.gz
+[2024-04-27 14:23:35] INFO root fetch - processPackages [kernel-quantile-regression]: Downloading https://files.pythonhosted.org/packages/dc/e2/874d9d723a6de04019271195e22a7cea79c5177442591c2e127a72b9391c/kernel_quantile_regression-0.0.9.tar.gz
+[2024-04-27 14:23:35] INFO root fetch - processPackages [communex]: executing diffoscope
+[2024-04-27 14:23:35] INFO root fetch - processPackages [communex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/communex-0.1.8.tar.gz tmp/communex-0.1.9.tar.gz --markdown 20240427/c/communex/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-27 14:23:35] INFO root fetch - processPackages [kernel-quantile-regression]: executing diffoscope
+[2024-04-27 14:23:35] INFO root fetch - processPackages [kernel-quantile-regression]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kernel_quantile_regression-0.0.8.tar.gz tmp/kernel_quantile_regression-0.0.9.tar.gz --markdown 20240427/k/kernel-quantile-regression/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 14:23:35] INFO root fetch - processPackages [state-graph]: Downloading https://files.pythonhosted.org/packages/d5/7b/4b2d15fb926fa24ec44aef073f673d4ef6de19fcb2e1b1bcac216dbe36f8/state_graph-0.1.2.tar.gz
+[2024-04-27 14:23:35] INFO root fetch - processPackages [mausy5043-common]: Downloading https://files.pythonhosted.org/packages/9b/8c/a939f2b56103e3310163968c0ec721c0026b8e3dd2edad4a83e9707265c7/mausy5043_common-1.6.5.tar.gz
+[2024-04-27 14:23:35] INFO root fetch - processPackages [cast-bootstrap5]: Downloading https://files.pythonhosted.org/packages/79/19/f879af1e3882921129d87c91ae930e17e1bc45d698b0931de934c28b1d8b/cast_bootstrap5-0.0.9.tar.gz
+[2024-04-27 14:23:35] INFO root fetch - processPackages [state-graph]: executing diffoscope
+[2024-04-27 14:23:35] INFO root fetch - processPackages [state-graph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/state_graph-0.1.1.tar.gz tmp/state_graph-0.1.2.tar.gz --markdown 20240427/s/state-graph/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-27 14:23:35] INFO root fetch - processPackages [cast-bootstrap5]: executing diffoscope
+[2024-04-27 14:23:35] INFO root fetch - processPackages [cast-bootstrap5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cast_bootstrap5-0.0.8.tar.gz tmp/cast_bootstrap5-0.0.9.tar.gz --markdown 20240427/c/cast-bootstrap5/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 14:23:35] INFO root fetch - processPackages [mausy5043-common]: executing diffoscope
+[2024-04-27 14:23:35] INFO root fetch - processPackages [mausy5043-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mausy5043_common-1.6.2.tar.gz tmp/mausy5043_common-1.6.5.tar.gz --markdown 20240427/m/mausy5043-common/1.6.2-1.6.5/README.md --exclude *.pyd
+[2024-04-27 14:23:36] INFO root fetch - processPackages [communex]: Remove: archive file [/home/abi/fetcher/tmp/communex-0.1.8.tar.gz]
+[2024-04-27 14:23:36] INFO root fetch - processPackages [communex]: Remove: archive file [/home/abi/fetcher/tmp/communex-0.1.9.tar.gz]
+[2024-04-27 14:23:36] INFO root fetch - main [MainThread]: End processing [communex]: success
+[2024-04-27 14:23:36] INFO root fetch - processPackages [state-graph]: Remove: archive file [/home/abi/fetcher/tmp/state_graph-0.1.1.tar.gz]
+[2024-04-27 14:23:36] INFO root fetch - processPackages [state-graph]: Remove: archive file [/home/abi/fetcher/tmp/state_graph-0.1.2.tar.gz]
+[2024-04-27 14:23:36] INFO root fetch - main [MainThread]: End processing [state-graph]: success
+[2024-04-27 14:23:36] INFO root fetch - processPackages [kernel-quantile-regression]: Remove: archive file [/home/abi/fetcher/tmp/kernel_quantile_regression-0.0.8.tar.gz]
+[2024-04-27 14:23:36] INFO root fetch - processPackages [kernel-quantile-regression]: Remove: archive file [/home/abi/fetcher/tmp/kernel_quantile_regression-0.0.9.tar.gz]
+[2024-04-27 14:23:36] INFO root fetch - main [MainThread]: End processing [kernel-quantile-regression]: success
+[2024-04-27 14:23:36] INFO root fetch - processPackages [mausy5043-common]: Remove: archive file [/home/abi/fetcher/tmp/mausy5043_common-1.6.2.tar.gz]
+[2024-04-27 14:23:36] INFO root fetch - processPackages [mausy5043-common]: Remove: archive file [/home/abi/fetcher/tmp/mausy5043_common-1.6.5.tar.gz]
+[2024-04-27 14:23:36] INFO root fetch - main [MainThread]: End processing [mausy5043-common]: success
+[2024-04-27 14:23:36] INFO root fetch - processPackages [cast-bootstrap5]: Remove: archive file [/home/abi/fetcher/tmp/cast_bootstrap5-0.0.8.tar.gz]
+[2024-04-27 14:23:36] INFO root fetch - processPackages [cast-bootstrap5]: Remove: archive file [/home/abi/fetcher/tmp/cast_bootstrap5-0.0.9.tar.gz]
+[2024-04-27 14:23:36] INFO root fetch - main [MainThread]: End processing [cast-bootstrap5]: success
+[2024-04-27 14:23:36] INFO root fetch - main [MainThread]: Store serial: [22958629]
