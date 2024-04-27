@@ -14513,3 +14513,69 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 15:15:51] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/fbgemm_gpu_nightly_cpu-2024.4.27-cp38-cp38-manylinux2014_x86_64.whl.zip]
 [2024-04-27 15:15:51] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
 [2024-04-27 15:15:51] INFO root fetch - main [MainThread]: Store serial: [22959006]
+[2024-04-27 15:18:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959006]
+[2024-04-27 15:18:07] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-27 15:18:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyHana
+[2024-04-27 15:18:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Deepurify
+[2024-04-27 15:18:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: swiss-army-man
+[2024-04-27 15:18:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tga-data-analysis
+[2024-04-27 15:18:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: khoj-assistant
+[2024-04-27 15:18:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: python-gemini-api
+[2024-04-27 15:18:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tflite-micro
+[2024-04-27 15:18:07] INFO root fetch - processPackages [Deepurify]: New version: [2.3.1] Old Version: [2.3.0]
+[2024-04-27 15:18:07] INFO root fetch - processPackages [pyHana]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 15:18:07] INFO root fetch - processPackages [khoj-assistant]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev74]
+[2024-04-27 15:18:07] INFO root fetch - processPackages [swiss-army-man]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-04-27 15:18:07] INFO root fetch - processPackages [tga-data-analysis]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-27 15:18:07] INFO root fetch - processPackages [python-gemini-api]: New version: [2.4.7] Old Version: [2.4.6]
+[2024-04-27 15:18:07] INFO root fetch - processPackages [tflite-micro]: New version: [0.dev20240426220548] Old Version: [0.dev20240424144516]
+[2024-04-27 15:18:07] INFO root fetch - processPackages [Deepurify]: Downloading https://files.pythonhosted.org/packages/22/c0/ff1397ea39b0255e29c124503495e621f06e800cf51e7136f80c4c64a8e8/Deepurify-2.3.0.tar.gz
+[2024-04-27 15:18:07] INFO root fetch - processPackages [pyHana]: Downloading https://files.pythonhosted.org/packages/f7/bd/4413dde8ffefdc3715bfdb0e2789860ce6abd12c900ecd9bdbf3df4da977/pyHana-0.0.8-py3-none-any.whl
+[2024-04-27 15:18:07] INFO root fetch - processPackages [swiss-army-man]: Downloading https://files.pythonhosted.org/packages/48/1f/294f600f1fa28cd18c161440c03fb3b30e0c131a86552d9308f61aa90137/swiss_army_man-0.1.7.tar.gz
+[2024-04-27 15:18:08] INFO root fetch - processPackages [tga-data-analysis]: Downloading https://files.pythonhosted.org/packages/99/68/f56a5db7e309beac23ad72e035777c3d0edf3751e089e080f851702d7aeb/tga_data_analysis-2.0.8.tar.gz
+[2024-04-27 15:18:08] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/fc/89/bbf1c812c39a0f341fea130ae430c11fcdd5fdcc5ca61fbaed2682cc4df7/khoj_assistant-1.9.1.dev74.tar.gz
+[2024-04-27 15:18:08] INFO root fetch - processPackages [tflite-micro]: Downloading https://files.pythonhosted.org/packages/e3/d3/b924ea03649a363c8f3fc96318c0a3bce6d97b2a60a4c4837fb4c7160eb3/tflite_micro-0.dev20240424144516-cp311-cp311-manylinux_2_28_x86_64.whl
+[2024-04-27 15:18:08] INFO root fetch - processPackages [python-gemini-api]: Downloading https://files.pythonhosted.org/packages/e7/d7/b3be9ca7aca2283e46a98d205c16e7c9b290a2a3806919b83acd2433bd28/python_gemini_api-2.4.6.tar.gz
+[2024-04-27 15:18:08] INFO root fetch - processPackages [swiss-army-man]: Downloading https://files.pythonhosted.org/packages/56/82/24e0c66ae73179bc5f3180da018b1c49aadae130d6093a4ba1f45acd2afa/swiss_army_man-0.1.9.tar.gz
+[2024-04-27 15:18:08] INFO root fetch - processPackages [pyHana]: Downloading https://files.pythonhosted.org/packages/bf/0e/4838574234fed0b97643b3f635c68d512d1bed48aa073d330aae8d2a612b/pyHana-0.0.9-py3-none-any.whl
+[2024-04-27 15:18:08] INFO root fetch - processPackages [Deepurify]: Downloading https://files.pythonhosted.org/packages/ad/c4/8bab480418eff149bbc23dcd706b2719be6ef6c5de1b7f1c0503f73583c7/Deepurify-2.3.1.tar.gz
+[2024-04-27 15:18:08] INFO root fetch - processPackages [pyHana]: executing diffoscope
+[2024-04-27 15:18:08] INFO root fetch - processPackages [pyHana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyHana-0.0.8-py3-none-any.whl.zip tmp/pyHana-0.0.9-py3-none-any.whl.zip --markdown 20240427/p/pyHana/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 15:18:08] INFO root fetch - processPackages [swiss-army-man]: executing diffoscope
+[2024-04-27 15:18:08] INFO root fetch - processPackages [swiss-army-man]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swiss_army_man-0.1.7.tar.gz tmp/swiss_army_man-0.1.9.tar.gz --markdown 20240427/s/swiss-army-man/0.1.7-0.1.9/README.md --exclude *.pyd
+[2024-04-27 15:18:08] INFO root fetch - processPackages [tga-data-analysis]: Downloading https://files.pythonhosted.org/packages/f8/86/d00090ed84678ad3a10c7bcb722727a79f4d037bca1641a4d8a01cd191dc/tga_data_analysis-2.0.9.tar.gz
+[2024-04-27 15:18:08] INFO root fetch - processPackages [Deepurify]: executing diffoscope
+[2024-04-27 15:18:08] INFO root fetch - processPackages [Deepurify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Deepurify-2.3.0.tar.gz tmp/Deepurify-2.3.1.tar.gz --markdown 20240427/D/Deepurify/2.3.0-2.3.1/README.md --exclude *.pyd
+[2024-04-27 15:18:08] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/47/ae/446626ff585bb336b70b59402ea6a46bf52326a51b81fd9ead920cde4c8a/khoj_assistant-1.9.1.dev8.tar.gz
+[2024-04-27 15:18:08] INFO root fetch - processPackages [python-gemini-api]: Downloading https://files.pythonhosted.org/packages/88/a5/38a9b7a7f0733c0bfbe3fad690ef9ab517f469da6f579ceaceab6a9c5fae/python_gemini_api-2.4.7.tar.gz
+[2024-04-27 15:18:08] INFO root fetch - processPackages [tflite-micro]: Downloading https://files.pythonhosted.org/packages/59/2a/55374af242e244bd918fa4a91028891d2daf2cb43d3e1d5defab36700268/tflite_micro-0.dev20240426220548-cp311-cp311-manylinux_2_28_x86_64.whl
+[2024-04-27 15:18:08] INFO root fetch - processPackages [tga-data-analysis]: executing diffoscope
+[2024-04-27 15:18:08] INFO root fetch - processPackages [tga-data-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tga_data_analysis-2.0.8.tar.gz tmp/tga_data_analysis-2.0.9.tar.gz --markdown 20240427/t/tga-data-analysis/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-04-27 15:18:08] INFO root fetch - processPackages [python-gemini-api]: executing diffoscope
+[2024-04-27 15:18:08] INFO root fetch - processPackages [python-gemini-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_gemini_api-2.4.6.tar.gz tmp/python_gemini_api-2.4.7.tar.gz --markdown 20240427/p/python-gemini-api/2.4.6-2.4.7/README.md --exclude *.pyd
+[2024-04-27 15:18:08] INFO root fetch - processPackages [khoj-assistant]: executing diffoscope
+[2024-04-27 15:18:08] INFO root fetch - processPackages [khoj-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khoj_assistant-1.9.1.dev74.tar.gz tmp/khoj_assistant-1.9.1.dev8.tar.gz --markdown 20240427/k/khoj-assistant/1.9.1.dev74-1.9.1.dev8/README.md --exclude *.pyd
+[2024-04-27 15:18:09] INFO root fetch - processPackages [tflite-micro]: executing diffoscope
+[2024-04-27 15:18:09] INFO root fetch - processPackages [tflite-micro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite_micro-0.dev20240424144516-cp311-cp311-manylinux_2_28_x86_64.whl.zip tmp/tflite_micro-0.dev20240426220548-cp311-cp311-manylinux_2_28_x86_64.whl.zip --markdown 20240427/t/tflite-micro/0.dev20240424144516-0.dev20240426220548/README.md --exclude *.pyd
+[2024-04-27 15:18:09] INFO root fetch - processPackages [swiss-army-man]: Remove: archive file [/home/abi/fetcher/tmp/swiss_army_man-0.1.7.tar.gz]
+[2024-04-27 15:18:09] INFO root fetch - processPackages [swiss-army-man]: Remove: archive file [/home/abi/fetcher/tmp/swiss_army_man-0.1.9.tar.gz]
+[2024-04-27 15:18:09] INFO root fetch - main [MainThread]: End processing [swiss-army-man]: success
+[2024-04-27 15:18:09] INFO root fetch - processPackages [Deepurify]: Remove: archive file [/home/abi/fetcher/tmp/Deepurify-2.3.0.tar.gz]
+[2024-04-27 15:18:09] INFO root fetch - processPackages [pyHana]: Remove: archive file [/home/abi/fetcher/tmp/pyHana-0.0.8-py3-none-any.whl.zip]
+[2024-04-27 15:18:09] INFO root fetch - processPackages [Deepurify]: Remove: archive file [/home/abi/fetcher/tmp/Deepurify-2.3.1.tar.gz]
+[2024-04-27 15:18:09] INFO root fetch - processPackages [pyHana]: Remove: archive file [/home/abi/fetcher/tmp/pyHana-0.0.9-py3-none-any.whl.zip]
+[2024-04-27 15:18:09] INFO root fetch - main [MainThread]: End processing [Deepurify]: success
+[2024-04-27 15:18:09] INFO root fetch - main [MainThread]: End processing [pyHana]: success
+[2024-04-27 15:18:09] INFO root fetch - processPackages [tga-data-analysis]: Remove: archive file [/home/abi/fetcher/tmp/tga_data_analysis-2.0.8.tar.gz]
+[2024-04-27 15:18:09] INFO root fetch - processPackages [tga-data-analysis]: Remove: archive file [/home/abi/fetcher/tmp/tga_data_analysis-2.0.9.tar.gz]
+[2024-04-27 15:18:09] INFO root fetch - main [MainThread]: End processing [tga-data-analysis]: success
+[2024-04-27 15:18:09] INFO root fetch - processPackages [python-gemini-api]: Remove: archive file [/home/abi/fetcher/tmp/python_gemini_api-2.4.6.tar.gz]
+[2024-04-27 15:18:09] INFO root fetch - processPackages [python-gemini-api]: Remove: archive file [/home/abi/fetcher/tmp/python_gemini_api-2.4.7.tar.gz]
+[2024-04-27 15:18:09] INFO root fetch - main [MainThread]: End processing [python-gemini-api]: success
+[2024-04-27 15:18:09] INFO root fetch - processPackages [tflite-micro]: Remove: archive file [/home/abi/fetcher/tmp/tflite_micro-0.dev20240424144516-cp311-cp311-manylinux_2_28_x86_64.whl.zip]
+[2024-04-27 15:18:09] INFO root fetch - processPackages [tflite-micro]: Remove: archive file [/home/abi/fetcher/tmp/tflite_micro-0.dev20240426220548-cp311-cp311-manylinux_2_28_x86_64.whl.zip]
+[2024-04-27 15:18:09] INFO root fetch - main [MainThread]: End processing [tflite-micro]: success
+[2024-04-27 15:18:10] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev74.tar.gz]
+[2024-04-27 15:18:10] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev8.tar.gz]
+[2024-04-27 15:18:10] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
+[2024-04-27 15:18:10] INFO root fetch - main [MainThread]: Store serial: [22959035]
