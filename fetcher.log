@@ -7719,3 +7719,24 @@ EOFError: EOF read where object expected
 [2024-04-27 05:29:57] INFO root fetch - processPackages [keras-nlp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz]
 [2024-04-27 05:29:57] INFO root fetch - main [MainThread]: End processing [keras-nlp-nightly]: success
 [2024-04-27 05:29:57] INFO root fetch - main [MainThread]: Store serial: [22956234]
+[2024-04-27 05:32:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956234]
+[2024-04-27 05:32:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 05:32:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jy_lib
+[2024-04-27 05:32:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dcicutils
+[2024-04-27 05:32:05] INFO root fetch - processPackages [jy_lib]: New version: [0.6.9] Old Version: [0.6.8]
+[2024-04-27 05:32:05] INFO root fetch - processPackages [dcicutils]: New version: [8.8.4.1b9] Old Version: [8.8.4.1b8]
+[2024-04-27 05:32:05] INFO root fetch - processPackages [jy_lib]: Downloading https://files.pythonhosted.org/packages/9d/1a/6d32b56a182985f7d29655c5052cedfbe0f43fa5a12fa011a36e0b1e793f/jy_lib-0.6.8.tar.gz
+[2024-04-27 05:32:05] INFO root fetch - processPackages [dcicutils]: Downloading https://files.pythonhosted.org/packages/88/e3/a68b919149fb754f37e341f70d383d88a49db02e5b5e7f34d0cf00879646/dcicutils-8.8.4.1b8.tar.gz
+[2024-04-27 05:32:06] INFO root fetch - processPackages [dcicutils]: Downloading https://files.pythonhosted.org/packages/ab/80/64152621f2e387ed0dff6f4fbf31f5b2e11f4dfe300d598bbfb27dfd25b5/dcicutils-8.8.4.1b9.tar.gz
+[2024-04-27 05:32:06] INFO root fetch - processPackages [jy_lib]: Downloading https://files.pythonhosted.org/packages/f0/34/5b2eb323c22b5cb2402165d2ecf546c992890b5fc6a5b9c2312db51b826b/jy_lib-0.6.9.tar.gz
+[2024-04-27 05:32:06] INFO root fetch - processPackages [dcicutils]: executing diffoscope
+[2024-04-27 05:32:06] INFO root fetch - processPackages [dcicutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcicutils-8.8.4.1b8.tar.gz tmp/dcicutils-8.8.4.1b9.tar.gz --markdown 20240427/d/dcicutils/8.8.4.1b8-8.8.4.1b9/README.md --exclude *.pyd
+[2024-04-27 05:32:06] INFO root fetch - processPackages [jy_lib]: executing diffoscope
+[2024-04-27 05:32:06] INFO root fetch - processPackages [jy_lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jy_lib-0.6.8.tar.gz tmp/jy_lib-0.6.9.tar.gz --markdown 20240427/j/jy_lib/0.6.8-0.6.9/README.md --exclude *.pyd
+[2024-04-27 05:32:06] INFO root fetch - processPackages [jy_lib]: Remove: archive file [/home/abi/fetcher/tmp/jy_lib-0.6.8.tar.gz]
+[2024-04-27 05:32:06] INFO root fetch - processPackages [jy_lib]: Remove: archive file [/home/abi/fetcher/tmp/jy_lib-0.6.9.tar.gz]
+[2024-04-27 05:32:06] INFO root fetch - main [MainThread]: End processing [jy_lib]: success
+[2024-04-27 05:32:07] INFO root fetch - processPackages [dcicutils]: Remove: archive file [/home/abi/fetcher/tmp/dcicutils-8.8.4.1b8.tar.gz]
+[2024-04-27 05:32:07] INFO root fetch - processPackages [dcicutils]: Remove: archive file [/home/abi/fetcher/tmp/dcicutils-8.8.4.1b9.tar.gz]
+[2024-04-27 05:32:07] INFO root fetch - main [MainThread]: End processing [dcicutils]: success
+[2024-04-27 05:32:07] INFO root fetch - main [MainThread]: Store serial: [22956241]
