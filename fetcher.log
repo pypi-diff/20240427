@@ -14758,3 +14758,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 15:29:04] INFO root fetch - processPackages [openav]: Remove: archive file [/home/abi/fetcher/tmp/openav-1.0.0a4.tar.gz]
 [2024-04-27 15:29:04] INFO root fetch - main [MainThread]: End processing [openav]: success
 [2024-04-27 15:29:04] INFO root fetch - main [MainThread]: Store serial: [22959111]
+[2024-04-27 15:31:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959111]
+[2024-04-27 15:31:14] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 15:31:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tavern
+[2024-04-27 15:31:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alicebot-plugin-template
+[2024-04-27 15:31:14] INFO root fetch - processPackages [alicebot-plugin-template]: New version: [0.1.10] Old Version: [0.1.0.3]
+[2024-04-27 15:31:14] INFO root fetch - processPackages [tavern]: New version: [3.0.0a5] Old Version: [3.0.0a4]
+[2024-04-27 15:31:14] INFO root fetch - processPackages [alicebot-plugin-template]: Downloading https://files.pythonhosted.org/packages/5e/9c/7ed1af5dced03c23556c5a78ce8e107f3aa5d6b0c504250f552d9c650531/alicebot_plugin_template-0.1.0.3.tar.gz
+[2024-04-27 15:31:14] INFO root fetch - processPackages [tavern]: Downloading https://files.pythonhosted.org/packages/0a/8e/abdae3e120acd1b71650199b36e2f7916bbba974fe9ea56978f45016eab0/tavern-3.0.0a4.tar.gz
+[2024-04-27 15:31:14] INFO root fetch - processPackages [alicebot-plugin-template]: Downloading https://files.pythonhosted.org/packages/12/2d/48bf8364b6609c6b3351631e6e89fcc37ab5ada022b7d8566a2ac4b803b3/alicebot_plugin_template-0.1.10.tar.gz
+[2024-04-27 15:31:15] INFO root fetch - processPackages [alicebot-plugin-template]: executing diffoscope
+[2024-04-27 15:31:15] INFO root fetch - processPackages [alicebot-plugin-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alicebot_plugin_template-0.1.0.3.tar.gz tmp/alicebot_plugin_template-0.1.10.tar.gz --markdown 20240427/a/alicebot-plugin-template/0.1.0.3-0.1.10/README.md --exclude *.pyd
+[2024-04-27 15:31:15] INFO root fetch - processPackages [tavern]: Downloading https://files.pythonhosted.org/packages/80/86/70a67f008ea31b86f008d0c14638a1203e1e02a79d27ccb637e492ecde91/tavern-3.0.0a5.tar.gz
+[2024-04-27 15:31:15] INFO root fetch - processPackages [tavern]: executing diffoscope
+[2024-04-27 15:31:15] INFO root fetch - processPackages [tavern]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tavern-3.0.0a4.tar.gz tmp/tavern-3.0.0a5.tar.gz --markdown 20240427/t/tavern/3.0.0a4-3.0.0a5/README.md --exclude *.pyd
+[2024-04-27 15:31:15] INFO root fetch - processPackages [alicebot-plugin-template]: Remove: archive file [/home/abi/fetcher/tmp/alicebot_plugin_template-0.1.0.3.tar.gz]
+[2024-04-27 15:31:15] INFO root fetch - processPackages [alicebot-plugin-template]: Remove: archive file [/home/abi/fetcher/tmp/alicebot_plugin_template-0.1.10.tar.gz]
+[2024-04-27 15:31:15] INFO root fetch - main [MainThread]: End processing [alicebot-plugin-template]: success
+[2024-04-27 15:31:16] INFO root fetch - processPackages [tavern]: Remove: archive file [/home/abi/fetcher/tmp/tavern-3.0.0a4.tar.gz]
+[2024-04-27 15:31:16] INFO root fetch - processPackages [tavern]: Remove: archive file [/home/abi/fetcher/tmp/tavern-3.0.0a5.tar.gz]
+[2024-04-27 15:31:16] INFO root fetch - main [MainThread]: End processing [tavern]: success
+[2024-04-27 15:31:16] INFO root fetch - main [MainThread]: Store serial: [22959132]
