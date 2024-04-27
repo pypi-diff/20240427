@@ -16106,3 +16106,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 16:54:34] INFO root fetch - processPackages [marksplitz]: Remove: archive file [/home/abi/fetcher/tmp/marksplitz-0.1.dev8.tar.gz]
 [2024-04-27 16:54:34] INFO root fetch - main [MainThread]: End processing [marksplitz]: success
 [2024-04-27 16:54:34] INFO root fetch - main [MainThread]: Store serial: [22959601]
+[2024-04-27 16:56:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959601]
+[2024-04-27 16:56:44] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 16:56:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rustfst-python
+[2024-04-27 16:56:44] INFO root fetch - processPackages [rustfst-python]: New version: [1.0.0] Old Version: [0.9.1a9]
+[2024-04-27 16:56:45] INFO root fetch - processPackages [rustfst-python]: Downloading https://files.pythonhosted.org/packages/65/bb/f528e28612380300cf575b2c3c45cdaa24431baa50964386b9159e5da18e/rustfst_python-0.9.1a9-pp39-pypy39_pp73-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl
+[2024-04-27 16:56:46] INFO root fetch - processPackages [rustfst-python]: Downloading https://files.pythonhosted.org/packages/12/64/9fa4b6eb5c945eb75eb923b7f224219a0fedba03065243ce97c2a06d2e5a/rustfst_python-1.0.0-cp310-cp310-musllinux_1_1_x86_64.whl
+[2024-04-27 16:56:46] INFO root fetch - processPackages [rustfst-python]: executing diffoscope
+[2024-04-27 16:56:46] INFO root fetch - processPackages [rustfst-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rustfst_python-0.9.1a9-pp39-pypy39_pp73-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl.zip tmp/rustfst_python-1.0.0-cp310-cp310-musllinux_1_1_x86_64.whl.zip --markdown 20240427/r/rustfst-python/0.9.1a9-1.0.0/README.md --exclude *.pyd
+[2024-04-27 16:56:47] INFO root fetch - processPackages [rustfst-python]: Remove: archive file [/home/abi/fetcher/tmp/rustfst_python-0.9.1a9-pp39-pypy39_pp73-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl.zip]
+[2024-04-27 16:56:47] INFO root fetch - processPackages [rustfst-python]: Remove: archive file [/home/abi/fetcher/tmp/rustfst_python-1.0.0-cp310-cp310-musllinux_1_1_x86_64.whl.zip]
+[2024-04-27 16:56:47] INFO root fetch - main [MainThread]: End processing [rustfst-python]: success
+[2024-04-27 16:56:47] INFO root fetch - main [MainThread]: Store serial: [22959604]
