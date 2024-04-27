@@ -14354,3 +14354,84 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 15:07:49] INFO root fetch - processPackages [python-lsp-ruff]: Remove: archive file [/home/abi/fetcher/tmp/python_lsp_ruff-2.2.1.tar.gz]
 [2024-04-27 15:07:49] INFO root fetch - main [MainThread]: End processing [python-lsp-ruff]: success
 [2024-04-27 15:07:49] INFO root fetch - main [MainThread]: Store serial: [22958910]
+[2024-04-27 15:09:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958910]
+[2024-04-27 15:09:59] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-04-27 15:09:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ttpdanth
+[2024-04-27 15:09:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: swiss-army-man
+[2024-04-27 15:09:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: state-graph
+[2024-04-27 15:09:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nlpswift
+[2024-04-27 15:09:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: css-inline
+[2024-04-27 15:09:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bashinpy
+[2024-04-27 15:09:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: virgo-modules
+[2024-04-27 15:09:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: stable-baselines3
+[2024-04-27 15:09:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: eto-mysql-databaselib
+[2024-04-27 15:09:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: freegenius
+[2024-04-27 15:09:59] INFO root fetch - processPackages [state-graph]: New version: [0.1.2.2] Old Version: [0.1.2.1]
+[2024-04-27 15:09:59] INFO root fetch - processPackages [nlpswift]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-27 15:09:59] INFO root fetch - processPackages [swiss-army-man]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-04-27 15:09:59] INFO root fetch - processPackages [state-graph]: Downloading https://files.pythonhosted.org/packages/47/b3/4c4a5f1111793dd17cc2d9fc089a1f20776535bdfbb3a36280c8b0c09263/state_graph-0.1.2.1.tar.gz
+[2024-04-27 15:09:59] INFO root fetch - processPackages [freegenius]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-27 15:09:59] WARNING root fetch - processPackages [ttpdanth]: Skipping, unable to determine old version
+[2024-04-27 15:09:59] INFO root fetch - main [MainThread]: End processing [ttpdanth] error
+[2024-04-27 15:09:59] INFO root fetch - processPackages [eto-mysql-databaselib]: New version: [1.1.5] Old Version: [1.1.4]
+[2024-04-27 15:09:59] WARNING root fetch - processPackages [bashinpy]: Skipping, unable to determine old version
+[2024-04-27 15:09:59] INFO root fetch - main [MainThread]: End processing [bashinpy] error
+[2024-04-27 15:09:59] INFO root fetch - processPackages [stable-baselines3]: New version: [2.3.2] Old Version: [2.3.1]
+[2024-04-27 15:09:59] INFO root fetch - processPackages [virgo-modules]: New version: [0.0.83] Old Version: [0.0.82]
+[2024-04-27 15:09:59] INFO root fetch - processPackages [css-inline]: New version: [0.9.0] Old Version: [0.8.7]
+[2024-04-27 15:09:59] INFO root fetch - processPackages [nlpswift]: Downloading https://files.pythonhosted.org/packages/fe/f0/d0fedce23710c7ef904ba2588965e6fd8f0d35636f9345526bf93fd02e28/nlpswift-0.0.5.tar.gz
+[2024-04-27 15:09:59] INFO root fetch - processPackages [swiss-army-man]: Downloading https://files.pythonhosted.org/packages/48/1f/294f600f1fa28cd18c161440c03fb3b30e0c131a86552d9308f61aa90137/swiss_army_man-0.1.7.tar.gz
+[2024-04-27 15:09:59] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/71/1f/4e7f72777c44cdb7c32886f3769095c35f06cf583b3547c7a34ab0fc37b3/freegenius-0.1.0.tar.gz
+[2024-04-27 15:09:59] INFO root fetch - processPackages [eto-mysql-databaselib]: Downloading https://files.pythonhosted.org/packages/c2/62/6215406cc1b7759d611120f4fae6df8458236808b69795774ffd5a2eaf5e/eto-mysql-databaselib-1.1.4.tar.gz
+[2024-04-27 15:09:59] INFO root fetch - processPackages [virgo-modules]: Downloading https://files.pythonhosted.org/packages/67/4c/e677acfb8bbc9d54cf322f5662eb50c93c289493ab748db9046835c6bad6/virgo_modules-0.0.82.tar.gz
+[2024-04-27 15:09:59] INFO root fetch - processPackages [stable-baselines3]: Downloading https://files.pythonhosted.org/packages/3c/6b/619dc6c87d2c90eb94f2de4efefcc8ad43dbe5e8950bb24da92c24a6f812/stable_baselines3-2.3.1.tar.gz
+[2024-04-27 15:10:00] INFO root fetch - processPackages [css-inline]: Downloading https://files.pythonhosted.org/packages/53/4d/511e3155bf8f863d129e8d1006cc01f26ecfb36b2622dd32551c654c5f66/css_inline-0.8.7.tar.gz
+[2024-04-27 15:10:00] INFO root fetch - processPackages [state-graph]: Downloading https://files.pythonhosted.org/packages/46/23/ed148a06ba416255ba53544b3c5b867f679344b9fa9f1b4bb235bf40d931/state_graph-0.1.2.2.tar.gz
+[2024-04-27 15:10:00] INFO root fetch - processPackages [nlpswift]: Downloading https://files.pythonhosted.org/packages/59/38/d6b640b2bcaf5f060a31e5b0f37294642df79d2dec18c4d27e35bf66415f/nlpswift-0.0.6.tar.gz
+[2024-04-27 15:10:00] INFO root fetch - processPackages [state-graph]: executing diffoscope
+[2024-04-27 15:10:00] INFO root fetch - processPackages [state-graph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/state_graph-0.1.2.1.tar.gz tmp/state_graph-0.1.2.2.tar.gz --markdown 20240427/s/state-graph/0.1.2.1-0.1.2.2/README.md --exclude *.pyd
+[2024-04-27 15:10:00] INFO root fetch - processPackages [swiss-army-man]: Downloading https://files.pythonhosted.org/packages/56/82/24e0c66ae73179bc5f3180da018b1c49aadae130d6093a4ba1f45acd2afa/swiss_army_man-0.1.9.tar.gz
+[2024-04-27 15:10:00] INFO root fetch - processPackages [eto-mysql-databaselib]: Downloading https://files.pythonhosted.org/packages/c1/30/4784fc0bf4f1234828a086acf0ac2906ab6edddb21d08bc9d02c10a36dfc/eto_mysql_databaselib-1.1.5.tar.gz
+[2024-04-27 15:10:00] INFO root fetch - processPackages [nlpswift]: executing diffoscope
+[2024-04-27 15:10:00] INFO root fetch - processPackages [nlpswift]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlpswift-0.0.5.tar.gz tmp/nlpswift-0.0.6.tar.gz --markdown 20240427/n/nlpswift/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-27 15:10:00] INFO root fetch - processPackages [virgo-modules]: Downloading https://files.pythonhosted.org/packages/53/f2/f85e4db75c13359d38fa09e0ce6bfc71955c39b07285a4ec202c38a2eeaa/virgo_modules-0.0.83.tar.gz
+[2024-04-27 15:10:00] INFO root fetch - processPackages [swiss-army-man]: executing diffoscope
+[2024-04-27 15:10:00] INFO root fetch - processPackages [swiss-army-man]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swiss_army_man-0.1.7.tar.gz tmp/swiss_army_man-0.1.9.tar.gz --markdown 20240427/s/swiss-army-man/0.1.7-0.1.9/README.md --exclude *.pyd
+[2024-04-27 15:10:00] INFO root fetch - processPackages [stable-baselines3]: Downloading https://files.pythonhosted.org/packages/ea/bd/8b6fd663cca67793c7a651b7929f987cee021e72a8d910e8851ea0b4d9c2/stable_baselines3-2.3.2.tar.gz
+[2024-04-27 15:10:00] INFO root fetch - processPackages [eto-mysql-databaselib]: executing diffoscope
+[2024-04-27 15:10:00] INFO root fetch - processPackages [eto-mysql-databaselib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eto-mysql-databaselib-1.1.4.tar.gz tmp/eto_mysql_databaselib-1.1.5.tar.gz --markdown 20240427/e/eto-mysql-databaselib/1.1.4-1.1.5/README.md --exclude *.pyd
+[2024-04-27 15:10:00] INFO root fetch - processPackages [virgo-modules]: executing diffoscope
+[2024-04-27 15:10:00] INFO root fetch - processPackages [virgo-modules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/virgo_modules-0.0.82.tar.gz tmp/virgo_modules-0.0.83.tar.gz --markdown 20240427/v/virgo-modules/0.0.82-0.0.83/README.md --exclude *.pyd
+[2024-04-27 15:10:00] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/6a/d5/fb8be749684b76e4c7bf1036a5b1c6c38ff4a472a3e7ab70a7fabbec87d6/freegenius-0.1.1.tar.gz
+[2024-04-27 15:10:00] INFO root fetch - processPackages [css-inline]: Downloading https://files.pythonhosted.org/packages/b6/8a/f5f42b7f417e1a8c1e5764caecc6d9f03a4da93449225918f9cf4aa5f590/css_inline-0.9.0.tar.gz
+[2024-04-27 15:10:00] INFO root fetch - processPackages [stable-baselines3]: executing diffoscope
+[2024-04-27 15:10:00] INFO root fetch - processPackages [stable-baselines3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stable_baselines3-2.3.1.tar.gz tmp/stable_baselines3-2.3.2.tar.gz --markdown 20240427/s/stable-baselines3/2.3.1-2.3.2/README.md --exclude *.pyd
+[2024-04-27 15:10:00] INFO root fetch - processPackages [css-inline]: executing diffoscope
+[2024-04-27 15:10:00] INFO root fetch - processPackages [css-inline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/css_inline-0.8.7.tar.gz tmp/css_inline-0.9.0.tar.gz --markdown 20240427/c/css-inline/0.8.7-0.9.0/README.md --exclude *.pyd
+[2024-04-27 15:10:00] INFO root fetch - processPackages [state-graph]: Remove: archive file [/home/abi/fetcher/tmp/state_graph-0.1.2.1.tar.gz]
+[2024-04-27 15:10:00] INFO root fetch - processPackages [state-graph]: Remove: archive file [/home/abi/fetcher/tmp/state_graph-0.1.2.2.tar.gz]
+[2024-04-27 15:10:00] INFO root fetch - main [MainThread]: End processing [state-graph]: success
+[2024-04-27 15:10:01] INFO root fetch - processPackages [nlpswift]: Remove: archive file [/home/abi/fetcher/tmp/nlpswift-0.0.5.tar.gz]
+[2024-04-27 15:10:01] INFO root fetch - processPackages [nlpswift]: Remove: archive file [/home/abi/fetcher/tmp/nlpswift-0.0.6.tar.gz]
+[2024-04-27 15:10:01] INFO root fetch - main [MainThread]: End processing [nlpswift]: success
+[2024-04-27 15:10:01] INFO root fetch - processPackages [eto-mysql-databaselib]: Remove: archive file [/home/abi/fetcher/tmp/eto-mysql-databaselib-1.1.4.tar.gz]
+[2024-04-27 15:10:01] INFO root fetch - processPackages [eto-mysql-databaselib]: Remove: archive file [/home/abi/fetcher/tmp/eto_mysql_databaselib-1.1.5.tar.gz]
+[2024-04-27 15:10:01] INFO root fetch - main [MainThread]: End processing [eto-mysql-databaselib]: success
+[2024-04-27 15:10:01] INFO root fetch - processPackages [swiss-army-man]: Remove: archive file [/home/abi/fetcher/tmp/swiss_army_man-0.1.7.tar.gz]
+[2024-04-27 15:10:01] INFO root fetch - processPackages [swiss-army-man]: Remove: archive file [/home/abi/fetcher/tmp/swiss_army_man-0.1.9.tar.gz]
+[2024-04-27 15:10:01] INFO root fetch - main [MainThread]: End processing [swiss-army-man]: success
+[2024-04-27 15:10:01] INFO root fetch - processPackages [virgo-modules]: Remove: archive file [/home/abi/fetcher/tmp/virgo_modules-0.0.82.tar.gz]
+[2024-04-27 15:10:01] INFO root fetch - processPackages [virgo-modules]: Remove: archive file [/home/abi/fetcher/tmp/virgo_modules-0.0.83.tar.gz]
+[2024-04-27 15:10:01] INFO root fetch - main [MainThread]: End processing [virgo-modules]: success
+[2024-04-27 15:10:01] INFO root fetch - processPackages [stable-baselines3]: Remove: archive file [/home/abi/fetcher/tmp/stable_baselines3-2.3.1.tar.gz]
+[2024-04-27 15:10:01] INFO root fetch - processPackages [stable-baselines3]: Remove: archive file [/home/abi/fetcher/tmp/stable_baselines3-2.3.2.tar.gz]
+[2024-04-27 15:10:01] INFO root fetch - main [MainThread]: End processing [stable-baselines3]: success
+[2024-04-27 15:10:01] INFO root fetch - processPackages [css-inline]: Remove: archive file [/home/abi/fetcher/tmp/css_inline-0.8.7.tar.gz]
+[2024-04-27 15:10:01] INFO root fetch - processPackages [css-inline]: Remove: archive file [/home/abi/fetcher/tmp/css_inline-0.9.0.tar.gz]
+[2024-04-27 15:10:01] INFO root fetch - main [MainThread]: End processing [css-inline]: success
+[2024-04-27 15:10:02] INFO root fetch - processPackages [freegenius]: executing diffoscope
+[2024-04-27 15:10:02] INFO root fetch - processPackages [freegenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freegenius-0.1.0.tar.gz tmp/freegenius-0.1.1.tar.gz --markdown 20240427/f/freegenius/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-27 15:10:04] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.1.0.tar.gz]
+[2024-04-27 15:10:04] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.1.1.tar.gz]
+[2024-04-27 15:10:04] INFO root fetch - main [MainThread]: End processing [freegenius]: success
+[2024-04-27 15:10:04] INFO root fetch - main [MainThread]: Store serial: [22958980]
