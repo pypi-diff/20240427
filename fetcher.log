@@ -11617,3 +11617,42 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 11:47:02] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.6.9.tar.gz]
 [2024-04-27 11:47:02] INFO root fetch - main [MainThread]: End processing [python-115]: success
 [2024-04-27 11:47:02] INFO root fetch - main [MainThread]: Store serial: [22957748]
+[2024-04-27 11:49:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957748]
+[2024-04-27 11:49:10] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-27 11:49:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: upgini
+[2024-04-27 11:49:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hellosp
+[2024-04-27 11:49:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: earthquake-check
+[2024-04-27 11:49:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: HapooDB
+[2024-04-27 11:49:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: graphene-django-extended
+[2024-04-27 11:49:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ffxiv-crafting
+[2024-04-27 11:49:10] WARNING root fetch - processPackages [ffxiv-crafting]: Skipping, unable to determine old version
+[2024-04-27 11:49:10] INFO root fetch - processPackages [HapooDB]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-27 11:49:10] INFO root fetch - main [MainThread]: End processing [ffxiv-crafting] error
+[2024-04-27 11:49:10] WARNING root fetch - processPackages [hellosp]: Skipping, unable to determine old version
+[2024-04-27 11:49:10] INFO root fetch - main [MainThread]: End processing [hellosp] error
+[2024-04-27 11:49:10] INFO root fetch - processPackages [upgini]: New version: [1.1.99] Old Version: [1.1.98]
+[2024-04-27 11:49:11] WARNING root fetch - processPackages [earthquake-check]: Skipping, unable to determine old version
+[2024-04-27 11:49:11] INFO root fetch - main [MainThread]: End processing [earthquake-check] error
+[2024-04-27 11:49:11] INFO root fetch - processPackages [graphene-django-extended]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-04-27 11:49:11] INFO root fetch - processPackages [HapooDB]: Downloading https://files.pythonhosted.org/packages/0c/2e/913ca98dc0ae0258f6c43c3a73c7dd74ddceeaecf0ffd58db09904666388/HapooDB-0.0.2.tar.gz
+[2024-04-27 11:49:11] INFO root fetch - processPackages [upgini]: Downloading https://files.pythonhosted.org/packages/59/79/dc47448e0c68a4e00d9d0b7f4c640207fa605fe48cdc53e30221037a1962/upgini-1.1.98.tar.gz
+[2024-04-27 11:49:11] INFO root fetch - processPackages [graphene-django-extended]: Downloading https://files.pythonhosted.org/packages/61/b6/2754ca9fa2b787290486cfaebd6e5da019e4002ef9c805debaa560dcdde7/graphene_django_extended-1.1.0.tar.gz
+[2024-04-27 11:49:11] INFO root fetch - processPackages [HapooDB]: Downloading https://files.pythonhosted.org/packages/4b/48/3ce99d2e1adff353ec31fe05b568355078f3045bf7706f71cb99f60da255/HapooDB-0.0.3.tar.gz
+[2024-04-27 11:49:11] INFO root fetch - processPackages [upgini]: Downloading https://files.pythonhosted.org/packages/32/f1/1df90a6a856d855308ddf057a7b8cdad7dbcafb6230f0592bbff90f929fd/upgini-1.1.99.tar.gz
+[2024-04-27 11:49:11] INFO root fetch - processPackages [HapooDB]: executing diffoscope
+[2024-04-27 11:49:11] INFO root fetch - processPackages [HapooDB]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HapooDB-0.0.2.tar.gz tmp/HapooDB-0.0.3.tar.gz --markdown 20240427/H/HapooDB/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-27 11:49:11] INFO root fetch - processPackages [upgini]: executing diffoscope
+[2024-04-27 11:49:11] INFO root fetch - processPackages [upgini]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/upgini-1.1.98.tar.gz tmp/upgini-1.1.99.tar.gz --markdown 20240427/u/upgini/1.1.98-1.1.99/README.md --exclude *.pyd
+[2024-04-27 11:49:11] INFO root fetch - processPackages [graphene-django-extended]: Downloading https://files.pythonhosted.org/packages/b0/fe/66f14d0d5d44b79505444c9994ba40955a4328a96165f7129071cbd95eb7/graphene_django_extended-1.1.1.tar.gz
+[2024-04-27 11:49:11] INFO root fetch - processPackages [graphene-django-extended]: executing diffoscope
+[2024-04-27 11:49:11] INFO root fetch - processPackages [graphene-django-extended]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphene_django_extended-1.1.0.tar.gz tmp/graphene_django_extended-1.1.1.tar.gz --markdown 20240427/g/graphene-django-extended/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-04-27 11:49:11] INFO root fetch - processPackages [HapooDB]: Remove: archive file [/home/abi/fetcher/tmp/HapooDB-0.0.2.tar.gz]
+[2024-04-27 11:49:11] INFO root fetch - processPackages [HapooDB]: Remove: archive file [/home/abi/fetcher/tmp/HapooDB-0.0.3.tar.gz]
+[2024-04-27 11:49:11] INFO root fetch - main [MainThread]: End processing [HapooDB]: success
+[2024-04-27 11:49:12] INFO root fetch - processPackages [graphene-django-extended]: Remove: archive file [/home/abi/fetcher/tmp/graphene_django_extended-1.1.0.tar.gz]
+[2024-04-27 11:49:12] INFO root fetch - processPackages [graphene-django-extended]: Remove: archive file [/home/abi/fetcher/tmp/graphene_django_extended-1.1.1.tar.gz]
+[2024-04-27 11:49:12] INFO root fetch - main [MainThread]: End processing [graphene-django-extended]: success
+[2024-04-27 11:49:12] INFO root fetch - processPackages [upgini]: Remove: archive file [/home/abi/fetcher/tmp/upgini-1.1.98.tar.gz]
+[2024-04-27 11:49:12] INFO root fetch - processPackages [upgini]: Remove: archive file [/home/abi/fetcher/tmp/upgini-1.1.99.tar.gz]
+[2024-04-27 11:49:12] INFO root fetch - main [MainThread]: End processing [upgini]: success
+[2024-04-27 11:49:12] INFO root fetch - main [MainThread]: Store serial: [22957766]
