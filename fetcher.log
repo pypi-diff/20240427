@@ -7332,3 +7332,17 @@ EOFError: EOF read where object expected
 [2024-04-27 04:39:21] INFO root fetch - processPackages [qlv-client]: Remove: archive file [/home/abi/fetcher/tmp/qlv-client-0.1.7.tar.gz]
 [2024-04-27 04:39:21] INFO root fetch - main [MainThread]: End processing [qlv-client]: success
 [2024-04-27 04:39:21] INFO root fetch - main [MainThread]: Store serial: [22956122]
+[2024-04-27 04:41:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956122]
+[2024-04-27 04:41:29] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-27 04:43:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956122]
+[2024-04-27 04:43:36] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 04:43:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: redhat-assisted-installer
+[2024-04-27 04:43:36] INFO root fetch - processPackages [redhat-assisted-installer]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-27 04:43:36] INFO root fetch - processPackages [redhat-assisted-installer]: Downloading https://files.pythonhosted.org/packages/ca/37/1b5b60273f3007464e7ccef8ebc12f93ef34e816da0026bb9bd9244528c1/redhat_assisted_installer-0.1.0.tar.gz
+[2024-04-27 04:43:37] INFO root fetch - processPackages [redhat-assisted-installer]: Downloading https://files.pythonhosted.org/packages/9b/f7/71fb9c333c676041495f17c58867d5a97d6e24aa370f9dd2adc881a006d7/redhat_assisted_installer-0.1.1.tar.gz
+[2024-04-27 04:43:37] INFO root fetch - processPackages [redhat-assisted-installer]: executing diffoscope
+[2024-04-27 04:43:37] INFO root fetch - processPackages [redhat-assisted-installer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redhat_assisted_installer-0.1.0.tar.gz tmp/redhat_assisted_installer-0.1.1.tar.gz --markdown 20240427/r/redhat-assisted-installer/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-27 04:43:37] INFO root fetch - processPackages [redhat-assisted-installer]: Remove: archive file [/home/abi/fetcher/tmp/redhat_assisted_installer-0.1.0.tar.gz]
+[2024-04-27 04:43:37] INFO root fetch - processPackages [redhat-assisted-installer]: Remove: archive file [/home/abi/fetcher/tmp/redhat_assisted_installer-0.1.1.tar.gz]
+[2024-04-27 04:43:37] INFO root fetch - main [MainThread]: End processing [redhat-assisted-installer]: success
+[2024-04-27 04:43:37] INFO root fetch - main [MainThread]: Store serial: [22956125]
