@@ -20434,3 +20434,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 22:09:52] INFO root fetch - processPackages [aim]: Remove: archive file [/home/abi/fetcher/tmp/aim-4.0.3.tar.gz]
 [2024-04-27 22:09:52] INFO root fetch - main [MainThread]: End processing [aim]: success
 [2024-04-27 22:09:52] INFO root fetch - main [MainThread]: Store serial: [22961608]
+[2024-04-27 22:12:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961608]
+[2024-04-27 22:12:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 22:12:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zanthor
+[2024-04-27 22:12:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cpu-info
+[2024-04-27 22:12:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyslth
+[2024-04-27 22:12:08] WARNING root fetch - processPackages [cpu-info]: Skipping, unable to determine old version
+[2024-04-27 22:12:08] INFO root fetch - main [MainThread]: End processing [cpu-info] error
+[2024-04-27 22:12:08] INFO root fetch - processPackages [pyslth]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-27 22:12:08] INFO root fetch - processPackages [pyslth]: Downloading https://files.pythonhosted.org/packages/de/31/0e300a0c47ed1cf0f9d749cadee867c5dcdc8271c24fe301c69f79dc8213/pyslth-0.1.4.tar.gz
+[2024-04-27 22:12:08] INFO root fetch - processPackages [zanthor]: New version: [1.2.4a2] Old Version: [1.2.3]
+[2024-04-27 22:12:08] INFO root fetch - processPackages [zanthor]: Downloading https://files.pythonhosted.org/packages/74/ac/89cfc7ab8588746b4fab1ca2ab3d840e2035181f8dec6ecd6e2dbe314960/zanthor-1.2.3.tar.gz
+[2024-04-27 22:12:08] INFO root fetch - processPackages [pyslth]: Downloading https://files.pythonhosted.org/packages/c4/63/72dd8e20a72981d028905958c33f3f0128fff120ccad2d8caf6379d8981f/pyslth-0.1.5.tar.gz
+[2024-04-27 22:12:08] INFO root fetch - processPackages [pyslth]: executing diffoscope
+[2024-04-27 22:12:08] INFO root fetch - processPackages [pyslth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyslth-0.1.4.tar.gz tmp/pyslth-0.1.5.tar.gz --markdown 20240427/p/pyslth/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-27 22:12:08] INFO root fetch - processPackages [zanthor]: Downloading https://files.pythonhosted.org/packages/74/a0/c80f7320b402115fe0dd670df7834791aa3f7e9a2d6f29fa47b7aee12c74/zanthor-1.2.4a2.tar.gz
+[2024-04-27 22:12:09] INFO root fetch - processPackages [pyslth]: Remove: archive file [/home/abi/fetcher/tmp/pyslth-0.1.4.tar.gz]
+[2024-04-27 22:12:09] INFO root fetch - processPackages [pyslth]: Remove: archive file [/home/abi/fetcher/tmp/pyslth-0.1.5.tar.gz]
+[2024-04-27 22:12:09] INFO root fetch - main [MainThread]: End processing [pyslth]: success
+[2024-04-27 22:12:09] INFO root fetch - processPackages [zanthor]: executing diffoscope
+[2024-04-27 22:12:09] INFO root fetch - processPackages [zanthor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zanthor-1.2.3.tar.gz tmp/zanthor-1.2.4a2.tar.gz --markdown 20240427/z/zanthor/1.2.3-1.2.4a2/README.md --exclude *.pyd
+[2024-04-27 22:12:11] INFO root fetch - processPackages [zanthor]: Remove: archive file [/home/abi/fetcher/tmp/zanthor-1.2.3.tar.gz]
+[2024-04-27 22:12:11] INFO root fetch - processPackages [zanthor]: Remove: archive file [/home/abi/fetcher/tmp/zanthor-1.2.4a2.tar.gz]
+[2024-04-27 22:12:11] INFO root fetch - main [MainThread]: End processing [zanthor]: success
+[2024-04-27 22:12:11] INFO root fetch - main [MainThread]: Store serial: [22961618]
