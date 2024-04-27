@@ -21150,3 +21150,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 23:07:21] INFO root fetch - processPackages [codelimit]: Remove: archive file [/home/abi/fetcher/tmp/codelimit-0.9.3.tar.gz]
 [2024-04-27 23:07:21] INFO root fetch - main [MainThread]: End processing [codelimit]: success
 [2024-04-27 23:07:21] INFO root fetch - main [MainThread]: Store serial: [22961992]
+[2024-04-27 23:09:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961992]
+[2024-04-27 23:09:39] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 23:09:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ovp-docker-utils
+[2024-04-27 23:09:39] INFO root fetch - processPackages [ovp-docker-utils]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-04-27 23:09:40] INFO root fetch - processPackages [ovp-docker-utils]: Downloading https://files.pythonhosted.org/packages/c3/4b/1754a0226c459a1d5c6c9b39c8d0a0552f292da37c852291147cb4edf860/ovp_docker_utils-1.0.7.tar.gz
+[2024-04-27 23:09:40] INFO root fetch - processPackages [ovp-docker-utils]: Downloading https://files.pythonhosted.org/packages/e8/d1/808a453e4cc0630ce2cea66e29414ec5870e9c3eca02a34abdc0965f9e70/ovp_docker_utils-1.0.8.tar.gz
+[2024-04-27 23:09:40] INFO root fetch - processPackages [ovp-docker-utils]: executing diffoscope
+[2024-04-27 23:09:40] INFO root fetch - processPackages [ovp-docker-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovp_docker_utils-1.0.7.tar.gz tmp/ovp_docker_utils-1.0.8.tar.gz --markdown 20240427/o/ovp-docker-utils/1.0.7-1.0.8/README.md --exclude *.pyd
+[2024-04-27 23:09:41] INFO root fetch - processPackages [ovp-docker-utils]: Remove: archive file [/home/abi/fetcher/tmp/ovp_docker_utils-1.0.7.tar.gz]
+[2024-04-27 23:09:41] INFO root fetch - processPackages [ovp-docker-utils]: Remove: archive file [/home/abi/fetcher/tmp/ovp_docker_utils-1.0.8.tar.gz]
+[2024-04-27 23:09:41] INFO root fetch - main [MainThread]: End processing [ovp-docker-utils]: success
+[2024-04-27 23:09:41] INFO root fetch - main [MainThread]: Store serial: [22961997]
