@@ -12117,3 +12117,45 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 12:32:29] INFO root fetch - processPackages [furo]: Remove: archive file [/home/abi/fetcher/tmp/furo-2024.4.27.tar.gz]
 [2024-04-27 12:32:29] INFO root fetch - main [MainThread]: End processing [furo]: success
 [2024-04-27 12:32:29] INFO root fetch - main [MainThread]: Store serial: [22957954]
+[2024-04-27 12:34:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957954]
+[2024-04-27 12:34:37] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 12:34:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: furo
+[2024-04-27 12:34:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-ucan
+[2024-04-27 12:34:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: create-app-fastapi
+[2024-04-27 12:34:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-alist
+[2024-04-27 12:34:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tweety-ns
+[2024-04-27 12:34:37] INFO root fetch - processPackages [tweety-ns]: New version: [1.1.4] Old Version: [1.1.3]
+[2024-04-27 12:34:37] INFO root fetch - processPackages [create-app-fastapi]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-27 12:34:37] INFO root fetch - processPackages [furo]: New version: [2024.4.27] Old Version: [2024.1.29]
+[2024-04-27 12:34:38] INFO root fetch - processPackages [tweety-ns]: Downloading https://files.pythonhosted.org/packages/ed/03/16b0d66b32cc0ecee7f2601e23307618d323fa68f5d01d84dbdf79b7fe05/tweety_ns-1.1.3.tar.gz
+[2024-04-27 12:34:38] WARNING root fetch - processPackages [py-ucan]: Skipping, unable to determine old version
+[2024-04-27 12:34:38] INFO root fetch - main [MainThread]: End processing [py-ucan] error
+[2024-04-27 12:34:38] INFO root fetch - processPackages [python-alist]: New version: [0.0.9.9] Old Version: [0.0.9.8.1]
+[2024-04-27 12:34:38] INFO root fetch - processPackages [furo]: Downloading https://files.pythonhosted.org/packages/00/6d/7d0f35b9fba4394675bd90d44baadde8f20fe6e38c2481ef42cf05cd74f8/furo-2024.1.29.tar.gz
+[2024-04-27 12:34:38] INFO root fetch - processPackages [create-app-fastapi]: Downloading https://files.pythonhosted.org/packages/d0/38/49b89d796a7a52c6a949e2aeba45c42e4912957c2fec9775ac3f6618a062/create-app-fastapi-0.0.1.tar.gz
+[2024-04-27 12:34:38] INFO root fetch - processPackages [tweety-ns]: Downloading https://files.pythonhosted.org/packages/15/17/ea2f0b4989177a3211819060de07428aae3afc8f6a7a72a545698db799fa/tweety_ns-1.1.4.tar.gz
+[2024-04-27 12:34:38] INFO root fetch - processPackages [python-alist]: Downloading https://files.pythonhosted.org/packages/16/4c/767ed3dbd217eb3ea1f030c845f5a098d8e656f2fb4ab63c7fa0eadcf367/python_alist-0.0.9.8.1.tar.gz
+[2024-04-27 12:34:38] INFO root fetch - processPackages [tweety-ns]: executing diffoscope
+[2024-04-27 12:34:38] INFO root fetch - processPackages [tweety-ns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tweety_ns-1.1.3.tar.gz tmp/tweety_ns-1.1.4.tar.gz --markdown 20240427/t/tweety-ns/1.1.3-1.1.4/README.md --exclude *.pyd
+[2024-04-27 12:34:38] INFO root fetch - processPackages [create-app-fastapi]: Downloading https://files.pythonhosted.org/packages/20/05/b1a157b61bc50f8fe9d734dbde12da443cfdf9a6f43603c2e4be1d52942c/create-app-fastapi-0.0.2.tar.gz
+[2024-04-27 12:34:38] INFO root fetch - processPackages [furo]: Downloading https://files.pythonhosted.org/packages/7d/44/bd6a7a051b0b72d6c0eff2a8bf33f0ffdd6735be113060c10fdcd8df6d24/furo-2024.4.27.tar.gz
+[2024-04-27 12:34:38] INFO root fetch - processPackages [create-app-fastapi]: executing diffoscope
+[2024-04-27 12:34:38] INFO root fetch - processPackages [create-app-fastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/create-app-fastapi-0.0.1.tar.gz tmp/create-app-fastapi-0.0.2.tar.gz --markdown 20240427/c/create-app-fastapi/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-27 12:34:38] INFO root fetch - processPackages [python-alist]: Downloading https://files.pythonhosted.org/packages/a4/c8/c4ceead1bdae1d44cce58995ae016d39c6e4134cefa9b31ef2daf97d4c36/python_alist-0.0.9.9.tar.gz
+[2024-04-27 12:34:38] INFO root fetch - processPackages [furo]: executing diffoscope
+[2024-04-27 12:34:38] INFO root fetch - processPackages [furo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/furo-2024.1.29.tar.gz tmp/furo-2024.4.27.tar.gz --markdown 20240427/f/furo/2024.1.29-2024.4.27/README.md --exclude *.pyd
+[2024-04-27 12:34:38] INFO root fetch - processPackages [python-alist]: executing diffoscope
+[2024-04-27 12:34:38] INFO root fetch - processPackages [python-alist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_alist-0.0.9.8.1.tar.gz tmp/python_alist-0.0.9.9.tar.gz --markdown 20240427/p/python-alist/0.0.9.8.1-0.0.9.9/README.md --exclude *.pyd
+[2024-04-27 12:34:39] INFO root fetch - processPackages [create-app-fastapi]: Remove: archive file [/home/abi/fetcher/tmp/create-app-fastapi-0.0.1.tar.gz]
+[2024-04-27 12:34:39] INFO root fetch - processPackages [create-app-fastapi]: Remove: archive file [/home/abi/fetcher/tmp/create-app-fastapi-0.0.2.tar.gz]
+[2024-04-27 12:34:39] INFO root fetch - main [MainThread]: End processing [create-app-fastapi]: success
+[2024-04-27 12:34:39] INFO root fetch - processPackages [tweety-ns]: Remove: archive file [/home/abi/fetcher/tmp/tweety_ns-1.1.3.tar.gz]
+[2024-04-27 12:34:39] INFO root fetch - processPackages [tweety-ns]: Remove: archive file [/home/abi/fetcher/tmp/tweety_ns-1.1.4.tar.gz]
+[2024-04-27 12:34:39] INFO root fetch - main [MainThread]: End processing [tweety-ns]: success
+[2024-04-27 12:34:39] INFO root fetch - processPackages [python-alist]: Remove: archive file [/home/abi/fetcher/tmp/python_alist-0.0.9.8.1.tar.gz]
+[2024-04-27 12:34:39] INFO root fetch - processPackages [python-alist]: Remove: archive file [/home/abi/fetcher/tmp/python_alist-0.0.9.9.tar.gz]
+[2024-04-27 12:34:39] INFO root fetch - main [MainThread]: End processing [python-alist]: success
+[2024-04-27 12:34:40] INFO root fetch - processPackages [furo]: Remove: archive file [/home/abi/fetcher/tmp/furo-2024.1.29.tar.gz]
+[2024-04-27 12:34:40] INFO root fetch - processPackages [furo]: Remove: archive file [/home/abi/fetcher/tmp/furo-2024.4.27.tar.gz]
+[2024-04-27 12:34:40] INFO root fetch - main [MainThread]: End processing [furo]: success
+[2024-04-27 12:34:40] INFO root fetch - main [MainThread]: Store serial: [22957971]
