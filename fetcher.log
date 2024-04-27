@@ -2253,3 +2253,51 @@ EOFError: EOF read where object expected
 [2024-04-27 02:08:48] INFO root fetch - processPackages [autopipeline]: Remove: archive file [/home/abi/fetcher/tmp/autopipeline-0.1.99.tar.gz]
 [2024-04-27 02:08:48] INFO root fetch - main [MainThread]: End processing [autopipeline]: success
 [2024-04-27 02:08:48] INFO root fetch - main [MainThread]: Store serial: [22954168]
+[2024-04-27 02:10:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22954168]
+[2024-04-27 02:10:56] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 02:10:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openbb-nightly
+[2024-04-27 02:10:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mongo-objects
+[2024-04-27 02:10:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-common
+[2024-04-27 02:10:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mct-quantizers-nightly
+[2024-04-27 02:10:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: optima-ml
+[2024-04-27 02:10:56] INFO root fetch - processPackages [openbb-nightly]: New version: [4.1.7.dev202404260009] Old Version: [4.1.7.dev202404250009]
+[2024-04-27 02:10:56] INFO root fetch - processPackages [cdk-common]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-04-27 02:10:56] INFO root fetch - processPackages [mct-quantizers-nightly]: New version: [1.5.0.20240426.post1029] Old Version: [1.5.0.20240425.post1013]
+[2024-04-27 02:10:56] INFO root fetch - processPackages [mongo-objects]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-04-27 02:10:56] INFO root fetch - processPackages [openbb-nightly]: Downloading https://files.pythonhosted.org/packages/f3/02/a46e47dfaff1f2e867edcf517a35c659880321a709e5176801eeefed1203/openbb_nightly-4.1.7.dev202404250009.tar.gz
+[2024-04-27 02:10:56] INFO root fetch - processPackages [optima-ml]: New version: [0.3.3a1] Old Version: [0.3.2a5.dev2]
+[2024-04-27 02:10:56] INFO root fetch - processPackages [mct-quantizers-nightly]: Downloading https://files.pythonhosted.org/packages/47/41/04d14ff6917ec0c85d49a86cf8329cbbb118915f2eed8e540be71c0c08ba/mct-quantizers-nightly-1.5.0.20240425.post1013.tar.gz
+[2024-04-27 02:10:56] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/f3/30/796e7080e9a9b293ccf386b0d95f40dde8e214e0415d2c59be9c661105a9/cdk-common-2.0.98.tar.gz
+[2024-04-27 02:10:56] INFO root fetch - processPackages [mongo-objects]: Downloading https://files.pythonhosted.org/packages/45/0c/a4ec452366adce9f6eac9ea51ceddac9883874f5d1666a2cf002a96de299/mongo_objects-1.1.1.tar.gz
+[2024-04-27 02:10:56] INFO root fetch - processPackages [optima-ml]: Downloading https://files.pythonhosted.org/packages/ec/36/dfdef74cdbef6fbc07fe61a2547282c7a9672a17434fcd9e41ef9df254b5/optima_ml-0.3.2a5.dev2.tar.gz
+[2024-04-27 02:10:56] INFO root fetch - processPackages [mct-quantizers-nightly]: Downloading https://files.pythonhosted.org/packages/3f/e8/6ed5983241771fe6ecb62e004ea5c393e0c9c8b684c483cf48c251b41be9/mct-quantizers-nightly-1.5.0.20240426.post1029.tar.gz
+[2024-04-27 02:10:57] INFO root fetch - processPackages [mongo-objects]: Downloading https://files.pythonhosted.org/packages/17/e6/e5d4a63661a1cfff56e7df2acf7912fb55ef0ce856ae6ea0f6d00e23177f/mongo_objects-1.1.2.tar.gz
+[2024-04-27 02:10:57] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/11/10/ca183f281275ec945ede082d9491c0bb5bfb9152c437124c86e37cba7079/cdk-common-2.0.99.tar.gz
+[2024-04-27 02:10:57] INFO root fetch - processPackages [mct-quantizers-nightly]: executing diffoscope
+[2024-04-27 02:10:57] INFO root fetch - processPackages [mct-quantizers-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-quantizers-nightly-1.5.0.20240425.post1013.tar.gz tmp/mct-quantizers-nightly-1.5.0.20240426.post1029.tar.gz --markdown 20240427/m/mct-quantizers-nightly/1.5.0.20240425.post1013-1.5.0.20240426.post1029/README.md --exclude *.pyd
+[2024-04-27 02:10:57] INFO root fetch - processPackages [openbb-nightly]: Downloading https://files.pythonhosted.org/packages/87/f8/d11076b36266dad1d1bf988e3cd0a5eac3dced4c0b0d733b5019a21ce53b/openbb_nightly-4.1.7.dev202404260009.tar.gz
+[2024-04-27 02:10:57] INFO root fetch - processPackages [mongo-objects]: executing diffoscope
+[2024-04-27 02:10:57] INFO root fetch - processPackages [mongo-objects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mongo_objects-1.1.1.tar.gz tmp/mongo_objects-1.1.2.tar.gz --markdown 20240427/m/mongo-objects/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-04-27 02:10:57] INFO root fetch - processPackages [optima-ml]: Downloading https://files.pythonhosted.org/packages/aa/f7/4031e841a0abc4743d592fec5509c1585b5e401ece5800eba92caa1684cb/optima_ml-0.3.3a1.tar.gz
+[2024-04-27 02:10:57] INFO root fetch - processPackages [cdk-common]: executing diffoscope
+[2024-04-27 02:10:57] INFO root fetch - processPackages [cdk-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-common-2.0.98.tar.gz tmp/cdk-common-2.0.99.tar.gz --markdown 20240427/c/cdk-common/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-04-27 02:10:57] INFO root fetch - processPackages [openbb-nightly]: executing diffoscope
+[2024-04-27 02:10:57] INFO root fetch - processPackages [openbb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openbb_nightly-4.1.7.dev202404250009.tar.gz tmp/openbb_nightly-4.1.7.dev202404260009.tar.gz --markdown 20240427/o/openbb-nightly/4.1.7.dev202404250009-4.1.7.dev202404260009/README.md --exclude *.pyd
+[2024-04-27 02:10:57] INFO root fetch - processPackages [mct-quantizers-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-quantizers-nightly-1.5.0.20240425.post1013.tar.gz]
+[2024-04-27 02:10:57] INFO root fetch - processPackages [mct-quantizers-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-quantizers-nightly-1.5.0.20240426.post1029.tar.gz]
+[2024-04-27 02:10:57] INFO root fetch - main [MainThread]: End processing [mct-quantizers-nightly]: success
+[2024-04-27 02:10:57] INFO root fetch - processPackages [optima-ml]: executing diffoscope
+[2024-04-27 02:10:57] INFO root fetch - processPackages [optima-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optima_ml-0.3.2a5.dev2.tar.gz tmp/optima_ml-0.3.3a1.tar.gz --markdown 20240427/o/optima-ml/0.3.2a5.dev2-0.3.3a1/README.md --exclude *.pyd
+[2024-04-27 02:10:57] INFO root fetch - processPackages [mongo-objects]: Remove: archive file [/home/abi/fetcher/tmp/mongo_objects-1.1.1.tar.gz]
+[2024-04-27 02:10:57] INFO root fetch - processPackages [mongo-objects]: Remove: archive file [/home/abi/fetcher/tmp/mongo_objects-1.1.2.tar.gz]
+[2024-04-27 02:10:57] INFO root fetch - main [MainThread]: End processing [mongo-objects]: success
+[2024-04-27 02:10:58] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.98.tar.gz]
+[2024-04-27 02:10:58] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.99.tar.gz]
+[2024-04-27 02:10:58] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
+[2024-04-27 02:10:58] INFO root fetch - processPackages [optima-ml]: Remove: archive file [/home/abi/fetcher/tmp/optima_ml-0.3.2a5.dev2.tar.gz]
+[2024-04-27 02:10:58] INFO root fetch - processPackages [optima-ml]: Remove: archive file [/home/abi/fetcher/tmp/optima_ml-0.3.3a1.tar.gz]
+[2024-04-27 02:10:58] INFO root fetch - main [MainThread]: End processing [optima-ml]: success
+[2024-04-27 02:11:00] INFO root fetch - processPackages [openbb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/openbb_nightly-4.1.7.dev202404250009.tar.gz]
+[2024-04-27 02:11:00] INFO root fetch - processPackages [openbb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/openbb_nightly-4.1.7.dev202404260009.tar.gz]
+[2024-04-27 02:11:00] INFO root fetch - main [MainThread]: End processing [openbb-nightly]: success
+[2024-04-27 02:11:00] INFO root fetch - main [MainThread]: Store serial: [22954182]
