@@ -10281,3 +10281,36 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 09:14:38] INFO root fetch - processPackages [tf-models-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip]
 [2024-04-27 09:14:38] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
 [2024-04-27 09:14:38] INFO root fetch - main [MainThread]: Store serial: [22957174]
+[2024-04-27 09:16:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957174]
+[2024-04-27 09:16:47] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 09:16:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: m3-cli
+[2024-04-27 09:16:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: werag
+[2024-04-27 09:16:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pramen-py
+[2024-04-27 09:16:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: core-pro
+[2024-04-27 09:16:48] INFO root fetch - processPackages [core-pro]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 09:16:48] WARNING root fetch - processPackages [werag]: Skipping, unable to determine old version
+[2024-04-27 09:16:48] INFO root fetch - main [MainThread]: End processing [werag] error
+[2024-04-27 09:16:48] INFO root fetch - processPackages [pramen-py]: New version: [1.8.5] Old Version: [1.8.4]
+[2024-04-27 09:16:48] INFO root fetch - processPackages [m3-cli]: New version: [3.112.4] Old Version: [3.101.5]
+[2024-04-27 09:16:48] INFO root fetch - processPackages [core-pro]: Downloading https://files.pythonhosted.org/packages/dc/86/b3c6a8d290835afc0d7b1b25dde8bd558795bdce03403c0c90b2e7da9dff/core_pro-0.0.8.tar.gz
+[2024-04-27 09:16:48] INFO root fetch - processPackages [pramen-py]: Downloading https://files.pythonhosted.org/packages/6b/ff/5e2e4653514f5f3dcb5ccd11aedd08cd9bdb987d1396163d47d38ee5f721/pramen_py-1.8.4.tar.gz
+[2024-04-27 09:16:48] INFO root fetch - processPackages [core-pro]: Downloading https://files.pythonhosted.org/packages/6f/4e/6f2935c9906443317c8d830ec5b4f1c67d988d87345c4ae116a0a613c079/core_pro-0.0.9.tar.gz
+[2024-04-27 09:16:48] INFO root fetch - processPackages [m3-cli]: Downloading https://files.pythonhosted.org/packages/9f/8a/726e7839f1bb808e075a478a9bbd262648ace098f38b771dff7ac0f2bfe9/m3-cli-3.101.5.tar.gz
+[2024-04-27 09:16:48] INFO root fetch - processPackages [core-pro]: executing diffoscope
+[2024-04-27 09:16:48] INFO root fetch - processPackages [core-pro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/core_pro-0.0.8.tar.gz tmp/core_pro-0.0.9.tar.gz --markdown 20240427/c/core-pro/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 09:16:48] INFO root fetch - processPackages [pramen-py]: Downloading https://files.pythonhosted.org/packages/74/92/af0aff78144e87d84065e7e3794073a1e5b4b2fc6403cd15e72e1ab9607d/pramen_py-1.8.5.tar.gz
+[2024-04-27 09:16:48] INFO root fetch - processPackages [m3-cli]: Downloading https://files.pythonhosted.org/packages/7c/2c/ad6d3ee8466cd09886c178bba8106b73d2a8fbc6b9c58ca01f6ca4341f7f/m3_cli-3.112.4.tar.gz
+[2024-04-27 09:16:48] INFO root fetch - processPackages [pramen-py]: executing diffoscope
+[2024-04-27 09:16:48] INFO root fetch - processPackages [pramen-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pramen_py-1.8.4.tar.gz tmp/pramen_py-1.8.5.tar.gz --markdown 20240427/p/pramen-py/1.8.4-1.8.5/README.md --exclude *.pyd
+[2024-04-27 09:16:48] INFO root fetch - processPackages [m3-cli]: executing diffoscope
+[2024-04-27 09:16:48] INFO root fetch - processPackages [m3-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/m3-cli-3.101.5.tar.gz tmp/m3_cli-3.112.4.tar.gz --markdown 20240427/m/m3-cli/3.101.5-3.112.4/README.md --exclude *.pyd
+[2024-04-27 09:16:49] INFO root fetch - processPackages [core-pro]: Remove: archive file [/home/abi/fetcher/tmp/core_pro-0.0.8.tar.gz]
+[2024-04-27 09:16:49] INFO root fetch - processPackages [core-pro]: Remove: archive file [/home/abi/fetcher/tmp/core_pro-0.0.9.tar.gz]
+[2024-04-27 09:16:49] INFO root fetch - main [MainThread]: End processing [core-pro]: success
+[2024-04-27 09:16:49] INFO root fetch - processPackages [pramen-py]: Remove: archive file [/home/abi/fetcher/tmp/pramen_py-1.8.4.tar.gz]
+[2024-04-27 09:16:49] INFO root fetch - processPackages [pramen-py]: Remove: archive file [/home/abi/fetcher/tmp/pramen_py-1.8.5.tar.gz]
+[2024-04-27 09:16:49] INFO root fetch - main [MainThread]: End processing [pramen-py]: success
+[2024-04-27 09:16:49] INFO root fetch - processPackages [m3-cli]: Remove: archive file [/home/abi/fetcher/tmp/m3-cli-3.101.5.tar.gz]
+[2024-04-27 09:16:49] INFO root fetch - processPackages [m3-cli]: Remove: archive file [/home/abi/fetcher/tmp/m3_cli-3.112.4.tar.gz]
+[2024-04-27 09:16:49] INFO root fetch - main [MainThread]: End processing [m3-cli]: success
+[2024-04-27 09:16:49] INFO root fetch - main [MainThread]: Store serial: [22957188]
