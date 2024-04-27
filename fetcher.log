@@ -15275,3 +15275,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 16:02:07] INFO root fetch - processPackages [hydro-raster]: Remove: archive file [/home/abi/fetcher/tmp/hydro_raster-0.0.9.tar.gz]
 [2024-04-27 16:02:07] INFO root fetch - main [MainThread]: End processing [hydro-raster]: success
 [2024-04-27 16:02:07] INFO root fetch - main [MainThread]: Store serial: [22959302]
+[2024-04-27 16:04:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959302]
+[2024-04-27 16:04:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 16:04:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: puerml
+[2024-04-27 16:04:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sim_rl
+[2024-04-27 16:04:16] INFO root fetch - processPackages [puerml]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-27 16:04:16] INFO root fetch - processPackages [sim_rl]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-27 16:04:16] INFO root fetch - processPackages [puerml]: Downloading https://files.pythonhosted.org/packages/c1/e4/523c5c69b02459ffb6e52a1a4b8f011d7875d2eed1aaeae02c5a0c948382/puerml-0.1.8.tar.gz
+[2024-04-27 16:04:16] INFO root fetch - processPackages [sim_rl]: Downloading https://files.pythonhosted.org/packages/96/ce/f3d70e84f755ca5f8b4e28206a488e18aa37c785b6bdbf719842225e1824/sim_rl-0.1.0.tar.gz
+[2024-04-27 16:04:16] INFO root fetch - processPackages [puerml]: Downloading https://files.pythonhosted.org/packages/17/cb/1f376cc111577cf8439db51d01dd8f17fa7c2754c4ecf4fa961fbb481835/puerml-0.1.9.tar.gz
+[2024-04-27 16:04:16] INFO root fetch - processPackages [puerml]: executing diffoscope
+[2024-04-27 16:04:16] INFO root fetch - processPackages [puerml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/puerml-0.1.8.tar.gz tmp/puerml-0.1.9.tar.gz --markdown 20240427/p/puerml/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-27 16:04:17] INFO root fetch - processPackages [sim_rl]: Downloading https://files.pythonhosted.org/packages/79/ed/573df64a2bb889b78f3b2f7de45cde169f1274d28a8238ea3dc2178f919a/sim_rl-0.1.1.tar.gz
+[2024-04-27 16:04:17] INFO root fetch - processPackages [puerml]: Remove: archive file [/home/abi/fetcher/tmp/puerml-0.1.8.tar.gz]
+[2024-04-27 16:04:17] INFO root fetch - processPackages [puerml]: Remove: archive file [/home/abi/fetcher/tmp/puerml-0.1.9.tar.gz]
+[2024-04-27 16:04:17] INFO root fetch - main [MainThread]: End processing [puerml]: success
+[2024-04-27 16:04:17] INFO root fetch - processPackages [sim_rl]: executing diffoscope
+[2024-04-27 16:04:17] INFO root fetch - processPackages [sim_rl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sim_rl-0.1.0.tar.gz tmp/sim_rl-0.1.1.tar.gz --markdown 20240427/s/sim_rl/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-27 16:04:18] INFO root fetch - processPackages [sim_rl]: Remove: archive file [/home/abi/fetcher/tmp/sim_rl-0.1.0.tar.gz]
+[2024-04-27 16:04:18] INFO root fetch - processPackages [sim_rl]: Remove: archive file [/home/abi/fetcher/tmp/sim_rl-0.1.1.tar.gz]
+[2024-04-27 16:04:18] INFO root fetch - main [MainThread]: End processing [sim_rl]: success
+[2024-04-27 16:04:18] INFO root fetch - main [MainThread]: Store serial: [22959309]
