@@ -10227,3 +10227,33 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 09:07:58] INFO root fetch - processPackages [pydal]: Remove: archive file [/home/abi/fetcher/tmp/pydal-20240427.1.tar.gz]
 [2024-04-27 09:07:59] INFO root fetch - main [MainThread]: End processing [pydal]: success
 [2024-04-27 09:07:59] INFO root fetch - main [MainThread]: Store serial: [22957162]
+[2024-04-27 09:10:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957162]
+[2024-04-27 09:10:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 09:10:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-hub-nightly
+[2024-04-27 09:10:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: media-manager
+[2024-04-27 09:10:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ark-mainsail
+[2024-04-27 09:10:07] INFO root fetch - processPackages [media-manager]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-27 09:10:07] INFO root fetch - processPackages [tf-hub-nightly]: New version: [0.9.0.dev202008190006] Old Version: [0.9.0.dev202008180006]
+[2024-04-27 09:10:07] INFO root fetch - processPackages [media-manager]: Downloading https://files.pythonhosted.org/packages/75/11/acc8a436463477db369c803d9007e03acdd0b43a677cd0cbb78b7ea5b3bb/media_manager-0.8.0-py2.py3-none-any.whl
+[2024-04-27 09:10:07] INFO root fetch - processPackages [ark-mainsail]: New version: [1.2.0] Old Version: [1.1.2]
+[2024-04-27 09:10:07] INFO root fetch - processPackages [tf-hub-nightly]: Downloading https://files.pythonhosted.org/packages/e8/6b/02811fcd79aec590e7355647130c822f1bd53092a205ce986e6df7364f52/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl
+[2024-04-27 09:10:07] INFO root fetch - processPackages [media-manager]: Downloading https://files.pythonhosted.org/packages/9b/a7/1155a373b195bebb88c0274982964c45aecd8d7206b2f4731838007628fd/media_manager-0.9.0-py2.py3-none-any.whl
+[2024-04-27 09:10:08] INFO root fetch - processPackages [ark-mainsail]: Downloading https://files.pythonhosted.org/packages/92/c4/3d8cc9fccaba796481f95f2f15d3c3f78e123cc06555d7dccfe33ef66c9b/ark-mainsail-1.1.2.tar.gz
+[2024-04-27 09:10:08] INFO root fetch - processPackages [tf-hub-nightly]: Downloading https://files.pythonhosted.org/packages/d1/9a/6b02d0906847e11386093420119d147f7306d7a9cad79e8e575a9d29ae76/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl
+[2024-04-27 09:10:08] INFO root fetch - processPackages [media-manager]: executing diffoscope
+[2024-04-27 09:10:08] INFO root fetch - processPackages [media-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/media_manager-0.8.0-py2.py3-none-any.whl.zip tmp/media_manager-0.9.0-py2.py3-none-any.whl.zip --markdown 20240427/m/media-manager/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-27 09:10:08] INFO root fetch - processPackages [tf-hub-nightly]: executing diffoscope
+[2024-04-27 09:10:08] INFO root fetch - processPackages [tf-hub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip --markdown 20240427/t/tf-hub-nightly/0.9.0.dev202008180006-0.9.0.dev202008190006/README.md --exclude *.pyd
+[2024-04-27 09:10:08] INFO root fetch - processPackages [ark-mainsail]: Downloading https://files.pythonhosted.org/packages/b3/ca/b8077af53adee9919b131209e03ec7bb4ae5d9e19af1de36c8ca0b070ec6/ark-mainsail-1.2.0.tar.gz
+[2024-04-27 09:10:08] INFO root fetch - processPackages [ark-mainsail]: executing diffoscope
+[2024-04-27 09:10:08] INFO root fetch - processPackages [ark-mainsail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ark-mainsail-1.1.2.tar.gz tmp/ark-mainsail-1.2.0.tar.gz --markdown 20240427/a/ark-mainsail/1.1.2-1.2.0/README.md --exclude *.pyd
+[2024-04-27 09:10:08] INFO root fetch - processPackages [media-manager]: Remove: archive file [/home/abi/fetcher/tmp/media_manager-0.8.0-py2.py3-none-any.whl.zip]
+[2024-04-27 09:10:08] INFO root fetch - processPackages [media-manager]: Remove: archive file [/home/abi/fetcher/tmp/media_manager-0.9.0-py2.py3-none-any.whl.zip]
+[2024-04-27 09:10:08] INFO root fetch - main [MainThread]: End processing [media-manager]: success
+[2024-04-27 09:10:08] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip]
+[2024-04-27 09:10:08] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip]
+[2024-04-27 09:10:08] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
+[2024-04-27 09:10:09] INFO root fetch - processPackages [ark-mainsail]: Remove: archive file [/home/abi/fetcher/tmp/ark-mainsail-1.1.2.tar.gz]
+[2024-04-27 09:10:09] INFO root fetch - processPackages [ark-mainsail]: Remove: archive file [/home/abi/fetcher/tmp/ark-mainsail-1.2.0.tar.gz]
+[2024-04-27 09:10:09] INFO root fetch - main [MainThread]: End processing [ark-mainsail]: success
+[2024-04-27 09:10:09] INFO root fetch - main [MainThread]: Store serial: [22957169]
