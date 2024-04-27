@@ -10889,3 +10889,29 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 10:24:10] INFO root fetch - processPackages [pydal]: Remove: archive file [/home/abi/fetcher/tmp/pydal-20240427.2.tar.gz]
 [2024-04-27 10:24:10] INFO root fetch - main [MainThread]: End processing [pydal]: success
 [2024-04-27 10:24:10] INFO root fetch - main [MainThread]: Store serial: [22957435]
+[2024-04-27 10:26:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957435]
+[2024-04-27 10:26:19] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-27 10:28:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957435]
+[2024-04-27 10:28:24] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 10:28:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-3rdparty-mediawiki
+[2024-04-27 10:28:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py4web
+[2024-04-27 10:28:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bitcoin-safe
+[2024-04-27 10:28:24] INFO root fetch - processPackages [py4web]: New version: [1.20240427.1] Old Version: [1.20240420.3]
+[2024-04-27 10:28:24] INFO root fetch - processPackages [py4web]: Downloading https://files.pythonhosted.org/packages/90/02/61d52c83630fb274611675ea119732f00b56a5fc15ba6731abfefab55772/py4web-1.20240420.3.tar.gz
+[2024-04-27 10:28:24] WARNING root fetch - processPackages [bitcoin-safe]: Skipping, unable to determine old version
+[2024-04-27 10:28:24] INFO root fetch - main [MainThread]: End processing [bitcoin-safe] error
+[2024-04-27 10:28:24] INFO root fetch - processPackages [py-3rdparty-mediawiki]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-04-27 10:28:25] INFO root fetch - processPackages [py-3rdparty-mediawiki]: Downloading https://files.pythonhosted.org/packages/e1/73/98e3365d0827e15a46c42f18d6f85b984bc24bd8aa239ddd7facf1545568/py_3rdparty_mediawiki-0.9.4.tar.gz
+[2024-04-27 10:28:25] INFO root fetch - processPackages [py4web]: Downloading https://files.pythonhosted.org/packages/93/27/1d19ed84c9c2289bf5be4bf562ea72f17f6280fd4a822bfa74e38bc2708c/py4web-1.20240427.1.tar.gz
+[2024-04-27 10:28:25] INFO root fetch - processPackages [py-3rdparty-mediawiki]: Downloading https://files.pythonhosted.org/packages/be/33/cb9f8f94b74be2657970eb02e4428f8d636ffa6e6af81884e602c72507f5/py_3rdparty_mediawiki-0.9.5.tar.gz
+[2024-04-27 10:28:25] INFO root fetch - processPackages [py-3rdparty-mediawiki]: executing diffoscope
+[2024-04-27 10:28:25] INFO root fetch - processPackages [py-3rdparty-mediawiki]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_3rdparty_mediawiki-0.9.4.tar.gz tmp/py_3rdparty_mediawiki-0.9.5.tar.gz --markdown 20240427/p/py-3rdparty-mediawiki/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-04-27 10:28:25] INFO root fetch - processPackages [py4web]: executing diffoscope
+[2024-04-27 10:28:25] INFO root fetch - processPackages [py4web]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py4web-1.20240420.3.tar.gz tmp/py4web-1.20240427.1.tar.gz --markdown 20240427/p/py4web/1.20240420.3-1.20240427.1/README.md --exclude *.pyd
+[2024-04-27 10:28:26] INFO root fetch - processPackages [py-3rdparty-mediawiki]: Remove: archive file [/home/abi/fetcher/tmp/py_3rdparty_mediawiki-0.9.4.tar.gz]
+[2024-04-27 10:28:26] INFO root fetch - processPackages [py-3rdparty-mediawiki]: Remove: archive file [/home/abi/fetcher/tmp/py_3rdparty_mediawiki-0.9.5.tar.gz]
+[2024-04-27 10:28:26] INFO root fetch - main [MainThread]: End processing [py-3rdparty-mediawiki]: success
+[2024-04-27 10:28:27] INFO root fetch - processPackages [py4web]: Remove: archive file [/home/abi/fetcher/tmp/py4web-1.20240420.3.tar.gz]
+[2024-04-27 10:28:27] INFO root fetch - processPackages [py4web]: Remove: archive file [/home/abi/fetcher/tmp/py4web-1.20240427.1.tar.gz]
+[2024-04-27 10:28:27] INFO root fetch - main [MainThread]: End processing [py4web]: success
+[2024-04-27 10:28:27] INFO root fetch - main [MainThread]: Store serial: [22957446]
