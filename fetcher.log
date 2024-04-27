@@ -10447,3 +10447,18 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 09:36:17] INFO root fetch - processPackages [yes-chef]: Remove: archive file [/home/abi/fetcher/tmp/yes_chef-0.9.0.tar.gz]
 [2024-04-27 09:36:17] INFO root fetch - main [MainThread]: End processing [yes-chef]: success
 [2024-04-27 09:36:17] INFO root fetch - main [MainThread]: Store serial: [22957235]
+[2024-04-27 09:38:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957235]
+[2024-04-27 09:38:25] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 09:38:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: werag
+[2024-04-27 09:38:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Deepurify
+[2024-04-27 09:38:26] WARNING root fetch - processPackages [werag]: Skipping, unable to determine old version
+[2024-04-27 09:38:26] INFO root fetch - main [MainThread]: End processing [werag] error
+[2024-04-27 09:38:26] INFO root fetch - processPackages [Deepurify]: New version: [2.3.0] Old Version: [1.2.4]
+[2024-04-27 09:38:26] INFO root fetch - processPackages [Deepurify]: Downloading https://files.pythonhosted.org/packages/1d/df/7f75f442dafd44e41865ba336123e12da39769573fd1d5cbe148d2de4b3c/Deepurify-1.2.4-py3-none-any.whl
+[2024-04-27 09:38:26] INFO root fetch - processPackages [Deepurify]: Downloading https://files.pythonhosted.org/packages/22/c0/ff1397ea39b0255e29c124503495e621f06e800cf51e7136f80c4c64a8e8/Deepurify-2.3.0.tar.gz
+[2024-04-27 09:38:26] INFO root fetch - processPackages [Deepurify]: executing diffoscope
+[2024-04-27 09:38:26] INFO root fetch - processPackages [Deepurify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Deepurify-1.2.4-py3-none-any.whl.zip tmp/Deepurify-2.3.0.tar.gz --markdown 20240427/D/Deepurify/1.2.4-2.3.0/README.md --exclude *.pyd
+[2024-04-27 09:38:27] INFO root fetch - processPackages [Deepurify]: Remove: archive file [/home/abi/fetcher/tmp/Deepurify-1.2.4-py3-none-any.whl.zip]
+[2024-04-27 09:38:27] INFO root fetch - processPackages [Deepurify]: Remove: archive file [/home/abi/fetcher/tmp/Deepurify-2.3.0.tar.gz]
+[2024-04-27 09:38:27] INFO root fetch - main [MainThread]: End processing [Deepurify]: success
+[2024-04-27 09:38:27] INFO root fetch - main [MainThread]: Store serial: [22957245]
