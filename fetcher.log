@@ -10141,3 +10141,89 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 09:03:42] INFO root fetch - processPackages [pyrocketmodbus]: Remove: archive file [/home/abi/fetcher/tmp/pyrocketmodbus-1.0.2.tar.gz]
 [2024-04-27 09:03:42] INFO root fetch - main [MainThread]: End processing [pyrocketmodbus]: success
 [2024-04-27 09:03:42] INFO root fetch - main [MainThread]: Store serial: [22957124]
+[2024-04-27 09:05:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957124]
+[2024-04-27 09:05:51] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-27 09:07:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957124]
+[2024-04-27 09:07:56] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2024-04-27 09:07:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pydal
+[2024-04-27 09:07:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyscinloopsr
+[2024-04-27 09:07:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gai-lib
+[2024-04-27 09:07:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: emil
+[2024-04-27 09:07:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bitwarden-import-msecure
+[2024-04-27 09:07:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mutechromecastads
+[2024-04-27 09:07:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: zodchy-notations
+[2024-04-27 09:07:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: predibase-api
+[2024-04-27 09:07:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: predibase
+[2024-04-27 09:07:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pyrocketmodbus
+[2024-04-27 09:07:56] INFO root fetch - processPackages [predibase]: New version: [2024.4.8] Old Version: [2024.4.7]
+[2024-04-27 09:07:56] INFO root fetch - processPackages [pyscinloopsr]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-27 09:07:56] INFO root fetch - processPackages [bitwarden-import-msecure]: New version: [1.7.0] Old Version: [1.6.0]
+[2024-04-27 09:07:56] INFO root fetch - processPackages [pyrocketmodbus]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-27 09:07:56] INFO root fetch - processPackages [gai-lib]: New version: [0.99] Old Version: [0.98]
+[2024-04-27 09:07:56] INFO root fetch - processPackages [predibase-api]: New version: [2024.4.8] Old Version: [2024.4.7]
+[2024-04-27 09:07:56] INFO root fetch - processPackages [pydal]: New version: [20240427.1] Old Version: [20231114.3]
+[2024-04-27 09:07:56] WARNING root fetch - processPackages [mutechromecastads]: Skipping, unable to determine old version
+[2024-04-27 09:07:56] INFO root fetch - processPackages [mutechromecastads]: Start processing: func-adl
+[2024-04-27 09:07:56] INFO root fetch - main [MainThread]: End processing [mutechromecastads] error
+[2024-04-27 09:07:56] WARNING root fetch - processPackages [emil]: Skipping, unable to determine old version
+[2024-04-27 09:07:56] INFO root fetch - main [MainThread]: End processing [emil] error
+[2024-04-27 09:07:56] WARNING root fetch - processPackages [zodchy-notations]: Skipping, unable to determine old version
+[2024-04-27 09:07:56] INFO root fetch - main [MainThread]: End processing [zodchy-notations] error
+[2024-04-27 09:07:56] INFO root fetch - processPackages [predibase]: Downloading https://files.pythonhosted.org/packages/aa/c9/397c7ccd97273320d2617aab083c03247a5a554b344cabb4fd5ca9fd873d/predibase-2024.4.7.tar.gz
+[2024-04-27 09:07:56] INFO root fetch - processPackages [pyscinloopsr]: Downloading https://files.pythonhosted.org/packages/98/21/5809d8e4c42d0207d6fd61e35cf0683da0e0cc5f1d10fa87e864b000cfa6/pyscinloopsr-1.0.8.tar.gz
+[2024-04-27 09:07:56] INFO root fetch - processPackages [gai-lib]: Downloading https://files.pythonhosted.org/packages/d7/ec/73324c4782c5a7d475e0473a63a34aefe2a50c28e3e95e74572ba8e24319/gai-lib-0.98.tar.gz
+[2024-04-27 09:07:56] INFO root fetch - processPackages [predibase-api]: Downloading https://files.pythonhosted.org/packages/12/73/1e8ca9686d6fdbd41b63304d8a69affc8a09b91134e599f0ab3a73fdfc20/predibase-api-2024.4.7.tar.gz
+[2024-04-27 09:07:56] INFO root fetch - processPackages [pyrocketmodbus]: Downloading https://files.pythonhosted.org/packages/c9/bd/69254599c10209f247c66bb4c88b4b5cce1ea4446e551e08370cef6977e1/pyrocketmodbus-1.0.1.tar.gz
+[2024-04-27 09:07:56] INFO root fetch - processPackages [bitwarden-import-msecure]: Downloading https://files.pythonhosted.org/packages/85/70/0c4c7bceb8ef36eef7e7e68c3fcdc667f797d15af0b9321d3b28bd6a3083/bitwarden_import_msecure-1.6.0.tar.gz
+[2024-04-27 09:07:56] INFO root fetch - processPackages [func-adl]: New version: [3.3.1b3] Old Version: [3.3.1b2]
+[2024-04-27 09:07:57] INFO root fetch - processPackages [func-adl]: Downloading https://files.pythonhosted.org/packages/23/00/43b10318435a9d3befff8c7fd7fcb76ab11fb17cabf43603aa33e0a82914/func_adl-3.3.1b2.tar.gz
+[2024-04-27 09:07:57] INFO root fetch - processPackages [pydal]: Downloading https://files.pythonhosted.org/packages/0b/3b/86302e165af07bc3d9225aea6ed8f52386270220e4aac1aad0101a48aac1/pydal-20231114.3.tar.gz
+[2024-04-27 09:07:57] INFO root fetch - processPackages [pyscinloopsr]: Downloading https://files.pythonhosted.org/packages/c2/79/a3b3e1c4377a54b84d92a6ce4a8d70f9bb57364bdbe1ec2657397e8360cd/pyscinloopsr-1.0.9.tar.gz
+[2024-04-27 09:07:57] INFO root fetch - processPackages [predibase]: Downloading https://files.pythonhosted.org/packages/57/81/d2f1533a2c021c901fa45981d33807f0cda149030b94ba7b2a72fa3428af/predibase-2024.4.8.tar.gz
+[2024-04-27 09:07:57] INFO root fetch - processPackages [gai-lib]: Downloading https://files.pythonhosted.org/packages/fd/52/02eb2fe55760540c73b1796ab0f903f7b077179fa1269206b0ff8d4909cf/gai-lib-0.99.tar.gz
+[2024-04-27 09:07:57] INFO root fetch - processPackages [pyrocketmodbus]: Downloading https://files.pythonhosted.org/packages/0d/19/089a7a6a9f9845cf55132dcb24e522043b605213346ed9f25c99457fc7f8/pyrocketmodbus-1.0.2.tar.gz
+[2024-04-27 09:07:57] INFO root fetch - processPackages [predibase-api]: Downloading https://files.pythonhosted.org/packages/50/0a/2bbc4d934413ba88af00e4955f22d28e77237cdb9ae1ed22a04d9c1075a2/predibase-api-2024.4.8.tar.gz
+[2024-04-27 09:07:57] INFO root fetch - processPackages [bitwarden-import-msecure]: Downloading https://files.pythonhosted.org/packages/02/df/206b9847547da5ca10e88c344e588b798c10d72d5301eb98e159988e6442/bitwarden_import_msecure-1.7.0.tar.gz
+[2024-04-27 09:07:57] INFO root fetch - processPackages [pyscinloopsr]: executing diffoscope
+[2024-04-27 09:07:57] INFO root fetch - processPackages [pyscinloopsr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscinloopsr-1.0.8.tar.gz tmp/pyscinloopsr-1.0.9.tar.gz --markdown 20240427/p/pyscinloopsr/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-27 09:07:57] INFO root fetch - processPackages [pyrocketmodbus]: executing diffoscope
+[2024-04-27 09:07:57] INFO root fetch - processPackages [pyrocketmodbus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrocketmodbus-1.0.1.tar.gz tmp/pyrocketmodbus-1.0.2.tar.gz --markdown 20240427/p/pyrocketmodbus/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-27 09:07:57] INFO root fetch - processPackages [gai-lib]: executing diffoscope
+[2024-04-27 09:07:57] INFO root fetch - processPackages [gai-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gai-lib-0.98.tar.gz tmp/gai-lib-0.99.tar.gz --markdown 20240427/g/gai-lib/0.98-0.99/README.md --exclude *.pyd
+[2024-04-27 09:07:57] INFO root fetch - processPackages [predibase]: executing diffoscope
+[2024-04-27 09:07:57] INFO root fetch - processPackages [predibase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/predibase-2024.4.7.tar.gz tmp/predibase-2024.4.8.tar.gz --markdown 20240427/p/predibase/2024.4.7-2024.4.8/README.md --exclude *.pyd
+[2024-04-27 09:07:57] INFO root fetch - processPackages [predibase-api]: executing diffoscope
+[2024-04-27 09:07:57] INFO root fetch - processPackages [predibase-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/predibase-api-2024.4.7.tar.gz tmp/predibase-api-2024.4.8.tar.gz --markdown 20240427/p/predibase-api/2024.4.7-2024.4.8/README.md --exclude *.pyd
+[2024-04-27 09:07:57] INFO root fetch - processPackages [func-adl]: Downloading https://files.pythonhosted.org/packages/c6/df/86df6732f5d169ac398f783659c9b41f5db501abc81b77972f362ad61e38/func_adl-3.3.1b3.tar.gz
+[2024-04-27 09:07:57] INFO root fetch - processPackages [bitwarden-import-msecure]: executing diffoscope
+[2024-04-27 09:07:57] INFO root fetch - processPackages [bitwarden-import-msecure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bitwarden_import_msecure-1.6.0.tar.gz tmp/bitwarden_import_msecure-1.7.0.tar.gz --markdown 20240427/b/bitwarden-import-msecure/1.6.0-1.7.0/README.md --exclude *.pyd
+[2024-04-27 09:07:57] INFO root fetch - processPackages [pydal]: Downloading https://files.pythonhosted.org/packages/4c/9f/0e81d3a84228ce5c09d4cb792452bd34227cbad4227d924b52357cf1e456/pydal-20240427.1.tar.gz
+[2024-04-27 09:07:57] INFO root fetch - processPackages [func-adl]: executing diffoscope
+[2024-04-27 09:07:57] INFO root fetch - processPackages [func-adl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/func_adl-3.3.1b2.tar.gz tmp/func_adl-3.3.1b3.tar.gz --markdown 20240427/f/func-adl/3.3.1b2-3.3.1b3/README.md --exclude *.pyd
+[2024-04-27 09:07:57] INFO root fetch - processPackages [pydal]: executing diffoscope
+[2024-04-27 09:07:57] INFO root fetch - processPackages [pydal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydal-20231114.3.tar.gz tmp/pydal-20240427.1.tar.gz --markdown 20240427/p/pydal/20231114.3-20240427.1/README.md --exclude *.pyd
+[2024-04-27 09:07:58] INFO root fetch - processPackages [pyscinloopsr]: Remove: archive file [/home/abi/fetcher/tmp/pyscinloopsr-1.0.8.tar.gz]
+[2024-04-27 09:07:58] INFO root fetch - processPackages [pyscinloopsr]: Remove: archive file [/home/abi/fetcher/tmp/pyscinloopsr-1.0.9.tar.gz]
+[2024-04-27 09:07:58] INFO root fetch - main [MainThread]: End processing [pyscinloopsr]: success
+[2024-04-27 09:07:58] INFO root fetch - processPackages [pyrocketmodbus]: Remove: archive file [/home/abi/fetcher/tmp/pyrocketmodbus-1.0.1.tar.gz]
+[2024-04-27 09:07:58] INFO root fetch - processPackages [pyrocketmodbus]: Remove: archive file [/home/abi/fetcher/tmp/pyrocketmodbus-1.0.2.tar.gz]
+[2024-04-27 09:07:58] INFO root fetch - main [MainThread]: End processing [pyrocketmodbus]: success
+[2024-04-27 09:07:58] INFO root fetch - processPackages [predibase-api]: Remove: archive file [/home/abi/fetcher/tmp/predibase-api-2024.4.7.tar.gz]
+[2024-04-27 09:07:58] INFO root fetch - processPackages [predibase-api]: Remove: archive file [/home/abi/fetcher/tmp/predibase-api-2024.4.8.tar.gz]
+[2024-04-27 09:07:58] INFO root fetch - main [MainThread]: End processing [predibase-api]: success
+[2024-04-27 09:07:58] INFO root fetch - processPackages [func-adl]: Remove: archive file [/home/abi/fetcher/tmp/func_adl-3.3.1b2.tar.gz]
+[2024-04-27 09:07:58] INFO root fetch - processPackages [func-adl]: Remove: archive file [/home/abi/fetcher/tmp/func_adl-3.3.1b3.tar.gz]
+[2024-04-27 09:07:58] INFO root fetch - main [MainThread]: End processing [func-adl]: success
+[2024-04-27 09:07:58] INFO root fetch - processPackages [predibase]: Remove: archive file [/home/abi/fetcher/tmp/predibase-2024.4.7.tar.gz]
+[2024-04-27 09:07:58] INFO root fetch - processPackages [predibase]: Remove: archive file [/home/abi/fetcher/tmp/predibase-2024.4.8.tar.gz]
+[2024-04-27 09:07:58] INFO root fetch - main [MainThread]: End processing [predibase]: success
+[2024-04-27 09:07:58] INFO root fetch - processPackages [gai-lib]: Remove: archive file [/home/abi/fetcher/tmp/gai-lib-0.98.tar.gz]
+[2024-04-27 09:07:58] INFO root fetch - processPackages [gai-lib]: Remove: archive file [/home/abi/fetcher/tmp/gai-lib-0.99.tar.gz]
+[2024-04-27 09:07:58] INFO root fetch - main [MainThread]: End processing [gai-lib]: success
+[2024-04-27 09:07:58] INFO root fetch - processPackages [bitwarden-import-msecure]: Remove: archive file [/home/abi/fetcher/tmp/bitwarden_import_msecure-1.6.0.tar.gz]
+[2024-04-27 09:07:58] INFO root fetch - processPackages [bitwarden-import-msecure]: Remove: archive file [/home/abi/fetcher/tmp/bitwarden_import_msecure-1.7.0.tar.gz]
+[2024-04-27 09:07:58] INFO root fetch - main [MainThread]: End processing [bitwarden-import-msecure]: success
+[2024-04-27 09:07:58] INFO root fetch - processPackages [pydal]: Remove: archive file [/home/abi/fetcher/tmp/pydal-20231114.3.tar.gz]
+[2024-04-27 09:07:58] INFO root fetch - processPackages [pydal]: Remove: archive file [/home/abi/fetcher/tmp/pydal-20240427.1.tar.gz]
+[2024-04-27 09:07:59] INFO root fetch - main [MainThread]: End processing [pydal]: success
+[2024-04-27 09:07:59] INFO root fetch - main [MainThread]: Store serial: [22957162]
