@@ -12668,3 +12668,138 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 13:12:01] INFO root fetch - processPackages [fastbench]: Remove: archive file [/home/abi/fetcher/tmp/fastbench-0.1.2.tar.gz]
 [2024-04-27 13:12:01] INFO root fetch - main [MainThread]: End processing [fastbench]: success
 [2024-04-27 13:12:01] INFO root fetch - main [MainThread]: Store serial: [22958164]
+[2024-04-27 13:14:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958164]
+[2024-04-27 13:14:16] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-27 13:16:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958176]
+[2024-04-27 13:16:22] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 13:16:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyais
+[2024-04-27 13:16:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bigdl-core-cpp
+[2024-04-27 13:16:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fintekkers-ledger-models
+[2024-04-27 13:16:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: qg_toolkit
+[2024-04-27 13:16:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bigdl-core-xe-esimd-21
+[2024-04-27 13:16:22] INFO root fetch - processPackages [qg_toolkit]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-27 13:16:22] INFO root fetch - processPackages [bigdl-core-cpp]: New version: [2.5.0b20240427] Old Version: [2.5.0b20240426]
+[2024-04-27 13:16:22] INFO root fetch - processPackages [qg_toolkit]: Downloading https://files.pythonhosted.org/packages/81/60/0e4b8fcdd5cf93bffdbc44ff4da93c1089d46992f1812ff2bdb3bec05809/qg_toolkit-1.0.2.tar.gz
+[2024-04-27 13:16:22] INFO root fetch - processPackages [fintekkers-ledger-models]: New version: [0.1.79] Old Version: [0.1.78]
+[2024-04-27 13:16:22] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: New version: [2.5.0b20240427] Old Version: [2.5.0b20240426]
+[2024-04-27 13:16:22] INFO root fetch - processPackages [pyais]: New version: [2.6.4] Old Version: [2.6.3]
+[2024-04-27 13:16:22] INFO root fetch - processPackages [fintekkers-ledger-models]: Downloading https://files.pythonhosted.org/packages/17/07/ec47a628c8fc8c09a63bf439cf491245bcd930fe85856fd599cdd35b304e/fintekkers-ledger-models-0.1.78.tar.gz
+[2024-04-27 13:16:22] INFO root fetch - processPackages [pyais]: Downloading https://files.pythonhosted.org/packages/51/86/564725ae79e79a9fd34b6330b5fbd7a13a4a58f1d7584f0c70fe8e205514/pyais-2.6.3.tar.gz
+[2024-04-27 13:16:22] INFO root fetch - processPackages [bigdl-core-cpp]: Downloading https://files.pythonhosted.org/packages/a9/2d/731d4a94c4b1eafc53d965d7ca2b10cb4915f9380224948a3b429b77fd9d/bigdl_core_cpp-2.5.0b20240426-py3-none-win_amd64.whl
+[2024-04-27 13:16:22] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: Downloading https://files.pythonhosted.org/packages/fe/15/8937fc27ddd65f1487b678122d67f2773c73de55efb265148ff2081e695b/bigdl_core_xe_esimd_21-2.5.0b20240426-cp39-cp39-win_amd64.whl
+[2024-04-27 13:16:22] INFO root fetch - processPackages [qg_toolkit]: Downloading https://files.pythonhosted.org/packages/33/78/b59269c8e28ee8ca527909f40970f9738157a8e5bfae1e53b8590ec27eef/qg_toolkit-1.0.3.tar.gz
+[2024-04-27 13:16:22] WARNING root fetch - processPackages [bigdl-core-cpp]: Skipping package: exceeds size limit 28077321>=10485760
+[2024-04-27 13:16:22] INFO root fetch - main [MainThread]: End processing [bigdl-core-cpp] error
+[2024-04-27 13:16:23] INFO root fetch - processPackages [fintekkers-ledger-models]: Downloading https://files.pythonhosted.org/packages/28/4d/c24fa4664db4e5912dde3e3124c55f0839bc66109b5c8ea47fb194ec8585/fintekkers-ledger-models-0.1.79.tar.gz
+[2024-04-27 13:16:23] INFO root fetch - processPackages [qg_toolkit]: executing diffoscope
+[2024-04-27 13:16:23] INFO root fetch - processPackages [qg_toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qg_toolkit-1.0.2.tar.gz tmp/qg_toolkit-1.0.3.tar.gz --markdown 20240427/q/qg_toolkit/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-04-27 13:16:23] INFO root fetch - processPackages [pyais]: Downloading https://files.pythonhosted.org/packages/02/a9/a1d93185467f2bfc5a6c06cb6bede0663e3c3f78a8e58617c3d666a240a9/pyais-2.6.4.tar.gz
+[2024-04-27 13:16:23] INFO root fetch - processPackages [fintekkers-ledger-models]: executing diffoscope
+[2024-04-27 13:16:23] INFO root fetch - processPackages [fintekkers-ledger-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fintekkers-ledger-models-0.1.78.tar.gz tmp/fintekkers-ledger-models-0.1.79.tar.gz --markdown 20240427/f/fintekkers-ledger-models/0.1.78-0.1.79/README.md --exclude *.pyd
+[2024-04-27 13:16:23] INFO root fetch - processPackages [pyais]: executing diffoscope
+[2024-04-27 13:16:23] INFO root fetch - processPackages [pyais]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyais-2.6.3.tar.gz tmp/pyais-2.6.4.tar.gz --markdown 20240427/p/pyais/2.6.3-2.6.4/README.md --exclude *.pyd
+[2024-04-27 13:16:23] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: Downloading https://files.pythonhosted.org/packages/36/a0/32235205ad2fd310bed587f9ecb6b289989d79fe965596b1abc6b4195e79/bigdl_core_xe_esimd_21-2.5.0b20240427-cp311-cp311-win_amd64.whl
+[2024-04-27 13:16:23] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: executing diffoscope
+[2024-04-27 13:16:23] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_core_xe_esimd_21-2.5.0b20240426-cp39-cp39-win_amd64.whl.zip tmp/bigdl_core_xe_esimd_21-2.5.0b20240427-cp311-cp311-win_amd64.whl.zip --markdown 20240427/b/bigdl-core-xe-esimd-21/2.5.0b20240426-2.5.0b20240427/README.md --exclude *.pyd
+[2024-04-27 13:16:23] INFO root fetch - processPackages [qg_toolkit]: Remove: archive file [/home/abi/fetcher/tmp/qg_toolkit-1.0.2.tar.gz]
+[2024-04-27 13:16:23] INFO root fetch - processPackages [qg_toolkit]: Remove: archive file [/home/abi/fetcher/tmp/qg_toolkit-1.0.3.tar.gz]
+[2024-04-27 13:16:23] INFO root fetch - main [MainThread]: End processing [qg_toolkit]: success
+[2024-04-27 13:16:23] INFO root fetch - processPackages [pyais]: Remove: archive file [/home/abi/fetcher/tmp/pyais-2.6.3.tar.gz]
+[2024-04-27 13:16:23] INFO root fetch - processPackages [pyais]: Remove: archive file [/home/abi/fetcher/tmp/pyais-2.6.4.tar.gz]
+[2024-04-27 13:16:23] INFO root fetch - main [MainThread]: End processing [pyais]: success
+[2024-04-27 13:16:24] INFO root fetch - processPackages [fintekkers-ledger-models]: Remove: archive file [/home/abi/fetcher/tmp/fintekkers-ledger-models-0.1.78.tar.gz]
+[2024-04-27 13:16:24] INFO root fetch - processPackages [fintekkers-ledger-models]: Remove: archive file [/home/abi/fetcher/tmp/fintekkers-ledger-models-0.1.79.tar.gz]
+[2024-04-27 13:16:24] INFO root fetch - main [MainThread]: End processing [fintekkers-ledger-models]: success
+[2024-04-27 13:16:24] ERROR root fetch - processPackages [bigdl-core-xe-esimd-21]: Diffoscope failed: time="2024-04-27T13:16:23+02:00" level=error msg="User-selected graph driver \"vfs\" overwritten by graph driver \"overlay\" from database - delete libpod local files to resolve.  May prevent use of images created by other tools"
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 79, in feeder
+    for buf in in_file:
+  File "/srv/diffoscope/diffoscope/comparators/utils/libarchive.py", line 134, in list_libarchive
+    for entry in archive:
+  File "/usr/lib/python3/dist-packages/libarchive/read.py", line 26, in __iter__
+    r = read_next_header2(archive_p, entry_p)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 91, in check_int
+    raise archive_error(args[0], retcode)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 75, in archive_error
+    raise ArchiveError(msg, errno(archive_p), retcode, archive_p)
+libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, archive_p=139967481257360)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 532, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 467, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 532, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 433, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/ar.py", line 71, in compare_details
+    Difference.from_text_readers(
+  File "/srv/diffoscope/diffoscope/difference.py", line 258, in from_text_readers
+    return Difference.from_feeder(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 214, in from_feeder
+    unified_diff = diff(feeder1, feeder2)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 79, in feeder
+    for buf in in_file:
+  File "/srv/diffoscope/diffoscope/comparators/utils/libarchive.py", line 134, in list_libarchive
+    for entry in archive:
+  File "/usr/lib/python3/dist-packages/libarchive/read.py", line 26, in __iter__
+    r = read_next_header2(archive_p, entry_p)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 91, in check_int
+    raise archive_error(args[0], retcode)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 75, in archive_error
+    raise ArchiveError(msg, errno(archive_p), retcode, archive_p)
+libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, archive_p=139967615475200)
+
+[2024-04-27 13:16:24] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-esimd-21] error
+[2024-04-27 13:16:24] INFO root fetch - main [MainThread]: Store serial: [22958191]
