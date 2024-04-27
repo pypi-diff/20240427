@@ -11940,3 +11940,54 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 12:21:30] INFO root fetch - processPackages [tiny-dag]: Remove: archive file [/home/abi/fetcher/tmp/tiny_dag-0.0.2.tar.gz]
 [2024-04-27 12:21:30] INFO root fetch - main [MainThread]: End processing [tiny-dag]: success
 [2024-04-27 12:21:30] INFO root fetch - main [MainThread]: Store serial: [22957873]
+[2024-04-27 12:23:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957873]
+[2024-04-27 12:23:39] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-27 12:23:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: snailshell
+[2024-04-27 12:23:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hanoikovoiduocdau-package-betty2310
+[2024-04-27 12:23:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cuda-mock
+[2024-04-27 12:23:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: agptools
+[2024-04-27 12:23:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: syncmodels
+[2024-04-27 12:23:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyblu
+[2024-04-27 12:23:39] INFO root fetch - processPackages [snailshell]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-27 12:23:39] INFO root fetch - processPackages [pyblu]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-04-27 12:23:39] WARNING root fetch - processPackages [hanoikovoiduocdau-package-betty2310]: Skipping, unable to determine old version
+[2024-04-27 12:23:39] INFO root fetch - main [MainThread]: End processing [hanoikovoiduocdau-package-betty2310] error
+[2024-04-27 12:23:39] INFO root fetch - processPackages [syncmodels]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-27 12:23:39] INFO root fetch - processPackages [agptools]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-27 12:23:39] INFO root fetch - processPackages [snailshell]: Downloading https://files.pythonhosted.org/packages/28/70/cae4b29d322efc44d70ca0ed64cb9279f19cd1f9e328c4662b19c5196c4d/snailshell-0.2.8.tar.gz
+[2024-04-27 12:23:39] INFO root fetch - processPackages [pyblu]: Downloading https://files.pythonhosted.org/packages/5f/49/7b7a23048c203982f9e4d3104335bf5a9037b77064c5da1cf22bd8fd4d10/pyblu-0.3.3.tar.gz
+[2024-04-27 12:23:39] INFO root fetch - processPackages [cuda-mock]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-27 12:23:39] INFO root fetch - processPackages [syncmodels]: Downloading https://files.pythonhosted.org/packages/09/13/db4988a642af43523190154e2a5fc392ebeed8a8fa626973e593b7c6b635/syncmodels-0.1.8-py2.py3-none-any.whl
+[2024-04-27 12:23:39] INFO root fetch - processPackages [agptools]: Downloading https://files.pythonhosted.org/packages/ef/90/08317ea7b8434657a0c64c671a0ce91127781d19896203a19175d974fc12/agptools-0.1.8-py2.py3-none-any.whl
+[2024-04-27 12:23:39] INFO root fetch - processPackages [cuda-mock]: Downloading https://files.pythonhosted.org/packages/4f/af/888d0b742d31f7b895d21bca672b0971b360d60839d690ce8982d2f68033/cuda-mock-0.1.6.tar.gz
+[2024-04-27 12:23:39] INFO root fetch - processPackages [pyblu]: Downloading https://files.pythonhosted.org/packages/9f/0f/b3e5ee9c117194f9c77756960fdf528cb1800e6d0054b477d3117b3c847e/pyblu-0.3.4.tar.gz
+[2024-04-27 12:23:39] INFO root fetch - processPackages [snailshell]: Downloading https://files.pythonhosted.org/packages/71/9f/b99191b0a59da68e371d48cedcea65ef2bbe17b981e11133e2eeb1d69f46/snailshell-0.2.9.tar.gz
+[2024-04-27 12:23:39] INFO root fetch - processPackages [agptools]: Downloading https://files.pythonhosted.org/packages/b4/96/a1fa0a1e147cbeb8acd6a36e118eb3b3ecfbf93d5b5de31b99b5d8bef5f4/agptools-0.1.9-py2.py3-none-any.whl
+[2024-04-27 12:23:39] INFO root fetch - processPackages [syncmodels]: Downloading https://files.pythonhosted.org/packages/fa/f6/eeeb0b12fc045f5917cfc3967317eddb0f896b12df99ee9cb26dd42b0529/syncmodels-0.1.9-py2.py3-none-any.whl
+[2024-04-27 12:23:39] INFO root fetch - processPackages [cuda-mock]: Downloading https://files.pythonhosted.org/packages/7c/53/411137458555cd6bee96166d316ab742197c5a5aea64072a0ef22d9b33c9/cuda-mock-0.1.7.tar.gz
+[2024-04-27 12:23:39] INFO root fetch - processPackages [pyblu]: executing diffoscope
+[2024-04-27 12:23:39] INFO root fetch - processPackages [pyblu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyblu-0.3.3.tar.gz tmp/pyblu-0.3.4.tar.gz --markdown 20240427/p/pyblu/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-04-27 12:23:40] INFO root fetch - processPackages [agptools]: executing diffoscope
+[2024-04-27 12:23:40] INFO root fetch - processPackages [agptools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agptools-0.1.8-py2.py3-none-any.whl.zip tmp/agptools-0.1.9-py2.py3-none-any.whl.zip --markdown 20240427/a/agptools/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-27 12:23:40] INFO root fetch - processPackages [syncmodels]: executing diffoscope
+[2024-04-27 12:23:40] INFO root fetch - processPackages [syncmodels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syncmodels-0.1.8-py2.py3-none-any.whl.zip tmp/syncmodels-0.1.9-py2.py3-none-any.whl.zip --markdown 20240427/s/syncmodels/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-27 12:23:40] INFO root fetch - processPackages [cuda-mock]: executing diffoscope
+[2024-04-27 12:23:40] INFO root fetch - processPackages [cuda-mock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cuda-mock-0.1.6.tar.gz tmp/cuda-mock-0.1.7.tar.gz --markdown 20240427/c/cuda-mock/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-27 12:23:40] INFO root fetch - processPackages [snailshell]: executing diffoscope
+[2024-04-27 12:23:40] INFO root fetch - processPackages [snailshell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snailshell-0.2.8.tar.gz tmp/snailshell-0.2.9.tar.gz --markdown 20240427/s/snailshell/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-27 12:23:40] INFO root fetch - processPackages [pyblu]: Remove: archive file [/home/abi/fetcher/tmp/pyblu-0.3.3.tar.gz]
+[2024-04-27 12:23:40] INFO root fetch - processPackages [pyblu]: Remove: archive file [/home/abi/fetcher/tmp/pyblu-0.3.4.tar.gz]
+[2024-04-27 12:23:40] INFO root fetch - main [MainThread]: End processing [pyblu]: success
+[2024-04-27 12:23:40] INFO root fetch - processPackages [syncmodels]: Remove: archive file [/home/abi/fetcher/tmp/syncmodels-0.1.8-py2.py3-none-any.whl.zip]
+[2024-04-27 12:23:40] INFO root fetch - processPackages [syncmodels]: Remove: archive file [/home/abi/fetcher/tmp/syncmodels-0.1.9-py2.py3-none-any.whl.zip]
+[2024-04-27 12:23:40] INFO root fetch - main [MainThread]: End processing [syncmodels]: success
+[2024-04-27 12:23:40] INFO root fetch - processPackages [agptools]: Remove: archive file [/home/abi/fetcher/tmp/agptools-0.1.8-py2.py3-none-any.whl.zip]
+[2024-04-27 12:23:40] INFO root fetch - processPackages [agptools]: Remove: archive file [/home/abi/fetcher/tmp/agptools-0.1.9-py2.py3-none-any.whl.zip]
+[2024-04-27 12:23:40] INFO root fetch - main [MainThread]: End processing [agptools]: success
+[2024-04-27 12:23:40] INFO root fetch - processPackages [cuda-mock]: Remove: archive file [/home/abi/fetcher/tmp/cuda-mock-0.1.6.tar.gz]
+[2024-04-27 12:23:40] INFO root fetch - processPackages [cuda-mock]: Remove: archive file [/home/abi/fetcher/tmp/cuda-mock-0.1.7.tar.gz]
+[2024-04-27 12:23:40] INFO root fetch - main [MainThread]: End processing [cuda-mock]: success
+[2024-04-27 12:23:41] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.8.tar.gz]
+[2024-04-27 12:23:41] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.9.tar.gz]
+[2024-04-27 12:23:41] INFO root fetch - main [MainThread]: End processing [snailshell]: success
+[2024-04-27 12:23:41] INFO root fetch - main [MainThread]: Store serial: [22957903]
