@@ -16868,3 +16868,32 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 17:50:18] INFO root fetch - processPackages [uk-bin-collection]: Remove: archive file [/home/abi/fetcher/tmp/uk_bin_collection-0.9.0.tar.gz]
 [2024-04-27 17:50:18] INFO root fetch - main [MainThread]: End processing [uk-bin-collection]: success
 [2024-04-27 17:50:18] INFO root fetch - main [MainThread]: Store serial: [22959963]
+[2024-04-27 17:52:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959963]
+[2024-04-27 17:52:29] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 17:52:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tormail
+[2024-04-27 17:52:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jinjanator-plugin-ansible
+[2024-04-27 17:52:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: clovers-groupmate-waifu
+[2024-04-27 17:52:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: balatromobile
+[2024-04-27 17:52:29] WARNING root fetch - processPackages [tormail]: Skipping, unable to determine old version
+[2024-04-27 17:52:29] INFO root fetch - main [MainThread]: End processing [tormail] error
+[2024-04-27 17:52:29] INFO root fetch - processPackages [balatromobile]: New version: [0.3.0] Old Version: [0.2.1]
+[2024-04-27 17:52:29] INFO root fetch - processPackages [balatromobile]: Downloading https://files.pythonhosted.org/packages/94/d7/9d3c5f7f53e2c0f7ce53e7ee617cfe6840c5ff2088edd2075d885dca04e8/balatromobile-0.2.1.tar.gz
+[2024-04-27 17:52:29] INFO root fetch - processPackages [clovers-groupmate-waifu]: New version: [0.1.1] Old Version: [0.1.0.post3]
+[2024-04-27 17:52:29] INFO root fetch - processPackages [jinjanator-plugin-ansible]: New version: [24.1.0] Old Version: [23.4.0]
+[2024-04-27 17:52:29] WARNING root fetch - processPackages [balatromobile]: Skipping package: exceeds size limit 17110562>=10485760
+[2024-04-27 17:52:29] INFO root fetch - main [MainThread]: End processing [balatromobile] error
+[2024-04-27 17:52:30] INFO root fetch - processPackages [jinjanator-plugin-ansible]: Downloading https://files.pythonhosted.org/packages/ae/66/9cc23563ed2866f9edc0ba2fd86bb6c15859287a6cd1ea11326df519b218/jinjanator_plugin_ansible-23.4.0.tar.gz
+[2024-04-27 17:52:30] INFO root fetch - processPackages [clovers-groupmate-waifu]: Downloading https://files.pythonhosted.org/packages/a7/30/402cb2e5a71acaffa2f7ba7b409ca383f2dc113d765aa907a252e7e6ff77/clovers_groupmate_waifu-0.1.0.post3.tar.gz
+[2024-04-27 17:52:30] INFO root fetch - processPackages [clovers-groupmate-waifu]: Downloading https://files.pythonhosted.org/packages/0d/9a/ce0207acea94143ed2df08baa8b4d59cf9bad5cabb317ab70c4e7e84f392/clovers_groupmate_waifu-0.1.1.tar.gz
+[2024-04-27 17:52:30] INFO root fetch - processPackages [jinjanator-plugin-ansible]: Downloading https://files.pythonhosted.org/packages/51/2f/b18f4f3a4a4a085ce99e1b3773b26052cf8e7010237d582b987715b41ddc/jinjanator_plugin_ansible-24.1.0.tar.gz
+[2024-04-27 17:52:30] INFO root fetch - processPackages [jinjanator-plugin-ansible]: executing diffoscope
+[2024-04-27 17:52:30] INFO root fetch - processPackages [jinjanator-plugin-ansible]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jinjanator_plugin_ansible-23.4.0.tar.gz tmp/jinjanator_plugin_ansible-24.1.0.tar.gz --markdown 20240427/j/jinjanator-plugin-ansible/23.4.0-24.1.0/README.md --exclude *.pyd
+[2024-04-27 17:52:30] INFO root fetch - processPackages [clovers-groupmate-waifu]: executing diffoscope
+[2024-04-27 17:52:30] INFO root fetch - processPackages [clovers-groupmate-waifu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clovers_groupmate_waifu-0.1.0.post3.tar.gz tmp/clovers_groupmate_waifu-0.1.1.tar.gz --markdown 20240427/c/clovers-groupmate-waifu/0.1.0.post3-0.1.1/README.md --exclude *.pyd
+[2024-04-27 17:52:31] INFO root fetch - processPackages [clovers-groupmate-waifu]: Remove: archive file [/home/abi/fetcher/tmp/clovers_groupmate_waifu-0.1.0.post3.tar.gz]
+[2024-04-27 17:52:31] INFO root fetch - processPackages [clovers-groupmate-waifu]: Remove: archive file [/home/abi/fetcher/tmp/clovers_groupmate_waifu-0.1.1.tar.gz]
+[2024-04-27 17:52:31] INFO root fetch - main [MainThread]: End processing [clovers-groupmate-waifu]: success
+[2024-04-27 17:52:31] INFO root fetch - processPackages [jinjanator-plugin-ansible]: Remove: archive file [/home/abi/fetcher/tmp/jinjanator_plugin_ansible-23.4.0.tar.gz]
+[2024-04-27 17:52:31] INFO root fetch - processPackages [jinjanator-plugin-ansible]: Remove: archive file [/home/abi/fetcher/tmp/jinjanator_plugin_ansible-24.1.0.tar.gz]
+[2024-04-27 17:52:31] INFO root fetch - main [MainThread]: End processing [jinjanator-plugin-ansible]: success
+[2024-04-27 17:52:31] INFO root fetch - main [MainThread]: Store serial: [22959975]
