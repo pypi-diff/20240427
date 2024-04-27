@@ -9323,3 +9323,9 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 07:46:56] INFO root fetch - processPackages [dankware]: Remove: archive file [/home/abi/fetcher/tmp/dankware-3.6.2.tar.gz]
 [2024-04-27 07:46:56] INFO root fetch - main [MainThread]: End processing [dankware]: success
 [2024-04-27 07:46:56] INFO root fetch - main [MainThread]: Store serial: [22956733]
+[2024-04-27 07:49:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956733]
+[2024-04-27 07:49:05] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 07:49:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: send-email-free
+[2024-04-27 07:49:05] WARNING root fetch - processPackages [send-email-free]: Skipping, unable to determine old version
+[2024-04-27 07:49:05] INFO root fetch - main [MainThread]: End processing [send-email-free] error
+[2024-04-27 07:49:05] INFO root fetch - main [MainThread]: Store serial: [22956736]
