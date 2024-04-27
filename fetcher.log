@@ -20593,3 +20593,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 22:21:32] INFO root fetch - processPackages [pymdown-extensions]: Remove: archive file [/home/abi/fetcher/tmp/pymdown_extensions-9.9.2.tar.gz]
 [2024-04-27 22:21:32] INFO root fetch - main [MainThread]: End processing [pymdown-extensions]: success
 [2024-04-27 22:21:32] INFO root fetch - main [MainThread]: Store serial: [22961672]
+[2024-04-27 22:23:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961672]
+[2024-04-27 22:23:48] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 22:23:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fiboa-cli
+[2024-04-27 22:23:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-hx-yinying
+[2024-04-27 22:23:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyrecipes
+[2024-04-27 22:23:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: GameserverLister
+[2024-04-27 22:23:48] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-04-27 22:23:48] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: Downloading https://files.pythonhosted.org/packages/c5/58/3f9f5f5cb7cfe48ea06e238ae63101295dde90aa408f5e3bcbaa6135c16c/nonebot-plugin-hx-yinying-1.1.0.tar.gz
+[2024-04-27 22:23:48] INFO root fetch - processPackages [GameserverLister]: New version: [2.0.0] Old Version: [1.1.2]
+[2024-04-27 22:23:48] INFO root fetch - processPackages [pyrecipes]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-04-27 22:23:48] INFO root fetch - processPackages [fiboa-cli]: New version: [0.3.8] Old Version: [0.3.7]
+[2024-04-27 22:23:49] INFO root fetch - processPackages [pyrecipes]: Downloading https://files.pythonhosted.org/packages/87/22/ca5f4742e4c5916505d5e74a0ef7f3a241c79e87a98fdf9f415ae3677301/pyrecipes-0.2.3.tar.gz
+[2024-04-27 22:23:49] INFO root fetch - processPackages [GameserverLister]: Downloading https://files.pythonhosted.org/packages/55/13/502fd382b57ab40c6f7d4781c113889e19c049c4ed09d4a82fd01a9f0cd8/gameserverlister-1.1.2.tar.gz
+[2024-04-27 22:23:49] INFO root fetch - processPackages [fiboa-cli]: Downloading https://files.pythonhosted.org/packages/2a/9e/0815899ab02e27a0f3debd6e43a0c56db633df0cc0b60245a4550e5af695/fiboa_cli-0.3.7.tar.gz
+[2024-04-27 22:23:49] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: Downloading https://files.pythonhosted.org/packages/4d/d8/359dd55b876d7150cb7d12f621743c14c82f6f540b46494f71c1f5be7f9a/nonebot-plugin-hx-yinying-1.1.1.tar.gz
+[2024-04-27 22:23:49] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: executing diffoscope
+[2024-04-27 22:23:49] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-hx-yinying-1.1.0.tar.gz tmp/nonebot-plugin-hx-yinying-1.1.1.tar.gz --markdown 20240427/n/nonebot-plugin-hx-yinying/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-04-27 22:23:49] INFO root fetch - processPackages [fiboa-cli]: Downloading https://files.pythonhosted.org/packages/8e/b6/5c0098bec0c85e848c44bfc0c776e488b04fae479a0c89ff38ed6b8a1438/fiboa_cli-0.3.8.tar.gz
+[2024-04-27 22:23:49] INFO root fetch - processPackages [GameserverLister]: Downloading https://files.pythonhosted.org/packages/ee/10/02de7a2ecd2f460c379f8c1278ab2481ba4565815cd87ca2bcf9ac3fabbf/gameserverlister-2.0.0.tar.gz
+[2024-04-27 22:23:49] INFO root fetch - processPackages [fiboa-cli]: executing diffoscope
+[2024-04-27 22:23:49] INFO root fetch - processPackages [fiboa-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fiboa_cli-0.3.7.tar.gz tmp/fiboa_cli-0.3.8.tar.gz --markdown 20240427/f/fiboa-cli/0.3.7-0.3.8/README.md --exclude *.pyd
+[2024-04-27 22:23:49] INFO root fetch - processPackages [GameserverLister]: executing diffoscope
+[2024-04-27 22:23:49] INFO root fetch - processPackages [GameserverLister]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gameserverlister-1.1.2.tar.gz tmp/gameserverlister-2.0.0.tar.gz --markdown 20240427/G/GameserverLister/1.1.2-2.0.0/README.md --exclude *.pyd
+[2024-04-27 22:23:50] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-hx-yinying-1.1.0.tar.gz]
+[2024-04-27 22:23:50] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-hx-yinying-1.1.1.tar.gz]
+[2024-04-27 22:23:50] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-hx-yinying]: success
+[2024-04-27 22:23:50] INFO root fetch - processPackages [pyrecipes]: Downloading https://files.pythonhosted.org/packages/72/10/9f5a910fd72ce37521858d0c5f292ee10b4e6b8e13107161bfd75cc1aeff/pyrecipes-0.2.4.tar.gz
+[2024-04-27 22:23:50] INFO root fetch - processPackages [fiboa-cli]: Remove: archive file [/home/abi/fetcher/tmp/fiboa_cli-0.3.7.tar.gz]
+[2024-04-27 22:23:50] INFO root fetch - processPackages [fiboa-cli]: Remove: archive file [/home/abi/fetcher/tmp/fiboa_cli-0.3.8.tar.gz]
+[2024-04-27 22:23:50] INFO root fetch - main [MainThread]: End processing [fiboa-cli]: success
+[2024-04-27 22:23:50] INFO root fetch - processPackages [pyrecipes]: executing diffoscope
+[2024-04-27 22:23:50] INFO root fetch - processPackages [pyrecipes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrecipes-0.2.3.tar.gz tmp/pyrecipes-0.2.4.tar.gz --markdown 20240427/p/pyrecipes/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-04-27 22:23:50] INFO root fetch - processPackages [GameserverLister]: Remove: archive file [/home/abi/fetcher/tmp/gameserverlister-1.1.2.tar.gz]
+[2024-04-27 22:23:50] INFO root fetch - processPackages [GameserverLister]: Remove: archive file [/home/abi/fetcher/tmp/gameserverlister-2.0.0.tar.gz]
+[2024-04-27 22:23:50] INFO root fetch - main [MainThread]: End processing [GameserverLister]: success
+[2024-04-27 22:23:51] INFO root fetch - processPackages [pyrecipes]: Remove: archive file [/home/abi/fetcher/tmp/pyrecipes-0.2.3.tar.gz]
+[2024-04-27 22:23:51] INFO root fetch - processPackages [pyrecipes]: Remove: archive file [/home/abi/fetcher/tmp/pyrecipes-0.2.4.tar.gz]
+[2024-04-27 22:23:51] INFO root fetch - main [MainThread]: End processing [pyrecipes]: success
+[2024-04-27 22:23:51] INFO root fetch - main [MainThread]: Store serial: [22961684]
