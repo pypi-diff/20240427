@@ -13366,3 +13366,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 13:59:12] INFO root fetch - processPackages [kernel-quantile-regression]: Remove: archive file [/home/abi/fetcher/tmp/kernel_quantile_regression-0.0.8.tar.gz]
 [2024-04-27 13:59:12] INFO root fetch - main [MainThread]: End processing [kernel-quantile-regression]: success
 [2024-04-27 13:59:12] INFO root fetch - main [MainThread]: Store serial: [22958475]
+[2024-04-27 14:01:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958475]
+[2024-04-27 14:01:21] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 14:01:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SimpleTKMessageBox
+[2024-04-27 14:01:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qg_toolkit
+[2024-04-27 14:01:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: psyaitools
+[2024-04-27 14:01:21] INFO root fetch - processPackages [qg_toolkit]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-04-27 14:01:21] INFO root fetch - processPackages [SimpleTKMessageBox]: New version: [0.2.1] Old Version: [0.2]
+[2024-04-27 14:01:21] INFO root fetch - processPackages [psyaitools]: New version: [0.1.6.dev1] Old Version: [0.1.5]
+[2024-04-27 14:01:21] INFO root fetch - processPackages [SimpleTKMessageBox]: Downloading https://files.pythonhosted.org/packages/15/33/72ca6008859648a1d29ca7d022f546a1d4af61fe4c4cdbeaf0b8a878c527/SimpleTKMessageBox-0.2.tar.gz
+[2024-04-27 14:01:21] INFO root fetch - processPackages [psyaitools]: Downloading https://files.pythonhosted.org/packages/c5/77/5f5a8e5358d6f654bb059860ad70b2b88f7d0ae59de156241824acdd47a2/psyaitools-0.1.5.tar.gz
+[2024-04-27 14:01:21] INFO root fetch - processPackages [qg_toolkit]: Downloading https://files.pythonhosted.org/packages/9e/ff/b0347576d50bebc6b13b633d3245b0f6e93305eb38a52c4b4fca1863f275/qg_toolkit-1.0.4.tar.gz
+[2024-04-27 14:01:21] INFO root fetch - processPackages [psyaitools]: Downloading https://files.pythonhosted.org/packages/0c/c5/68e9f6905af85363d25e514b3bc5e728a858fae76bdae38f31585b6e968a/psyaitools-0.1.6.dev1.tar.gz
+[2024-04-27 14:01:21] INFO root fetch - processPackages [SimpleTKMessageBox]: Downloading https://files.pythonhosted.org/packages/1b/24/de5e9ecec082f393382b4b9d7c96d73e4914654cf881d4ca0ec96558e38b/SimpleTKMessageBox-0.2.1.tar.gz
+[2024-04-27 14:01:21] INFO root fetch - processPackages [SimpleTKMessageBox]: executing diffoscope
+[2024-04-27 14:01:21] INFO root fetch - processPackages [SimpleTKMessageBox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SimpleTKMessageBox-0.2.tar.gz tmp/SimpleTKMessageBox-0.2.1.tar.gz --markdown 20240427/S/SimpleTKMessageBox/0.2-0.2.1/README.md --exclude *.pyd
+[2024-04-27 14:01:21] INFO root fetch - processPackages [qg_toolkit]: Downloading https://files.pythonhosted.org/packages/87/c4/eaa9ee4795acbd748a7dd209759db89811fba56c3c0ae5d602b948c8eaa3/qg_toolkit-1.0.5.tar.gz
+[2024-04-27 14:01:21] INFO root fetch - processPackages [psyaitools]: executing diffoscope
+[2024-04-27 14:01:21] INFO root fetch - processPackages [psyaitools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psyaitools-0.1.5.tar.gz tmp/psyaitools-0.1.6.dev1.tar.gz --markdown 20240427/p/psyaitools/0.1.5-0.1.6.dev1/README.md --exclude *.pyd
+[2024-04-27 14:01:21] INFO root fetch - processPackages [qg_toolkit]: executing diffoscope
+[2024-04-27 14:01:21] INFO root fetch - processPackages [qg_toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qg_toolkit-1.0.4.tar.gz tmp/qg_toolkit-1.0.5.tar.gz --markdown 20240427/q/qg_toolkit/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-04-27 14:01:22] INFO root fetch - processPackages [psyaitools]: Remove: archive file [/home/abi/fetcher/tmp/psyaitools-0.1.5.tar.gz]
+[2024-04-27 14:01:22] INFO root fetch - processPackages [psyaitools]: Remove: archive file [/home/abi/fetcher/tmp/psyaitools-0.1.6.dev1.tar.gz]
+[2024-04-27 14:01:22] INFO root fetch - main [MainThread]: End processing [psyaitools]: success
+[2024-04-27 14:01:22] INFO root fetch - processPackages [SimpleTKMessageBox]: Remove: archive file [/home/abi/fetcher/tmp/SimpleTKMessageBox-0.2.tar.gz]
+[2024-04-27 14:01:22] INFO root fetch - processPackages [SimpleTKMessageBox]: Remove: archive file [/home/abi/fetcher/tmp/SimpleTKMessageBox-0.2.1.tar.gz]
+[2024-04-27 14:01:22] INFO root fetch - main [MainThread]: End processing [SimpleTKMessageBox]: success
+[2024-04-27 14:01:22] INFO root fetch - processPackages [qg_toolkit]: Remove: archive file [/home/abi/fetcher/tmp/qg_toolkit-1.0.4.tar.gz]
+[2024-04-27 14:01:22] INFO root fetch - processPackages [qg_toolkit]: Remove: archive file [/home/abi/fetcher/tmp/qg_toolkit-1.0.5.tar.gz]
+[2024-04-27 14:01:22] INFO root fetch - main [MainThread]: End processing [qg_toolkit]: success
+[2024-04-27 14:01:22] INFO root fetch - main [MainThread]: Store serial: [22958484]
