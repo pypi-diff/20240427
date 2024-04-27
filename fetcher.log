@@ -9172,3 +9172,27 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 07:24:56] INFO root fetch - processPackages [gemini-ai-app-downloader]: Remove: archive file [/home/abi/fetcher/tmp/gemini_ai_app_downloader-1.1.tar.gz]
 [2024-04-27 07:24:56] INFO root fetch - main [MainThread]: End processing [gemini-ai-app-downloader]: success
 [2024-04-27 07:24:56] INFO root fetch - main [MainThread]: Store serial: [22956668]
+[2024-04-27 07:27:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956668]
+[2024-04-27 07:27:05] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 07:27:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: send-email-free
+[2024-04-27 07:27:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lbt-dragonfly
+[2024-04-27 07:27:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyscinloopsr
+[2024-04-27 07:27:05] INFO root fetch - processPackages [pyscinloopsr]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-27 07:27:05] INFO root fetch - processPackages [lbt-dragonfly]: New version: [0.9.99] Old Version: [0.9.98]
+[2024-04-27 07:27:05] WARNING root fetch - processPackages [send-email-free]: Skipping, unable to determine old version
+[2024-04-27 07:27:05] INFO root fetch - main [MainThread]: End processing [send-email-free] error
+[2024-04-27 07:27:05] INFO root fetch - processPackages [pyscinloopsr]: Downloading https://files.pythonhosted.org/packages/98/21/5809d8e4c42d0207d6fd61e35cf0683da0e0cc5f1d10fa87e864b000cfa6/pyscinloopsr-1.0.8.tar.gz
+[2024-04-27 07:27:05] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/be/ae/7267dfd241a0641f3fbadea4128db5ffa29609911cadb5fc4840656bb44a/lbt-dragonfly-0.9.98.tar.gz
+[2024-04-27 07:27:06] INFO root fetch - processPackages [pyscinloopsr]: Downloading https://files.pythonhosted.org/packages/c2/79/a3b3e1c4377a54b84d92a6ce4a8d70f9bb57364bdbe1ec2657397e8360cd/pyscinloopsr-1.0.9.tar.gz
+[2024-04-27 07:27:06] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/b4/08/0ca46e9f7eef7b2cce7f0c6110106c42aa35a79bd88110559177f64d733a/lbt-dragonfly-0.9.99.tar.gz
+[2024-04-27 07:27:06] INFO root fetch - processPackages [pyscinloopsr]: executing diffoscope
+[2024-04-27 07:27:06] INFO root fetch - processPackages [pyscinloopsr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscinloopsr-1.0.8.tar.gz tmp/pyscinloopsr-1.0.9.tar.gz --markdown 20240427/p/pyscinloopsr/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-27 07:27:06] INFO root fetch - processPackages [lbt-dragonfly]: executing diffoscope
+[2024-04-27 07:27:06] INFO root fetch - processPackages [lbt-dragonfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-dragonfly-0.9.98.tar.gz tmp/lbt-dragonfly-0.9.99.tar.gz --markdown 20240427/l/lbt-dragonfly/0.9.98-0.9.99/README.md --exclude *.pyd
+[2024-04-27 07:27:06] INFO root fetch - processPackages [pyscinloopsr]: Remove: archive file [/home/abi/fetcher/tmp/pyscinloopsr-1.0.8.tar.gz]
+[2024-04-27 07:27:06] INFO root fetch - processPackages [pyscinloopsr]: Remove: archive file [/home/abi/fetcher/tmp/pyscinloopsr-1.0.9.tar.gz]
+[2024-04-27 07:27:06] INFO root fetch - main [MainThread]: End processing [pyscinloopsr]: success
+[2024-04-27 07:27:06] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.98.tar.gz]
+[2024-04-27 07:27:06] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.99.tar.gz]
+[2024-04-27 07:27:06] INFO root fetch - main [MainThread]: End processing [lbt-dragonfly]: success
+[2024-04-27 07:27:06] INFO root fetch - main [MainThread]: Store serial: [22956678]
