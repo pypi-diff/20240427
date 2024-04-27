@@ -6804,3 +6804,15 @@ EOFError: EOF read where object expected
 [2024-04-27 03:37:13] INFO root fetch - processPackages [pyAgrum-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyAgrum_nightly-1.9.0.9.dev202310191697564854-cp39-cp39-win_amd64.whl.zip]
 [2024-04-27 03:37:13] INFO root fetch - main [MainThread]: End processing [pyAgrum-nightly]: success
 [2024-04-27 03:37:13] INFO root fetch - main [MainThread]: Store serial: [22955858]
+[2024-04-27 03:39:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22955858]
+[2024-04-27 03:39:22] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 03:39:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kkpyai
+[2024-04-27 03:39:22] INFO root fetch - processPackages [kkpyai]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-27 03:39:22] INFO root fetch - processPackages [kkpyai]: Downloading https://files.pythonhosted.org/packages/41/d3/9eaff2d61cda5a93cc3aa554dac6f205851c8b6303358abc745bc574c29b/kkpyai-0.8.0.tar.gz
+[2024-04-27 03:39:22] INFO root fetch - processPackages [kkpyai]: Downloading https://files.pythonhosted.org/packages/5d/fb/68ee41a5230bff7f50616754d4177eecd0f6602c85b5310d16ae044f2361/kkpyai-0.9.0.tar.gz
+[2024-04-27 03:39:22] INFO root fetch - processPackages [kkpyai]: executing diffoscope
+[2024-04-27 03:39:22] INFO root fetch - processPackages [kkpyai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kkpyai-0.8.0.tar.gz tmp/kkpyai-0.9.0.tar.gz --markdown 20240427/k/kkpyai/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-27 03:39:23] INFO root fetch - processPackages [kkpyai]: Remove: archive file [/home/abi/fetcher/tmp/kkpyai-0.8.0.tar.gz]
+[2024-04-27 03:39:23] INFO root fetch - processPackages [kkpyai]: Remove: archive file [/home/abi/fetcher/tmp/kkpyai-0.9.0.tar.gz]
+[2024-04-27 03:39:23] INFO root fetch - main [MainThread]: End processing [kkpyai]: success
+[2024-04-27 03:39:23] INFO root fetch - main [MainThread]: Store serial: [22955907]
