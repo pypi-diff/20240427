@@ -14779,3 +14779,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 15:31:16] INFO root fetch - processPackages [tavern]: Remove: archive file [/home/abi/fetcher/tmp/tavern-3.0.0a5.tar.gz]
 [2024-04-27 15:31:16] INFO root fetch - main [MainThread]: End processing [tavern]: success
 [2024-04-27 15:31:16] INFO root fetch - main [MainThread]: Store serial: [22959132]
+[2024-04-27 15:33:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959132]
+[2024-04-27 15:33:25] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 15:33:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CyberNova
+[2024-04-27 15:33:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: harlequin-dataset
+[2024-04-27 15:33:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: funcs-aux
+[2024-04-27 15:33:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hosted-flasks
+[2024-04-27 15:33:25] WARNING root fetch - processPackages [harlequin-dataset]: Skipping, unable to determine old version
+[2024-04-27 15:33:25] INFO root fetch - main [MainThread]: End processing [harlequin-dataset] error
+[2024-04-27 15:33:25] INFO root fetch - processPackages [hosted-flasks]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-27 15:33:25] WARNING root fetch - processPackages [CyberNova]: Skipping, unable to determine old version
+[2024-04-27 15:33:25] INFO root fetch - main [MainThread]: End processing [CyberNova] error
+[2024-04-27 15:33:25] INFO root fetch - processPackages [funcs-aux]: New version: [0.1.3] Old Version: [0.1.1]
+[2024-04-27 15:33:25] INFO root fetch - processPackages [hosted-flasks]: Downloading https://files.pythonhosted.org/packages/ac/e7/b37ad70815b1c643d8908e351dd35b9544dafc6e4a5aba2f601947900b10/hosted-flasks-0.0.1.tar.gz
+[2024-04-27 15:33:25] INFO root fetch - processPackages [funcs-aux]: Downloading https://files.pythonhosted.org/packages/23/55/e5700c1695aa81f7996d448e1c7936f2b5bfb0792b6c12f7c0100594a287/funcs_aux-0.1.1.tar.gz
+[2024-04-27 15:33:25] INFO root fetch - processPackages [hosted-flasks]: Downloading https://files.pythonhosted.org/packages/2a/ce/f7bae1006a8e643d08fefe0156feb6cbd00b0b7985fb5f85517c60d6d056/hosted-flasks-0.0.2.tar.gz
+[2024-04-27 15:33:25] INFO root fetch - processPackages [hosted-flasks]: executing diffoscope
+[2024-04-27 15:33:25] INFO root fetch - processPackages [hosted-flasks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hosted-flasks-0.0.1.tar.gz tmp/hosted-flasks-0.0.2.tar.gz --markdown 20240427/h/hosted-flasks/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-27 15:33:26] INFO root fetch - processPackages [funcs-aux]: Downloading https://files.pythonhosted.org/packages/69/66/b12822fdf4114b4931ed3e551b78765fae59c10e7d6ab1d6386939a339dc/funcs_aux-0.1.3.tar.gz
+[2024-04-27 15:33:26] INFO root fetch - processPackages [funcs-aux]: executing diffoscope
+[2024-04-27 15:33:26] INFO root fetch - processPackages [funcs-aux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funcs_aux-0.1.1.tar.gz tmp/funcs_aux-0.1.3.tar.gz --markdown 20240427/f/funcs-aux/0.1.1-0.1.3/README.md --exclude *.pyd
+[2024-04-27 15:33:26] INFO root fetch - processPackages [hosted-flasks]: Remove: archive file [/home/abi/fetcher/tmp/hosted-flasks-0.0.1.tar.gz]
+[2024-04-27 15:33:26] INFO root fetch - processPackages [hosted-flasks]: Remove: archive file [/home/abi/fetcher/tmp/hosted-flasks-0.0.2.tar.gz]
+[2024-04-27 15:33:26] INFO root fetch - main [MainThread]: End processing [hosted-flasks]: success
+[2024-04-27 15:33:26] INFO root fetch - processPackages [funcs-aux]: Remove: archive file [/home/abi/fetcher/tmp/funcs_aux-0.1.1.tar.gz]
+[2024-04-27 15:33:26] INFO root fetch - processPackages [funcs-aux]: Remove: archive file [/home/abi/fetcher/tmp/funcs_aux-0.1.3.tar.gz]
+[2024-04-27 15:33:26] INFO root fetch - main [MainThread]: End processing [funcs-aux]: success
+[2024-04-27 15:33:26] INFO root fetch - main [MainThread]: Store serial: [22959145]
