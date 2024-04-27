@@ -21519,3 +21519,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 23:36:30] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.6.dev9.tar.gz]
 [2024-04-27 23:36:30] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2024-04-27 23:36:30] INFO root fetch - main [MainThread]: Store serial: [22962133]
+[2024-04-27 23:38:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962133]
+[2024-04-27 23:38:39] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 23:38:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dnevnik-mos-ru-api
+[2024-04-27 23:38:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: basic-data-structure
+[2024-04-27 23:38:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: blastpipe
+[2024-04-27 23:38:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: poetry-plugin-deps-juice
+[2024-04-27 23:38:40] WARNING root fetch - processPackages [basic-data-structure]: Skipping, unable to determine old version
+[2024-04-27 23:38:40] INFO root fetch - main [MainThread]: End processing [basic-data-structure] error
+[2024-04-27 23:38:40] INFO root fetch - processPackages [dnevnik-mos-ru-api]: New version: [1.2.9] Old Version: [1.2.8]
+[2024-04-27 23:38:40] WARNING root fetch - processPackages [poetry-plugin-deps-juice]: Skipping, unable to determine old version
+[2024-04-27 23:38:40] INFO root fetch - main [MainThread]: End processing [poetry-plugin-deps-juice] error
+[2024-04-27 23:38:40] INFO root fetch - processPackages [blastpipe]: New version: [2024.2.0] Old Version: [2024.1.3]
+[2024-04-27 23:38:40] INFO root fetch - processPackages [dnevnik-mos-ru-api]: Downloading https://files.pythonhosted.org/packages/18/80/88c234bd7c2eda0909534c8e293a8387f79e6afb50c1e35da6e28ed87227/dnevnik-mos-ru-api-1.2.8.tar.gz
+[2024-04-27 23:38:40] INFO root fetch - processPackages [blastpipe]: Downloading https://files.pythonhosted.org/packages/f4/db/279c77f6213e445d110b7ba3974fbb5c70fe5e4e00a0160c5fcae9540b9e/blastpipe-2024.1.3.tar.gz
+[2024-04-27 23:38:40] INFO root fetch - processPackages [dnevnik-mos-ru-api]: Downloading https://files.pythonhosted.org/packages/90/c0/7d8db0154338d4e57d49a146d4099347aa7c02375f95d0ac721355249c8c/dnevnik-mos-ru-api-1.2.9.tar.gz
+[2024-04-27 23:38:40] INFO root fetch - processPackages [dnevnik-mos-ru-api]: executing diffoscope
+[2024-04-27 23:38:40] INFO root fetch - processPackages [dnevnik-mos-ru-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dnevnik-mos-ru-api-1.2.8.tar.gz tmp/dnevnik-mos-ru-api-1.2.9.tar.gz --markdown 20240427/d/dnevnik-mos-ru-api/1.2.8-1.2.9/README.md --exclude *.pyd
+[2024-04-27 23:38:40] INFO root fetch - processPackages [blastpipe]: Downloading https://files.pythonhosted.org/packages/65/43/a434fb0b34e37eb46a76beb6cbfe764010505a0a927a5da019eca68dd507/blastpipe-2024.2.0.tar.gz
+[2024-04-27 23:38:41] INFO root fetch - processPackages [blastpipe]: executing diffoscope
+[2024-04-27 23:38:41] INFO root fetch - processPackages [blastpipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blastpipe-2024.1.3.tar.gz tmp/blastpipe-2024.2.0.tar.gz --markdown 20240427/b/blastpipe/2024.1.3-2024.2.0/README.md --exclude *.pyd
+[2024-04-27 23:38:41] INFO root fetch - processPackages [dnevnik-mos-ru-api]: Remove: archive file [/home/abi/fetcher/tmp/dnevnik-mos-ru-api-1.2.8.tar.gz]
+[2024-04-27 23:38:41] INFO root fetch - processPackages [dnevnik-mos-ru-api]: Remove: archive file [/home/abi/fetcher/tmp/dnevnik-mos-ru-api-1.2.9.tar.gz]
+[2024-04-27 23:38:41] INFO root fetch - main [MainThread]: End processing [dnevnik-mos-ru-api]: success
+[2024-04-27 23:38:41] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.1.3.tar.gz]
+[2024-04-27 23:38:41] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.2.0.tar.gz]
+[2024-04-27 23:38:41] INFO root fetch - main [MainThread]: End processing [blastpipe]: success
+[2024-04-27 23:38:41] INFO root fetch - main [MainThread]: Store serial: [22962145]
