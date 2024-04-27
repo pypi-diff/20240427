@@ -15512,3 +15512,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 16:15:15] INFO root fetch - processPackages [felupe]: Remove: archive file [/home/abi/fetcher/tmp/felupe-8.5.0.tar.gz]
 [2024-04-27 16:15:15] INFO root fetch - main [MainThread]: End processing [felupe]: success
 [2024-04-27 16:15:15] INFO root fetch - main [MainThread]: Store serial: [22959380]
+[2024-04-27 16:17:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959380]
+[2024-04-27 16:17:25] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-27 16:17:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jy_lib
+[2024-04-27 16:17:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: twitchpy
+[2024-04-27 16:17:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: plotly-gruvbox-colorscheme
+[2024-04-27 16:17:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: projen
+[2024-04-27 16:17:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: MLXpress
+[2024-04-27 16:17:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: lecroyutils
+[2024-04-27 16:17:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: flatpack
+[2024-04-27 16:17:25] INFO root fetch - processPackages [MLXpress]: New version: [0.1.9.1] Old Version: [0.1.9.0]
+[2024-04-27 16:17:25] WARNING root fetch - processPackages [plotly-gruvbox-colorscheme]: Skipping, unable to determine old version
+[2024-04-27 16:17:25] INFO root fetch - main [MainThread]: End processing [plotly-gruvbox-colorscheme] error
+[2024-04-27 16:17:25] INFO root fetch - processPackages [jy_lib]: New version: [0.7.0] Old Version: [0.6.9]
+[2024-04-27 16:17:25] INFO root fetch - processPackages [flatpack]: New version: [3.3.9] Old Version: [3.3.8]
+[2024-04-27 16:17:25] INFO root fetch - processPackages [projen]: New version: [0.81.2] Old Version: [0.81.1]
+[2024-04-27 16:17:25] INFO root fetch - processPackages [MLXpress]: Downloading https://files.pythonhosted.org/packages/69/ec/36434548b709b4f0148b16d9f05e0045d76ad815b4695235dd677fc33bd8/MLXpress-0.1.9.0.tar.gz
+[2024-04-27 16:17:25] INFO root fetch - processPackages [lecroyutils]: New version: [4.0.2] Old Version: [4.0.1]
+[2024-04-27 16:17:25] INFO root fetch - processPackages [twitchpy]: New version: [1.2.2] Old Version: [1.2.0]
+[2024-04-27 16:17:25] INFO root fetch - processPackages [jy_lib]: Downloading https://files.pythonhosted.org/packages/f0/34/5b2eb323c22b5cb2402165d2ecf546c992890b5fc6a5b9c2312db51b826b/jy_lib-0.6.9.tar.gz
+[2024-04-27 16:17:25] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/42/48/84e949164975b341645163f536ee4ca8329c4e3dfa6d143c2806a0849a54/flatpack-3.3.8.tar.gz
+[2024-04-27 16:17:25] INFO root fetch - processPackages [projen]: Downloading https://files.pythonhosted.org/packages/3d/16/ada7c550dd102ea78e4be7342ed1bccd1533b2f9f038720c4b6c3dde0db2/projen-0.81.1.tar.gz
+[2024-04-27 16:17:25] INFO root fetch - processPackages [lecroyutils]: Downloading https://files.pythonhosted.org/packages/9c/00/2373e62572ddd74e9b1e9576901ccda33633defd2d84f138b41731b1b192/lecroyutils-4.0.1.tar.gz
+[2024-04-27 16:17:25] INFO root fetch - processPackages [twitchpy]: Downloading https://files.pythonhosted.org/packages/51/18/5ed3af8e82daf64dd4de661af1072ade73e93b9f4ffb10d8474abe4bdfcf/TwitchPy-1.2.0.tar.gz
+[2024-04-27 16:17:25] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/11/54/065825e8640b062c83c07c97d8dea514db8a5c0ea3c272834b88c568d82e/flatpack-3.3.9.tar.gz
+[2024-04-27 16:17:25] INFO root fetch - processPackages [MLXpress]: Downloading https://files.pythonhosted.org/packages/ae/47/316f9109b3d630de36111fff3459ca0883964c47b68466eab060785ddf43/MLXpress-0.1.9.1.tar.gz
+[2024-04-27 16:17:25] INFO root fetch - processPackages [jy_lib]: Downloading https://files.pythonhosted.org/packages/e5/2f/42f911736c91263910fa15ff84b607e70c5420874f3692cd4dc17a9a8adb/jy_lib-0.7.0.tar.gz
+[2024-04-27 16:17:25] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-04-27 16:17:25] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.3.8.tar.gz tmp/flatpack-3.3.9.tar.gz --markdown 20240427/f/flatpack/3.3.8-3.3.9/README.md --exclude *.pyd
+[2024-04-27 16:17:25] INFO root fetch - processPackages [MLXpress]: executing diffoscope
+[2024-04-27 16:17:25] INFO root fetch - processPackages [MLXpress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MLXpress-0.1.9.0.tar.gz tmp/MLXpress-0.1.9.1.tar.gz --markdown 20240427/M/MLXpress/0.1.9.0-0.1.9.1/README.md --exclude *.pyd
+[2024-04-27 16:17:25] INFO root fetch - processPackages [jy_lib]: executing diffoscope
+[2024-04-27 16:17:25] INFO root fetch - processPackages [jy_lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jy_lib-0.6.9.tar.gz tmp/jy_lib-0.7.0.tar.gz --markdown 20240427/j/jy_lib/0.6.9-0.7.0/README.md --exclude *.pyd
+[2024-04-27 16:17:25] INFO root fetch - processPackages [projen]: Downloading https://files.pythonhosted.org/packages/61/14/5ce323e09efbb0cbe502f4771ff4f070789eb409ba1c66849577e7ad377d/projen-0.81.2.tar.gz
+[2024-04-27 16:17:25] INFO root fetch - processPackages [lecroyutils]: Downloading https://files.pythonhosted.org/packages/7f/d7/7a0d3101102399b88640804de7404008459a99c2b51fa68d907e5a9cdd1e/lecroyutils-4.0.2.tar.gz
+[2024-04-27 16:17:25] INFO root fetch - processPackages [twitchpy]: Downloading https://files.pythonhosted.org/packages/a5/e0/1662c2f15342a75833356d2f8ccc90fb6ffab0821a8eba8f80e4f54f5b73/twitchpy-1.2.2.tar.gz
+[2024-04-27 16:17:26] INFO root fetch - processPackages [twitchpy]: executing diffoscope
+[2024-04-27 16:17:26] INFO root fetch - processPackages [twitchpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TwitchPy-1.2.0.tar.gz tmp/twitchpy-1.2.2.tar.gz --markdown 20240427/t/twitchpy/1.2.0-1.2.2/README.md --exclude *.pyd
+[2024-04-27 16:17:26] INFO root fetch - processPackages [lecroyutils]: executing diffoscope
+[2024-04-27 16:17:26] INFO root fetch - processPackages [lecroyutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lecroyutils-4.0.1.tar.gz tmp/lecroyutils-4.0.2.tar.gz --markdown 20240427/l/lecroyutils/4.0.1-4.0.2/README.md --exclude *.pyd
+[2024-04-27 16:17:26] INFO root fetch - processPackages [projen]: executing diffoscope
+[2024-04-27 16:17:26] INFO root fetch - processPackages [projen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/projen-0.81.1.tar.gz tmp/projen-0.81.2.tar.gz --markdown 20240427/p/projen/0.81.1-0.81.2/README.md --exclude *.pyd
+[2024-04-27 16:17:26] INFO root fetch - processPackages [jy_lib]: Remove: archive file [/home/abi/fetcher/tmp/jy_lib-0.6.9.tar.gz]
+[2024-04-27 16:17:26] INFO root fetch - processPackages [jy_lib]: Remove: archive file [/home/abi/fetcher/tmp/jy_lib-0.7.0.tar.gz]
+[2024-04-27 16:17:26] INFO root fetch - main [MainThread]: End processing [jy_lib]: success
+[2024-04-27 16:17:26] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.8.tar.gz]
+[2024-04-27 16:17:26] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.9.tar.gz]
+[2024-04-27 16:17:26] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-04-27 16:17:26] INFO root fetch - processPackages [MLXpress]: Remove: archive file [/home/abi/fetcher/tmp/MLXpress-0.1.9.0.tar.gz]
+[2024-04-27 16:17:26] INFO root fetch - processPackages [MLXpress]: Remove: archive file [/home/abi/fetcher/tmp/MLXpress-0.1.9.1.tar.gz]
+[2024-04-27 16:17:26] INFO root fetch - main [MainThread]: End processing [MLXpress]: success
+[2024-04-27 16:17:26] INFO root fetch - processPackages [twitchpy]: Remove: archive file [/home/abi/fetcher/tmp/TwitchPy-1.2.0.tar.gz]
+[2024-04-27 16:17:26] INFO root fetch - processPackages [twitchpy]: Remove: archive file [/home/abi/fetcher/tmp/twitchpy-1.2.2.tar.gz]
+[2024-04-27 16:17:26] INFO root fetch - main [MainThread]: End processing [twitchpy]: success
+[2024-04-27 16:17:26] INFO root fetch - processPackages [lecroyutils]: Remove: archive file [/home/abi/fetcher/tmp/lecroyutils-4.0.1.tar.gz]
+[2024-04-27 16:17:26] INFO root fetch - processPackages [lecroyutils]: Remove: archive file [/home/abi/fetcher/tmp/lecroyutils-4.0.2.tar.gz]
+[2024-04-27 16:17:26] INFO root fetch - main [MainThread]: End processing [lecroyutils]: success
+[2024-04-27 16:17:27] INFO root fetch - processPackages [projen]: Remove: archive file [/home/abi/fetcher/tmp/projen-0.81.1.tar.gz]
+[2024-04-27 16:17:27] INFO root fetch - processPackages [projen]: Remove: archive file [/home/abi/fetcher/tmp/projen-0.81.2.tar.gz]
+[2024-04-27 16:17:27] INFO root fetch - main [MainThread]: End processing [projen]: success
+[2024-04-27 16:17:27] INFO root fetch - main [MainThread]: Store serial: [22959405]
