@@ -6816,3 +6816,15 @@ EOFError: EOF read where object expected
 [2024-04-27 03:39:23] INFO root fetch - processPackages [kkpyai]: Remove: archive file [/home/abi/fetcher/tmp/kkpyai-0.9.0.tar.gz]
 [2024-04-27 03:39:23] INFO root fetch - main [MainThread]: End processing [kkpyai]: success
 [2024-04-27 03:39:23] INFO root fetch - main [MainThread]: Store serial: [22955907]
+[2024-04-27 03:41:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22955907]
+[2024-04-27 03:41:31] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 03:41:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: paper-qa
+[2024-04-27 03:41:31] INFO root fetch - processPackages [paper-qa]: New version: [4.6.0] Old Version: [4.5.2]
+[2024-04-27 03:41:32] INFO root fetch - processPackages [paper-qa]: Downloading https://files.pythonhosted.org/packages/af/49/ddd48faf80f91c14fa3c3c5a3cfcd2485f3411f5d7636812864f8789b889/paper_qa-4.5.2.tar.gz
+[2024-04-27 03:41:32] INFO root fetch - processPackages [paper-qa]: Downloading https://files.pythonhosted.org/packages/9e/0e/2955b3831630526b4ac7849e4ecfa437b1a035927042d60b8491ad200866/paper_qa-4.6.0.tar.gz
+[2024-04-27 03:41:32] INFO root fetch - processPackages [paper-qa]: executing diffoscope
+[2024-04-27 03:41:32] INFO root fetch - processPackages [paper-qa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paper_qa-4.5.2.tar.gz tmp/paper_qa-4.6.0.tar.gz --markdown 20240427/p/paper-qa/4.5.2-4.6.0/README.md --exclude *.pyd
+[2024-04-27 03:41:33] INFO root fetch - processPackages [paper-qa]: Remove: archive file [/home/abi/fetcher/tmp/paper_qa-4.5.2.tar.gz]
+[2024-04-27 03:41:33] INFO root fetch - processPackages [paper-qa]: Remove: archive file [/home/abi/fetcher/tmp/paper_qa-4.6.0.tar.gz]
+[2024-04-27 03:41:33] INFO root fetch - main [MainThread]: End processing [paper-qa]: success
+[2024-04-27 03:41:33] INFO root fetch - main [MainThread]: Store serial: [22955910]
