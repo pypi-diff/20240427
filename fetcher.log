@@ -9329,3 +9329,36 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 07:49:05] WARNING root fetch - processPackages [send-email-free]: Skipping, unable to determine old version
 [2024-04-27 07:49:05] INFO root fetch - main [MainThread]: End processing [send-email-free] error
 [2024-04-27 07:49:05] INFO root fetch - main [MainThread]: Store serial: [22956736]
+[2024-04-27 07:51:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956736]
+[2024-04-27 07:51:14] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 07:51:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cntrlai
+[2024-04-27 07:51:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: awstaga
+[2024-04-27 07:51:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llama-index-graph-stores-falkordb
+[2024-04-27 07:51:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mser
+[2024-04-27 07:51:14] WARNING root fetch - processPackages [cntrlai]: Skipping, unable to determine old version
+[2024-04-27 07:51:14] INFO root fetch - main [MainThread]: End processing [cntrlai] error
+[2024-04-27 07:51:14] INFO root fetch - processPackages [mser]: New version: [0.0.3] Old Version: [0.0.1]
+[2024-04-27 07:51:14] INFO root fetch - processPackages [awstaga]: New version: [1.3.0] Old Version: [1.2.1]
+[2024-04-27 07:51:14] INFO root fetch - processPackages [llama-index-graph-stores-falkordb]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-27 07:51:14] INFO root fetch - processPackages [awstaga]: Downloading https://files.pythonhosted.org/packages/89/3e/ce37bc5741524c63629f892be573b2ae38f1ba96473983b07a5282f339b5/awstaga-1.2.1.tar.gz
+[2024-04-27 07:51:14] INFO root fetch - processPackages [llama-index-graph-stores-falkordb]: Downloading https://files.pythonhosted.org/packages/37/72/11fe8f451bcb307ad87550380575f1c85bbff075df5c86f0e667bd4eb4f3/llama_index_graph_stores_falkordb-0.1.3.tar.gz
+[2024-04-27 07:51:14] INFO root fetch - processPackages [mser]: Downloading https://files.pythonhosted.org/packages/23/de/061b7b7934641745d6af8776c150dfd3a3fb84094e4756415affa8597287/mser-0.0.1-py3-none-any.whl
+[2024-04-27 07:51:14] INFO root fetch - processPackages [awstaga]: Downloading https://files.pythonhosted.org/packages/06/42/f603d2466b0510f1b3dca59e0e9a1ddb420e98f55282510cbc8a48b102aa/awstaga-1.3.0.tar.gz
+[2024-04-27 07:51:14] INFO root fetch - processPackages [llama-index-graph-stores-falkordb]: Downloading https://files.pythonhosted.org/packages/0c/74/54aed4ad2e20f08f133737dedbd4e44f866915177c98bf286a286bd00dab/llama_index_graph_stores_falkordb-0.1.4.tar.gz
+[2024-04-27 07:51:14] INFO root fetch - processPackages [mser]: Downloading https://files.pythonhosted.org/packages/02/79/c81571829e4d8c78a5d6b51bdb7e54731352a66fa1eb78a2375d7fa47c50/mser-0.0.3-py3-none-any.whl
+[2024-04-27 07:51:14] INFO root fetch - processPackages [awstaga]: executing diffoscope
+[2024-04-27 07:51:14] INFO root fetch - processPackages [awstaga]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/awstaga-1.2.1.tar.gz tmp/awstaga-1.3.0.tar.gz --markdown 20240427/a/awstaga/1.2.1-1.3.0/README.md --exclude *.pyd
+[2024-04-27 07:51:15] INFO root fetch - processPackages [llama-index-graph-stores-falkordb]: executing diffoscope
+[2024-04-27 07:51:15] INFO root fetch - processPackages [llama-index-graph-stores-falkordb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_index_graph_stores_falkordb-0.1.3.tar.gz tmp/llama_index_graph_stores_falkordb-0.1.4.tar.gz --markdown 20240427/l/llama-index-graph-stores-falkordb/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-27 07:51:15] INFO root fetch - processPackages [mser]: executing diffoscope
+[2024-04-27 07:51:15] INFO root fetch - processPackages [mser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mser-0.0.1-py3-none-any.whl.zip tmp/mser-0.0.3-py3-none-any.whl.zip --markdown 20240427/m/mser/0.0.1-0.0.3/README.md --exclude *.pyd
+[2024-04-27 07:51:15] INFO root fetch - processPackages [llama-index-graph-stores-falkordb]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_graph_stores_falkordb-0.1.3.tar.gz]
+[2024-04-27 07:51:15] INFO root fetch - processPackages [llama-index-graph-stores-falkordb]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_graph_stores_falkordb-0.1.4.tar.gz]
+[2024-04-27 07:51:15] INFO root fetch - main [MainThread]: End processing [llama-index-graph-stores-falkordb]: success
+[2024-04-27 07:51:15] INFO root fetch - processPackages [awstaga]: Remove: archive file [/home/abi/fetcher/tmp/awstaga-1.2.1.tar.gz]
+[2024-04-27 07:51:15] INFO root fetch - processPackages [awstaga]: Remove: archive file [/home/abi/fetcher/tmp/awstaga-1.3.0.tar.gz]
+[2024-04-27 07:51:15] INFO root fetch - main [MainThread]: End processing [awstaga]: success
+[2024-04-27 07:51:15] INFO root fetch - processPackages [mser]: Remove: archive file [/home/abi/fetcher/tmp/mser-0.0.1-py3-none-any.whl.zip]
+[2024-04-27 07:51:15] INFO root fetch - processPackages [mser]: Remove: archive file [/home/abi/fetcher/tmp/mser-0.0.3-py3-none-any.whl.zip]
+[2024-04-27 07:51:15] INFO root fetch - main [MainThread]: End processing [mser]: success
+[2024-04-27 07:51:15] INFO root fetch - main [MainThread]: Store serial: [22956751]
