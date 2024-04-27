@@ -2902,3 +2902,42 @@ EOFError: EOF read where object expected
 [2024-04-27 02:52:48] INFO root fetch - processPackages [adbnx-adapter]: Remove: archive file [/home/abi/fetcher/tmp/adbnx_adapter-5.0.2.tar.gz]
 [2024-04-27 02:52:48] INFO root fetch - main [MainThread]: End processing [adbnx-adapter]: success
 [2024-04-27 02:52:48] INFO root fetch - main [MainThread]: Store serial: [22954505]
+[2024-04-27 02:54:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22954505]
+[2024-04-27 02:54:58] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 02:54:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-lambda-layer-curl
+[2024-04-27 02:54:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: keras-nlp
+[2024-04-27 02:54:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ortfodb
+[2024-04-27 02:54:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyHanko
+[2024-04-27 02:54:58] INFO root fetch - processPackages [pyHanko]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-27 02:54:58] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-04-27 02:54:58] INFO root fetch - processPackages [ortfodb]: New version: [1.6.0] Old Version: [1.5.0]
+[2024-04-27 02:54:58] INFO root fetch - processPackages [keras-nlp]: New version: [0.9.3.dev0] Old Version: [0.9.3]
+[2024-04-27 02:54:58] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Downloading https://files.pythonhosted.org/packages/c8/e2/39c88cfa63f418383f3a383b2b62dfe801cbfd5c53de4d005804c19d76dc/cdk-lambda-layer-curl-2.0.98.tar.gz
+[2024-04-27 02:54:58] INFO root fetch - processPackages [keras-nlp]: Downloading https://files.pythonhosted.org/packages/83/32/20a22225dd8137c13005edaf0bb6cdfdd488c90f8a7e510791538ce36506/keras-nlp-0.9.3.tar.gz
+[2024-04-27 02:54:58] INFO root fetch - processPackages [pyHanko]: Downloading https://files.pythonhosted.org/packages/d2/63/49157f28bc2f950eb14c340ef424e0dee8616ff560a8401276569ff28f57/pyHanko-0.8.0.tar.gz
+[2024-04-27 02:54:58] INFO root fetch - processPackages [ortfodb]: Downloading https://files.pythonhosted.org/packages/b5/35/b497fd6133a98cee525727c1baa26ce187ef6a2ce9dbbdf1b58aa63ba2d9/ortfodb-1.5.0.tar.gz
+[2024-04-27 02:54:58] INFO root fetch - processPackages [keras-nlp]: Downloading https://files.pythonhosted.org/packages/b4/b4/77a34d094447631579707e2238a11403eb3c35511fd6eb4c97563e4a8ff0/keras-nlp-0.9.3.dev0.tar.gz
+[2024-04-27 02:54:58] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Downloading https://files.pythonhosted.org/packages/2e/02/9e7ab6bc6191e2cbe6705c1530f695ed00527096133668b731e72d6a6445/cdk-lambda-layer-curl-2.0.99.tar.gz
+[2024-04-27 02:54:58] INFO root fetch - processPackages [keras-nlp]: executing diffoscope
+[2024-04-27 02:54:58] INFO root fetch - processPackages [keras-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras-nlp-0.9.3.tar.gz tmp/keras-nlp-0.9.3.dev0.tar.gz --markdown 20240427/k/keras-nlp/0.9.3-0.9.3.dev0/README.md --exclude *.pyd
+[2024-04-27 02:54:58] INFO root fetch - processPackages [ortfodb]: Downloading https://files.pythonhosted.org/packages/5e/d2/287b6ca044e4f7b10a541af667519cef1896a6b4d3efc47fc4a84430da52/ortfodb-1.6.0.tar.gz
+[2024-04-27 02:54:58] INFO root fetch - processPackages [pyHanko]: Downloading https://files.pythonhosted.org/packages/93/80/7a9bf713f5eb17d3e1ecec78e4da062b9918cc3dbc650436aae55e63e037/pyHanko-0.9.0.tar.gz
+[2024-04-27 02:54:59] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2024-04-27 02:54:59] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20240427/c/cdk-lambda-layer-curl/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-04-27 02:54:59] INFO root fetch - processPackages [pyHanko]: executing diffoscope
+[2024-04-27 02:54:59] INFO root fetch - processPackages [pyHanko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyHanko-0.8.0.tar.gz tmp/pyHanko-0.9.0.tar.gz --markdown 20240427/p/pyHanko/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-27 02:54:59] INFO root fetch - processPackages [ortfodb]: executing diffoscope
+[2024-04-27 02:54:59] INFO root fetch - processPackages [ortfodb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ortfodb-1.5.0.tar.gz tmp/ortfodb-1.6.0.tar.gz --markdown 20240427/o/ortfodb/1.5.0-1.6.0/README.md --exclude *.pyd
+[2024-04-27 02:54:59] INFO root fetch - processPackages [ortfodb]: Remove: archive file [/home/abi/fetcher/tmp/ortfodb-1.5.0.tar.gz]
+[2024-04-27 02:54:59] INFO root fetch - processPackages [ortfodb]: Remove: archive file [/home/abi/fetcher/tmp/ortfodb-1.6.0.tar.gz]
+[2024-04-27 02:54:59] INFO root fetch - main [MainThread]: End processing [ortfodb]: success
+[2024-04-27 02:54:59] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Remove: archive file [/home/abi/fetcher/tmp/cdk-lambda-layer-curl-2.0.98.tar.gz]
+[2024-04-27 02:54:59] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Remove: archive file [/home/abi/fetcher/tmp/cdk-lambda-layer-curl-2.0.99.tar.gz]
+[2024-04-27 02:54:59] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2024-04-27 02:55:00] INFO root fetch - processPackages [pyHanko]: Remove: archive file [/home/abi/fetcher/tmp/pyHanko-0.8.0.tar.gz]
+[2024-04-27 02:55:00] INFO root fetch - processPackages [pyHanko]: Remove: archive file [/home/abi/fetcher/tmp/pyHanko-0.9.0.tar.gz]
+[2024-04-27 02:55:00] INFO root fetch - main [MainThread]: End processing [pyHanko]: success
+[2024-04-27 02:55:00] INFO root fetch - processPackages [keras-nlp]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-0.9.3.tar.gz]
+[2024-04-27 02:55:00] INFO root fetch - processPackages [keras-nlp]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-0.9.3.dev0.tar.gz]
+[2024-04-27 02:55:00] INFO root fetch - main [MainThread]: End processing [keras-nlp]: success
+[2024-04-27 02:55:00] INFO root fetch - main [MainThread]: Store serial: [22954519]
