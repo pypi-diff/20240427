@@ -2029,3 +2029,51 @@ EOFError: EOF read where object expected
 [2024-04-27 01:57:52] INFO root fetch - processPackages [libreflow]: Remove: archive file [/home/abi/fetcher/tmp/libreflow-2.4.1.tar.gz]
 [2024-04-27 01:57:52] INFO root fetch - main [MainThread]: End processing [libreflow]: success
 [2024-04-27 01:57:52] INFO root fetch - main [MainThread]: Store serial: [22954097]
+[2024-04-27 01:59:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22954097]
+[2024-04-27 02:00:01] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 02:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rats-apps
+[2024-04-27 02:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rats-pipelines
+[2024-04-27 02:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: receipt-enhancer
+[2024-04-27 02:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyCatFile
+[2024-04-27 02:00:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: KnockoffOrigins
+[2024-04-27 02:00:01] INFO root fetch - processPackages [KnockoffOrigins]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-27 02:00:01] INFO root fetch - processPackages [rats-apps]: New version: [0.1.3.dev9] Old Version: [0.1.3.dev8]
+[2024-04-27 02:00:01] INFO root fetch - processPackages [rats-pipelines]: New version: [0.1.3.dev9] Old Version: [0.1.3.dev8]
+[2024-04-27 02:00:01] INFO root fetch - processPackages [receipt-enhancer]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-27 02:00:01] INFO root fetch - processPackages [rats-apps]: Downloading https://files.pythonhosted.org/packages/2b/ac/7cdd84e9d923505e71fd914f800c3d7199d0e4a098aa8259413f06395c30/rats_apps-0.1.3.dev8-py3-none-any.whl
+[2024-04-27 02:00:01] INFO root fetch - processPackages [KnockoffOrigins]: Downloading https://files.pythonhosted.org/packages/97/b1/4d9b8d630c4658a4cf279e9cdab127890f9166ec72a07fff8e96c55e2c4a/knockofforigins-0.1.1.tar.gz
+[2024-04-27 02:00:01] INFO root fetch - processPackages [PyCatFile]: New version: [0.8.6] Old Version: [0.8.4]
+[2024-04-27 02:00:01] INFO root fetch - processPackages [rats-pipelines]: Downloading https://files.pythonhosted.org/packages/ec/dd/e1571a4a4be4a6e8a24f82ab1b058ced7ac30426c5fa734e21c3bb791cd1/rats_pipelines-0.1.3.dev8-py3-none-any.whl
+[2024-04-27 02:00:02] INFO root fetch - processPackages [receipt-enhancer]: Downloading https://files.pythonhosted.org/packages/bb/da/5f7f86cfe7877a91cd448444aa9deaa933e3fc160b7983e49cc23b6b2213/receipt_enhancer-0.1.4.tar.gz
+[2024-04-27 02:00:02] INFO root fetch - processPackages [rats-apps]: Downloading https://files.pythonhosted.org/packages/63/25/d3d6e41dfb5bd98bcbf7f79d3856cc774212467e002a6abf0eb6cd14bd96/rats_apps-0.1.3.dev9-py3-none-any.whl
+[2024-04-27 02:00:02] INFO root fetch - processPackages [PyCatFile]: Downloading https://files.pythonhosted.org/packages/df/81/9d1dcbf3c75350ccee91839f755ce8bedf5de411bc228ad50a2214e67ad2/pycatfile-0.8.4.tar.gz
+[2024-04-27 02:00:02] INFO root fetch - processPackages [rats-apps]: executing diffoscope
+[2024-04-27 02:00:02] INFO root fetch - processPackages [rats-apps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rats_apps-0.1.3.dev8-py3-none-any.whl.zip tmp/rats_apps-0.1.3.dev9-py3-none-any.whl.zip --markdown 20240427/r/rats-apps/0.1.3.dev8-0.1.3.dev9/README.md --exclude *.pyd
+[2024-04-27 02:00:02] INFO root fetch - processPackages [rats-pipelines]: Downloading https://files.pythonhosted.org/packages/b8/2d/79bd6c94d590e76f61506daaf64bbb07726287dd538e4b8a5d5a3fd64ad7/rats_pipelines-0.1.3.dev9-py3-none-any.whl
+[2024-04-27 02:00:02] INFO root fetch - processPackages [KnockoffOrigins]: Downloading https://files.pythonhosted.org/packages/59/48/cdee4a34692e976d70c3e94b3551cb6493a08388446855bf91329fa9c810/knockofforigins-0.1.2.tar.gz
+[2024-04-27 02:00:02] INFO root fetch - processPackages [KnockoffOrigins]: executing diffoscope
+[2024-04-27 02:00:02] INFO root fetch - processPackages [KnockoffOrigins]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/knockofforigins-0.1.1.tar.gz tmp/knockofforigins-0.1.2.tar.gz --markdown 20240427/K/KnockoffOrigins/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-27 02:00:02] INFO root fetch - processPackages [rats-pipelines]: executing diffoscope
+[2024-04-27 02:00:02] INFO root fetch - processPackages [rats-pipelines]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rats_pipelines-0.1.3.dev8-py3-none-any.whl.zip tmp/rats_pipelines-0.1.3.dev9-py3-none-any.whl.zip --markdown 20240427/r/rats-pipelines/0.1.3.dev8-0.1.3.dev9/README.md --exclude *.pyd
+[2024-04-27 02:00:02] INFO root fetch - processPackages [receipt-enhancer]: Downloading https://files.pythonhosted.org/packages/c4/4a/6c4633aa83ec05dcb2b2e422ab87224ea3d3f818e5b84d190b228e683631/receipt_enhancer-0.1.5.tar.gz
+[2024-04-27 02:00:02] INFO root fetch - processPackages [PyCatFile]: Downloading https://files.pythonhosted.org/packages/33/94/2a43a5b216b3693d0b7a8f172b765c4e2d292f5bff0ca2d5626bf5bd0a6f/pycatfile-0.8.6.tar.gz
+[2024-04-27 02:00:02] INFO root fetch - processPackages [receipt-enhancer]: executing diffoscope
+[2024-04-27 02:00:02] INFO root fetch - processPackages [receipt-enhancer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/receipt_enhancer-0.1.4.tar.gz tmp/receipt_enhancer-0.1.5.tar.gz --markdown 20240427/r/receipt-enhancer/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-27 02:00:02] INFO root fetch - processPackages [PyCatFile]: executing diffoscope
+[2024-04-27 02:00:02] INFO root fetch - processPackages [PyCatFile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycatfile-0.8.4.tar.gz tmp/pycatfile-0.8.6.tar.gz --markdown 20240427/P/PyCatFile/0.8.4-0.8.6/README.md --exclude *.pyd
+[2024-04-27 02:00:02] INFO root fetch - processPackages [rats-apps]: Remove: archive file [/home/abi/fetcher/tmp/rats_apps-0.1.3.dev8-py3-none-any.whl.zip]
+[2024-04-27 02:00:02] INFO root fetch - processPackages [rats-apps]: Remove: archive file [/home/abi/fetcher/tmp/rats_apps-0.1.3.dev9-py3-none-any.whl.zip]
+[2024-04-27 02:00:02] INFO root fetch - main [MainThread]: End processing [rats-apps]: success
+[2024-04-27 02:00:02] INFO root fetch - processPackages [KnockoffOrigins]: Remove: archive file [/home/abi/fetcher/tmp/knockofforigins-0.1.1.tar.gz]
+[2024-04-27 02:00:02] INFO root fetch - processPackages [KnockoffOrigins]: Remove: archive file [/home/abi/fetcher/tmp/knockofforigins-0.1.2.tar.gz]
+[2024-04-27 02:00:02] INFO root fetch - main [MainThread]: End processing [KnockoffOrigins]: success
+[2024-04-27 02:00:03] INFO root fetch - processPackages [rats-pipelines]: Remove: archive file [/home/abi/fetcher/tmp/rats_pipelines-0.1.3.dev8-py3-none-any.whl.zip]
+[2024-04-27 02:00:03] INFO root fetch - processPackages [rats-pipelines]: Remove: archive file [/home/abi/fetcher/tmp/rats_pipelines-0.1.3.dev9-py3-none-any.whl.zip]
+[2024-04-27 02:00:03] INFO root fetch - main [MainThread]: End processing [rats-pipelines]: success
+[2024-04-27 02:00:03] INFO root fetch - processPackages [PyCatFile]: Remove: archive file [/home/abi/fetcher/tmp/pycatfile-0.8.4.tar.gz]
+[2024-04-27 02:00:03] INFO root fetch - processPackages [PyCatFile]: Remove: archive file [/home/abi/fetcher/tmp/pycatfile-0.8.6.tar.gz]
+[2024-04-27 02:00:03] INFO root fetch - main [MainThread]: End processing [PyCatFile]: success
+[2024-04-27 02:00:03] INFO root fetch - processPackages [receipt-enhancer]: Remove: archive file [/home/abi/fetcher/tmp/receipt_enhancer-0.1.4.tar.gz]
+[2024-04-27 02:00:03] INFO root fetch - processPackages [receipt-enhancer]: Remove: archive file [/home/abi/fetcher/tmp/receipt_enhancer-0.1.5.tar.gz]
+[2024-04-27 02:00:03] INFO root fetch - main [MainThread]: End processing [receipt-enhancer]: success
+[2024-04-27 02:00:03] INFO root fetch - main [MainThread]: Store serial: [22954110]
