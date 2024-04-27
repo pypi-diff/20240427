@@ -10426,3 +10426,24 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 09:34:06] INFO root fetch - processPackages [fin-maestro-kin]: Remove: archive file [/home/abi/fetcher/tmp/fin_maestro_kin-0.2.6.tar.gz]
 [2024-04-27 09:34:06] INFO root fetch - main [MainThread]: End processing [fin-maestro-kin]: success
 [2024-04-27 09:34:06] INFO root fetch - main [MainThread]: Store serial: [22957227]
+[2024-04-27 09:36:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957227]
+[2024-04-27 09:36:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 09:36:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: media-manager
+[2024-04-27 09:36:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yes-chef
+[2024-04-27 09:36:16] INFO root fetch - processPackages [yes-chef]: New version: [0.9.0] Old Version: [0.8.2]
+[2024-04-27 09:36:16] INFO root fetch - processPackages [media-manager]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-27 09:36:16] INFO root fetch - processPackages [yes-chef]: Downloading https://files.pythonhosted.org/packages/10/61/0bfb0db08ff48caf0de078d360e2ad4624437202e73480c0c6a0db23240c/yes_chef-0.8.2.tar.gz
+[2024-04-27 09:36:16] INFO root fetch - processPackages [media-manager]: Downloading https://files.pythonhosted.org/packages/75/11/acc8a436463477db369c803d9007e03acdd0b43a677cd0cbb78b7ea5b3bb/media_manager-0.8.0-py2.py3-none-any.whl
+[2024-04-27 09:36:16] INFO root fetch - processPackages [media-manager]: Downloading https://files.pythonhosted.org/packages/9b/a7/1155a373b195bebb88c0274982964c45aecd8d7206b2f4731838007628fd/media_manager-0.9.0-py2.py3-none-any.whl
+[2024-04-27 09:36:16] INFO root fetch - processPackages [yes-chef]: Downloading https://files.pythonhosted.org/packages/dd/65/cf880b2e12b45b3b3e089564ae08f2729195f341058471561e8cf29637a7/yes_chef-0.9.0.tar.gz
+[2024-04-27 09:36:16] INFO root fetch - processPackages [media-manager]: executing diffoscope
+[2024-04-27 09:36:16] INFO root fetch - processPackages [media-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/media_manager-0.8.0-py2.py3-none-any.whl.zip tmp/media_manager-0.9.0-py2.py3-none-any.whl.zip --markdown 20240427/m/media-manager/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-27 09:36:17] INFO root fetch - processPackages [yes-chef]: executing diffoscope
+[2024-04-27 09:36:17] INFO root fetch - processPackages [yes-chef]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yes_chef-0.8.2.tar.gz tmp/yes_chef-0.9.0.tar.gz --markdown 20240427/y/yes-chef/0.8.2-0.9.0/README.md --exclude *.pyd
+[2024-04-27 09:36:17] INFO root fetch - processPackages [media-manager]: Remove: archive file [/home/abi/fetcher/tmp/media_manager-0.8.0-py2.py3-none-any.whl.zip]
+[2024-04-27 09:36:17] INFO root fetch - processPackages [media-manager]: Remove: archive file [/home/abi/fetcher/tmp/media_manager-0.9.0-py2.py3-none-any.whl.zip]
+[2024-04-27 09:36:17] INFO root fetch - main [MainThread]: End processing [media-manager]: success
+[2024-04-27 09:36:17] INFO root fetch - processPackages [yes-chef]: Remove: archive file [/home/abi/fetcher/tmp/yes_chef-0.8.2.tar.gz]
+[2024-04-27 09:36:17] INFO root fetch - processPackages [yes-chef]: Remove: archive file [/home/abi/fetcher/tmp/yes_chef-0.9.0.tar.gz]
+[2024-04-27 09:36:17] INFO root fetch - main [MainThread]: End processing [yes-chef]: success
+[2024-04-27 09:36:17] INFO root fetch - main [MainThread]: Store serial: [22957235]
