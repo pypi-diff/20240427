@@ -18854,3 +18854,74 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 20:04:35] INFO root fetch - processPackages [data-prep-lab]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_lab-0.1.5-py3-none-any.whl.zip]
 [2024-04-27 20:04:35] INFO root fetch - main [MainThread]: End processing [data-prep-lab]: success
 [2024-04-27 20:04:35] INFO root fetch - main [MainThread]: Store serial: [22960956]
+[2024-04-27 20:06:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960956]
+[2024-04-27 20:06:49] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-27 20:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: data-prep-lab
+[2024-04-27 20:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: agent-bdi
+[2024-04-27 20:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: labelle
+[2024-04-27 20:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: alamos
+[2024-04-27 20:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: synnax-freighter
+[2024-04-27 20:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: foldermerge
+[2024-04-27 20:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: synnax
+[2024-04-27 20:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: offlinedatasci
+[2024-04-27 20:06:49] INFO root fetch - processPackages [labelle]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-04-27 20:06:49] INFO root fetch - processPackages [data-prep-lab]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-27 20:06:49] INFO root fetch - processPackages [foldermerge]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-04-27 20:06:49] INFO root fetch - processPackages [labelle]: Downloading https://files.pythonhosted.org/packages/df/ab/a4deb959c334726efacba06e20aa299b59b4b2ccadd767ae47d13ac2d9c4/labelle-1.1.0.tar.gz
+[2024-04-27 20:06:49] INFO root fetch - processPackages [alamos]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-27 20:06:49] INFO root fetch - processPackages [offlinedatasci]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-27 20:06:49] INFO root fetch - processPackages [agent-bdi]: New version: [2.4.1] Old Version: [2.4.0]
+[2024-04-27 20:06:49] INFO root fetch - processPackages [synnax-freighter]: New version: [0.6.9] Old Version: [0.6.8]
+[2024-04-27 20:06:49] INFO root fetch - processPackages [synnax]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-27 20:06:49] INFO root fetch - processPackages [data-prep-lab]: Downloading https://files.pythonhosted.org/packages/ba/67/3d4f8f412e6b5eac13c44bccb47fee050e84be926ce87060016c7e8877da/data_prep_lab-0.1.4.tar.gz
+[2024-04-27 20:06:49] INFO root fetch - processPackages [foldermerge]: Downloading https://files.pythonhosted.org/packages/89/6e/3325a73a713ddaf5271fee99fb7308fd74d63b5406769a91ccd0719c7337/foldermerge-0.3.0.tar.gz
+[2024-04-27 20:06:49] WARNING root fetch - processPackages [foldermerge]: Skipping package: exceeds size limit 36359928>=10485760
+[2024-04-27 20:06:49] INFO root fetch - main [MainThread]: End processing [foldermerge] error
+[2024-04-27 20:06:49] INFO root fetch - processPackages [synnax-freighter]: Downloading https://files.pythonhosted.org/packages/47/1d/b44d0a666ad7dfde7a8635a95d6241671db501c8ed9f7dd576bdf7fe184e/synnax_freighter-0.6.8.tar.gz
+[2024-04-27 20:06:49] INFO root fetch - processPackages [agent-bdi]: Downloading https://files.pythonhosted.org/packages/e6/9f/3026d807f5168919c84b34fc5406d314bfd83f23ba4c1701a0660ff21d9d/agent-bdi-2.4.0.tar.gz
+[2024-04-27 20:06:49] INFO root fetch - processPackages [alamos]: Downloading https://files.pythonhosted.org/packages/c5/2b/b12c4308c7fb396e018ffbe6ec0f046170906ae98b188985b537619e0f55/alamos-0.3.8.tar.gz
+[2024-04-27 20:06:49] INFO root fetch - processPackages [offlinedatasci]: Downloading https://files.pythonhosted.org/packages/ce/12/4ec29d276e6a12ef202e07817382bc425bdd936d399215bbb9aa289a2f60/offlinedatasci-0.4.0.tar.gz
+[2024-04-27 20:06:49] INFO root fetch - processPackages [synnax]: Downloading https://files.pythonhosted.org/packages/89/a1/f0d76d0706e47ba3dcdbf0fe8c7b2e90c98bd073d40a3c4c7c1c1025aab8/synnax-0.8.0.tar.gz
+[2024-04-27 20:06:50] INFO root fetch - processPackages [data-prep-lab]: Downloading https://files.pythonhosted.org/packages/d7/9f/2d97f16dbc6a096d412ebebd9fc36bd51a3696884d3ac8e77e8a39e63180/data_prep_lab-0.1.5-py3-none-any.whl
+[2024-04-27 20:06:50] INFO root fetch - processPackages [labelle]: Downloading https://files.pythonhosted.org/packages/41/91/09c4e9677d82069e647cb8d7f95990d03a3b3594fb091e9cb0bc6b108a2b/labelle-1.2.0.tar.gz
+[2024-04-27 20:06:50] INFO root fetch - processPackages [data-prep-lab]: executing diffoscope
+[2024-04-27 20:06:50] INFO root fetch - processPackages [data-prep-lab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_prep_lab-0.1.4.tar.gz tmp/data_prep_lab-0.1.5-py3-none-any.whl.zip --markdown 20240427/d/data-prep-lab/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-27 20:06:50] INFO root fetch - processPackages [agent-bdi]: Downloading https://files.pythonhosted.org/packages/f7/35/82c652ba860bc346a6711b1058bc3f4aa29a32664c74d3c24bcb289b1c8d/agent-bdi-2.4.1.tar.gz
+[2024-04-27 20:06:50] INFO root fetch - processPackages [alamos]: Downloading https://files.pythonhosted.org/packages/c1/08/cf40db715e810dc50be82dd822b41aefe7a4903f73ac57533c85bc63cf9d/alamos-0.3.9.tar.gz
+[2024-04-27 20:06:50] INFO root fetch - processPackages [offlinedatasci]: Downloading https://files.pythonhosted.org/packages/63/ce/9ae40f4aad7de5abc5de3fc9a9502a79bf01712f177b0cc3cae7f9a06f34/offlinedatasci-0.5.0.tar.gz
+[2024-04-27 20:06:50] INFO root fetch - processPackages [synnax-freighter]: Downloading https://files.pythonhosted.org/packages/97/99/8375d1635ab3481a144b8507f5f4be9c85b138a7ecc2c616808ded325e74/synnax_freighter-0.6.9.tar.gz
+[2024-04-27 20:06:50] INFO root fetch - processPackages [synnax]: Downloading https://files.pythonhosted.org/packages/b3/bc/76e9b03b96c7ab72f4b39e5e03c396b86efd6fb650bedcff8a7118679e9b/synnax-0.9.0.tar.gz
+[2024-04-27 20:06:50] INFO root fetch - processPackages [agent-bdi]: executing diffoscope
+[2024-04-27 20:06:50] INFO root fetch - processPackages [agent-bdi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agent-bdi-2.4.0.tar.gz tmp/agent-bdi-2.4.1.tar.gz --markdown 20240427/a/agent-bdi/2.4.0-2.4.1/README.md --exclude *.pyd
+[2024-04-27 20:06:50] INFO root fetch - processPackages [alamos]: executing diffoscope
+[2024-04-27 20:06:50] INFO root fetch - processPackages [alamos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alamos-0.3.8.tar.gz tmp/alamos-0.3.9.tar.gz --markdown 20240427/a/alamos/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-27 20:06:50] INFO root fetch - processPackages [labelle]: executing diffoscope
+[2024-04-27 20:06:50] INFO root fetch - processPackages [labelle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/labelle-1.1.0.tar.gz tmp/labelle-1.2.0.tar.gz --markdown 20240427/l/labelle/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-04-27 20:06:50] INFO root fetch - processPackages [offlinedatasci]: executing diffoscope
+[2024-04-27 20:06:50] INFO root fetch - processPackages [offlinedatasci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/offlinedatasci-0.4.0.tar.gz tmp/offlinedatasci-0.5.0.tar.gz --markdown 20240427/o/offlinedatasci/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-04-27 20:06:50] INFO root fetch - processPackages [synnax-freighter]: executing diffoscope
+[2024-04-27 20:06:50] INFO root fetch - processPackages [synnax-freighter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synnax_freighter-0.6.8.tar.gz tmp/synnax_freighter-0.6.9.tar.gz --markdown 20240427/s/synnax-freighter/0.6.8-0.6.9/README.md --exclude *.pyd
+[2024-04-27 20:06:50] INFO root fetch - processPackages [synnax]: executing diffoscope
+[2024-04-27 20:06:50] INFO root fetch - processPackages [synnax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synnax-0.8.0.tar.gz tmp/synnax-0.9.0.tar.gz --markdown 20240427/s/synnax/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-27 20:06:50] INFO root fetch - processPackages [data-prep-lab]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_lab-0.1.4.tar.gz]
+[2024-04-27 20:06:50] INFO root fetch - processPackages [data-prep-lab]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_lab-0.1.5-py3-none-any.whl.zip]
+[2024-04-27 20:06:50] INFO root fetch - main [MainThread]: End processing [data-prep-lab]: success
+[2024-04-27 20:06:51] INFO root fetch - processPackages [alamos]: Remove: archive file [/home/abi/fetcher/tmp/alamos-0.3.8.tar.gz]
+[2024-04-27 20:06:51] INFO root fetch - processPackages [alamos]: Remove: archive file [/home/abi/fetcher/tmp/alamos-0.3.9.tar.gz]
+[2024-04-27 20:06:51] INFO root fetch - main [MainThread]: End processing [alamos]: success
+[2024-04-27 20:06:51] INFO root fetch - processPackages [agent-bdi]: Remove: archive file [/home/abi/fetcher/tmp/agent-bdi-2.4.0.tar.gz]
+[2024-04-27 20:06:51] INFO root fetch - processPackages [agent-bdi]: Remove: archive file [/home/abi/fetcher/tmp/agent-bdi-2.4.1.tar.gz]
+[2024-04-27 20:06:51] INFO root fetch - main [MainThread]: End processing [agent-bdi]: success
+[2024-04-27 20:06:51] INFO root fetch - processPackages [offlinedatasci]: Remove: archive file [/home/abi/fetcher/tmp/offlinedatasci-0.4.0.tar.gz]
+[2024-04-27 20:06:51] INFO root fetch - processPackages [offlinedatasci]: Remove: archive file [/home/abi/fetcher/tmp/offlinedatasci-0.5.0.tar.gz]
+[2024-04-27 20:06:51] INFO root fetch - main [MainThread]: End processing [offlinedatasci]: success
+[2024-04-27 20:06:51] INFO root fetch - processPackages [synnax]: Remove: archive file [/home/abi/fetcher/tmp/synnax-0.8.0.tar.gz]
+[2024-04-27 20:06:51] INFO root fetch - processPackages [synnax]: Remove: archive file [/home/abi/fetcher/tmp/synnax-0.9.0.tar.gz]
+[2024-04-27 20:06:51] INFO root fetch - main [MainThread]: End processing [synnax]: success
+[2024-04-27 20:06:51] INFO root fetch - processPackages [synnax-freighter]: Remove: archive file [/home/abi/fetcher/tmp/synnax_freighter-0.6.8.tar.gz]
+[2024-04-27 20:06:51] INFO root fetch - processPackages [synnax-freighter]: Remove: archive file [/home/abi/fetcher/tmp/synnax_freighter-0.6.9.tar.gz]
+[2024-04-27 20:06:51] INFO root fetch - main [MainThread]: End processing [synnax-freighter]: success
+[2024-04-27 20:06:51] INFO root fetch - processPackages [labelle]: Remove: archive file [/home/abi/fetcher/tmp/labelle-1.1.0.tar.gz]
+[2024-04-27 20:06:51] INFO root fetch - processPackages [labelle]: Remove: archive file [/home/abi/fetcher/tmp/labelle-1.2.0.tar.gz]
+[2024-04-27 20:06:51] INFO root fetch - main [MainThread]: End processing [labelle]: success
+[2024-04-27 20:06:51] INFO root fetch - main [MainThread]: Store serial: [22960980]
