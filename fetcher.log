@@ -19677,3 +19677,23 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 21:09:46] INFO root fetch - processPackages [pygmtools]: Remove: archive file [/home/abi/fetcher/tmp/pygmtools-0.5.2.tar.gz]
 [2024-04-27 21:09:46] INFO root fetch - main [MainThread]: End processing [pygmtools]: success
 [2024-04-27 21:09:46] INFO root fetch - main [MainThread]: Store serial: [22961288]
+[2024-04-27 21:11:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961288]
+[2024-04-27 21:12:00] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 21:12:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: grooveshop-django-api
+[2024-04-27 21:12:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: danielutils
+[2024-04-27 21:12:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vulnlist
+[2024-04-27 21:12:00] INFO root fetch - processPackages [grooveshop-django-api]: New version: [0.99.1] Old Version: [0.99.0]
+[2024-04-27 21:12:00] WARNING root fetch - processPackages [vulnlist]: Skipping, unable to determine old version
+[2024-04-27 21:12:00] INFO root fetch - main [MainThread]: End processing [vulnlist] error
+[2024-04-27 21:12:00] INFO root fetch - processPackages [danielutils]: New version: [0.9.77] Old Version: [0.9.76]
+[2024-04-27 21:12:00] INFO root fetch - processPackages [grooveshop-django-api]: Downloading https://files.pythonhosted.org/packages/7f/a7/0d6a615cddf282a20c5473422783b8e46581bf1c77d73c7dfc581210dc37/grooveshop_django_api-0.99.0.tar.gz
+[2024-04-27 21:12:00] WARNING root fetch - processPackages [grooveshop-django-api]: Skipping package: exceeds size limit 33783695>=10485760
+[2024-04-27 21:12:00] INFO root fetch - main [MainThread]: End processing [grooveshop-django-api] error
+[2024-04-27 21:12:00] INFO root fetch - processPackages [danielutils]: Downloading https://files.pythonhosted.org/packages/ca/6c/16f6889ba052bc474022fc2b841d8c78cc901d5ca74f3d59582234ff4a9e/danielutils-0.9.76.tar.gz
+[2024-04-27 21:12:01] INFO root fetch - processPackages [danielutils]: Downloading https://files.pythonhosted.org/packages/12/8b/cdbfeea73a53646e2bda7f38c6336a64640431fea017533e097d3c264cf4/danielutils-0.9.77.tar.gz
+[2024-04-27 21:12:01] INFO root fetch - processPackages [danielutils]: executing diffoscope
+[2024-04-27 21:12:01] INFO root fetch - processPackages [danielutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/danielutils-0.9.76.tar.gz tmp/danielutils-0.9.77.tar.gz --markdown 20240427/d/danielutils/0.9.76-0.9.77/README.md --exclude *.pyd
+[2024-04-27 21:12:02] INFO root fetch - processPackages [danielutils]: Remove: archive file [/home/abi/fetcher/tmp/danielutils-0.9.76.tar.gz]
+[2024-04-27 21:12:02] INFO root fetch - processPackages [danielutils]: Remove: archive file [/home/abi/fetcher/tmp/danielutils-0.9.77.tar.gz]
+[2024-04-27 21:12:02] INFO root fetch - main [MainThread]: End processing [danielutils]: success
+[2024-04-27 21:12:02] INFO root fetch - main [MainThread]: Store serial: [22961307]
