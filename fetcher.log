@@ -8743,3 +8743,9 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 06:45:45] INFO root fetch - processPackages [hcp-vault-secrets]: Remove: archive file [/home/abi/fetcher/tmp/hcp_vault_secrets-0.0.4.tar.gz]
 [2024-04-27 06:45:45] INFO root fetch - main [MainThread]: End processing [hcp-vault-secrets]: success
 [2024-04-27 06:45:45] INFO root fetch - main [MainThread]: Store serial: [22956509]
+[2024-04-27 06:47:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956509]
+[2024-04-27 06:47:54] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 06:47:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mllm
+[2024-04-27 06:47:54] WARNING root fetch - processPackages [mllm]: Skipping, unable to determine old version
+[2024-04-27 06:47:54] INFO root fetch - main [MainThread]: End processing [mllm] error
+[2024-04-27 06:47:54] INFO root fetch - main [MainThread]: Store serial: [22956516]
