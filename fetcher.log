@@ -7501,3 +7501,36 @@ EOFError: EOF read where object expected
 [2024-04-27 05:10:21] INFO root fetch - processPackages [pyrotgfork]: Remove: archive file [/home/abi/fetcher/tmp/pyrotgfork-2.1.26.tar.gz]
 [2024-04-27 05:10:21] INFO root fetch - main [MainThread]: End processing [pyrotgfork]: success
 [2024-04-27 05:10:21] INFO root fetch - main [MainThread]: Store serial: [22956172]
+[2024-04-27 05:12:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956172]
+[2024-04-27 05:12:30] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 05:12:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: trade-database-manager
+[2024-04-27 05:12:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytexmk
+[2024-04-27 05:12:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: arch-flow
+[2024-04-27 05:12:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: static-analysis-script
+[2024-04-27 05:12:30] WARNING root fetch - processPackages [static-analysis-script]: Skipping, unable to determine old version
+[2024-04-27 05:12:30] INFO root fetch - main [MainThread]: End processing [static-analysis-script] error
+[2024-04-27 05:12:30] INFO root fetch - processPackages [pytexmk]: New version: [0.5.1.240426] Old Version: [0.5.0.240426]
+[2024-04-27 05:12:31] INFO root fetch - processPackages [trade-database-manager]: New version: [0.0.1.dev4] Old Version: [0.0.1.dev2]
+[2024-04-27 05:12:31] INFO root fetch - processPackages [pytexmk]: Downloading https://files.pythonhosted.org/packages/a5/ab/46d754e00cdafcba583e82edc9a011278b4665b1a383da8aebb5a7a155bd/pytexmk-0.5.0.240426.tar.gz
+[2024-04-27 05:12:31] INFO root fetch - processPackages [arch-flow]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-27 05:12:31] INFO root fetch - processPackages [arch-flow]: Downloading https://files.pythonhosted.org/packages/c9/5e/de07a34e69807b7fc91015757720ef26b129aa86e7aa244c06585506c0fa/arch_flow-0.1.3.tar.gz
+[2024-04-27 05:12:31] INFO root fetch - processPackages [trade-database-manager]: Downloading https://files.pythonhosted.org/packages/ed/9f/63608994cd2acfb168c09f839b163591ac5a7d38b6d0bae31238e580db7f/trade_database_manager-0.0.1.dev2.tar.gz
+[2024-04-27 05:12:31] INFO root fetch - processPackages [pytexmk]: Downloading https://files.pythonhosted.org/packages/32/90/1c8be9e1ab53df9771201442712fa9ba86f81216c60de486b96c61840004/pytexmk-0.5.1.240426.tar.gz
+[2024-04-27 05:12:31] INFO root fetch - processPackages [pytexmk]: executing diffoscope
+[2024-04-27 05:12:31] INFO root fetch - processPackages [pytexmk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytexmk-0.5.0.240426.tar.gz tmp/pytexmk-0.5.1.240426.tar.gz --markdown 20240427/p/pytexmk/0.5.0.240426-0.5.1.240426/README.md --exclude *.pyd
+[2024-04-27 05:12:31] INFO root fetch - processPackages [arch-flow]: Downloading https://files.pythonhosted.org/packages/01/7e/fdb1d489a031ddd1411692e0ba0ff172a4384290dc1535207e04d12b2659/arch_flow-0.1.4.tar.gz
+[2024-04-27 05:12:31] INFO root fetch - processPackages [trade-database-manager]: Downloading https://files.pythonhosted.org/packages/a8/69/ddac791b18e41fdb227194ffee612f193451059409a8d470049f7fb1167a/trade_database_manager-0.0.1.dev4.tar.gz
+[2024-04-27 05:12:31] INFO root fetch - processPackages [arch-flow]: executing diffoscope
+[2024-04-27 05:12:31] INFO root fetch - processPackages [arch-flow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arch_flow-0.1.3.tar.gz tmp/arch_flow-0.1.4.tar.gz --markdown 20240427/a/arch-flow/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-27 05:12:31] INFO root fetch - processPackages [trade-database-manager]: executing diffoscope
+[2024-04-27 05:12:31] INFO root fetch - processPackages [trade-database-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trade_database_manager-0.0.1.dev2.tar.gz tmp/trade_database_manager-0.0.1.dev4.tar.gz --markdown 20240427/t/trade-database-manager/0.0.1.dev2-0.0.1.dev4/README.md --exclude *.pyd
+[2024-04-27 05:12:32] INFO root fetch - processPackages [pytexmk]: Remove: archive file [/home/abi/fetcher/tmp/pytexmk-0.5.0.240426.tar.gz]
+[2024-04-27 05:12:32] INFO root fetch - processPackages [pytexmk]: Remove: archive file [/home/abi/fetcher/tmp/pytexmk-0.5.1.240426.tar.gz]
+[2024-04-27 05:12:32] INFO root fetch - main [MainThread]: End processing [pytexmk]: success
+[2024-04-27 05:12:32] INFO root fetch - processPackages [arch-flow]: Remove: archive file [/home/abi/fetcher/tmp/arch_flow-0.1.3.tar.gz]
+[2024-04-27 05:12:32] INFO root fetch - processPackages [arch-flow]: Remove: archive file [/home/abi/fetcher/tmp/arch_flow-0.1.4.tar.gz]
+[2024-04-27 05:12:32] INFO root fetch - main [MainThread]: End processing [arch-flow]: success
+[2024-04-27 05:12:32] INFO root fetch - processPackages [trade-database-manager]: Remove: archive file [/home/abi/fetcher/tmp/trade_database_manager-0.0.1.dev2.tar.gz]
+[2024-04-27 05:12:32] INFO root fetch - processPackages [trade-database-manager]: Remove: archive file [/home/abi/fetcher/tmp/trade_database_manager-0.0.1.dev4.tar.gz]
+[2024-04-27 05:12:32] INFO root fetch - main [MainThread]: End processing [trade-database-manager]: success
+[2024-04-27 05:12:32] INFO root fetch - main [MainThread]: Store serial: [22956183]
