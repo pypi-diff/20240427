@@ -13534,3 +13534,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 14:10:11] INFO root fetch - processPackages [torcheval-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torcheval-nightly-2024.4.9.tar.gz]
 [2024-04-27 14:10:11] INFO root fetch - main [MainThread]: End processing [torcheval-nightly]: success
 [2024-04-27 14:10:11] INFO root fetch - main [MainThread]: Store serial: [22958517]
+[2024-04-27 14:12:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958517]
+[2024-04-27 14:12:20] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 14:12:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cvt-test-ms
+[2024-04-27 14:12:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: snailshell
+[2024-04-27 14:12:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: labelme-toolkit
+[2024-04-27 14:12:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: remotion-lambda
+[2024-04-27 14:12:21] INFO root fetch - processPackages [labelme-toolkit]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-04-27 14:12:21] INFO root fetch - processPackages [snailshell]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-27 14:12:21] WARNING root fetch - processPackages [cvt-test-ms]: Skipping, unable to determine old version
+[2024-04-27 14:12:21] INFO root fetch - main [MainThread]: End processing [cvt-test-ms] error
+[2024-04-27 14:12:21] INFO root fetch - processPackages [snailshell]: Downloading https://files.pythonhosted.org/packages/28/70/cae4b29d322efc44d70ca0ed64cb9279f19cd1f9e328c4662b19c5196c4d/snailshell-0.2.8.tar.gz
+[2024-04-27 14:12:21] INFO root fetch - processPackages [labelme-toolkit]: Downloading https://files.pythonhosted.org/packages/df/70/4df907e6ee641549637fbc1991fdc4f1e41b95bdad5ab241aa576b1e6fe5/labelme_toolkit-1.1.0.tar.gz
+[2024-04-27 14:12:21] INFO root fetch - processPackages [remotion-lambda]: New version: [4.1.0a12] Old Version: [4.0.98]
+[2024-04-27 14:12:21] INFO root fetch - processPackages [labelme-toolkit]: Downloading https://files.pythonhosted.org/packages/e3/5f/30410574caf1a5db264ae894a61ebf9c4a857f1bc0256beb5144350818e0/labelme_toolkit-1.1.1.tar.gz
+[2024-04-27 14:12:21] INFO root fetch - processPackages [snailshell]: Downloading https://files.pythonhosted.org/packages/71/9f/b99191b0a59da68e371d48cedcea65ef2bbe17b981e11133e2eeb1d69f46/snailshell-0.2.9.tar.gz
+[2024-04-27 14:12:21] INFO root fetch - processPackages [labelme-toolkit]: executing diffoscope
+[2024-04-27 14:12:21] INFO root fetch - processPackages [labelme-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/labelme_toolkit-1.1.0.tar.gz tmp/labelme_toolkit-1.1.1.tar.gz --markdown 20240427/l/labelme-toolkit/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-04-27 14:12:21] INFO root fetch - processPackages [remotion-lambda]: Downloading https://files.pythonhosted.org/packages/3f/c5/94eff7677b9dca598bdba065311eeb371512d0bb7b2ded018d2bffb1597a/remotion_lambda-4.0.98.tar.gz
+[2024-04-27 14:12:22] INFO root fetch - processPackages [remotion-lambda]: Downloading https://files.pythonhosted.org/packages/e2/46/7d3e726fcba2427f51b340f14b65270f6df2b6123085c439b9855a0ab1cd/remotion_lambda-4.1.0a12.tar.gz
+[2024-04-27 14:12:22] INFO root fetch - processPackages [snailshell]: executing diffoscope
+[2024-04-27 14:12:22] INFO root fetch - processPackages [snailshell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snailshell-0.2.8.tar.gz tmp/snailshell-0.2.9.tar.gz --markdown 20240427/s/snailshell/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-27 14:12:22] INFO root fetch - processPackages [remotion-lambda]: executing diffoscope
+[2024-04-27 14:12:22] INFO root fetch - processPackages [remotion-lambda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/remotion_lambda-4.0.98.tar.gz tmp/remotion_lambda-4.1.0a12.tar.gz --markdown 20240427/r/remotion-lambda/4.0.98-4.1.0a12/README.md --exclude *.pyd
+[2024-04-27 14:12:22] INFO root fetch - processPackages [labelme-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/labelme_toolkit-1.1.0.tar.gz]
+[2024-04-27 14:12:22] INFO root fetch - processPackages [labelme-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/labelme_toolkit-1.1.1.tar.gz]
+[2024-04-27 14:12:22] INFO root fetch - main [MainThread]: End processing [labelme-toolkit]: success
+[2024-04-27 14:12:22] INFO root fetch - processPackages [remotion-lambda]: Remove: archive file [/home/abi/fetcher/tmp/remotion_lambda-4.0.98.tar.gz]
+[2024-04-27 14:12:22] INFO root fetch - processPackages [remotion-lambda]: Remove: archive file [/home/abi/fetcher/tmp/remotion_lambda-4.1.0a12.tar.gz]
+[2024-04-27 14:12:22] INFO root fetch - main [MainThread]: End processing [remotion-lambda]: success
+[2024-04-27 14:12:23] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.8.tar.gz]
+[2024-04-27 14:12:23] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.9.tar.gz]
+[2024-04-27 14:12:23] INFO root fetch - main [MainThread]: End processing [snailshell]: success
+[2024-04-27 14:12:23] INFO root fetch - main [MainThread]: Store serial: [22958533]
