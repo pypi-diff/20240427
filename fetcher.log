@@ -9362,3 +9362,24 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 07:51:15] INFO root fetch - processPackages [mser]: Remove: archive file [/home/abi/fetcher/tmp/mser-0.0.3-py3-none-any.whl.zip]
 [2024-04-27 07:51:15] INFO root fetch - main [MainThread]: End processing [mser]: success
 [2024-04-27 07:51:15] INFO root fetch - main [MainThread]: Store serial: [22956751]
+[2024-04-27 07:53:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956751]
+[2024-04-27 07:53:24] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 07:53:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: avro.py
+[2024-04-27 07:53:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autoremove-torrents
+[2024-04-27 07:53:24] INFO root fetch - processPackages [autoremove-torrents]: New version: [1.5.5] Old Version: [1.5.4]
+[2024-04-27 07:53:24] INFO root fetch - processPackages [avro.py]: New version: [2024.4.7] Old Version: [2024.4.27]
+[2024-04-27 07:53:24] INFO root fetch - processPackages [autoremove-torrents]: Downloading https://files.pythonhosted.org/packages/ab/7a/fe4c9ef1fad548b4696929e144597dd220c0e390ced0f71c2556cb2fe3c3/autoremove-torrents-1.5.4.tar.gz
+[2024-04-27 07:53:24] INFO root fetch - processPackages [avro.py]: Downloading https://files.pythonhosted.org/packages/52/ef/788ab7432012a098081e5d5fc660da7e6f859dabf2dbb81198d432005aa0/avro_py-2024.4.27.tar.gz
+[2024-04-27 07:53:25] INFO root fetch - processPackages [avro.py]: Downloading https://files.pythonhosted.org/packages/88/6d/42c6af7dbdafc8935cc2dc6cecdde476153794078e30c5cd7149dcc6e1ff/avro.py-2024.4.7.tar.gz
+[2024-04-27 07:53:25] INFO root fetch - processPackages [autoremove-torrents]: Downloading https://files.pythonhosted.org/packages/51/53/8169859121a51b56806d897c55a95b6f587b3d1a2786cc9a9db6dc652a8f/autoremove_torrents-1.5.5-py3-none-any.whl
+[2024-04-27 07:53:25] INFO root fetch - processPackages [avro.py]: executing diffoscope
+[2024-04-27 07:53:25] INFO root fetch - processPackages [avro.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/avro_py-2024.4.27.tar.gz tmp/avro.py-2024.4.7.tar.gz --markdown 20240427/a/avro.py/2024.4.27-2024.4.7/README.md --exclude *.pyd
+[2024-04-27 07:53:25] INFO root fetch - processPackages [autoremove-torrents]: executing diffoscope
+[2024-04-27 07:53:25] INFO root fetch - processPackages [autoremove-torrents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoremove-torrents-1.5.4.tar.gz tmp/autoremove_torrents-1.5.5-py3-none-any.whl.zip --markdown 20240427/a/autoremove-torrents/1.5.4-1.5.5/README.md --exclude *.pyd
+[2024-04-27 07:53:25] INFO root fetch - processPackages [autoremove-torrents]: Remove: archive file [/home/abi/fetcher/tmp/autoremove-torrents-1.5.4.tar.gz]
+[2024-04-27 07:53:25] INFO root fetch - processPackages [autoremove-torrents]: Remove: archive file [/home/abi/fetcher/tmp/autoremove_torrents-1.5.5-py3-none-any.whl.zip]
+[2024-04-27 07:53:25] INFO root fetch - main [MainThread]: End processing [autoremove-torrents]: success
+[2024-04-27 07:53:25] INFO root fetch - processPackages [avro.py]: Remove: archive file [/home/abi/fetcher/tmp/avro_py-2024.4.27.tar.gz]
+[2024-04-27 07:53:25] INFO root fetch - processPackages [avro.py]: Remove: archive file [/home/abi/fetcher/tmp/avro.py-2024.4.7.tar.gz]
+[2024-04-27 07:53:25] INFO root fetch - main [MainThread]: End processing [avro.py]: success
+[2024-04-27 07:53:25] INFO root fetch - main [MainThread]: Store serial: [22956760]
