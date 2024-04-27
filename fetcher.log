@@ -6759,3 +6759,15 @@ EOFError: EOF read where object expected
 [2024-04-27 03:30:40] INFO root fetch - processPackages [scalene]: Remove: archive file [/home/abi/fetcher/tmp/scalene-1.5.9.tar.gz]
 [2024-04-27 03:30:40] INFO root fetch - main [MainThread]: End processing [scalene]: success
 [2024-04-27 03:30:40] INFO root fetch - main [MainThread]: Store serial: [22955682]
+[2024-04-27 03:32:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22955682]
+[2024-04-27 03:32:51] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 03:32:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openpipe
+[2024-04-27 03:32:51] INFO root fetch - processPackages [openpipe]: New version: [4.9.0] Old Version: [4.8.0]
+[2024-04-27 03:32:51] INFO root fetch - processPackages [openpipe]: Downloading https://files.pythonhosted.org/packages/aa/ac/3377b8683a6b74eeaae21b3dc176941cf8377013fa9c77bcdc422781de0d/openpipe-4.8.0.tar.gz
+[2024-04-27 03:32:51] INFO root fetch - processPackages [openpipe]: Downloading https://files.pythonhosted.org/packages/a6/f9/1cf2e6961686bb28966da0f0ea8f4e552560793512d68590908bd7306379/openpipe-4.9.0.tar.gz
+[2024-04-27 03:32:51] INFO root fetch - processPackages [openpipe]: executing diffoscope
+[2024-04-27 03:32:51] INFO root fetch - processPackages [openpipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openpipe-4.8.0.tar.gz tmp/openpipe-4.9.0.tar.gz --markdown 20240427/o/openpipe/4.8.0-4.9.0/README.md --exclude *.pyd
+[2024-04-27 03:32:52] INFO root fetch - processPackages [openpipe]: Remove: archive file [/home/abi/fetcher/tmp/openpipe-4.8.0.tar.gz]
+[2024-04-27 03:32:52] INFO root fetch - processPackages [openpipe]: Remove: archive file [/home/abi/fetcher/tmp/openpipe-4.9.0.tar.gz]
+[2024-04-27 03:32:52] INFO root fetch - main [MainThread]: End processing [openpipe]: success
+[2024-04-27 03:32:52] INFO root fetch - main [MainThread]: Store serial: [22955738]
