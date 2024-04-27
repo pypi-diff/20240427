@@ -15395,3 +15395,65 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 16:10:49] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.9.tar.gz]
 [2024-04-27 16:10:49] INFO root fetch - main [MainThread]: End processing [flatpack]: success
 [2024-04-27 16:10:49] INFO root fetch - main [MainThread]: Store serial: [22959340]
+[2024-04-27 16:12:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959340]
+[2024-04-27 16:12:57] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-27 16:12:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eirStru
+[2024-04-27 16:12:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyhasura
+[2024-04-27 16:12:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tensorpc
+[2024-04-27 16:12:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: talisman-tools
+[2024-04-27 16:12:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: talisman-interfaces
+[2024-04-27 16:12:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fbgemm-gpu-nightly
+[2024-04-27 16:12:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pygpt-net
+[2024-04-27 16:12:57] INFO root fetch - processPackages [pyhasura]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-27 16:12:57] INFO root fetch - processPackages [eirStru]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-27 16:12:57] INFO root fetch - processPackages [pyhasura]: Downloading https://files.pythonhosted.org/packages/95/74/b4ed4bf242f56b3aed70cb52554c8acf938206faa9687d37ee0841c221a5/pyhasura-1.0.8.tar.gz
+[2024-04-27 16:12:57] INFO root fetch - processPackages [tensorpc]: New version: [0.10.6] Old Version: [0.10.5]
+[2024-04-27 16:12:57] INFO root fetch - processPackages [fbgemm-gpu-nightly]: New version: [2024.4.27] Old Version: [2024.4.26]
+[2024-04-27 16:12:57] INFO root fetch - processPackages [talisman-tools]: New version: [0.6.5] Old Version: [0.6.4]
+[2024-04-27 16:12:57] INFO root fetch - processPackages [talisman-interfaces]: New version: [0.5.4] Old Version: [0.5.3]
+[2024-04-27 16:12:57] INFO root fetch - processPackages [pygpt-net]: New version: [2.1.9] Old Version: [2.1.83]
+[2024-04-27 16:12:58] INFO root fetch - processPackages [eirStru]: Downloading https://files.pythonhosted.org/packages/b5/2a/25fb95363a9110b32ccbc230c8a5f6207e35c7c5906b6f63320a4ca71535/eirStru-0.3.8.tar.gz
+[2024-04-27 16:12:58] INFO root fetch - processPackages [tensorpc]: Downloading https://files.pythonhosted.org/packages/31/1a/1e77416020cda581429e09fde98541c31f08fabbd41631c0adaaef90f3af/tensorpc-0.10.5.tar.gz
+[2024-04-27 16:12:58] INFO root fetch - processPackages [talisman-tools]: Downloading https://files.pythonhosted.org/packages/2f/7a/0a1ea44881677f62e849ec14d6e77221012180249e36287f5ca73310e643/talisman-tools-0.6.4.tar.gz
+[2024-04-27 16:12:58] INFO root fetch - processPackages [talisman-interfaces]: Downloading https://files.pythonhosted.org/packages/a8/5c/c59c6c9461501b32836b220754c3c35f23aa069abc6855366a5a30e502e9/talisman-interfaces-0.5.3.tar.gz
+[2024-04-27 16:12:58] INFO root fetch - processPackages [fbgemm-gpu-nightly]: Downloading https://files.pythonhosted.org/packages/bf/b8/bfa3378f7ba9b1fbd6b00cc4dc56c0418b79d142a73e5d500451567f1104/fbgemm_gpu_nightly-2024.4.26-cp39-cp39-manylinux2014_x86_64.whl
+[2024-04-27 16:12:58] INFO root fetch - processPackages [pygpt-net]: Downloading https://files.pythonhosted.org/packages/7c/d6/4ccc95fa37e7d3f6dac866553a1a7298676be46516202f3b23e638019c4a/pygpt_net-2.1.83.tar.gz
+[2024-04-27 16:12:58] INFO root fetch - processPackages [pyhasura]: Downloading https://files.pythonhosted.org/packages/eb/3e/ee576591a7c4ea777ff94996eb0197f5034bade0047be6fcac2596d26e84/pyhasura-1.0.9.tar.gz
+[2024-04-27 16:12:58] INFO root fetch - processPackages [pyhasura]: executing diffoscope
+[2024-04-27 16:12:58] INFO root fetch - processPackages [pyhasura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhasura-1.0.8.tar.gz tmp/pyhasura-1.0.9.tar.gz --markdown 20240427/p/pyhasura/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-27 16:12:58] INFO root fetch - processPackages [eirStru]: Downloading https://files.pythonhosted.org/packages/26/ce/8cae1a6c9a510bd827a325862ceb832b9e593422dff66af06aa3bdda4f40/eirStru-0.3.9.tar.gz
+[2024-04-27 16:12:58] WARNING root fetch - processPackages [fbgemm-gpu-nightly]: Skipping package: exceeds size limit 208942537>=10485760
+[2024-04-27 16:12:58] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly] error
+[2024-04-27 16:12:58] INFO root fetch - processPackages [talisman-tools]: Downloading https://files.pythonhosted.org/packages/3f/7c/cde437140d965e1bfb8fc7ce698128681ae2cd0479785917a789c469dc2f/talisman-tools-0.6.5.tar.gz
+[2024-04-27 16:12:58] INFO root fetch - processPackages [talisman-interfaces]: Downloading https://files.pythonhosted.org/packages/f7/9d/136b32849ed7f854cc14f86df4180e7e7465ecad7f2bd6e46075a8ce2be6/talisman-interfaces-0.5.4.tar.gz
+[2024-04-27 16:12:58] INFO root fetch - processPackages [eirStru]: executing diffoscope
+[2024-04-27 16:12:58] INFO root fetch - processPackages [eirStru]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eirStru-0.3.8.tar.gz tmp/eirStru-0.3.9.tar.gz --markdown 20240427/e/eirStru/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-27 16:12:58] INFO root fetch - processPackages [tensorpc]: Downloading https://files.pythonhosted.org/packages/53/da/3bbb95f503bb402556f9a506a929af6cd4f664927d01352c5551896b0d6a/tensorpc-0.10.6.tar.gz
+[2024-04-27 16:12:58] INFO root fetch - processPackages [talisman-tools]: executing diffoscope
+[2024-04-27 16:12:58] INFO root fetch - processPackages [talisman-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/talisman-tools-0.6.4.tar.gz tmp/talisman-tools-0.6.5.tar.gz --markdown 20240427/t/talisman-tools/0.6.4-0.6.5/README.md --exclude *.pyd
+[2024-04-27 16:12:58] INFO root fetch - processPackages [talisman-interfaces]: executing diffoscope
+[2024-04-27 16:12:58] INFO root fetch - processPackages [talisman-interfaces]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/talisman-interfaces-0.5.3.tar.gz tmp/talisman-interfaces-0.5.4.tar.gz --markdown 20240427/t/talisman-interfaces/0.5.3-0.5.4/README.md --exclude *.pyd
+[2024-04-27 16:12:58] INFO root fetch - processPackages [tensorpc]: executing diffoscope
+[2024-04-27 16:12:58] INFO root fetch - processPackages [tensorpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorpc-0.10.5.tar.gz tmp/tensorpc-0.10.6.tar.gz --markdown 20240427/t/tensorpc/0.10.5-0.10.6/README.md --exclude *.pyd
+[2024-04-27 16:12:58] INFO root fetch - processPackages [pyhasura]: Remove: archive file [/home/abi/fetcher/tmp/pyhasura-1.0.8.tar.gz]
+[2024-04-27 16:12:58] INFO root fetch - processPackages [pyhasura]: Remove: archive file [/home/abi/fetcher/tmp/pyhasura-1.0.9.tar.gz]
+[2024-04-27 16:12:58] INFO root fetch - main [MainThread]: End processing [pyhasura]: success
+[2024-04-27 16:12:59] INFO root fetch - processPackages [pygpt-net]: Downloading https://files.pythonhosted.org/packages/b1/0c/70ca3376ad87325507daa188a0b208ac8aba51d8f326cbde31d57835c897/pygpt_net-2.1.9.tar.gz
+[2024-04-27 16:12:59] INFO root fetch - processPackages [eirStru]: Remove: archive file [/home/abi/fetcher/tmp/eirStru-0.3.8.tar.gz]
+[2024-04-27 16:12:59] INFO root fetch - processPackages [eirStru]: Remove: archive file [/home/abi/fetcher/tmp/eirStru-0.3.9.tar.gz]
+[2024-04-27 16:12:59] INFO root fetch - main [MainThread]: End processing [eirStru]: success
+[2024-04-27 16:12:59] INFO root fetch - processPackages [talisman-interfaces]: Remove: archive file [/home/abi/fetcher/tmp/talisman-interfaces-0.5.3.tar.gz]
+[2024-04-27 16:12:59] INFO root fetch - processPackages [talisman-interfaces]: Remove: archive file [/home/abi/fetcher/tmp/talisman-interfaces-0.5.4.tar.gz]
+[2024-04-27 16:12:59] INFO root fetch - main [MainThread]: End processing [talisman-interfaces]: success
+[2024-04-27 16:12:59] INFO root fetch - processPackages [pygpt-net]: executing diffoscope
+[2024-04-27 16:12:59] INFO root fetch - processPackages [pygpt-net]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygpt_net-2.1.83.tar.gz tmp/pygpt_net-2.1.9.tar.gz --markdown 20240427/p/pygpt-net/2.1.83-2.1.9/README.md --exclude *.pyd
+[2024-04-27 16:12:59] INFO root fetch - processPackages [talisman-tools]: Remove: archive file [/home/abi/fetcher/tmp/talisman-tools-0.6.4.tar.gz]
+[2024-04-27 16:12:59] INFO root fetch - processPackages [talisman-tools]: Remove: archive file [/home/abi/fetcher/tmp/talisman-tools-0.6.5.tar.gz]
+[2024-04-27 16:12:59] INFO root fetch - main [MainThread]: End processing [talisman-tools]: success
+[2024-04-27 16:13:00] INFO root fetch - processPackages [tensorpc]: Remove: archive file [/home/abi/fetcher/tmp/tensorpc-0.10.5.tar.gz]
+[2024-04-27 16:13:00] INFO root fetch - processPackages [tensorpc]: Remove: archive file [/home/abi/fetcher/tmp/tensorpc-0.10.6.tar.gz]
+[2024-04-27 16:13:00] INFO root fetch - main [MainThread]: End processing [tensorpc]: success
+[2024-04-27 16:13:03] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.1.83.tar.gz]
+[2024-04-27 16:13:03] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.1.9.tar.gz]
+[2024-04-27 16:13:03] INFO root fetch - main [MainThread]: End processing [pygpt-net]: success
+[2024-04-27 16:13:03] INFO root fetch - main [MainThread]: Store serial: [22959361]
