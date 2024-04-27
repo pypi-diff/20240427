@@ -15746,3 +15746,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 16:24:03] INFO root fetch - processPackages [grizli]: Remove: archive file [/home/abi/fetcher/tmp/grizli-1.9.9.tar.gz]
 [2024-04-27 16:24:03] INFO root fetch - main [MainThread]: End processing [grizli]: success
 [2024-04-27 16:24:03] INFO root fetch - main [MainThread]: Store serial: [22959467]
+[2024-04-27 16:26:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959467]
+[2024-04-27 16:26:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 16:26:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cplayer
+[2024-04-27 16:26:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kaiju-app
+[2024-04-27 16:26:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sopel-help
+[2024-04-27 16:26:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flatpack
+[2024-04-27 16:26:12] INFO root fetch - processPackages [flatpack]: New version: [3.3.9] Old Version: [3.3.8]
+[2024-04-27 16:26:12] INFO root fetch - processPackages [sopel-help]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-27 16:26:12] INFO root fetch - processPackages [kaiju-app]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-27 16:26:12] INFO root fetch - processPackages [cplayer]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-04-27 16:26:12] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/42/48/84e949164975b341645163f536ee4ca8329c4e3dfa6d143c2806a0849a54/flatpack-3.3.8.tar.gz
+[2024-04-27 16:26:12] INFO root fetch - processPackages [cplayer]: Downloading https://files.pythonhosted.org/packages/e7/ee/c5b8e6e1343bbfa1f6018a8c482d25f7a52dca58a4eb71d039faeb6ccd1b/cplayer-1.3.0.tar.gz
+[2024-04-27 16:26:12] INFO root fetch - processPackages [kaiju-app]: Downloading https://files.pythonhosted.org/packages/5d/ed/ba9a5f83a5bdfa9e7154d24880b5deaa356750bfc8d8b81429ba08156e94/kaiju_app-0.1.2-py3-none-any.whl
+[2024-04-27 16:26:12] INFO root fetch - processPackages [sopel-help]: Downloading https://files.pythonhosted.org/packages/3f/db/1c42ddfdddf3632dbe90306b3aefbe813e569038581b64247068135f00c0/sopel-help-0.4.0.tar.gz
+[2024-04-27 16:26:12] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/11/54/065825e8640b062c83c07c97d8dea514db8a5c0ea3c272834b88c568d82e/flatpack-3.3.9.tar.gz
+[2024-04-27 16:26:12] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-04-27 16:26:12] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.3.8.tar.gz tmp/flatpack-3.3.9.tar.gz --markdown 20240427/f/flatpack/3.3.8-3.3.9/README.md --exclude *.pyd
+[2024-04-27 16:26:13] INFO root fetch - processPackages [kaiju-app]: Downloading https://files.pythonhosted.org/packages/c0/93/58a216b62471a4dc08d0bd96ad1a907f2399d0d061b582df365de3b79653/kaiju_app-0.1.3-py3-none-any.whl
+[2024-04-27 16:26:13] INFO root fetch - processPackages [sopel-help]: Downloading https://files.pythonhosted.org/packages/08/d1/6ef03533b12e62044ef589f607118e5051e3f9acaac793c93b4a3c5d4b1d/sopel_help-0.5.0.tar.gz
+[2024-04-27 16:26:13] INFO root fetch - processPackages [cplayer]: Downloading https://files.pythonhosted.org/packages/15/15/33e60074f0635c9a273cd8accd09ff85a40cbab518bdaf56fa8a112006b9/cplayer-1.3.1.tar.gz
+[2024-04-27 16:26:13] INFO root fetch - processPackages [kaiju-app]: executing diffoscope
+[2024-04-27 16:26:13] INFO root fetch - processPackages [kaiju-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kaiju_app-0.1.2-py3-none-any.whl.zip tmp/kaiju_app-0.1.3-py3-none-any.whl.zip --markdown 20240427/k/kaiju-app/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-27 16:26:13] INFO root fetch - processPackages [cplayer]: executing diffoscope
+[2024-04-27 16:26:13] INFO root fetch - processPackages [cplayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cplayer-1.3.0.tar.gz tmp/cplayer-1.3.1.tar.gz --markdown 20240427/c/cplayer/1.3.0-1.3.1/README.md --exclude *.pyd
+[2024-04-27 16:26:13] INFO root fetch - processPackages [sopel-help]: executing diffoscope
+[2024-04-27 16:26:13] INFO root fetch - processPackages [sopel-help]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sopel-help-0.4.0.tar.gz tmp/sopel_help-0.5.0.tar.gz --markdown 20240427/s/sopel-help/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-04-27 16:26:13] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.8.tar.gz]
+[2024-04-27 16:26:13] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.9.tar.gz]
+[2024-04-27 16:26:13] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-04-27 16:26:13] INFO root fetch - processPackages [kaiju-app]: Remove: archive file [/home/abi/fetcher/tmp/kaiju_app-0.1.2-py3-none-any.whl.zip]
+[2024-04-27 16:26:13] INFO root fetch - processPackages [kaiju-app]: Remove: archive file [/home/abi/fetcher/tmp/kaiju_app-0.1.3-py3-none-any.whl.zip]
+[2024-04-27 16:26:13] INFO root fetch - main [MainThread]: End processing [kaiju-app]: success
+[2024-04-27 16:26:13] INFO root fetch - processPackages [sopel-help]: Remove: archive file [/home/abi/fetcher/tmp/sopel-help-0.4.0.tar.gz]
+[2024-04-27 16:26:13] INFO root fetch - processPackages [sopel-help]: Remove: archive file [/home/abi/fetcher/tmp/sopel_help-0.5.0.tar.gz]
+[2024-04-27 16:26:13] INFO root fetch - main [MainThread]: End processing [sopel-help]: success
+[2024-04-27 16:26:13] INFO root fetch - processPackages [cplayer]: Remove: archive file [/home/abi/fetcher/tmp/cplayer-1.3.0.tar.gz]
+[2024-04-27 16:26:13] INFO root fetch - processPackages [cplayer]: Remove: archive file [/home/abi/fetcher/tmp/cplayer-1.3.1.tar.gz]
+[2024-04-27 16:26:13] INFO root fetch - main [MainThread]: End processing [cplayer]: success
+[2024-04-27 16:26:13] INFO root fetch - main [MainThread]: Store serial: [22959478]
