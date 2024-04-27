@@ -16897,3 +16897,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 17:52:31] INFO root fetch - processPackages [jinjanator-plugin-ansible]: Remove: archive file [/home/abi/fetcher/tmp/jinjanator_plugin_ansible-24.1.0.tar.gz]
 [2024-04-27 17:52:31] INFO root fetch - main [MainThread]: End processing [jinjanator-plugin-ansible]: success
 [2024-04-27 17:52:31] INFO root fetch - main [MainThread]: Store serial: [22959975]
+[2024-04-27 17:54:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959975]
+[2024-04-27 17:54:41] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 17:54:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PACMANCharge
+[2024-04-27 17:54:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: thunderlab
+[2024-04-27 17:54:41] INFO root fetch - processPackages [PACMANCharge]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-27 17:54:41] INFO root fetch - processPackages [PACMANCharge]: Downloading https://files.pythonhosted.org/packages/d5/e4/16de634f0046b90cfed41a8d76cb0866be362490fd82d603f433b0f951fa/PACMANCharge-0.0.2.tar.gz
+[2024-04-27 17:54:41] INFO root fetch - processPackages [thunderlab]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-04-27 17:54:41] INFO root fetch - processPackages [thunderlab]: Downloading https://files.pythonhosted.org/packages/d3/d5/c7b4149a39757ca92560919b4dee732aeba80f7d4e017de8f0b9171edb88/thunderlab-1.1.0.tar.gz
+[2024-04-27 17:54:41] INFO root fetch - processPackages [PACMANCharge]: Downloading https://files.pythonhosted.org/packages/ca/95/10cd8b18de8774516e8077bffaba32461b257c3fdc36a6190b55da49b816/PACMANCharge-0.0.3.tar.gz
+[2024-04-27 17:54:41] WARNING root fetch - processPackages [PACMANCharge]: Skipping package: exceeds size limit 72188647>=10485760
+[2024-04-27 17:54:41] INFO root fetch - main [MainThread]: End processing [PACMANCharge] error
+[2024-04-27 17:54:42] INFO root fetch - processPackages [thunderlab]: Downloading https://files.pythonhosted.org/packages/74/4d/193039cd93132e01b8d702b3ac999d1c19a790dc73541bbe03141b70753b/thunderlab-1.2.0.tar.gz
+[2024-04-27 17:54:42] INFO root fetch - processPackages [thunderlab]: executing diffoscope
+[2024-04-27 17:54:42] INFO root fetch - processPackages [thunderlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thunderlab-1.1.0.tar.gz tmp/thunderlab-1.2.0.tar.gz --markdown 20240427/t/thunderlab/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-04-27 17:54:43] INFO root fetch - processPackages [thunderlab]: Remove: archive file [/home/abi/fetcher/tmp/thunderlab-1.1.0.tar.gz]
+[2024-04-27 17:54:43] INFO root fetch - processPackages [thunderlab]: Remove: archive file [/home/abi/fetcher/tmp/thunderlab-1.2.0.tar.gz]
+[2024-04-27 17:54:43] INFO root fetch - main [MainThread]: End processing [thunderlab]: success
+[2024-04-27 17:54:43] INFO root fetch - main [MainThread]: Store serial: [22959981]
