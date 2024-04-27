@@ -19871,3 +19871,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 21:23:19] INFO root fetch - processPackages [cs2-battle-bot-api-client]: Remove: archive file [/home/abi/fetcher/tmp/cs2_battle_bot_api_client-0.0.9.tar.gz]
 [2024-04-27 21:23:19] INFO root fetch - main [MainThread]: End processing [cs2-battle-bot-api-client]: success
 [2024-04-27 21:23:19] INFO root fetch - main [MainThread]: Store serial: [22961370]
+[2024-04-27 21:25:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961370]
+[2024-04-27 21:25:33] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 21:25:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-iso639
+[2024-04-27 21:25:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FastSnake
+[2024-04-27 21:25:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: findatapy
+[2024-04-27 21:25:33] INFO root fetch - processPackages [findatapy]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-27 21:25:33] INFO root fetch - processPackages [python-iso639]: New version: [2024.4.27] Old Version: [2024.2.7]
+[2024-04-27 21:25:33] INFO root fetch - processPackages [FastSnake]: New version: [1.4.9] Old Version: [1.4.8]
+[2024-04-27 21:25:33] INFO root fetch - processPackages [findatapy]: Downloading https://files.pythonhosted.org/packages/62/42/3cb60df4d1c9f9318c6e13e27b88469d8b661bf946e08abb586e011410c8/findatapy-0.1.8.tar.gz
+[2024-04-27 21:25:33] INFO root fetch - processPackages [python-iso639]: Downloading https://files.pythonhosted.org/packages/dd/d2/e62b1f477ace4923a4b763ee1cafd0ad4cada82306c92b9d50fceee61dd6/python-iso639-2024.2.7.tar.gz
+[2024-04-27 21:25:33] INFO root fetch - processPackages [FastSnake]: Downloading https://files.pythonhosted.org/packages/4e/39/3975e123076085cab12818bfdb5453f139c02ec8e1ab8b44b6aa19b34e48/fastsnake-1.4.8.tar.gz
+[2024-04-27 21:25:34] INFO root fetch - processPackages [python-iso639]: Downloading https://files.pythonhosted.org/packages/ff/d9/fbab4ccc1a712b989b28c1c964c94096aa4b44770245a49439532e787416/python_iso639-2024.4.27.tar.gz
+[2024-04-27 21:25:34] INFO root fetch - processPackages [FastSnake]: Downloading https://files.pythonhosted.org/packages/ba/f6/2239174616fa357132ef7f9a94eb64ac1b356e4f1d96dd885ccf70181298/fastsnake-1.4.9.tar.gz
+[2024-04-27 21:25:34] INFO root fetch - processPackages [FastSnake]: executing diffoscope
+[2024-04-27 21:25:34] INFO root fetch - processPackages [FastSnake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastsnake-1.4.8.tar.gz tmp/fastsnake-1.4.9.tar.gz --markdown 20240427/F/FastSnake/1.4.8-1.4.9/README.md --exclude *.pyd
+[2024-04-27 21:25:34] INFO root fetch - processPackages [python-iso639]: executing diffoscope
+[2024-04-27 21:25:34] INFO root fetch - processPackages [python-iso639]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-iso639-2024.2.7.tar.gz tmp/python_iso639-2024.4.27.tar.gz --markdown 20240427/p/python-iso639/2024.2.7-2024.4.27/README.md --exclude *.pyd
+[2024-04-27 21:25:34] INFO root fetch - processPackages [findatapy]: Downloading https://files.pythonhosted.org/packages/90/9a/510bde9636a0a5fcc7f0eac3b6f14cc6abcfc8cbe20da25cb83b1cbd86ea/findatapy-0.1.9.tar.gz
+[2024-04-27 21:25:34] INFO root fetch - processPackages [findatapy]: executing diffoscope
+[2024-04-27 21:25:34] INFO root fetch - processPackages [findatapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/findatapy-0.1.8.tar.gz tmp/findatapy-0.1.9.tar.gz --markdown 20240427/f/findatapy/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-27 21:25:34] INFO root fetch - processPackages [FastSnake]: Remove: archive file [/home/abi/fetcher/tmp/fastsnake-1.4.8.tar.gz]
+[2024-04-27 21:25:34] INFO root fetch - processPackages [FastSnake]: Remove: archive file [/home/abi/fetcher/tmp/fastsnake-1.4.9.tar.gz]
+[2024-04-27 21:25:34] INFO root fetch - main [MainThread]: End processing [FastSnake]: success
+[2024-04-27 21:25:35] INFO root fetch - processPackages [python-iso639]: Remove: archive file [/home/abi/fetcher/tmp/python-iso639-2024.2.7.tar.gz]
+[2024-04-27 21:25:35] INFO root fetch - processPackages [python-iso639]: Remove: archive file [/home/abi/fetcher/tmp/python_iso639-2024.4.27.tar.gz]
+[2024-04-27 21:25:35] INFO root fetch - main [MainThread]: End processing [python-iso639]: success
+[2024-04-27 21:25:35] INFO root fetch - processPackages [findatapy]: Remove: archive file [/home/abi/fetcher/tmp/findatapy-0.1.8.tar.gz]
+[2024-04-27 21:25:35] INFO root fetch - processPackages [findatapy]: Remove: archive file [/home/abi/fetcher/tmp/findatapy-0.1.9.tar.gz]
+[2024-04-27 21:25:35] INFO root fetch - main [MainThread]: End processing [findatapy]: success
+[2024-04-27 21:25:35] INFO root fetch - main [MainThread]: Store serial: [22961379]
