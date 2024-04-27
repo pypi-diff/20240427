@@ -8899,3 +8899,42 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 06:58:51] INFO root fetch - processPackages [odoo-addon-l10n-ro-city]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_city-17.0.1.2.0-py3-none-any.whl.zip]
 [2024-04-27 06:58:51] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-ro-city]: success
 [2024-04-27 06:58:51] INFO root fetch - main [MainThread]: Store serial: [22956572]
+[2024-04-27 07:00:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956572]
+[2024-04-27 07:00:59] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 07:00:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mocca2
+[2024-04-27 07:00:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dash-spread-grid
+[2024-04-27 07:00:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: LANDMarkClassifier
+[2024-04-27 07:00:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyscinloopsr
+[2024-04-27 07:00:59] INFO root fetch - processPackages [mocca2]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-27 07:00:59] INFO root fetch - processPackages [pyscinloopsr]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-27 07:00:59] INFO root fetch - processPackages [dash-spread-grid]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 07:00:59] INFO root fetch - processPackages [mocca2]: Downloading https://files.pythonhosted.org/packages/91/ce/77161f27329ed60a765de2bcdac87c2dae1d9eb7dff957ad7fd886520765/mocca2-0.1.4.tar.gz
+[2024-04-27 07:00:59] INFO root fetch - processPackages [LANDMarkClassifier]: New version: [2.1.1] Old Version: [2.1.0]
+[2024-04-27 07:00:59] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/9f/39/3477f65f22676264317bcb1d617b220ddcc8d09f85a7eb7904d8c2676dae/dash_spread_grid-0.0.8.tar.gz
+[2024-04-27 07:00:59] INFO root fetch - processPackages [pyscinloopsr]: Downloading https://files.pythonhosted.org/packages/98/21/5809d8e4c42d0207d6fd61e35cf0683da0e0cc5f1d10fa87e864b000cfa6/pyscinloopsr-1.0.8.tar.gz
+[2024-04-27 07:01:00] INFO root fetch - processPackages [mocca2]: Downloading https://files.pythonhosted.org/packages/5b/b3/3f966d415ed65e7d9ca48b606319d24ace6dea9473df17b6f30f8736b93e/mocca2-0.1.5.tar.gz
+[2024-04-27 07:01:00] INFO root fetch - processPackages [pyscinloopsr]: Downloading https://files.pythonhosted.org/packages/c2/79/a3b3e1c4377a54b84d92a6ce4a8d70f9bb57364bdbe1ec2657397e8360cd/pyscinloopsr-1.0.9.tar.gz
+[2024-04-27 07:01:00] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/37/f7/3991c1c5cd26d592773df3381df4e17ae14f51d47af4fd52b7419949494b/dash_spread_grid-0.0.9.tar.gz
+[2024-04-27 07:01:00] INFO root fetch - processPackages [LANDMarkClassifier]: Downloading https://files.pythonhosted.org/packages/85/28/c826d03d9d1adf57b3dc94294b3a85371ed25ab98d87894ebc02d7c27d99/landmarkclassifier-2.1.0.tar.gz
+[2024-04-27 07:01:00] INFO root fetch - processPackages [pyscinloopsr]: executing diffoscope
+[2024-04-27 07:01:00] INFO root fetch - processPackages [pyscinloopsr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscinloopsr-1.0.8.tar.gz tmp/pyscinloopsr-1.0.9.tar.gz --markdown 20240427/p/pyscinloopsr/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-27 07:01:00] INFO root fetch - processPackages [mocca2]: executing diffoscope
+[2024-04-27 07:01:00] INFO root fetch - processPackages [mocca2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mocca2-0.1.4.tar.gz tmp/mocca2-0.1.5.tar.gz --markdown 20240427/m/mocca2/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-27 07:01:00] INFO root fetch - processPackages [dash-spread-grid]: executing diffoscope
+[2024-04-27 07:01:00] INFO root fetch - processPackages [dash-spread-grid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_spread_grid-0.0.8.tar.gz tmp/dash_spread_grid-0.0.9.tar.gz --markdown 20240427/d/dash-spread-grid/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 07:01:00] INFO root fetch - processPackages [LANDMarkClassifier]: Downloading https://files.pythonhosted.org/packages/ce/a5/0473aceecb221022372241450f769fbafc431f8a969195f0c720f275c21b/landmarkclassifier-2.1.1.tar.gz
+[2024-04-27 07:01:00] INFO root fetch - processPackages [LANDMarkClassifier]: executing diffoscope
+[2024-04-27 07:01:00] INFO root fetch - processPackages [LANDMarkClassifier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/landmarkclassifier-2.1.0.tar.gz tmp/landmarkclassifier-2.1.1.tar.gz --markdown 20240427/L/LANDMarkClassifier/2.1.0-2.1.1/README.md --exclude *.pyd
+[2024-04-27 07:01:01] INFO root fetch - processPackages [pyscinloopsr]: Remove: archive file [/home/abi/fetcher/tmp/pyscinloopsr-1.0.8.tar.gz]
+[2024-04-27 07:01:01] INFO root fetch - processPackages [pyscinloopsr]: Remove: archive file [/home/abi/fetcher/tmp/pyscinloopsr-1.0.9.tar.gz]
+[2024-04-27 07:01:01] INFO root fetch - main [MainThread]: End processing [pyscinloopsr]: success
+[2024-04-27 07:01:01] INFO root fetch - processPackages [mocca2]: Remove: archive file [/home/abi/fetcher/tmp/mocca2-0.1.4.tar.gz]
+[2024-04-27 07:01:01] INFO root fetch - processPackages [mocca2]: Remove: archive file [/home/abi/fetcher/tmp/mocca2-0.1.5.tar.gz]
+[2024-04-27 07:01:01] INFO root fetch - main [MainThread]: End processing [mocca2]: success
+[2024-04-27 07:01:01] INFO root fetch - processPackages [LANDMarkClassifier]: Remove: archive file [/home/abi/fetcher/tmp/landmarkclassifier-2.1.0.tar.gz]
+[2024-04-27 07:01:01] INFO root fetch - processPackages [LANDMarkClassifier]: Remove: archive file [/home/abi/fetcher/tmp/landmarkclassifier-2.1.1.tar.gz]
+[2024-04-27 07:01:01] INFO root fetch - main [MainThread]: End processing [LANDMarkClassifier]: success
+[2024-04-27 07:01:02] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.8.tar.gz]
+[2024-04-27 07:01:02] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.9.tar.gz]
+[2024-04-27 07:01:02] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
+[2024-04-27 07:01:02] INFO root fetch - main [MainThread]: Store serial: [22956584]
