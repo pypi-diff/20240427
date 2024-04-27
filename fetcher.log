@@ -20554,3 +20554,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 22:19:13] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.6.dev9.tar.gz]
 [2024-04-27 22:19:13] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2024-04-27 22:19:13] INFO root fetch - main [MainThread]: Store serial: [22961661]
+[2024-04-27 22:21:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961661]
+[2024-04-27 22:21:30] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 22:21:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: meerkatio
+[2024-04-27 22:21:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Robocon-24
+[2024-04-27 22:21:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pymdown-extensions
+[2024-04-27 22:21:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyyeti
+[2024-04-27 22:21:30] INFO root fetch - processPackages [Robocon-24]: New version: [0.3] Old Version: [0.2]
+[2024-04-27 22:21:30] INFO root fetch - processPackages [pymdown-extensions]: New version: [9.9.2] Old Version: [9.9.1]
+[2024-04-27 22:21:30] INFO root fetch - processPackages [Robocon-24]: Downloading https://files.pythonhosted.org/packages/24/76/a2bcee8f8989bf94bc1601323f35612111d686213962fdf114787c4831a4/Robocon_24-0.2.tar.gz
+[2024-04-27 22:21:30] INFO root fetch - processPackages [meerkatio]: New version: [1.9] Old Version: [1.8]
+[2024-04-27 22:21:30] INFO root fetch - processPackages [pymdown-extensions]: Downloading https://files.pythonhosted.org/packages/af/a9/fc26e9bacc2a2fbdabe2b2ff384fe605ad508ad23298596f5660ad878dde/pymdown_extensions-9.9.1.tar.gz
+[2024-04-27 22:21:30] INFO root fetch - processPackages [meerkatio]: Downloading https://files.pythonhosted.org/packages/e5/fd/261dc958ee6d8a3e53b051c78ad8edcf248e7d4658a3e2c110f3ffe869e3/meerkatio-1.8.tar.gz
+[2024-04-27 22:21:30] INFO root fetch - processPackages [Robocon-24]: Downloading https://files.pythonhosted.org/packages/c6/9b/4433d7dc9abd379715d060e30605ccd179715d37fb1378ed0637edb1b57f/Robocon_24-0.3.tar.gz
+[2024-04-27 22:21:30] INFO root fetch - processPackages [Robocon-24]: executing diffoscope
+[2024-04-27 22:21:30] INFO root fetch - processPackages [Robocon-24]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Robocon_24-0.2.tar.gz tmp/Robocon_24-0.3.tar.gz --markdown 20240427/R/Robocon-24/0.2-0.3/README.md --exclude *.pyd
+[2024-04-27 22:21:30] INFO root fetch - processPackages [pymdown-extensions]: Downloading https://files.pythonhosted.org/packages/d9/6c/acf082ba18d1c91f75d38ba8fbc2dc97d782ce119739467e4529647809ed/pymdown_extensions-9.9.2.tar.gz
+[2024-04-27 22:21:30] INFO root fetch - processPackages [meerkatio]: Downloading https://files.pythonhosted.org/packages/02/4a/5748f5d36887df5b8fec7273a9e74215ee90bb6fca85518af3e2eef28f76/meerkatio-1.9.tar.gz
+[2024-04-27 22:21:30] INFO root fetch - processPackages [pyyeti]: New version: [1.4.1.1] Old Version: [1.4.1]
+[2024-04-27 22:21:31] INFO root fetch - processPackages [meerkatio]: executing diffoscope
+[2024-04-27 22:21:31] INFO root fetch - processPackages [meerkatio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meerkatio-1.8.tar.gz tmp/meerkatio-1.9.tar.gz --markdown 20240427/m/meerkatio/1.8-1.9/README.md --exclude *.pyd
+[2024-04-27 22:21:31] INFO root fetch - processPackages [pymdown-extensions]: executing diffoscope
+[2024-04-27 22:21:31] INFO root fetch - processPackages [pymdown-extensions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymdown_extensions-9.9.1.tar.gz tmp/pymdown_extensions-9.9.2.tar.gz --markdown 20240427/p/pymdown-extensions/9.9.1-9.9.2/README.md --exclude *.pyd
+[2024-04-27 22:21:31] INFO root fetch - processPackages [pyyeti]: Downloading https://files.pythonhosted.org/packages/e6/c2/a7ee8fc2fe1b0c39b4ddff0b2126979c3f4eb7353c980b101026deb21b82/pyyeti-1.4.1.tar.gz
+[2024-04-27 22:21:31] INFO root fetch - processPackages [Robocon-24]: Remove: archive file [/home/abi/fetcher/tmp/Robocon_24-0.2.tar.gz]
+[2024-04-27 22:21:31] INFO root fetch - processPackages [Robocon-24]: Remove: archive file [/home/abi/fetcher/tmp/Robocon_24-0.3.tar.gz]
+[2024-04-27 22:21:31] INFO root fetch - main [MainThread]: End processing [Robocon-24]: success
+[2024-04-27 22:21:31] INFO root fetch - processPackages [pyyeti]: Downloading https://files.pythonhosted.org/packages/00/e1/cc3ec6218708a567eed9a51e4adcdba4723c3362d61eddc704bc6504df79/pyyeti-1.4.1.1.tar.gz
+[2024-04-27 22:21:31] INFO root fetch - processPackages [meerkatio]: Remove: archive file [/home/abi/fetcher/tmp/meerkatio-1.8.tar.gz]
+[2024-04-27 22:21:31] INFO root fetch - processPackages [meerkatio]: Remove: archive file [/home/abi/fetcher/tmp/meerkatio-1.9.tar.gz]
+[2024-04-27 22:21:31] INFO root fetch - main [MainThread]: End processing [meerkatio]: success
+[2024-04-27 22:21:31] INFO root fetch - processPackages [pyyeti]: executing diffoscope
+[2024-04-27 22:21:31] INFO root fetch - processPackages [pyyeti]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyyeti-1.4.1.tar.gz tmp/pyyeti-1.4.1.1.tar.gz --markdown 20240427/p/pyyeti/1.4.1-1.4.1.1/README.md --exclude *.pyd
+[2024-04-27 22:21:32] INFO root fetch - processPackages [pyyeti]: Remove: archive file [/home/abi/fetcher/tmp/pyyeti-1.4.1.tar.gz]
+[2024-04-27 22:21:32] INFO root fetch - processPackages [pyyeti]: Remove: archive file [/home/abi/fetcher/tmp/pyyeti-1.4.1.1.tar.gz]
+[2024-04-27 22:21:32] INFO root fetch - main [MainThread]: End processing [pyyeti]: success
+[2024-04-27 22:21:32] INFO root fetch - processPackages [pymdown-extensions]: Remove: archive file [/home/abi/fetcher/tmp/pymdown_extensions-9.9.1.tar.gz]
+[2024-04-27 22:21:32] INFO root fetch - processPackages [pymdown-extensions]: Remove: archive file [/home/abi/fetcher/tmp/pymdown_extensions-9.9.2.tar.gz]
+[2024-04-27 22:21:32] INFO root fetch - main [MainThread]: End processing [pymdown-extensions]: success
+[2024-04-27 22:21:32] INFO root fetch - main [MainThread]: Store serial: [22961672]
