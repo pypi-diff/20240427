@@ -8203,3 +8203,45 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 06:15:20] WARNING root fetch - processPackages [sqlalchemy-crud-plus]: Skipping, unable to determine old version
 [2024-04-27 06:15:20] INFO root fetch - main [MainThread]: End processing [sqlalchemy-crud-plus] error
 [2024-04-27 06:15:20] INFO root fetch - main [MainThread]: Store serial: [22956336]
+[2024-04-27 06:17:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956336]
+[2024-04-27 06:17:29] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 06:17:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dragonfly-uwg
+[2024-04-27 06:17:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lbt-honeybee
+[2024-04-27 06:17:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ziya
+[2024-04-27 06:17:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dragonfly-energy
+[2024-04-27 06:17:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dbmaster
+[2024-04-27 06:17:29] WARNING root fetch - processPackages [dbmaster]: Skipping, unable to determine old version
+[2024-04-27 06:17:29] INFO root fetch - main [MainThread]: End processing [dbmaster] error
+[2024-04-27 06:17:29] INFO root fetch - processPackages [dragonfly-uwg]: New version: [0.5.99] Old Version: [0.5.98]
+[2024-04-27 06:17:29] INFO root fetch - processPackages [dragonfly-energy]: New version: [1.9.9] Old Version: [1.9.8]
+[2024-04-27 06:17:29] INFO root fetch - processPackages [lbt-honeybee]: New version: [0.8.99] Old Version: [0.8.98]
+[2024-04-27 06:17:29] INFO root fetch - processPackages [ziya]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-27 06:17:29] INFO root fetch - processPackages [dragonfly-energy]: Downloading https://files.pythonhosted.org/packages/20/4e/115840f938ee254b23bd515351ba786228441464717f8557431f914e75f4/dragonfly-energy-1.9.8.tar.gz
+[2024-04-27 06:17:29] INFO root fetch - processPackages [dragonfly-uwg]: Downloading https://files.pythonhosted.org/packages/a6/3c/7afbd082f170d8d51ed57abdf8bb67058ca404ede70f9d982fd95c8bb807/dragonfly-uwg-0.5.98.tar.gz
+[2024-04-27 06:17:29] INFO root fetch - processPackages [lbt-honeybee]: Downloading https://files.pythonhosted.org/packages/b5/a0/c6742c4b1a93565a552f073a8cad3689b9e2edcf401d45bd9fddf0485a8d/lbt-honeybee-0.8.98.tar.gz
+[2024-04-27 06:17:29] INFO root fetch - processPackages [ziya]: Downloading https://files.pythonhosted.org/packages/15/5a/f05431e2f7abb01e9267eaa2708baf9bd2f89c58084a777934f2bdf367e8/ziya-0.1.3.tar.gz
+[2024-04-27 06:17:30] INFO root fetch - processPackages [lbt-honeybee]: Downloading https://files.pythonhosted.org/packages/f1/61/4f36e668d3e1767b0f4d921481ad087bec472a2afc14ea20f916e083c690/lbt-honeybee-0.8.99.tar.gz
+[2024-04-27 06:17:30] INFO root fetch - processPackages [dragonfly-energy]: Downloading https://files.pythonhosted.org/packages/09/b6/c12f13159c5beb3b855a32f792faef162ad37358d2e0d3311cbd68a969db/dragonfly-energy-1.9.9.tar.gz
+[2024-04-27 06:17:30] INFO root fetch - processPackages [dragonfly-uwg]: Downloading https://files.pythonhosted.org/packages/55/b3/3f9a36d82b87f343d4e196e93a8cf3e838b9c80b0849f927d4f3505355af/dragonfly-uwg-0.5.99.tar.gz
+[2024-04-27 06:17:30] INFO root fetch - processPackages [lbt-honeybee]: executing diffoscope
+[2024-04-27 06:17:30] INFO root fetch - processPackages [lbt-honeybee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-honeybee-0.8.98.tar.gz tmp/lbt-honeybee-0.8.99.tar.gz --markdown 20240427/l/lbt-honeybee/0.8.98-0.8.99/README.md --exclude *.pyd
+[2024-04-27 06:17:30] INFO root fetch - processPackages [dragonfly-energy]: executing diffoscope
+[2024-04-27 06:17:30] INFO root fetch - processPackages [dragonfly-energy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-energy-1.9.8.tar.gz tmp/dragonfly-energy-1.9.9.tar.gz --markdown 20240427/d/dragonfly-energy/1.9.8-1.9.9/README.md --exclude *.pyd
+[2024-04-27 06:17:30] INFO root fetch - processPackages [ziya]: Downloading https://files.pythonhosted.org/packages/99/7f/e004b5e6edda7df96af17a8b8d536a1fa2028e48c71f42e918f3a0ccd668/ziya-0.1.4.tar.gz
+[2024-04-27 06:17:30] INFO root fetch - processPackages [dragonfly-uwg]: executing diffoscope
+[2024-04-27 06:17:30] INFO root fetch - processPackages [dragonfly-uwg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-uwg-0.5.98.tar.gz tmp/dragonfly-uwg-0.5.99.tar.gz --markdown 20240427/d/dragonfly-uwg/0.5.98-0.5.99/README.md --exclude *.pyd
+[2024-04-27 06:17:30] INFO root fetch - processPackages [ziya]: executing diffoscope
+[2024-04-27 06:17:30] INFO root fetch - processPackages [ziya]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ziya-0.1.3.tar.gz tmp/ziya-0.1.4.tar.gz --markdown 20240427/z/ziya/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-27 06:17:30] INFO root fetch - processPackages [lbt-honeybee]: Remove: archive file [/home/abi/fetcher/tmp/lbt-honeybee-0.8.98.tar.gz]
+[2024-04-27 06:17:30] INFO root fetch - processPackages [lbt-honeybee]: Remove: archive file [/home/abi/fetcher/tmp/lbt-honeybee-0.8.99.tar.gz]
+[2024-04-27 06:17:30] INFO root fetch - main [MainThread]: End processing [lbt-honeybee]: success
+[2024-04-27 06:17:31] INFO root fetch - processPackages [ziya]: Remove: archive file [/home/abi/fetcher/tmp/ziya-0.1.3.tar.gz]
+[2024-04-27 06:17:31] INFO root fetch - processPackages [ziya]: Remove: archive file [/home/abi/fetcher/tmp/ziya-0.1.4.tar.gz]
+[2024-04-27 06:17:31] INFO root fetch - main [MainThread]: End processing [ziya]: success
+[2024-04-27 06:17:31] INFO root fetch - processPackages [dragonfly-energy]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-energy-1.9.8.tar.gz]
+[2024-04-27 06:17:31] INFO root fetch - processPackages [dragonfly-energy]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-energy-1.9.9.tar.gz]
+[2024-04-27 06:17:31] INFO root fetch - main [MainThread]: End processing [dragonfly-energy]: success
+[2024-04-27 06:17:31] INFO root fetch - processPackages [dragonfly-uwg]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-uwg-0.5.98.tar.gz]
+[2024-04-27 06:17:31] INFO root fetch - processPackages [dragonfly-uwg]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-uwg-0.5.99.tar.gz]
+[2024-04-27 06:17:31] INFO root fetch - main [MainThread]: End processing [dragonfly-uwg]: success
+[2024-04-27 06:17:31] INFO root fetch - main [MainThread]: Store serial: [22956350]
