@@ -9106,3 +9106,27 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 07:18:25] INFO root fetch - processPackages [rapidpe-rift-pipe]: Remove: archive file [/home/abi/fetcher/tmp/rapidpe_rift_pipe-0.6.9.dev20240319.tar.gz]
 [2024-04-27 07:18:25] INFO root fetch - main [MainThread]: End processing [rapidpe-rift-pipe]: success
 [2024-04-27 07:18:25] INFO root fetch - main [MainThread]: Store serial: [22956643]
+[2024-04-27 07:20:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956643]
+[2024-04-27 07:20:33] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 07:20:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dirconfig
+[2024-04-27 07:20:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: furya-proto
+[2024-04-27 07:20:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zwave-js-server-python
+[2024-04-27 07:20:34] INFO root fetch - processPackages [dirconfig]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-04-27 07:20:34] WARNING root fetch - processPackages [furya-proto]: Skipping, unable to determine old version
+[2024-04-27 07:20:34] INFO root fetch - main [MainThread]: End processing [furya-proto] error
+[2024-04-27 07:20:34] INFO root fetch - processPackages [zwave-js-server-python]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-27 07:20:34] INFO root fetch - processPackages [dirconfig]: Downloading https://files.pythonhosted.org/packages/a2/1b/d31ab30e24f677c5541c6909c52f9697fd10605b8ced5d49fa4f3289ca6d/dirconfig-0.2.3.tar.gz
+[2024-04-27 07:20:34] INFO root fetch - processPackages [zwave-js-server-python]: Downloading https://files.pythonhosted.org/packages/d2/4e/d0ff6115142a87cf98a455f6bb2a40fe717c73d40a29a18508342bf64cb5/zwave-js-server-python-0.8.0.tar.gz
+[2024-04-27 07:20:34] INFO root fetch - processPackages [dirconfig]: Downloading https://files.pythonhosted.org/packages/c4/bc/d35d26f291a5596e24cddcc8bb7f303e9c31ea0a6f9095c5f0b862569116/dirconfig-0.2.4.tar.gz
+[2024-04-27 07:20:34] INFO root fetch - processPackages [dirconfig]: executing diffoscope
+[2024-04-27 07:20:34] INFO root fetch - processPackages [dirconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dirconfig-0.2.3.tar.gz tmp/dirconfig-0.2.4.tar.gz --markdown 20240427/d/dirconfig/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-04-27 07:20:34] INFO root fetch - processPackages [zwave-js-server-python]: Downloading https://files.pythonhosted.org/packages/3c/d7/f078929568a9191db249a7a2f8a27990a3132eafe6322079104067cb8d66/zwave-js-server-python-0.9.0.tar.gz
+[2024-04-27 07:20:35] INFO root fetch - processPackages [zwave-js-server-python]: executing diffoscope
+[2024-04-27 07:20:35] INFO root fetch - processPackages [zwave-js-server-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zwave-js-server-python-0.8.0.tar.gz tmp/zwave-js-server-python-0.9.0.tar.gz --markdown 20240427/z/zwave-js-server-python/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-27 07:20:35] INFO root fetch - processPackages [dirconfig]: Remove: archive file [/home/abi/fetcher/tmp/dirconfig-0.2.3.tar.gz]
+[2024-04-27 07:20:35] INFO root fetch - processPackages [dirconfig]: Remove: archive file [/home/abi/fetcher/tmp/dirconfig-0.2.4.tar.gz]
+[2024-04-27 07:20:35] INFO root fetch - main [MainThread]: End processing [dirconfig]: success
+[2024-04-27 07:20:35] INFO root fetch - processPackages [zwave-js-server-python]: Remove: archive file [/home/abi/fetcher/tmp/zwave-js-server-python-0.8.0.tar.gz]
+[2024-04-27 07:20:35] INFO root fetch - processPackages [zwave-js-server-python]: Remove: archive file [/home/abi/fetcher/tmp/zwave-js-server-python-0.9.0.tar.gz]
+[2024-04-27 07:20:35] INFO root fetch - main [MainThread]: End processing [zwave-js-server-python]: success
+[2024-04-27 07:20:35] INFO root fetch - main [MainThread]: Store serial: [22956655]
