@@ -10462,3 +10462,15 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 09:38:27] INFO root fetch - processPackages [Deepurify]: Remove: archive file [/home/abi/fetcher/tmp/Deepurify-2.3.0.tar.gz]
 [2024-04-27 09:38:27] INFO root fetch - main [MainThread]: End processing [Deepurify]: success
 [2024-04-27 09:38:27] INFO root fetch - main [MainThread]: Store serial: [22957245]
+[2024-04-27 09:40:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957245]
+[2024-04-27 09:40:37] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 09:40:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sybil-engine
+[2024-04-27 09:40:37] INFO root fetch - processPackages [sybil-engine]: New version: [7.2.2] Old Version: [7.2.0]
+[2024-04-27 09:40:38] INFO root fetch - processPackages [sybil-engine]: Downloading https://files.pythonhosted.org/packages/e3/e7/c767634d11c2b0499c98ce97aae441a8ee114f2b4fd2e98114cb93b84e79/sybil_engine-7.2.0.tar.gz
+[2024-04-27 09:40:38] INFO root fetch - processPackages [sybil-engine]: Downloading https://files.pythonhosted.org/packages/12/32/8d73676ae65857a5e907e9f33a7a077b35460da8e957987dc26f56c76ac4/sybil_engine-7.2.2.tar.gz
+[2024-04-27 09:40:38] INFO root fetch - processPackages [sybil-engine]: executing diffoscope
+[2024-04-27 09:40:38] INFO root fetch - processPackages [sybil-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sybil_engine-7.2.0.tar.gz tmp/sybil_engine-7.2.2.tar.gz --markdown 20240427/s/sybil-engine/7.2.0-7.2.2/README.md --exclude *.pyd
+[2024-04-27 09:40:39] INFO root fetch - processPackages [sybil-engine]: Remove: archive file [/home/abi/fetcher/tmp/sybil_engine-7.2.0.tar.gz]
+[2024-04-27 09:40:39] INFO root fetch - processPackages [sybil-engine]: Remove: archive file [/home/abi/fetcher/tmp/sybil_engine-7.2.2.tar.gz]
+[2024-04-27 09:40:39] INFO root fetch - main [MainThread]: End processing [sybil-engine]: success
+[2024-04-27 09:40:39] INFO root fetch - main [MainThread]: Store serial: [22957265]
