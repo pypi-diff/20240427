@@ -14669,3 +14669,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 15:24:42] INFO root fetch - processPackages [PySDM-examples]: Remove: archive file [/home/abi/fetcher/tmp/PySDM-examples-2.9.tar.gz]
 [2024-04-27 15:24:42] INFO root fetch - main [MainThread]: End processing [PySDM-examples]: success
 [2024-04-27 15:24:42] INFO root fetch - main [MainThread]: Store serial: [22959069]
+[2024-04-27 15:26:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959069]
+[2024-04-27 15:26:51] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-27 15:26:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: memium
+[2024-04-27 15:26:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ttpdant
+[2024-04-27 15:26:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hosted-flasks
+[2024-04-27 15:26:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: evg
+[2024-04-27 15:26:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: python-alist
+[2024-04-27 15:26:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hanoikovoiduocdau
+[2024-04-27 15:26:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: backpipe
+[2024-04-27 15:26:51] INFO root fetch - processPackages [backpipe]: New version: [0.5.0] Old Version: [0.4.1]
+[2024-04-27 15:26:52] INFO root fetch - processPackages [hanoikovoiduocdau]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-27 15:26:52] INFO root fetch - processPackages [memium]: New version: [0.7.0] Old Version: [0.21.0]
+[2024-04-27 15:26:52] INFO root fetch - processPackages [python-alist]: New version: [0.0.9.9] Old Version: [0.0.9.8.1]
+[2024-04-27 15:26:52] INFO root fetch - processPackages [backpipe]: Downloading https://files.pythonhosted.org/packages/24/cb/f1dbe0e55349be063212d7a140a44c0a0fe5521b577a856414e28d55b4c3/backpipe-0.4.1.tar.gz
+[2024-04-27 15:26:52] INFO root fetch - processPackages [hosted-flasks]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-27 15:26:52] INFO root fetch - processPackages [evg]: New version: [2.8.0] Old Version: [2.7.1]
+[2024-04-27 15:26:52] WARNING root fetch - processPackages [ttpdant]: Skipping, unable to determine old version
+[2024-04-27 15:26:52] INFO root fetch - main [MainThread]: End processing [ttpdant] error
+[2024-04-27 15:26:52] INFO root fetch - processPackages [hanoikovoiduocdau]: Downloading https://files.pythonhosted.org/packages/ba/5f/2acd4bdd7b20771a64e94791cf7a46a9bc226fd382305be2f3e0faf1a6b4/hanoikovoiduocdau-0.0.2.tar.gz
+[2024-04-27 15:26:52] INFO root fetch - processPackages [python-alist]: Downloading https://files.pythonhosted.org/packages/16/4c/767ed3dbd217eb3ea1f030c845f5a098d8e656f2fb4ab63c7fa0eadcf367/python_alist-0.0.9.8.1.tar.gz
+[2024-04-27 15:26:52] INFO root fetch - processPackages [memium]: Downloading https://files.pythonhosted.org/packages/b9/df/05ffac161106229586af043038be8201ce01b1e57f8f814e1475556de8e1/memium-0.21.0.tar.gz
+[2024-04-27 15:26:52] INFO root fetch - processPackages [evg]: Downloading https://files.pythonhosted.org/packages/93/a1/e75f60feba6bc8d3d80a5be58e0f5930f8bfa021e4712a907019aac3d6e2/evg-2.7.1.tar.gz
+[2024-04-27 15:26:52] INFO root fetch - processPackages [hosted-flasks]: Downloading https://files.pythonhosted.org/packages/ac/e7/b37ad70815b1c643d8908e351dd35b9544dafc6e4a5aba2f601947900b10/hosted-flasks-0.0.1.tar.gz
+[2024-04-27 15:26:52] INFO root fetch - processPackages [backpipe]: Downloading https://files.pythonhosted.org/packages/bf/69/efcae84c84b9c7ab5b8c91a7631b720fcf79ca9b0ebaea2c82b832e40bd1/backpipe-0.5.0.tar.gz
+[2024-04-27 15:26:52] INFO root fetch - processPackages [python-alist]: Downloading https://files.pythonhosted.org/packages/a4/c8/c4ceead1bdae1d44cce58995ae016d39c6e4134cefa9b31ef2daf97d4c36/python_alist-0.0.9.9.tar.gz
+[2024-04-27 15:26:52] INFO root fetch - processPackages [memium]: Downloading https://files.pythonhosted.org/packages/8a/a3/a3f5e0b58a853724e800a65c85c0df00b7d5138ea7cbb3db40d329c5f3d3/memium-0.7.0.tar.gz
+[2024-04-27 15:26:52] INFO root fetch - processPackages [hanoikovoiduocdau]: Downloading https://files.pythonhosted.org/packages/49/54/3acd94688fc5f001dd8fb38c43b89989f9ed5a2e20eac7273797de368ab2/hanoikovoiduocdau-0.0.3.tar.gz
+[2024-04-27 15:26:52] INFO root fetch - processPackages [backpipe]: executing diffoscope
+[2024-04-27 15:26:52] INFO root fetch - processPackages [backpipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backpipe-0.4.1.tar.gz tmp/backpipe-0.5.0.tar.gz --markdown 20240427/b/backpipe/0.4.1-0.5.0/README.md --exclude *.pyd
+[2024-04-27 15:26:52] INFO root fetch - processPackages [python-alist]: executing diffoscope
+[2024-04-27 15:26:52] INFO root fetch - processPackages [python-alist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_alist-0.0.9.8.1.tar.gz tmp/python_alist-0.0.9.9.tar.gz --markdown 20240427/p/python-alist/0.0.9.8.1-0.0.9.9/README.md --exclude *.pyd
+[2024-04-27 15:26:52] INFO root fetch - processPackages [hanoikovoiduocdau]: executing diffoscope
+[2024-04-27 15:26:52] INFO root fetch - processPackages [hanoikovoiduocdau]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hanoikovoiduocdau-0.0.2.tar.gz tmp/hanoikovoiduocdau-0.0.3.tar.gz --markdown 20240427/h/hanoikovoiduocdau/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-27 15:26:52] INFO root fetch - processPackages [memium]: executing diffoscope
+[2024-04-27 15:26:52] INFO root fetch - processPackages [memium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/memium-0.21.0.tar.gz tmp/memium-0.7.0.tar.gz --markdown 20240427/m/memium/0.21.0-0.7.0/README.md --exclude *.pyd
+[2024-04-27 15:26:52] INFO root fetch - processPackages [evg]: Downloading https://files.pythonhosted.org/packages/84/1c/1b506c90f9707844b18cd9e2fe09cf9e48a41cf099f1628cfde60c31737a/evg-2.8.0.tar.gz
+[2024-04-27 15:26:52] INFO root fetch - processPackages [hosted-flasks]: Downloading https://files.pythonhosted.org/packages/2a/ce/f7bae1006a8e643d08fefe0156feb6cbd00b0b7985fb5f85517c60d6d056/hosted-flasks-0.0.2.tar.gz
+[2024-04-27 15:26:52] INFO root fetch - processPackages [hosted-flasks]: executing diffoscope
+[2024-04-27 15:26:52] INFO root fetch - processPackages [hosted-flasks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hosted-flasks-0.0.1.tar.gz tmp/hosted-flasks-0.0.2.tar.gz --markdown 20240427/h/hosted-flasks/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-27 15:26:52] INFO root fetch - processPackages [evg]: executing diffoscope
+[2024-04-27 15:26:52] INFO root fetch - processPackages [evg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evg-2.7.1.tar.gz tmp/evg-2.8.0.tar.gz --markdown 20240427/e/evg/2.7.1-2.8.0/README.md --exclude *.pyd
+[2024-04-27 15:26:53] INFO root fetch - processPackages [backpipe]: Remove: archive file [/home/abi/fetcher/tmp/backpipe-0.4.1.tar.gz]
+[2024-04-27 15:26:53] INFO root fetch - processPackages [backpipe]: Remove: archive file [/home/abi/fetcher/tmp/backpipe-0.5.0.tar.gz]
+[2024-04-27 15:26:53] INFO root fetch - main [MainThread]: End processing [backpipe]: success
+[2024-04-27 15:26:53] INFO root fetch - processPackages [hanoikovoiduocdau]: Remove: archive file [/home/abi/fetcher/tmp/hanoikovoiduocdau-0.0.2.tar.gz]
+[2024-04-27 15:26:53] INFO root fetch - processPackages [hanoikovoiduocdau]: Remove: archive file [/home/abi/fetcher/tmp/hanoikovoiduocdau-0.0.3.tar.gz]
+[2024-04-27 15:26:53] INFO root fetch - main [MainThread]: End processing [hanoikovoiduocdau]: success
+[2024-04-27 15:26:53] INFO root fetch - processPackages [hosted-flasks]: Remove: archive file [/home/abi/fetcher/tmp/hosted-flasks-0.0.1.tar.gz]
+[2024-04-27 15:26:53] INFO root fetch - processPackages [hosted-flasks]: Remove: archive file [/home/abi/fetcher/tmp/hosted-flasks-0.0.2.tar.gz]
+[2024-04-27 15:26:53] INFO root fetch - main [MainThread]: End processing [hosted-flasks]: success
+[2024-04-27 15:26:53] INFO root fetch - processPackages [python-alist]: Remove: archive file [/home/abi/fetcher/tmp/python_alist-0.0.9.8.1.tar.gz]
+[2024-04-27 15:26:53] INFO root fetch - processPackages [python-alist]: Remove: archive file [/home/abi/fetcher/tmp/python_alist-0.0.9.9.tar.gz]
+[2024-04-27 15:26:53] INFO root fetch - main [MainThread]: End processing [python-alist]: success
+[2024-04-27 15:26:53] INFO root fetch - processPackages [memium]: Remove: archive file [/home/abi/fetcher/tmp/memium-0.21.0.tar.gz]
+[2024-04-27 15:26:53] INFO root fetch - processPackages [memium]: Remove: archive file [/home/abi/fetcher/tmp/memium-0.7.0.tar.gz]
+[2024-04-27 15:26:53] INFO root fetch - main [MainThread]: End processing [memium]: success
+[2024-04-27 15:26:53] INFO root fetch - processPackages [evg]: Remove: archive file [/home/abi/fetcher/tmp/evg-2.7.1.tar.gz]
+[2024-04-27 15:26:53] INFO root fetch - processPackages [evg]: Remove: archive file [/home/abi/fetcher/tmp/evg-2.8.0.tar.gz]
+[2024-04-27 15:26:53] INFO root fetch - main [MainThread]: End processing [evg]: success
+[2024-04-27 15:26:53] INFO root fetch - main [MainThread]: Store serial: [22959092]
