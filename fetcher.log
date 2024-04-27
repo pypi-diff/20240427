@@ -17842,3 +17842,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 19:03:55] WARNING root fetch - processPackages [EAPI-SDK]: Skipping, unable to determine old version
 [2024-04-27 19:03:55] INFO root fetch - main [MainThread]: End processing [EAPI-SDK] error
 [2024-04-27 19:03:55] INFO root fetch - main [MainThread]: Store serial: [22960354]
+[2024-04-27 19:06:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960354]
+[2024-04-27 19:06:07] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 19:06:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: adi-py-repacked
+[2024-04-27 19:06:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-healthy
+[2024-04-27 19:06:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: prisoners-dilemma-sdk
+[2024-04-27 19:06:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bogrod
+[2024-04-27 19:06:07] INFO root fetch - processPackages [prisoners-dilemma-sdk]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-27 19:06:07] INFO root fetch - processPackages [bogrod]: New version: [0.4.1.dev1] Old Version: [0.4.0]
+[2024-04-27 19:06:07] INFO root fetch - processPackages [prisoners-dilemma-sdk]: Downloading https://files.pythonhosted.org/packages/65/47/507a2c887484c4789005b454792d5cae9b92fbb7467ad725ffb5440eeb98/prisoners_dilemma_sdk-0.0.5.tar.gz
+[2024-04-27 19:06:07] WARNING root fetch - processPackages [adi-py-repacked]: Skipping, unable to determine old version
+[2024-04-27 19:06:07] INFO root fetch - main [MainThread]: End processing [adi-py-repacked] error
+[2024-04-27 19:06:07] ERROR root fetch - processPackages [django-healthy]: Unable to get metadata: No such project 'django-healthy'
+[2024-04-27 19:06:07] INFO root fetch - main [MainThread]: End processing [django-healthy] error
+[2024-04-27 19:06:07] INFO root fetch - processPackages [bogrod]: Downloading https://files.pythonhosted.org/packages/51/21/1592761f0680d9b70d54b0c88b1737f3a3ae57c774096d8477aaf3399763/bogrod-0.4.0.tar.gz
+[2024-04-27 19:06:07] INFO root fetch - processPackages [prisoners-dilemma-sdk]: Downloading https://files.pythonhosted.org/packages/ba/eb/506dd311a83c2e33dc70dfd3ee8bea11516c39b1bcb55e9cbd5917f078c8/prisoners_dilemma_sdk-0.0.6.tar.gz
+[2024-04-27 19:06:07] INFO root fetch - processPackages [bogrod]: Downloading https://files.pythonhosted.org/packages/93/4e/78aecb4a106c2a9f33a3fabda30f5a6db2f3df4cca52aadb935042d4f42f/bogrod-0.4.1.dev1.tar.gz
+[2024-04-27 19:06:07] INFO root fetch - processPackages [prisoners-dilemma-sdk]: executing diffoscope
+[2024-04-27 19:06:07] INFO root fetch - processPackages [prisoners-dilemma-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prisoners_dilemma_sdk-0.0.5.tar.gz tmp/prisoners_dilemma_sdk-0.0.6.tar.gz --markdown 20240427/p/prisoners-dilemma-sdk/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-27 19:06:07] INFO root fetch - processPackages [bogrod]: executing diffoscope
+[2024-04-27 19:06:07] INFO root fetch - processPackages [bogrod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bogrod-0.4.0.tar.gz tmp/bogrod-0.4.1.dev1.tar.gz --markdown 20240427/b/bogrod/0.4.0-0.4.1.dev1/README.md --exclude *.pyd
+[2024-04-27 19:06:08] INFO root fetch - processPackages [prisoners-dilemma-sdk]: Remove: archive file [/home/abi/fetcher/tmp/prisoners_dilemma_sdk-0.0.5.tar.gz]
+[2024-04-27 19:06:08] INFO root fetch - processPackages [prisoners-dilemma-sdk]: Remove: archive file [/home/abi/fetcher/tmp/prisoners_dilemma_sdk-0.0.6.tar.gz]
+[2024-04-27 19:06:08] INFO root fetch - main [MainThread]: End processing [prisoners-dilemma-sdk]: success
+[2024-04-27 19:06:08] INFO root fetch - processPackages [bogrod]: Remove: archive file [/home/abi/fetcher/tmp/bogrod-0.4.0.tar.gz]
+[2024-04-27 19:06:08] INFO root fetch - processPackages [bogrod]: Remove: archive file [/home/abi/fetcher/tmp/bogrod-0.4.1.dev1.tar.gz]
+[2024-04-27 19:06:08] INFO root fetch - main [MainThread]: End processing [bogrod]: success
+[2024-04-27 19:06:08] INFO root fetch - main [MainThread]: Store serial: [22960369]
