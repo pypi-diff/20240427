@@ -6888,3 +6888,33 @@ EOFError: EOF read where object expected
 [2024-04-27 03:53:31] INFO root fetch - processPackages [bioregistry]: Remove: archive file [/home/abi/fetcher/tmp/bioregistry-0.9.97.tar.gz]
 [2024-04-27 03:53:31] INFO root fetch - main [MainThread]: End processing [bioregistry]: success
 [2024-04-27 03:53:31] INFO root fetch - main [MainThread]: Store serial: [22955948]
+[2024-04-27 03:55:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22955948]
+[2024-04-27 03:55:42] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 03:55:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ctrip-app-ui
+[2024-04-27 03:55:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: isolate
+[2024-04-27 03:55:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Mira-SimPEG
+[2024-04-27 03:55:42] INFO root fetch - processPackages [ctrip-app-ui]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-04-27 03:55:42] INFO root fetch - processPackages [isolate]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-04-27 03:55:42] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/0c/0c/7287c47ef2e4c4dd5360110a7072ac6a67684d21844b7f6c9a5a94692142/ctrip-app-ui-0.2.3.tar.gz
+[2024-04-27 03:55:42] INFO root fetch - processPackages [isolate]: Downloading https://files.pythonhosted.org/packages/64/32/211fe725a3bf7449d63f5b9210aed9bebdc93f360ec91a4e8804c891e5dd/isolate-0.9.2.tar.gz
+[2024-04-27 03:55:42] INFO root fetch - processPackages [Mira-SimPEG]: New version: [0.19.0.dev8] Old Version: [0.19.0.dev7]
+[2024-04-27 03:55:42] INFO root fetch - processPackages [isolate]: Downloading https://files.pythonhosted.org/packages/93/d5/1ab6e68b9f2f196a9982c5cab3879975f19e872887debadb439227f3e01b/isolate-0.9.3.tar.gz
+[2024-04-27 03:55:42] INFO root fetch - processPackages [Mira-SimPEG]: Downloading https://files.pythonhosted.org/packages/2c/75/bf89af29d5138181c4ff9492721bffb0aeb04a455f4e25cee55bd607d997/mira_simpeg-0.19.0.dev7.tar.gz
+[2024-04-27 03:55:42] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/6b/ba/0de3957024ea30e4d606c948b8b56c423e489bb89c7b49d89b20a95846d6/ctrip-app-ui-0.2.4.tar.gz
+[2024-04-27 03:55:42] INFO root fetch - processPackages [isolate]: executing diffoscope
+[2024-04-27 03:55:42] INFO root fetch - processPackages [isolate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/isolate-0.9.2.tar.gz tmp/isolate-0.9.3.tar.gz --markdown 20240427/i/isolate/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-04-27 03:55:43] INFO root fetch - processPackages [ctrip-app-ui]: executing diffoscope
+[2024-04-27 03:55:43] INFO root fetch - processPackages [ctrip-app-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctrip-app-ui-0.2.3.tar.gz tmp/ctrip-app-ui-0.2.4.tar.gz --markdown 20240427/c/ctrip-app-ui/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-04-27 03:55:43] INFO root fetch - processPackages [Mira-SimPEG]: Downloading https://files.pythonhosted.org/packages/cb/e3/7ddecfbf8f726d9c8478030aede517e1354bfe12f435927fc3f4a84b8fe9/mira_simpeg-0.19.0.dev8.tar.gz
+[2024-04-27 03:55:43] INFO root fetch - processPackages [Mira-SimPEG]: executing diffoscope
+[2024-04-27 03:55:43] INFO root fetch - processPackages [Mira-SimPEG]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mira_simpeg-0.19.0.dev7.tar.gz tmp/mira_simpeg-0.19.0.dev8.tar.gz --markdown 20240427/M/Mira-SimPEG/0.19.0.dev7-0.19.0.dev8/README.md --exclude *.pyd
+[2024-04-27 03:55:43] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.2.3.tar.gz]
+[2024-04-27 03:55:43] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.2.4.tar.gz]
+[2024-04-27 03:55:43] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
+[2024-04-27 03:55:43] INFO root fetch - processPackages [isolate]: Remove: archive file [/home/abi/fetcher/tmp/isolate-0.9.2.tar.gz]
+[2024-04-27 03:55:43] INFO root fetch - processPackages [isolate]: Remove: archive file [/home/abi/fetcher/tmp/isolate-0.9.3.tar.gz]
+[2024-04-27 03:55:43] INFO root fetch - main [MainThread]: End processing [isolate]: success
+[2024-04-27 03:55:44] INFO root fetch - processPackages [Mira-SimPEG]: Remove: archive file [/home/abi/fetcher/tmp/mira_simpeg-0.19.0.dev7.tar.gz]
+[2024-04-27 03:55:44] INFO root fetch - processPackages [Mira-SimPEG]: Remove: archive file [/home/abi/fetcher/tmp/mira_simpeg-0.19.0.dev8.tar.gz]
+[2024-04-27 03:55:44] INFO root fetch - main [MainThread]: End processing [Mira-SimPEG]: success
+[2024-04-27 03:55:44] INFO root fetch - main [MainThread]: Store serial: [22955956]
