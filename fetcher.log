@@ -18245,3 +18245,47 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 19:26:21] INFO root fetch - processPackages [instaOS]: Remove: archive file [/home/abi/fetcher/tmp/instaOS-0.0.2.tar.gz]
 [2024-04-27 19:26:21] INFO root fetch - main [MainThread]: End processing [instaOS]: success
 [2024-04-27 19:26:21] INFO root fetch - main [MainThread]: Store serial: [22960529]
+[2024-04-27 19:28:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960529]
+[2024-04-27 19:28:34] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 19:28:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: crazy-thursday
+[2024-04-27 19:28:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lollms-client
+[2024-04-27 19:28:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gai-lib
+[2024-04-27 19:28:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: monarchmoney
+[2024-04-27 19:28:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tf-nightly-tpu
+[2024-04-27 19:28:34] INFO root fetch - processPackages [gai-lib]: New version: [0.99] Old Version: [0.98]
+[2024-04-27 19:28:34] INFO root fetch - processPackages [crazy-thursday]: New version: [2024.4.27.1] Old Version: [2024.4.27.0]
+[2024-04-27 19:28:34] INFO root fetch - processPackages [gai-lib]: Downloading https://files.pythonhosted.org/packages/d7/ec/73324c4782c5a7d475e0473a63a34aefe2a50c28e3e95e74572ba8e24319/gai-lib-0.98.tar.gz
+[2024-04-27 19:28:34] INFO root fetch - processPackages [lollms-client]: New version: [0.4.0] Old Version: [0.3.1]
+[2024-04-27 19:28:34] INFO root fetch - processPackages [monarchmoney]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-27 19:28:34] INFO root fetch - processPackages [tf-nightly-tpu]: New version: [2.17.0.dev20240427] Old Version: [2.17.0.dev20240423]
+[2024-04-27 19:28:34] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/47/5d/5fc5a2818ef034fcd1b2deb368545ef99a91c33303f790b29d8fe784b709/crazy_thursday-2024.4.27.0.tar.gz
+[2024-04-27 19:28:34] INFO root fetch - processPackages [gai-lib]: Downloading https://files.pythonhosted.org/packages/fd/52/02eb2fe55760540c73b1796ab0f903f7b077179fa1269206b0ff8d4909cf/gai-lib-0.99.tar.gz
+[2024-04-27 19:28:34] INFO root fetch - processPackages [lollms-client]: Downloading https://files.pythonhosted.org/packages/ef/c8/f9a06ed9286a43e1b5fe81a52a16f7fb3984f1294c489144ad588ef118fa/lollms_client-0.3.1.tar.gz
+[2024-04-27 19:28:35] INFO root fetch - processPackages [monarchmoney]: Downloading https://files.pythonhosted.org/packages/44/fb/316e3086ab26e13559b59d74315c9fe2c8fa3b6f2a25196ddc59b93d4729/monarchmoney-0.1.8.tar.gz
+[2024-04-27 19:28:35] INFO root fetch - processPackages [tf-nightly-tpu]: Downloading https://files.pythonhosted.org/packages/b2/c5/4ef2d27f9167cf39f043ab02e4e853a30ddd42b817ca2c3d4f716ec9f42f/tf_nightly_tpu-2.17.0.dev20240423-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-27 19:28:35] WARNING root fetch - processPackages [tf-nightly-tpu]: Skipping package: exceeds size limit 220198988>=10485760
+[2024-04-27 19:28:35] INFO root fetch - main [MainThread]: End processing [tf-nightly-tpu] error
+[2024-04-27 19:28:35] INFO root fetch - processPackages [gai-lib]: executing diffoscope
+[2024-04-27 19:28:35] INFO root fetch - processPackages [gai-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gai-lib-0.98.tar.gz tmp/gai-lib-0.99.tar.gz --markdown 20240427/g/gai-lib/0.98-0.99/README.md --exclude *.pyd
+[2024-04-27 19:28:35] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/1a/19/b1a3bc4aa3f0ab982c3c5d7e43abc88c0e465d0119b2cfeb19547f0abbf6/crazy_thursday-2024.4.27.1.tar.gz
+[2024-04-27 19:28:35] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2024-04-27 19:28:35] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy_thursday-2024.4.27.0.tar.gz tmp/crazy_thursday-2024.4.27.1.tar.gz --markdown 20240427/c/crazy-thursday/2024.4.27.0-2024.4.27.1/README.md --exclude *.pyd
+[2024-04-27 19:28:35] INFO root fetch - processPackages [lollms-client]: Downloading https://files.pythonhosted.org/packages/b4/fd/63cc6f5bcbab0933845b7e6e70061e8b518fc84ddb73a28ef1e6c4242385/lollms_client-0.4.0.tar.gz
+[2024-04-27 19:28:35] INFO root fetch - processPackages [monarchmoney]: Downloading https://files.pythonhosted.org/packages/23/cb/f82001f0c2f9ff4967ebf8b72888abc106644bf7a2be56d6df80f7e0570d/monarchmoney-0.1.9.tar.gz
+[2024-04-27 19:28:35] INFO root fetch - processPackages [lollms-client]: executing diffoscope
+[2024-04-27 19:28:35] INFO root fetch - processPackages [lollms-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lollms_client-0.3.1.tar.gz tmp/lollms_client-0.4.0.tar.gz --markdown 20240427/l/lollms-client/0.3.1-0.4.0/README.md --exclude *.pyd
+[2024-04-27 19:28:35] INFO root fetch - processPackages [monarchmoney]: executing diffoscope
+[2024-04-27 19:28:35] INFO root fetch - processPackages [monarchmoney]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monarchmoney-0.1.8.tar.gz tmp/monarchmoney-0.1.9.tar.gz --markdown 20240427/m/monarchmoney/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-27 19:28:35] INFO root fetch - processPackages [gai-lib]: Remove: archive file [/home/abi/fetcher/tmp/gai-lib-0.98.tar.gz]
+[2024-04-27 19:28:35] INFO root fetch - processPackages [gai-lib]: Remove: archive file [/home/abi/fetcher/tmp/gai-lib-0.99.tar.gz]
+[2024-04-27 19:28:35] INFO root fetch - main [MainThread]: End processing [gai-lib]: success
+[2024-04-27 19:28:35] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.4.27.0.tar.gz]
+[2024-04-27 19:28:35] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.4.27.1.tar.gz]
+[2024-04-27 19:28:35] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2024-04-27 19:28:35] INFO root fetch - processPackages [lollms-client]: Remove: archive file [/home/abi/fetcher/tmp/lollms_client-0.3.1.tar.gz]
+[2024-04-27 19:28:35] INFO root fetch - processPackages [lollms-client]: Remove: archive file [/home/abi/fetcher/tmp/lollms_client-0.4.0.tar.gz]
+[2024-04-27 19:28:35] INFO root fetch - main [MainThread]: End processing [lollms-client]: success
+[2024-04-27 19:28:36] INFO root fetch - processPackages [monarchmoney]: Remove: archive file [/home/abi/fetcher/tmp/monarchmoney-0.1.8.tar.gz]
+[2024-04-27 19:28:36] INFO root fetch - processPackages [monarchmoney]: Remove: archive file [/home/abi/fetcher/tmp/monarchmoney-0.1.9.tar.gz]
+[2024-04-27 19:28:36] INFO root fetch - main [MainThread]: End processing [monarchmoney]: success
+[2024-04-27 19:28:36] INFO root fetch - main [MainThread]: Store serial: [22960552]
