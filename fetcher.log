@@ -16376,3 +16376,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 17:12:45] INFO root fetch - processPackages [FlexGet]: Remove: archive file [/home/abi/fetcher/tmp/FlexGet-3.9.9.tar.gz]
 [2024-04-27 17:12:45] INFO root fetch - main [MainThread]: End processing [FlexGet]: success
 [2024-04-27 17:12:45] INFO root fetch - main [MainThread]: Store serial: [22959723]
+[2024-04-27 17:14:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959723]
+[2024-04-27 17:14:54] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 17:14:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tesserocr
+[2024-04-27 17:14:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sopel-modules.genius-answer
+[2024-04-27 17:14:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: updrytwist-UpDryTwist
+[2024-04-27 17:14:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: agt-server
+[2024-04-27 17:14:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: blurry-cli
+[2024-04-27 17:14:55] INFO root fetch - processPackages [updrytwist-UpDryTwist]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 17:14:55] INFO root fetch - processPackages [sopel-modules.genius-answer]: New version: [0.0.19] Old Version: [0.0.18]
+[2024-04-27 17:14:55] INFO root fetch - processPackages [agt-server]: New version: [1.3.5] Old Version: [1.3.4]
+[2024-04-27 17:14:55] INFO root fetch - processPackages [tesserocr]: New version: [2.7.0] Old Version: [2.6.3]
+[2024-04-27 17:14:55] INFO root fetch - processPackages [updrytwist-UpDryTwist]: Downloading https://files.pythonhosted.org/packages/1f/b5/eb031965b3b736a189906b7bf4ac2fa3721a547ed6cde73cf721ca951978/updrytwist-UpDryTwist-0.0.8.tar.gz
+[2024-04-27 17:14:55] INFO root fetch - processPackages [sopel-modules.genius-answer]: Downloading https://files.pythonhosted.org/packages/38/27/7422e8db06fd1715c2230decb17f3116fa3595b0798519ec4f2a4c3dbb13/sopel_modules_genius_answer-0.0.18.tar.gz
+[2024-04-27 17:14:55] INFO root fetch - processPackages [agt-server]: Downloading https://files.pythonhosted.org/packages/57/cc/102e547e845d80d376af742f4f8756b4c677e0eb9d463e65a10db12f086e/agt_server-1.3.4.tar.gz
+[2024-04-27 17:14:55] INFO root fetch - processPackages [blurry-cli]: New version: [0.7.2] Old Version: [0.7.1]
+[2024-04-27 17:14:55] INFO root fetch - processPackages [tesserocr]: Downloading https://files.pythonhosted.org/packages/c2/16/8890aa693a117b6e314690a2928e4c866f15dca4732713de6e6ae9dbfaba/tesserocr-2.6.3.tar.gz
+[2024-04-27 17:14:55] INFO root fetch - processPackages [updrytwist-UpDryTwist]: Downloading https://files.pythonhosted.org/packages/c9/29/eb5c8bfc3736233400efa2211b7a2a87a43398ed29ccc544e8ed3dbe5be4/updrytwist-UpDryTwist-0.0.9.tar.gz
+[2024-04-27 17:14:55] INFO root fetch - processPackages [blurry-cli]: Downloading https://files.pythonhosted.org/packages/27/c4/ac514adbe0c0a869370f67323e459e06527152ca1c256dac833167ce606b/blurry_cli-0.7.1.tar.gz
+[2024-04-27 17:14:55] INFO root fetch - processPackages [updrytwist-UpDryTwist]: executing diffoscope
+[2024-04-27 17:14:55] INFO root fetch - processPackages [updrytwist-UpDryTwist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/updrytwist-UpDryTwist-0.0.8.tar.gz tmp/updrytwist-UpDryTwist-0.0.9.tar.gz --markdown 20240427/u/updrytwist-UpDryTwist/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 17:14:55] INFO root fetch - processPackages [sopel-modules.genius-answer]: Downloading https://files.pythonhosted.org/packages/cd/fb/77756dafe362c73f6fb07bfa8c743d3505cace20d1b499c8144e77574f90/sopel_modules_genius_answer-0.0.19.tar.gz
+[2024-04-27 17:14:55] INFO root fetch - processPackages [agt-server]: Downloading https://files.pythonhosted.org/packages/55/67/b622b3ee0c2e5c007e2d44234c4ba4e37e26795a89c41521b4086b4389bd/agt_server-1.3.5.tar.gz
+[2024-04-27 17:14:55] INFO root fetch - processPackages [sopel-modules.genius-answer]: executing diffoscope
+[2024-04-27 17:14:55] INFO root fetch - processPackages [sopel-modules.genius-answer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sopel_modules_genius_answer-0.0.18.tar.gz tmp/sopel_modules_genius_answer-0.0.19.tar.gz --markdown 20240427/s/sopel-modules.genius-answer/0.0.18-0.0.19/README.md --exclude *.pyd
+[2024-04-27 17:14:55] INFO root fetch - processPackages [tesserocr]: Downloading https://files.pythonhosted.org/packages/6e/e4/f86179a1b5a78ecd0649e0960f0dbcf2ee5fad2e8b060875eb9d66d88927/tesserocr-2.7.0-cp311-cp311-manylinux_2_28_aarch64.whl
+[2024-04-27 17:14:55] INFO root fetch - processPackages [agt-server]: executing diffoscope
+[2024-04-27 17:14:55] INFO root fetch - processPackages [agt-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agt_server-1.3.4.tar.gz tmp/agt_server-1.3.5.tar.gz --markdown 20240427/a/agt-server/1.3.4-1.3.5/README.md --exclude *.pyd
+[2024-04-27 17:14:55] INFO root fetch - processPackages [blurry-cli]: Downloading https://files.pythonhosted.org/packages/c0/fe/27074ea5244e2cf2384d674d0aed08f4b5582d9ed4f5ed4239681f866b42/blurry_cli-0.7.2-py3-none-any.whl
+[2024-04-27 17:14:56] INFO root fetch - processPackages [updrytwist-UpDryTwist]: Remove: archive file [/home/abi/fetcher/tmp/updrytwist-UpDryTwist-0.0.8.tar.gz]
+[2024-04-27 17:14:56] INFO root fetch - processPackages [updrytwist-UpDryTwist]: Remove: archive file [/home/abi/fetcher/tmp/updrytwist-UpDryTwist-0.0.9.tar.gz]
+[2024-04-27 17:14:56] INFO root fetch - main [MainThread]: End processing [updrytwist-UpDryTwist]: success
+[2024-04-27 17:14:56] INFO root fetch - processPackages [sopel-modules.genius-answer]: Remove: archive file [/home/abi/fetcher/tmp/sopel_modules_genius_answer-0.0.18.tar.gz]
+[2024-04-27 17:14:56] INFO root fetch - processPackages [sopel-modules.genius-answer]: Remove: archive file [/home/abi/fetcher/tmp/sopel_modules_genius_answer-0.0.19.tar.gz]
+[2024-04-27 17:14:56] INFO root fetch - main [MainThread]: End processing [sopel-modules.genius-answer]: success
+[2024-04-27 17:14:56] INFO root fetch - processPackages [blurry-cli]: executing diffoscope
+[2024-04-27 17:14:56] INFO root fetch - processPackages [blurry-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blurry_cli-0.7.1.tar.gz tmp/blurry_cli-0.7.2-py3-none-any.whl.zip --markdown 20240427/b/blurry-cli/0.7.1-0.7.2/README.md --exclude *.pyd
+[2024-04-27 17:14:56] INFO root fetch - processPackages [blurry-cli]: Remove: archive file [/home/abi/fetcher/tmp/blurry_cli-0.7.1.tar.gz]
+[2024-04-27 17:14:56] INFO root fetch - processPackages [blurry-cli]: Remove: archive file [/home/abi/fetcher/tmp/blurry_cli-0.7.2-py3-none-any.whl.zip]
+[2024-04-27 17:14:56] INFO root fetch - main [MainThread]: End processing [blurry-cli]: success
+[2024-04-27 17:14:56] INFO root fetch - processPackages [tesserocr]: executing diffoscope
+[2024-04-27 17:14:56] INFO root fetch - processPackages [tesserocr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tesserocr-2.6.3.tar.gz tmp/tesserocr-2.7.0-cp311-cp311-manylinux_2_28_aarch64.whl.zip --markdown 20240427/t/tesserocr/2.6.3-2.7.0/README.md --exclude *.pyd
+[2024-04-27 17:14:57] INFO root fetch - processPackages [agt-server]: Remove: archive file [/home/abi/fetcher/tmp/agt_server-1.3.4.tar.gz]
+[2024-04-27 17:14:57] INFO root fetch - processPackages [agt-server]: Remove: archive file [/home/abi/fetcher/tmp/agt_server-1.3.5.tar.gz]
+[2024-04-27 17:14:57] INFO root fetch - main [MainThread]: End processing [agt-server]: success
+[2024-04-27 17:14:57] INFO root fetch - processPackages [tesserocr]: Remove: archive file [/home/abi/fetcher/tmp/tesserocr-2.6.3.tar.gz]
+[2024-04-27 17:14:57] INFO root fetch - processPackages [tesserocr]: Remove: archive file [/home/abi/fetcher/tmp/tesserocr-2.7.0-cp311-cp311-manylinux_2_28_aarch64.whl.zip]
+[2024-04-27 17:14:57] INFO root fetch - main [MainThread]: End processing [tesserocr]: success
+[2024-04-27 17:14:57] INFO root fetch - main [MainThread]: Store serial: [22959741]
