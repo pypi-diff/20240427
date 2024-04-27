@@ -20388,3 +20388,49 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 22:07:30] WARNING root fetch - processPackages [aim-ui]: Skipping package: exceeds size limit 19246573>=10485760
 [2024-04-27 22:07:30] INFO root fetch - main [MainThread]: End processing [aim-ui] error
 [2024-04-27 22:07:30] INFO root fetch - main [MainThread]: Store serial: [22961591]
+[2024-04-27 22:09:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961591]
+[2024-04-27 22:09:46] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 22:09:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mojo-credentials
+[2024-04-27 22:09:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aim
+[2024-04-27 22:09:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Robocon-24
+[2024-04-27 22:09:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: test-pkg-hmoazam
+[2024-04-27 22:09:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: test-pkg-hmoazam
+[2024-04-27 22:09:46] INFO root fetch - processPackages [mojo-credentials]: New version: [1.3.6] Old Version: [1.3.5]
+[2024-04-27 22:09:46] INFO root fetch - processPackages [Robocon-24]: New version: [0.3] Old Version: [0.2]
+[2024-04-27 22:09:46] INFO root fetch - processPackages [test-pkg-hmoazam]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-27 22:09:46] INFO root fetch - processPackages [test-pkg-hmoazam]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-27 22:09:46] INFO root fetch - processPackages [mojo-credentials]: Downloading https://files.pythonhosted.org/packages/f6/7a/6b69099cd76124d8a7017f42fb0be219a5afe83cf28150a97d09ecba1d72/mojo_credentials-1.3.5.tar.gz
+[2024-04-27 22:09:46] INFO root fetch - processPackages [aim]: New version: [4.0.3] Old Version: [4.0.2]
+[2024-04-27 22:09:46] INFO root fetch - processPackages [test-pkg-hmoazam]: Downloading https://files.pythonhosted.org/packages/f4/c7/4bf0ea7858e40d4d7dd0c9d3cc6a41a953f726119691fa6c0bde6c8ef6ad/test_pkg_hmoazam-0.0.1.tar.gz
+[2024-04-27 22:09:46] INFO root fetch - processPackages [test-pkg-hmoazam]: Downloading https://files.pythonhosted.org/packages/f4/c7/4bf0ea7858e40d4d7dd0c9d3cc6a41a953f726119691fa6c0bde6c8ef6ad/test_pkg_hmoazam-0.0.1.tar.gz
+[2024-04-27 22:09:46] INFO root fetch - processPackages [aim]: Downloading https://files.pythonhosted.org/packages/4a/00/f7e303a3bd0a6d75c08ccd60562a0c5f00fa9f4c16c945fbffa86d96ab7d/aim-4.0.2.tar.gz
+[2024-04-27 22:09:46] INFO root fetch - processPackages [Robocon-24]: Downloading https://files.pythonhosted.org/packages/24/76/a2bcee8f8989bf94bc1601323f35612111d686213962fdf114787c4831a4/Robocon_24-0.2.tar.gz
+[2024-04-27 22:09:46] INFO root fetch - processPackages [mojo-credentials]: Downloading https://files.pythonhosted.org/packages/05/6c/6158e42a1fd708364afe99385c415ff4403c66bf9e6095177f530ec58533/mojo_credentials-1.3.6.tar.gz
+[2024-04-27 22:09:47] INFO root fetch - processPackages [mojo-credentials]: executing diffoscope
+[2024-04-27 22:09:47] INFO root fetch - processPackages [mojo-credentials]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mojo_credentials-1.3.5.tar.gz tmp/mojo_credentials-1.3.6.tar.gz --markdown 20240427/m/mojo-credentials/1.3.5-1.3.6/README.md --exclude *.pyd
+[2024-04-27 22:09:47] INFO root fetch - processPackages [test-pkg-hmoazam]: Downloading https://files.pythonhosted.org/packages/4a/55/d196cd65a2f894ce5871432fab3a79d86e0ea60e67f42417fa46badb472b/test_pkg_hmoazam-0.0.2.tar.gz
+[2024-04-27 22:09:47] INFO root fetch - processPackages [test-pkg-hmoazam]: Downloading https://files.pythonhosted.org/packages/4a/55/d196cd65a2f894ce5871432fab3a79d86e0ea60e67f42417fa46badb472b/test_pkg_hmoazam-0.0.2.tar.gz
+[2024-04-27 22:09:47] INFO root fetch - processPackages [Robocon-24]: Downloading https://files.pythonhosted.org/packages/c6/9b/4433d7dc9abd379715d060e30605ccd179715d37fb1378ed0637edb1b57f/Robocon_24-0.3.tar.gz
+[2024-04-27 22:09:47] INFO root fetch - processPackages [test-pkg-hmoazam]: executing diffoscope
+[2024-04-27 22:09:47] INFO root fetch - processPackages [test-pkg-hmoazam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/test_pkg_hmoazam-0.0.1.tar.gz tmp/test_pkg_hmoazam-0.0.2.tar.gz --markdown 20240427/t/test-pkg-hmoazam/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-27 22:09:47] INFO root fetch - processPackages [test-pkg-hmoazam]: executing diffoscope
+[2024-04-27 22:09:47] INFO root fetch - processPackages [test-pkg-hmoazam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/test_pkg_hmoazam-0.0.1.tar.gz tmp/test_pkg_hmoazam-0.0.2.tar.gz --markdown 20240427/t/test-pkg-hmoazam/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-27 22:09:47] INFO root fetch - processPackages [aim]: Downloading https://files.pythonhosted.org/packages/50/12/a5a7bf25fd6105558d11afbd3f7500aa63283494e429296746c821354590/aim-4.0.3.tar.gz
+[2024-04-27 22:09:47] INFO root fetch - processPackages [Robocon-24]: executing diffoscope
+[2024-04-27 22:09:47] INFO root fetch - processPackages [Robocon-24]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Robocon_24-0.2.tar.gz tmp/Robocon_24-0.3.tar.gz --markdown 20240427/R/Robocon-24/0.2-0.3/README.md --exclude *.pyd
+[2024-04-27 22:09:47] INFO root fetch - processPackages [aim]: executing diffoscope
+[2024-04-27 22:09:47] INFO root fetch - processPackages [aim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aim-4.0.2.tar.gz tmp/aim-4.0.3.tar.gz --markdown 20240427/a/aim/4.0.2-4.0.3/README.md --exclude *.pyd
+[2024-04-27 22:09:47] INFO root fetch - processPackages [mojo-credentials]: Remove: archive file [/home/abi/fetcher/tmp/mojo_credentials-1.3.5.tar.gz]
+[2024-04-27 22:09:47] INFO root fetch - processPackages [mojo-credentials]: Remove: archive file [/home/abi/fetcher/tmp/mojo_credentials-1.3.6.tar.gz]
+[2024-04-27 22:09:47] INFO root fetch - main [MainThread]: End processing [mojo-credentials]: success
+[2024-04-27 22:09:47] INFO root fetch - processPackages [test-pkg-hmoazam]: Remove: archive file [/home/abi/fetcher/tmp/test_pkg_hmoazam-0.0.1.tar.gz]
+[2024-04-27 22:09:47] INFO root fetch - processPackages [test-pkg-hmoazam]: Remove: archive file [/home/abi/fetcher/tmp/test_pkg_hmoazam-0.0.2.tar.gz]
+[2024-04-27 22:09:47] INFO root fetch - main [MainThread]: End processing [test-pkg-hmoazam]: success
+[2024-04-27 22:09:47] INFO root fetch - main [MainThread]: End processing [test-pkg-hmoazam]: success
+[2024-04-27 22:09:47] INFO root fetch - processPackages [Robocon-24]: Remove: archive file [/home/abi/fetcher/tmp/Robocon_24-0.2.tar.gz]
+[2024-04-27 22:09:47] INFO root fetch - processPackages [Robocon-24]: Remove: archive file [/home/abi/fetcher/tmp/Robocon_24-0.3.tar.gz]
+[2024-04-27 22:09:47] INFO root fetch - main [MainThread]: End processing [Robocon-24]: success
+[2024-04-27 22:09:52] INFO root fetch - processPackages [aim]: Remove: archive file [/home/abi/fetcher/tmp/aim-4.0.2.tar.gz]
+[2024-04-27 22:09:52] INFO root fetch - processPackages [aim]: Remove: archive file [/home/abi/fetcher/tmp/aim-4.0.3.tar.gz]
+[2024-04-27 22:09:52] INFO root fetch - main [MainThread]: End processing [aim]: success
+[2024-04-27 22:09:52] INFO root fetch - main [MainThread]: Store serial: [22961608]
