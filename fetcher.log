@@ -19638,3 +19638,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 21:07:29] INFO root fetch - processPackages [grss]: Remove: archive file [/home/abi/fetcher/tmp/grss-4.0.2.tar.gz]
 [2024-04-27 21:07:29] INFO root fetch - main [MainThread]: End processing [grss]: success
 [2024-04-27 21:07:29] INFO root fetch - main [MainThread]: Store serial: [22961265]
+[2024-04-27 21:09:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961265]
+[2024-04-27 21:09:44] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 21:09:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pygmtools
+[2024-04-27 21:09:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: terminaltype
+[2024-04-27 21:09:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ffit
+[2024-04-27 21:09:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: airfold-common
+[2024-04-27 21:09:44] INFO root fetch - processPackages [terminaltype]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-27 21:09:44] INFO root fetch - processPackages [terminaltype]: Downloading https://files.pythonhosted.org/packages/ed/a3/72ed8da809b7c6222dab7fa616098c50e7496ae6512ffa9288b3e4308b2d/terminaltype-0.0.1.tar.gz
+[2024-04-27 21:09:44] INFO root fetch - processPackages [ffit]: New version: [0.1.0] Old Version: [0.0.1]
+[2024-04-27 21:09:44] INFO root fetch - processPackages [airfold-common]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-04-27 21:09:44] INFO root fetch - processPackages [pygmtools]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-04-27 21:09:44] INFO root fetch - processPackages [ffit]: Downloading https://files.pythonhosted.org/packages/4f/7b/f41adc2d5df3b62ba792330d661d328a75dd70d9bc0248dce256fb850801/ffit-0.0.1.tar.gz
+[2024-04-27 21:09:44] INFO root fetch - processPackages [terminaltype]: Downloading https://files.pythonhosted.org/packages/10/c7/9860a92d7ff29d9b32462f25b9a37f7d80cc679c445da9498080ef2e5e7b/terminaltype-0.0.2.tar.gz
+[2024-04-27 21:09:44] INFO root fetch - processPackages [airfold-common]: Downloading https://files.pythonhosted.org/packages/95/fc/4505c76d3e7b42450b4e72ac05ddf132a850c2b7dc3d659bfd8d29dda117/airfold_common-0.7.0-py3-none-any.whl
+[2024-04-27 21:09:45] INFO root fetch - processPackages [pygmtools]: Downloading https://files.pythonhosted.org/packages/08/b7/73923b4dd7081d5b858b094a04c072feadc5dfeecb15969e55457b434925/pygmtools-0.5.1.tar.gz
+[2024-04-27 21:09:45] INFO root fetch - processPackages [terminaltype]: executing diffoscope
+[2024-04-27 21:09:45] INFO root fetch - processPackages [terminaltype]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terminaltype-0.0.1.tar.gz tmp/terminaltype-0.0.2.tar.gz --markdown 20240427/t/terminaltype/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-27 21:09:45] INFO root fetch - processPackages [ffit]: Downloading https://files.pythonhosted.org/packages/5c/a5/01440e8ae879d8871c910617d1b8b7fda45a837376a592e7fcad2102bb91/ffit-0.1.0.tar.gz
+[2024-04-27 21:09:45] INFO root fetch - processPackages [airfold-common]: Downloading https://files.pythonhosted.org/packages/53/50/b2336ffe177237402f2e58e77e354a08e83c857ecff1718602133c4d0774/airfold_common-0.7.1-py3-none-any.whl
+[2024-04-27 21:09:45] INFO root fetch - processPackages [pygmtools]: Downloading https://files.pythonhosted.org/packages/e0/5e/9e7dd513bbda9b13682aabda6f94c0c19ada0e89b58e917357f6b206c0d4/pygmtools-0.5.2.tar.gz
+[2024-04-27 21:09:45] INFO root fetch - processPackages [ffit]: executing diffoscope
+[2024-04-27 21:09:45] INFO root fetch - processPackages [ffit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ffit-0.0.1.tar.gz tmp/ffit-0.1.0.tar.gz --markdown 20240427/f/ffit/0.0.1-0.1.0/README.md --exclude *.pyd
+[2024-04-27 21:09:45] INFO root fetch - processPackages [airfold-common]: executing diffoscope
+[2024-04-27 21:09:45] INFO root fetch - processPackages [airfold-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airfold_common-0.7.0-py3-none-any.whl.zip tmp/airfold_common-0.7.1-py3-none-any.whl.zip --markdown 20240427/a/airfold-common/0.7.0-0.7.1/README.md --exclude *.pyd
+[2024-04-27 21:09:45] INFO root fetch - processPackages [pygmtools]: executing diffoscope
+[2024-04-27 21:09:45] INFO root fetch - processPackages [pygmtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygmtools-0.5.1.tar.gz tmp/pygmtools-0.5.2.tar.gz --markdown 20240427/p/pygmtools/0.5.1-0.5.2/README.md --exclude *.pyd
+[2024-04-27 21:09:45] INFO root fetch - processPackages [terminaltype]: Remove: archive file [/home/abi/fetcher/tmp/terminaltype-0.0.1.tar.gz]
+[2024-04-27 21:09:45] INFO root fetch - processPackages [terminaltype]: Remove: archive file [/home/abi/fetcher/tmp/terminaltype-0.0.2.tar.gz]
+[2024-04-27 21:09:45] INFO root fetch - main [MainThread]: End processing [terminaltype]: success
+[2024-04-27 21:09:46] INFO root fetch - processPackages [ffit]: Remove: archive file [/home/abi/fetcher/tmp/ffit-0.0.1.tar.gz]
+[2024-04-27 21:09:46] INFO root fetch - processPackages [ffit]: Remove: archive file [/home/abi/fetcher/tmp/ffit-0.1.0.tar.gz]
+[2024-04-27 21:09:46] INFO root fetch - main [MainThread]: End processing [ffit]: success
+[2024-04-27 21:09:46] INFO root fetch - processPackages [airfold-common]: Remove: archive file [/home/abi/fetcher/tmp/airfold_common-0.7.0-py3-none-any.whl.zip]
+[2024-04-27 21:09:46] INFO root fetch - processPackages [airfold-common]: Remove: archive file [/home/abi/fetcher/tmp/airfold_common-0.7.1-py3-none-any.whl.zip]
+[2024-04-27 21:09:46] INFO root fetch - main [MainThread]: End processing [airfold-common]: success
+[2024-04-27 21:09:46] INFO root fetch - processPackages [pygmtools]: Remove: archive file [/home/abi/fetcher/tmp/pygmtools-0.5.1.tar.gz]
+[2024-04-27 21:09:46] INFO root fetch - processPackages [pygmtools]: Remove: archive file [/home/abi/fetcher/tmp/pygmtools-0.5.2.tar.gz]
+[2024-04-27 21:09:46] INFO root fetch - main [MainThread]: End processing [pygmtools]: success
+[2024-04-27 21:09:46] INFO root fetch - main [MainThread]: Store serial: [22961288]
