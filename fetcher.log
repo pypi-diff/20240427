@@ -12877,3 +12877,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 13:23:18] INFO root fetch - processPackages [pywxdump]: Remove: archive file [/home/abi/fetcher/tmp/pywxdump-3.0.8.tar.gz]
 [2024-04-27 13:23:18] INFO root fetch - main [MainThread]: End processing [pywxdump]: success
 [2024-04-27 13:23:18] INFO root fetch - main [MainThread]: Store serial: [22958214]
+[2024-04-27 13:25:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958214]
+[2024-04-27 13:25:27] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-27 13:25:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pywxdump
+[2024-04-27 13:25:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-ads-client
+[2024-04-27 13:25:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hurray
+[2024-04-27 13:25:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torchrl-nightly
+[2024-04-27 13:25:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kandinsky
+[2024-04-27 13:25:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: state-graph
+[2024-04-27 13:25:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: CheeseAPI-Websocket
+[2024-04-27 13:25:27] INFO root fetch - processPackages [hurray]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-04-27 13:25:27] INFO root fetch - processPackages [pywxdump]: New version: [3.0.8] Old Version: [3.0.6]
+[2024-04-27 13:25:27] INFO root fetch - processPackages [hurray]: Downloading https://files.pythonhosted.org/packages/83/f4/11e299bf40404f7888d9f2f5dae0977a820a0e057334d8c16685f2f19c97/hurray-1.0.0.tar.gz
+[2024-04-27 13:25:27] INFO root fetch - processPackages [torchrl-nightly]: New version: [2024.4.3] Old Version: [2024.4.27]
+[2024-04-27 13:25:27] INFO root fetch - processPackages [kandinsky]: New version: [2.7.2] Old Version: [2.7.1]
+[2024-04-27 13:25:27] INFO root fetch - processPackages [CheeseAPI-Websocket]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-27 13:25:27] WARNING root fetch - processPackages [py-ads-client]: Skipping, unable to determine old version
+[2024-04-27 13:25:27] INFO root fetch - main [MainThread]: End processing [py-ads-client] error
+[2024-04-27 13:25:27] INFO root fetch - processPackages [state-graph]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-27 13:25:27] INFO root fetch - processPackages [pywxdump]: Downloading https://files.pythonhosted.org/packages/cb/78/6d75d5e0ed020d3f8e69339ff32d4be7f31fcca98e6208cff1ce6c179e86/pywxdump-3.0.6.tar.gz
+[2024-04-27 13:25:27] INFO root fetch - processPackages [torchrl-nightly]: Downloading https://files.pythonhosted.org/packages/0b/e6/d93b2e2239e7a59b9150b29705d9a88927325f9cddfbe713341b2053114e/torchrl_nightly-2024.4.27-cp39-cp39-manylinux1_x86_64.whl
+[2024-04-27 13:25:27] INFO root fetch - processPackages [hurray]: Downloading https://files.pythonhosted.org/packages/32/21/8c06d6b5444ddf2826eb9d0781471fe3ccf6f8839871ea82de7b1fcd47ee/hurray-1.1.0.tar.gz
+[2024-04-27 13:25:27] INFO root fetch - processPackages [state-graph]: Downloading https://files.pythonhosted.org/packages/eb/7d/2a473be0c9abed4e37602b2d23ccb1db46578ce99f53298b327a7f9cdda7/state_graph-0.1.0.tar.gz
+[2024-04-27 13:25:27] INFO root fetch - processPackages [hurray]: executing diffoscope
+[2024-04-27 13:25:27] INFO root fetch - processPackages [hurray]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hurray-1.0.0.tar.gz tmp/hurray-1.1.0.tar.gz --markdown 20240427/h/hurray/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-04-27 13:25:28] INFO root fetch - processPackages [CheeseAPI-Websocket]: Downloading https://files.pythonhosted.org/packages/5b/4d/f008167b3ebfbdf8b3e9442ccf3002935f3a03491ee5cadf7b6c37caa3b8/cheeseapi_websocket-1.0.0.tar.gz
+[2024-04-27 13:25:28] INFO root fetch - processPackages [pywxdump]: Downloading https://files.pythonhosted.org/packages/0c/2c/b244b3ba6c2cd4dc567d66ab4b6a9bca181dd34007f111e480eb1fb2f28b/pywxdump-3.0.8.tar.gz
+[2024-04-27 13:25:28] INFO root fetch - processPackages [kandinsky]: Downloading https://files.pythonhosted.org/packages/f0/ff/2e0fb6f22d75efca88e5c9f03393ea6d434e9f687cee042806854d053a37/kandinsky-2.7.1.tar.gz
+[2024-04-27 13:25:28] INFO root fetch - processPackages [state-graph]: Downloading https://files.pythonhosted.org/packages/06/84/60a9754e82e2a2938242671de85b3cc1d6238e4f5445aae0dba2cff6673c/state_graph-0.1.1.tar.gz
+[2024-04-27 13:25:28] INFO root fetch - processPackages [CheeseAPI-Websocket]: Downloading https://files.pythonhosted.org/packages/6d/e3/98b3e67f32377a78103a3510a74ef1e26cb0cc31c8245a002497af01aa5d/cheeseapi_websocket-1.0.1.tar.gz
+[2024-04-27 13:25:28] INFO root fetch - processPackages [pywxdump]: executing diffoscope
+[2024-04-27 13:25:28] INFO root fetch - processPackages [pywxdump]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywxdump-3.0.6.tar.gz tmp/pywxdump-3.0.8.tar.gz --markdown 20240427/p/pywxdump/3.0.6-3.0.8/README.md --exclude *.pyd
+[2024-04-27 13:25:28] INFO root fetch - processPackages [state-graph]: executing diffoscope
+[2024-04-27 13:25:28] INFO root fetch - processPackages [state-graph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/state_graph-0.1.0.tar.gz tmp/state_graph-0.1.1.tar.gz --markdown 20240427/s/state-graph/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-27 13:25:28] INFO root fetch - processPackages [kandinsky]: Downloading https://files.pythonhosted.org/packages/6f/2d/8c051db4c17ce68578e7194f688e9fbcb76460e81310b4a1f6df39ee336d/kandinsky-2.7.2.tar.gz
+[2024-04-27 13:25:28] INFO root fetch - processPackages [hurray]: Remove: archive file [/home/abi/fetcher/tmp/hurray-1.0.0.tar.gz]
+[2024-04-27 13:25:28] INFO root fetch - processPackages [hurray]: Remove: archive file [/home/abi/fetcher/tmp/hurray-1.1.0.tar.gz]
+[2024-04-27 13:25:28] INFO root fetch - main [MainThread]: End processing [hurray]: success
+[2024-04-27 13:25:28] INFO root fetch - processPackages [CheeseAPI-Websocket]: executing diffoscope
+[2024-04-27 13:25:28] INFO root fetch - processPackages [CheeseAPI-Websocket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cheeseapi_websocket-1.0.0.tar.gz tmp/cheeseapi_websocket-1.0.1.tar.gz --markdown 20240427/C/CheeseAPI-Websocket/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-27 13:25:28] INFO root fetch - processPackages [kandinsky]: executing diffoscope
+[2024-04-27 13:25:28] INFO root fetch - processPackages [kandinsky]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kandinsky-2.7.1.tar.gz tmp/kandinsky-2.7.2.tar.gz --markdown 20240427/k/kandinsky/2.7.1-2.7.2/README.md --exclude *.pyd
+[2024-04-27 13:25:28] INFO root fetch - processPackages [state-graph]: Remove: archive file [/home/abi/fetcher/tmp/state_graph-0.1.0.tar.gz]
+[2024-04-27 13:25:28] INFO root fetch - processPackages [state-graph]: Remove: archive file [/home/abi/fetcher/tmp/state_graph-0.1.1.tar.gz]
+[2024-04-27 13:25:28] INFO root fetch - main [MainThread]: End processing [state-graph]: success
+[2024-04-27 13:25:29] INFO root fetch - processPackages [CheeseAPI-Websocket]: Remove: archive file [/home/abi/fetcher/tmp/cheeseapi_websocket-1.0.0.tar.gz]
+[2024-04-27 13:25:29] INFO root fetch - processPackages [CheeseAPI-Websocket]: Remove: archive file [/home/abi/fetcher/tmp/cheeseapi_websocket-1.0.1.tar.gz]
+[2024-04-27 13:25:29] INFO root fetch - main [MainThread]: End processing [CheeseAPI-Websocket]: success
+[2024-04-27 13:25:29] INFO root fetch - processPackages [kandinsky]: Remove: archive file [/home/abi/fetcher/tmp/kandinsky-2.7.1.tar.gz]
+[2024-04-27 13:25:29] INFO root fetch - processPackages [kandinsky]: Remove: archive file [/home/abi/fetcher/tmp/kandinsky-2.7.2.tar.gz]
+[2024-04-27 13:25:29] INFO root fetch - main [MainThread]: End processing [kandinsky]: success
+[2024-04-27 13:25:29] INFO root fetch - processPackages [torchrl-nightly]: Downloading https://files.pythonhosted.org/packages/0a/bc/2c07e7175cc502c87c076a48a470ce3f477b2d7db9811311b3cedcc2e17b/torchrl_nightly-2024.4.3-cp39-cp39-win_amd64.whl
+[2024-04-27 13:25:29] INFO root fetch - processPackages [torchrl-nightly]: executing diffoscope
+[2024-04-27 13:25:29] INFO root fetch - processPackages [torchrl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchrl_nightly-2024.4.27-cp39-cp39-manylinux1_x86_64.whl.zip tmp/torchrl_nightly-2024.4.3-cp39-cp39-win_amd64.whl.zip --markdown 20240427/t/torchrl-nightly/2024.4.27-2024.4.3/README.md --exclude *.pyd
+[2024-04-27 13:25:33] INFO root fetch - processPackages [torchrl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchrl_nightly-2024.4.27-cp39-cp39-manylinux1_x86_64.whl.zip]
+[2024-04-27 13:25:33] INFO root fetch - processPackages [torchrl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchrl_nightly-2024.4.3-cp39-cp39-win_amd64.whl.zip]
+[2024-04-27 13:25:33] INFO root fetch - main [MainThread]: End processing [torchrl-nightly]: success
+[2024-04-27 13:25:43] INFO root fetch - processPackages [pywxdump]: Remove: archive file [/home/abi/fetcher/tmp/pywxdump-3.0.6.tar.gz]
+[2024-04-27 13:25:43] INFO root fetch - processPackages [pywxdump]: Remove: archive file [/home/abi/fetcher/tmp/pywxdump-3.0.8.tar.gz]
+[2024-04-27 13:25:43] INFO root fetch - main [MainThread]: End processing [pywxdump]: success
+[2024-04-27 13:25:43] INFO root fetch - main [MainThread]: Store serial: [22958253]
