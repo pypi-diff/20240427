@@ -21588,3 +21588,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 23:40:53] INFO root fetch - processPackages [complexipy]: Remove: archive file [/home/abi/fetcher/tmp/complexipy-0.3.3-cp311-cp311-manylinux_2_17_s390x.manylinux2014_s390x.whl.zip]
 [2024-04-27 23:40:53] INFO root fetch - main [MainThread]: End processing [complexipy]: success
 [2024-04-27 23:40:53] INFO root fetch - main [MainThread]: Store serial: [22962178]
+[2024-04-27 23:42:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962178]
+[2024-04-27 23:43:02] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 23:43:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: poetry-first-project
+[2024-04-27 23:43:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arctix
+[2024-04-27 23:43:02] WARNING root fetch - processPackages [poetry-first-project]: Skipping, unable to determine old version
+[2024-04-27 23:43:02] INFO root fetch - main [MainThread]: End processing [poetry-first-project] error
+[2024-04-27 23:43:02] INFO root fetch - processPackages [arctix]: New version: [0.0.3a1] Old Version: [0.0.3a0]
+[2024-04-27 23:43:02] INFO root fetch - processPackages [arctix]: Downloading https://files.pythonhosted.org/packages/4f/1f/3561e1269756a82588509b793f8df9c7e9987ed4fe4b1250b0e747201507/arctix-0.0.3a0.tar.gz
+[2024-04-27 23:43:03] INFO root fetch - processPackages [arctix]: Downloading https://files.pythonhosted.org/packages/bf/db/f63252207fcd181377e6dacb22df00dba69c751774ec2031df1fe69b45d5/arctix-0.0.3a1.tar.gz
+[2024-04-27 23:43:03] INFO root fetch - processPackages [arctix]: executing diffoscope
+[2024-04-27 23:43:03] INFO root fetch - processPackages [arctix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arctix-0.0.3a0.tar.gz tmp/arctix-0.0.3a1.tar.gz --markdown 20240427/a/arctix/0.0.3a0-0.0.3a1/README.md --exclude *.pyd
+[2024-04-27 23:43:03] INFO root fetch - processPackages [arctix]: Remove: archive file [/home/abi/fetcher/tmp/arctix-0.0.3a0.tar.gz]
+[2024-04-27 23:43:03] INFO root fetch - processPackages [arctix]: Remove: archive file [/home/abi/fetcher/tmp/arctix-0.0.3a1.tar.gz]
+[2024-04-27 23:43:03] INFO root fetch - main [MainThread]: End processing [arctix]: success
+[2024-04-27 23:43:03] INFO root fetch - main [MainThread]: Store serial: [22962235]
