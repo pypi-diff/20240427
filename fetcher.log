@@ -16619,3 +16619,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 17:30:19] INFO root fetch - processPackages [ccxt]: Remove: archive file [/home/abi/fetcher/tmp/ccxt-4.3.9.tar.gz]
 [2024-04-27 17:30:19] INFO root fetch - main [MainThread]: End processing [ccxt]: success
 [2024-04-27 17:30:19] INFO root fetch - main [MainThread]: Store serial: [22959838]
+[2024-04-27 17:32:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959838]
+[2024-04-27 17:32:30] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 17:32:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: BoatBuddy
+[2024-04-27 17:32:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: careamics-portfolio
+[2024-04-27 17:32:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ai-project-setup
+[2024-04-27 17:32:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: autocortext-py
+[2024-04-27 17:32:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: letmedoit
+[2024-04-27 17:32:30] WARNING root fetch - processPackages [autocortext-py]: Skipping, unable to determine old version
+[2024-04-27 17:32:30] INFO root fetch - main [MainThread]: End processing [autocortext-py] error
+[2024-04-27 17:32:30] INFO root fetch - processPackages [BoatBuddy]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-04-27 17:32:30] WARNING root fetch - processPackages [ai-project-setup]: Skipping, unable to determine old version
+[2024-04-27 17:32:30] INFO root fetch - main [MainThread]: End processing [ai-project-setup] error
+[2024-04-27 17:32:30] INFO root fetch - processPackages [careamics-portfolio]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 17:32:30] INFO root fetch - processPackages [BoatBuddy]: Downloading https://files.pythonhosted.org/packages/bf/4d/9e321cfe04d1c06153ff54a1253eda867fdd54ee3739262e5d7cfc51b1c7/boatbuddy-0.9.4.tar.gz
+[2024-04-27 17:32:31] INFO root fetch - processPackages [letmedoit]: New version: [2.1.9] Old Version: [2.1.84]
+[2024-04-27 17:32:31] INFO root fetch - processPackages [careamics-portfolio]: Downloading https://files.pythonhosted.org/packages/23/be/0bdf23edebfeecb969b03403b4bc6e59a743d34ad7b3f72ea29c3eea46d4/careamics_portfolio-0.0.8.tar.gz
+[2024-04-27 17:32:31] INFO root fetch - processPackages [letmedoit]: Downloading https://files.pythonhosted.org/packages/da/38/47ccf8be6175abfa38382369b41e013348998e06148696ca942210978282/letmedoit-2.1.84.tar.gz
+[2024-04-27 17:32:31] INFO root fetch - processPackages [BoatBuddy]: Downloading https://files.pythonhosted.org/packages/fd/f5/139785198b6a0e3c5ca20dae7046eff9e2b660f9a02f1ecd73546dfff321/boatbuddy-0.9.5.tar.gz
+[2024-04-27 17:32:31] INFO root fetch - processPackages [careamics-portfolio]: Downloading https://files.pythonhosted.org/packages/8f/a8/756d516ffb132a6a4540aa8f3e5b5161789c20a787519ecbc4a153bda4ed/careamics_portfolio-0.0.9.tar.gz
+[2024-04-27 17:32:31] INFO root fetch - processPackages [careamics-portfolio]: executing diffoscope
+[2024-04-27 17:32:31] INFO root fetch - processPackages [careamics-portfolio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/careamics_portfolio-0.0.8.tar.gz tmp/careamics_portfolio-0.0.9.tar.gz --markdown 20240427/c/careamics-portfolio/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 17:32:31] INFO root fetch - processPackages [BoatBuddy]: executing diffoscope
+[2024-04-27 17:32:31] INFO root fetch - processPackages [BoatBuddy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boatbuddy-0.9.4.tar.gz tmp/boatbuddy-0.9.5.tar.gz --markdown 20240427/B/BoatBuddy/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-04-27 17:32:32] INFO root fetch - processPackages [careamics-portfolio]: Remove: archive file [/home/abi/fetcher/tmp/careamics_portfolio-0.0.8.tar.gz]
+[2024-04-27 17:32:32] INFO root fetch - processPackages [careamics-portfolio]: Remove: archive file [/home/abi/fetcher/tmp/careamics_portfolio-0.0.9.tar.gz]
+[2024-04-27 17:32:32] INFO root fetch - main [MainThread]: End processing [careamics-portfolio]: success
+[2024-04-27 17:32:33] INFO root fetch - processPackages [letmedoit]: Downloading https://files.pythonhosted.org/packages/07/dc/33e8330ea1750ecb1060d75f8570d57444acbe7dc8425a53dcd3ec47b037/letmedoit-2.1.9.tar.gz
+[2024-04-27 17:32:35] INFO root fetch - processPackages [letmedoit]: executing diffoscope
+[2024-04-27 17:32:35] INFO root fetch - processPackages [letmedoit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/letmedoit-2.1.84.tar.gz tmp/letmedoit-2.1.9.tar.gz --markdown 20240427/l/letmedoit/2.1.84-2.1.9/README.md --exclude *.pyd
+[2024-04-27 17:32:37] INFO root fetch - processPackages [letmedoit]: Remove: archive file [/home/abi/fetcher/tmp/letmedoit-2.1.84.tar.gz]
+[2024-04-27 17:32:37] INFO root fetch - processPackages [letmedoit]: Remove: archive file [/home/abi/fetcher/tmp/letmedoit-2.1.9.tar.gz]
+[2024-04-27 17:32:37] INFO root fetch - main [MainThread]: End processing [letmedoit]: success
+[2024-04-27 17:32:38] INFO root fetch - processPackages [BoatBuddy]: Remove: archive file [/home/abi/fetcher/tmp/boatbuddy-0.9.4.tar.gz]
+[2024-04-27 17:32:38] INFO root fetch - processPackages [BoatBuddy]: Remove: archive file [/home/abi/fetcher/tmp/boatbuddy-0.9.5.tar.gz]
+[2024-04-27 17:32:38] INFO root fetch - main [MainThread]: End processing [BoatBuddy]: success
+[2024-04-27 17:32:38] INFO root fetch - main [MainThread]: Store serial: [22959869]
