@@ -17488,3 +17488,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 18:32:39] INFO root fetch - processPackages [shelloracle]: Remove: archive file [/home/abi/fetcher/tmp/shelloracle-1.1.1.tar.gz]
 [2024-04-27 18:32:39] INFO root fetch - main [MainThread]: End processing [shelloracle]: success
 [2024-04-27 18:32:39] INFO root fetch - main [MainThread]: Store serial: [22960201]
+[2024-04-27 18:34:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960201]
+[2024-04-27 18:34:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 18:34:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: prisoners-dilemma-sdk
+[2024-04-27 18:34:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bifabrik
+[2024-04-27 18:34:52] INFO root fetch - processPackages [prisoners-dilemma-sdk]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-27 18:34:53] INFO root fetch - processPackages [prisoners-dilemma-sdk]: Downloading https://files.pythonhosted.org/packages/dc/32/f31956cad69faf9c9538efe5a1ba921962ff92ac456201c6f969046379b1/prisoners_dilemma_sdk-0.0.2.tar.gz
+[2024-04-27 18:34:53] INFO root fetch - processPackages [bifabrik]: New version: [0.7.0] Old Version: [0.6.1]
+[2024-04-27 18:34:53] INFO root fetch - processPackages [prisoners-dilemma-sdk]: Downloading https://files.pythonhosted.org/packages/6a/3a/74f51d762c58085c31ed471957c384d65a275c2dff2d36c0e80394809610/prisoners_dilemma_sdk-0.0.3.tar.gz
+[2024-04-27 18:34:53] INFO root fetch - processPackages [bifabrik]: Downloading https://files.pythonhosted.org/packages/2b/11/69e1214cac8a7081a4deaf84ec5d3acac581237a44bfc9d161aceb673ef5/bifabrik-0.6.1.tar.gz
+[2024-04-27 18:34:53] INFO root fetch - processPackages [prisoners-dilemma-sdk]: executing diffoscope
+[2024-04-27 18:34:53] INFO root fetch - processPackages [prisoners-dilemma-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prisoners_dilemma_sdk-0.0.2.tar.gz tmp/prisoners_dilemma_sdk-0.0.3.tar.gz --markdown 20240427/p/prisoners-dilemma-sdk/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-27 18:34:53] INFO root fetch - processPackages [bifabrik]: Downloading https://files.pythonhosted.org/packages/19/26/edfaf1eb2be1afd1cf3e6361ff8daebac81b71f69bb3079a48ba4e09987e/bifabrik-0.7.0.tar.gz
+[2024-04-27 18:34:53] INFO root fetch - processPackages [bifabrik]: executing diffoscope
+[2024-04-27 18:34:53] INFO root fetch - processPackages [bifabrik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bifabrik-0.6.1.tar.gz tmp/bifabrik-0.7.0.tar.gz --markdown 20240427/b/bifabrik/0.6.1-0.7.0/README.md --exclude *.pyd
+[2024-04-27 18:34:53] INFO root fetch - processPackages [prisoners-dilemma-sdk]: Remove: archive file [/home/abi/fetcher/tmp/prisoners_dilemma_sdk-0.0.2.tar.gz]
+[2024-04-27 18:34:53] INFO root fetch - processPackages [prisoners-dilemma-sdk]: Remove: archive file [/home/abi/fetcher/tmp/prisoners_dilemma_sdk-0.0.3.tar.gz]
+[2024-04-27 18:34:53] INFO root fetch - main [MainThread]: End processing [prisoners-dilemma-sdk]: success
+[2024-04-27 18:34:54] INFO root fetch - processPackages [bifabrik]: Remove: archive file [/home/abi/fetcher/tmp/bifabrik-0.6.1.tar.gz]
+[2024-04-27 18:34:54] INFO root fetch - processPackages [bifabrik]: Remove: archive file [/home/abi/fetcher/tmp/bifabrik-0.7.0.tar.gz]
+[2024-04-27 18:34:54] INFO root fetch - main [MainThread]: End processing [bifabrik]: success
+[2024-04-27 18:34:54] INFO root fetch - main [MainThread]: Store serial: [22960209]
