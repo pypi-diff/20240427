@@ -7877,3 +7877,24 @@ EOFError: EOF read where object expected
 [2024-04-27 05:55:47] INFO root fetch - processPackages [odoo-addon-website-sale-resource-booking]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_website_sale_resource_booking-15.0.1.0.0.9-py3-none-any.whl.zip]
 [2024-04-27 05:55:47] INFO root fetch - main [MainThread]: End processing [odoo-addon-website-sale-resource-booking]: success
 [2024-04-27 05:55:47] INFO root fetch - main [MainThread]: Store serial: [22956277]
+[2024-04-27 05:57:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956277]
+[2024-04-27 05:57:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 05:57:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: core-pro
+[2024-04-27 05:57:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: CodeBat
+[2024-04-27 05:57:56] INFO root fetch - processPackages [core-pro]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 05:57:56] INFO root fetch - processPackages [CodeBat]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-27 05:57:56] INFO root fetch - processPackages [core-pro]: Downloading https://files.pythonhosted.org/packages/dc/86/b3c6a8d290835afc0d7b1b25dde8bd558795bdce03403c0c90b2e7da9dff/core_pro-0.0.8.tar.gz
+[2024-04-27 05:57:56] INFO root fetch - processPackages [CodeBat]: Downloading https://files.pythonhosted.org/packages/9e/84/4b38bc0fa797fc91332e44b803167644e53014d66e4fb4629187fe4f4dec/codebat-0.0.1.tar.gz
+[2024-04-27 05:57:56] INFO root fetch - processPackages [core-pro]: Downloading https://files.pythonhosted.org/packages/6f/4e/6f2935c9906443317c8d830ec5b4f1c67d988d87345c4ae116a0a613c079/core_pro-0.0.9.tar.gz
+[2024-04-27 05:57:56] INFO root fetch - processPackages [core-pro]: executing diffoscope
+[2024-04-27 05:57:56] INFO root fetch - processPackages [core-pro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/core_pro-0.0.8.tar.gz tmp/core_pro-0.0.9.tar.gz --markdown 20240427/c/core-pro/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 05:57:57] INFO root fetch - processPackages [CodeBat]: Downloading https://files.pythonhosted.org/packages/06/c4/a8ce181297293d5b78cb071d42fe8a6b40e54a7167d8fa1493cc0688f4af/codebat-0.0.2.tar.gz
+[2024-04-27 05:57:57] INFO root fetch - processPackages [CodeBat]: executing diffoscope
+[2024-04-27 05:57:57] INFO root fetch - processPackages [CodeBat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codebat-0.0.1.tar.gz tmp/codebat-0.0.2.tar.gz --markdown 20240427/C/CodeBat/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-27 05:57:57] INFO root fetch - processPackages [core-pro]: Remove: archive file [/home/abi/fetcher/tmp/core_pro-0.0.8.tar.gz]
+[2024-04-27 05:57:57] INFO root fetch - processPackages [core-pro]: Remove: archive file [/home/abi/fetcher/tmp/core_pro-0.0.9.tar.gz]
+[2024-04-27 05:57:57] INFO root fetch - main [MainThread]: End processing [core-pro]: success
+[2024-04-27 05:57:57] INFO root fetch - processPackages [CodeBat]: Remove: archive file [/home/abi/fetcher/tmp/codebat-0.0.1.tar.gz]
+[2024-04-27 05:57:57] INFO root fetch - processPackages [CodeBat]: Remove: archive file [/home/abi/fetcher/tmp/codebat-0.0.2.tar.gz]
+[2024-04-27 05:57:57] INFO root fetch - main [MainThread]: End processing [CodeBat]: success
+[2024-04-27 05:57:57] INFO root fetch - main [MainThread]: Store serial: [22956283]
