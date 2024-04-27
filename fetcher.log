@@ -10401,3 +10401,28 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 09:27:44] INFO root fetch - processPackages [yes-chef]: Remove: archive file [/home/abi/fetcher/tmp/yes_chef-0.8.2.tar.gz]
 [2024-04-27 09:27:44] INFO root fetch - main [MainThread]: End processing [yes-chef]: success
 [2024-04-27 09:27:44] INFO root fetch - main [MainThread]: Store serial: [22957221]
+[2024-04-27 09:29:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957221]
+[2024-04-27 09:29:54] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-27 09:31:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957221]
+[2024-04-27 09:31:59] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-27 09:34:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957221]
+[2024-04-27 09:34:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 09:34:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fisspy
+[2024-04-27 09:34:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fin-maestro-kin
+[2024-04-27 09:34:05] INFO root fetch - processPackages [fisspy]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-04-27 09:34:05] INFO root fetch - processPackages [fisspy]: Downloading https://files.pythonhosted.org/packages/a4/c6/84ed740d705771502c288ed1554924b3ff205254d81119aa0530c76b1456/fisspy-1.0.7.tar.gz
+[2024-04-27 09:34:05] INFO root fetch - processPackages [fin-maestro-kin]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-04-27 09:34:05] INFO root fetch - processPackages [fin-maestro-kin]: Downloading https://files.pythonhosted.org/packages/b3/81/b391c8c129477ff5dfbac3b05273a3f6fd091677505032a7807f28ca4521/fin_maestro_kin-0.2.5.tar.gz
+[2024-04-27 09:34:05] INFO root fetch - processPackages [fisspy]: Downloading https://files.pythonhosted.org/packages/6d/ec/d7dcb1b997b9899d8c28b6809f593ef5f9f1920059aa4da3dd3f3f07a842/fisspy-1.0.8.tar.gz
+[2024-04-27 09:34:05] INFO root fetch - processPackages [fisspy]: executing diffoscope
+[2024-04-27 09:34:05] INFO root fetch - processPackages [fisspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fisspy-1.0.7.tar.gz tmp/fisspy-1.0.8.tar.gz --markdown 20240427/f/fisspy/1.0.7-1.0.8/README.md --exclude *.pyd
+[2024-04-27 09:34:05] INFO root fetch - processPackages [fin-maestro-kin]: Downloading https://files.pythonhosted.org/packages/6d/eb/cac4a595e7f5b9c03046901a7c318fefc9e1fdfbea0c6611380f17462a76/fin_maestro_kin-0.2.6.tar.gz
+[2024-04-27 09:34:06] INFO root fetch - processPackages [fin-maestro-kin]: executing diffoscope
+[2024-04-27 09:34:06] INFO root fetch - processPackages [fin-maestro-kin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fin_maestro_kin-0.2.5.tar.gz tmp/fin_maestro_kin-0.2.6.tar.gz --markdown 20240427/f/fin-maestro-kin/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-04-27 09:34:06] INFO root fetch - processPackages [fisspy]: Remove: archive file [/home/abi/fetcher/tmp/fisspy-1.0.7.tar.gz]
+[2024-04-27 09:34:06] INFO root fetch - processPackages [fisspy]: Remove: archive file [/home/abi/fetcher/tmp/fisspy-1.0.8.tar.gz]
+[2024-04-27 09:34:06] INFO root fetch - main [MainThread]: End processing [fisspy]: success
+[2024-04-27 09:34:06] INFO root fetch - processPackages [fin-maestro-kin]: Remove: archive file [/home/abi/fetcher/tmp/fin_maestro_kin-0.2.5.tar.gz]
+[2024-04-27 09:34:06] INFO root fetch - processPackages [fin-maestro-kin]: Remove: archive file [/home/abi/fetcher/tmp/fin_maestro_kin-0.2.6.tar.gz]
+[2024-04-27 09:34:06] INFO root fetch - main [MainThread]: End processing [fin-maestro-kin]: success
+[2024-04-27 09:34:06] INFO root fetch - main [MainThread]: Store serial: [22957227]
