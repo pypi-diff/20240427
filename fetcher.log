@@ -19015,3 +19015,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 20:13:41] INFO root fetch - processPackages [data-prep-lab-kfp]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_lab_kfp-0.1.6.tar.gz]
 [2024-04-27 20:13:41] INFO root fetch - main [MainThread]: End processing [data-prep-lab-kfp]: success
 [2024-04-27 20:13:41] INFO root fetch - main [MainThread]: Store serial: [22961006]
+[2024-04-27 20:15:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961006]
+[2024-04-27 20:15:54] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 20:15:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: data-prep-lab-kfp
+[2024-04-27 20:15:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdklabs.ecs-codedeploy
+[2024-04-27 20:15:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fluxional
+[2024-04-27 20:15:55] INFO root fetch - processPackages [data-prep-lab-kfp]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-27 20:15:55] INFO root fetch - processPackages [cdklabs.ecs-codedeploy]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-27 20:15:55] INFO root fetch - processPackages [fluxional]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-27 20:15:55] INFO root fetch - processPackages [data-prep-lab-kfp]: Downloading https://files.pythonhosted.org/packages/d0/8f/715e1d415a17a2821b5e4bfeb39c4765fb96fed79011666cf938283787ce/data_prep_lab_kfp-0.1.5.tar.gz
+[2024-04-27 20:15:55] INFO root fetch - processPackages [cdklabs.ecs-codedeploy]: Downloading https://files.pythonhosted.org/packages/c6/34/cef791c667d067a7923df4169adb57934467590c903d5f58c9e5be5a7759/cdklabs.ecs-codedeploy-0.0.98.tar.gz
+[2024-04-27 20:15:55] INFO root fetch - processPackages [fluxional]: Downloading https://files.pythonhosted.org/packages/4f/ca/f4ca8f6071b2ee3c646f2522cd0285ab4d332660d00ac5fa0d637a46d054/fluxional-0.1.1.tar.gz
+[2024-04-27 20:15:55] INFO root fetch - processPackages [data-prep-lab-kfp]: Downloading https://files.pythonhosted.org/packages/2a/b9/bcf54d5b3ae78d05342a1fd62f5d7d52734867d08109cefa1b30b5329ccd/data_prep_lab_kfp-0.1.6.tar.gz
+[2024-04-27 20:15:55] INFO root fetch - processPackages [cdklabs.ecs-codedeploy]: Downloading https://files.pythonhosted.org/packages/32/d6/43cc31093e5335204bbb8629fe11154ff7ebd2508f020ee399403b503b2c/cdklabs.ecs-codedeploy-0.0.99.tar.gz
+[2024-04-27 20:15:55] INFO root fetch - processPackages [data-prep-lab-kfp]: executing diffoscope
+[2024-04-27 20:15:55] INFO root fetch - processPackages [data-prep-lab-kfp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_prep_lab_kfp-0.1.5.tar.gz tmp/data_prep_lab_kfp-0.1.6.tar.gz --markdown 20240427/d/data-prep-lab-kfp/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-27 20:15:55] INFO root fetch - processPackages [fluxional]: Downloading https://files.pythonhosted.org/packages/00/c8/6fbe078868d84e6316539e3e65778f1c1f7455881dd2c28e86c40aa4076f/fluxional-0.1.2.tar.gz
+[2024-04-27 20:15:55] INFO root fetch - processPackages [cdklabs.ecs-codedeploy]: executing diffoscope
+[2024-04-27 20:15:55] INFO root fetch - processPackages [cdklabs.ecs-codedeploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.ecs-codedeploy-0.0.98.tar.gz tmp/cdklabs.ecs-codedeploy-0.0.99.tar.gz --markdown 20240427/c/cdklabs.ecs-codedeploy/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-27 20:15:55] INFO root fetch - processPackages [fluxional]: executing diffoscope
+[2024-04-27 20:15:55] INFO root fetch - processPackages [fluxional]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluxional-0.1.1.tar.gz tmp/fluxional-0.1.2.tar.gz --markdown 20240427/f/fluxional/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-27 20:15:56] INFO root fetch - processPackages [fluxional]: Remove: archive file [/home/abi/fetcher/tmp/fluxional-0.1.1.tar.gz]
+[2024-04-27 20:15:56] INFO root fetch - processPackages [data-prep-lab-kfp]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_lab_kfp-0.1.5.tar.gz]
+[2024-04-27 20:15:56] INFO root fetch - processPackages [fluxional]: Remove: archive file [/home/abi/fetcher/tmp/fluxional-0.1.2.tar.gz]
+[2024-04-27 20:15:56] INFO root fetch - processPackages [data-prep-lab-kfp]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_lab_kfp-0.1.6.tar.gz]
+[2024-04-27 20:15:56] INFO root fetch - main [MainThread]: End processing [fluxional]: success
+[2024-04-27 20:15:56] INFO root fetch - main [MainThread]: End processing [data-prep-lab-kfp]: success
+[2024-04-27 20:15:56] INFO root fetch - processPackages [cdklabs.ecs-codedeploy]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.ecs-codedeploy-0.0.98.tar.gz]
+[2024-04-27 20:15:56] INFO root fetch - processPackages [cdklabs.ecs-codedeploy]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.ecs-codedeploy-0.0.99.tar.gz]
+[2024-04-27 20:15:56] INFO root fetch - main [MainThread]: End processing [cdklabs.ecs-codedeploy]: success
+[2024-04-27 20:15:56] INFO root fetch - main [MainThread]: Store serial: [22961015]
