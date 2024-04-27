@@ -10036,3 +10036,42 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 08:52:47] INFO root fetch - processPackages [kytest]: Remove: archive file [/home/abi/fetcher/tmp/kytest-0.0.9.tar.gz]
 [2024-04-27 08:52:47] INFO root fetch - main [MainThread]: End processing [kytest]: success
 [2024-04-27 08:52:47] INFO root fetch - main [MainThread]: Store serial: [22957013]
+[2024-04-27 08:54:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957013]
+[2024-04-27 08:54:56] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 08:54:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyMLRS
+[2024-04-27 08:54:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulsesec
+[2024-04-27 08:54:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mojo-credentials
+[2024-04-27 08:54:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: shin
+[2024-04-27 08:54:56] INFO root fetch - processPackages [PyMLRS]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-27 08:54:56] INFO root fetch - processPackages [pulsesec]: New version: [0.0.3] Old Version: [0.0.1]
+[2024-04-27 08:54:56] INFO root fetch - processPackages [PyMLRS]: Downloading https://files.pythonhosted.org/packages/4d/2e/518b2f215480e7b52b4f50f04172e15056549ac646fe9a7a039aa7b59edc/pymlrs-0.0.2.tar.gz
+[2024-04-27 08:54:56] INFO root fetch - processPackages [pulsesec]: Downloading https://files.pythonhosted.org/packages/4a/12/51d72983be844d8837f7c6fa09b07a3afb0c28de1a53cf83455ed213805e/pulsesec-0.0.1.tar.gz
+[2024-04-27 08:54:56] INFO root fetch - processPackages [shin]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-27 08:54:56] INFO root fetch - processPackages [mojo-credentials]: New version: [1.3.5] Old Version: [1.3.4]
+[2024-04-27 08:54:56] INFO root fetch - processPackages [mojo-credentials]: Downloading https://files.pythonhosted.org/packages/57/a1/59835f7fd11e0f5b021bafdc4f41778d0dc8d3b97003f73d51d17040d643/mojo_credentials-1.3.4.tar.gz
+[2024-04-27 08:54:56] INFO root fetch - processPackages [shin]: Downloading https://files.pythonhosted.org/packages/bb/13/b2f9b7678f68a8951fa6e8b3b2663ca4ebd0689c8673c8133c33f80ef17b/shin-0.1.0.tar.gz
+[2024-04-27 08:54:56] INFO root fetch - processPackages [pulsesec]: Downloading https://files.pythonhosted.org/packages/08/b7/f3d6273ed2ff96b3706cefd3f81bf554e9e0ee46ae427bab25d11b593878/pulsesec-0.0.3.tar.gz
+[2024-04-27 08:54:56] INFO root fetch - processPackages [pulsesec]: executing diffoscope
+[2024-04-27 08:54:56] INFO root fetch - processPackages [pulsesec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulsesec-0.0.1.tar.gz tmp/pulsesec-0.0.3.tar.gz --markdown 20240427/p/pulsesec/0.0.1-0.0.3/README.md --exclude *.pyd
+[2024-04-27 08:54:56] INFO root fetch - processPackages [PyMLRS]: Downloading https://files.pythonhosted.org/packages/97/5f/685ee07b2755164c62badeea4f521b5597722fcf4b5393f252acce08b101/pymlrs-0.0.3.tar.gz
+[2024-04-27 08:54:56] INFO root fetch - processPackages [mojo-credentials]: Downloading https://files.pythonhosted.org/packages/f6/7a/6b69099cd76124d8a7017f42fb0be219a5afe83cf28150a97d09ecba1d72/mojo_credentials-1.3.5.tar.gz
+[2024-04-27 08:54:56] INFO root fetch - processPackages [shin]: Downloading https://files.pythonhosted.org/packages/0d/37/af5790f175120593f0ea36b06000f04bec7ec984b8127ea02df8d24a253b/shin-0.2.0.tar.gz
+[2024-04-27 08:54:56] INFO root fetch - processPackages [PyMLRS]: executing diffoscope
+[2024-04-27 08:54:56] INFO root fetch - processPackages [PyMLRS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymlrs-0.0.2.tar.gz tmp/pymlrs-0.0.3.tar.gz --markdown 20240427/P/PyMLRS/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-27 08:54:56] INFO root fetch - processPackages [mojo-credentials]: executing diffoscope
+[2024-04-27 08:54:56] INFO root fetch - processPackages [mojo-credentials]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mojo_credentials-1.3.4.tar.gz tmp/mojo_credentials-1.3.5.tar.gz --markdown 20240427/m/mojo-credentials/1.3.4-1.3.5/README.md --exclude *.pyd
+[2024-04-27 08:54:56] INFO root fetch - processPackages [shin]: executing diffoscope
+[2024-04-27 08:54:56] INFO root fetch - processPackages [shin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shin-0.1.0.tar.gz tmp/shin-0.2.0.tar.gz --markdown 20240427/s/shin/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-27 08:54:57] INFO root fetch - processPackages [pulsesec]: Remove: archive file [/home/abi/fetcher/tmp/pulsesec-0.0.1.tar.gz]
+[2024-04-27 08:54:57] INFO root fetch - processPackages [pulsesec]: Remove: archive file [/home/abi/fetcher/tmp/pulsesec-0.0.3.tar.gz]
+[2024-04-27 08:54:57] INFO root fetch - main [MainThread]: End processing [pulsesec]: success
+[2024-04-27 08:54:57] INFO root fetch - processPackages [mojo-credentials]: Remove: archive file [/home/abi/fetcher/tmp/mojo_credentials-1.3.4.tar.gz]
+[2024-04-27 08:54:57] INFO root fetch - processPackages [mojo-credentials]: Remove: archive file [/home/abi/fetcher/tmp/mojo_credentials-1.3.5.tar.gz]
+[2024-04-27 08:54:57] INFO root fetch - main [MainThread]: End processing [mojo-credentials]: success
+[2024-04-27 08:54:57] INFO root fetch - processPackages [shin]: Remove: archive file [/home/abi/fetcher/tmp/shin-0.1.0.tar.gz]
+[2024-04-27 08:54:57] INFO root fetch - processPackages [shin]: Remove: archive file [/home/abi/fetcher/tmp/shin-0.2.0.tar.gz]
+[2024-04-27 08:54:57] INFO root fetch - main [MainThread]: End processing [shin]: success
+[2024-04-27 08:54:57] INFO root fetch - processPackages [PyMLRS]: Remove: archive file [/home/abi/fetcher/tmp/pymlrs-0.0.2.tar.gz]
+[2024-04-27 08:54:57] INFO root fetch - processPackages [PyMLRS]: Remove: archive file [/home/abi/fetcher/tmp/pymlrs-0.0.3.tar.gz]
+[2024-04-27 08:54:57] INFO root fetch - main [MainThread]: End processing [PyMLRS]: success
+[2024-04-27 08:54:57] INFO root fetch - main [MainThread]: Store serial: [22957040]
