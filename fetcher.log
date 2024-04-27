@@ -14729,3 +14729,32 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 15:26:53] INFO root fetch - processPackages [evg]: Remove: archive file [/home/abi/fetcher/tmp/evg-2.8.0.tar.gz]
 [2024-04-27 15:26:53] INFO root fetch - main [MainThread]: End processing [evg]: success
 [2024-04-27 15:26:53] INFO root fetch - main [MainThread]: Store serial: [22959092]
+[2024-04-27 15:28:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959092]
+[2024-04-27 15:29:02] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 15:29:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openav
+[2024-04-27 15:29:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FastAPI-JSONAPI
+[2024-04-27 15:29:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: balatromobile
+[2024-04-27 15:29:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bashinpy
+[2024-04-27 15:29:02] WARNING root fetch - processPackages [bashinpy]: Skipping, unable to determine old version
+[2024-04-27 15:29:02] INFO root fetch - main [MainThread]: End processing [bashinpy] error
+[2024-04-27 15:29:02] INFO root fetch - processPackages [openav]: New version: [1.0.0a4] Old Version: [1.0.0a3]
+[2024-04-27 15:29:02] INFO root fetch - processPackages [FastAPI-JSONAPI]: New version: [2.8.0] Old Version: [2.7.0]
+[2024-04-27 15:29:02] INFO root fetch - processPackages [balatromobile]: New version: [0.3.0] Old Version: [0.2.1]
+[2024-04-27 15:29:02] INFO root fetch - processPackages [openav]: Downloading https://files.pythonhosted.org/packages/66/a7/a68d49414bb7369dd60e610937eb67d36a9a9ab32c1bc0e8f5f0f6b5505b/openav-1.0.0a3.tar.gz
+[2024-04-27 15:29:02] INFO root fetch - processPackages [FastAPI-JSONAPI]: Downloading https://files.pythonhosted.org/packages/31/38/d1fd06d0c4bbc4b8724322c3089abd55ff0ee39a67eba3a2e75b6eaa82d3/fastapi_jsonapi-2.7.0.tar.gz
+[2024-04-27 15:29:02] INFO root fetch - processPackages [balatromobile]: Downloading https://files.pythonhosted.org/packages/94/d7/9d3c5f7f53e2c0f7ce53e7ee617cfe6840c5ff2088edd2075d885dca04e8/balatromobile-0.2.1.tar.gz
+[2024-04-27 15:29:03] WARNING root fetch - processPackages [balatromobile]: Skipping package: exceeds size limit 17110562>=10485760
+[2024-04-27 15:29:03] INFO root fetch - main [MainThread]: End processing [balatromobile] error
+[2024-04-27 15:29:03] INFO root fetch - processPackages [openav]: Downloading https://files.pythonhosted.org/packages/50/c0/15b6758c801d369cc001ccac483747e0668c57c4018f0f6a0f716d4292db/openav-1.0.0a4.tar.gz
+[2024-04-27 15:29:03] INFO root fetch - processPackages [FastAPI-JSONAPI]: Downloading https://files.pythonhosted.org/packages/7c/e3/d9f1a13b79d2871afa330d54ee33572278328e5dd95e8fadcf2ee5793e5d/fastapi_jsonapi-2.8.0.tar.gz
+[2024-04-27 15:29:03] INFO root fetch - processPackages [FastAPI-JSONAPI]: executing diffoscope
+[2024-04-27 15:29:03] INFO root fetch - processPackages [FastAPI-JSONAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_jsonapi-2.7.0.tar.gz tmp/fastapi_jsonapi-2.8.0.tar.gz --markdown 20240427/F/FastAPI-JSONAPI/2.7.0-2.8.0/README.md --exclude *.pyd
+[2024-04-27 15:29:03] INFO root fetch - processPackages [openav]: executing diffoscope
+[2024-04-27 15:29:03] INFO root fetch - processPackages [openav]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openav-1.0.0a3.tar.gz tmp/openav-1.0.0a4.tar.gz --markdown 20240427/o/openav/1.0.0a3-1.0.0a4/README.md --exclude *.pyd
+[2024-04-27 15:29:04] INFO root fetch - processPackages [FastAPI-JSONAPI]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_jsonapi-2.7.0.tar.gz]
+[2024-04-27 15:29:04] INFO root fetch - processPackages [FastAPI-JSONAPI]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_jsonapi-2.8.0.tar.gz]
+[2024-04-27 15:29:04] INFO root fetch - main [MainThread]: End processing [FastAPI-JSONAPI]: success
+[2024-04-27 15:29:04] INFO root fetch - processPackages [openav]: Remove: archive file [/home/abi/fetcher/tmp/openav-1.0.0a3.tar.gz]
+[2024-04-27 15:29:04] INFO root fetch - processPackages [openav]: Remove: archive file [/home/abi/fetcher/tmp/openav-1.0.0a4.tar.gz]
+[2024-04-27 15:29:04] INFO root fetch - main [MainThread]: End processing [openav]: success
+[2024-04-27 15:29:04] INFO root fetch - main [MainThread]: Store serial: [22959111]
