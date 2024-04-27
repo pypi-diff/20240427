@@ -2851,3 +2851,54 @@ EOFError: EOF read where object expected
 [2024-04-27 02:50:37] INFO root fetch - processPackages [azure-template]: Remove: archive file [/home/abi/fetcher/tmp/azure-template-0.1.0b971103.zip]
 [2024-04-27 02:50:37] INFO root fetch - main [MainThread]: End processing [azure-template]: success
 [2024-04-27 02:50:37] INFO root fetch - main [MainThread]: Store serial: [22954487]
+[2024-04-27 02:52:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22954487]
+[2024-04-27 02:52:46] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-27 02:52:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kkpyai
+[2024-04-27 02:52:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: byu_pytest_utils
+[2024-04-27 02:52:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addon-ssi-stock-promotion-operation
+[2024-04-27 02:52:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: adbnx-adapter
+[2024-04-27 02:52:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rel
+[2024-04-27 02:52:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: shared-helpers
+[2024-04-27 02:52:46] INFO root fetch - processPackages [shared-helpers]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-27 02:52:46] INFO root fetch - processPackages [rel]: New version: [0.4.9.9] Old Version: [0.4.9.8]
+[2024-04-27 02:52:46] INFO root fetch - processPackages [kkpyai]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-27 02:52:46] INFO root fetch - processPackages [rel]: Downloading https://files.pythonhosted.org/packages/e4/e3/10318da1c90cf22ae6b178342946d3e614a0f467dce98225a6ca78f84c39/rel-0.4.9.8-py3-none-any.whl
+[2024-04-27 02:52:46] INFO root fetch - processPackages [adbnx-adapter]: New version: [5.0.2] Old Version: [5.0.1]
+[2024-04-27 02:52:46] WARNING root fetch - processPackages [odoo14-addon-ssi-stock-promotion-operation]: Skipping, unable to determine old version
+[2024-04-27 02:52:46] INFO root fetch - main [MainThread]: End processing [odoo14-addon-ssi-stock-promotion-operation] error
+[2024-04-27 02:52:46] INFO root fetch - processPackages [byu_pytest_utils]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-04-27 02:52:46] INFO root fetch - processPackages [kkpyai]: Downloading https://files.pythonhosted.org/packages/41/d3/9eaff2d61cda5a93cc3aa554dac6f205851c8b6303358abc745bc574c29b/kkpyai-0.8.0.tar.gz
+[2024-04-27 02:52:46] INFO root fetch - processPackages [shared-helpers]: Downloading https://files.pythonhosted.org/packages/ec/42/5b8f23ab99e5b956b79d54491e7c506ad9956fc9cc5aaec1c9714ad5b851/shared_helpers-0.0.4.tar.gz
+[2024-04-27 02:52:46] INFO root fetch - processPackages [byu_pytest_utils]: Downloading https://files.pythonhosted.org/packages/7b/b2/2f35aa18410d9602a502028f944d9f5d72619241c7a9eaa7bfea2ececa98/byu_pytest_utils-0.7.8.tar.gz
+[2024-04-27 02:52:46] INFO root fetch - processPackages [adbnx-adapter]: Downloading https://files.pythonhosted.org/packages/f0/5a/04ee61f6663cda5e7c87b276d2a535e44b6b1e70b0f7bfdc219b958b028a/adbnx_adapter-5.0.1.tar.gz
+[2024-04-27 02:52:46] INFO root fetch - processPackages [rel]: Downloading https://files.pythonhosted.org/packages/9e/20/2e43dfac115c1784bfbb18a0f141215d27e937046a4115b2d3988d889c19/rel-0.4.9.9-py3-none-any.whl
+[2024-04-27 02:52:47] INFO root fetch - processPackages [kkpyai]: Downloading https://files.pythonhosted.org/packages/5d/fb/68ee41a5230bff7f50616754d4177eecd0f6602c85b5310d16ae044f2361/kkpyai-0.9.0.tar.gz
+[2024-04-27 02:52:47] INFO root fetch - processPackages [rel]: executing diffoscope
+[2024-04-27 02:52:47] INFO root fetch - processPackages [rel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rel-0.4.9.8-py3-none-any.whl.zip tmp/rel-0.4.9.9-py3-none-any.whl.zip --markdown 20240427/r/rel/0.4.9.8-0.4.9.9/README.md --exclude *.pyd
+[2024-04-27 02:52:47] INFO root fetch - processPackages [kkpyai]: executing diffoscope
+[2024-04-27 02:52:47] INFO root fetch - processPackages [kkpyai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kkpyai-0.8.0.tar.gz tmp/kkpyai-0.9.0.tar.gz --markdown 20240427/k/kkpyai/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-27 02:52:47] INFO root fetch - processPackages [shared-helpers]: Downloading https://files.pythonhosted.org/packages/9f/cd/72978407fc5957d8ffc32b880819f56ae4e0fb4a5ede9e5b5ba8f5a32170/shared_helpers-0.0.5.tar.gz
+[2024-04-27 02:52:47] INFO root fetch - processPackages [byu_pytest_utils]: Downloading https://files.pythonhosted.org/packages/02/21/b5050e5d008f33bab0189481a39f707c2910c4e1c3b81ac6b3350a90d49d/byu_pytest_utils-0.7.9.tar.gz
+[2024-04-27 02:52:47] INFO root fetch - processPackages [adbnx-adapter]: Downloading https://files.pythonhosted.org/packages/85/2e/8c2e9a214e5bf3133d41e1dbef6b982d76487b7db374c243e2808584512d/adbnx_adapter-5.0.2.tar.gz
+[2024-04-27 02:52:47] INFO root fetch - processPackages [shared-helpers]: executing diffoscope
+[2024-04-27 02:52:47] INFO root fetch - processPackages [shared-helpers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shared_helpers-0.0.4.tar.gz tmp/shared_helpers-0.0.5.tar.gz --markdown 20240427/s/shared-helpers/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-27 02:52:47] INFO root fetch - processPackages [byu_pytest_utils]: executing diffoscope
+[2024-04-27 02:52:47] INFO root fetch - processPackages [byu_pytest_utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/byu_pytest_utils-0.7.8.tar.gz tmp/byu_pytest_utils-0.7.9.tar.gz --markdown 20240427/b/byu_pytest_utils/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-04-27 02:52:47] INFO root fetch - processPackages [adbnx-adapter]: executing diffoscope
+[2024-04-27 02:52:47] INFO root fetch - processPackages [adbnx-adapter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adbnx_adapter-5.0.1.tar.gz tmp/adbnx_adapter-5.0.2.tar.gz --markdown 20240427/a/adbnx-adapter/5.0.1-5.0.2/README.md --exclude *.pyd
+[2024-04-27 02:52:47] INFO root fetch - processPackages [kkpyai]: Remove: archive file [/home/abi/fetcher/tmp/kkpyai-0.8.0.tar.gz]
+[2024-04-27 02:52:47] INFO root fetch - processPackages [kkpyai]: Remove: archive file [/home/abi/fetcher/tmp/kkpyai-0.9.0.tar.gz]
+[2024-04-27 02:52:47] INFO root fetch - main [MainThread]: End processing [kkpyai]: success
+[2024-04-27 02:52:47] INFO root fetch - processPackages [rel]: Remove: archive file [/home/abi/fetcher/tmp/rel-0.4.9.8-py3-none-any.whl.zip]
+[2024-04-27 02:52:47] INFO root fetch - processPackages [rel]: Remove: archive file [/home/abi/fetcher/tmp/rel-0.4.9.9-py3-none-any.whl.zip]
+[2024-04-27 02:52:47] INFO root fetch - main [MainThread]: End processing [rel]: success
+[2024-04-27 02:52:48] INFO root fetch - processPackages [shared-helpers]: Remove: archive file [/home/abi/fetcher/tmp/shared_helpers-0.0.4.tar.gz]
+[2024-04-27 02:52:48] INFO root fetch - processPackages [shared-helpers]: Remove: archive file [/home/abi/fetcher/tmp/shared_helpers-0.0.5.tar.gz]
+[2024-04-27 02:52:48] INFO root fetch - main [MainThread]: End processing [shared-helpers]: success
+[2024-04-27 02:52:48] INFO root fetch - processPackages [byu_pytest_utils]: Remove: archive file [/home/abi/fetcher/tmp/byu_pytest_utils-0.7.8.tar.gz]
+[2024-04-27 02:52:48] INFO root fetch - processPackages [byu_pytest_utils]: Remove: archive file [/home/abi/fetcher/tmp/byu_pytest_utils-0.7.9.tar.gz]
+[2024-04-27 02:52:48] INFO root fetch - main [MainThread]: End processing [byu_pytest_utils]: success
+[2024-04-27 02:52:48] INFO root fetch - processPackages [adbnx-adapter]: Remove: archive file [/home/abi/fetcher/tmp/adbnx_adapter-5.0.1.tar.gz]
+[2024-04-27 02:52:48] INFO root fetch - processPackages [adbnx-adapter]: Remove: archive file [/home/abi/fetcher/tmp/adbnx_adapter-5.0.2.tar.gz]
+[2024-04-27 02:52:48] INFO root fetch - main [MainThread]: End processing [adbnx-adapter]: success
+[2024-04-27 02:52:48] INFO root fetch - main [MainThread]: Store serial: [22954505]
