@@ -8164,3 +8164,15 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 06:08:52] INFO root fetch - processPackages [mocca2]: Remove: archive file [/home/abi/fetcher/tmp/mocca2-0.1.2.tar.gz]
 [2024-04-27 06:08:52] INFO root fetch - main [MainThread]: End processing [mocca2]: success
 [2024-04-27 06:08:52] INFO root fetch - main [MainThread]: Store serial: [22956325]
+[2024-04-27 06:10:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956325]
+[2024-04-27 06:11:00] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 06:11:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hypothesis-torch
+[2024-04-27 06:11:00] INFO root fetch - processPackages [hypothesis-torch]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-04-27 06:11:01] INFO root fetch - processPackages [hypothesis-torch]: Downloading https://files.pythonhosted.org/packages/28/f7/7d89255ce1b0e426653acd14420296e98c0401f7e637dbd4189ca3b32384/hypothesis_torch-0.4.1.tar.gz
+[2024-04-27 06:11:01] INFO root fetch - processPackages [hypothesis-torch]: Downloading https://files.pythonhosted.org/packages/2e/f5/70a19c3d8b7421b4688c1b89fda52d258f3a0c86e6ae163d7b6284e0517f/hypothesis_torch-0.4.2.tar.gz
+[2024-04-27 06:11:01] INFO root fetch - processPackages [hypothesis-torch]: executing diffoscope
+[2024-04-27 06:11:01] INFO root fetch - processPackages [hypothesis-torch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hypothesis_torch-0.4.1.tar.gz tmp/hypothesis_torch-0.4.2.tar.gz --markdown 20240427/h/hypothesis-torch/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-04-27 06:11:02] INFO root fetch - processPackages [hypothesis-torch]: Remove: archive file [/home/abi/fetcher/tmp/hypothesis_torch-0.4.1.tar.gz]
+[2024-04-27 06:11:02] INFO root fetch - processPackages [hypothesis-torch]: Remove: archive file [/home/abi/fetcher/tmp/hypothesis_torch-0.4.2.tar.gz]
+[2024-04-27 06:11:02] INFO root fetch - main [MainThread]: End processing [hypothesis-torch]: success
+[2024-04-27 06:11:02] INFO root fetch - main [MainThread]: Store serial: [22956328]
