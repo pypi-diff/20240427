@@ -7468,3 +7468,24 @@ EOFError: EOF read where object expected
 [2024-04-27 05:06:00] INFO root fetch - processPackages [docsig]: Remove: archive file [/home/abi/fetcher/tmp/docsig-0.9.0.tar.gz]
 [2024-04-27 05:06:00] INFO root fetch - main [MainThread]: End processing [docsig]: success
 [2024-04-27 05:06:00] INFO root fetch - main [MainThread]: Store serial: [22956163]
+[2024-04-27 05:08:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956163]
+[2024-04-27 05:08:08] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 05:08:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: docsig
+[2024-04-27 05:08:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytubefix
+[2024-04-27 05:08:08] INFO root fetch - processPackages [docsig]: New version: [0.9.0] Old Version: [0.7.0]
+[2024-04-27 05:08:08] INFO root fetch - processPackages [pytubefix]: New version: [5.2rc1] Old Version: [5.1rc1]
+[2024-04-27 05:08:08] INFO root fetch - processPackages [docsig]: Downloading https://files.pythonhosted.org/packages/b7/aa/3a58eed65c9cd6b8bd5a25e3fb75d0dab2ecdda4b36d07b1e482c485f72b/docsig-0.7.0.tar.gz
+[2024-04-27 05:08:09] INFO root fetch - processPackages [docsig]: Downloading https://files.pythonhosted.org/packages/a5/8b/f9b2d72f71a3977e2edb7a543e8805b8f859ed021086b9eb63b07f9aa86d/docsig-0.9.0.tar.gz
+[2024-04-27 05:08:09] INFO root fetch - processPackages [pytubefix]: Downloading https://files.pythonhosted.org/packages/22/97/4e75a25a55d84f4d309482433534ad8a912b59260cabbf4cb8091b85fcc1/pytubefix-5.1rc1.tar.gz
+[2024-04-27 05:08:09] INFO root fetch - processPackages [docsig]: executing diffoscope
+[2024-04-27 05:08:09] INFO root fetch - processPackages [docsig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docsig-0.7.0.tar.gz tmp/docsig-0.9.0.tar.gz --markdown 20240427/d/docsig/0.7.0-0.9.0/README.md --exclude *.pyd
+[2024-04-27 05:08:09] INFO root fetch - processPackages [pytubefix]: Downloading https://files.pythonhosted.org/packages/a0/f9/8d53c1d4431b100b37bee42bb7579ff32a56f9b15c224bc06584f578144b/pytubefix-5.2rc1.tar.gz
+[2024-04-27 05:08:09] INFO root fetch - processPackages [pytubefix]: executing diffoscope
+[2024-04-27 05:08:09] INFO root fetch - processPackages [pytubefix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytubefix-5.1rc1.tar.gz tmp/pytubefix-5.2rc1.tar.gz --markdown 20240427/p/pytubefix/5.1rc1-5.2rc1/README.md --exclude *.pyd
+[2024-04-27 05:08:09] INFO root fetch - processPackages [docsig]: Remove: archive file [/home/abi/fetcher/tmp/docsig-0.7.0.tar.gz]
+[2024-04-27 05:08:09] INFO root fetch - processPackages [docsig]: Remove: archive file [/home/abi/fetcher/tmp/docsig-0.9.0.tar.gz]
+[2024-04-27 05:08:09] INFO root fetch - main [MainThread]: End processing [docsig]: success
+[2024-04-27 05:08:10] INFO root fetch - processPackages [pytubefix]: Remove: archive file [/home/abi/fetcher/tmp/pytubefix-5.1rc1.tar.gz]
+[2024-04-27 05:08:10] INFO root fetch - processPackages [pytubefix]: Remove: archive file [/home/abi/fetcher/tmp/pytubefix-5.2rc1.tar.gz]
+[2024-04-27 05:08:10] INFO root fetch - main [MainThread]: End processing [pytubefix]: success
+[2024-04-27 05:08:10] INFO root fetch - main [MainThread]: Store serial: [22956169]
