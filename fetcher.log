@@ -13783,3 +13783,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 14:26:02] INFO root fetch - processPackages [ncdiff]: Remove: archive file [/home/abi/fetcher/tmp/ncdiff-24.4-py3-none-any.whl.zip]
 [2024-04-27 14:26:02] INFO root fetch - main [MainThread]: End processing [ncdiff]: success
 [2024-04-27 14:26:02] INFO root fetch - main [MainThread]: Store serial: [22958637]
+[2024-04-27 14:28:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958637]
+[2024-04-27 14:28:10] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 14:28:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: faster-whisper-api-proxy
+[2024-04-27 14:28:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: model-paclone-daredata
+[2024-04-27 14:28:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: freedownload
+[2024-04-27 14:28:11] WARNING root fetch - processPackages [model-paclone-daredata]: Skipping, unable to determine old version
+[2024-04-27 14:28:11] INFO root fetch - main [MainThread]: End processing [model-paclone-daredata] error
+[2024-04-27 14:28:11] INFO root fetch - processPackages [freedownload]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-04-27 14:28:11] WARNING root fetch - processPackages [faster-whisper-api-proxy]: Skipping, unable to determine old version
+[2024-04-27 14:28:11] INFO root fetch - main [MainThread]: End processing [faster-whisper-api-proxy] error
+[2024-04-27 14:28:11] INFO root fetch - processPackages [freedownload]: Downloading https://files.pythonhosted.org/packages/d4/c2/f394a2f009f4bda4b72a7a57ee8d7b8f137611d7f3a4bb230dbcfc498647/freedownload-2.0.0.tar.gz
+[2024-04-27 14:28:11] INFO root fetch - processPackages [freedownload]: Downloading https://files.pythonhosted.org/packages/77/e6/890c025d429cb7abc31ba2b3e25b1e02f855f7d877a42187520e5320f866/freedownload-2.0.1.tar.gz
+[2024-04-27 14:28:11] INFO root fetch - processPackages [freedownload]: executing diffoscope
+[2024-04-27 14:28:11] INFO root fetch - processPackages [freedownload]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freedownload-2.0.0.tar.gz tmp/freedownload-2.0.1.tar.gz --markdown 20240427/f/freedownload/2.0.0-2.0.1/README.md --exclude *.pyd
+[2024-04-27 14:28:12] INFO root fetch - processPackages [freedownload]: Remove: archive file [/home/abi/fetcher/tmp/freedownload-2.0.0.tar.gz]
+[2024-04-27 14:28:12] INFO root fetch - processPackages [freedownload]: Remove: archive file [/home/abi/fetcher/tmp/freedownload-2.0.1.tar.gz]
+[2024-04-27 14:28:12] INFO root fetch - main [MainThread]: End processing [freedownload]: success
+[2024-04-27 14:28:12] INFO root fetch - main [MainThread]: Store serial: [22958650]
