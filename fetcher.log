@@ -10575,3 +10575,33 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 09:49:23] INFO root fetch - processPackages [py4web]: Remove: archive file [/home/abi/fetcher/tmp/py4web-1.20240427.1.tar.gz]
 [2024-04-27 09:49:23] INFO root fetch - main [MainThread]: End processing [py4web]: success
 [2024-04-27 09:49:23] INFO root fetch - main [MainThread]: Store serial: [22957294]
+[2024-04-27 09:51:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957294]
+[2024-04-27 09:51:34] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 09:51:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: clovers
+[2024-04-27 09:51:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: media-manager
+[2024-04-27 09:51:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xtn-tools-pro
+[2024-04-27 09:51:34] INFO root fetch - processPackages [clovers]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-27 09:51:34] INFO root fetch - processPackages [media-manager]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-27 09:51:34] INFO root fetch - processPackages [clovers]: Downloading https://files.pythonhosted.org/packages/68/ec/8de206bf48ad7d113057d9629eb36d2461600948ae1bfc7d428185ba5996/clovers-0.1.5.tar.gz
+[2024-04-27 09:51:34] INFO root fetch - processPackages [media-manager]: Downloading https://files.pythonhosted.org/packages/75/11/acc8a436463477db369c803d9007e03acdd0b43a677cd0cbb78b7ea5b3bb/media_manager-0.8.0-py2.py3-none-any.whl
+[2024-04-27 09:51:34] INFO root fetch - processPackages [xtn-tools-pro]: New version: [1.0.0.0.3] Old Version: [1.0.0.0.2]
+[2024-04-27 09:51:35] INFO root fetch - processPackages [media-manager]: Downloading https://files.pythonhosted.org/packages/9b/a7/1155a373b195bebb88c0274982964c45aecd8d7206b2f4731838007628fd/media_manager-0.9.0-py2.py3-none-any.whl
+[2024-04-27 09:51:35] INFO root fetch - processPackages [xtn-tools-pro]: Downloading https://files.pythonhosted.org/packages/07/cd/2273c5d075be1f40445f452b48e5a6c402537b5d909ca20856b85e6aaec0/xtn-tools-pro-1.0.0.0.2.tar.gz
+[2024-04-27 09:51:35] INFO root fetch - processPackages [media-manager]: executing diffoscope
+[2024-04-27 09:51:35] INFO root fetch - processPackages [media-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/media_manager-0.8.0-py2.py3-none-any.whl.zip tmp/media_manager-0.9.0-py2.py3-none-any.whl.zip --markdown 20240427/m/media-manager/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-27 09:51:35] INFO root fetch - processPackages [clovers]: Downloading https://files.pythonhosted.org/packages/6b/38/ae8e6c9dd30acc8ba14217419c1642856e06840217750baa2df825c03124/clovers-0.1.6.tar.gz
+[2024-04-27 09:51:35] INFO root fetch - processPackages [clovers]: executing diffoscope
+[2024-04-27 09:51:35] INFO root fetch - processPackages [clovers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clovers-0.1.5.tar.gz tmp/clovers-0.1.6.tar.gz --markdown 20240427/c/clovers/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-27 09:51:35] INFO root fetch - processPackages [xtn-tools-pro]: Downloading https://files.pythonhosted.org/packages/73/2c/7fba53a1fbd1920b391f7cdf7acece552e7a69dc431ef7b6e8e596fe1d2b/xtn-tools-pro-1.0.0.0.3.tar.gz
+[2024-04-27 09:51:35] INFO root fetch - processPackages [xtn-tools-pro]: executing diffoscope
+[2024-04-27 09:51:35] INFO root fetch - processPackages [xtn-tools-pro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xtn-tools-pro-1.0.0.0.2.tar.gz tmp/xtn-tools-pro-1.0.0.0.3.tar.gz --markdown 20240427/x/xtn-tools-pro/1.0.0.0.2-1.0.0.0.3/README.md --exclude *.pyd
+[2024-04-27 09:51:35] INFO root fetch - processPackages [media-manager]: Remove: archive file [/home/abi/fetcher/tmp/media_manager-0.8.0-py2.py3-none-any.whl.zip]
+[2024-04-27 09:51:35] INFO root fetch - processPackages [media-manager]: Remove: archive file [/home/abi/fetcher/tmp/media_manager-0.9.0-py2.py3-none-any.whl.zip]
+[2024-04-27 09:51:35] INFO root fetch - main [MainThread]: End processing [media-manager]: success
+[2024-04-27 09:51:35] INFO root fetch - processPackages [clovers]: Remove: archive file [/home/abi/fetcher/tmp/clovers-0.1.5.tar.gz]
+[2024-04-27 09:51:35] INFO root fetch - processPackages [clovers]: Remove: archive file [/home/abi/fetcher/tmp/clovers-0.1.6.tar.gz]
+[2024-04-27 09:51:35] INFO root fetch - main [MainThread]: End processing [clovers]: success
+[2024-04-27 09:51:36] INFO root fetch - processPackages [xtn-tools-pro]: Remove: archive file [/home/abi/fetcher/tmp/xtn-tools-pro-1.0.0.0.2.tar.gz]
+[2024-04-27 09:51:36] INFO root fetch - processPackages [xtn-tools-pro]: Remove: archive file [/home/abi/fetcher/tmp/xtn-tools-pro-1.0.0.0.3.tar.gz]
+[2024-04-27 09:51:36] INFO root fetch - main [MainThread]: End processing [xtn-tools-pro]: success
+[2024-04-27 09:51:36] INFO root fetch - main [MainThread]: Store serial: [22957302]
