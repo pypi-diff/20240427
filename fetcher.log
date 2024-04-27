@@ -21648,3 +21648,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 23:49:35] INFO root fetch - processPackages [DLStudio]: Remove: archive file [/home/abi/fetcher/tmp/DLStudio-2.4.8.tar.gz]
 [2024-04-27 23:49:35] INFO root fetch - main [MainThread]: End processing [DLStudio]: success
 [2024-04-27 23:49:35] INFO root fetch - main [MainThread]: Store serial: [22962246]
+[2024-04-27 23:51:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962246]
+[2024-04-27 23:51:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 23:51:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: whisper.cpp-cli
+[2024-04-27 23:51:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: project-class1
+[2024-04-27 23:51:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mergoo
+[2024-04-27 23:51:46] WARNING root fetch - processPackages [project-class1]: Skipping, unable to determine old version
+[2024-04-27 23:51:46] INFO root fetch - processPackages [mergoo]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-27 23:51:46] INFO root fetch - main [MainThread]: End processing [project-class1] error
+[2024-04-27 23:51:46] WARNING root fetch - processPackages [whisper.cpp-cli]: Skipping, unable to determine old version
+[2024-04-27 23:51:46] INFO root fetch - main [MainThread]: End processing [whisper.cpp-cli] error
+[2024-04-27 23:51:46] INFO root fetch - processPackages [mergoo]: Downloading https://files.pythonhosted.org/packages/27/04/c584f9e0132514a02bcc2aa320408c846c1b8a403cd39013957fd72cf6c4/mergoo-0.0.7.tar.gz
+[2024-04-27 23:51:46] INFO root fetch - processPackages [mergoo]: Downloading https://files.pythonhosted.org/packages/62/05/db5d59b0eaa72da763e20dd53ec4e8045090f2fe0ffe1bfe6e8f160c0a61/mergoo-0.0.8.tar.gz
+[2024-04-27 23:51:46] INFO root fetch - processPackages [mergoo]: executing diffoscope
+[2024-04-27 23:51:46] INFO root fetch - processPackages [mergoo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mergoo-0.0.7.tar.gz tmp/mergoo-0.0.8.tar.gz --markdown 20240427/m/mergoo/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-27 23:51:47] INFO root fetch - processPackages [mergoo]: Remove: archive file [/home/abi/fetcher/tmp/mergoo-0.0.7.tar.gz]
+[2024-04-27 23:51:47] INFO root fetch - processPackages [mergoo]: Remove: archive file [/home/abi/fetcher/tmp/mergoo-0.0.8.tar.gz]
+[2024-04-27 23:51:47] INFO root fetch - main [MainThread]: End processing [mergoo]: success
+[2024-04-27 23:51:47] INFO root fetch - main [MainThread]: Store serial: [22962259]
