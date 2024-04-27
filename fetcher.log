@@ -16526,3 +16526,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 17:23:42] INFO root fetch - processPackages [pass50]: Remove: archive file [/home/abi/fetcher/tmp/pass50-0.0.2-py3-none-any.whl.zip]
 [2024-04-27 17:23:42] INFO root fetch - main [MainThread]: End processing [pass50]: success
 [2024-04-27 17:23:42] INFO root fetch - main [MainThread]: Store serial: [22959796]
+[2024-04-27 17:25:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959796]
+[2024-04-27 17:25:51] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 17:25:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autocortext-py
+[2024-04-27 17:25:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-hx-yinying
+[2024-04-27 17:25:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: espy-contact
+[2024-04-27 17:25:51] INFO root fetch - processPackages [espy-contact]: New version: [0.2] Old Version: [0.1]
+[2024-04-27 17:25:51] WARNING root fetch - processPackages [autocortext-py]: Skipping, unable to determine old version
+[2024-04-27 17:25:51] INFO root fetch - main [MainThread]: End processing [autocortext-py] error
+[2024-04-27 17:25:51] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: New version: [1.1.0] Old Version: [1.0.9]
+[2024-04-27 17:25:51] INFO root fetch - processPackages [espy-contact]: Downloading https://files.pythonhosted.org/packages/b7/c7/449f5f010c2962a2a757755c9b5e7bc9292628585c931ea8bd04d4ef9150/espy_contact-0.1.tar.gz
+[2024-04-27 17:25:51] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: Downloading https://files.pythonhosted.org/packages/b7/28/4b5b4d046b4ea9a9e0bec7a7b349e9f7cd695da83e10e3f55177f7828189/nonebot-plugin-hx-yinying-1.0.9.tar.gz
+[2024-04-27 17:25:51] INFO root fetch - processPackages [espy-contact]: Downloading https://files.pythonhosted.org/packages/64/90/6b5be1f419248e174993854a5f5234d5974ac4da7375066b7a73b5a1e423/espy_contact-0.2.tar.gz
+[2024-04-27 17:25:51] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: Downloading https://files.pythonhosted.org/packages/c5/58/3f9f5f5cb7cfe48ea06e238ae63101295dde90aa408f5e3bcbaa6135c16c/nonebot-plugin-hx-yinying-1.1.0.tar.gz
+[2024-04-27 17:25:51] INFO root fetch - processPackages [espy-contact]: executing diffoscope
+[2024-04-27 17:25:51] INFO root fetch - processPackages [espy-contact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/espy_contact-0.1.tar.gz tmp/espy_contact-0.2.tar.gz --markdown 20240427/e/espy-contact/0.1-0.2/README.md --exclude *.pyd
+[2024-04-27 17:25:51] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: executing diffoscope
+[2024-04-27 17:25:51] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-hx-yinying-1.0.9.tar.gz tmp/nonebot-plugin-hx-yinying-1.1.0.tar.gz --markdown 20240427/n/nonebot-plugin-hx-yinying/1.0.9-1.1.0/README.md --exclude *.pyd
+[2024-04-27 17:25:52] INFO root fetch - processPackages [espy-contact]: Remove: archive file [/home/abi/fetcher/tmp/espy_contact-0.1.tar.gz]
+[2024-04-27 17:25:52] INFO root fetch - processPackages [espy-contact]: Remove: archive file [/home/abi/fetcher/tmp/espy_contact-0.2.tar.gz]
+[2024-04-27 17:25:52] INFO root fetch - main [MainThread]: End processing [espy-contact]: success
+[2024-04-27 17:25:52] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-hx-yinying-1.0.9.tar.gz]
+[2024-04-27 17:25:52] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-hx-yinying-1.1.0.tar.gz]
+[2024-04-27 17:25:52] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-hx-yinying]: success
+[2024-04-27 17:25:52] INFO root fetch - main [MainThread]: Store serial: [22959806]
