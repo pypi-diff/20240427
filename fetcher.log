@@ -10797,3 +10797,27 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 10:15:30] INFO root fetch - processPackages [koji-fedoramessaging-messages]: Remove: archive file [/home/abi/fetcher/tmp/koji_fedoramessaging_messages-1.2.4.tar.gz]
 [2024-04-27 10:15:30] INFO root fetch - main [MainThread]: End processing [koji-fedoramessaging-messages]: success
 [2024-04-27 10:15:30] INFO root fetch - main [MainThread]: Store serial: [22957395]
+[2024-04-27 10:17:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957395]
+[2024-04-27 10:17:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 10:17:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ctrip-app-ui
+[2024-04-27 10:17:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: adios4dolfinx
+[2024-04-27 10:17:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yaconfiglib
+[2024-04-27 10:17:39] INFO root fetch - processPackages [ctrip-app-ui]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-27 10:17:39] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/b5/88/a30ff378f5708d720a53c5f649382eed03d5f61bbff51b40b0ccde1119b6/ctrip-app-ui-0.2.8.tar.gz
+[2024-04-27 10:17:39] WARNING root fetch - processPackages [yaconfiglib]: Skipping, unable to determine old version
+[2024-04-27 10:17:39] INFO root fetch - processPackages [adios4dolfinx]: New version: [0.8.1] Old Version: [0.8.0.dev0]
+[2024-04-27 10:17:39] INFO root fetch - main [MainThread]: End processing [yaconfiglib] error
+[2024-04-27 10:17:39] INFO root fetch - processPackages [adios4dolfinx]: Downloading https://files.pythonhosted.org/packages/9d/40/76e464cfde7026caa8739c502ef17ceff63f4d157e115a24315a3716c885/adios4dolfinx-0.8.0.dev0.tar.gz
+[2024-04-27 10:17:39] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/70/d9/8d475cde4c23487d6e5f9209a1848fce59319a318ed24795dd3eb9e3345e/ctrip-app-ui-0.2.9.tar.gz
+[2024-04-27 10:17:39] INFO root fetch - processPackages [ctrip-app-ui]: executing diffoscope
+[2024-04-27 10:17:39] INFO root fetch - processPackages [ctrip-app-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctrip-app-ui-0.2.8.tar.gz tmp/ctrip-app-ui-0.2.9.tar.gz --markdown 20240427/c/ctrip-app-ui/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-27 10:17:39] INFO root fetch - processPackages [adios4dolfinx]: Downloading https://files.pythonhosted.org/packages/47/77/ced43d34bc814d25c2da0a8a5e90419dc74abe1d8a60737a3c4587f7eba4/adios4dolfinx-0.8.1.tar.gz
+[2024-04-27 10:17:40] INFO root fetch - processPackages [adios4dolfinx]: executing diffoscope
+[2024-04-27 10:17:40] INFO root fetch - processPackages [adios4dolfinx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adios4dolfinx-0.8.0.dev0.tar.gz tmp/adios4dolfinx-0.8.1.tar.gz --markdown 20240427/a/adios4dolfinx/0.8.0.dev0-0.8.1/README.md --exclude *.pyd
+[2024-04-27 10:17:40] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.2.8.tar.gz]
+[2024-04-27 10:17:40] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.2.9.tar.gz]
+[2024-04-27 10:17:40] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
+[2024-04-27 10:17:40] INFO root fetch - processPackages [adios4dolfinx]: Remove: archive file [/home/abi/fetcher/tmp/adios4dolfinx-0.8.0.dev0.tar.gz]
+[2024-04-27 10:17:40] INFO root fetch - processPackages [adios4dolfinx]: Remove: archive file [/home/abi/fetcher/tmp/adios4dolfinx-0.8.1.tar.gz]
+[2024-04-27 10:17:40] INFO root fetch - main [MainThread]: End processing [adios4dolfinx]: success
+[2024-04-27 10:17:40] INFO root fetch - main [MainThread]: Store serial: [22957405]
