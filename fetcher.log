@@ -14342,3 +14342,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 15:05:38] INFO root fetch - main [MainThread]: End processing [yeref]: success
 [2024-04-27 15:05:39] INFO root fetch - main [MainThread]: End processing [yeref]: success
 [2024-04-27 15:05:39] INFO root fetch - main [MainThread]: Store serial: [22958907]
+[2024-04-27 15:07:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958907]
+[2024-04-27 15:07:48] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 15:07:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-lsp-ruff
+[2024-04-27 15:07:48] INFO root fetch - processPackages [python-lsp-ruff]: New version: [2.2.1] Old Version: [2.2.0]
+[2024-04-27 15:07:48] INFO root fetch - processPackages [python-lsp-ruff]: Downloading https://files.pythonhosted.org/packages/ae/8e/623702d362010dee2c45799242d5b42a54489552458ee5a4ad394632ecda/python-lsp-ruff-2.2.0.tar.gz
+[2024-04-27 15:07:48] INFO root fetch - processPackages [python-lsp-ruff]: Downloading https://files.pythonhosted.org/packages/6b/d4/6836871410a0155f5ba05ab03b60efe75c194406fb7fc62e45d37cd13e9c/python_lsp_ruff-2.2.1.tar.gz
+[2024-04-27 15:07:48] INFO root fetch - processPackages [python-lsp-ruff]: executing diffoscope
+[2024-04-27 15:07:48] INFO root fetch - processPackages [python-lsp-ruff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-lsp-ruff-2.2.0.tar.gz tmp/python_lsp_ruff-2.2.1.tar.gz --markdown 20240427/p/python-lsp-ruff/2.2.0-2.2.1/README.md --exclude *.pyd
+[2024-04-27 15:07:49] INFO root fetch - processPackages [python-lsp-ruff]: Remove: archive file [/home/abi/fetcher/tmp/python-lsp-ruff-2.2.0.tar.gz]
+[2024-04-27 15:07:49] INFO root fetch - processPackages [python-lsp-ruff]: Remove: archive file [/home/abi/fetcher/tmp/python_lsp_ruff-2.2.1.tar.gz]
+[2024-04-27 15:07:49] INFO root fetch - main [MainThread]: End processing [python-lsp-ruff]: success
+[2024-04-27 15:07:49] INFO root fetch - main [MainThread]: Store serial: [22958910]
