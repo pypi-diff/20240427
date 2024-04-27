@@ -17342,3 +17342,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 18:19:16] INFO root fetch - processPackages [rtorrent-rpc]: Remove: archive file [/home/abi/fetcher/tmp/rtorrent_rpc-0.6.1.tar.gz]
 [2024-04-27 18:19:16] INFO root fetch - main [MainThread]: End processing [rtorrent-rpc]: success
 [2024-04-27 18:19:16] INFO root fetch - main [MainThread]: Store serial: [22960118]
+[2024-04-27 18:21:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960118]
+[2024-04-27 18:21:27] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-27 18:21:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nifty-ls
+[2024-04-27 18:21:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mllm
+[2024-04-27 18:21:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: botastico
+[2024-04-27 18:21:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: symposium
+[2024-04-27 18:21:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mlops-api-gemstack
+[2024-04-27 18:21:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: adi-py310
+[2024-04-27 18:21:27] WARNING root fetch - processPackages [nifty-ls]: Skipping, unable to determine old version
+[2024-04-27 18:21:27] INFO root fetch - main [MainThread]: End processing [nifty-ls] error
+[2024-04-27 18:21:27] INFO root fetch - processPackages [mlops-api-gemstack]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-04-27 18:21:27] WARNING root fetch - processPackages [mllm]: Skipping, unable to determine old version
+[2024-04-27 18:21:27] INFO root fetch - main [MainThread]: End processing [mllm] error
+[2024-04-27 18:21:27] INFO root fetch - processPackages [mlops-api-gemstack]: Downloading https://files.pythonhosted.org/packages/d2/a6/24e2a8cf4edf559d69086d91d97bb5f9684b85e464dc4c715c3efc150443/mlops_api_gemstack-0.3.4.tar.gz
+[2024-04-27 18:21:27] WARNING root fetch - processPackages [adi-py310]: Skipping, unable to determine old version
+[2024-04-27 18:21:27] INFO root fetch - main [MainThread]: End processing [adi-py310] error
+[2024-04-27 18:21:27] INFO root fetch - processPackages [botastico]: New version: [0.1.7] Old Version: [0.1.5]
+[2024-04-27 18:21:27] INFO root fetch - processPackages [symposium]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-27 18:21:28] INFO root fetch - processPackages [botastico]: Downloading https://files.pythonhosted.org/packages/7f/ff/3e0e5fc0e6a5916a760a623abffb9be18b69fa8852792cdfc673abac4d84/botastico-0.1.5.tar.gz
+[2024-04-27 18:21:28] INFO root fetch - processPackages [symposium]: Downloading https://files.pythonhosted.org/packages/be/8d/c3e6ab516759d7c8c6ccd10cd3b89b27691841126c457073f053295d722c/symposium-0.2.0.tar.gz
+[2024-04-27 18:21:28] INFO root fetch - processPackages [mlops-api-gemstack]: Downloading https://files.pythonhosted.org/packages/3c/ec/9eda348233114f4d794b19c9e5e4382b7833058ed5b2219ef390746cc87c/mlops_api_gemstack-0.3.5.tar.gz
+[2024-04-27 18:21:28] INFO root fetch - processPackages [mlops-api-gemstack]: executing diffoscope
+[2024-04-27 18:21:28] INFO root fetch - processPackages [mlops-api-gemstack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlops_api_gemstack-0.3.4.tar.gz tmp/mlops_api_gemstack-0.3.5.tar.gz --markdown 20240427/m/mlops-api-gemstack/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-04-27 18:21:28] INFO root fetch - processPackages [botastico]: Downloading https://files.pythonhosted.org/packages/83/73/9ff102c2163439041629c097fa175af94d9387afc66a0d7cdf06688efb0a/botastico-0.1.7.tar.gz
+[2024-04-27 18:21:28] INFO root fetch - processPackages [symposium]: Downloading https://files.pythonhosted.org/packages/e2/32/34186a57a4210aab67f96525ec92dcbd61451f945b684efe33bbeb2340ee/symposium-0.2.1.tar.gz
+[2024-04-27 18:21:28] INFO root fetch - processPackages [botastico]: executing diffoscope
+[2024-04-27 18:21:28] INFO root fetch - processPackages [botastico]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botastico-0.1.5.tar.gz tmp/botastico-0.1.7.tar.gz --markdown 20240427/b/botastico/0.1.5-0.1.7/README.md --exclude *.pyd
+[2024-04-27 18:21:28] INFO root fetch - processPackages [symposium]: executing diffoscope
+[2024-04-27 18:21:28] INFO root fetch - processPackages [symposium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symposium-0.2.0.tar.gz tmp/symposium-0.2.1.tar.gz --markdown 20240427/s/symposium/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-04-27 18:21:28] INFO root fetch - processPackages [mlops-api-gemstack]: Remove: archive file [/home/abi/fetcher/tmp/mlops_api_gemstack-0.3.4.tar.gz]
+[2024-04-27 18:21:28] INFO root fetch - processPackages [mlops-api-gemstack]: Remove: archive file [/home/abi/fetcher/tmp/mlops_api_gemstack-0.3.5.tar.gz]
+[2024-04-27 18:21:28] INFO root fetch - main [MainThread]: End processing [mlops-api-gemstack]: success
+[2024-04-27 18:21:29] INFO root fetch - processPackages [botastico]: Remove: archive file [/home/abi/fetcher/tmp/botastico-0.1.5.tar.gz]
+[2024-04-27 18:21:29] INFO root fetch - processPackages [botastico]: Remove: archive file [/home/abi/fetcher/tmp/botastico-0.1.7.tar.gz]
+[2024-04-27 18:21:29] INFO root fetch - main [MainThread]: End processing [botastico]: success
+[2024-04-27 18:21:29] INFO root fetch - processPackages [symposium]: Remove: archive file [/home/abi/fetcher/tmp/symposium-0.2.0.tar.gz]
+[2024-04-27 18:21:29] INFO root fetch - processPackages [symposium]: Remove: archive file [/home/abi/fetcher/tmp/symposium-0.2.1.tar.gz]
+[2024-04-27 18:21:29] INFO root fetch - main [MainThread]: End processing [symposium]: success
+[2024-04-27 18:21:29] INFO root fetch - main [MainThread]: Store serial: [22960141]
