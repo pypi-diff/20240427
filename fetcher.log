@@ -9070,3 +9070,27 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 07:14:04] INFO root fetch - processPackages [dragonfly-radiance]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-radiance-0.3.9.tar.gz]
 [2024-04-27 07:14:04] INFO root fetch - main [MainThread]: End processing [dragonfly-radiance]: success
 [2024-04-27 07:14:04] INFO root fetch - main [MainThread]: Store serial: [22956628]
+[2024-04-27 07:16:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956628]
+[2024-04-27 07:16:14] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 07:16:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: honeybee-radiance-postprocess
+[2024-04-27 07:16:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nextcloud-status
+[2024-04-27 07:16:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lbt-dragonfly
+[2024-04-27 07:16:15] INFO root fetch - processPackages [honeybee-radiance-postprocess]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-04-27 07:16:15] INFO root fetch - processPackages [lbt-dragonfly]: New version: [0.9.99] Old Version: [0.9.98]
+[2024-04-27 07:16:15] WARNING root fetch - processPackages [nextcloud-status]: Skipping, unable to determine old version
+[2024-04-27 07:16:15] INFO root fetch - main [MainThread]: End processing [nextcloud-status] error
+[2024-04-27 07:16:15] INFO root fetch - processPackages [honeybee-radiance-postprocess]: Downloading https://files.pythonhosted.org/packages/b6/91/e656cf214b08dde444b27576e74fc06004fa6bbc0d5f04f1d6514eb05429/honeybee-radiance-postprocess-0.4.98.tar.gz
+[2024-04-27 07:16:15] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/be/ae/7267dfd241a0641f3fbadea4128db5ffa29609911cadb5fc4840656bb44a/lbt-dragonfly-0.9.98.tar.gz
+[2024-04-27 07:16:15] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/b4/08/0ca46e9f7eef7b2cce7f0c6110106c42aa35a79bd88110559177f64d733a/lbt-dragonfly-0.9.99.tar.gz
+[2024-04-27 07:16:15] INFO root fetch - processPackages [honeybee-radiance-postprocess]: Downloading https://files.pythonhosted.org/packages/e0/41/5be881e0724bb4d271ee5bb707666eff4c4b9ca79bc8c67f7316687d2f67/honeybee-radiance-postprocess-0.4.99.tar.gz
+[2024-04-27 07:16:15] INFO root fetch - processPackages [lbt-dragonfly]: executing diffoscope
+[2024-04-27 07:16:15] INFO root fetch - processPackages [lbt-dragonfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-dragonfly-0.9.98.tar.gz tmp/lbt-dragonfly-0.9.99.tar.gz --markdown 20240427/l/lbt-dragonfly/0.9.98-0.9.99/README.md --exclude *.pyd
+[2024-04-27 07:16:15] INFO root fetch - processPackages [honeybee-radiance-postprocess]: executing diffoscope
+[2024-04-27 07:16:15] INFO root fetch - processPackages [honeybee-radiance-postprocess]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeybee-radiance-postprocess-0.4.98.tar.gz tmp/honeybee-radiance-postprocess-0.4.99.tar.gz --markdown 20240427/h/honeybee-radiance-postprocess/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-04-27 07:16:16] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.98.tar.gz]
+[2024-04-27 07:16:16] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.99.tar.gz]
+[2024-04-27 07:16:16] INFO root fetch - main [MainThread]: End processing [lbt-dragonfly]: success
+[2024-04-27 07:16:16] INFO root fetch - processPackages [honeybee-radiance-postprocess]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-radiance-postprocess-0.4.98.tar.gz]
+[2024-04-27 07:16:16] INFO root fetch - processPackages [honeybee-radiance-postprocess]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-radiance-postprocess-0.4.99.tar.gz]
+[2024-04-27 07:16:16] INFO root fetch - main [MainThread]: End processing [honeybee-radiance-postprocess]: success
+[2024-04-27 07:16:16] INFO root fetch - main [MainThread]: Store serial: [22956638]
