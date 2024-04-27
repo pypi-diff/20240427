@@ -8322,3 +8322,15 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 06:24:03] INFO root fetch - processPackages [CodeBat]: Remove: archive file [/home/abi/fetcher/tmp/codebat-0.0.2.3.tar.gz]
 [2024-04-27 06:24:03] INFO root fetch - main [MainThread]: End processing [CodeBat]: success
 [2024-04-27 06:24:03] INFO root fetch - main [MainThread]: Store serial: [22956378]
+[2024-04-27 06:26:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956378]
+[2024-04-27 06:26:11] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 06:26:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cf2tf
+[2024-04-27 06:26:11] INFO root fetch - processPackages [cf2tf]: New version: [0.7.2a0] Old Version: [0.7.1a0]
+[2024-04-27 06:26:12] INFO root fetch - processPackages [cf2tf]: Downloading https://files.pythonhosted.org/packages/90/dd/70e4c8c6f39df3d6209a3d17a96a652ee876a5312ab913c9572af062804b/cf2tf-0.7.1a0.tar.gz
+[2024-04-27 06:26:12] INFO root fetch - processPackages [cf2tf]: Downloading https://files.pythonhosted.org/packages/83/37/51d1c7aa3d6944f4af4e8f452533bbe28e2ae19b22eb89de125b11d33c25/cf2tf-0.7.2a0.tar.gz
+[2024-04-27 06:26:12] INFO root fetch - processPackages [cf2tf]: executing diffoscope
+[2024-04-27 06:26:12] INFO root fetch - processPackages [cf2tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cf2tf-0.7.1a0.tar.gz tmp/cf2tf-0.7.2a0.tar.gz --markdown 20240427/c/cf2tf/0.7.1a0-0.7.2a0/README.md --exclude *.pyd
+[2024-04-27 06:26:12] INFO root fetch - processPackages [cf2tf]: Remove: archive file [/home/abi/fetcher/tmp/cf2tf-0.7.1a0.tar.gz]
+[2024-04-27 06:26:12] INFO root fetch - processPackages [cf2tf]: Remove: archive file [/home/abi/fetcher/tmp/cf2tf-0.7.2a0.tar.gz]
+[2024-04-27 06:26:12] INFO root fetch - main [MainThread]: End processing [cf2tf]: success
+[2024-04-27 06:26:12] INFO root fetch - main [MainThread]: Store serial: [22956381]
