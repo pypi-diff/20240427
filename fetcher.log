@@ -2699,3 +2699,42 @@ EOFError: EOF read where object expected
 [2024-04-27 02:32:50] INFO root fetch - processPackages [codeanim]: Remove: archive file [/home/abi/fetcher/tmp/codeanim-0.0.9.tar.gz]
 [2024-04-27 02:32:50] INFO root fetch - main [MainThread]: End processing [codeanim]: success
 [2024-04-27 02:32:50] INFO root fetch - main [MainThread]: Store serial: [22954386]
+[2024-04-27 02:34:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22954386]
+[2024-04-27 02:34:59] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 02:34:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: state-machine-semaphore
+[2024-04-27 02:34:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pied-poker
+[2024-04-27 02:34:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: shuttleai
+[2024-04-27 02:34:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cosmic-datapi
+[2024-04-27 02:35:00] INFO root fetch - processPackages [pied-poker]: New version: [1.2.6] Old Version: [1.2.5]
+[2024-04-27 02:35:00] INFO root fetch - processPackages [state-machine-semaphore]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-27 02:35:00] INFO root fetch - processPackages [pied-poker]: Downloading https://files.pythonhosted.org/packages/97/c0/c7debb0375ddaaa7e3fc317706436553932df9313a415941a5165053a585/pied_poker-1.2.5.tar.gz
+[2024-04-27 02:35:00] INFO root fetch - processPackages [shuttleai]: New version: [3.9.4] Old Version: [3.9.0]
+[2024-04-27 02:35:00] INFO root fetch - processPackages [cosmic-datapi]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 02:35:00] INFO root fetch - processPackages [state-machine-semaphore]: Downloading https://files.pythonhosted.org/packages/fa/f7/eea494ef2079699969c054c97478b7e0d5db0ce186fbb2708d9a243b4366/state-machine-semaphore-0.1.98.tar.gz
+[2024-04-27 02:35:00] INFO root fetch - processPackages [shuttleai]: Downloading https://files.pythonhosted.org/packages/35/6f/10526af058e5d923209b68a04dee2da037d15fac84a028ac3740bf7373be/shuttleai-3.9.0.tar.gz
+[2024-04-27 02:35:00] INFO root fetch - processPackages [cosmic-datapi]: Downloading https://files.pythonhosted.org/packages/7e/df/31bc65bd6ab4243779d16500487e1a700f1fcf6328ab770a74d98688b926/cosmic_datapi-0.0.8.tar.gz
+[2024-04-27 02:35:00] INFO root fetch - processPackages [state-machine-semaphore]: Downloading https://files.pythonhosted.org/packages/80/0f/c73e069a7ceff3d9f61065aa4b5b338bc0b9f4f933b94a97692457bfa317/state-machine-semaphore-0.1.99.tar.gz
+[2024-04-27 02:35:00] INFO root fetch - processPackages [pied-poker]: Downloading https://files.pythonhosted.org/packages/3a/7f/e89fe0aa9241062787d99395d2f96f8207323849528cb51366fd78a731fd/pied_poker-1.2.6.tar.gz
+[2024-04-27 02:35:00] INFO root fetch - processPackages [state-machine-semaphore]: executing diffoscope
+[2024-04-27 02:35:00] INFO root fetch - processPackages [state-machine-semaphore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/state-machine-semaphore-0.1.98.tar.gz tmp/state-machine-semaphore-0.1.99.tar.gz --markdown 20240427/s/state-machine-semaphore/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-27 02:35:00] INFO root fetch - processPackages [pied-poker]: executing diffoscope
+[2024-04-27 02:35:00] INFO root fetch - processPackages [pied-poker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pied_poker-1.2.5.tar.gz tmp/pied_poker-1.2.6.tar.gz --markdown 20240427/p/pied-poker/1.2.5-1.2.6/README.md --exclude *.pyd
+[2024-04-27 02:35:00] INFO root fetch - processPackages [shuttleai]: Downloading https://files.pythonhosted.org/packages/d7/f4/52bf6193c00529f41d7d2861a7a214ac3058cdf3bebc1042eae45d2ebeef/shuttleai-3.9.4.tar.gz
+[2024-04-27 02:35:00] INFO root fetch - processPackages [cosmic-datapi]: Downloading https://files.pythonhosted.org/packages/72/6b/d2de11e47634c336aa094228a44e4338ea34a2143364eeb83412bc629b0a/cosmic_datapi-0.0.9.tar.gz
+[2024-04-27 02:35:00] INFO root fetch - processPackages [shuttleai]: executing diffoscope
+[2024-04-27 02:35:00] INFO root fetch - processPackages [shuttleai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shuttleai-3.9.0.tar.gz tmp/shuttleai-3.9.4.tar.gz --markdown 20240427/s/shuttleai/3.9.0-3.9.4/README.md --exclude *.pyd
+[2024-04-27 02:35:00] INFO root fetch - processPackages [cosmic-datapi]: executing diffoscope
+[2024-04-27 02:35:00] INFO root fetch - processPackages [cosmic-datapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cosmic_datapi-0.0.8.tar.gz tmp/cosmic_datapi-0.0.9.tar.gz --markdown 20240427/c/cosmic-datapi/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 02:35:01] INFO root fetch - processPackages [state-machine-semaphore]: Remove: archive file [/home/abi/fetcher/tmp/state-machine-semaphore-0.1.98.tar.gz]
+[2024-04-27 02:35:01] INFO root fetch - processPackages [state-machine-semaphore]: Remove: archive file [/home/abi/fetcher/tmp/state-machine-semaphore-0.1.99.tar.gz]
+[2024-04-27 02:35:01] INFO root fetch - main [MainThread]: End processing [state-machine-semaphore]: success
+[2024-04-27 02:35:01] INFO root fetch - processPackages [pied-poker]: Remove: archive file [/home/abi/fetcher/tmp/pied_poker-1.2.5.tar.gz]
+[2024-04-27 02:35:01] INFO root fetch - processPackages [pied-poker]: Remove: archive file [/home/abi/fetcher/tmp/pied_poker-1.2.6.tar.gz]
+[2024-04-27 02:35:01] INFO root fetch - main [MainThread]: End processing [pied-poker]: success
+[2024-04-27 02:35:01] INFO root fetch - processPackages [cosmic-datapi]: Remove: archive file [/home/abi/fetcher/tmp/cosmic_datapi-0.0.8.tar.gz]
+[2024-04-27 02:35:01] INFO root fetch - processPackages [cosmic-datapi]: Remove: archive file [/home/abi/fetcher/tmp/cosmic_datapi-0.0.9.tar.gz]
+[2024-04-27 02:35:01] INFO root fetch - main [MainThread]: End processing [cosmic-datapi]: success
+[2024-04-27 02:35:01] INFO root fetch - processPackages [shuttleai]: Remove: archive file [/home/abi/fetcher/tmp/shuttleai-3.9.0.tar.gz]
+[2024-04-27 02:35:01] INFO root fetch - processPackages [shuttleai]: Remove: archive file [/home/abi/fetcher/tmp/shuttleai-3.9.4.tar.gz]
+[2024-04-27 02:35:01] INFO root fetch - main [MainThread]: End processing [shuttleai]: success
+[2024-04-27 02:35:01] INFO root fetch - main [MainThread]: Store serial: [22954399]
