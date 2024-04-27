@@ -19132,3 +19132,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 20:20:29] INFO root fetch - processPackages [odoo-addon-project-wbs]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_project_wbs-15.0.1.1.2-py3-none-any.whl.zip]
 [2024-04-27 20:20:29] INFO root fetch - main [MainThread]: End processing [odoo-addon-project-wbs]: success
 [2024-04-27 20:20:29] INFO root fetch - main [MainThread]: Store serial: [22961041]
+[2024-04-27 20:22:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961041]
+[2024-04-27 20:22:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 20:22:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: camera-ui-python-types
+[2024-04-27 20:22:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: introspection
+[2024-04-27 20:22:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyjvc
+[2024-04-27 20:22:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: shelloracle
+[2024-04-27 20:22:45] INFO root fetch - processPackages [shelloracle]: New version: [1.3.0] Old Version: [1.1.2]
+[2024-04-27 20:22:45] INFO root fetch - processPackages [shelloracle]: Downloading https://files.pythonhosted.org/packages/72/e4/91b508ddf90ec3e465fef37b64babff4d3394d7dcad856499f5c8b6245ba/shelloracle-1.1.2.tar.gz
+[2024-04-27 20:22:45] INFO root fetch - processPackages [introspection]: New version: [1.8] Old Version: [1.7.9]
+[2024-04-27 20:22:45] INFO root fetch - processPackages [camera-ui-python-types]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-27 20:22:45] INFO root fetch - processPackages [pyjvc]: New version: [4.4.5] Old Version: [4.4.4]
+[2024-04-27 20:22:46] INFO root fetch - processPackages [introspection]: Downloading https://files.pythonhosted.org/packages/b2/32/c8c9a419b65a33ae69727689679ae2ff57983a962d052b8bc97414496833/introspection-1.7.9.tar.gz
+[2024-04-27 20:22:46] INFO root fetch - processPackages [camera-ui-python-types]: Downloading https://files.pythonhosted.org/packages/4d/91/8f66920b92ee71f302a89040cd5bda06874eb3068a8e2783d2727e21e145/camera-ui-python-types-0.1.8.tar.gz
+[2024-04-27 20:22:46] INFO root fetch - processPackages [pyjvc]: Downloading https://files.pythonhosted.org/packages/ca/1b/5fb5081cf5ca652d40bd04576dd320d6db3f70bc4795086bf16fba495ee9/pyjvc-4.4.4.tar.gz
+[2024-04-27 20:22:46] INFO root fetch - processPackages [shelloracle]: Downloading https://files.pythonhosted.org/packages/89/7f/4bb4aa582b25ffc4ac9a0fa897d56fc99f25bd42a26ee5d72231db2fcfed/shelloracle-1.3.0.tar.gz
+[2024-04-27 20:22:46] INFO root fetch - processPackages [shelloracle]: executing diffoscope
+[2024-04-27 20:22:46] INFO root fetch - processPackages [shelloracle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shelloracle-1.1.2.tar.gz tmp/shelloracle-1.3.0.tar.gz --markdown 20240427/s/shelloracle/1.1.2-1.3.0/README.md --exclude *.pyd
+[2024-04-27 20:22:46] INFO root fetch - processPackages [camera-ui-python-types]: Downloading https://files.pythonhosted.org/packages/aa/10/16d19e4d819a9d548f5b24a065fd209324b510898722599b0caf5da342e7/camera-ui-python-types-0.1.9.tar.gz
+[2024-04-27 20:22:46] INFO root fetch - processPackages [pyjvc]: Downloading https://files.pythonhosted.org/packages/5f/8e/7d82621d04fc302420b6ba0f82cee677bd40245ca7fe9cb330294158ec26/pyjvc-4.4.5.tar.gz
+[2024-04-27 20:22:46] INFO root fetch - processPackages [introspection]: Downloading https://files.pythonhosted.org/packages/e4/b8/020637475211d3399bc9b7fbb81a414fa9ebaee63184da4b010f732c442f/introspection-1.8.tar.gz
+[2024-04-27 20:22:46] INFO root fetch - processPackages [camera-ui-python-types]: executing diffoscope
+[2024-04-27 20:22:46] INFO root fetch - processPackages [camera-ui-python-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/camera-ui-python-types-0.1.8.tar.gz tmp/camera-ui-python-types-0.1.9.tar.gz --markdown 20240427/c/camera-ui-python-types/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-27 20:22:46] INFO root fetch - processPackages [pyjvc]: executing diffoscope
+[2024-04-27 20:22:46] INFO root fetch - processPackages [pyjvc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyjvc-4.4.4.tar.gz tmp/pyjvc-4.4.5.tar.gz --markdown 20240427/p/pyjvc/4.4.4-4.4.5/README.md --exclude *.pyd
+[2024-04-27 20:22:46] INFO root fetch - processPackages [introspection]: executing diffoscope
+[2024-04-27 20:22:46] INFO root fetch - processPackages [introspection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/introspection-1.7.9.tar.gz tmp/introspection-1.8.tar.gz --markdown 20240427/i/introspection/1.7.9-1.8/README.md --exclude *.pyd
+[2024-04-27 20:22:46] INFO root fetch - processPackages [shelloracle]: Remove: archive file [/home/abi/fetcher/tmp/shelloracle-1.1.2.tar.gz]
+[2024-04-27 20:22:46] INFO root fetch - processPackages [shelloracle]: Remove: archive file [/home/abi/fetcher/tmp/shelloracle-1.3.0.tar.gz]
+[2024-04-27 20:22:46] INFO root fetch - main [MainThread]: End processing [shelloracle]: success
+[2024-04-27 20:22:47] INFO root fetch - processPackages [camera-ui-python-types]: Remove: archive file [/home/abi/fetcher/tmp/camera-ui-python-types-0.1.8.tar.gz]
+[2024-04-27 20:22:47] INFO root fetch - processPackages [camera-ui-python-types]: Remove: archive file [/home/abi/fetcher/tmp/camera-ui-python-types-0.1.9.tar.gz]
+[2024-04-27 20:22:47] INFO root fetch - main [MainThread]: End processing [camera-ui-python-types]: success
+[2024-04-27 20:22:47] INFO root fetch - processPackages [pyjvc]: Remove: archive file [/home/abi/fetcher/tmp/pyjvc-4.4.4.tar.gz]
+[2024-04-27 20:22:47] INFO root fetch - processPackages [pyjvc]: Remove: archive file [/home/abi/fetcher/tmp/pyjvc-4.4.5.tar.gz]
+[2024-04-27 20:22:47] INFO root fetch - main [MainThread]: End processing [pyjvc]: success
+[2024-04-27 20:22:47] INFO root fetch - processPackages [introspection]: Remove: archive file [/home/abi/fetcher/tmp/introspection-1.7.9.tar.gz]
+[2024-04-27 20:22:47] INFO root fetch - processPackages [introspection]: Remove: archive file [/home/abi/fetcher/tmp/introspection-1.8.tar.gz]
+[2024-04-27 20:22:47] INFO root fetch - main [MainThread]: End processing [introspection]: success
+[2024-04-27 20:22:47] INFO root fetch - main [MainThread]: Store serial: [22961053]
