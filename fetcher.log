@@ -9250,3 +9250,15 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 07:31:27] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1.2-py3-none-any.whl.zip]
 [2024-04-27 07:31:27] INFO root fetch - main [MainThread]: End processing [odoo-addon-openupgrade-scripts]: success
 [2024-04-27 07:31:27] INFO root fetch - main [MainThread]: Store serial: [22956704]
+[2024-04-27 07:33:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956704]
+[2024-04-27 07:33:36] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 07:33:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tflite-runtime-nightly
+[2024-04-27 07:33:36] INFO root fetch - processPackages [tflite-runtime-nightly]: New version: [2.17.0.dev20240425] Old Version: [2.17.0.dev20240424]
+[2024-04-27 07:33:36] INFO root fetch - processPackages [tflite-runtime-nightly]: Downloading https://files.pythonhosted.org/packages/3b/c6/ea87bcd33f2f0d03780911f7b8b67ea05c53d505828f70e068cf6d5d48ce/tflite_runtime_nightly-2.17.0.dev20240424-cp39-cp39-manylinux_2_34_armv7l.whl
+[2024-04-27 07:33:37] INFO root fetch - processPackages [tflite-runtime-nightly]: Downloading https://files.pythonhosted.org/packages/1a/58/fdb6f47d7a91191af7c2297449a9a5b0b0c8cae3b1affe63a79d6a490033/tflite_runtime_nightly-2.17.0.dev20240425-cp39-cp39-manylinux_2_34_armv7l.whl
+[2024-04-27 07:33:37] INFO root fetch - processPackages [tflite-runtime-nightly]: executing diffoscope
+[2024-04-27 07:33:37] INFO root fetch - processPackages [tflite-runtime-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite_runtime_nightly-2.17.0.dev20240424-cp39-cp39-manylinux_2_34_armv7l.whl.zip tmp/tflite_runtime_nightly-2.17.0.dev20240425-cp39-cp39-manylinux_2_34_armv7l.whl.zip --markdown 20240427/t/tflite-runtime-nightly/2.17.0.dev20240424-2.17.0.dev20240425/README.md --exclude *.pyd
+[2024-04-27 07:34:00] INFO root fetch - processPackages [tflite-runtime-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tflite_runtime_nightly-2.17.0.dev20240424-cp39-cp39-manylinux_2_34_armv7l.whl.zip]
+[2024-04-27 07:34:00] INFO root fetch - processPackages [tflite-runtime-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tflite_runtime_nightly-2.17.0.dev20240425-cp39-cp39-manylinux_2_34_armv7l.whl.zip]
+[2024-04-27 07:34:00] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
+[2024-04-27 07:34:00] INFO root fetch - main [MainThread]: Store serial: [22956716]
