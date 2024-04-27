@@ -11680,3 +11680,33 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 11:53:33] INFO root fetch - processPackages [django-graphql-jwt-oauth2]: Remove: archive file [/home/abi/fetcher/tmp/django_graphql_jwt_oauth2-1.2.3.tar.gz]
 [2024-04-27 11:53:33] INFO root fetch - main [MainThread]: End processing [django-graphql-jwt-oauth2]: success
 [2024-04-27 11:53:33] INFO root fetch - main [MainThread]: Store serial: [22957772]
+[2024-04-27 11:55:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957772]
+[2024-04-27 11:55:41] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 11:55:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyeasyedit
+[2024-04-27 11:55:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyblu
+[2024-04-27 11:55:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mima-engine
+[2024-04-27 11:55:42] INFO root fetch - processPackages [pyeasyedit]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-27 11:55:42] INFO root fetch - processPackages [pyeasyedit]: Downloading https://files.pythonhosted.org/packages/f5/65/6225f51a996e7308aff3f54b0a639003450a02fa9150707ff2af2cf64a03/pyeasyedit-0.1.8.tar.gz
+[2024-04-27 11:55:42] INFO root fetch - processPackages [pyblu]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-04-27 11:55:42] INFO root fetch - processPackages [mima-engine]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-27 11:55:42] INFO root fetch - processPackages [pyblu]: Downloading https://files.pythonhosted.org/packages/e1/f9/4a3f40ad345c6b38ec271d2a18778007bcd3122be30776f4b92376a97f6e/pyblu-0.3.2.tar.gz
+[2024-04-27 11:55:42] INFO root fetch - processPackages [mima-engine]: Downloading https://files.pythonhosted.org/packages/bf/2b/eab70001576b8092ae2d1b57ea3e4d168c52c9bdc71c3952d42a65169a1b/mima_engine-0.1.4.tar.gz
+[2024-04-27 11:55:42] INFO root fetch - processPackages [pyeasyedit]: Downloading https://files.pythonhosted.org/packages/79/5f/0c41710576885506fe4f1794d807503cba2732c2af0a069d174cacbe6cd0/pyeasyedit-0.1.9.tar.gz
+[2024-04-27 11:55:42] INFO root fetch - processPackages [pyblu]: Downloading https://files.pythonhosted.org/packages/5f/49/7b7a23048c203982f9e4d3104335bf5a9037b77064c5da1cf22bd8fd4d10/pyblu-0.3.3.tar.gz
+[2024-04-27 11:55:42] INFO root fetch - processPackages [mima-engine]: Downloading https://files.pythonhosted.org/packages/28/4e/c51e0c3bd73f9e10869e2c346f0648d10717f8c01f669acfd15325b558ac/mima_engine-0.1.5.tar.gz
+[2024-04-27 11:55:42] INFO root fetch - processPackages [pyblu]: executing diffoscope
+[2024-04-27 11:55:42] INFO root fetch - processPackages [pyblu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyblu-0.3.2.tar.gz tmp/pyblu-0.3.3.tar.gz --markdown 20240427/p/pyblu/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-04-27 11:55:42] INFO root fetch - processPackages [pyeasyedit]: executing diffoscope
+[2024-04-27 11:55:42] INFO root fetch - processPackages [pyeasyedit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeasyedit-0.1.8.tar.gz tmp/pyeasyedit-0.1.9.tar.gz --markdown 20240427/p/pyeasyedit/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-27 11:55:42] INFO root fetch - processPackages [mima-engine]: executing diffoscope
+[2024-04-27 11:55:42] INFO root fetch - processPackages [mima-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mima_engine-0.1.4.tar.gz tmp/mima_engine-0.1.5.tar.gz --markdown 20240427/m/mima-engine/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-27 11:55:43] INFO root fetch - processPackages [pyblu]: Remove: archive file [/home/abi/fetcher/tmp/pyblu-0.3.2.tar.gz]
+[2024-04-27 11:55:43] INFO root fetch - processPackages [pyblu]: Remove: archive file [/home/abi/fetcher/tmp/pyblu-0.3.3.tar.gz]
+[2024-04-27 11:55:43] INFO root fetch - main [MainThread]: End processing [pyblu]: success
+[2024-04-27 11:55:43] INFO root fetch - processPackages [mima-engine]: Remove: archive file [/home/abi/fetcher/tmp/mima_engine-0.1.4.tar.gz]
+[2024-04-27 11:55:43] INFO root fetch - processPackages [mima-engine]: Remove: archive file [/home/abi/fetcher/tmp/mima_engine-0.1.5.tar.gz]
+[2024-04-27 11:55:43] INFO root fetch - main [MainThread]: End processing [mima-engine]: success
+[2024-04-27 11:55:43] INFO root fetch - processPackages [pyeasyedit]: Remove: archive file [/home/abi/fetcher/tmp/pyeasyedit-0.1.8.tar.gz]
+[2024-04-27 11:55:43] INFO root fetch - processPackages [pyeasyedit]: Remove: archive file [/home/abi/fetcher/tmp/pyeasyedit-0.1.9.tar.gz]
+[2024-04-27 11:55:43] INFO root fetch - main [MainThread]: End processing [pyeasyedit]: success
+[2024-04-27 11:55:43] INFO root fetch - main [MainThread]: Store serial: [22957781]
