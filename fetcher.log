@@ -20809,3 +20809,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 22:37:07] INFO root fetch - processPackages [marimo]: Remove: archive file [/home/abi/fetcher/tmp/marimo-0.4.7.tar.gz]
 [2024-04-27 22:37:07] INFO root fetch - main [MainThread]: End processing [marimo]: success
 [2024-04-27 22:37:07] INFO root fetch - main [MainThread]: Store serial: [22961802]
+[2024-04-27 22:39:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961802]
+[2024-04-27 22:39:24] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 22:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: amjd
+[2024-04-27 22:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: depthai-viewer
+[2024-04-27 22:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: schemdraw
+[2024-04-27 22:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyrecipes
+[2024-04-27 22:39:24] INFO root fetch - processPackages [pyrecipes]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-04-27 22:39:24] INFO root fetch - processPackages [pyrecipes]: Downloading https://files.pythonhosted.org/packages/87/22/ca5f4742e4c5916505d5e74a0ef7f3a241c79e87a98fdf9f415ae3677301/pyrecipes-0.2.3.tar.gz
+[2024-04-27 22:39:24] INFO root fetch - processPackages [depthai-viewer]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-27 22:39:24] WARNING root fetch - processPackages [amjd]: Skipping, unable to determine old version
+[2024-04-27 22:39:24] INFO root fetch - main [MainThread]: End processing [amjd] error
+[2024-04-27 22:39:24] INFO root fetch - processPackages [schemdraw]: New version: [0.9.1] Old Version: [0.9]
+[2024-04-27 22:39:24] INFO root fetch - processPackages [depthai-viewer]: Downloading https://files.pythonhosted.org/packages/ba/44/e6b51e93411946ed9ff4fdfde5dc6f93d4f6ec3c906943891ce4de5e6722/depthai_viewer-0.1.8-cp38-abi3-win_amd64.whl
+[2024-04-27 22:39:24] INFO root fetch - processPackages [schemdraw]: Downloading https://files.pythonhosted.org/packages/08/72/798246b509f5d127d4d3325109adde8ef7fc6bcd554e337747e12683c557/schemdraw-0.9.tar.gz
+[2024-04-27 22:39:25] INFO root fetch - processPackages [pyrecipes]: Downloading https://files.pythonhosted.org/packages/72/10/9f5a910fd72ce37521858d0c5f292ee10b4e6b8e13107161bfd75cc1aeff/pyrecipes-0.2.4.tar.gz
+[2024-04-27 22:39:25] INFO root fetch - processPackages [pyrecipes]: executing diffoscope
+[2024-04-27 22:39:25] INFO root fetch - processPackages [pyrecipes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrecipes-0.2.3.tar.gz tmp/pyrecipes-0.2.4.tar.gz --markdown 20240427/p/pyrecipes/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-04-27 22:39:25] INFO root fetch - processPackages [depthai-viewer]: Downloading https://files.pythonhosted.org/packages/f4/a1/1dbb178f8dd526b6102512e6d1e7fb274618e547f3b8e1df2fa7f509a871/depthai_viewer-0.1.9-cp38-abi3-win_amd64.whl
+[2024-04-27 22:39:26] INFO root fetch - processPackages [schemdraw]: Downloading https://files.pythonhosted.org/packages/4a/a0/45ac11112a4775831e07a22e2b70deb6151bd47cc05f2cc6cc969885a6f5/schemdraw-0.9.1.tar.gz
+[2024-04-27 22:39:26] INFO root fetch - processPackages [pyrecipes]: Remove: archive file [/home/abi/fetcher/tmp/pyrecipes-0.2.3.tar.gz]
+[2024-04-27 22:39:26] INFO root fetch - processPackages [pyrecipes]: Remove: archive file [/home/abi/fetcher/tmp/pyrecipes-0.2.4.tar.gz]
+[2024-04-27 22:39:26] INFO root fetch - main [MainThread]: End processing [pyrecipes]: success
+[2024-04-27 22:39:28] INFO root fetch - processPackages [schemdraw]: executing diffoscope
+[2024-04-27 22:39:28] INFO root fetch - processPackages [schemdraw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schemdraw-0.9.tar.gz tmp/schemdraw-0.9.1.tar.gz --markdown 20240427/s/schemdraw/0.9-0.9.1/README.md --exclude *.pyd
+[2024-04-27 22:39:28] INFO root fetch - processPackages [depthai-viewer]: executing diffoscope
+[2024-04-27 22:39:28] INFO root fetch - processPackages [depthai-viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/depthai_viewer-0.1.8-cp38-abi3-win_amd64.whl.zip tmp/depthai_viewer-0.1.9-cp38-abi3-win_amd64.whl.zip --markdown 20240427/d/depthai-viewer/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-27 22:39:29] INFO root fetch - processPackages [depthai-viewer]: Remove: archive file [/home/abi/fetcher/tmp/depthai_viewer-0.1.8-cp38-abi3-win_amd64.whl.zip]
+[2024-04-27 22:39:29] INFO root fetch - processPackages [depthai-viewer]: Remove: archive file [/home/abi/fetcher/tmp/depthai_viewer-0.1.9-cp38-abi3-win_amd64.whl.zip]
+[2024-04-27 22:39:29] INFO root fetch - main [MainThread]: End processing [depthai-viewer]: success
+[2024-04-27 22:39:30] INFO root fetch - processPackages [schemdraw]: Remove: archive file [/home/abi/fetcher/tmp/schemdraw-0.9.tar.gz]
+[2024-04-27 22:39:30] INFO root fetch - processPackages [schemdraw]: Remove: archive file [/home/abi/fetcher/tmp/schemdraw-0.9.1.tar.gz]
+[2024-04-27 22:39:30] INFO root fetch - main [MainThread]: End processing [schemdraw]: success
+[2024-04-27 22:39:30] INFO root fetch - main [MainThread]: Store serial: [22961816]
