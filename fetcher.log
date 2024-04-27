@@ -7800,3 +7800,11 @@ EOFError: EOF read where object expected
 [2024-04-27 05:44:55] INFO root fetch - processPackages [odoo-addon-ddmrp-report-part-flow-index]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_ddmrp_report_part_flow_index-16.0.1.1.0-py3-none-any.whl.zip]
 [2024-04-27 05:44:55] INFO root fetch - main [MainThread]: End processing [odoo-addon-ddmrp-report-part-flow-index]: success
 [2024-04-27 05:44:55] INFO root fetch - main [MainThread]: Store serial: [22956255]
+[2024-04-27 05:46:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956255]
+[2024-04-27 05:47:04] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 05:47:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdktf-cdktf-provider-azurerm
+[2024-04-27 05:47:04] INFO root fetch - processPackages [cdktf-cdktf-provider-azurerm]: New version: [9.0.8] Old Version: [9.0.7]
+[2024-04-27 05:47:04] INFO root fetch - processPackages [cdktf-cdktf-provider-azurerm]: Downloading https://files.pythonhosted.org/packages/bf/17/c9386b4842b68525aae4b3da38fa0030881fa08061804f556c93dd424cda/cdktf-cdktf-provider-azurerm-9.0.7.tar.gz
+[2024-04-27 05:47:05] WARNING root fetch - processPackages [cdktf-cdktf-provider-azurerm]: Skipping package: exceeds size limit 31649071>=10485760
+[2024-04-27 05:47:05] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-azurerm] error
+[2024-04-27 05:47:05] INFO root fetch - main [MainThread]: Store serial: [22956258]
