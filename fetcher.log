@@ -16796,3 +16796,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 17:43:39] INFO root fetch - processPackages [letmedoit]: Remove: archive file [/home/abi/fetcher/tmp/letmedoit-2.1.9.tar.gz]
 [2024-04-27 17:43:39] INFO root fetch - main [MainThread]: End processing [letmedoit]: success
 [2024-04-27 17:43:39] INFO root fetch - main [MainThread]: Store serial: [22959942]
+[2024-04-27 17:45:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959942]
+[2024-04-27 17:45:51] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 17:45:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyvisjs
+[2024-04-27 17:45:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flask-localtunnel
+[2024-04-27 17:45:51] INFO root fetch - processPackages [pyvisjs]: New version: [0.0.0.dev5] Old Version: [0.0.0.dev4]
+[2024-04-27 17:45:51] INFO root fetch - processPackages [flask-localtunnel]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-04-27 17:45:51] INFO root fetch - processPackages [pyvisjs]: Downloading https://files.pythonhosted.org/packages/05/66/fb0d606682cb4bd7df974a300c52df9ae3230d67613a6d24d46f2e5d0dea/pyvisjs-0.0.0.dev4.tar.gz
+[2024-04-27 17:45:51] INFO root fetch - processPackages [flask-localtunnel]: Downloading https://files.pythonhosted.org/packages/cd/a5/bbf136d211e442fe44679507a310e0bfd0087ad549937aeb94f92465c0ff/flask_localtunnel-1.0.6-py3-none-any.whl
+[2024-04-27 17:45:51] INFO root fetch - processPackages [flask-localtunnel]: Downloading https://files.pythonhosted.org/packages/d2/6d/1aa24d1be4e530bac07cd0d7d525b483dfe7fe2b8b4101d1eef79ba0bfd6/flask_localtunnel-1.0.7-py3-none-any.whl
+[2024-04-27 17:45:52] INFO root fetch - processPackages [pyvisjs]: Downloading https://files.pythonhosted.org/packages/a8/8f/2c60a2bee9f075afe4ba7fd17e4445f41c150f43a332dae913dbd8ad77b2/pyvisjs-0.0.0.dev5.tar.gz
+[2024-04-27 17:45:52] INFO root fetch - processPackages [flask-localtunnel]: executing diffoscope
+[2024-04-27 17:45:52] INFO root fetch - processPackages [flask-localtunnel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask_localtunnel-1.0.6-py3-none-any.whl.zip tmp/flask_localtunnel-1.0.7-py3-none-any.whl.zip --markdown 20240427/f/flask-localtunnel/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-04-27 17:45:52] INFO root fetch - processPackages [pyvisjs]: executing diffoscope
+[2024-04-27 17:45:52] INFO root fetch - processPackages [pyvisjs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvisjs-0.0.0.dev4.tar.gz tmp/pyvisjs-0.0.0.dev5.tar.gz --markdown 20240427/p/pyvisjs/0.0.0.dev4-0.0.0.dev5/README.md --exclude *.pyd
+[2024-04-27 17:45:52] INFO root fetch - processPackages [flask-localtunnel]: Remove: archive file [/home/abi/fetcher/tmp/flask_localtunnel-1.0.6-py3-none-any.whl.zip]
+[2024-04-27 17:45:52] INFO root fetch - processPackages [flask-localtunnel]: Remove: archive file [/home/abi/fetcher/tmp/flask_localtunnel-1.0.7-py3-none-any.whl.zip]
+[2024-04-27 17:45:52] INFO root fetch - main [MainThread]: End processing [flask-localtunnel]: success
+[2024-04-27 17:45:52] INFO root fetch - processPackages [pyvisjs]: Remove: archive file [/home/abi/fetcher/tmp/pyvisjs-0.0.0.dev4.tar.gz]
+[2024-04-27 17:45:52] INFO root fetch - processPackages [pyvisjs]: Remove: archive file [/home/abi/fetcher/tmp/pyvisjs-0.0.0.dev5.tar.gz]
+[2024-04-27 17:45:52] INFO root fetch - main [MainThread]: End processing [pyvisjs]: success
+[2024-04-27 17:45:52] INFO root fetch - main [MainThread]: Store serial: [22959947]
