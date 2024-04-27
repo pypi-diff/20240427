@@ -15920,3 +15920,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 16:37:06] INFO root fetch - processPackages [qualitative-coding]: Remove: archive file [/home/abi/fetcher/tmp/qualitative_coding-1.2.9.tar.gz]
 [2024-04-27 16:37:06] INFO root fetch - main [MainThread]: End processing [qualitative-coding]: success
 [2024-04-27 16:37:06] INFO root fetch - main [MainThread]: Store serial: [22959527]
+[2024-04-27 16:39:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959527]
+[2024-04-27 16:39:14] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 16:39:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-querysets-single-query-fetch
+[2024-04-27 16:39:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tradeo
+[2024-04-27 16:39:14] INFO root fetch - processPackages [django-querysets-single-query-fetch]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-27 16:39:15] INFO root fetch - processPackages [django-querysets-single-query-fetch]: Downloading https://files.pythonhosted.org/packages/45/da/b6f624c1c96e8d0db775b67371dd155e7d52edd908d95636053b3bbfe02d/django_querysets_single_query_fetch-0.0.5.tar.gz
+[2024-04-27 16:39:15] WARNING root fetch - processPackages [tradeo]: Skipping, unable to determine old version
+[2024-04-27 16:39:15] INFO root fetch - main [MainThread]: End processing [tradeo] error
+[2024-04-27 16:39:15] INFO root fetch - processPackages [django-querysets-single-query-fetch]: Downloading https://files.pythonhosted.org/packages/24/5d/a05bf1e083801f5156d18503f2b8140a2951181582ba4ec8819e467a3fd0/django_querysets_single_query_fetch-0.0.6.tar.gz
+[2024-04-27 16:39:15] INFO root fetch - processPackages [django-querysets-single-query-fetch]: executing diffoscope
+[2024-04-27 16:39:15] INFO root fetch - processPackages [django-querysets-single-query-fetch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_querysets_single_query_fetch-0.0.5.tar.gz tmp/django_querysets_single_query_fetch-0.0.6.tar.gz --markdown 20240427/d/django-querysets-single-query-fetch/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-27 16:39:15] INFO root fetch - processPackages [django-querysets-single-query-fetch]: Remove: archive file [/home/abi/fetcher/tmp/django_querysets_single_query_fetch-0.0.5.tar.gz]
+[2024-04-27 16:39:15] INFO root fetch - processPackages [django-querysets-single-query-fetch]: Remove: archive file [/home/abi/fetcher/tmp/django_querysets_single_query_fetch-0.0.6.tar.gz]
+[2024-04-27 16:39:15] INFO root fetch - main [MainThread]: End processing [django-querysets-single-query-fetch]: success
+[2024-04-27 16:39:15] INFO root fetch - main [MainThread]: Store serial: [22959536]
