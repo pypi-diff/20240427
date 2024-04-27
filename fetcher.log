@@ -12510,3 +12510,41 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 12:58:52] INFO root fetch - processPackages [autodoc_pydantic]: Remove: archive file [/home/abi/fetcher/tmp/autodoc_pydantic-2.2.0-py3-none-any.whl.zip]
 [2024-04-27 12:58:52] INFO root fetch - main [MainThread]: End processing [autodoc_pydantic]: success
 [2024-04-27 12:58:52] INFO root fetch - main [MainThread]: Store serial: [22958080]
+[2024-04-27 13:00:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958080]
+[2024-04-27 13:01:02] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 13:01:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yes-chef
+[2024-04-27 13:01:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rdkit
+[2024-04-27 13:01:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: astrapy
+[2024-04-27 13:01:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: CVE-2019-9670
+[2024-04-27 13:01:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyblu
+[2024-04-27 13:01:02] INFO root fetch - processPackages [pyblu]: New version: [0.3.6] Old Version: [0.3.5]
+[2024-04-27 13:01:02] INFO root fetch - processPackages [yes-chef]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-04-27 13:01:03] WARNING root fetch - processPackages [CVE-2019-9670]: Skipping, unable to determine old version
+[2024-04-27 13:01:03] INFO root fetch - main [MainThread]: End processing [CVE-2019-9670] error
+[2024-04-27 13:01:03] INFO root fetch - processPackages [pyblu]: Downloading https://files.pythonhosted.org/packages/10/2a/04b190badf0c65486666beef2a89533979adbba1020e8e4bc2f74f303626/pyblu-0.3.5.tar.gz
+[2024-04-27 13:01:03] INFO root fetch - processPackages [yes-chef]: Downloading https://files.pythonhosted.org/packages/9e/c2/a5577a1a3e1286b66324e126070e9429bcf697cc75368aabdd90224b05af/yes_chef-0.9.4.tar.gz
+[2024-04-27 13:01:03] INFO root fetch - processPackages [astrapy]: New version: [1.1.0] Old Version: [1.0.0rc1]
+[2024-04-27 13:01:03] INFO root fetch - processPackages [rdkit]: New version: [2023.9.6] Old Version: [2023.9.5]
+[2024-04-27 13:01:03] INFO root fetch - processPackages [astrapy]: Downloading https://files.pythonhosted.org/packages/d1/f3/a38a85e3be094e707c4464e36d97d20829bbffe045c85e9620d2304e997a/astrapy-1.0.0rc1.tar.gz
+[2024-04-27 13:01:03] INFO root fetch - processPackages [rdkit]: Downloading https://files.pythonhosted.org/packages/fb/e8/4f91e44c8faa80764f566fd9f730b415d2f239dd9abf5ab74dda2780174a/rdkit-2023.9.5-cp39-cp39-win_amd64.whl
+[2024-04-27 13:01:03] INFO root fetch - processPackages [pyblu]: Downloading https://files.pythonhosted.org/packages/ee/59/93b7276b5fcffaf285a66bc2451c86af63f233320531c861b655e1da4721/pyblu-0.3.6.tar.gz
+[2024-04-27 13:01:03] INFO root fetch - processPackages [yes-chef]: Downloading https://files.pythonhosted.org/packages/ee/14/574311e366114c76e3ed8c0859756e986f72b545ead25d44ef25b5a0d947/yes_chef-0.9.5.tar.gz
+[2024-04-27 13:01:03] WARNING root fetch - processPackages [rdkit]: Skipping package: exceeds size limit 21060749>=10485760
+[2024-04-27 13:01:03] INFO root fetch - main [MainThread]: End processing [rdkit] error
+[2024-04-27 13:01:03] INFO root fetch - processPackages [pyblu]: executing diffoscope
+[2024-04-27 13:01:03] INFO root fetch - processPackages [pyblu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyblu-0.3.5.tar.gz tmp/pyblu-0.3.6.tar.gz --markdown 20240427/p/pyblu/0.3.5-0.3.6/README.md --exclude *.pyd
+[2024-04-27 13:01:03] INFO root fetch - processPackages [yes-chef]: executing diffoscope
+[2024-04-27 13:01:03] INFO root fetch - processPackages [yes-chef]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yes_chef-0.9.4.tar.gz tmp/yes_chef-0.9.5.tar.gz --markdown 20240427/y/yes-chef/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-04-27 13:01:03] INFO root fetch - processPackages [astrapy]: Downloading https://files.pythonhosted.org/packages/3d/2a/3a2a44eef1af761ef33f22731669073bb8c86df5aed0dc222cada6f66dce/astrapy-1.1.0.tar.gz
+[2024-04-27 13:01:03] INFO root fetch - processPackages [astrapy]: executing diffoscope
+[2024-04-27 13:01:03] INFO root fetch - processPackages [astrapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astrapy-1.0.0rc1.tar.gz tmp/astrapy-1.1.0.tar.gz --markdown 20240427/a/astrapy/1.0.0rc1-1.1.0/README.md --exclude *.pyd
+[2024-04-27 13:01:04] INFO root fetch - processPackages [pyblu]: Remove: archive file [/home/abi/fetcher/tmp/pyblu-0.3.5.tar.gz]
+[2024-04-27 13:01:04] INFO root fetch - processPackages [pyblu]: Remove: archive file [/home/abi/fetcher/tmp/pyblu-0.3.6.tar.gz]
+[2024-04-27 13:01:04] INFO root fetch - main [MainThread]: End processing [pyblu]: success
+[2024-04-27 13:01:04] INFO root fetch - processPackages [yes-chef]: Remove: archive file [/home/abi/fetcher/tmp/yes_chef-0.9.4.tar.gz]
+[2024-04-27 13:01:04] INFO root fetch - processPackages [yes-chef]: Remove: archive file [/home/abi/fetcher/tmp/yes_chef-0.9.5.tar.gz]
+[2024-04-27 13:01:04] INFO root fetch - main [MainThread]: End processing [yes-chef]: success
+[2024-04-27 13:01:04] INFO root fetch - processPackages [astrapy]: Remove: archive file [/home/abi/fetcher/tmp/astrapy-1.0.0rc1.tar.gz]
+[2024-04-27 13:01:04] INFO root fetch - processPackages [astrapy]: Remove: archive file [/home/abi/fetcher/tmp/astrapy-1.1.0.tar.gz]
+[2024-04-27 13:01:04] INFO root fetch - main [MainThread]: End processing [astrapy]: success
+[2024-04-27 13:01:04] INFO root fetch - main [MainThread]: Store serial: [22958117]
