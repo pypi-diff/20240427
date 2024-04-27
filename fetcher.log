@@ -9041,3 +9041,20 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 07:09:44] INFO root fetch - processPackages [transformers-js-py]: Remove: archive file [/home/abi/fetcher/tmp/transformers_js_py-0.9.0.tar.gz]
 [2024-04-27 07:09:44] INFO root fetch - main [MainThread]: End processing [transformers-js-py]: success
 [2024-04-27 07:09:44] INFO root fetch - main [MainThread]: Store serial: [22956618]
+[2024-04-27 07:11:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956618]
+[2024-04-27 07:11:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 07:11:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mocca2
+[2024-04-27 07:11:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: palworld-pal-editor
+[2024-04-27 07:11:52] INFO root fetch - processPackages [mocca2]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-27 07:11:52] INFO root fetch - processPackages [mocca2]: Downloading https://files.pythonhosted.org/packages/5b/b3/3f966d415ed65e7d9ca48b606319d24ace6dea9473df17b6f30f8736b93e/mocca2-0.1.5.tar.gz
+[2024-04-27 07:11:52] INFO root fetch - processPackages [palworld-pal-editor]: New version: [0.8.0] Old Version: [0.7.0]
+[2024-04-27 07:11:52] INFO root fetch - processPackages [palworld-pal-editor]: Downloading https://files.pythonhosted.org/packages/e3/68/b0992e83f1e385848982edd113ef1715943ce0c0fc9fa133a7bf33f2bc99/palworld_pal_editor-0.7.0.tar.gz
+[2024-04-27 07:11:52] WARNING root fetch - processPackages [palworld-pal-editor]: Skipping package: exceeds size limit 20488229>=10485760
+[2024-04-27 07:11:52] INFO root fetch - main [MainThread]: End processing [palworld-pal-editor] error
+[2024-04-27 07:11:52] INFO root fetch - processPackages [mocca2]: Downloading https://files.pythonhosted.org/packages/62/d1/adf17b2824575fcfb3c0cad2623bd4755f68d2927be9565cbffdc5830826/mocca2-0.1.6.tar.gz
+[2024-04-27 07:11:53] INFO root fetch - processPackages [mocca2]: executing diffoscope
+[2024-04-27 07:11:53] INFO root fetch - processPackages [mocca2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mocca2-0.1.5.tar.gz tmp/mocca2-0.1.6.tar.gz --markdown 20240427/m/mocca2/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-27 07:11:53] INFO root fetch - processPackages [mocca2]: Remove: archive file [/home/abi/fetcher/tmp/mocca2-0.1.5.tar.gz]
+[2024-04-27 07:11:53] INFO root fetch - processPackages [mocca2]: Remove: archive file [/home/abi/fetcher/tmp/mocca2-0.1.6.tar.gz]
+[2024-04-27 07:11:53] INFO root fetch - main [MainThread]: End processing [mocca2]: success
+[2024-04-27 07:11:53] INFO root fetch - main [MainThread]: Store serial: [22956624]
