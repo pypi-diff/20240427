@@ -13909,3 +13909,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 14:34:44] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.9.tar.gz]
 [2024-04-27 14:34:44] INFO root fetch - main [MainThread]: End processing [flatpack]: success
 [2024-04-27 14:34:44] INFO root fetch - main [MainThread]: Store serial: [22958694]
+[2024-04-27 14:36:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958694]
+[2024-04-27 14:36:52] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 14:36:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flatpack
+[2024-04-27 14:36:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: a4a
+[2024-04-27 14:36:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nendo-plugin-loopify
+[2024-04-27 14:36:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ceasylog
+[2024-04-27 14:36:53] INFO root fetch - processPackages [ceasylog]: New version: [1.2.6] Old Version: [1.2.2]
+[2024-04-27 14:36:53] INFO root fetch - processPackages [flatpack]: New version: [3.3.9] Old Version: [3.3.8]
+[2024-04-27 14:36:53] WARNING root fetch - processPackages [a4a]: Skipping, unable to determine old version
+[2024-04-27 14:36:53] INFO root fetch - processPackages [nendo-plugin-loopify]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-27 14:36:53] INFO root fetch - main [MainThread]: End processing [a4a] error
+[2024-04-27 14:36:53] INFO root fetch - processPackages [ceasylog]: Downloading https://files.pythonhosted.org/packages/e5/4a/527e332388ab7c604da2d92741bfe8e5049e2b0d1682a9b70b7018fc1114/ceasylog-1.2.2.tar.gz
+[2024-04-27 14:36:53] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/42/48/84e949164975b341645163f536ee4ca8329c4e3dfa6d143c2806a0849a54/flatpack-3.3.8.tar.gz
+[2024-04-27 14:36:53] INFO root fetch - processPackages [nendo-plugin-loopify]: Downloading https://files.pythonhosted.org/packages/09/44/b3235e8a39ebf789a03f2cb4f7d882305519257a90806ed5a1f5030fb9af/nendo_plugin_loopify-0.1.6.tar.gz
+[2024-04-27 14:36:53] INFO root fetch - processPackages [ceasylog]: Downloading https://files.pythonhosted.org/packages/29/00/fc9efb06aa17961d125064feaf85be3b95c9e6f8fb30e4d51261943a7bfb/ceasylog-1.2.6.tar.gz
+[2024-04-27 14:36:53] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/11/54/065825e8640b062c83c07c97d8dea514db8a5c0ea3c272834b88c568d82e/flatpack-3.3.9.tar.gz
+[2024-04-27 14:36:53] INFO root fetch - processPackages [ceasylog]: executing diffoscope
+[2024-04-27 14:36:53] INFO root fetch - processPackages [ceasylog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ceasylog-1.2.2.tar.gz tmp/ceasylog-1.2.6.tar.gz --markdown 20240427/c/ceasylog/1.2.2-1.2.6/README.md --exclude *.pyd
+[2024-04-27 14:36:53] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-04-27 14:36:53] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.3.8.tar.gz tmp/flatpack-3.3.9.tar.gz --markdown 20240427/f/flatpack/3.3.8-3.3.9/README.md --exclude *.pyd
+[2024-04-27 14:36:53] INFO root fetch - processPackages [nendo-plugin-loopify]: Downloading https://files.pythonhosted.org/packages/ec/2a/43bcd6a87c49b0c5b0d8c3b8b907b1ccd7e4dcdb4a1015800eea55a9cba4/nendo_plugin_loopify-0.1.7.tar.gz
+[2024-04-27 14:36:54] INFO root fetch - processPackages [nendo-plugin-loopify]: executing diffoscope
+[2024-04-27 14:36:54] INFO root fetch - processPackages [nendo-plugin-loopify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nendo_plugin_loopify-0.1.6.tar.gz tmp/nendo_plugin_loopify-0.1.7.tar.gz --markdown 20240427/n/nendo-plugin-loopify/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-27 14:36:54] INFO root fetch - processPackages [ceasylog]: Remove: archive file [/home/abi/fetcher/tmp/ceasylog-1.2.2.tar.gz]
+[2024-04-27 14:36:54] INFO root fetch - processPackages [ceasylog]: Remove: archive file [/home/abi/fetcher/tmp/ceasylog-1.2.6.tar.gz]
+[2024-04-27 14:36:54] INFO root fetch - main [MainThread]: End processing [ceasylog]: success
+[2024-04-27 14:36:54] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.8.tar.gz]
+[2024-04-27 14:36:54] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.9.tar.gz]
+[2024-04-27 14:36:54] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-04-27 14:36:54] INFO root fetch - processPackages [nendo-plugin-loopify]: Remove: archive file [/home/abi/fetcher/tmp/nendo_plugin_loopify-0.1.6.tar.gz]
+[2024-04-27 14:36:54] INFO root fetch - processPackages [nendo-plugin-loopify]: Remove: archive file [/home/abi/fetcher/tmp/nendo_plugin_loopify-0.1.7.tar.gz]
+[2024-04-27 14:36:54] INFO root fetch - main [MainThread]: End processing [nendo-plugin-loopify]: success
+[2024-04-27 14:36:54] INFO root fetch - main [MainThread]: Store serial: [22958706]
