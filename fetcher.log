@@ -9666,3 +9666,15 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 08:22:10] INFO root fetch - processPackages [fremu]: Remove: archive file [/home/abi/fetcher/tmp/fremu-0.0.7.tar.gz]
 [2024-04-27 08:22:10] INFO root fetch - main [MainThread]: End processing [fremu]: success
 [2024-04-27 08:22:10] INFO root fetch - main [MainThread]: Store serial: [22956867]
+[2024-04-27 08:24:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956867]
+[2024-04-27 08:24:18] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 08:24:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wise-utils
+[2024-04-27 08:24:18] INFO root fetch - processPackages [wise-utils]: New version: [1.1.0] Old Version: [1.0.3]
+[2024-04-27 08:24:19] INFO root fetch - processPackages [wise-utils]: Downloading https://files.pythonhosted.org/packages/0d/43/a8485729f8b749adc2a63c7ee2e1f22b6d5ffc71ab4cd50c7164b243e100/wise-utils-1.0.3.tar.gz
+[2024-04-27 08:24:19] INFO root fetch - processPackages [wise-utils]: Downloading https://files.pythonhosted.org/packages/59/b3/8dfa4892259ef7046de4532cdaa9243c0459f01a486df6b32c421f7694e2/wise_utils-1.1.0.tar.gz
+[2024-04-27 08:24:19] INFO root fetch - processPackages [wise-utils]: executing diffoscope
+[2024-04-27 08:24:19] INFO root fetch - processPackages [wise-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wise-utils-1.0.3.tar.gz tmp/wise_utils-1.1.0.tar.gz --markdown 20240427/w/wise-utils/1.0.3-1.1.0/README.md --exclude *.pyd
+[2024-04-27 08:24:20] INFO root fetch - processPackages [wise-utils]: Remove: archive file [/home/abi/fetcher/tmp/wise-utils-1.0.3.tar.gz]
+[2024-04-27 08:24:20] INFO root fetch - processPackages [wise-utils]: Remove: archive file [/home/abi/fetcher/tmp/wise_utils-1.1.0.tar.gz]
+[2024-04-27 08:24:20] INFO root fetch - main [MainThread]: End processing [wise-utils]: success
+[2024-04-27 08:24:20] INFO root fetch - main [MainThread]: Store serial: [22956870]
