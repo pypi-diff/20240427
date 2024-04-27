@@ -12366,3 +12366,60 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 12:47:46] INFO root fetch - processPackages [qg_toolkit]: Remove: archive file [/home/abi/fetcher/tmp/qg_toolkit-1.0.2.tar.gz]
 [2024-04-27 12:47:46] INFO root fetch - main [MainThread]: End processing [qg_toolkit]: success
 [2024-04-27 12:47:46] INFO root fetch - main [MainThread]: Store serial: [22958040]
+[2024-04-27 12:49:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958040]
+[2024-04-27 12:49:56] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-27 12:49:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyneople
+[2024-04-27 12:49:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SimpleTKMessageBox
+[2024-04-27 12:49:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-alist
+[2024-04-27 12:49:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: evo
+[2024-04-27 12:49:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hellosp
+[2024-04-27 12:49:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pypzbattlesnake
+[2024-04-27 12:49:56] INFO root fetch - processPackages [SimpleTKMessageBox]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-27 12:49:56] INFO root fetch - processPackages [hellosp]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-27 12:49:56] INFO root fetch - processPackages [python-alist]: New version: [0.0.9.9] Old Version: [0.0.9.8.1]
+[2024-04-27 12:49:56] INFO root fetch - processPackages [hellosp]: Downloading https://files.pythonhosted.org/packages/2c/e4/adca972cf7f06355395ef70cc2d3097616fcbb998e22a0b9d82f062aa6e1/hellosp-0.2.0.tar.gz
+[2024-04-27 12:49:56] INFO root fetch - processPackages [python-alist]: Downloading https://files.pythonhosted.org/packages/16/4c/767ed3dbd217eb3ea1f030c845f5a098d8e656f2fb4ab63c7fa0eadcf367/python_alist-0.0.9.8.1.tar.gz
+[2024-04-27 12:49:56] INFO root fetch - processPackages [pyneople]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-04-27 12:49:56] INFO root fetch - processPackages [pypzbattlesnake]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-27 12:49:56] INFO root fetch - processPackages [evo]: New version: [1.9.1] Old Version: [1.9]
+[2024-04-27 12:49:56] INFO root fetch - processPackages [SimpleTKMessageBox]: Downloading https://files.pythonhosted.org/packages/e8/62/102c53fdbaa14a78dd4c2cb9675204e93305351d3f2cf745f4b1d8f6b78f/SimpleTKMessageBox-0.1.0.tar.gz
+[2024-04-27 12:49:56] INFO root fetch - processPackages [pyneople]: Downloading https://files.pythonhosted.org/packages/79/7d/a4cb13b42af3db5a58fea00f17032bf79199669aefb11ace3f078ae1a896/pyneople-0.2.6.tar.gz
+[2024-04-27 12:49:56] INFO root fetch - processPackages [python-alist]: Downloading https://files.pythonhosted.org/packages/a4/c8/c4ceead1bdae1d44cce58995ae016d39c6e4134cefa9b31ef2daf97d4c36/python_alist-0.0.9.9.tar.gz
+[2024-04-27 12:49:56] INFO root fetch - processPackages [pypzbattlesnake]: Downloading https://files.pythonhosted.org/packages/37/45/1b224635497d24f72a6de17174475669f68261f82936bea0f91ece8fc494/pypzbattlesnake-0.0.2.tar.gz
+[2024-04-27 12:49:56] INFO root fetch - processPackages [hellosp]: Downloading https://files.pythonhosted.org/packages/00/70/a81a1e2f2ed613ed33bfc3b738ffcd9fd68d9f4bea6abda1389cd9a49026/hellosp-0.2.1.tar.gz
+[2024-04-27 12:49:56] INFO root fetch - processPackages [evo]: Downloading https://files.pythonhosted.org/packages/fa/e5/ee49f9a9284fdc048d92a81fd7415a0edbfcdfb5cb1a4591bf861ed3ee41/evo-1.9.tar.gz
+[2024-04-27 12:49:56] INFO root fetch - processPackages [SimpleTKMessageBox]: Downloading https://files.pythonhosted.org/packages/11/69/fa18f197f21badcd9af08ac79baaa84eb716368fe3dadceb585d671fbcc2/SimpleTKMessageBox-0.1.1.tar.gz
+[2024-04-27 12:49:56] INFO root fetch - processPackages [python-alist]: executing diffoscope
+[2024-04-27 12:49:56] INFO root fetch - processPackages [python-alist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_alist-0.0.9.8.1.tar.gz tmp/python_alist-0.0.9.9.tar.gz --markdown 20240427/p/python-alist/0.0.9.8.1-0.0.9.9/README.md --exclude *.pyd
+[2024-04-27 12:49:56] INFO root fetch - processPackages [hellosp]: executing diffoscope
+[2024-04-27 12:49:56] INFO root fetch - processPackages [hellosp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hellosp-0.2.0.tar.gz tmp/hellosp-0.2.1.tar.gz --markdown 20240427/h/hellosp/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-04-27 12:49:56] INFO root fetch - processPackages [SimpleTKMessageBox]: executing diffoscope
+[2024-04-27 12:49:56] INFO root fetch - processPackages [SimpleTKMessageBox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SimpleTKMessageBox-0.1.0.tar.gz tmp/SimpleTKMessageBox-0.1.1.tar.gz --markdown 20240427/S/SimpleTKMessageBox/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-27 12:49:56] INFO root fetch - processPackages [pyneople]: Downloading https://files.pythonhosted.org/packages/b7/6b/e5a695dad22c8d7ecd6480417b8c6d3d8e6f8932f4053472785be3b66ff0/pyneople-0.2.7.tar.gz
+[2024-04-27 12:49:56] INFO root fetch - processPackages [pypzbattlesnake]: Downloading https://files.pythonhosted.org/packages/1e/73/93dc63be2b3ea4fb54c888091d4fba55e8c3b858c3c3a0cf1ed5c4461c49/pypzbattlesnake-0.0.3.tar.gz
+[2024-04-27 12:49:56] INFO root fetch - processPackages [pyneople]: executing diffoscope
+[2024-04-27 12:49:56] INFO root fetch - processPackages [pyneople]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyneople-0.2.6.tar.gz tmp/pyneople-0.2.7.tar.gz --markdown 20240427/p/pyneople/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-04-27 12:49:57] INFO root fetch - processPackages [evo]: Downloading https://files.pythonhosted.org/packages/a2/43/5be79fe2d4ceac3509b0eabb311aa1a37ae30e1bf2a0267346548575c189/evo-1.9.1.tar.gz
+[2024-04-27 12:49:57] INFO root fetch - processPackages [pypzbattlesnake]: executing diffoscope
+[2024-04-27 12:49:57] INFO root fetch - processPackages [pypzbattlesnake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypzbattlesnake-0.0.2.tar.gz tmp/pypzbattlesnake-0.0.3.tar.gz --markdown 20240427/p/pypzbattlesnake/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-27 12:49:57] INFO root fetch - processPackages [evo]: executing diffoscope
+[2024-04-27 12:49:57] INFO root fetch - processPackages [evo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evo-1.9.tar.gz tmp/evo-1.9.1.tar.gz --markdown 20240427/e/evo/1.9-1.9.1/README.md --exclude *.pyd
+[2024-04-27 12:49:57] INFO root fetch - processPackages [hellosp]: Remove: archive file [/home/abi/fetcher/tmp/hellosp-0.2.0.tar.gz]
+[2024-04-27 12:49:57] INFO root fetch - processPackages [hellosp]: Remove: archive file [/home/abi/fetcher/tmp/hellosp-0.2.1.tar.gz]
+[2024-04-27 12:49:57] INFO root fetch - main [MainThread]: End processing [hellosp]: success
+[2024-04-27 12:49:57] INFO root fetch - processPackages [SimpleTKMessageBox]: Remove: archive file [/home/abi/fetcher/tmp/SimpleTKMessageBox-0.1.0.tar.gz]
+[2024-04-27 12:49:57] INFO root fetch - processPackages [SimpleTKMessageBox]: Remove: archive file [/home/abi/fetcher/tmp/SimpleTKMessageBox-0.1.1.tar.gz]
+[2024-04-27 12:49:57] INFO root fetch - main [MainThread]: End processing [SimpleTKMessageBox]: success
+[2024-04-27 12:49:57] INFO root fetch - processPackages [python-alist]: Remove: archive file [/home/abi/fetcher/tmp/python_alist-0.0.9.8.1.tar.gz]
+[2024-04-27 12:49:57] INFO root fetch - processPackages [python-alist]: Remove: archive file [/home/abi/fetcher/tmp/python_alist-0.0.9.9.tar.gz]
+[2024-04-27 12:49:57] INFO root fetch - main [MainThread]: End processing [python-alist]: success
+[2024-04-27 12:49:57] INFO root fetch - processPackages [pyneople]: Remove: archive file [/home/abi/fetcher/tmp/pyneople-0.2.6.tar.gz]
+[2024-04-27 12:49:57] INFO root fetch - processPackages [pyneople]: Remove: archive file [/home/abi/fetcher/tmp/pyneople-0.2.7.tar.gz]
+[2024-04-27 12:49:57] INFO root fetch - main [MainThread]: End processing [pyneople]: success
+[2024-04-27 12:49:57] INFO root fetch - processPackages [pypzbattlesnake]: Remove: archive file [/home/abi/fetcher/tmp/pypzbattlesnake-0.0.2.tar.gz]
+[2024-04-27 12:49:57] INFO root fetch - processPackages [pypzbattlesnake]: Remove: archive file [/home/abi/fetcher/tmp/pypzbattlesnake-0.0.3.tar.gz]
+[2024-04-27 12:49:57] INFO root fetch - main [MainThread]: End processing [pypzbattlesnake]: success
+[2024-04-27 12:49:57] INFO root fetch - processPackages [evo]: Remove: archive file [/home/abi/fetcher/tmp/evo-1.9.tar.gz]
+[2024-04-27 12:49:57] INFO root fetch - processPackages [evo]: Remove: archive file [/home/abi/fetcher/tmp/evo-1.9.1.tar.gz]
+[2024-04-27 12:49:57] INFO root fetch - main [MainThread]: End processing [evo]: success
+[2024-04-27 12:49:57] INFO root fetch - main [MainThread]: Store serial: [22958056]
