@@ -14245,3 +14245,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 14:58:55] INFO root fetch - processPackages [openctp-ctp-cp]: Remove: archive file [/home/abi/fetcher/tmp/openctp_ctp_cp-6.6.9-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-04-27 14:58:55] INFO root fetch - main [MainThread]: End processing [openctp-ctp-cp]: success
 [2024-04-27 14:58:55] INFO root fetch - main [MainThread]: Store serial: [22958849]
+[2024-04-27 15:01:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958849]
+[2024-04-27 15:01:16] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 15:01:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: khoj-assistant
+[2024-04-27 15:01:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: praanscribe
+[2024-04-27 15:01:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cf2tf
+[2024-04-27 15:01:16] WARNING root fetch - processPackages [praanscribe]: Skipping, unable to determine old version
+[2024-04-27 15:01:16] INFO root fetch - main [MainThread]: End processing [praanscribe] error
+[2024-04-27 15:01:16] INFO root fetch - processPackages [cf2tf]: New version: [0.7.2a3] Old Version: [0.7.2a2]
+[2024-04-27 15:01:16] INFO root fetch - processPackages [khoj-assistant]: New version: [1.9.1.dev8] Old Version: [1.9.1.dev74]
+[2024-04-27 15:01:16] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/fc/89/bbf1c812c39a0f341fea130ae430c11fcdd5fdcc5ca61fbaed2682cc4df7/khoj_assistant-1.9.1.dev74.tar.gz
+[2024-04-27 15:01:16] INFO root fetch - processPackages [cf2tf]: Downloading https://files.pythonhosted.org/packages/73/33/ce792d36c3aa5484f2229e336a691abd0d5771a52cf474c19d8edbbbb654/cf2tf-0.7.2a2.tar.gz
+[2024-04-27 15:01:16] INFO root fetch - processPackages [cf2tf]: Downloading https://files.pythonhosted.org/packages/00/1d/5b3edef08bf3188a41914d123211a0962dd61341e046d11de6301c8ea9d4/cf2tf-0.7.2a3-py3-none-any.whl
+[2024-04-27 15:01:16] INFO root fetch - processPackages [cf2tf]: executing diffoscope
+[2024-04-27 15:01:16] INFO root fetch - processPackages [cf2tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cf2tf-0.7.2a2.tar.gz tmp/cf2tf-0.7.2a3-py3-none-any.whl.zip --markdown 20240427/c/cf2tf/0.7.2a2-0.7.2a3/README.md --exclude *.pyd
+[2024-04-27 15:01:16] INFO root fetch - processPackages [khoj-assistant]: Downloading https://files.pythonhosted.org/packages/47/ae/446626ff585bb336b70b59402ea6a46bf52326a51b81fd9ead920cde4c8a/khoj_assistant-1.9.1.dev8.tar.gz
+[2024-04-27 15:01:17] INFO root fetch - processPackages [khoj-assistant]: executing diffoscope
+[2024-04-27 15:01:17] INFO root fetch - processPackages [khoj-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khoj_assistant-1.9.1.dev74.tar.gz tmp/khoj_assistant-1.9.1.dev8.tar.gz --markdown 20240427/k/khoj-assistant/1.9.1.dev74-1.9.1.dev8/README.md --exclude *.pyd
+[2024-04-27 15:01:17] INFO root fetch - processPackages [cf2tf]: Remove: archive file [/home/abi/fetcher/tmp/cf2tf-0.7.2a2.tar.gz]
+[2024-04-27 15:01:17] INFO root fetch - processPackages [cf2tf]: Remove: archive file [/home/abi/fetcher/tmp/cf2tf-0.7.2a3-py3-none-any.whl.zip]
+[2024-04-27 15:01:17] INFO root fetch - main [MainThread]: End processing [cf2tf]: success
+[2024-04-27 15:01:18] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev74.tar.gz]
+[2024-04-27 15:01:18] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev8.tar.gz]
+[2024-04-27 15:01:18] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
+[2024-04-27 15:01:18] INFO root fetch - main [MainThread]: Store serial: [22958879]
