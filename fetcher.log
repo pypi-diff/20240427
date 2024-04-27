@@ -16025,3 +16025,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 16:45:48] INFO root fetch - processPackages [gotrackit]: Remove: archive file [/home/abi/fetcher/tmp/gotrackit-0.2.2.tar.gz]
 [2024-04-27 16:45:48] INFO root fetch - main [MainThread]: End processing [gotrackit]: success
 [2024-04-27 16:45:48] INFO root fetch - main [MainThread]: Store serial: [22959572]
+[2024-04-27 16:47:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959572]
+[2024-04-27 16:47:58] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 16:47:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: libfwevt-python
+[2024-04-27 16:47:58] INFO root fetch - processPackages [libfwevt-python]: New version: [20240427] Old Version: [20240426]
+[2024-04-27 16:47:58] INFO root fetch - processPackages [libfwevt-python]: Downloading https://files.pythonhosted.org/packages/e3/bd/5f37552215f9683d20a80cc92c57da2708a3ad67834d0ae5378b086f18fd/libfwevt-python-20240426.tar.gz
+[2024-04-27 16:47:59] INFO root fetch - processPackages [libfwevt-python]: Downloading https://files.pythonhosted.org/packages/63/71/f6efd4d453c7449d6b1cb9a6f44d540d0f34d839b563a818116fbfb992c2/libfwevt-python-20240427.tar.gz
+[2024-04-27 16:47:59] INFO root fetch - processPackages [libfwevt-python]: executing diffoscope
+[2024-04-27 16:47:59] INFO root fetch - processPackages [libfwevt-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libfwevt-python-20240426.tar.gz tmp/libfwevt-python-20240427.tar.gz --markdown 20240427/l/libfwevt-python/20240426-20240427/README.md --exclude *.pyd
+[2024-04-27 16:48:03] INFO root fetch - processPackages [libfwevt-python]: Remove: archive file [/home/abi/fetcher/tmp/libfwevt-python-20240426.tar.gz]
+[2024-04-27 16:48:03] INFO root fetch - processPackages [libfwevt-python]: Remove: archive file [/home/abi/fetcher/tmp/libfwevt-python-20240427.tar.gz]
+[2024-04-27 16:48:03] INFO root fetch - main [MainThread]: End processing [libfwevt-python]: success
+[2024-04-27 16:48:03] INFO root fetch - main [MainThread]: Store serial: [22959574]
