@@ -8197,3 +8197,9 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 06:13:12] INFO root fetch - processPackages [argnorm]: Remove: archive file [/home/abi/fetcher/tmp/argnorm-0.3.0-py3-none-any.whl.zip]
 [2024-04-27 06:13:12] INFO root fetch - main [MainThread]: End processing [argnorm]: success
 [2024-04-27 06:13:12] INFO root fetch - main [MainThread]: Store serial: [22956333]
+[2024-04-27 06:15:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956333]
+[2024-04-27 06:15:20] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 06:15:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sqlalchemy-crud-plus
+[2024-04-27 06:15:20] WARNING root fetch - processPackages [sqlalchemy-crud-plus]: Skipping, unable to determine old version
+[2024-04-27 06:15:20] INFO root fetch - main [MainThread]: End processing [sqlalchemy-crud-plus] error
+[2024-04-27 06:15:20] INFO root fetch - main [MainThread]: Store serial: [22956336]
