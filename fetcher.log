@@ -21666,3 +21666,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 23:51:47] INFO root fetch - processPackages [mergoo]: Remove: archive file [/home/abi/fetcher/tmp/mergoo-0.0.8.tar.gz]
 [2024-04-27 23:51:47] INFO root fetch - main [MainThread]: End processing [mergoo]: success
 [2024-04-27 23:51:47] INFO root fetch - main [MainThread]: Store serial: [22962259]
+[2024-04-27 23:53:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962259]
+[2024-04-27 23:53:56] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 23:53:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gitman
+[2024-04-27 23:53:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kubernator
+[2024-04-27 23:53:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: solaar
+[2024-04-27 23:53:56] INFO root fetch - processPackages [gitman]: New version: [3.4b3] Old Version: [3.4b2]
+[2024-04-27 23:53:56] INFO root fetch - processPackages [gitman]: Downloading https://files.pythonhosted.org/packages/7a/92/16ac178e0a4da7d8a2465593f2ab0f15cc310d99e79c114641a52397f7b5/gitman-3.4b2.tar.gz
+[2024-04-27 23:53:56] INFO root fetch - processPackages [solaar]: New version: [1.1.9] Old Version: [1.1.8rc2]
+[2024-04-27 23:53:56] INFO root fetch - processPackages [kubernator]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-27 23:53:56] INFO root fetch - processPackages [solaar]: Downloading https://files.pythonhosted.org/packages/87/1a/808ac42a90c1945ae7d2c26202f6579aa5ba91052bb2972d04a332aa2287/solaar-1.1.8rc2-py3-none-any.whl
+[2024-04-27 23:53:56] INFO root fetch - processPackages [kubernator]: Downloading https://files.pythonhosted.org/packages/2c/46/9af0e05ad02b9449b49e892c43d69397745d0fab42e776b482f7c5b0d4fb/kubernator-1.0.8.tar.gz
+[2024-04-27 23:53:56] INFO root fetch - processPackages [gitman]: Downloading https://files.pythonhosted.org/packages/76/a9/45028992c7b9c9b89e25547a9023188831b65d31a8105dca510cbb3b540c/gitman-3.4b3.tar.gz
+[2024-04-27 23:53:56] INFO root fetch - processPackages [gitman]: executing diffoscope
+[2024-04-27 23:53:56] INFO root fetch - processPackages [gitman]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitman-3.4b2.tar.gz tmp/gitman-3.4b3.tar.gz --markdown 20240427/g/gitman/3.4b2-3.4b3/README.md --exclude *.pyd
+[2024-04-27 23:53:57] INFO root fetch - processPackages [solaar]: Downloading https://files.pythonhosted.org/packages/a6/c4/b4ed890faa2fef43dcae6378930290e16e3efa392d069309ee7752b225b3/solaar-1.1.9.tar.gz
+[2024-04-27 23:53:57] INFO root fetch - processPackages [kubernator]: Downloading https://files.pythonhosted.org/packages/3d/3a/f4fc92df915f81b62593a43db2e8d608735d2df1672fc2c1ffceecb45870/kubernator-1.0.9.tar.gz
+[2024-04-27 23:53:57] INFO root fetch - processPackages [solaar]: executing diffoscope
+[2024-04-27 23:53:57] INFO root fetch - processPackages [solaar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/solaar-1.1.8rc2-py3-none-any.whl.zip tmp/solaar-1.1.9.tar.gz --markdown 20240427/s/solaar/1.1.8rc2-1.1.9/README.md --exclude *.pyd
+[2024-04-27 23:53:57] INFO root fetch - processPackages [kubernator]: executing diffoscope
+[2024-04-27 23:53:57] INFO root fetch - processPackages [kubernator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kubernator-1.0.8.tar.gz tmp/kubernator-1.0.9.tar.gz --markdown 20240427/k/kubernator/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-27 23:53:57] INFO root fetch - processPackages [gitman]: Remove: archive file [/home/abi/fetcher/tmp/gitman-3.4b2.tar.gz]
+[2024-04-27 23:53:57] INFO root fetch - processPackages [gitman]: Remove: archive file [/home/abi/fetcher/tmp/gitman-3.4b3.tar.gz]
+[2024-04-27 23:53:57] INFO root fetch - main [MainThread]: End processing [gitman]: success
+[2024-04-27 23:53:57] INFO root fetch - processPackages [kubernator]: Remove: archive file [/home/abi/fetcher/tmp/kubernator-1.0.8.tar.gz]
+[2024-04-27 23:53:57] INFO root fetch - processPackages [kubernator]: Remove: archive file [/home/abi/fetcher/tmp/kubernator-1.0.9.tar.gz]
+[2024-04-27 23:53:57] INFO root fetch - main [MainThread]: End processing [kubernator]: success
+[2024-04-27 23:53:58] INFO root fetch - processPackages [solaar]: Remove: archive file [/home/abi/fetcher/tmp/solaar-1.1.8rc2-py3-none-any.whl.zip]
+[2024-04-27 23:53:58] INFO root fetch - processPackages [solaar]: Remove: archive file [/home/abi/fetcher/tmp/solaar-1.1.9.tar.gz]
+[2024-04-27 23:53:58] INFO root fetch - main [MainThread]: End processing [solaar]: success
+[2024-04-27 23:53:58] INFO root fetch - main [MainThread]: Store serial: [22962268]
