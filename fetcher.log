@@ -13612,3 +13612,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 14:14:35] INFO root fetch - processPackages [pytest-minio-mock]: Remove: archive file [/home/abi/fetcher/tmp/pytest_minio_mock-0.4.13.tar.gz]
 [2024-04-27 14:14:35] INFO root fetch - main [MainThread]: End processing [pytest-minio-mock]: success
 [2024-04-27 14:14:35] INFO root fetch - main [MainThread]: Store serial: [22958554]
+[2024-04-27 14:16:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958554]
+[2024-04-27 14:16:43] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 14:16:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cvt-test-ms
+[2024-04-27 14:16:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyStreamtape
+[2024-04-27 14:16:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spongebox
+[2024-04-27 14:16:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pylic
+[2024-04-27 14:16:43] WARNING root fetch - processPackages [cvt-test-ms]: Skipping, unable to determine old version
+[2024-04-27 14:16:43] INFO root fetch - main [MainThread]: End processing [cvt-test-ms] error
+[2024-04-27 14:16:43] INFO root fetch - processPackages [pylic]: New version: [3.6.0] Old Version: [3.5.0]
+[2024-04-27 14:16:43] INFO root fetch - processPackages [pylic]: Downloading https://files.pythonhosted.org/packages/b4/9d/268a2a4e206ba6950052e98655fe393e8e05f8ec545c63bec37c0eae6f34/pylic-3.5.0.tar.gz
+[2024-04-27 14:16:43] WARNING root fetch - processPackages [PyStreamtape]: Skipping, unable to determine old version
+[2024-04-27 14:16:43] INFO root fetch - main [MainThread]: End processing [PyStreamtape] error
+[2024-04-27 14:16:43] INFO root fetch - processPackages [spongebox]: New version: [0.3.8] Old Version: [0.3.6]
+[2024-04-27 14:16:43] INFO root fetch - processPackages [spongebox]: Downloading https://files.pythonhosted.org/packages/ba/88/16ef2212bfcd469178c4b88ff706d63c87f791200774b2951cc26d463f37/spongebox-0.3.6.tar.gz
+[2024-04-27 14:16:43] INFO root fetch - processPackages [pylic]: Downloading https://files.pythonhosted.org/packages/53/6b/2fb2826c61e9208f3b8c230ba252b9b12bd65871e96065ce7e47df56cd2f/pylic-3.6.0.tar.gz
+[2024-04-27 14:16:44] INFO root fetch - processPackages [pylic]: executing diffoscope
+[2024-04-27 14:16:44] INFO root fetch - processPackages [pylic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylic-3.5.0.tar.gz tmp/pylic-3.6.0.tar.gz --markdown 20240427/p/pylic/3.5.0-3.6.0/README.md --exclude *.pyd
+[2024-04-27 14:16:44] INFO root fetch - processPackages [spongebox]: Downloading https://files.pythonhosted.org/packages/a3/fc/9417d5aac4aeabf929a82e84fd9eeabc5e5af24d374fd8096ff6f290eaf3/spongebox-0.3.8.tar.gz
+[2024-04-27 14:16:44] INFO root fetch - processPackages [spongebox]: executing diffoscope
+[2024-04-27 14:16:44] INFO root fetch - processPackages [spongebox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spongebox-0.3.6.tar.gz tmp/spongebox-0.3.8.tar.gz --markdown 20240427/s/spongebox/0.3.6-0.3.8/README.md --exclude *.pyd
+[2024-04-27 14:16:44] INFO root fetch - processPackages [pylic]: Remove: archive file [/home/abi/fetcher/tmp/pylic-3.5.0.tar.gz]
+[2024-04-27 14:16:44] INFO root fetch - processPackages [pylic]: Remove: archive file [/home/abi/fetcher/tmp/pylic-3.6.0.tar.gz]
+[2024-04-27 14:16:44] INFO root fetch - main [MainThread]: End processing [pylic]: success
+[2024-04-27 14:16:44] INFO root fetch - processPackages [spongebox]: Remove: archive file [/home/abi/fetcher/tmp/spongebox-0.3.6.tar.gz]
+[2024-04-27 14:16:44] INFO root fetch - processPackages [spongebox]: Remove: archive file [/home/abi/fetcher/tmp/spongebox-0.3.8.tar.gz]
+[2024-04-27 14:16:44] INFO root fetch - main [MainThread]: End processing [spongebox]: success
+[2024-04-27 14:16:44] INFO root fetch - main [MainThread]: Store serial: [22958568]
