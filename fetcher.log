@@ -20145,3 +20145,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 21:43:40] INFO root fetch - processPackages [python-keycloak]: Remove: archive file [/home/abi/fetcher/tmp/python_keycloak-4.0.0.tar.gz]
 [2024-04-27 21:43:40] INFO root fetch - main [MainThread]: End processing [python-keycloak]: success
 [2024-04-27 21:43:40] INFO root fetch - main [MainThread]: Store serial: [22961504]
+[2024-04-27 21:45:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961504]
+[2024-04-27 21:45:55] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 21:45:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: latch-cloud-clients
+[2024-04-27 21:45:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: upgini
+[2024-04-27 21:45:55] INFO root fetch - processPackages [latch-cloud-clients]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-27 21:45:55] INFO root fetch - processPackages [upgini]: New version: [1.1.99] Old Version: [1.1.98]
+[2024-04-27 21:45:55] INFO root fetch - processPackages [latch-cloud-clients]: Downloading https://files.pythonhosted.org/packages/25/b5/663f1ab0c734e24cc096e9ef2712dbe21d4916d1a88da89244ddddbe67ec/latch_cloud_clients-0.1.6.tar.gz
+[2024-04-27 21:45:55] INFO root fetch - processPackages [upgini]: Downloading https://files.pythonhosted.org/packages/59/79/dc47448e0c68a4e00d9d0b7f4c640207fa605fe48cdc53e30221037a1962/upgini-1.1.98.tar.gz
+[2024-04-27 21:45:55] INFO root fetch - processPackages [latch-cloud-clients]: Downloading https://files.pythonhosted.org/packages/14/39/6038670b9eb4c1e4a72a17c6c8a653baa8b2ddf756c30c93dcd99123a525/latch_cloud_clients-0.1.7.tar.gz
+[2024-04-27 21:45:55] INFO root fetch - processPackages [upgini]: Downloading https://files.pythonhosted.org/packages/32/f1/1df90a6a856d855308ddf057a7b8cdad7dbcafb6230f0592bbff90f929fd/upgini-1.1.99.tar.gz
+[2024-04-27 21:45:55] INFO root fetch - processPackages [latch-cloud-clients]: executing diffoscope
+[2024-04-27 21:45:55] INFO root fetch - processPackages [latch-cloud-clients]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latch_cloud_clients-0.1.6.tar.gz tmp/latch_cloud_clients-0.1.7.tar.gz --markdown 20240427/l/latch-cloud-clients/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-27 21:45:55] INFO root fetch - processPackages [upgini]: executing diffoscope
+[2024-04-27 21:45:55] INFO root fetch - processPackages [upgini]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/upgini-1.1.98.tar.gz tmp/upgini-1.1.99.tar.gz --markdown 20240427/u/upgini/1.1.98-1.1.99/README.md --exclude *.pyd
+[2024-04-27 21:45:56] INFO root fetch - processPackages [latch-cloud-clients]: Remove: archive file [/home/abi/fetcher/tmp/latch_cloud_clients-0.1.6.tar.gz]
+[2024-04-27 21:45:56] INFO root fetch - processPackages [latch-cloud-clients]: Remove: archive file [/home/abi/fetcher/tmp/latch_cloud_clients-0.1.7.tar.gz]
+[2024-04-27 21:45:56] INFO root fetch - main [MainThread]: End processing [latch-cloud-clients]: success
+[2024-04-27 21:45:56] INFO root fetch - processPackages [upgini]: Remove: archive file [/home/abi/fetcher/tmp/upgini-1.1.98.tar.gz]
+[2024-04-27 21:45:56] INFO root fetch - processPackages [upgini]: Remove: archive file [/home/abi/fetcher/tmp/upgini-1.1.99.tar.gz]
+[2024-04-27 21:45:56] INFO root fetch - main [MainThread]: End processing [upgini]: success
+[2024-04-27 21:45:56] INFO root fetch - main [MainThread]: Store serial: [22961509]
