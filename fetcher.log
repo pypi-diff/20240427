@@ -19102,3 +19102,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 20:18:12] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz]
 [2024-04-27 20:18:12] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
 [2024-04-27 20:18:12] INFO root fetch - main [MainThread]: Store serial: [22961033]
+[2024-04-27 20:20:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961033]
+[2024-04-27 20:20:27] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 20:20:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: infodesreg
+[2024-04-27 20:20:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tjfu
+[2024-04-27 20:20:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-project-wbs
+[2024-04-27 20:20:27] INFO root fetch - processPackages [infodesreg]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-27 20:20:27] INFO root fetch - processPackages [infodesreg]: Downloading https://files.pythonhosted.org/packages/43/c9/e49c01176e88f749ea6bfe2ed74cea7efc22e676c3d234bf3aa55f8eb174/infodesreg-0.0.5.tar.gz
+[2024-04-27 20:20:27] INFO root fetch - processPackages [tjfu]: New version: [3.3.0] Old Version: [3.2.0]
+[2024-04-27 20:20:27] INFO root fetch - processPackages [odoo-addon-project-wbs]: New version: [15.0.1.1.2] Old Version: [15.0.1.1.1]
+[2024-04-27 20:20:27] INFO root fetch - processPackages [tjfu]: Downloading https://files.pythonhosted.org/packages/03/06/96a27d4b85f49fe96be99d50470128baeca5a0175b9aaed747447855c789/tjfu-3.2.0.tar.gz
+[2024-04-27 20:20:27] INFO root fetch - processPackages [odoo-addon-project-wbs]: Downloading https://files.pythonhosted.org/packages/0e/09/7d71917a1a25210ebcc7b30fab187ce5909d8338b326f84d1851a895471b/odoo_addon_project_wbs-15.0.1.1.1-py3-none-any.whl
+[2024-04-27 20:20:28] INFO root fetch - processPackages [infodesreg]: Downloading https://files.pythonhosted.org/packages/a4/eb/9097d56ac85d653a4b253968800cf97441d81a32932b0111bbcda5b42232/infodesreg-0.0.6.tar.gz
+[2024-04-27 20:20:28] INFO root fetch - processPackages [infodesreg]: executing diffoscope
+[2024-04-27 20:20:28] INFO root fetch - processPackages [infodesreg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/infodesreg-0.0.5.tar.gz tmp/infodesreg-0.0.6.tar.gz --markdown 20240427/i/infodesreg/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-27 20:20:28] INFO root fetch - processPackages [odoo-addon-project-wbs]: Downloading https://files.pythonhosted.org/packages/9e/c4/1423a69f0245cef4af02e6f19a4c0098a0c7e6aa24d59d54e1184afe1401/odoo_addon_project_wbs-15.0.1.1.2-py3-none-any.whl
+[2024-04-27 20:20:28] INFO root fetch - processPackages [tjfu]: Downloading https://files.pythonhosted.org/packages/b2/af/7e013d284b2dab79ed3663e387fe7ff8b0da1cba8726a73d8fb58f7e0ed9/tjfu-3.3.0.tar.gz
+[2024-04-27 20:20:28] INFO root fetch - processPackages [tjfu]: executing diffoscope
+[2024-04-27 20:20:28] INFO root fetch - processPackages [tjfu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tjfu-3.2.0.tar.gz tmp/tjfu-3.3.0.tar.gz --markdown 20240427/t/tjfu/3.2.0-3.3.0/README.md --exclude *.pyd
+[2024-04-27 20:20:28] INFO root fetch - processPackages [odoo-addon-project-wbs]: executing diffoscope
+[2024-04-27 20:20:28] INFO root fetch - processPackages [odoo-addon-project-wbs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_project_wbs-15.0.1.1.1-py3-none-any.whl.zip tmp/odoo_addon_project_wbs-15.0.1.1.2-py3-none-any.whl.zip --markdown 20240427/o/odoo-addon-project-wbs/15.0.1.1.1-15.0.1.1.2/README.md --exclude *.pyd
+[2024-04-27 20:20:28] INFO root fetch - processPackages [infodesreg]: Remove: archive file [/home/abi/fetcher/tmp/infodesreg-0.0.5.tar.gz]
+[2024-04-27 20:20:28] INFO root fetch - processPackages [infodesreg]: Remove: archive file [/home/abi/fetcher/tmp/infodesreg-0.0.6.tar.gz]
+[2024-04-27 20:20:28] INFO root fetch - main [MainThread]: End processing [infodesreg]: success
+[2024-04-27 20:20:28] INFO root fetch - processPackages [tjfu]: Remove: archive file [/home/abi/fetcher/tmp/tjfu-3.2.0.tar.gz]
+[2024-04-27 20:20:28] INFO root fetch - processPackages [tjfu]: Remove: archive file [/home/abi/fetcher/tmp/tjfu-3.3.0.tar.gz]
+[2024-04-27 20:20:28] INFO root fetch - main [MainThread]: End processing [tjfu]: success
+[2024-04-27 20:20:29] INFO root fetch - processPackages [odoo-addon-project-wbs]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_project_wbs-15.0.1.1.1-py3-none-any.whl.zip]
+[2024-04-27 20:20:29] INFO root fetch - processPackages [odoo-addon-project-wbs]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_project_wbs-15.0.1.1.2-py3-none-any.whl.zip]
+[2024-04-27 20:20:29] INFO root fetch - main [MainThread]: End processing [odoo-addon-project-wbs]: success
+[2024-04-27 20:20:29] INFO root fetch - main [MainThread]: Store serial: [22961041]
