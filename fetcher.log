@@ -15890,3 +15890,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 16:34:56] INFO root fetch - processPackages [offat]: Remove: archive file [/home/abi/fetcher/tmp/offat-0.9.0.tar.gz]
 [2024-04-27 16:34:56] INFO root fetch - main [MainThread]: End processing [offat]: success
 [2024-04-27 16:34:56] INFO root fetch - main [MainThread]: Store serial: [22959518]
+[2024-04-27 16:36:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959518]
+[2024-04-27 16:37:04] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 16:37:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qualitative-coding
+[2024-04-27 16:37:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Xdcheckin
+[2024-04-27 16:37:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xl-router
+[2024-04-27 16:37:04] INFO root fetch - processPackages [xl-router]: New version: [0.7.5] Old Version: [0.7.3]
+[2024-04-27 16:37:04] INFO root fetch - processPackages [Xdcheckin]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-27 16:37:04] INFO root fetch - processPackages [qualitative-coding]: New version: [1.2.9] Old Version: [1.2.8]
+[2024-04-27 16:37:04] INFO root fetch - processPackages [xl-router]: Downloading https://files.pythonhosted.org/packages/97/ca/02e821de1c08db90bf39463014a86de5f2440a2e9d786d50f4042ee6caf3/xl_router-0.7.3.tar.gz
+[2024-04-27 16:37:04] INFO root fetch - processPackages [qualitative-coding]: Downloading https://files.pythonhosted.org/packages/83/6c/16e9cc2ba4e0b6b741120ead5c1dd1873ee97ad2ba25681f735cd916c765/qualitative_coding-1.2.8.tar.gz
+[2024-04-27 16:37:04] INFO root fetch - processPackages [Xdcheckin]: Downloading https://files.pythonhosted.org/packages/e9/31/aaa9fbdae70fd69f0d831d29e9e5079298abb34ef7c566b7d523b220a0cf/xdcheckin-2.0.8.tar.gz
+[2024-04-27 16:37:05] INFO root fetch - processPackages [qualitative-coding]: Downloading https://files.pythonhosted.org/packages/5b/f1/031858ce926fb3ac852b3f93e661ea3b78bf905bdd467186cea25488fc6a/qualitative_coding-1.2.9.tar.gz
+[2024-04-27 16:37:05] INFO root fetch - processPackages [Xdcheckin]: Downloading https://files.pythonhosted.org/packages/a8/51/cec0a65d3db0c8e1e658bd143b3cf7aaf3124aeccbeb161947b9642c3237/xdcheckin-2.0.9.tar.gz
+[2024-04-27 16:37:05] INFO root fetch - processPackages [xl-router]: Downloading https://files.pythonhosted.org/packages/46/c7/527c62c8b4e89083a7f84a5cfe5e74c724e0a67cfd04b580806a4f4f8776/xl_router-0.7.5.tar.gz
+[2024-04-27 16:37:05] INFO root fetch - processPackages [qualitative-coding]: executing diffoscope
+[2024-04-27 16:37:05] INFO root fetch - processPackages [qualitative-coding]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qualitative_coding-1.2.8.tar.gz tmp/qualitative_coding-1.2.9.tar.gz --markdown 20240427/q/qualitative-coding/1.2.8-1.2.9/README.md --exclude *.pyd
+[2024-04-27 16:37:05] INFO root fetch - processPackages [Xdcheckin]: executing diffoscope
+[2024-04-27 16:37:05] INFO root fetch - processPackages [Xdcheckin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xdcheckin-2.0.8.tar.gz tmp/xdcheckin-2.0.9.tar.gz --markdown 20240427/X/Xdcheckin/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-04-27 16:37:05] INFO root fetch - processPackages [xl-router]: executing diffoscope
+[2024-04-27 16:37:05] INFO root fetch - processPackages [xl-router]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xl_router-0.7.3.tar.gz tmp/xl_router-0.7.5.tar.gz --markdown 20240427/x/xl-router/0.7.3-0.7.5/README.md --exclude *.pyd
+[2024-04-27 16:37:05] INFO root fetch - processPackages [xl-router]: Remove: archive file [/home/abi/fetcher/tmp/xl_router-0.7.3.tar.gz]
+[2024-04-27 16:37:05] INFO root fetch - processPackages [xl-router]: Remove: archive file [/home/abi/fetcher/tmp/xl_router-0.7.5.tar.gz]
+[2024-04-27 16:37:05] INFO root fetch - main [MainThread]: End processing [xl-router]: success
+[2024-04-27 16:37:06] INFO root fetch - processPackages [Xdcheckin]: Remove: archive file [/home/abi/fetcher/tmp/xdcheckin-2.0.8.tar.gz]
+[2024-04-27 16:37:06] INFO root fetch - processPackages [Xdcheckin]: Remove: archive file [/home/abi/fetcher/tmp/xdcheckin-2.0.9.tar.gz]
+[2024-04-27 16:37:06] INFO root fetch - main [MainThread]: End processing [Xdcheckin]: success
+[2024-04-27 16:37:06] INFO root fetch - processPackages [qualitative-coding]: Remove: archive file [/home/abi/fetcher/tmp/qualitative_coding-1.2.8.tar.gz]
+[2024-04-27 16:37:06] INFO root fetch - processPackages [qualitative-coding]: Remove: archive file [/home/abi/fetcher/tmp/qualitative_coding-1.2.9.tar.gz]
+[2024-04-27 16:37:06] INFO root fetch - main [MainThread]: End processing [qualitative-coding]: success
+[2024-04-27 16:37:06] INFO root fetch - main [MainThread]: Store serial: [22959527]
