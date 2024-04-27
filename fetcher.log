@@ -20779,3 +20779,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 22:33:04] INFO root fetch - processPackages [scikit-maad]: Remove: archive file [/home/abi/fetcher/tmp/scikit_maad-1.4.2.tar.gz]
 [2024-04-27 22:33:04] INFO root fetch - main [MainThread]: End processing [scikit-maad]: success
 [2024-04-27 22:33:04] INFO root fetch - main [MainThread]: Store serial: [22961792]
+[2024-04-27 22:35:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961792]
+[2024-04-27 22:35:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 22:35:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: marimo
+[2024-04-27 22:35:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aiobp
+[2024-04-27 22:35:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ziya
+[2024-04-27 22:35:20] INFO root fetch - processPackages [ziya]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-27 22:35:20] INFO root fetch - processPackages [ziya]: Downloading https://files.pythonhosted.org/packages/99/7f/e004b5e6edda7df96af17a8b8d536a1fa2028e48c71f42e918f3a0ccd668/ziya-0.1.4.tar.gz
+[2024-04-27 22:35:20] INFO root fetch - processPackages [aiobp]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-04-27 22:35:20] INFO root fetch - processPackages [marimo]: New version: [0.4.7] Old Version: [0.4.6]
+[2024-04-27 22:35:20] INFO root fetch - processPackages [aiobp]: Downloading https://files.pythonhosted.org/packages/2e/52/a4b9e3bd22eb28c0c663c4c98c48ad0b4d4c02bbb4f57b3b028d838e9349/aiobp-0.3.0.tar.gz
+[2024-04-27 22:35:20] INFO root fetch - processPackages [marimo]: Downloading https://files.pythonhosted.org/packages/40/71/507f507a48744789e285a2a9b3766193fa0fca1ec3505795397479d60fb3/marimo-0.4.6.tar.gz
+[2024-04-27 22:35:20] INFO root fetch - processPackages [ziya]: Downloading https://files.pythonhosted.org/packages/63/6d/6fd704c1fd18561536701887467b12578e4e73eaea25a44e8c6a2d75d813/ziya-0.1.5.tar.gz
+[2024-04-27 22:35:21] INFO root fetch - processPackages [ziya]: executing diffoscope
+[2024-04-27 22:35:21] INFO root fetch - processPackages [ziya]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ziya-0.1.4.tar.gz tmp/ziya-0.1.5.tar.gz --markdown 20240427/z/ziya/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-27 22:35:21] INFO root fetch - processPackages [aiobp]: Downloading https://files.pythonhosted.org/packages/04/7d/ae39b831894a3af0aa1bb7875921fc565a69a0d11b4ce87ac2967f6b1f43/aiobp-0.3.1.tar.gz
+[2024-04-27 22:35:21] INFO root fetch - processPackages [aiobp]: executing diffoscope
+[2024-04-27 22:35:21] INFO root fetch - processPackages [aiobp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiobp-0.3.0.tar.gz tmp/aiobp-0.3.1.tar.gz --markdown 20240427/a/aiobp/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-04-27 22:35:21] INFO root fetch - processPackages [marimo]: Downloading https://files.pythonhosted.org/packages/c4/62/e9490269495c059cd33f0abad8e1406e62155ef9e3ac04ef2beb4082b348/marimo-0.4.7.tar.gz
+[2024-04-27 22:35:21] INFO root fetch - processPackages [ziya]: Remove: archive file [/home/abi/fetcher/tmp/ziya-0.1.4.tar.gz]
+[2024-04-27 22:35:21] INFO root fetch - processPackages [ziya]: Remove: archive file [/home/abi/fetcher/tmp/ziya-0.1.5.tar.gz]
+[2024-04-27 22:35:21] INFO root fetch - main [MainThread]: End processing [ziya]: success
+[2024-04-27 22:35:21] INFO root fetch - processPackages [marimo]: executing diffoscope
+[2024-04-27 22:35:21] INFO root fetch - processPackages [marimo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/marimo-0.4.6.tar.gz tmp/marimo-0.4.7.tar.gz --markdown 20240427/m/marimo/0.4.6-0.4.7/README.md --exclude *.pyd
+[2024-04-27 22:35:21] INFO root fetch - processPackages [aiobp]: Remove: archive file [/home/abi/fetcher/tmp/aiobp-0.3.0.tar.gz]
+[2024-04-27 22:35:21] INFO root fetch - processPackages [aiobp]: Remove: archive file [/home/abi/fetcher/tmp/aiobp-0.3.1.tar.gz]
+[2024-04-27 22:35:21] INFO root fetch - main [MainThread]: End processing [aiobp]: success
+[2024-04-27 22:37:07] INFO root fetch - processPackages [marimo]: Remove: archive file [/home/abi/fetcher/tmp/marimo-0.4.6.tar.gz]
+[2024-04-27 22:37:07] INFO root fetch - processPackages [marimo]: Remove: archive file [/home/abi/fetcher/tmp/marimo-0.4.7.tar.gz]
+[2024-04-27 22:37:07] INFO root fetch - main [MainThread]: End processing [marimo]: success
+[2024-04-27 22:37:07] INFO root fetch - main [MainThread]: Store serial: [22961802]
