@@ -11086,3 +11086,15 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 10:50:41] INFO root fetch - processPackages [bgutils-hddly]: Remove: archive file [/home/abi/fetcher/tmp/bgutils_hddly-1.1.9.tar.gz]
 [2024-04-27 10:50:41] INFO root fetch - main [MainThread]: End processing [bgutils-hddly]: success
 [2024-04-27 10:50:41] INFO root fetch - main [MainThread]: Store serial: [22957548]
+[2024-04-27 10:52:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957548]
+[2024-04-27 10:52:50] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 10:52:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: myPYPI9
+[2024-04-27 10:52:50] INFO root fetch - processPackages [myPYPI9]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-04-27 10:52:50] INFO root fetch - processPackages [myPYPI9]: Downloading https://files.pythonhosted.org/packages/d2/03/5b0462b74e5bbe20e7683813ed6047ef9b8e0e11bbf832307c81a6eb57b0/mypypi9-0.7.8.tar.gz
+[2024-04-27 10:52:50] INFO root fetch - processPackages [myPYPI9]: Downloading https://files.pythonhosted.org/packages/59/50/e6ade8fa894f63707b31ffb2a965aa60c3b56b9ba31f82374779f571167e/mypypi9-0.7.9.tar.gz
+[2024-04-27 10:52:50] INFO root fetch - processPackages [myPYPI9]: executing diffoscope
+[2024-04-27 10:52:50] INFO root fetch - processPackages [myPYPI9]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypypi9-0.7.8.tar.gz tmp/mypypi9-0.7.9.tar.gz --markdown 20240427/m/myPYPI9/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-04-27 10:52:51] INFO root fetch - processPackages [myPYPI9]: Remove: archive file [/home/abi/fetcher/tmp/mypypi9-0.7.8.tar.gz]
+[2024-04-27 10:52:51] INFO root fetch - processPackages [myPYPI9]: Remove: archive file [/home/abi/fetcher/tmp/mypypi9-0.7.9.tar.gz]
+[2024-04-27 10:52:51] INFO root fetch - main [MainThread]: End processing [myPYPI9]: success
+[2024-04-27 10:52:51] INFO root fetch - main [MainThread]: Store serial: [22957552]
