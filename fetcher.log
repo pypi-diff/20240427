@@ -19841,3 +19841,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 21:21:03] INFO root fetch - processPackages [bluepy3]: Remove: archive file [/home/abi/fetcher/tmp/bluepy3-2.6.1.tar.gz]
 [2024-04-27 21:21:03] INFO root fetch - main [MainThread]: End processing [bluepy3]: success
 [2024-04-27 21:21:03] INFO root fetch - main [MainThread]: Store serial: [22961361]
+[2024-04-27 21:23:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961361]
+[2024-04-27 21:23:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 21:23:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zbuilder
+[2024-04-27 21:23:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cs2-battle-bot-api-client
+[2024-04-27 21:23:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fgo-api-types
+[2024-04-27 21:23:17] INFO root fetch - processPackages [fgo-api-types]: New version: [2024.4.6.2.22.3] Old Version: [2024.4.27.5.45.9]
+[2024-04-27 21:23:17] INFO root fetch - processPackages [cs2-battle-bot-api-client]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 21:23:17] INFO root fetch - processPackages [zbuilder]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 21:23:18] INFO root fetch - processPackages [fgo-api-types]: Downloading https://files.pythonhosted.org/packages/c7/24/f2f3bfb59a63a817400e0bc2cc6bcd1762243afb1799e4f1f77b373325a4/fgo_api_types-2024.4.27.5.45.9.tar.gz
+[2024-04-27 21:23:18] INFO root fetch - processPackages [cs2-battle-bot-api-client]: Downloading https://files.pythonhosted.org/packages/03/df/b7441418a2c92e54f467823096a59228bd44b86e3d3cabbf00bf422e840b/cs2_battle_bot_api_client-0.0.8.tar.gz
+[2024-04-27 21:23:18] INFO root fetch - processPackages [zbuilder]: Downloading https://files.pythonhosted.org/packages/87/25/dfba17538b61710bf548592778075ea442a2b43ac645f31915a179fa1666/zbuilder-0.0.8.tar.gz
+[2024-04-27 21:23:18] INFO root fetch - processPackages [fgo-api-types]: Downloading https://files.pythonhosted.org/packages/b9/41/3dbb26f0f980c564a1e8ae75299afc724991934ffaf1a8a59ab70aafb784/fgo_api_types-2024.4.6.2.22.3.tar.gz
+[2024-04-27 21:23:18] INFO root fetch - processPackages [fgo-api-types]: executing diffoscope
+[2024-04-27 21:23:18] INFO root fetch - processPackages [fgo-api-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fgo_api_types-2024.4.27.5.45.9.tar.gz tmp/fgo_api_types-2024.4.6.2.22.3.tar.gz --markdown 20240427/f/fgo-api-types/2024.4.27.5.45.9-2024.4.6.2.22.3/README.md --exclude *.pyd
+[2024-04-27 21:23:18] INFO root fetch - processPackages [cs2-battle-bot-api-client]: Downloading https://files.pythonhosted.org/packages/77/08/3e7b110a5c7ca73d5a2f0ae6b0262f4ffff4556c60ed50870a60f5aad63e/cs2_battle_bot_api_client-0.0.9.tar.gz
+[2024-04-27 21:23:18] INFO root fetch - processPackages [zbuilder]: Downloading https://files.pythonhosted.org/packages/11/8d/dc511928e1e22d6863f3e332b1f6252c217b35f3ad4213a2c045484bf0bd/zbuilder-0.0.9.tar.gz
+[2024-04-27 21:23:18] INFO root fetch - processPackages [zbuilder]: executing diffoscope
+[2024-04-27 21:23:18] INFO root fetch - processPackages [zbuilder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zbuilder-0.0.8.tar.gz tmp/zbuilder-0.0.9.tar.gz --markdown 20240427/z/zbuilder/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 21:23:18] INFO root fetch - processPackages [cs2-battle-bot-api-client]: executing diffoscope
+[2024-04-27 21:23:18] INFO root fetch - processPackages [cs2-battle-bot-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs2_battle_bot_api_client-0.0.8.tar.gz tmp/cs2_battle_bot_api_client-0.0.9.tar.gz --markdown 20240427/c/cs2-battle-bot-api-client/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 21:23:19] INFO root fetch - processPackages [fgo-api-types]: Remove: archive file [/home/abi/fetcher/tmp/fgo_api_types-2024.4.27.5.45.9.tar.gz]
+[2024-04-27 21:23:19] INFO root fetch - processPackages [fgo-api-types]: Remove: archive file [/home/abi/fetcher/tmp/fgo_api_types-2024.4.6.2.22.3.tar.gz]
+[2024-04-27 21:23:19] INFO root fetch - main [MainThread]: End processing [fgo-api-types]: success
+[2024-04-27 21:23:19] INFO root fetch - processPackages [zbuilder]: Remove: archive file [/home/abi/fetcher/tmp/zbuilder-0.0.8.tar.gz]
+[2024-04-27 21:23:19] INFO root fetch - processPackages [zbuilder]: Remove: archive file [/home/abi/fetcher/tmp/zbuilder-0.0.9.tar.gz]
+[2024-04-27 21:23:19] INFO root fetch - main [MainThread]: End processing [zbuilder]: success
+[2024-04-27 21:23:19] INFO root fetch - processPackages [cs2-battle-bot-api-client]: Remove: archive file [/home/abi/fetcher/tmp/cs2_battle_bot_api_client-0.0.8.tar.gz]
+[2024-04-27 21:23:19] INFO root fetch - processPackages [cs2-battle-bot-api-client]: Remove: archive file [/home/abi/fetcher/tmp/cs2_battle_bot_api_client-0.0.9.tar.gz]
+[2024-04-27 21:23:19] INFO root fetch - main [MainThread]: End processing [cs2-battle-bot-api-client]: success
+[2024-04-27 21:23:19] INFO root fetch - main [MainThread]: Store serial: [22961370]
