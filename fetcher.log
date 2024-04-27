@@ -21162,3 +21162,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 23:09:41] INFO root fetch - processPackages [ovp-docker-utils]: Remove: archive file [/home/abi/fetcher/tmp/ovp_docker_utils-1.0.8.tar.gz]
 [2024-04-27 23:09:41] INFO root fetch - main [MainThread]: End processing [ovp-docker-utils]: success
 [2024-04-27 23:09:41] INFO root fetch - main [MainThread]: Store serial: [22961997]
+[2024-04-27 23:11:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961997]
+[2024-04-27 23:11:58] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 23:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: glaider
+[2024-04-27 23:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: glabel
+[2024-04-27 23:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: reasoner-validator
+[2024-04-27 23:11:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyjamas-rfglab
+[2024-04-27 23:11:58] WARNING root fetch - processPackages [glaider]: Skipping, unable to determine old version
+[2024-04-27 23:11:58] INFO root fetch - main [MainThread]: End processing [glaider] error
+[2024-04-27 23:11:58] INFO root fetch - processPackages [glabel]: New version: [1.0.3b1] Old Version: [1.0.3]
+[2024-04-27 23:11:58] INFO root fetch - processPackages [pyjamas-rfglab]: New version: [2024.4.3] Old Version: [2024.4.2]
+[2024-04-27 23:11:58] INFO root fetch - processPackages [reasoner-validator]: New version: [4.0.3] Old Version: [4.0.2]
+[2024-04-27 23:11:58] INFO root fetch - processPackages [glabel]: Downloading https://files.pythonhosted.org/packages/5c/0d/74040fe97f14b4493cef5e38058a9bed5d76a41858a690ef655900ee37ff/glabel-1.0.3.tar.gz
+[2024-04-27 23:11:58] INFO root fetch - processPackages [pyjamas-rfglab]: Downloading https://files.pythonhosted.org/packages/01/49/6adbd149c44b4850d8a4da33d98888ae1e7f2d0a977e1b9ef4a066470746/pyjamas-rfglab-2024.4.2.tar.gz
+[2024-04-27 23:11:58] INFO root fetch - processPackages [reasoner-validator]: Downloading https://files.pythonhosted.org/packages/40/38/909d90ef8152bb5ab1df3eb1e2ece8821cc9756632560c17d10b03444e55/reasoner_validator-4.0.2.tar.gz
+[2024-04-27 23:11:58] INFO root fetch - processPackages [glabel]: Downloading https://files.pythonhosted.org/packages/50/f0/d3e57356ee676459a882adc6e448717bf9e45aedbd56b9c67998255acf92/glabel-1.0.3b1-py3-none-any.whl
+[2024-04-27 23:11:58] INFO root fetch - processPackages [reasoner-validator]: Downloading https://files.pythonhosted.org/packages/e3/9d/1789c29528cf60fdad241a3af74d362c944c58e4a56bb5c6d04a56afa786/reasoner_validator-4.0.3.tar.gz
+[2024-04-27 23:11:58] INFO root fetch - processPackages [glabel]: executing diffoscope
+[2024-04-27 23:11:58] INFO root fetch - processPackages [glabel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glabel-1.0.3.tar.gz tmp/glabel-1.0.3b1-py3-none-any.whl.zip --markdown 20240427/g/glabel/1.0.3-1.0.3b1/README.md --exclude *.pyd
+[2024-04-27 23:11:58] INFO root fetch - processPackages [pyjamas-rfglab]: Downloading https://files.pythonhosted.org/packages/0b/93/d18980212d072f33eb57b9085fa46de523565a13375ff902184b3d1fe3a4/pyjamas-rfglab-2024.4.3.tar.gz
+[2024-04-27 23:11:59] INFO root fetch - processPackages [reasoner-validator]: executing diffoscope
+[2024-04-27 23:11:59] INFO root fetch - processPackages [reasoner-validator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reasoner_validator-4.0.2.tar.gz tmp/reasoner_validator-4.0.3.tar.gz --markdown 20240427/r/reasoner-validator/4.0.2-4.0.3/README.md --exclude *.pyd
+[2024-04-27 23:11:59] INFO root fetch - processPackages [pyjamas-rfglab]: executing diffoscope
+[2024-04-27 23:11:59] INFO root fetch - processPackages [pyjamas-rfglab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyjamas-rfglab-2024.4.2.tar.gz tmp/pyjamas-rfglab-2024.4.3.tar.gz --markdown 20240427/p/pyjamas-rfglab/2024.4.2-2024.4.3/README.md --exclude *.pyd
+[2024-04-27 23:11:59] INFO root fetch - processPackages [glabel]: Remove: archive file [/home/abi/fetcher/tmp/glabel-1.0.3.tar.gz]
+[2024-04-27 23:11:59] INFO root fetch - processPackages [glabel]: Remove: archive file [/home/abi/fetcher/tmp/glabel-1.0.3b1-py3-none-any.whl.zip]
+[2024-04-27 23:11:59] INFO root fetch - main [MainThread]: End processing [glabel]: success
+[2024-04-27 23:11:59] INFO root fetch - processPackages [reasoner-validator]: Remove: archive file [/home/abi/fetcher/tmp/reasoner_validator-4.0.2.tar.gz]
+[2024-04-27 23:11:59] INFO root fetch - processPackages [reasoner-validator]: Remove: archive file [/home/abi/fetcher/tmp/reasoner_validator-4.0.3.tar.gz]
+[2024-04-27 23:11:59] INFO root fetch - main [MainThread]: End processing [reasoner-validator]: success
+[2024-04-27 23:12:00] INFO root fetch - processPackages [pyjamas-rfglab]: Remove: archive file [/home/abi/fetcher/tmp/pyjamas-rfglab-2024.4.2.tar.gz]
+[2024-04-27 23:12:00] INFO root fetch - processPackages [pyjamas-rfglab]: Remove: archive file [/home/abi/fetcher/tmp/pyjamas-rfglab-2024.4.3.tar.gz]
+[2024-04-27 23:12:00] INFO root fetch - main [MainThread]: End processing [pyjamas-rfglab]: success
+[2024-04-27 23:12:00] INFO root fetch - main [MainThread]: Store serial: [22962010]
