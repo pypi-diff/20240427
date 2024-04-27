@@ -2573,3 +2573,69 @@ EOFError: EOF read where object expected
 [2024-04-27 02:26:16] INFO root fetch - processPackages [cdk-ecs-service-extensions]: Remove: archive file [/home/abi/fetcher/tmp/cdk-ecs-service-extensions-2.0.1a99.tar.gz]
 [2024-04-27 02:26:16] INFO root fetch - main [MainThread]: End processing [cdk-ecs-service-extensions]: success
 [2024-04-27 02:26:16] INFO root fetch - main [MainThread]: Store serial: [22954335]
+[2024-04-27 02:28:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22954335]
+[2024-04-27 02:28:25] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-27 02:28:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-gitlab-runner
+[2024-04-27 02:28:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dcicutils
+[2024-04-27 02:28:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-certbot-dns-route53
+[2024-04-27 02:28:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kilosort
+[2024-04-27 02:28:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: OZI
+[2024-04-27 02:28:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk-aurora-globaldatabase
+[2024-04-27 02:28:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: atksh-utils
+[2024-04-27 02:28:26] INFO root fetch - processPackages [atksh-utils]: New version: [0.8.6] Old Version: [0.8.5]
+[2024-04-27 02:28:26] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: New version: [2.3.99] Old Version: [2.3.98]
+[2024-04-27 02:28:26] INFO root fetch - processPackages [cdk-certbot-dns-route53]: New version: [2.4.99] Old Version: [2.4.98]
+[2024-04-27 02:28:26] INFO root fetch - processPackages [cdk-gitlab-runner]: New version: [2.2.99] Old Version: [2.2.98]
+[2024-04-27 02:28:26] INFO root fetch - processPackages [kilosort]: New version: [4.0.6] Old Version: [4.0.5]
+[2024-04-27 02:28:26] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Downloading https://files.pythonhosted.org/packages/7d/4d/b1cb6c8586d736f490cc5099e0220282aadb28d3aefc028cf88e6a183b06/cdk-certbot-dns-route53-2.4.98.tar.gz
+[2024-04-27 02:28:26] INFO root fetch - processPackages [OZI]: New version: [1.1.6] Old Version: [1.1.5]
+[2024-04-27 02:28:26] INFO root fetch - processPackages [dcicutils]: New version: [8.8.4.1b9] Old Version: [8.8.4.1b8]
+[2024-04-27 02:28:26] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Downloading https://files.pythonhosted.org/packages/e4/39/e997b5acac972df8d777c4a4ad6dfd9f51e03e75fc8e23c973a7772267d5/cdk-aurora-globaldatabase-2.3.98.tar.gz
+[2024-04-27 02:28:26] INFO root fetch - processPackages [atksh-utils]: Downloading https://files.pythonhosted.org/packages/61/f8/37369c4b799936fa81545040ef6384f50d3f4c2c050104a2d481f9a5434a/atksh_utils-0.8.5.tar.gz
+[2024-04-27 02:28:26] INFO root fetch - processPackages [cdk-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/07/29/9f2cc8590770873b6073743e94ff15a2a7913eb0de3e6a4d2fc133008f62/cdk-gitlab-runner-2.2.98.tar.gz
+[2024-04-27 02:28:26] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Downloading https://files.pythonhosted.org/packages/28/81/76f66486f9d6f5aee6f787bb13f11ab8012414fd95d10756b575fd69b909/cdk-certbot-dns-route53-2.4.99.tar.gz
+[2024-04-27 02:28:26] INFO root fetch - processPackages [OZI]: Downloading https://files.pythonhosted.org/packages/5b/11/8ab2ed0aba7ef73fce04d5a17a2d724397aaede6f15d96ed5f77ae15b1ab/OZI-1.1.5.tar.gz
+[2024-04-27 02:28:26] INFO root fetch - processPackages [dcicutils]: Downloading https://files.pythonhosted.org/packages/88/e3/a68b919149fb754f37e341f70d383d88a49db02e5b5e7f34d0cf00879646/dcicutils-8.8.4.1b8.tar.gz
+[2024-04-27 02:28:26] INFO root fetch - processPackages [kilosort]: Downloading https://files.pythonhosted.org/packages/3a/93/65b04ae5b1eb87bad458f6868ba81f9c0ec014c60e3d3b2d00149cb2be85/kilosort-4.0.5.tar.gz
+[2024-04-27 02:28:26] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Downloading https://files.pythonhosted.org/packages/51/53/0158facaec2becec86707148eb931de78a7ad1c2b63f80b9911a53e4c17b/cdk-aurora-globaldatabase-2.3.99.tar.gz
+[2024-04-27 02:28:26] INFO root fetch - processPackages [cdk-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/16/61/e9f00b4e877a6352bd641de360f7577c27548fbcedc3aab19b1cf3852b9a/cdk-gitlab-runner-2.2.99.tar.gz
+[2024-04-27 02:28:26] INFO root fetch - processPackages [atksh-utils]: Downloading https://files.pythonhosted.org/packages/d1/f3/85de0055688ce2a780a907021f235d0c8bb2eb62b1e48a8587d0c6d25417/atksh_utils-0.8.6.tar.gz
+[2024-04-27 02:28:26] INFO root fetch - processPackages [cdk-certbot-dns-route53]: executing diffoscope
+[2024-04-27 02:28:26] INFO root fetch - processPackages [cdk-certbot-dns-route53]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-certbot-dns-route53-2.4.98.tar.gz tmp/cdk-certbot-dns-route53-2.4.99.tar.gz --markdown 20240427/c/cdk-certbot-dns-route53/2.4.98-2.4.99/README.md --exclude *.pyd
+[2024-04-27 02:28:26] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: executing diffoscope
+[2024-04-27 02:28:26] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz --markdown 20240427/c/cdk-aurora-globaldatabase/2.3.98-2.3.99/README.md --exclude *.pyd
+[2024-04-27 02:28:26] INFO root fetch - processPackages [cdk-gitlab-runner]: executing diffoscope
+[2024-04-27 02:28:26] INFO root fetch - processPackages [cdk-gitlab-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-gitlab-runner-2.2.98.tar.gz tmp/cdk-gitlab-runner-2.2.99.tar.gz --markdown 20240427/c/cdk-gitlab-runner/2.2.98-2.2.99/README.md --exclude *.pyd
+[2024-04-27 02:28:26] INFO root fetch - processPackages [atksh-utils]: executing diffoscope
+[2024-04-27 02:28:26] INFO root fetch - processPackages [atksh-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atksh_utils-0.8.5.tar.gz tmp/atksh_utils-0.8.6.tar.gz --markdown 20240427/a/atksh-utils/0.8.5-0.8.6/README.md --exclude *.pyd
+[2024-04-27 02:28:26] INFO root fetch - processPackages [OZI]: Downloading https://files.pythonhosted.org/packages/39/d3/95ca0da497afb0c2330ad7956232cedde756db9fcf181c0191bb7b73004b/OZI-1.1.6.tar.gz
+[2024-04-27 02:28:26] INFO root fetch - processPackages [kilosort]: Downloading https://files.pythonhosted.org/packages/1d/c4/36d2cf72656e27877ed5bc0b3aaef896c67bdd72a7e63bc7556b967426e5/kilosort-4.0.6.tar.gz
+[2024-04-27 02:28:26] INFO root fetch - processPackages [dcicutils]: Downloading https://files.pythonhosted.org/packages/ab/80/64152621f2e387ed0dff6f4fbf31f5b2e11f4dfe300d598bbfb27dfd25b5/dcicutils-8.8.4.1b9.tar.gz
+[2024-04-27 02:28:27] INFO root fetch - processPackages [kilosort]: executing diffoscope
+[2024-04-27 02:28:27] INFO root fetch - processPackages [kilosort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kilosort-4.0.5.tar.gz tmp/kilosort-4.0.6.tar.gz --markdown 20240427/k/kilosort/4.0.5-4.0.6/README.md --exclude *.pyd
+[2024-04-27 02:28:27] INFO root fetch - processPackages [dcicutils]: executing diffoscope
+[2024-04-27 02:28:27] INFO root fetch - processPackages [dcicutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcicutils-8.8.4.1b8.tar.gz tmp/dcicutils-8.8.4.1b9.tar.gz --markdown 20240427/d/dcicutils/8.8.4.1b8-8.8.4.1b9/README.md --exclude *.pyd
+[2024-04-27 02:28:27] INFO root fetch - processPackages [OZI]: executing diffoscope
+[2024-04-27 02:28:27] INFO root fetch - processPackages [OZI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OZI-1.1.5.tar.gz tmp/OZI-1.1.6.tar.gz --markdown 20240427/O/OZI/1.1.5-1.1.6/README.md --exclude *.pyd
+[2024-04-27 02:28:27] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz]
+[2024-04-27 02:28:27] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz]
+[2024-04-27 02:28:27] INFO root fetch - main [MainThread]: End processing [cdk-aurora-globaldatabase]: success
+[2024-04-27 02:28:27] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Remove: archive file [/home/abi/fetcher/tmp/cdk-certbot-dns-route53-2.4.98.tar.gz]
+[2024-04-27 02:28:27] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Remove: archive file [/home/abi/fetcher/tmp/cdk-certbot-dns-route53-2.4.99.tar.gz]
+[2024-04-27 02:28:27] INFO root fetch - main [MainThread]: End processing [cdk-certbot-dns-route53]: success
+[2024-04-27 02:28:27] INFO root fetch - processPackages [atksh-utils]: Remove: archive file [/home/abi/fetcher/tmp/atksh_utils-0.8.5.tar.gz]
+[2024-04-27 02:28:27] INFO root fetch - processPackages [atksh-utils]: Remove: archive file [/home/abi/fetcher/tmp/atksh_utils-0.8.6.tar.gz]
+[2024-04-27 02:28:27] INFO root fetch - main [MainThread]: End processing [atksh-utils]: success
+[2024-04-27 02:28:27] INFO root fetch - processPackages [cdk-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdk-gitlab-runner-2.2.98.tar.gz]
+[2024-04-27 02:28:27] INFO root fetch - processPackages [cdk-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdk-gitlab-runner-2.2.99.tar.gz]
+[2024-04-27 02:28:27] INFO root fetch - main [MainThread]: End processing [cdk-gitlab-runner]: success
+[2024-04-27 02:28:27] INFO root fetch - processPackages [kilosort]: Remove: archive file [/home/abi/fetcher/tmp/kilosort-4.0.5.tar.gz]
+[2024-04-27 02:28:27] INFO root fetch - processPackages [kilosort]: Remove: archive file [/home/abi/fetcher/tmp/kilosort-4.0.6.tar.gz]
+[2024-04-27 02:28:27] INFO root fetch - main [MainThread]: End processing [kilosort]: success
+[2024-04-27 02:28:27] INFO root fetch - processPackages [dcicutils]: Remove: archive file [/home/abi/fetcher/tmp/dcicutils-8.8.4.1b8.tar.gz]
+[2024-04-27 02:28:27] INFO root fetch - processPackages [dcicutils]: Remove: archive file [/home/abi/fetcher/tmp/dcicutils-8.8.4.1b9.tar.gz]
+[2024-04-27 02:28:27] INFO root fetch - main [MainThread]: End processing [dcicutils]: success
+[2024-04-27 02:28:28] INFO root fetch - processPackages [OZI]: Remove: archive file [/home/abi/fetcher/tmp/OZI-1.1.5.tar.gz]
+[2024-04-27 02:28:28] INFO root fetch - processPackages [OZI]: Remove: archive file [/home/abi/fetcher/tmp/OZI-1.1.6.tar.gz]
+[2024-04-27 02:28:28] INFO root fetch - main [MainThread]: End processing [OZI]: success
+[2024-04-27 02:28:28] INFO root fetch - main [MainThread]: Store serial: [22954358]
