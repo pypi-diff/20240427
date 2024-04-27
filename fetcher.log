@@ -16163,3 +16163,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 17:01:08] INFO root fetch - processPackages [banks]: Remove: archive file [/home/abi/fetcher/tmp/banks-0.3.0.tar.gz]
 [2024-04-27 17:01:08] INFO root fetch - main [MainThread]: End processing [banks]: success
 [2024-04-27 17:01:08] INFO root fetch - main [MainThread]: Store serial: [22959640]
+[2024-04-27 17:03:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959640]
+[2024-04-27 17:03:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 17:03:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jaraco.fabric
+[2024-04-27 17:03:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: astrotool
+[2024-04-27 17:03:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: eastmoneypy
+[2024-04-27 17:03:18] INFO root fetch - processPackages [jaraco.fabric]: New version: [6.2.0] Old Version: [6.1.1]
+[2024-04-27 17:03:18] INFO root fetch - processPackages [jaraco.fabric]: Downloading https://files.pythonhosted.org/packages/10/be/2a9ddb0afbcf787db0a0326c895a58bb67bfd9d4fe8fdaac16661d34bebe/jaraco.fabric-6.1.1.tar.gz
+[2024-04-27 17:03:18] INFO root fetch - processPackages [eastmoneypy]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-27 17:03:18] INFO root fetch - processPackages [astrotool]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 17:03:19] INFO root fetch - processPackages [astrotool]: Downloading https://files.pythonhosted.org/packages/90/e1/eee16bc865e7c2b609cb7ea9e7e3a51e6b2b8281d2d56e99cd77757b9619/astrotool-0.0.8.tar.gz
+[2024-04-27 17:03:19] INFO root fetch - processPackages [jaraco.fabric]: Downloading https://files.pythonhosted.org/packages/4c/f6/5b5e679f2cc7ecb8eacf67e45a425039068ba7b7374b374fd50da102b8cf/jaraco_fabric-6.2.0.tar.gz
+[2024-04-27 17:03:19] INFO root fetch - processPackages [eastmoneypy]: Downloading https://files.pythonhosted.org/packages/41/8e/c9d88293a97c9591893bd634f416006ee8d0218d50f7e3f7976ea8a0cae8/eastmoneypy-0.1.4.tar.gz
+[2024-04-27 17:03:19] INFO root fetch - processPackages [jaraco.fabric]: executing diffoscope
+[2024-04-27 17:03:19] INFO root fetch - processPackages [jaraco.fabric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaraco.fabric-6.1.1.tar.gz tmp/jaraco_fabric-6.2.0.tar.gz --markdown 20240427/j/jaraco.fabric/6.1.1-6.2.0/README.md --exclude *.pyd
+[2024-04-27 17:03:19] INFO root fetch - processPackages [astrotool]: Downloading https://files.pythonhosted.org/packages/33/14/b9ce46535ca314d2e2217bb96cba3bd3608abaffac21ce78f681c298ba85/astrotool-0.0.9.tar.gz
+[2024-04-27 17:03:19] INFO root fetch - processPackages [astrotool]: executing diffoscope
+[2024-04-27 17:03:19] INFO root fetch - processPackages [astrotool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astrotool-0.0.8.tar.gz tmp/astrotool-0.0.9.tar.gz --markdown 20240427/a/astrotool/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 17:03:19] INFO root fetch - processPackages [eastmoneypy]: Downloading https://files.pythonhosted.org/packages/c0/66/0fdbb20ad6d811025f346a1a2f5d604503fa9490d69e1d5143703946c960/eastmoneypy-0.1.5.tar.gz
+[2024-04-27 17:03:19] INFO root fetch - processPackages [eastmoneypy]: executing diffoscope
+[2024-04-27 17:03:19] INFO root fetch - processPackages [eastmoneypy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eastmoneypy-0.1.4.tar.gz tmp/eastmoneypy-0.1.5.tar.gz --markdown 20240427/e/eastmoneypy/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-27 17:03:19] INFO root fetch - processPackages [jaraco.fabric]: Remove: archive file [/home/abi/fetcher/tmp/jaraco.fabric-6.1.1.tar.gz]
+[2024-04-27 17:03:19] INFO root fetch - processPackages [jaraco.fabric]: Remove: archive file [/home/abi/fetcher/tmp/jaraco_fabric-6.2.0.tar.gz]
+[2024-04-27 17:03:19] INFO root fetch - main [MainThread]: End processing [jaraco.fabric]: success
+[2024-04-27 17:03:20] INFO root fetch - processPackages [astrotool]: Remove: archive file [/home/abi/fetcher/tmp/astrotool-0.0.8.tar.gz]
+[2024-04-27 17:03:20] INFO root fetch - processPackages [astrotool]: Remove: archive file [/home/abi/fetcher/tmp/astrotool-0.0.9.tar.gz]
+[2024-04-27 17:03:20] INFO root fetch - main [MainThread]: End processing [astrotool]: success
+[2024-04-27 17:03:20] INFO root fetch - processPackages [eastmoneypy]: Remove: archive file [/home/abi/fetcher/tmp/eastmoneypy-0.1.4.tar.gz]
+[2024-04-27 17:03:20] INFO root fetch - processPackages [eastmoneypy]: Remove: archive file [/home/abi/fetcher/tmp/eastmoneypy-0.1.5.tar.gz]
+[2024-04-27 17:03:20] INFO root fetch - main [MainThread]: End processing [eastmoneypy]: success
+[2024-04-27 17:03:20] INFO root fetch - main [MainThread]: Store serial: [22959665]
