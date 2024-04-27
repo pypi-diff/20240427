@@ -21030,3 +21030,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 22:51:16] INFO root fetch - processPackages [pyayay]: Remove: archive file [/home/abi/fetcher/tmp/pyayay-0.1.1-pp39-pypy39_pp73-win_amd64.whl.zip]
 [2024-04-27 22:51:16] INFO root fetch - main [MainThread]: End processing [pyayay]: success
 [2024-04-27 22:51:16] INFO root fetch - main [MainThread]: Store serial: [22961935]
+[2024-04-27 22:53:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961935]
+[2024-04-27 22:53:32] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 22:53:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deltachat-faqbot
+[2024-04-27 22:53:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gameon
+[2024-04-27 22:53:32] INFO root fetch - processPackages [gameon]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-04-27 22:53:33] INFO root fetch - processPackages [deltachat-faqbot]: New version: [0.6.0] Old Version: [0.5.1]
+[2024-04-27 22:53:33] INFO root fetch - processPackages [gameon]: Downloading https://files.pythonhosted.org/packages/42/28/18d1a4a9f5d1d572cb69c14a5cac31808283b76ab67a26eee6bb8c3fc5b4/gameon-1.0.4.tar.gz
+[2024-04-27 22:53:33] INFO root fetch - processPackages [deltachat-faqbot]: Downloading https://files.pythonhosted.org/packages/b1/ab/d3e6ef966b43dda948e7e9123a2cd61802fee4d9c2c6670b432c80d50e51/deltachat_faqbot-0.5.1-py3-none-any.whl
+[2024-04-27 22:53:33] INFO root fetch - processPackages [gameon]: Downloading https://files.pythonhosted.org/packages/cd/26/b43780ff3db40bc0aa804d349e0de2dbe043f579855fa71c3fae652aa1f0/gameon-1.0.5.tar.gz
+[2024-04-27 22:53:33] INFO root fetch - processPackages [deltachat-faqbot]: Downloading https://files.pythonhosted.org/packages/d0/8e/b8bc4bc01a59330dae08bc8d9a84fe863938dab0acbfc2163341b727326b/deltachat_faqbot-0.6.0-py3-none-any.whl
+[2024-04-27 22:53:33] INFO root fetch - processPackages [gameon]: executing diffoscope
+[2024-04-27 22:53:33] INFO root fetch - processPackages [gameon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gameon-1.0.4.tar.gz tmp/gameon-1.0.5.tar.gz --markdown 20240427/g/gameon/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-04-27 22:53:33] INFO root fetch - processPackages [deltachat-faqbot]: executing diffoscope
+[2024-04-27 22:53:33] INFO root fetch - processPackages [deltachat-faqbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deltachat_faqbot-0.5.1-py3-none-any.whl.zip tmp/deltachat_faqbot-0.6.0-py3-none-any.whl.zip --markdown 20240427/d/deltachat-faqbot/0.5.1-0.6.0/README.md --exclude *.pyd
+[2024-04-27 22:53:34] INFO root fetch - processPackages [gameon]: Remove: archive file [/home/abi/fetcher/tmp/gameon-1.0.4.tar.gz]
+[2024-04-27 22:53:34] INFO root fetch - processPackages [gameon]: Remove: archive file [/home/abi/fetcher/tmp/gameon-1.0.5.tar.gz]
+[2024-04-27 22:53:34] INFO root fetch - main [MainThread]: End processing [gameon]: success
+[2024-04-27 22:53:34] INFO root fetch - processPackages [deltachat-faqbot]: Remove: archive file [/home/abi/fetcher/tmp/deltachat_faqbot-0.5.1-py3-none-any.whl.zip]
+[2024-04-27 22:53:34] INFO root fetch - processPackages [deltachat-faqbot]: Remove: archive file [/home/abi/fetcher/tmp/deltachat_faqbot-0.6.0-py3-none-any.whl.zip]
+[2024-04-27 22:53:34] INFO root fetch - main [MainThread]: End processing [deltachat-faqbot]: success
+[2024-04-27 22:53:34] INFO root fetch - main [MainThread]: Store serial: [22961943]
