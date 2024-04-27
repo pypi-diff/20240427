@@ -19492,3 +19492,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 20:56:12] INFO root fetch - processPackages [ng-data-pipelines-sdk]: Remove: archive file [/home/abi/fetcher/tmp/ng_data_pipelines_sdk-0.4.0.tar.gz]
 [2024-04-27 20:56:12] INFO root fetch - main [MainThread]: End processing [ng-data-pipelines-sdk]: success
 [2024-04-27 20:56:12] INFO root fetch - main [MainThread]: Store serial: [22961181]
+[2024-04-27 20:58:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961181]
+[2024-04-27 20:58:25] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 20:58:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: smartboiler
+[2024-04-27 20:58:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: npc-stim
+[2024-04-27 20:58:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: launchflow
+[2024-04-27 20:58:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ai-wallpaper
+[2024-04-27 20:58:25] INFO root fetch - processPackages [smartboiler]: New version: [0.0.3.0.0.7.4] Old Version: [0.0.3.0.0.7.3]
+[2024-04-27 20:58:25] WARNING root fetch - processPackages [ai-wallpaper]: Skipping, unable to determine old version
+[2024-04-27 20:58:25] INFO root fetch - main [MainThread]: End processing [ai-wallpaper] error
+[2024-04-27 20:58:25] INFO root fetch - processPackages [npc-stim]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-27 20:58:25] INFO root fetch - processPackages [launchflow]: New version: [0.3.9.dev8] Old Version: [0.3.9.dev7]
+[2024-04-27 20:58:25] INFO root fetch - processPackages [smartboiler]: Downloading https://files.pythonhosted.org/packages/d8/fd/7f6cccbae87634144766b0c12eff09cddf94ab2e8a80f2c3a2b51bac01e1/smartboiler-0.0.3.0.0.7.3.tar.gz
+[2024-04-27 20:58:25] INFO root fetch - processPackages [launchflow]: Downloading https://files.pythonhosted.org/packages/48/58/dc4bcb9a1d74952a08d0cfc5e24c45d961d331cb7a4434c9059bab154c72/launchflow-0.3.9.dev7.tar.gz
+[2024-04-27 20:58:25] INFO root fetch - processPackages [npc-stim]: Downloading https://files.pythonhosted.org/packages/1d/e8/cca158c228399e0ae1b2ba5ab0f134f083917ee4b191a500b8eb90010634/npc-stim-0.1.6.tar.gz
+[2024-04-27 20:58:26] INFO root fetch - processPackages [smartboiler]: Downloading https://files.pythonhosted.org/packages/1d/49/8151f609795c3229575ae120f6665c1088719cebbc906e434c7f52dcedbf/smartboiler-0.0.3.0.0.7.4.tar.gz
+[2024-04-27 20:58:26] INFO root fetch - processPackages [smartboiler]: executing diffoscope
+[2024-04-27 20:58:26] INFO root fetch - processPackages [smartboiler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartboiler-0.0.3.0.0.7.3.tar.gz tmp/smartboiler-0.0.3.0.0.7.4.tar.gz --markdown 20240427/s/smartboiler/0.0.3.0.0.7.3-0.0.3.0.0.7.4/README.md --exclude *.pyd
+[2024-04-27 20:58:26] INFO root fetch - processPackages [launchflow]: Downloading https://files.pythonhosted.org/packages/8c/d2/f0544d4c3383370934bcc7b31fa0449e89fcfa2edeeac48bd86ada84b492/launchflow-0.3.9.dev8.tar.gz
+[2024-04-27 20:58:26] INFO root fetch - processPackages [npc-stim]: Downloading https://files.pythonhosted.org/packages/f5/1c/86c88004c9c76e21c15dbe83ce9a154fbc0ed442726b947659e4b3c8d79b/npc_stim-0.1.7.tar.gz
+[2024-04-27 20:58:26] INFO root fetch - processPackages [launchflow]: executing diffoscope
+[2024-04-27 20:58:26] INFO root fetch - processPackages [launchflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/launchflow-0.3.9.dev7.tar.gz tmp/launchflow-0.3.9.dev8.tar.gz --markdown 20240427/l/launchflow/0.3.9.dev7-0.3.9.dev8/README.md --exclude *.pyd
+[2024-04-27 20:58:26] INFO root fetch - processPackages [npc-stim]: executing diffoscope
+[2024-04-27 20:58:26] INFO root fetch - processPackages [npc-stim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/npc-stim-0.1.6.tar.gz tmp/npc_stim-0.1.7.tar.gz --markdown 20240427/n/npc-stim/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-27 20:58:26] INFO root fetch - processPackages [smartboiler]: Remove: archive file [/home/abi/fetcher/tmp/smartboiler-0.0.3.0.0.7.3.tar.gz]
+[2024-04-27 20:58:26] INFO root fetch - processPackages [smartboiler]: Remove: archive file [/home/abi/fetcher/tmp/smartboiler-0.0.3.0.0.7.4.tar.gz]
+[2024-04-27 20:58:26] INFO root fetch - main [MainThread]: End processing [smartboiler]: success
+[2024-04-27 20:58:27] INFO root fetch - processPackages [npc-stim]: Remove: archive file [/home/abi/fetcher/tmp/npc-stim-0.1.6.tar.gz]
+[2024-04-27 20:58:27] INFO root fetch - processPackages [npc-stim]: Remove: archive file [/home/abi/fetcher/tmp/npc_stim-0.1.7.tar.gz]
+[2024-04-27 20:58:27] INFO root fetch - main [MainThread]: End processing [npc-stim]: success
+[2024-04-27 20:58:27] INFO root fetch - processPackages [launchflow]: Remove: archive file [/home/abi/fetcher/tmp/launchflow-0.3.9.dev7.tar.gz]
+[2024-04-27 20:58:27] INFO root fetch - processPackages [launchflow]: Remove: archive file [/home/abi/fetcher/tmp/launchflow-0.3.9.dev8.tar.gz]
+[2024-04-27 20:58:27] INFO root fetch - main [MainThread]: End processing [launchflow]: success
+[2024-04-27 20:58:27] INFO root fetch - main [MainThread]: Store serial: [22961195]
