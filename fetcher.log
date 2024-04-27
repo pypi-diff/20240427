@@ -16070,3 +16070,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 16:50:14] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.1.1.tar.gz]
 [2024-04-27 16:50:14] INFO root fetch - main [MainThread]: End processing [freegenius]: success
 [2024-04-27 16:50:14] INFO root fetch - main [MainThread]: Store serial: [22959587]
+[2024-04-27 16:52:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959587]
+[2024-04-27 16:52:23] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 16:52:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mckinseysolvegame
+[2024-04-27 16:52:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pymatris
+[2024-04-27 16:52:23] INFO root fetch - processPackages [mckinseysolvegame]: New version: [0.8.3] Old Version: [0.8.1]
+[2024-04-27 16:52:23] INFO root fetch - processPackages [mckinseysolvegame]: Downloading https://files.pythonhosted.org/packages/52/f2/a79f930b53df4a109e401df8ce42beae61ad1edade6abaa005648632242c/mckinseysolvegame-0.8.1.tar.gz
+[2024-04-27 16:52:23] WARNING root fetch - processPackages [pymatris]: Skipping, unable to determine old version
+[2024-04-27 16:52:23] INFO root fetch - main [MainThread]: End processing [pymatris] error
+[2024-04-27 16:52:23] INFO root fetch - processPackages [mckinseysolvegame]: Downloading https://files.pythonhosted.org/packages/ad/20/608c778213fd68419b2be03431155a80acf95c3836b1cb757372cdb0e14a/mckinseysolvegame-0.8.3.tar.gz
+[2024-04-27 16:52:23] INFO root fetch - processPackages [mckinseysolvegame]: executing diffoscope
+[2024-04-27 16:52:23] INFO root fetch - processPackages [mckinseysolvegame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mckinseysolvegame-0.8.1.tar.gz tmp/mckinseysolvegame-0.8.3.tar.gz --markdown 20240427/m/mckinseysolvegame/0.8.1-0.8.3/README.md --exclude *.pyd
+[2024-04-27 16:52:24] INFO root fetch - processPackages [mckinseysolvegame]: Remove: archive file [/home/abi/fetcher/tmp/mckinseysolvegame-0.8.1.tar.gz]
+[2024-04-27 16:52:24] INFO root fetch - processPackages [mckinseysolvegame]: Remove: archive file [/home/abi/fetcher/tmp/mckinseysolvegame-0.8.3.tar.gz]
+[2024-04-27 16:52:24] INFO root fetch - main [MainThread]: End processing [mckinseysolvegame]: success
+[2024-04-27 16:52:24] INFO root fetch - main [MainThread]: Store serial: [22959595]
