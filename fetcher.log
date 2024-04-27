@@ -17452,3 +17452,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 18:28:11] INFO root fetch - processPackages [signal-export]: Remove: archive file [/home/abi/fetcher/tmp/signal_export-2.3.0.tar.gz]
 [2024-04-27 18:28:11] INFO root fetch - main [MainThread]: End processing [signal-export]: success
 [2024-04-27 18:28:11] INFO root fetch - main [MainThread]: Store serial: [22960188]
+[2024-04-27 18:30:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960188]
+[2024-04-27 18:30:22] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 18:30:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hydrobricks
+[2024-04-27 18:30:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: api_unostubs
+[2024-04-27 18:30:22] INFO root fetch - processPackages [hydrobricks]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-04-27 18:30:22] WARNING root fetch - processPackages [api_unostubs]: Skipping, unable to determine old version
+[2024-04-27 18:30:22] INFO root fetch - main [MainThread]: End processing [api_unostubs] error
+[2024-04-27 18:30:23] INFO root fetch - processPackages [hydrobricks]: Downloading https://files.pythonhosted.org/packages/1b/8d/053ae9587fdea9a2e3dce5e941e1976c399027da7532e414ea0e60e3d816/hydrobricks-0.7.0.tar.gz
+[2024-04-27 18:30:23] INFO root fetch - processPackages [hydrobricks]: Downloading https://files.pythonhosted.org/packages/64/88/69e8633926ea1b4f06cc52c2c397c686990c013ce93c7d93c0791d41fe62/hydrobricks-0.7.1.tar.gz
+[2024-04-27 18:30:23] INFO root fetch - processPackages [hydrobricks]: executing diffoscope
+[2024-04-27 18:30:23] INFO root fetch - processPackages [hydrobricks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hydrobricks-0.7.0.tar.gz tmp/hydrobricks-0.7.1.tar.gz --markdown 20240427/h/hydrobricks/0.7.0-0.7.1/README.md --exclude *.pyd
+[2024-04-27 18:30:24] INFO root fetch - processPackages [hydrobricks]: Remove: archive file [/home/abi/fetcher/tmp/hydrobricks-0.7.0.tar.gz]
+[2024-04-27 18:30:24] INFO root fetch - processPackages [hydrobricks]: Remove: archive file [/home/abi/fetcher/tmp/hydrobricks-0.7.1.tar.gz]
+[2024-04-27 18:30:24] INFO root fetch - main [MainThread]: End processing [hydrobricks]: success
+[2024-04-27 18:30:24] INFO root fetch - main [MainThread]: Store serial: [22960195]
