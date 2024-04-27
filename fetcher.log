@@ -6954,3 +6954,20 @@ EOFError: EOF read where object expected
 [2024-04-27 04:04:21] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.2.5.tar.gz]
 [2024-04-27 04:04:21] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
 [2024-04-27 04:04:21] INFO root fetch - main [MainThread]: Store serial: [22955972]
+[2024-04-27 04:06:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22955972]
+[2024-04-27 04:06:31] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 04:06:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: QtMDi
+[2024-04-27 04:06:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oaklib
+[2024-04-27 04:06:31] INFO root fetch - processPackages [QtMDi]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-27 04:06:31] INFO root fetch - processPackages [oaklib]: New version: [0.6.5] Old Version: [0.6.4]
+[2024-04-27 04:06:31] INFO root fetch - processPackages [QtMDi]: Downloading https://files.pythonhosted.org/packages/98/57/71d4d051a7c8618ccee73a34338e30c1be6a674b0053904f67260261180b/QtMDi-1.1.8.tar.gz
+[2024-04-27 04:06:31] WARNING root fetch - processPackages [QtMDi]: Skipping package: exceeds size limit 25247034>=10485760
+[2024-04-27 04:06:31] INFO root fetch - main [MainThread]: End processing [QtMDi] error
+[2024-04-27 04:06:31] INFO root fetch - processPackages [oaklib]: Downloading https://files.pythonhosted.org/packages/f0/31/06b12a70be32bb84d0720881c5130e3fd0b57b4986fe6d5ef16a1c470a92/oaklib-0.6.4.tar.gz
+[2024-04-27 04:06:32] INFO root fetch - processPackages [oaklib]: Downloading https://files.pythonhosted.org/packages/d0/db/5fec9aaa25691c7ecc23c24aa669a490933bfa9e20df207a979762772361/oaklib-0.6.5.tar.gz
+[2024-04-27 04:06:32] INFO root fetch - processPackages [oaklib]: executing diffoscope
+[2024-04-27 04:06:32] INFO root fetch - processPackages [oaklib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oaklib-0.6.4.tar.gz tmp/oaklib-0.6.5.tar.gz --markdown 20240427/o/oaklib/0.6.4-0.6.5/README.md --exclude *.pyd
+[2024-04-27 04:06:34] INFO root fetch - processPackages [oaklib]: Remove: archive file [/home/abi/fetcher/tmp/oaklib-0.6.4.tar.gz]
+[2024-04-27 04:06:34] INFO root fetch - processPackages [oaklib]: Remove: archive file [/home/abi/fetcher/tmp/oaklib-0.6.5.tar.gz]
+[2024-04-27 04:06:34] INFO root fetch - main [MainThread]: End processing [oaklib]: success
+[2024-04-27 04:06:34] INFO root fetch - main [MainThread]: Store serial: [22955978]
