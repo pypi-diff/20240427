@@ -19279,3 +19279,58 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 20:31:47] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.1.6.tar.gz]
 [2024-04-27 20:31:47] INFO root fetch - main [MainThread]: End processing [freegenius]: success
 [2024-04-27 20:31:47] INFO root fetch - main [MainThread]: Store serial: [22961097]
+[2024-04-27 20:33:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961097]
+[2024-04-27 20:34:00] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-27 20:36:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961107]
+[2024-04-27 20:36:06] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-27 20:36:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qs-codec
+[2024-04-27 20:36:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zato-apitest
+[2024-04-27 20:36:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dirconfig
+[2024-04-27 20:36:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: certora-cli-alpha-master
+[2024-04-27 20:36:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: timeframe-event
+[2024-04-27 20:36:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gai-lib
+[2024-04-27 20:36:06] INFO root fetch - processPackages [qs-codec]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-27 20:36:06] INFO root fetch - processPackages [zato-apitest]: New version: [24.1.9] Old Version: [24.1.12]
+[2024-04-27 20:36:06] INFO root fetch - processPackages [qs-codec]: Downloading https://files.pythonhosted.org/packages/02/22/636f0143bc09619d4a821b411ddd4f6428a0b31cd8535facabff6972cfed/qs_codec-0.1.2.tar.gz
+[2024-04-27 20:36:06] INFO root fetch - processPackages [timeframe-event]: New version: [1.1.8] Old Version: [1.1.7]
+[2024-04-27 20:36:06] INFO root fetch - processPackages [dirconfig]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-04-27 20:36:06] INFO root fetch - processPackages [gai-lib]: New version: [0.99] Old Version: [0.98]
+[2024-04-27 20:36:06] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20240427.18.34.248089] Old Version: [20240426.15.16.410260]
+[2024-04-27 20:36:06] INFO root fetch - processPackages [gai-lib]: Downloading https://files.pythonhosted.org/packages/d7/ec/73324c4782c5a7d475e0473a63a34aefe2a50c28e3e95e74572ba8e24319/gai-lib-0.98.tar.gz
+[2024-04-27 20:36:06] INFO root fetch - processPackages [dirconfig]: Downloading https://files.pythonhosted.org/packages/c4/bc/d35d26f291a5596e24cddcc8bb7f303e9c31ea0a6f9095c5f0b862569116/dirconfig-0.2.4.tar.gz
+[2024-04-27 20:36:06] INFO root fetch - processPackages [zato-apitest]: Downloading https://files.pythonhosted.org/packages/21/36/9ba9f36a0013e19df20a589b8bbb571fe135fb8ef1314a1e16eeabe011f3/zato_apitest-24.1.12.tar.gz
+[2024-04-27 20:36:06] INFO root fetch - processPackages [timeframe-event]: Downloading https://files.pythonhosted.org/packages/78/37/4c34daa3b43963b78edfdcbc02aa8cdf2eab3cef51217cb9a198645dc2de/timeframe_event-1.1.7.tar.gz
+[2024-04-27 20:36:06] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/90/82/4c49eaef26f8b4ee1332c9fa1866d14dc29634f011c099a4d8dcc7f00e52/certora-cli-alpha-master-20240426.15.16.410260.tar.gz
+[2024-04-27 20:36:06] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 14532720>=10485760
+[2024-04-27 20:36:06] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2024-04-27 20:36:06] INFO root fetch - processPackages [qs-codec]: Downloading https://files.pythonhosted.org/packages/dd/43/6f802a04cfdc55136d5c0fee323efa6284ee202089af8c8b7c00bf3d541a/qs_codec-0.1.3.tar.gz
+[2024-04-27 20:36:06] INFO root fetch - processPackages [qs-codec]: executing diffoscope
+[2024-04-27 20:36:06] INFO root fetch - processPackages [qs-codec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qs_codec-0.1.2.tar.gz tmp/qs_codec-0.1.3.tar.gz --markdown 20240427/q/qs-codec/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-27 20:36:06] INFO root fetch - processPackages [dirconfig]: Downloading https://files.pythonhosted.org/packages/0f/e9/9cf612f0098516536270bb2610c1dbb6032e81bb22172631dab5fee87806/dirconfig-0.2.5.tar.gz
+[2024-04-27 20:36:07] INFO root fetch - processPackages [gai-lib]: Downloading https://files.pythonhosted.org/packages/fd/52/02eb2fe55760540c73b1796ab0f903f7b077179fa1269206b0ff8d4909cf/gai-lib-0.99.tar.gz
+[2024-04-27 20:36:07] INFO root fetch - processPackages [timeframe-event]: Downloading https://files.pythonhosted.org/packages/1f/23/e546303a1aacfade203dacc790ba5008ca78bf191b6e060b58285fe52685/timeframe_event-1.1.8.tar.gz
+[2024-04-27 20:36:07] INFO root fetch - processPackages [zato-apitest]: Downloading https://files.pythonhosted.org/packages/84/b8/7b3d980ceafadb22236bf2537c793cd5475ba3d961aa2d78e2365bf43180/zato-apitest-24.1.9.tar.gz
+[2024-04-27 20:36:07] INFO root fetch - processPackages [gai-lib]: executing diffoscope
+[2024-04-27 20:36:07] INFO root fetch - processPackages [gai-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gai-lib-0.98.tar.gz tmp/gai-lib-0.99.tar.gz --markdown 20240427/g/gai-lib/0.98-0.99/README.md --exclude *.pyd
+[2024-04-27 20:36:07] INFO root fetch - processPackages [dirconfig]: executing diffoscope
+[2024-04-27 20:36:07] INFO root fetch - processPackages [dirconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dirconfig-0.2.4.tar.gz tmp/dirconfig-0.2.5.tar.gz --markdown 20240427/d/dirconfig/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-04-27 20:36:07] INFO root fetch - processPackages [zato-apitest]: executing diffoscope
+[2024-04-27 20:36:07] INFO root fetch - processPackages [zato-apitest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zato_apitest-24.1.12.tar.gz tmp/zato-apitest-24.1.9.tar.gz --markdown 20240427/z/zato-apitest/24.1.12-24.1.9/README.md --exclude *.pyd
+[2024-04-27 20:36:07] INFO root fetch - processPackages [timeframe-event]: executing diffoscope
+[2024-04-27 20:36:07] INFO root fetch - processPackages [timeframe-event]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/timeframe_event-1.1.7.tar.gz tmp/timeframe_event-1.1.8.tar.gz --markdown 20240427/t/timeframe-event/1.1.7-1.1.8/README.md --exclude *.pyd
+[2024-04-27 20:36:07] INFO root fetch - processPackages [qs-codec]: Remove: archive file [/home/abi/fetcher/tmp/qs_codec-0.1.2.tar.gz]
+[2024-04-27 20:36:07] INFO root fetch - processPackages [qs-codec]: Remove: archive file [/home/abi/fetcher/tmp/qs_codec-0.1.3.tar.gz]
+[2024-04-27 20:36:07] INFO root fetch - main [MainThread]: End processing [qs-codec]: success
+[2024-04-27 20:36:07] INFO root fetch - processPackages [gai-lib]: Remove: archive file [/home/abi/fetcher/tmp/gai-lib-0.98.tar.gz]
+[2024-04-27 20:36:07] INFO root fetch - processPackages [gai-lib]: Remove: archive file [/home/abi/fetcher/tmp/gai-lib-0.99.tar.gz]
+[2024-04-27 20:36:07] INFO root fetch - main [MainThread]: End processing [gai-lib]: success
+[2024-04-27 20:36:08] INFO root fetch - processPackages [dirconfig]: Remove: archive file [/home/abi/fetcher/tmp/dirconfig-0.2.4.tar.gz]
+[2024-04-27 20:36:08] INFO root fetch - processPackages [dirconfig]: Remove: archive file [/home/abi/fetcher/tmp/dirconfig-0.2.5.tar.gz]
+[2024-04-27 20:36:08] INFO root fetch - main [MainThread]: End processing [dirconfig]: success
+[2024-04-27 20:36:08] INFO root fetch - processPackages [timeframe-event]: Remove: archive file [/home/abi/fetcher/tmp/timeframe_event-1.1.7.tar.gz]
+[2024-04-27 20:36:08] INFO root fetch - processPackages [timeframe-event]: Remove: archive file [/home/abi/fetcher/tmp/timeframe_event-1.1.8.tar.gz]
+[2024-04-27 20:36:08] INFO root fetch - main [MainThread]: End processing [timeframe-event]: success
+[2024-04-27 20:36:08] INFO root fetch - processPackages [zato-apitest]: Remove: archive file [/home/abi/fetcher/tmp/zato_apitest-24.1.12.tar.gz]
+[2024-04-27 20:36:08] INFO root fetch - processPackages [zato-apitest]: Remove: archive file [/home/abi/fetcher/tmp/zato-apitest-24.1.9.tar.gz]
+[2024-04-27 20:36:08] INFO root fetch - main [MainThread]: End processing [zato-apitest]: success
+[2024-04-27 20:36:08] INFO root fetch - main [MainThread]: Store serial: [22961126]
