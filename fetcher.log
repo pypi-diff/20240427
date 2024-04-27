@@ -16915,3 +16915,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 17:54:43] INFO root fetch - processPackages [thunderlab]: Remove: archive file [/home/abi/fetcher/tmp/thunderlab-1.2.0.tar.gz]
 [2024-04-27 17:54:43] INFO root fetch - main [MainThread]: End processing [thunderlab]: success
 [2024-04-27 17:54:43] INFO root fetch - main [MainThread]: Store serial: [22959981]
+[2024-04-27 17:56:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959981]
+[2024-04-27 17:56:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 17:56:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tormail
+[2024-04-27 17:56:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nestipy-peewee
+[2024-04-27 17:56:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: py-kapi
+[2024-04-27 17:56:55] INFO root fetch - processPackages [tormail]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-27 17:56:55] INFO root fetch - processPackages [nestipy-peewee]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-27 17:56:55] WARNING root fetch - processPackages [py-kapi]: Skipping, unable to determine old version
+[2024-04-27 17:56:55] INFO root fetch - main [MainThread]: End processing [py-kapi] error
+[2024-04-27 17:56:55] INFO root fetch - processPackages [tormail]: Downloading https://files.pythonhosted.org/packages/14/d0/6889f7916dc90c24b78167a2dbe8c0b36c76ae87989e08e19c0be7e0beb0/tormail-0.0.1.tar.gz
+[2024-04-27 17:56:55] INFO root fetch - processPackages [nestipy-peewee]: Downloading https://files.pythonhosted.org/packages/c2/61/b0706335ce56ddb31302e21ce1d7f769d1698a4f51411a26b86c1d44842a/nestipy_peewee-0.1.0.tar.gz
+[2024-04-27 17:56:55] INFO root fetch - processPackages [tormail]: Downloading https://files.pythonhosted.org/packages/a9/e8/c4b2c1be0a886ceca675f140602d424e2be4c72f9b7efcc3a8b99dfeccaf/tormail-0.0.2.tar.gz
+[2024-04-27 17:56:55] INFO root fetch - processPackages [nestipy-peewee]: Downloading https://files.pythonhosted.org/packages/89/e4/cee29736d059e6e6d053be7829961d27dcf6d4ccd8509086e938da3c2e3c/nestipy_peewee-0.1.1.tar.gz
+[2024-04-27 17:56:55] INFO root fetch - processPackages [tormail]: executing diffoscope
+[2024-04-27 17:56:55] INFO root fetch - processPackages [tormail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tormail-0.0.1.tar.gz tmp/tormail-0.0.2.tar.gz --markdown 20240427/t/tormail/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-27 17:56:55] INFO root fetch - processPackages [nestipy-peewee]: executing diffoscope
+[2024-04-27 17:56:55] INFO root fetch - processPackages [nestipy-peewee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nestipy_peewee-0.1.0.tar.gz tmp/nestipy_peewee-0.1.1.tar.gz --markdown 20240427/n/nestipy-peewee/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-27 17:56:56] INFO root fetch - processPackages [tormail]: Remove: archive file [/home/abi/fetcher/tmp/tormail-0.0.1.tar.gz]
+[2024-04-27 17:56:56] INFO root fetch - processPackages [tormail]: Remove: archive file [/home/abi/fetcher/tmp/tormail-0.0.2.tar.gz]
+[2024-04-27 17:56:56] INFO root fetch - main [MainThread]: End processing [tormail]: success
+[2024-04-27 17:56:56] INFO root fetch - processPackages [nestipy-peewee]: Remove: archive file [/home/abi/fetcher/tmp/nestipy_peewee-0.1.0.tar.gz]
+[2024-04-27 17:56:56] INFO root fetch - processPackages [nestipy-peewee]: Remove: archive file [/home/abi/fetcher/tmp/nestipy_peewee-0.1.1.tar.gz]
+[2024-04-27 17:56:56] INFO root fetch - main [MainThread]: End processing [nestipy-peewee]: success
+[2024-04-27 17:56:56] INFO root fetch - main [MainThread]: Store serial: [22959992]
