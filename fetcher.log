@@ -14579,3 +14579,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 15:18:10] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev8.tar.gz]
 [2024-04-27 15:18:10] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
 [2024-04-27 15:18:10] INFO root fetch - main [MainThread]: Store serial: [22959035]
+[2024-04-27 15:20:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959035]
+[2024-04-27 15:20:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 15:20:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: multtestlib
+[2024-04-27 15:20:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ai-microcore
+[2024-04-27 15:20:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: poetry-plugin-commands
+[2024-04-27 15:20:18] INFO root fetch - processPackages [ai-microcore]: New version: [3.7.0] Old Version: [3.6.1]
+[2024-04-27 15:20:19] INFO root fetch - processPackages [ai-microcore]: Downloading https://files.pythonhosted.org/packages/89/98/b6807aa2cbaeb61e993e8c15a734aa852c77b786c5f0102f1a546fcac6ca/ai_microcore-3.6.1.tar.gz
+[2024-04-27 15:20:19] INFO root fetch - processPackages [poetry-plugin-commands]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 15:20:19] INFO root fetch - processPackages [multtestlib]: New version: [1.0.1] Old Version: [1.0]
+[2024-04-27 15:20:19] INFO root fetch - processPackages [multtestlib]: Downloading https://files.pythonhosted.org/packages/f5/fc/98eb174e070ce0212e0858e8164b537b8a572c3800e32a9f1a0afa447197/multtestlib-1.0.tar.gz
+[2024-04-27 15:20:19] INFO root fetch - processPackages [poetry-plugin-commands]: Downloading https://files.pythonhosted.org/packages/4d/3d/562ac41efefafaa9d30890fd9154e24abd5671a0c24e6234632ececf489d/poetry_plugin_commands-0.0.8.tar.gz
+[2024-04-27 15:20:19] INFO root fetch - processPackages [ai-microcore]: Downloading https://files.pythonhosted.org/packages/2f/dc/e633231e75ecf1ef795a7ce34471fbace60c536b2c4becf104649d58183e/ai_microcore-3.7.0.tar.gz
+[2024-04-27 15:20:19] INFO root fetch - processPackages [ai-microcore]: executing diffoscope
+[2024-04-27 15:20:19] INFO root fetch - processPackages [ai-microcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_microcore-3.6.1.tar.gz tmp/ai_microcore-3.7.0.tar.gz --markdown 20240427/a/ai-microcore/3.6.1-3.7.0/README.md --exclude *.pyd
+[2024-04-27 15:20:19] INFO root fetch - processPackages [multtestlib]: Downloading https://files.pythonhosted.org/packages/49/ff/353df8fea7fadd8069ff6bf525eda826a601257460e34b9dbf281d1dc000/multtestlib-1.0.1.tar.gz
+[2024-04-27 15:20:19] INFO root fetch - processPackages [poetry-plugin-commands]: Downloading https://files.pythonhosted.org/packages/3d/6e/e1cc71c843919f5942d461ac3a511afac782f1ca2677e66f522b20981f4d/poetry_plugin_commands-0.0.9.tar.gz
+[2024-04-27 15:20:19] INFO root fetch - processPackages [multtestlib]: executing diffoscope
+[2024-04-27 15:20:19] INFO root fetch - processPackages [multtestlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multtestlib-1.0.tar.gz tmp/multtestlib-1.0.1.tar.gz --markdown 20240427/m/multtestlib/1.0-1.0.1/README.md --exclude *.pyd
+[2024-04-27 15:20:19] INFO root fetch - processPackages [poetry-plugin-commands]: executing diffoscope
+[2024-04-27 15:20:19] INFO root fetch - processPackages [poetry-plugin-commands]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poetry_plugin_commands-0.0.8.tar.gz tmp/poetry_plugin_commands-0.0.9.tar.gz --markdown 20240427/p/poetry-plugin-commands/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 15:20:20] INFO root fetch - processPackages [ai-microcore]: Remove: archive file [/home/abi/fetcher/tmp/ai_microcore-3.6.1.tar.gz]
+[2024-04-27 15:20:20] INFO root fetch - processPackages [ai-microcore]: Remove: archive file [/home/abi/fetcher/tmp/ai_microcore-3.7.0.tar.gz]
+[2024-04-27 15:20:20] INFO root fetch - main [MainThread]: End processing [ai-microcore]: success
+[2024-04-27 15:20:20] INFO root fetch - processPackages [multtestlib]: Remove: archive file [/home/abi/fetcher/tmp/multtestlib-1.0.tar.gz]
+[2024-04-27 15:20:20] INFO root fetch - processPackages [multtestlib]: Remove: archive file [/home/abi/fetcher/tmp/multtestlib-1.0.1.tar.gz]
+[2024-04-27 15:20:20] INFO root fetch - main [MainThread]: End processing [multtestlib]: success
+[2024-04-27 15:20:20] INFO root fetch - processPackages [poetry-plugin-commands]: Remove: archive file [/home/abi/fetcher/tmp/poetry_plugin_commands-0.0.8.tar.gz]
+[2024-04-27 15:20:20] INFO root fetch - processPackages [poetry-plugin-commands]: Remove: archive file [/home/abi/fetcher/tmp/poetry_plugin_commands-0.0.9.tar.gz]
+[2024-04-27 15:20:20] INFO root fetch - main [MainThread]: End processing [poetry-plugin-commands]: success
+[2024-04-27 15:20:20] INFO root fetch - main [MainThread]: Store serial: [22959047]
