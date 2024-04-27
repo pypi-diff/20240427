@@ -16984,3 +16984,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 18:01:22] INFO root fetch - processPackages [jinjanator-plugin-format-xml]: Remove: archive file [/home/abi/fetcher/tmp/jinjanator_plugin_format_xml-24.1.0.tar.gz]
 [2024-04-27 18:01:22] INFO root fetch - main [MainThread]: End processing [jinjanator-plugin-format-xml]: success
 [2024-04-27 18:01:22] INFO root fetch - main [MainThread]: Store serial: [22960011]
+[2024-04-27 18:03:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960011]
+[2024-04-27 18:03:32] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 18:03:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: test-packaging-chmforte
+[2024-04-27 18:03:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bellek
+[2024-04-27 18:03:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: starsol-otp
+[2024-04-27 18:03:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: obvs
+[2024-04-27 18:03:32] INFO root fetch - processPackages [obvs]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-27 18:03:32] INFO root fetch - processPackages [bellek]: New version: [0.99.0] Old Version: [0.98.0]
+[2024-04-27 18:03:32] INFO root fetch - processPackages [test-packaging-chmforte]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-27 18:03:32] INFO root fetch - processPackages [obvs]: Downloading https://files.pythonhosted.org/packages/f3/af/9a038511b9af9f3ca1b05e69c65df55a569e93beaabf8933e8c18149a546/obvs-0.1.0.tar.gz
+[2024-04-27 18:03:32] WARNING root fetch - processPackages [starsol-otp]: Skipping, unable to determine old version
+[2024-04-27 18:03:32] INFO root fetch - main [MainThread]: End processing [starsol-otp] error
+[2024-04-27 18:03:33] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/26/4a/fccdc0d1ab493a2f8ff61dc7887c3dfae74cbb14da793a33c1372d57e126/bellek-0.98.0.tar.gz
+[2024-04-27 18:03:33] INFO root fetch - processPackages [test-packaging-chmforte]: Downloading https://files.pythonhosted.org/packages/c7/e7/258d843ff8e0622fb5e5e53b54a4075827d61485bf629b29bbefa6334fa2/test_packaging_chmforte-0.0.4.tar.gz
+[2024-04-27 18:03:33] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/1a/2c/d10c9a7db975b462d348e242a313e4d15e3c11363d764f5a1f40176b3e42/bellek-0.99.0.tar.gz
+[2024-04-27 18:03:33] INFO root fetch - processPackages [obvs]: Downloading https://files.pythonhosted.org/packages/1c/60/42d4c32da00a30e7e266e5b26a2dc6c405c62b286c1de34f8b9d4064e22b/obvs-0.1.1.tar.gz
+[2024-04-27 18:03:33] INFO root fetch - processPackages [bellek]: executing diffoscope
+[2024-04-27 18:03:33] INFO root fetch - processPackages [bellek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bellek-0.98.0.tar.gz tmp/bellek-0.99.0.tar.gz --markdown 20240427/b/bellek/0.98.0-0.99.0/README.md --exclude *.pyd
+[2024-04-27 18:03:33] INFO root fetch - processPackages [test-packaging-chmforte]: Downloading https://files.pythonhosted.org/packages/f2/bb/d426e599835013b9353625f7130111bf0a2aae352a5a82ae102d06962def/test_packaging_chmforte-0.0.5.tar.gz
+[2024-04-27 18:03:33] INFO root fetch - processPackages [obvs]: executing diffoscope
+[2024-04-27 18:03:33] INFO root fetch - processPackages [obvs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/obvs-0.1.0.tar.gz tmp/obvs-0.1.1.tar.gz --markdown 20240427/o/obvs/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-27 18:03:33] INFO root fetch - processPackages [test-packaging-chmforte]: executing diffoscope
+[2024-04-27 18:03:33] INFO root fetch - processPackages [test-packaging-chmforte]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/test_packaging_chmforte-0.0.4.tar.gz tmp/test_packaging_chmforte-0.0.5.tar.gz --markdown 20240427/t/test-packaging-chmforte/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-27 18:03:33] INFO root fetch - processPackages [obvs]: Remove: archive file [/home/abi/fetcher/tmp/obvs-0.1.0.tar.gz]
+[2024-04-27 18:03:33] INFO root fetch - processPackages [obvs]: Remove: archive file [/home/abi/fetcher/tmp/obvs-0.1.1.tar.gz]
+[2024-04-27 18:03:33] INFO root fetch - main [MainThread]: End processing [obvs]: success
+[2024-04-27 18:03:34] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.98.0.tar.gz]
+[2024-04-27 18:03:34] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.99.0.tar.gz]
+[2024-04-27 18:03:34] INFO root fetch - main [MainThread]: End processing [bellek]: success
+[2024-04-27 18:03:34] INFO root fetch - processPackages [test-packaging-chmforte]: Remove: archive file [/home/abi/fetcher/tmp/test_packaging_chmforte-0.0.4.tar.gz]
+[2024-04-27 18:03:34] INFO root fetch - processPackages [test-packaging-chmforte]: Remove: archive file [/home/abi/fetcher/tmp/test_packaging_chmforte-0.0.5.tar.gz]
+[2024-04-27 18:03:34] INFO root fetch - main [MainThread]: End processing [test-packaging-chmforte]: success
+[2024-04-27 18:03:34] INFO root fetch - main [MainThread]: Store serial: [22960023]
