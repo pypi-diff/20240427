@@ -11304,3 +11304,24 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 11:18:46] INFO root fetch - processPackages [shibuya]: Remove: archive file [/home/abi/fetcher/tmp/shibuya-2024.4.8.tar.gz]
 [2024-04-27 11:18:46] INFO root fetch - main [MainThread]: End processing [shibuya]: success
 [2024-04-27 11:18:46] INFO root fetch - main [MainThread]: Store serial: [22957627]
+[2024-04-27 11:20:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957627]
+[2024-04-27 11:20:55] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 11:20:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sybil-engine
+[2024-04-27 11:20:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: clovers-leafgame
+[2024-04-27 11:20:55] INFO root fetch - processPackages [clovers-leafgame]: New version: [0.1.5.post1] Old Version: [0.1.4]
+[2024-04-27 11:20:55] INFO root fetch - processPackages [sybil-engine]: New version: [7.2.2] Old Version: [7.2.0]
+[2024-04-27 11:20:55] INFO root fetch - processPackages [clovers-leafgame]: Downloading https://files.pythonhosted.org/packages/4c/8f/244a719a9dd232f5f5ba366cb402e76bb73566aa187a1e8115c4374bc0eb/clovers_leafgame-0.1.4.tar.gz
+[2024-04-27 11:20:55] INFO root fetch - processPackages [sybil-engine]: Downloading https://files.pythonhosted.org/packages/e3/e7/c767634d11c2b0499c98ce97aae441a8ee114f2b4fd2e98114cb93b84e79/sybil_engine-7.2.0.tar.gz
+[2024-04-27 11:20:56] INFO root fetch - processPackages [sybil-engine]: Downloading https://files.pythonhosted.org/packages/12/32/8d73676ae65857a5e907e9f33a7a077b35460da8e957987dc26f56c76ac4/sybil_engine-7.2.2.tar.gz
+[2024-04-27 11:20:56] INFO root fetch - processPackages [clovers-leafgame]: Downloading https://files.pythonhosted.org/packages/7b/e4/21765e9112976955a7306dd82049adb1c3af318f51fbdfb4f73d0bd51c39/clovers_leafgame-0.1.5.post1.tar.gz
+[2024-04-27 11:20:56] INFO root fetch - processPackages [sybil-engine]: executing diffoscope
+[2024-04-27 11:20:56] INFO root fetch - processPackages [sybil-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sybil_engine-7.2.0.tar.gz tmp/sybil_engine-7.2.2.tar.gz --markdown 20240427/s/sybil-engine/7.2.0-7.2.2/README.md --exclude *.pyd
+[2024-04-27 11:20:56] INFO root fetch - processPackages [clovers-leafgame]: executing diffoscope
+[2024-04-27 11:20:56] INFO root fetch - processPackages [clovers-leafgame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clovers_leafgame-0.1.4.tar.gz tmp/clovers_leafgame-0.1.5.post1.tar.gz --markdown 20240427/c/clovers-leafgame/0.1.4-0.1.5.post1/README.md --exclude *.pyd
+[2024-04-27 11:20:56] INFO root fetch - processPackages [sybil-engine]: Remove: archive file [/home/abi/fetcher/tmp/sybil_engine-7.2.0.tar.gz]
+[2024-04-27 11:20:56] INFO root fetch - processPackages [sybil-engine]: Remove: archive file [/home/abi/fetcher/tmp/sybil_engine-7.2.2.tar.gz]
+[2024-04-27 11:20:56] INFO root fetch - main [MainThread]: End processing [sybil-engine]: success
+[2024-04-27 11:20:56] INFO root fetch - processPackages [clovers-leafgame]: Remove: archive file [/home/abi/fetcher/tmp/clovers_leafgame-0.1.4.tar.gz]
+[2024-04-27 11:20:56] INFO root fetch - processPackages [clovers-leafgame]: Remove: archive file [/home/abi/fetcher/tmp/clovers_leafgame-0.1.5.post1.tar.gz]
+[2024-04-27 11:20:56] INFO root fetch - main [MainThread]: End processing [clovers-leafgame]: success
+[2024-04-27 11:20:56] INFO root fetch - main [MainThread]: Store serial: [22957636]
