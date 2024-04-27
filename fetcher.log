@@ -21546,3 +21546,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 23:38:41] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.2.0.tar.gz]
 [2024-04-27 23:38:41] INFO root fetch - main [MainThread]: End processing [blastpipe]: success
 [2024-04-27 23:38:41] INFO root fetch - main [MainThread]: Store serial: [22962145]
+[2024-04-27 23:40:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962145]
+[2024-04-27 23:40:50] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 23:40:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: poetry-plugin-deps-juice
+[2024-04-27 23:40:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastclip
+[2024-04-27 23:40:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: TheSilent
+[2024-04-27 23:40:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Files.com
+[2024-04-27 23:40:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: complexipy
+[2024-04-27 23:40:50] WARNING root fetch - processPackages [poetry-plugin-deps-juice]: Skipping, unable to determine old version
+[2024-04-27 23:40:50] INFO root fetch - main [MainThread]: End processing [poetry-plugin-deps-juice] error
+[2024-04-27 23:40:50] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-27 23:40:50] INFO root fetch - processPackages [fastclip]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 23:40:50] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/ad/09/2a1f42483bf3fbc17417489cf4f3d6ec17c5c763e219aa02ad1827f29dc1/TheSilent-0.0.98.tar.gz
+[2024-04-27 23:40:50] INFO root fetch - processPackages [Files.com]: New version: [1.4.9] Old Version: [1.4.8]
+[2024-04-27 23:40:50] INFO root fetch - processPackages [complexipy]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-04-27 23:40:50] INFO root fetch - processPackages [fastclip]: Downloading https://files.pythonhosted.org/packages/c1/bd/57b35376ba802aab693a0628a3c7796f63f4fcd862fd343cf2bc34263a70/fastclip-0.0.8.tar.gz
+[2024-04-27 23:40:50] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/38/21/9b42cfa55edd85cfd4fefba7fb94aab0891af2b6c90ef59e687a42228a0b/TheSilent-0.0.99.tar.gz
+[2024-04-27 23:40:50] INFO root fetch - processPackages [Files.com]: Downloading https://files.pythonhosted.org/packages/fe/9f/8654a34abe6ed4232708475bb6c7dd30b128ab68594cd684d58e72375385/Files.com-1.4.8.tar.gz
+[2024-04-27 23:40:50] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2024-04-27 23:40:50] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20240427/T/TheSilent/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-27 23:40:50] INFO root fetch - processPackages [complexipy]: Downloading https://files.pythonhosted.org/packages/96/fe/031a34049bc97bf8086a7ac47f201cdb04b97eef7fadaddab3fcddecbcb2/complexipy-0.3.2.tar.gz
+[2024-04-27 23:40:51] INFO root fetch - processPackages [fastclip]: Downloading https://files.pythonhosted.org/packages/18/9c/061ce3445064bc994cf3482d28124bc0314cbaf7ab4a269cea85e083fbc1/fastclip-0.0.9.tar.gz
+[2024-04-27 23:40:51] INFO root fetch - processPackages [fastclip]: executing diffoscope
+[2024-04-27 23:40:51] INFO root fetch - processPackages [fastclip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastclip-0.0.8.tar.gz tmp/fastclip-0.0.9.tar.gz --markdown 20240427/f/fastclip/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 23:40:51] INFO root fetch - processPackages [Files.com]: Downloading https://files.pythonhosted.org/packages/50/2a/081bc12536110f3d42e66312b9c23d07fc87bd3eafaaa4b731c3a21d1660/Files.com-1.4.9.tar.gz
+[2024-04-27 23:40:51] INFO root fetch - processPackages [complexipy]: Downloading https://files.pythonhosted.org/packages/af/8b/eb91d45458f7bf93ea305ea062aaed90fb71d3f139826978fc57313b13c9/complexipy-0.3.3-cp311-cp311-manylinux_2_17_s390x.manylinux2014_s390x.whl
+[2024-04-27 23:40:51] INFO root fetch - processPackages [Files.com]: executing diffoscope
+[2024-04-27 23:40:51] INFO root fetch - processPackages [Files.com]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Files.com-1.4.8.tar.gz tmp/Files.com-1.4.9.tar.gz --markdown 20240427/F/Files.com/1.4.8-1.4.9/README.md --exclude *.pyd
+[2024-04-27 23:40:51] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.98.tar.gz]
+[2024-04-27 23:40:51] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.99.tar.gz]
+[2024-04-27 23:40:51] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2024-04-27 23:40:51] INFO root fetch - processPackages [fastclip]: Remove: archive file [/home/abi/fetcher/tmp/fastclip-0.0.8.tar.gz]
+[2024-04-27 23:40:51] INFO root fetch - processPackages [fastclip]: Remove: archive file [/home/abi/fetcher/tmp/fastclip-0.0.9.tar.gz]
+[2024-04-27 23:40:51] INFO root fetch - main [MainThread]: End processing [fastclip]: success
+[2024-04-27 23:40:51] INFO root fetch - processPackages [Files.com]: Remove: archive file [/home/abi/fetcher/tmp/Files.com-1.4.8.tar.gz]
+[2024-04-27 23:40:51] INFO root fetch - processPackages [Files.com]: Remove: archive file [/home/abi/fetcher/tmp/Files.com-1.4.9.tar.gz]
+[2024-04-27 23:40:51] INFO root fetch - main [MainThread]: End processing [Files.com]: success
+[2024-04-27 23:40:52] INFO root fetch - processPackages [complexipy]: executing diffoscope
+[2024-04-27 23:40:52] INFO root fetch - processPackages [complexipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/complexipy-0.3.2.tar.gz tmp/complexipy-0.3.3-cp311-cp311-manylinux_2_17_s390x.manylinux2014_s390x.whl.zip --markdown 20240427/c/complexipy/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-04-27 23:40:53] INFO root fetch - processPackages [complexipy]: Remove: archive file [/home/abi/fetcher/tmp/complexipy-0.3.2.tar.gz]
+[2024-04-27 23:40:53] INFO root fetch - processPackages [complexipy]: Remove: archive file [/home/abi/fetcher/tmp/complexipy-0.3.3-cp311-cp311-manylinux_2_17_s390x.manylinux2014_s390x.whl.zip]
+[2024-04-27 23:40:53] INFO root fetch - main [MainThread]: End processing [complexipy]: success
+[2024-04-27 23:40:53] INFO root fetch - main [MainThread]: Store serial: [22962178]
