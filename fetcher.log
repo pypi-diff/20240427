@@ -15041,3 +15041,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 15:50:47] INFO root fetch - processPackages [talisman-dm]: Remove: archive file [/home/abi/fetcher/tmp/talisman-dm-1.0.0a9.tar.gz]
 [2024-04-27 15:50:47] INFO root fetch - main [MainThread]: End processing [talisman-dm]: success
 [2024-04-27 15:50:47] INFO root fetch - main [MainThread]: Store serial: [22959213]
+[2024-04-27 15:52:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959213]
+[2024-04-27 15:52:56] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 15:52:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zhipuai
+[2024-04-27 15:52:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nokey
+[2024-04-27 15:52:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: genomeshader
+[2024-04-27 15:52:56] INFO root fetch - processPackages [nokey]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-27 15:52:56] INFO root fetch - processPackages [zhipuai]: New version: [2.0.1.20240427] Old Version: [2.0.1.20240426]
+[2024-04-27 15:52:56] INFO root fetch - processPackages [zhipuai]: Downloading https://files.pythonhosted.org/packages/a0/75/4456b4429130273d270c584a91050ad2bfa186ad1ee10fe6e8be5b0c3a16/zhipuai-2.0.1.20240426.tar.gz
+[2024-04-27 15:52:56] INFO root fetch - processPackages [nokey]: Downloading https://files.pythonhosted.org/packages/2c/6c/76986dbbc0ae844c72d0ffc9ba5337590ca03acce4ac0db3cd3832ab16ce/nokey-0.2.0.tar.gz
+[2024-04-27 15:52:56] INFO root fetch - processPackages [genomeshader]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-27 15:52:56] INFO root fetch - processPackages [zhipuai]: Downloading https://files.pythonhosted.org/packages/b3/ed/66f01f25b013486daab1feec106de2dcf6be46c07b75b441a3857919aa0b/zhipuai-2.0.1.20240427.tar.gz
+[2024-04-27 15:52:56] INFO root fetch - processPackages [nokey]: Downloading https://files.pythonhosted.org/packages/87/4b/86ec0ae5017454a1be5f0f733bf073ad33cc104d3f85921cd4bf2bbdd3c5/nokey-0.3.0.tar.gz
+[2024-04-27 15:52:56] INFO root fetch - processPackages [genomeshader]: Downloading https://files.pythonhosted.org/packages/1c/84/39f1662d319381705e811acf6c7854194d08e68e45c79d57c5a763bdc863/genomeshader-0.1.8.tar.gz
+[2024-04-27 15:52:57] INFO root fetch - processPackages [zhipuai]: executing diffoscope
+[2024-04-27 15:52:57] INFO root fetch - processPackages [zhipuai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zhipuai-2.0.1.20240426.tar.gz tmp/zhipuai-2.0.1.20240427.tar.gz --markdown 20240427/z/zhipuai/2.0.1.20240426-2.0.1.20240427/README.md --exclude *.pyd
+[2024-04-27 15:52:57] INFO root fetch - processPackages [genomeshader]: Downloading https://files.pythonhosted.org/packages/99/48/90c7c052b1a65bbffd3e20c6f11964c9fc1a3dc182ef8de7c3611b26d473/genomeshader-0.1.9.tar.gz
+[2024-04-27 15:52:57] INFO root fetch - processPackages [nokey]: executing diffoscope
+[2024-04-27 15:52:57] INFO root fetch - processPackages [nokey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nokey-0.2.0.tar.gz tmp/nokey-0.3.0.tar.gz --markdown 20240427/n/nokey/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-04-27 15:52:57] INFO root fetch - processPackages [genomeshader]: executing diffoscope
+[2024-04-27 15:52:57] INFO root fetch - processPackages [genomeshader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/genomeshader-0.1.8.tar.gz tmp/genomeshader-0.1.9.tar.gz --markdown 20240427/g/genomeshader/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-27 15:52:57] INFO root fetch - processPackages [zhipuai]: Remove: archive file [/home/abi/fetcher/tmp/zhipuai-2.0.1.20240426.tar.gz]
+[2024-04-27 15:52:57] INFO root fetch - processPackages [zhipuai]: Remove: archive file [/home/abi/fetcher/tmp/zhipuai-2.0.1.20240427.tar.gz]
+[2024-04-27 15:52:57] INFO root fetch - main [MainThread]: End processing [zhipuai]: success
+[2024-04-27 15:52:57] INFO root fetch - processPackages [nokey]: Remove: archive file [/home/abi/fetcher/tmp/nokey-0.2.0.tar.gz]
+[2024-04-27 15:52:57] INFO root fetch - processPackages [nokey]: Remove: archive file [/home/abi/fetcher/tmp/nokey-0.3.0.tar.gz]
+[2024-04-27 15:52:57] INFO root fetch - main [MainThread]: End processing [nokey]: success
+[2024-04-27 15:52:58] INFO root fetch - processPackages [genomeshader]: Remove: archive file [/home/abi/fetcher/tmp/genomeshader-0.1.8.tar.gz]
+[2024-04-27 15:52:58] INFO root fetch - processPackages [genomeshader]: Remove: archive file [/home/abi/fetcher/tmp/genomeshader-0.1.9.tar.gz]
+[2024-04-27 15:52:58] INFO root fetch - main [MainThread]: End processing [genomeshader]: success
+[2024-04-27 15:52:58] INFO root fetch - main [MainThread]: Store serial: [22959223]
