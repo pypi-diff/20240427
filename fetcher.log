@@ -10699,3 +10699,60 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 10:06:51] INFO root fetch - processPackages [trustllm]: Remove: archive file [/home/abi/fetcher/tmp/trustllm-0.3.0-py3-none-any.whl.zip]
 [2024-04-27 10:06:51] INFO root fetch - main [MainThread]: End processing [trustllm]: success
 [2024-04-27 10:06:51] INFO root fetch - main [MainThread]: Store serial: [22957342]
+[2024-04-27 10:08:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957342]
+[2024-04-27 10:08:59] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-27 10:08:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: logger-aux
+[2024-04-27 10:08:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: milvus-api
+[2024-04-27 10:08:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: c4t
+[2024-04-27 10:08:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: func-adl
+[2024-04-27 10:08:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: linktest
+[2024-04-27 10:08:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nonebot_plugin_setu_collection
+[2024-04-27 10:08:59] INFO root fetch - processPackages [linktest]: New version: [2.6.5] Old Version: [2.6.4]
+[2024-04-27 10:08:59] INFO root fetch - processPackages [milvus-api]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-27 10:08:59] INFO root fetch - processPackages [logger-aux]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-27 10:08:59] INFO root fetch - processPackages [nonebot_plugin_setu_collection]: New version: [0.2.0] Old Version: [0.1.8]
+[2024-04-27 10:08:59] INFO root fetch - processPackages [func-adl]: New version: [3.3.1b4] Old Version: [3.3.1b3]
+[2024-04-27 10:08:59] INFO root fetch - processPackages [c4t]: New version: [1.2.4] Old Version: [1.2.3]
+[2024-04-27 10:08:59] INFO root fetch - processPackages [linktest]: Downloading https://files.pythonhosted.org/packages/06/be/869aa01fdd5a8d14c4eabbce2236804fc6b093143b4a89d6c41a9ab89835/linktest-2.6.4.tar.gz
+[2024-04-27 10:08:59] INFO root fetch - processPackages [milvus-api]: Downloading https://files.pythonhosted.org/packages/59/f0/55f17ee9b52ab25de2736df19a7a8fafb70e12e547eb7849d1005d0aa06e/milvus_api-0.1.3.tar.gz
+[2024-04-27 10:08:59] INFO root fetch - processPackages [nonebot_plugin_setu_collection]: Downloading https://files.pythonhosted.org/packages/7f/ed/4dd26202a6dc289ae78f7aee17ff59dee75531e8565a5f9710329a94dc56/nonebot_plugin_setu_collection-0.1.8.tar.gz
+[2024-04-27 10:08:59] INFO root fetch - processPackages [logger-aux]: Downloading https://files.pythonhosted.org/packages/a7/bd/61af518b0f61ad6c4a44734fc76ba2e74c959bb2aa077fc448c656e77002/logger_aux-0.0.4.tar.gz
+[2024-04-27 10:08:59] INFO root fetch - processPackages [func-adl]: Downloading https://files.pythonhosted.org/packages/c6/df/86df6732f5d169ac398f783659c9b41f5db501abc81b77972f362ad61e38/func_adl-3.3.1b3.tar.gz
+[2024-04-27 10:08:59] INFO root fetch - processPackages [c4t]: Downloading https://files.pythonhosted.org/packages/ce/65/b88610b97858557fbebe9e427b85c4bcb19531244fd57be01fef20f5f41e/c4t-1.2.3.tar.gz
+[2024-04-27 10:08:59] INFO root fetch - processPackages [linktest]: Downloading https://files.pythonhosted.org/packages/58/c4/8cc8a01d6628b3f228fb95858ff7f0983c74e09717d413176ecf1a991f11/linktest-2.6.5.tar.gz
+[2024-04-27 10:08:59] INFO root fetch - processPackages [milvus-api]: Downloading https://files.pythonhosted.org/packages/b2/1f/e6bb304a1911e5b154068593695ecaaebe6c0920ef7ae60a1b966818e187/milvus_api-0.1.4.tar.gz
+[2024-04-27 10:08:59] INFO root fetch - processPackages [nonebot_plugin_setu_collection]: Downloading https://files.pythonhosted.org/packages/85/a1/d8378460aef85276c6ca9fb36780cb602c416a43f7ee86c33015bf63deb2/nonebot_plugin_setu_collection-0.2.0.tar.gz
+[2024-04-27 10:08:59] INFO root fetch - processPackages [linktest]: executing diffoscope
+[2024-04-27 10:08:59] INFO root fetch - processPackages [linktest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linktest-2.6.4.tar.gz tmp/linktest-2.6.5.tar.gz --markdown 20240427/l/linktest/2.6.4-2.6.5/README.md --exclude *.pyd
+[2024-04-27 10:08:59] INFO root fetch - processPackages [logger-aux]: Downloading https://files.pythonhosted.org/packages/8b/05/05a1a90b7c7ccaa59665a872fe13d454064ba450510887fccbbe7f2165c9/logger_aux-0.0.5.tar.gz
+[2024-04-27 10:08:59] INFO root fetch - processPackages [milvus-api]: executing diffoscope
+[2024-04-27 10:08:59] INFO root fetch - processPackages [milvus-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/milvus_api-0.1.3.tar.gz tmp/milvus_api-0.1.4.tar.gz --markdown 20240427/m/milvus-api/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-27 10:08:59] INFO root fetch - processPackages [nonebot_plugin_setu_collection]: executing diffoscope
+[2024-04-27 10:08:59] INFO root fetch - processPackages [nonebot_plugin_setu_collection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_setu_collection-0.1.8.tar.gz tmp/nonebot_plugin_setu_collection-0.2.0.tar.gz --markdown 20240427/n/nonebot_plugin_setu_collection/0.1.8-0.2.0/README.md --exclude *.pyd
+[2024-04-27 10:09:00] INFO root fetch - processPackages [func-adl]: Downloading https://files.pythonhosted.org/packages/8e/f5/08ac6a062eef0c21b0e85e98802b006824826ef37dfd579125c143d9f5be/func_adl-3.3.1b4.tar.gz
+[2024-04-27 10:09:00] INFO root fetch - processPackages [logger-aux]: executing diffoscope
+[2024-04-27 10:09:00] INFO root fetch - processPackages [logger-aux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/logger_aux-0.0.4.tar.gz tmp/logger_aux-0.0.5.tar.gz --markdown 20240427/l/logger-aux/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-27 10:09:00] INFO root fetch - processPackages [c4t]: Downloading https://files.pythonhosted.org/packages/6e/53/e1839fe874dc20960a5dad9dbeeabb3be3a25e6b7057c8420ea800142dfe/c4t-1.2.4.tar.gz
+[2024-04-27 10:09:00] INFO root fetch - processPackages [func-adl]: executing diffoscope
+[2024-04-27 10:09:00] INFO root fetch - processPackages [func-adl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/func_adl-3.3.1b3.tar.gz tmp/func_adl-3.3.1b4.tar.gz --markdown 20240427/f/func-adl/3.3.1b3-3.3.1b4/README.md --exclude *.pyd
+[2024-04-27 10:09:00] INFO root fetch - processPackages [c4t]: executing diffoscope
+[2024-04-27 10:09:00] INFO root fetch - processPackages [c4t]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/c4t-1.2.3.tar.gz tmp/c4t-1.2.4.tar.gz --markdown 20240427/c/c4t/1.2.3-1.2.4/README.md --exclude *.pyd
+[2024-04-27 10:09:00] INFO root fetch - processPackages [milvus-api]: Remove: archive file [/home/abi/fetcher/tmp/milvus_api-0.1.3.tar.gz]
+[2024-04-27 10:09:00] INFO root fetch - processPackages [milvus-api]: Remove: archive file [/home/abi/fetcher/tmp/milvus_api-0.1.4.tar.gz]
+[2024-04-27 10:09:00] INFO root fetch - main [MainThread]: End processing [milvus-api]: success
+[2024-04-27 10:09:00] INFO root fetch - processPackages [nonebot_plugin_setu_collection]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_setu_collection-0.1.8.tar.gz]
+[2024-04-27 10:09:00] INFO root fetch - processPackages [nonebot_plugin_setu_collection]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_setu_collection-0.2.0.tar.gz]
+[2024-04-27 10:09:00] INFO root fetch - main [MainThread]: End processing [nonebot_plugin_setu_collection]: success
+[2024-04-27 10:09:00] INFO root fetch - processPackages [linktest]: Remove: archive file [/home/abi/fetcher/tmp/linktest-2.6.4.tar.gz]
+[2024-04-27 10:09:00] INFO root fetch - processPackages [linktest]: Remove: archive file [/home/abi/fetcher/tmp/linktest-2.6.5.tar.gz]
+[2024-04-27 10:09:00] INFO root fetch - main [MainThread]: End processing [linktest]: success
+[2024-04-27 10:09:00] INFO root fetch - processPackages [logger-aux]: Remove: archive file [/home/abi/fetcher/tmp/logger_aux-0.0.4.tar.gz]
+[2024-04-27 10:09:00] INFO root fetch - processPackages [logger-aux]: Remove: archive file [/home/abi/fetcher/tmp/logger_aux-0.0.5.tar.gz]
+[2024-04-27 10:09:00] INFO root fetch - main [MainThread]: End processing [logger-aux]: success
+[2024-04-27 10:09:00] INFO root fetch - processPackages [func-adl]: Remove: archive file [/home/abi/fetcher/tmp/func_adl-3.3.1b3.tar.gz]
+[2024-04-27 10:09:00] INFO root fetch - processPackages [func-adl]: Remove: archive file [/home/abi/fetcher/tmp/func_adl-3.3.1b4.tar.gz]
+[2024-04-27 10:09:00] INFO root fetch - main [MainThread]: End processing [func-adl]: success
+[2024-04-27 10:09:00] INFO root fetch - processPackages [c4t]: Remove: archive file [/home/abi/fetcher/tmp/c4t-1.2.3.tar.gz]
+[2024-04-27 10:09:00] INFO root fetch - processPackages [c4t]: Remove: archive file [/home/abi/fetcher/tmp/c4t-1.2.4.tar.gz]
+[2024-04-27 10:09:00] INFO root fetch - main [MainThread]: End processing [c4t]: success
+[2024-04-27 10:09:00] INFO root fetch - main [MainThread]: Store serial: [22957366]
