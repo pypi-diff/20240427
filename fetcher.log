@@ -11050,3 +11050,18 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 10:46:19] INFO root fetch - processPackages [petsc4py]: Remove: archive file [/home/abi/fetcher/tmp/petsc4py-3.9.1.tar.gz]
 [2024-04-27 10:46:19] INFO root fetch - main [MainThread]: End processing [petsc4py]: success
 [2024-04-27 10:46:19] INFO root fetch - main [MainThread]: Store serial: [22957522]
+[2024-04-27 10:48:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957522]
+[2024-04-27 10:48:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 10:48:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-nightly-cpu
+[2024-04-27 10:48:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vbproblemcomposer
+[2024-04-27 10:48:29] WARNING root fetch - processPackages [vbproblemcomposer]: Skipping, unable to determine old version
+[2024-04-27 10:48:29] INFO root fetch - main [MainThread]: End processing [vbproblemcomposer] error
+[2024-04-27 10:48:29] INFO root fetch - processPackages [tf-nightly-cpu]: New version: [2.17.0.dev20240427] Old Version: [2.17.0.dev20240426]
+[2024-04-27 10:48:30] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/20/b6/ecbadb12d11c5198c6ee4294eeeac025df9fd8a82626068bb23522da9ccc/tf_nightly_cpu-2.17.0.dev20240426-cp39-cp39-win_amd64.whl
+[2024-04-27 10:48:30] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/ff/74/24a64f9c90b6f1c3e77d80cc3b41cddc226dc805a79f689eaefb6c9d32be/tf_nightly_cpu-2.17.0.dev20240427-cp39-cp39-win_amd64.whl
+[2024-04-27 10:48:30] INFO root fetch - processPackages [tf-nightly-cpu]: executing diffoscope
+[2024-04-27 10:48:30] INFO root fetch - processPackages [tf-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly_cpu-2.17.0.dev20240426-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly_cpu-2.17.0.dev20240427-cp39-cp39-win_amd64.whl.zip --markdown 20240427/t/tf-nightly-cpu/2.17.0.dev20240426-2.17.0.dev20240427/README.md --exclude *.pyd
+[2024-04-27 10:48:31] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240426-cp39-cp39-win_amd64.whl.zip]
+[2024-04-27 10:48:31] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240427-cp39-cp39-win_amd64.whl.zip]
+[2024-04-27 10:48:31] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
+[2024-04-27 10:48:31] INFO root fetch - main [MainThread]: Store serial: [22957534]
