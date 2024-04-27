@@ -21708,3 +21708,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 23:56:09] INFO root fetch - processPackages [gguf-connector]: Remove: archive file [/home/abi/fetcher/tmp/gguf_connector-0.7.9.tar.gz]
 [2024-04-27 23:56:09] INFO root fetch - main [MainThread]: End processing [gguf-connector]: success
 [2024-04-27 23:56:09] INFO root fetch - main [MainThread]: Store serial: [22962271]
+[2024-04-27 23:58:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962271]
+[2024-04-27 23:58:19] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 23:58:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: google-sheet-writer
+[2024-04-27 23:58:19] INFO root fetch - processPackages [google-sheet-writer]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-27 23:58:20] INFO root fetch - processPackages [google-sheet-writer]: Downloading https://files.pythonhosted.org/packages/a0/55/31b2d84817f3879fa858c3a0aaebeb68de3479bab82259e6795475acefd6/google_sheet_writer-0.0.3.tar.gz
+[2024-04-27 23:58:20] INFO root fetch - processPackages [google-sheet-writer]: Downloading https://files.pythonhosted.org/packages/6c/32/64ec6b5fbfffad2220e2e0397f630df1374854a3992d2ea910973b77e2c0/google_sheet_writer-0.0.4.tar.gz
+[2024-04-27 23:58:20] INFO root fetch - processPackages [google-sheet-writer]: executing diffoscope
+[2024-04-27 23:58:20] INFO root fetch - processPackages [google-sheet-writer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/google_sheet_writer-0.0.3.tar.gz tmp/google_sheet_writer-0.0.4.tar.gz --markdown 20240427/g/google-sheet-writer/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-27 23:58:21] INFO root fetch - processPackages [google-sheet-writer]: Remove: archive file [/home/abi/fetcher/tmp/google_sheet_writer-0.0.3.tar.gz]
+[2024-04-27 23:58:21] INFO root fetch - processPackages [google-sheet-writer]: Remove: archive file [/home/abi/fetcher/tmp/google_sheet_writer-0.0.4.tar.gz]
+[2024-04-27 23:58:21] INFO root fetch - main [MainThread]: End processing [google-sheet-writer]: success
+[2024-04-27 23:58:21] INFO root fetch - main [MainThread]: Store serial: [22962274]
