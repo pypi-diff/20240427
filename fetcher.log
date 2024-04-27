@@ -10126,3 +10126,18 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 09:01:32] INFO root fetch - processPackages [wipo-gbd-pypers]: Remove: archive file [/home/abi/fetcher/tmp/wipo_gbd_pypers-2.1.9-py3-none-any.whl.zip]
 [2024-04-27 09:01:32] INFO root fetch - main [MainThread]: End processing [wipo-gbd-pypers]: success
 [2024-04-27 09:01:32] INFO root fetch - main [MainThread]: Store serial: [22957110]
+[2024-04-27 09:03:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957110]
+[2024-04-27 09:03:41] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 09:03:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zyx
+[2024-04-27 09:03:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyrocketmodbus
+[2024-04-27 09:03:41] WARNING root fetch - processPackages [zyx]: Skipping, unable to determine old version
+[2024-04-27 09:03:41] INFO root fetch - main [MainThread]: End processing [zyx] error
+[2024-04-27 09:03:41] INFO root fetch - processPackages [pyrocketmodbus]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-27 09:03:41] INFO root fetch - processPackages [pyrocketmodbus]: Downloading https://files.pythonhosted.org/packages/c9/bd/69254599c10209f247c66bb4c88b4b5cce1ea4446e551e08370cef6977e1/pyrocketmodbus-1.0.1.tar.gz
+[2024-04-27 09:03:41] INFO root fetch - processPackages [pyrocketmodbus]: Downloading https://files.pythonhosted.org/packages/0d/19/089a7a6a9f9845cf55132dcb24e522043b605213346ed9f25c99457fc7f8/pyrocketmodbus-1.0.2.tar.gz
+[2024-04-27 09:03:42] INFO root fetch - processPackages [pyrocketmodbus]: executing diffoscope
+[2024-04-27 09:03:42] INFO root fetch - processPackages [pyrocketmodbus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrocketmodbus-1.0.1.tar.gz tmp/pyrocketmodbus-1.0.2.tar.gz --markdown 20240427/p/pyrocketmodbus/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-27 09:03:42] INFO root fetch - processPackages [pyrocketmodbus]: Remove: archive file [/home/abi/fetcher/tmp/pyrocketmodbus-1.0.1.tar.gz]
+[2024-04-27 09:03:42] INFO root fetch - processPackages [pyrocketmodbus]: Remove: archive file [/home/abi/fetcher/tmp/pyrocketmodbus-1.0.2.tar.gz]
+[2024-04-27 09:03:42] INFO root fetch - main [MainThread]: End processing [pyrocketmodbus]: success
+[2024-04-27 09:03:42] INFO root fetch - main [MainThread]: Store serial: [22957124]
