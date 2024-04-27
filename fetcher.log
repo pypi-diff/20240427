@@ -15977,3 +15977,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 16:41:27] INFO root fetch - processPackages [easypaddleocr]: Remove: archive file [/home/abi/fetcher/tmp/easypaddleocr-0.1.4.tar.gz]
 [2024-04-27 16:41:27] INFO root fetch - main [MainThread]: End processing [easypaddleocr]: success
 [2024-04-27 16:41:27] INFO root fetch - main [MainThread]: Store serial: [22959553]
+[2024-04-27 16:43:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959553]
+[2024-04-27 16:43:36] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 16:43:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openav
+[2024-04-27 16:43:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: collie-lm
+[2024-04-27 16:43:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Color-Palette-Generator
+[2024-04-27 16:43:36] WARNING root fetch - processPackages [Color-Palette-Generator]: Skipping, unable to determine old version
+[2024-04-27 16:43:36] INFO root fetch - main [MainThread]: End processing [Color-Palette-Generator] error
+[2024-04-27 16:43:36] INFO root fetch - processPackages [openav]: New version: [1.0.0a4] Old Version: [1.0.0a3]
+[2024-04-27 16:43:36] INFO root fetch - processPackages [openav]: Downloading https://files.pythonhosted.org/packages/66/a7/a68d49414bb7369dd60e610937eb67d36a9a9ab32c1bc0e8f5f0f6b5505b/openav-1.0.0a3.tar.gz
+[2024-04-27 16:43:36] INFO root fetch - processPackages [collie-lm]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-04-27 16:43:36] INFO root fetch - processPackages [collie-lm]: Downloading https://files.pythonhosted.org/packages/4d/e2/84d56f60b796ce288015436a3c6bda9dbd90819d17725c5557296d87f988/collie-lm-1.0.6.tar.gz
+[2024-04-27 16:43:36] INFO root fetch - processPackages [openav]: Downloading https://files.pythonhosted.org/packages/50/c0/15b6758c801d369cc001ccac483747e0668c57c4018f0f6a0f716d4292db/openav-1.0.0a4.tar.gz
+[2024-04-27 16:43:37] INFO root fetch - processPackages [openav]: executing diffoscope
+[2024-04-27 16:43:37] INFO root fetch - processPackages [openav]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openav-1.0.0a3.tar.gz tmp/openav-1.0.0a4.tar.gz --markdown 20240427/o/openav/1.0.0a3-1.0.0a4/README.md --exclude *.pyd
+[2024-04-27 16:43:37] INFO root fetch - processPackages [collie-lm]: Downloading https://files.pythonhosted.org/packages/a3/7e/a794a228c2b6d4a65ba2a464a17d87a02dcbbb7ffa024655c78e59946204/collie_lm-1.0.7.tar.gz
+[2024-04-27 16:43:37] INFO root fetch - processPackages [collie-lm]: executing diffoscope
+[2024-04-27 16:43:37] INFO root fetch - processPackages [collie-lm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/collie-lm-1.0.6.tar.gz tmp/collie_lm-1.0.7.tar.gz --markdown 20240427/c/collie-lm/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-04-27 16:43:37] INFO root fetch - processPackages [openav]: Remove: archive file [/home/abi/fetcher/tmp/openav-1.0.0a3.tar.gz]
+[2024-04-27 16:43:37] INFO root fetch - processPackages [openav]: Remove: archive file [/home/abi/fetcher/tmp/openav-1.0.0a4.tar.gz]
+[2024-04-27 16:43:37] INFO root fetch - main [MainThread]: End processing [openav]: success
+[2024-04-27 16:43:38] INFO root fetch - processPackages [collie-lm]: Remove: archive file [/home/abi/fetcher/tmp/collie-lm-1.0.6.tar.gz]
+[2024-04-27 16:43:38] INFO root fetch - processPackages [collie-lm]: Remove: archive file [/home/abi/fetcher/tmp/collie_lm-1.0.7.tar.gz]
+[2024-04-27 16:43:38] INFO root fetch - main [MainThread]: End processing [collie-lm]: success
+[2024-04-27 16:43:38] INFO root fetch - main [MainThread]: Store serial: [22959562]
