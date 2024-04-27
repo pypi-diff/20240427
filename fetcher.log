@@ -10949,3 +10949,44 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 10:33:06] INFO root fetch - processPackages [nonebot-plugin-groupmate-waifu]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_groupmate_waifu-1.4.2.tar.gz]
 [2024-04-27 10:33:06] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-groupmate-waifu]: success
 [2024-04-27 10:33:06] INFO root fetch - main [MainThread]: Store serial: [22957460]
+[2024-04-27 10:35:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957460]
+[2024-04-27 10:37:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957460]
+[2024-04-27 10:39:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957460]
+[2024-04-27 10:39:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 10:39:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moptipyapps
+[2024-04-27 10:39:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-appimage
+[2024-04-27 10:39:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ctrip-app-ui
+[2024-04-27 10:39:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-plugin-game-collection
+[2024-04-27 10:39:27] INFO root fetch - processPackages [ctrip-app-ui]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-04-27 10:39:27] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/25/f1/e61df16ac8d4a75dae5d554257a0e37487c572c048589b13358a35fb56c0/ctrip-app-ui-0.3.0.tar.gz
+[2024-04-27 10:39:27] INFO root fetch - processPackages [python-appimage]: New version: [1.2.7] Old Version: [1.2.5]
+[2024-04-27 10:39:27] INFO root fetch - processPackages [moptipyapps]: New version: [0.8.9] Old Version: [0.8.8]
+[2024-04-27 10:39:27] INFO root fetch - processPackages [nonebot-plugin-game-collection]: New version: [3.0.5] Old Version: [3.0.4]
+[2024-04-27 10:39:27] INFO root fetch - processPackages [python-appimage]: Downloading https://files.pythonhosted.org/packages/ef/26/4ab54de863b05dd52d931cfd79622f4970687e0f14bf9e6f213f3ee169bf/python_appimage-1.2.5-py2.py3-none-any.whl
+[2024-04-27 10:39:27] INFO root fetch - processPackages [nonebot-plugin-game-collection]: Downloading https://files.pythonhosted.org/packages/a8/21/fea7f18299e023c5ea177c239e46fbbf33c161ffaceec82a60c3a7e81c9f/nonebot_plugin_game_collection-3.0.4.tar.gz
+[2024-04-27 10:39:28] INFO root fetch - processPackages [moptipyapps]: Downloading https://files.pythonhosted.org/packages/dd/b4/372f1e1ae19b5e3f8b5e9be2bda60edf1667543cd5ae4b16fbd6408c9958/moptipyapps-0.8.8.tar.gz
+[2024-04-27 10:39:28] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/88/58/6edaddeb1cfa988abb0cfed26f178d5d5300952082fd34c71d4ee0581fd1/ctrip-app-ui-0.3.1.tar.gz
+[2024-04-27 10:39:28] INFO root fetch - processPackages [ctrip-app-ui]: executing diffoscope
+[2024-04-27 10:39:28] INFO root fetch - processPackages [ctrip-app-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctrip-app-ui-0.3.0.tar.gz tmp/ctrip-app-ui-0.3.1.tar.gz --markdown 20240427/c/ctrip-app-ui/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-04-27 10:39:28] INFO root fetch - processPackages [python-appimage]: Downloading https://files.pythonhosted.org/packages/22/d4/f6215e7107122ff582da724dfcea6f7e7a14c6243152bfa4eb0b801f61df/python_appimage-1.2.7-py2.py3-none-any.whl
+[2024-04-27 10:39:28] INFO root fetch - processPackages [nonebot-plugin-game-collection]: Downloading https://files.pythonhosted.org/packages/5a/33/c5c01a54c905bfdd93a9491b6409e59cf39dc34fbc2e21b005f763f9f515/nonebot_plugin_game_collection-3.0.5.tar.gz
+[2024-04-27 10:39:28] INFO root fetch - processPackages [python-appimage]: executing diffoscope
+[2024-04-27 10:39:28] INFO root fetch - processPackages [python-appimage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_appimage-1.2.5-py2.py3-none-any.whl.zip tmp/python_appimage-1.2.7-py2.py3-none-any.whl.zip --markdown 20240427/p/python-appimage/1.2.5-1.2.7/README.md --exclude *.pyd
+[2024-04-27 10:39:28] INFO root fetch - processPackages [nonebot-plugin-game-collection]: executing diffoscope
+[2024-04-27 10:39:28] INFO root fetch - processPackages [nonebot-plugin-game-collection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_game_collection-3.0.4.tar.gz tmp/nonebot_plugin_game_collection-3.0.5.tar.gz --markdown 20240427/n/nonebot-plugin-game-collection/3.0.4-3.0.5/README.md --exclude *.pyd
+[2024-04-27 10:39:28] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.3.0.tar.gz]
+[2024-04-27 10:39:28] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.3.1.tar.gz]
+[2024-04-27 10:39:28] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
+[2024-04-27 10:39:28] INFO root fetch - processPackages [nonebot-plugin-game-collection]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_game_collection-3.0.4.tar.gz]
+[2024-04-27 10:39:28] INFO root fetch - processPackages [nonebot-plugin-game-collection]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_game_collection-3.0.5.tar.gz]
+[2024-04-27 10:39:28] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-game-collection]: success
+[2024-04-27 10:39:29] INFO root fetch - processPackages [python-appimage]: Remove: archive file [/home/abi/fetcher/tmp/python_appimage-1.2.5-py2.py3-none-any.whl.zip]
+[2024-04-27 10:39:29] INFO root fetch - processPackages [python-appimage]: Remove: archive file [/home/abi/fetcher/tmp/python_appimage-1.2.7-py2.py3-none-any.whl.zip]
+[2024-04-27 10:39:29] INFO root fetch - main [MainThread]: End processing [python-appimage]: success
+[2024-04-27 10:39:29] INFO root fetch - processPackages [moptipyapps]: Downloading https://files.pythonhosted.org/packages/99/84/e6a54ea53992f0d12000f77a325b6ffd82fd0a9248f130f966739810c773/moptipyapps-0.8.9.tar.gz
+[2024-04-27 10:39:30] INFO root fetch - processPackages [moptipyapps]: executing diffoscope
+[2024-04-27 10:39:30] INFO root fetch - processPackages [moptipyapps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moptipyapps-0.8.8.tar.gz tmp/moptipyapps-0.8.9.tar.gz --markdown 20240427/m/moptipyapps/0.8.8-0.8.9/README.md --exclude *.pyd
+[2024-04-27 10:39:31] INFO root fetch - processPackages [moptipyapps]: Remove: archive file [/home/abi/fetcher/tmp/moptipyapps-0.8.8.tar.gz]
+[2024-04-27 10:39:31] INFO root fetch - processPackages [moptipyapps]: Remove: archive file [/home/abi/fetcher/tmp/moptipyapps-0.8.9.tar.gz]
+[2024-04-27 10:39:31] INFO root fetch - main [MainThread]: End processing [moptipyapps]: success
+[2024-04-27 10:39:31] INFO root fetch - main [MainThread]: Store serial: [22957471]
