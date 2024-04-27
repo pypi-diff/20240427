@@ -14032,3 +14032,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 14:43:39] INFO root fetch - processPackages [homeassistant-stubs]: Remove: archive file [/home/abi/fetcher/tmp/homeassistant_stubs-2024.5.0b1.tar.gz]
 [2024-04-27 14:43:39] INFO root fetch - main [MainThread]: End processing [homeassistant-stubs]: success
 [2024-04-27 14:43:39] INFO root fetch - main [MainThread]: Store serial: [22958732]
+[2024-04-27 14:45:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958732]
+[2024-04-27 14:45:49] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 14:45:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TwitchPy
+[2024-04-27 14:45:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: harlequin-dataset
+[2024-04-27 14:45:49] INFO root fetch - processPackages [TwitchPy]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-04-27 14:45:49] WARNING root fetch - processPackages [harlequin-dataset]: Skipping, unable to determine old version
+[2024-04-27 14:45:49] INFO root fetch - main [MainThread]: End processing [harlequin-dataset] error
+[2024-04-27 14:45:49] INFO root fetch - processPackages [TwitchPy]: Downloading https://files.pythonhosted.org/packages/c7/38/ab2f44e01aca7a202be767939231a7678a5b143f660963717e6d2aa32a29/TwitchPy-1.1.0.tar.gz
+[2024-04-27 14:45:49] INFO root fetch - processPackages [TwitchPy]: Downloading https://files.pythonhosted.org/packages/51/18/5ed3af8e82daf64dd4de661af1072ade73e93b9f4ffb10d8474abe4bdfcf/TwitchPy-1.2.0.tar.gz
+[2024-04-27 14:45:49] INFO root fetch - processPackages [TwitchPy]: executing diffoscope
+[2024-04-27 14:45:49] INFO root fetch - processPackages [TwitchPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TwitchPy-1.1.0.tar.gz tmp/TwitchPy-1.2.0.tar.gz --markdown 20240427/T/TwitchPy/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-04-27 14:45:50] INFO root fetch - processPackages [TwitchPy]: Remove: archive file [/home/abi/fetcher/tmp/TwitchPy-1.1.0.tar.gz]
+[2024-04-27 14:45:50] INFO root fetch - processPackages [TwitchPy]: Remove: archive file [/home/abi/fetcher/tmp/TwitchPy-1.2.0.tar.gz]
+[2024-04-27 14:45:50] INFO root fetch - main [MainThread]: End processing [TwitchPy]: success
+[2024-04-27 14:45:50] INFO root fetch - main [MainThread]: Store serial: [22958739]
