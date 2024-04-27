@@ -6736,3 +6736,26 @@ EOFError: EOF read where object expected
 [2024-04-27 03:26:17] INFO root fetch - processPackages [onediff]: Remove: archive file [/home/abi/fetcher/tmp/onediff-1.0.0.dev202404260126.tar.gz]
 [2024-04-27 03:26:17] INFO root fetch - main [MainThread]: End processing [onediff]: success
 [2024-04-27 03:26:17] INFO root fetch - main [MainThread]: Store serial: [22955566]
+[2024-04-27 03:28:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22955566]
+[2024-04-27 03:28:25] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-27 03:30:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22955614]
+[2024-04-27 03:30:32] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 03:30:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scalene
+[2024-04-27 03:30:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cf2tf
+[2024-04-27 03:30:32] INFO root fetch - processPackages [cf2tf]: New version: [0.7.2a0] Old Version: [0.7.1a0]
+[2024-04-27 03:30:32] INFO root fetch - processPackages [scalene]: New version: [1.5.9] Old Version: [1.5.8]
+[2024-04-27 03:30:32] INFO root fetch - processPackages [cf2tf]: Downloading https://files.pythonhosted.org/packages/90/dd/70e4c8c6f39df3d6209a3d17a96a652ee876a5312ab913c9572af062804b/cf2tf-0.7.1a0.tar.gz
+[2024-04-27 03:30:32] INFO root fetch - processPackages [scalene]: Downloading https://files.pythonhosted.org/packages/43/ab/45ca7943477f8627b0d15cea1f42afda402436027789df3a57c1015fc12f/scalene-1.5.8.tar.gz
+[2024-04-27 03:30:33] INFO root fetch - processPackages [cf2tf]: Downloading https://files.pythonhosted.org/packages/83/37/51d1c7aa3d6944f4af4e8f452533bbe28e2ae19b22eb89de125b11d33c25/cf2tf-0.7.2a0.tar.gz
+[2024-04-27 03:30:33] INFO root fetch - processPackages [cf2tf]: executing diffoscope
+[2024-04-27 03:30:33] INFO root fetch - processPackages [cf2tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cf2tf-0.7.1a0.tar.gz tmp/cf2tf-0.7.2a0.tar.gz --markdown 20240427/c/cf2tf/0.7.1a0-0.7.2a0/README.md --exclude *.pyd
+[2024-04-27 03:30:33] INFO root fetch - processPackages [cf2tf]: Remove: archive file [/home/abi/fetcher/tmp/cf2tf-0.7.1a0.tar.gz]
+[2024-04-27 03:30:33] INFO root fetch - processPackages [cf2tf]: Remove: archive file [/home/abi/fetcher/tmp/cf2tf-0.7.2a0.tar.gz]
+[2024-04-27 03:30:33] INFO root fetch - main [MainThread]: End processing [cf2tf]: success
+[2024-04-27 03:30:36] INFO root fetch - processPackages [scalene]: Downloading https://files.pythonhosted.org/packages/f8/9b/a4972cc34e6598ce0b7f3c270fea0a0e7e79bf309825885d831897377729/scalene-1.5.9.tar.gz
+[2024-04-27 03:30:38] INFO root fetch - processPackages [scalene]: executing diffoscope
+[2024-04-27 03:30:38] INFO root fetch - processPackages [scalene]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scalene-1.5.8.tar.gz tmp/scalene-1.5.9.tar.gz --markdown 20240427/s/scalene/1.5.8-1.5.9/README.md --exclude *.pyd
+[2024-04-27 03:30:40] INFO root fetch - processPackages [scalene]: Remove: archive file [/home/abi/fetcher/tmp/scalene-1.5.8.tar.gz]
+[2024-04-27 03:30:40] INFO root fetch - processPackages [scalene]: Remove: archive file [/home/abi/fetcher/tmp/scalene-1.5.9.tar.gz]
+[2024-04-27 03:30:40] INFO root fetch - main [MainThread]: End processing [scalene]: success
+[2024-04-27 03:30:40] INFO root fetch - main [MainThread]: Store serial: [22955682]
