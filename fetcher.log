@@ -9585,3 +9585,60 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 08:15:14] INFO root fetch - processPackages [cdk8s-awscdk-resolver]: Remove: archive file [/home/abi/fetcher/tmp/cdk8s-awscdk-resolver-0.0.9.tar.gz]
 [2024-04-27 08:15:14] INFO root fetch - main [MainThread]: End processing [cdk8s-awscdk-resolver]: success
 [2024-04-27 08:15:14] INFO root fetch - main [MainThread]: Store serial: [22956841]
+[2024-04-27 08:17:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956841]
+[2024-04-27 08:17:24] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-27 08:17:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fake-bpy-module-latest
+[2024-04-27 08:17:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: araxai
+[2024-04-27 08:17:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fake-bpy-module
+[2024-04-27 08:17:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: media-manager
+[2024-04-27 08:17:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: flatpack
+[2024-04-27 08:17:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PyMLRS
+[2024-04-27 08:17:24] INFO root fetch - processPackages [PyMLRS]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-27 08:17:24] INFO root fetch - processPackages [media-manager]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-27 08:17:24] INFO root fetch - processPackages [flatpack]: New version: [3.3.9] Old Version: [3.3.8]
+[2024-04-27 08:17:24] INFO root fetch - processPackages [fake-bpy-module]: New version: [20240426] Old Version: [20240424]
+[2024-04-27 08:17:25] INFO root fetch - processPackages [fake-bpy-module-latest]: New version: [20240427] Old Version: [20240426]
+[2024-04-27 08:17:25] INFO root fetch - processPackages [PyMLRS]: Downloading https://files.pythonhosted.org/packages/46/b0/cf128827f0463a4a6b350c1c7d2523bb09d8bf6dce488fd7630f6fcd86c6/PyMLRS-0.0.1.tar.gz
+[2024-04-27 08:17:25] INFO root fetch - processPackages [araxai]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-27 08:17:25] INFO root fetch - processPackages [media-manager]: Downloading https://files.pythonhosted.org/packages/75/11/acc8a436463477db369c803d9007e03acdd0b43a677cd0cbb78b7ea5b3bb/media_manager-0.8.0-py2.py3-none-any.whl
+[2024-04-27 08:17:25] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/42/48/84e949164975b341645163f536ee4ca8329c4e3dfa6d143c2806a0849a54/flatpack-3.3.8.tar.gz
+[2024-04-27 08:17:25] INFO root fetch - processPackages [fake-bpy-module]: Downloading https://files.pythonhosted.org/packages/c4/d4/7da675089bce41cac308ed8bed7ecf8a119422183c82e4c0cf29aca79ee8/fake_bpy_module-20240424.tar.gz
+[2024-04-27 08:17:25] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/f1/6e/1959c2f0abc3d133fb0029a581e46fb1f61511ae222fb6e54f9a266c0bc1/fake_bpy_module_latest-20240426.tar.gz
+[2024-04-27 08:17:25] INFO root fetch - processPackages [araxai]: Downloading https://files.pythonhosted.org/packages/1c/d4/f9fc8be95d319ef2e08e0003ae184dc2b5d3a250cc08f056c6ba3d40877b/araxai-0.2.1.tar.gz
+[2024-04-27 08:17:25] INFO root fetch - processPackages [media-manager]: Downloading https://files.pythonhosted.org/packages/9b/a7/1155a373b195bebb88c0274982964c45aecd8d7206b2f4731838007628fd/media_manager-0.9.0-py2.py3-none-any.whl
+[2024-04-27 08:17:25] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/11/54/065825e8640b062c83c07c97d8dea514db8a5c0ea3c272834b88c568d82e/flatpack-3.3.9.tar.gz
+[2024-04-27 08:17:25] INFO root fetch - processPackages [PyMLRS]: Downloading https://files.pythonhosted.org/packages/4d/2e/518b2f215480e7b52b4f50f04172e15056549ac646fe9a7a039aa7b59edc/pymlrs-0.0.2.tar.gz
+[2024-04-27 08:17:25] INFO root fetch - processPackages [fake-bpy-module]: Downloading https://files.pythonhosted.org/packages/f8/f0/335a61576be3a629124dc875514485cce6a40c787c60e0a6ec1d8b62f266/fake_bpy_module-20240426.tar.gz
+[2024-04-27 08:17:25] INFO root fetch - processPackages [media-manager]: executing diffoscope
+[2024-04-27 08:17:25] INFO root fetch - processPackages [media-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/media_manager-0.8.0-py2.py3-none-any.whl.zip tmp/media_manager-0.9.0-py2.py3-none-any.whl.zip --markdown 20240427/m/media-manager/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-27 08:17:25] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-04-27 08:17:25] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.3.8.tar.gz tmp/flatpack-3.3.9.tar.gz --markdown 20240427/f/flatpack/3.3.8-3.3.9/README.md --exclude *.pyd
+[2024-04-27 08:17:25] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/d6/35/6081c6721cd9cec9d9830fcde69ed114b4d4eaaacac34d39fb6b9bb58a4c/fake_bpy_module_latest-20240427.tar.gz
+[2024-04-27 08:17:25] INFO root fetch - processPackages [PyMLRS]: executing diffoscope
+[2024-04-27 08:17:25] INFO root fetch - processPackages [PyMLRS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyMLRS-0.0.1.tar.gz tmp/pymlrs-0.0.2.tar.gz --markdown 20240427/P/PyMLRS/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-27 08:17:25] INFO root fetch - processPackages [araxai]: Downloading https://files.pythonhosted.org/packages/e2/81/dc4525c5b4290d050c057bf5340b29385c5414a5d6ae34977e0dfb23a653/araxai-0.2.2.tar.gz
+[2024-04-27 08:17:25] INFO root fetch - processPackages [fake-bpy-module]: executing diffoscope
+[2024-04-27 08:17:25] INFO root fetch - processPackages [fake-bpy-module]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake_bpy_module-20240424.tar.gz tmp/fake_bpy_module-20240426.tar.gz --markdown 20240427/f/fake-bpy-module/20240424-20240426/README.md --exclude *.pyd
+[2024-04-27 08:17:25] INFO root fetch - processPackages [araxai]: executing diffoscope
+[2024-04-27 08:17:25] INFO root fetch - processPackages [araxai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/araxai-0.2.1.tar.gz tmp/araxai-0.2.2.tar.gz --markdown 20240427/a/araxai/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-04-27 08:17:25] INFO root fetch - processPackages [fake-bpy-module-latest]: executing diffoscope
+[2024-04-27 08:17:25] INFO root fetch - processPackages [fake-bpy-module-latest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake_bpy_module_latest-20240426.tar.gz tmp/fake_bpy_module_latest-20240427.tar.gz --markdown 20240427/f/fake-bpy-module-latest/20240426-20240427/README.md --exclude *.pyd
+[2024-04-27 08:17:26] INFO root fetch - processPackages [media-manager]: Remove: archive file [/home/abi/fetcher/tmp/media_manager-0.8.0-py2.py3-none-any.whl.zip]
+[2024-04-27 08:17:26] INFO root fetch - processPackages [media-manager]: Remove: archive file [/home/abi/fetcher/tmp/media_manager-0.9.0-py2.py3-none-any.whl.zip]
+[2024-04-27 08:17:26] INFO root fetch - main [MainThread]: End processing [media-manager]: success
+[2024-04-27 08:17:26] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.8.tar.gz]
+[2024-04-27 08:17:26] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.9.tar.gz]
+[2024-04-27 08:17:26] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-04-27 08:17:26] INFO root fetch - processPackages [araxai]: Remove: archive file [/home/abi/fetcher/tmp/araxai-0.2.1.tar.gz]
+[2024-04-27 08:17:26] INFO root fetch - processPackages [araxai]: Remove: archive file [/home/abi/fetcher/tmp/araxai-0.2.2.tar.gz]
+[2024-04-27 08:17:26] INFO root fetch - main [MainThread]: End processing [araxai]: success
+[2024-04-27 08:17:26] INFO root fetch - processPackages [PyMLRS]: Remove: archive file [/home/abi/fetcher/tmp/PyMLRS-0.0.1.tar.gz]
+[2024-04-27 08:17:26] INFO root fetch - processPackages [PyMLRS]: Remove: archive file [/home/abi/fetcher/tmp/pymlrs-0.0.2.tar.gz]
+[2024-04-27 08:17:26] INFO root fetch - main [MainThread]: End processing [PyMLRS]: success
+[2024-04-27 08:17:33] INFO root fetch - processPackages [fake-bpy-module-latest]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module_latest-20240426.tar.gz]
+[2024-04-27 08:17:33] INFO root fetch - processPackages [fake-bpy-module-latest]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module_latest-20240427.tar.gz]
+[2024-04-27 08:17:33] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
+[2024-04-27 08:17:33] INFO root fetch - processPackages [fake-bpy-module]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module-20240424.tar.gz]
+[2024-04-27 08:17:33] INFO root fetch - processPackages [fake-bpy-module]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module-20240426.tar.gz]
+[2024-04-27 08:17:33] INFO root fetch - main [MainThread]: End processing [fake-bpy-module]: success
+[2024-04-27 08:17:33] INFO root fetch - main [MainThread]: Store serial: [22956857]
