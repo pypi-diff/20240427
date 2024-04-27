@@ -15815,3 +15815,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 16:30:32] INFO root fetch - processPackages [simplebox]: Remove: archive file [/home/abi/fetcher/tmp/simplebox-0.0.1a200-py3-none-any.whl.zip]
 [2024-04-27 16:30:33] INFO root fetch - main [MainThread]: End processing [simplebox]: success
 [2024-04-27 16:30:33] INFO root fetch - main [MainThread]: Store serial: [22959488]
+[2024-04-27 16:32:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959488]
+[2024-04-27 16:32:42] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 16:32:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eirStru
+[2024-04-27 16:32:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mdpython
+[2024-04-27 16:32:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openai-api-with-easy-tools-and-web-browsing
+[2024-04-27 16:32:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dglib3
+[2024-04-27 16:32:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sopel-modules.genius-answer
+[2024-04-27 16:32:43] INFO root fetch - processPackages [eirStru]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-27 16:32:43] INFO root fetch - processPackages [sopel-modules.genius-answer]: New version: [0.0.18] Old Version: [0.0.17]
+[2024-04-27 16:32:43] INFO root fetch - processPackages [dglib3]: New version: [1.6.2] Old Version: [1.6.1]
+[2024-04-27 16:32:43] WARNING root fetch - processPackages [openai-api-with-easy-tools-and-web-browsing]: Skipping, unable to determine old version
+[2024-04-27 16:32:43] INFO root fetch - processPackages [sopel-modules.genius-answer]: Downloading https://files.pythonhosted.org/packages/d9/bf/2350dd73dccbf12157cfae14fe4e7012b47d92f75d05f975819aa121469e/sopel_modules_genius_answer-0.0.17.tar.gz
+[2024-04-27 16:32:43] INFO root fetch - processPackages [eirStru]: Downloading https://files.pythonhosted.org/packages/b5/2a/25fb95363a9110b32ccbc230c8a5f6207e35c7c5906b6f63320a4ca71535/eirStru-0.3.8.tar.gz
+[2024-04-27 16:32:43] INFO root fetch - main [MainThread]: End processing [openai-api-with-easy-tools-and-web-browsing] error
+[2024-04-27 16:32:43] INFO root fetch - processPackages [mdpython]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-27 16:32:43] INFO root fetch - processPackages [dglib3]: Downloading https://files.pythonhosted.org/packages/be/15/74382e2a181e5157aee8d23d503dc6ff9beffb02fcdf0ec0f424c9221a71/dglib3-1.6.1-py3-none-any.whl
+[2024-04-27 16:32:43] INFO root fetch - processPackages [eirStru]: Downloading https://files.pythonhosted.org/packages/26/ce/8cae1a6c9a510bd827a325862ceb832b9e593422dff66af06aa3bdda4f40/eirStru-0.3.9.tar.gz
+[2024-04-27 16:32:43] INFO root fetch - processPackages [mdpython]: Downloading https://files.pythonhosted.org/packages/9a/6f/24597c28fa59000c9923802b4ffeb0705adeffa5ac315059d60f80468e15/mdpython-0.0.7.tar.gz
+[2024-04-27 16:32:43] INFO root fetch - processPackages [sopel-modules.genius-answer]: Downloading https://files.pythonhosted.org/packages/38/27/7422e8db06fd1715c2230decb17f3116fa3595b0798519ec4f2a4c3dbb13/sopel_modules_genius_answer-0.0.18.tar.gz
+[2024-04-27 16:32:43] INFO root fetch - processPackages [eirStru]: executing diffoscope
+[2024-04-27 16:32:43] INFO root fetch - processPackages [eirStru]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eirStru-0.3.8.tar.gz tmp/eirStru-0.3.9.tar.gz --markdown 20240427/e/eirStru/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-27 16:32:43] INFO root fetch - processPackages [sopel-modules.genius-answer]: executing diffoscope
+[2024-04-27 16:32:43] INFO root fetch - processPackages [sopel-modules.genius-answer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sopel_modules_genius_answer-0.0.17.tar.gz tmp/sopel_modules_genius_answer-0.0.18.tar.gz --markdown 20240427/s/sopel-modules.genius-answer/0.0.17-0.0.18/README.md --exclude *.pyd
+[2024-04-27 16:32:43] INFO root fetch - processPackages [dglib3]: Downloading https://files.pythonhosted.org/packages/93/5e/022dae3d397d335dd7c8e5b895a10637f3450dd6ba890c9775d743215d18/dglib3-1.6.2-py3-none-any.whl
+[2024-04-27 16:32:43] INFO root fetch - processPackages [mdpython]: Downloading https://files.pythonhosted.org/packages/18/24/6748a8ef4b2da855b1a0273985077d2979d39b902f4b8a49a275a38a446d/mdpython-0.0.8.tar.gz
+[2024-04-27 16:32:43] INFO root fetch - processPackages [dglib3]: executing diffoscope
+[2024-04-27 16:32:43] INFO root fetch - processPackages [dglib3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dglib3-1.6.1-py3-none-any.whl.zip tmp/dglib3-1.6.2-py3-none-any.whl.zip --markdown 20240427/d/dglib3/1.6.1-1.6.2/README.md --exclude *.pyd
+[2024-04-27 16:32:43] INFO root fetch - processPackages [mdpython]: executing diffoscope
+[2024-04-27 16:32:43] INFO root fetch - processPackages [mdpython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mdpython-0.0.7.tar.gz tmp/mdpython-0.0.8.tar.gz --markdown 20240427/m/mdpython/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-27 16:32:44] INFO root fetch - processPackages [eirStru]: Remove: archive file [/home/abi/fetcher/tmp/eirStru-0.3.8.tar.gz]
+[2024-04-27 16:32:44] INFO root fetch - processPackages [eirStru]: Remove: archive file [/home/abi/fetcher/tmp/eirStru-0.3.9.tar.gz]
+[2024-04-27 16:32:44] INFO root fetch - main [MainThread]: End processing [eirStru]: success
+[2024-04-27 16:32:44] INFO root fetch - processPackages [sopel-modules.genius-answer]: Remove: archive file [/home/abi/fetcher/tmp/sopel_modules_genius_answer-0.0.17.tar.gz]
+[2024-04-27 16:32:44] INFO root fetch - processPackages [sopel-modules.genius-answer]: Remove: archive file [/home/abi/fetcher/tmp/sopel_modules_genius_answer-0.0.18.tar.gz]
+[2024-04-27 16:32:44] INFO root fetch - main [MainThread]: End processing [sopel-modules.genius-answer]: success
+[2024-04-27 16:32:44] INFO root fetch - processPackages [dglib3]: Remove: archive file [/home/abi/fetcher/tmp/dglib3-1.6.1-py3-none-any.whl.zip]
+[2024-04-27 16:32:44] INFO root fetch - processPackages [dglib3]: Remove: archive file [/home/abi/fetcher/tmp/dglib3-1.6.2-py3-none-any.whl.zip]
+[2024-04-27 16:32:44] INFO root fetch - main [MainThread]: End processing [dglib3]: success
+[2024-04-27 16:32:44] INFO root fetch - processPackages [mdpython]: Remove: archive file [/home/abi/fetcher/tmp/mdpython-0.0.7.tar.gz]
+[2024-04-27 16:32:44] INFO root fetch - processPackages [mdpython]: Remove: archive file [/home/abi/fetcher/tmp/mdpython-0.0.8.tar.gz]
+[2024-04-27 16:32:44] INFO root fetch - main [MainThread]: End processing [mdpython]: success
+[2024-04-27 16:32:44] INFO root fetch - main [MainThread]: Store serial: [22959504]
