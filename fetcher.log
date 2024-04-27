@@ -7865,3 +7865,15 @@ EOFError: EOF read where object expected
 [2024-04-27 05:53:37] INFO root fetch - processPackages [odoo-addon-website-sale-hide-price]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_website_sale_hide_price-17.0.1.0.0.5-py3-none-any.whl.zip]
 [2024-04-27 05:53:37] INFO root fetch - main [MainThread]: End processing [odoo-addon-website-sale-hide-price]: success
 [2024-04-27 05:53:37] INFO root fetch - main [MainThread]: Store serial: [22956275]
+[2024-04-27 05:55:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956275]
+[2024-04-27 05:55:46] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 05:55:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-website-sale-resource-booking
+[2024-04-27 05:55:46] INFO root fetch - processPackages [odoo-addon-website-sale-resource-booking]: New version: [15.0.1.0.0.9] Old Version: [15.0.1.0.0.6]
+[2024-04-27 05:55:46] INFO root fetch - processPackages [odoo-addon-website-sale-resource-booking]: Downloading https://files.pythonhosted.org/packages/fc/f5/4f53f2e9e8f24b886061be04aa71694bbd325a7318e7db45153179684b5d/odoo_addon_website_sale_resource_booking-15.0.1.0.0.6-py3-none-any.whl
+[2024-04-27 05:55:47] INFO root fetch - processPackages [odoo-addon-website-sale-resource-booking]: Downloading https://files.pythonhosted.org/packages/4a/fd/baf9e13ea7d770849dc74959987fdbc7145770e86ce34c735f5944f66669/odoo_addon_website_sale_resource_booking-15.0.1.0.0.9-py3-none-any.whl
+[2024-04-27 05:55:47] INFO root fetch - processPackages [odoo-addon-website-sale-resource-booking]: executing diffoscope
+[2024-04-27 05:55:47] INFO root fetch - processPackages [odoo-addon-website-sale-resource-booking]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_website_sale_resource_booking-15.0.1.0.0.6-py3-none-any.whl.zip tmp/odoo_addon_website_sale_resource_booking-15.0.1.0.0.9-py3-none-any.whl.zip --markdown 20240427/o/odoo-addon-website-sale-resource-booking/15.0.1.0.0.6-15.0.1.0.0.9/README.md --exclude *.pyd
+[2024-04-27 05:55:47] INFO root fetch - processPackages [odoo-addon-website-sale-resource-booking]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_website_sale_resource_booking-15.0.1.0.0.6-py3-none-any.whl.zip]
+[2024-04-27 05:55:47] INFO root fetch - processPackages [odoo-addon-website-sale-resource-booking]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_website_sale_resource_booking-15.0.1.0.0.9-py3-none-any.whl.zip]
+[2024-04-27 05:55:47] INFO root fetch - main [MainThread]: End processing [odoo-addon-website-sale-resource-booking]: success
+[2024-04-27 05:55:47] INFO root fetch - main [MainThread]: Store serial: [22956277]
