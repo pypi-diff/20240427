@@ -12183,3 +12183,51 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 12:36:51] INFO root fetch - processPackages [polyply]: Remove: archive file [/home/abi/fetcher/tmp/polyply-1.7.0.tar.gz]
 [2024-04-27 12:36:51] INFO root fetch - main [MainThread]: End processing [polyply]: success
 [2024-04-27 12:36:51] INFO root fetch - main [MainThread]: Store serial: [22957980]
+[2024-04-27 12:38:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957980]
+[2024-04-27 12:39:01] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-27 12:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-alist
+[2024-04-27 12:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SimpleTKMessageBox
+[2024-04-27 12:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyastroweatherio
+[2024-04-27 12:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyblu
+[2024-04-27 12:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ctrip-app-ui
+[2024-04-27 12:39:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyastroweatherio
+[2024-04-27 12:39:01] INFO root fetch - processPackages [python-alist]: New version: [0.0.9.9] Old Version: [0.0.9.8.1]
+[2024-04-27 12:39:01] INFO root fetch - processPackages [pyastroweatherio]: New version: [0.50.0.dev1] Old Version: [0.43.1.dev9]
+[2024-04-27 12:39:01] WARNING root fetch - processPackages [SimpleTKMessageBox]: Skipping, unable to determine old version
+[2024-04-27 12:39:01] INFO root fetch - main [MainThread]: End processing [SimpleTKMessageBox] error
+[2024-04-27 12:39:01] INFO root fetch - processPackages [pyblu]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-04-27 12:39:01] INFO root fetch - processPackages [ctrip-app-ui]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-27 12:39:01] INFO root fetch - processPackages [pyastroweatherio]: New version: [0.50.0.dev1] Old Version: [0.43.1.dev9]
+[2024-04-27 12:39:01] INFO root fetch - processPackages [python-alist]: Downloading https://files.pythonhosted.org/packages/16/4c/767ed3dbd217eb3ea1f030c845f5a098d8e656f2fb4ab63c7fa0eadcf367/python_alist-0.0.9.8.1.tar.gz
+[2024-04-27 12:39:01] INFO root fetch - processPackages [pyastroweatherio]: Downloading https://files.pythonhosted.org/packages/75/07/e7eb1179d1b5db7e5e45ea03766c9c39fee7686fa1e316830827643977ac/pyastroweatherio-0.43.1.dev9.tar.gz
+[2024-04-27 12:39:01] INFO root fetch - processPackages [pyblu]: Downloading https://files.pythonhosted.org/packages/9f/0f/b3e5ee9c117194f9c77756960fdf528cb1800e6d0054b477d3117b3c847e/pyblu-0.3.4.tar.gz
+[2024-04-27 12:39:01] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/5d/99/e8664bc414b9b6e94e8dcc22c43abf61e51e33e21700080dd11ace5eda78/ctrip-app-ui-0.3.8.tar.gz
+[2024-04-27 12:39:01] INFO root fetch - processPackages [pyastroweatherio]: Downloading https://files.pythonhosted.org/packages/75/07/e7eb1179d1b5db7e5e45ea03766c9c39fee7686fa1e316830827643977ac/pyastroweatherio-0.43.1.dev9.tar.gz
+[2024-04-27 12:39:01] INFO root fetch - processPackages [pyastroweatherio]: Downloading https://files.pythonhosted.org/packages/a1/2b/c3f844c8f0ef8533f8fadefe334baab04cc7a489938d115a738bbef77a40/pyastroweatherio-0.50.0.dev1.tar.gz
+[2024-04-27 12:39:01] INFO root fetch - processPackages [python-alist]: Downloading https://files.pythonhosted.org/packages/a4/c8/c4ceead1bdae1d44cce58995ae016d39c6e4134cefa9b31ef2daf97d4c36/python_alist-0.0.9.9.tar.gz
+[2024-04-27 12:39:01] INFO root fetch - processPackages [pyblu]: Downloading https://files.pythonhosted.org/packages/10/2a/04b190badf0c65486666beef2a89533979adbba1020e8e4bc2f74f303626/pyblu-0.3.5.tar.gz
+[2024-04-27 12:39:01] INFO root fetch - processPackages [pyastroweatherio]: executing diffoscope
+[2024-04-27 12:39:01] INFO root fetch - processPackages [pyastroweatherio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyastroweatherio-0.43.1.dev9.tar.gz tmp/pyastroweatherio-0.50.0.dev1.tar.gz --markdown 20240427/p/pyastroweatherio/0.43.1.dev9-0.50.0.dev1/README.md --exclude *.pyd
+[2024-04-27 12:39:01] INFO root fetch - processPackages [python-alist]: executing diffoscope
+[2024-04-27 12:39:01] INFO root fetch - processPackages [python-alist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_alist-0.0.9.8.1.tar.gz tmp/python_alist-0.0.9.9.tar.gz --markdown 20240427/p/python-alist/0.0.9.8.1-0.0.9.9/README.md --exclude *.pyd
+[2024-04-27 12:39:01] INFO root fetch - processPackages [pyastroweatherio]: executing diffoscope
+[2024-04-27 12:39:01] INFO root fetch - processPackages [pyastroweatherio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyastroweatherio-0.43.1.dev9.tar.gz tmp/pyastroweatherio-0.50.0.dev1.tar.gz --markdown 20240427/p/pyastroweatherio/0.43.1.dev9-0.50.0.dev1/README.md --exclude *.pyd
+[2024-04-27 12:39:01] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/39/fa/02e78ae42456c969e0180ec619563c793ea5f9306347abbe61b594fc4569/ctrip-app-ui-0.3.9.tar.gz
+[2024-04-27 12:39:01] INFO root fetch - processPackages [ctrip-app-ui]: executing diffoscope
+[2024-04-27 12:39:01] INFO root fetch - processPackages [ctrip-app-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctrip-app-ui-0.3.8.tar.gz tmp/ctrip-app-ui-0.3.9.tar.gz --markdown 20240427/c/ctrip-app-ui/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-27 12:39:01] INFO root fetch - processPackages [pyblu]: executing diffoscope
+[2024-04-27 12:39:01] INFO root fetch - processPackages [pyblu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyblu-0.3.4.tar.gz tmp/pyblu-0.3.5.tar.gz --markdown 20240427/p/pyblu/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-04-27 12:39:02] INFO root fetch - processPackages [pyastroweatherio]: Remove: archive file [/home/abi/fetcher/tmp/pyastroweatherio-0.43.1.dev9.tar.gz]
+[2024-04-27 12:39:02] INFO root fetch - processPackages [pyastroweatherio]: Remove: archive file [/home/abi/fetcher/tmp/pyastroweatherio-0.50.0.dev1.tar.gz]
+[2024-04-27 12:39:02] INFO root fetch - main [MainThread]: End processing [pyastroweatherio]: success
+[2024-04-27 12:39:02] INFO root fetch - main [MainThread]: End processing [pyastroweatherio]: success
+[2024-04-27 12:39:02] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.3.8.tar.gz]
+[2024-04-27 12:39:02] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.3.9.tar.gz]
+[2024-04-27 12:39:02] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
+[2024-04-27 12:39:02] INFO root fetch - processPackages [python-alist]: Remove: archive file [/home/abi/fetcher/tmp/python_alist-0.0.9.8.1.tar.gz]
+[2024-04-27 12:39:02] INFO root fetch - processPackages [python-alist]: Remove: archive file [/home/abi/fetcher/tmp/python_alist-0.0.9.9.tar.gz]
+[2024-04-27 12:39:02] INFO root fetch - main [MainThread]: End processing [python-alist]: success
+[2024-04-27 12:39:02] INFO root fetch - processPackages [pyblu]: Remove: archive file [/home/abi/fetcher/tmp/pyblu-0.3.4.tar.gz]
+[2024-04-27 12:39:02] INFO root fetch - processPackages [pyblu]: Remove: archive file [/home/abi/fetcher/tmp/pyblu-0.3.5.tar.gz]
+[2024-04-27 12:39:02] INFO root fetch - main [MainThread]: End processing [pyblu]: success
+[2024-04-27 12:39:02] INFO root fetch - main [MainThread]: Store serial: [22957994]
