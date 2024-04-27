@@ -19799,3 +19799,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 21:18:48] INFO root fetch - processPackages [malevich-coretools]: Remove: archive file [/home/abi/fetcher/tmp/malevich-coretools-0.3.9.tar.gz]
 [2024-04-27 21:18:48] INFO root fetch - main [MainThread]: End processing [malevich-coretools]: success
 [2024-04-27 21:18:48] INFO root fetch - main [MainThread]: Store serial: [22961343]
+[2024-04-27 21:20:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961343]
+[2024-04-27 21:21:02] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 21:21:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ozi-templates
+[2024-04-27 21:21:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MODApy
+[2024-04-27 21:21:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: syncshell
+[2024-04-27 21:21:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jax-relax
+[2024-04-27 21:21:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bluepy3
+[2024-04-27 21:21:02] INFO root fetch - processPackages [MODApy]: New version: [0.8.1] Old Version: [0.8.0]
+[2024-04-27 21:21:02] INFO root fetch - processPackages [syncshell]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-04-27 21:21:02] INFO root fetch - processPackages [bluepy3]: New version: [2.6.1] Old Version: [2.4.2]
+[2024-04-27 21:21:02] WARNING root fetch - processPackages [ozi-templates]: Skipping, unable to determine old version
+[2024-04-27 21:21:02] INFO root fetch - main [MainThread]: End processing [ozi-templates] error
+[2024-04-27 21:21:02] INFO root fetch - processPackages [jax-relax]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-04-27 21:21:02] INFO root fetch - processPackages [MODApy]: Downloading https://files.pythonhosted.org/packages/33/37/cefda9a8307820931ad19fb614eb4e0b5fa3ef832c3a61d1ca4620c24b34/MODApy-0.8.0.tar.gz
+[2024-04-27 21:21:02] INFO root fetch - processPackages [syncshell]: Downloading https://files.pythonhosted.org/packages/e1/70/0db888fd4a954f508dff3d291fc078f8eacf80ccdea80132d612768c369a/syncshell-1.0.7.tar.gz
+[2024-04-27 21:21:02] INFO root fetch - processPackages [bluepy3]: Downloading https://files.pythonhosted.org/packages/e4/46/cd12c02a6f5e8d012d60691aa3d33a68faddbf473b1c0df7405258b0b37f/bluepy3-2.4.2.tar.gz
+[2024-04-27 21:21:02] INFO root fetch - processPackages [MODApy]: Downloading https://files.pythonhosted.org/packages/6d/ec/af1b4c33872feaf05e4c167d5275701d8a4e910852c6a112af0c00d1ffb4/MODApy-0.8.1.tar.gz
+[2024-04-27 21:21:02] INFO root fetch - processPackages [jax-relax]: Downloading https://files.pythonhosted.org/packages/9d/86/282fcfca6054fb02626672348cfd8832f09728812b29445f53e31b25f97b/jax-relax-0.2.6.tar.gz
+[2024-04-27 21:21:02] INFO root fetch - processPackages [MODApy]: executing diffoscope
+[2024-04-27 21:21:02] INFO root fetch - processPackages [MODApy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MODApy-0.8.0.tar.gz tmp/MODApy-0.8.1.tar.gz --markdown 20240427/M/MODApy/0.8.0-0.8.1/README.md --exclude *.pyd
+[2024-04-27 21:21:02] INFO root fetch - processPackages [syncshell]: Downloading https://files.pythonhosted.org/packages/1a/05/65be45b6256868a6ba17fc9d253bcaaf717d8e69f3971049c3c534218295/syncshell-1.0.8.tar.gz
+[2024-04-27 21:21:02] INFO root fetch - processPackages [bluepy3]: Downloading https://files.pythonhosted.org/packages/ad/8b/df3fdc63d03dcc3dcbd5277fc1bd6f2c03c2b128ff5e86181c89fb922015/bluepy3-2.6.1.tar.gz
+[2024-04-27 21:21:03] INFO root fetch - processPackages [jax-relax]: Downloading https://files.pythonhosted.org/packages/6a/b7/ccde9050814e555a7d0436bf192550056dacdce1c4fb6e37ba2736870b61/jax-relax-0.2.7.tar.gz
+[2024-04-27 21:21:03] INFO root fetch - processPackages [syncshell]: executing diffoscope
+[2024-04-27 21:21:03] INFO root fetch - processPackages [syncshell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syncshell-1.0.7.tar.gz tmp/syncshell-1.0.8.tar.gz --markdown 20240427/s/syncshell/1.0.7-1.0.8/README.md --exclude *.pyd
+[2024-04-27 21:21:03] INFO root fetch - processPackages [bluepy3]: executing diffoscope
+[2024-04-27 21:21:03] INFO root fetch - processPackages [bluepy3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bluepy3-2.4.2.tar.gz tmp/bluepy3-2.6.1.tar.gz --markdown 20240427/b/bluepy3/2.4.2-2.6.1/README.md --exclude *.pyd
+[2024-04-27 21:21:03] INFO root fetch - processPackages [jax-relax]: executing diffoscope
+[2024-04-27 21:21:03] INFO root fetch - processPackages [jax-relax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jax-relax-0.2.6.tar.gz tmp/jax-relax-0.2.7.tar.gz --markdown 20240427/j/jax-relax/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-04-27 21:21:03] INFO root fetch - processPackages [MODApy]: Remove: archive file [/home/abi/fetcher/tmp/MODApy-0.8.0.tar.gz]
+[2024-04-27 21:21:03] INFO root fetch - processPackages [MODApy]: Remove: archive file [/home/abi/fetcher/tmp/MODApy-0.8.1.tar.gz]
+[2024-04-27 21:21:03] INFO root fetch - main [MainThread]: End processing [MODApy]: success
+[2024-04-27 21:21:03] INFO root fetch - processPackages [syncshell]: Remove: archive file [/home/abi/fetcher/tmp/syncshell-1.0.7.tar.gz]
+[2024-04-27 21:21:03] INFO root fetch - processPackages [syncshell]: Remove: archive file [/home/abi/fetcher/tmp/syncshell-1.0.8.tar.gz]
+[2024-04-27 21:21:03] INFO root fetch - main [MainThread]: End processing [syncshell]: success
+[2024-04-27 21:21:03] INFO root fetch - processPackages [jax-relax]: Remove: archive file [/home/abi/fetcher/tmp/jax-relax-0.2.6.tar.gz]
+[2024-04-27 21:21:03] INFO root fetch - processPackages [jax-relax]: Remove: archive file [/home/abi/fetcher/tmp/jax-relax-0.2.7.tar.gz]
+[2024-04-27 21:21:03] INFO root fetch - main [MainThread]: End processing [jax-relax]: success
+[2024-04-27 21:21:03] INFO root fetch - processPackages [bluepy3]: Remove: archive file [/home/abi/fetcher/tmp/bluepy3-2.4.2.tar.gz]
+[2024-04-27 21:21:03] INFO root fetch - processPackages [bluepy3]: Remove: archive file [/home/abi/fetcher/tmp/bluepy3-2.6.1.tar.gz]
+[2024-04-27 21:21:03] INFO root fetch - main [MainThread]: End processing [bluepy3]: success
+[2024-04-27 21:21:03] INFO root fetch - main [MainThread]: Store serial: [22961361]
