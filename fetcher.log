@@ -14077,3 +14077,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 14:48:01] INFO root fetch - processPackages [EasyDeL]: Remove: archive file [/home/abi/fetcher/tmp/EasyDeL-0.0.9.tar.gz]
 [2024-04-27 14:48:01] INFO root fetch - main [MainThread]: End processing [EasyDeL]: success
 [2024-04-27 14:48:01] INFO root fetch - main [MainThread]: Store serial: [22958748]
+[2024-04-27 14:50:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958748]
+[2024-04-27 14:50:09] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 14:50:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flatpack
+[2024-04-27 14:50:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: datamana
+[2024-04-27 14:50:10] INFO root fetch - processPackages [flatpack]: New version: [3.3.9] Old Version: [3.3.8]
+[2024-04-27 14:50:10] INFO root fetch - processPackages [datamana]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 14:50:10] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/42/48/84e949164975b341645163f536ee4ca8329c4e3dfa6d143c2806a0849a54/flatpack-3.3.8.tar.gz
+[2024-04-27 14:50:10] INFO root fetch - processPackages [datamana]: Downloading https://files.pythonhosted.org/packages/7e/4f/1e08e5d074217d2d65408795c7b7bae40db1f469ceffbb943f4762b28466/datamana-0.0.8.tar.gz
+[2024-04-27 14:50:10] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/11/54/065825e8640b062c83c07c97d8dea514db8a5c0ea3c272834b88c568d82e/flatpack-3.3.9.tar.gz
+[2024-04-27 14:50:10] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-04-27 14:50:10] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.3.8.tar.gz tmp/flatpack-3.3.9.tar.gz --markdown 20240427/f/flatpack/3.3.8-3.3.9/README.md --exclude *.pyd
+[2024-04-27 14:50:10] INFO root fetch - processPackages [datamana]: Downloading https://files.pythonhosted.org/packages/b4/11/0f1208e064d5a981af9e09c4ea0075f010e1ab1d1875dbbe42974d6b0d6f/datamana-0.0.9.tar.gz
+[2024-04-27 14:50:10] INFO root fetch - processPackages [datamana]: executing diffoscope
+[2024-04-27 14:50:10] INFO root fetch - processPackages [datamana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datamana-0.0.8.tar.gz tmp/datamana-0.0.9.tar.gz --markdown 20240427/d/datamana/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 14:50:10] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.8.tar.gz]
+[2024-04-27 14:50:10] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.9.tar.gz]
+[2024-04-27 14:50:10] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-04-27 14:50:11] INFO root fetch - processPackages [datamana]: Remove: archive file [/home/abi/fetcher/tmp/datamana-0.0.8.tar.gz]
+[2024-04-27 14:50:11] INFO root fetch - processPackages [datamana]: Remove: archive file [/home/abi/fetcher/tmp/datamana-0.0.9.tar.gz]
+[2024-04-27 14:50:11] INFO root fetch - main [MainThread]: End processing [datamana]: success
+[2024-04-27 14:50:11] INFO root fetch - main [MainThread]: Store serial: [22958755]
