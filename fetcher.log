@@ -13801,3 +13801,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 14:28:12] INFO root fetch - processPackages [freedownload]: Remove: archive file [/home/abi/fetcher/tmp/freedownload-2.0.1.tar.gz]
 [2024-04-27 14:28:12] INFO root fetch - main [MainThread]: End processing [freedownload]: success
 [2024-04-27 14:28:12] INFO root fetch - main [MainThread]: Store serial: [22958650]
+[2024-04-27 14:30:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958650]
+[2024-04-27 14:30:20] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-27 14:30:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: logger-aux
+[2024-04-27 14:30:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shimpiproductions-3.0
+[2024-04-27 14:30:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: state-graph
+[2024-04-27 14:30:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyscinloopsr
+[2024-04-27 14:30:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: psyaitools
+[2024-04-27 14:30:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: requests-builder
+[2024-04-27 14:30:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: puerml
+[2024-04-27 14:30:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: shimpiproductions-3.1
+[2024-04-27 14:30:21] INFO root fetch - processPackages [puerml]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-27 14:30:21] INFO root fetch - processPackages [state-graph]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-27 14:30:21] INFO root fetch - processPackages [pyscinloopsr]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-27 14:30:21] INFO root fetch - processPackages [psyaitools]: New version: [0.1.6.dev2] Old Version: [0.1.6.dev1]
+[2024-04-27 14:30:21] WARNING root fetch - processPackages [shimpiproductions-3.0]: Skipping, unable to determine old version
+[2024-04-27 14:30:21] INFO root fetch - main [MainThread]: End processing [shimpiproductions-3.0] error
+[2024-04-27 14:30:21] INFO root fetch - processPackages [logger-aux]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-27 14:30:21] INFO root fetch - processPackages [logger-aux]: Downloading https://files.pythonhosted.org/packages/8b/05/05a1a90b7c7ccaa59665a872fe13d454064ba450510887fccbbe7f2165c9/logger_aux-0.0.5.tar.gz
+[2024-04-27 14:30:21] INFO root fetch - processPackages [state-graph]: Downloading https://files.pythonhosted.org/packages/06/84/60a9754e82e2a2938242671de85b3cc1d6238e4f5445aae0dba2cff6673c/state_graph-0.1.1.tar.gz
+[2024-04-27 14:30:21] INFO root fetch - processPackages [puerml]: Downloading https://files.pythonhosted.org/packages/c1/e4/523c5c69b02459ffb6e52a1a4b8f011d7875d2eed1aaeae02c5a0c948382/puerml-0.1.8.tar.gz
+[2024-04-27 14:30:21] WARNING root fetch - processPackages [requests-builder]: Skipping, unable to determine old version
+[2024-04-27 14:30:21] INFO root fetch - main [MainThread]: End processing [requests-builder] error
+[2024-04-27 14:30:21] INFO root fetch - processPackages [psyaitools]: Downloading https://files.pythonhosted.org/packages/0c/c5/68e9f6905af85363d25e514b3bc5e728a858fae76bdae38f31585b6e968a/psyaitools-0.1.6.dev1.tar.gz
+[2024-04-27 14:30:21] WARNING root fetch - processPackages [shimpiproductions-3.1]: Skipping, unable to determine old version
+[2024-04-27 14:30:21] INFO root fetch - main [MainThread]: End processing [shimpiproductions-3.1] error
+[2024-04-27 14:30:21] INFO root fetch - processPackages [pyscinloopsr]: Downloading https://files.pythonhosted.org/packages/98/21/5809d8e4c42d0207d6fd61e35cf0683da0e0cc5f1d10fa87e864b000cfa6/pyscinloopsr-1.0.8.tar.gz
+[2024-04-27 14:30:21] INFO root fetch - processPackages [state-graph]: Downloading https://files.pythonhosted.org/packages/d5/7b/4b2d15fb926fa24ec44aef073f673d4ef6de19fcb2e1b1bcac216dbe36f8/state_graph-0.1.2.tar.gz
+[2024-04-27 14:30:21] INFO root fetch - processPackages [puerml]: Downloading https://files.pythonhosted.org/packages/17/cb/1f376cc111577cf8439db51d01dd8f17fa7c2754c4ecf4fa961fbb481835/puerml-0.1.9.tar.gz
+[2024-04-27 14:30:21] INFO root fetch - processPackages [pyscinloopsr]: Downloading https://files.pythonhosted.org/packages/c2/79/a3b3e1c4377a54b84d92a6ce4a8d70f9bb57364bdbe1ec2657397e8360cd/pyscinloopsr-1.0.9.tar.gz
+[2024-04-27 14:30:21] INFO root fetch - processPackages [logger-aux]: Downloading https://files.pythonhosted.org/packages/7d/b0/4220cac0b01959491fb7a7b006d8e2c1ec476f0f71fea6247b8e839ca4af/logger_aux-0.0.6-py3-none-any.whl
+[2024-04-27 14:30:21] INFO root fetch - processPackages [puerml]: executing diffoscope
+[2024-04-27 14:30:21] INFO root fetch - processPackages [puerml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/puerml-0.1.8.tar.gz tmp/puerml-0.1.9.tar.gz --markdown 20240427/p/puerml/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-27 14:30:21] INFO root fetch - processPackages [psyaitools]: Downloading https://files.pythonhosted.org/packages/51/dc/883ee300ae6a9013f86fb669e4dfd1d3f8bf1f9c8b1d94cfc93217488e45/psyaitools-0.1.6.dev2.tar.gz
+[2024-04-27 14:30:21] INFO root fetch - processPackages [state-graph]: executing diffoscope
+[2024-04-27 14:30:21] INFO root fetch - processPackages [state-graph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/state_graph-0.1.1.tar.gz tmp/state_graph-0.1.2.tar.gz --markdown 20240427/s/state-graph/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-27 14:30:21] INFO root fetch - processPackages [pyscinloopsr]: executing diffoscope
+[2024-04-27 14:30:21] INFO root fetch - processPackages [pyscinloopsr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscinloopsr-1.0.8.tar.gz tmp/pyscinloopsr-1.0.9.tar.gz --markdown 20240427/p/pyscinloopsr/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-27 14:30:21] INFO root fetch - processPackages [logger-aux]: executing diffoscope
+[2024-04-27 14:30:21] INFO root fetch - processPackages [logger-aux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/logger_aux-0.0.5.tar.gz tmp/logger_aux-0.0.6-py3-none-any.whl.zip --markdown 20240427/l/logger-aux/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-27 14:30:21] INFO root fetch - processPackages [psyaitools]: executing diffoscope
+[2024-04-27 14:30:21] INFO root fetch - processPackages [psyaitools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psyaitools-0.1.6.dev1.tar.gz tmp/psyaitools-0.1.6.dev2.tar.gz --markdown 20240427/p/psyaitools/0.1.6.dev1-0.1.6.dev2/README.md --exclude *.pyd
+[2024-04-27 14:30:22] INFO root fetch - processPackages [state-graph]: Remove: archive file [/home/abi/fetcher/tmp/state_graph-0.1.1.tar.gz]
+[2024-04-27 14:30:22] INFO root fetch - processPackages [state-graph]: Remove: archive file [/home/abi/fetcher/tmp/state_graph-0.1.2.tar.gz]
+[2024-04-27 14:30:22] INFO root fetch - main [MainThread]: End processing [state-graph]: success
+[2024-04-27 14:30:22] INFO root fetch - processPackages [puerml]: Remove: archive file [/home/abi/fetcher/tmp/puerml-0.1.8.tar.gz]
+[2024-04-27 14:30:22] INFO root fetch - processPackages [puerml]: Remove: archive file [/home/abi/fetcher/tmp/puerml-0.1.9.tar.gz]
+[2024-04-27 14:30:22] INFO root fetch - main [MainThread]: End processing [puerml]: success
+[2024-04-27 14:30:22] INFO root fetch - processPackages [pyscinloopsr]: Remove: archive file [/home/abi/fetcher/tmp/pyscinloopsr-1.0.8.tar.gz]
+[2024-04-27 14:30:22] INFO root fetch - processPackages [pyscinloopsr]: Remove: archive file [/home/abi/fetcher/tmp/pyscinloopsr-1.0.9.tar.gz]
+[2024-04-27 14:30:22] INFO root fetch - main [MainThread]: End processing [pyscinloopsr]: success
+[2024-04-27 14:30:22] INFO root fetch - processPackages [logger-aux]: Remove: archive file [/home/abi/fetcher/tmp/logger_aux-0.0.5.tar.gz]
+[2024-04-27 14:30:22] INFO root fetch - processPackages [logger-aux]: Remove: archive file [/home/abi/fetcher/tmp/logger_aux-0.0.6-py3-none-any.whl.zip]
+[2024-04-27 14:30:22] INFO root fetch - main [MainThread]: End processing [logger-aux]: success
+[2024-04-27 14:30:22] INFO root fetch - processPackages [psyaitools]: Remove: archive file [/home/abi/fetcher/tmp/psyaitools-0.1.6.dev1.tar.gz]
+[2024-04-27 14:30:22] INFO root fetch - processPackages [psyaitools]: Remove: archive file [/home/abi/fetcher/tmp/psyaitools-0.1.6.dev2.tar.gz]
+[2024-04-27 14:30:22] INFO root fetch - main [MainThread]: End processing [psyaitools]: success
+[2024-04-27 14:30:22] INFO root fetch - main [MainThread]: Store serial: [22958673]
