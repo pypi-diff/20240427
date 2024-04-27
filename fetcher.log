@@ -19171,3 +19171,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 20:22:47] INFO root fetch - processPackages [introspection]: Remove: archive file [/home/abi/fetcher/tmp/introspection-1.8.tar.gz]
 [2024-04-27 20:22:47] INFO root fetch - main [MainThread]: End processing [introspection]: success
 [2024-04-27 20:22:47] INFO root fetch - main [MainThread]: Store serial: [22961053]
+[2024-04-27 20:24:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961053]
+[2024-04-27 20:25:00] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 20:25:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flatpack
+[2024-04-27 20:25:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stickersbot
+[2024-04-27 20:25:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PlexTraktSync
+[2024-04-27 20:25:00] INFO root fetch - processPackages [flatpack]: New version: [3.3.9] Old Version: [3.3.8]
+[2024-04-27 20:25:00] INFO root fetch - processPackages [stickersbot]: New version: [4.1.1] Old Version: [4.0.1]
+[2024-04-27 20:25:00] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/42/48/84e949164975b341645163f536ee4ca8329c4e3dfa6d143c2806a0849a54/flatpack-3.3.8.tar.gz
+[2024-04-27 20:25:00] INFO root fetch - processPackages [PlexTraktSync]: New version: [0.30.0] Old Version: [0.29.9]
+[2024-04-27 20:25:00] INFO root fetch - processPackages [stickersbot]: Downloading https://files.pythonhosted.org/packages/cd/f0/d5c227a2e6fd1c2d450ca462964585711e52dd302e1cfad4d9b92380929d/stickersbot-4.0.1.tar.gz
+[2024-04-27 20:25:00] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/11/54/065825e8640b062c83c07c97d8dea514db8a5c0ea3c272834b88c568d82e/flatpack-3.3.9.tar.gz
+[2024-04-27 20:25:00] INFO root fetch - processPackages [PlexTraktSync]: Downloading https://files.pythonhosted.org/packages/68/a9/982c75517770d6648e68570e44ac5951aee6ed0f6a8b17cc77877adf7c16/PlexTraktSync-0.29.9.tar.gz
+[2024-04-27 20:25:01] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-04-27 20:25:01] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.3.8.tar.gz tmp/flatpack-3.3.9.tar.gz --markdown 20240427/f/flatpack/3.3.8-3.3.9/README.md --exclude *.pyd
+[2024-04-27 20:25:01] INFO root fetch - processPackages [stickersbot]: Downloading https://files.pythonhosted.org/packages/6a/a4/4715432d43abcbd34b8fd1f649dad0fe59d5226837cabd85af0a165aa23f/stickersbot-4.1.1.tar.gz
+[2024-04-27 20:25:01] INFO root fetch - processPackages [stickersbot]: executing diffoscope
+[2024-04-27 20:25:01] INFO root fetch - processPackages [stickersbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stickersbot-4.0.1.tar.gz tmp/stickersbot-4.1.1.tar.gz --markdown 20240427/s/stickersbot/4.0.1-4.1.1/README.md --exclude *.pyd
+[2024-04-27 20:25:01] INFO root fetch - processPackages [PlexTraktSync]: Downloading https://files.pythonhosted.org/packages/f0/3c/6c0553b6c77ceab957d81f71a1462a1af58e4816610210617094645f4a7c/plextraktsync-0.30.0.tar.gz
+[2024-04-27 20:25:01] INFO root fetch - processPackages [PlexTraktSync]: executing diffoscope
+[2024-04-27 20:25:01] INFO root fetch - processPackages [PlexTraktSync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PlexTraktSync-0.29.9.tar.gz tmp/plextraktsync-0.30.0.tar.gz --markdown 20240427/P/PlexTraktSync/0.29.9-0.30.0/README.md --exclude *.pyd
+[2024-04-27 20:25:01] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.8.tar.gz]
+[2024-04-27 20:25:01] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.9.tar.gz]
+[2024-04-27 20:25:01] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-04-27 20:25:01] INFO root fetch - processPackages [stickersbot]: Remove: archive file [/home/abi/fetcher/tmp/stickersbot-4.0.1.tar.gz]
+[2024-04-27 20:25:01] INFO root fetch - processPackages [stickersbot]: Remove: archive file [/home/abi/fetcher/tmp/stickersbot-4.1.1.tar.gz]
+[2024-04-27 20:25:01] INFO root fetch - main [MainThread]: End processing [stickersbot]: success
+[2024-04-27 20:25:02] INFO root fetch - processPackages [PlexTraktSync]: Remove: archive file [/home/abi/fetcher/tmp/PlexTraktSync-0.29.9.tar.gz]
+[2024-04-27 20:25:02] INFO root fetch - processPackages [PlexTraktSync]: Remove: archive file [/home/abi/fetcher/tmp/plextraktsync-0.30.0.tar.gz]
+[2024-04-27 20:25:02] INFO root fetch - main [MainThread]: End processing [PlexTraktSync]: success
+[2024-04-27 20:25:02] INFO root fetch - main [MainThread]: Store serial: [22961062]
