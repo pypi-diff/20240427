@@ -11710,3 +11710,51 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 11:55:43] INFO root fetch - processPackages [pyeasyedit]: Remove: archive file [/home/abi/fetcher/tmp/pyeasyedit-0.1.9.tar.gz]
 [2024-04-27 11:55:43] INFO root fetch - main [MainThread]: End processing [pyeasyedit]: success
 [2024-04-27 11:55:43] INFO root fetch - main [MainThread]: Store serial: [22957781]
+[2024-04-27 11:57:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957781]
+[2024-04-27 11:57:53] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 11:57:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nvfuser-cu121
+[2024-04-27 11:57:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ctrip-app-ui
+[2024-04-27 11:57:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ALLMDEV
+[2024-04-27 11:57:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nvfuser-cu118
+[2024-04-27 11:57:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tweety-ns
+[2024-04-27 11:57:53] INFO root fetch - processPackages [ALLMDEV]: New version: [1.2.5] Old Version: [1.2.4]
+[2024-04-27 11:57:53] INFO root fetch - processPackages [ctrip-app-ui]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-04-27 11:57:53] INFO root fetch - processPackages [nvfuser-cu118]: New version: [0.2.3.dev20240426] Old Version: [0.2.3.dev20240425]
+[2024-04-27 11:57:53] INFO root fetch - processPackages [nvfuser-cu121]: New version: [0.2.3.dev20240426] Old Version: [0.2.3.dev20240425]
+[2024-04-27 11:57:53] INFO root fetch - processPackages [ALLMDEV]: Downloading https://files.pythonhosted.org/packages/ed/c2/a798fbf4434cd80fa976070aa87bb03048471cce11583155b4082e18c3f4/ALLMDEV-1.2.4-py3-none-any.whl
+[2024-04-27 11:57:53] INFO root fetch - processPackages [tweety-ns]: New version: [1.1.4] Old Version: [1.1.3]
+[2024-04-27 11:57:53] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/af/09/c1bd6a1f43c01bd1ef85bbadd72f5f8d0e096ffdb2c61e6e01b091d15800/ctrip-app-ui-0.3.4.tar.gz
+[2024-04-27 11:57:53] INFO root fetch - processPackages [nvfuser-cu118]: Downloading https://files.pythonhosted.org/packages/ec/0c/10cef930a67cd11bb3f08dd51f29eafe68408d73c32937b7e352f7406857/nvfuser_cu118-0.2.3.dev20240425.tar.gz
+[2024-04-27 11:57:53] INFO root fetch - processPackages [nvfuser-cu121]: Downloading https://files.pythonhosted.org/packages/81/7e/897db9218f81daf45ec462f51a7fca55987703462a77e5359d03602b8448/nvfuser_cu121-0.2.3.dev20240425.tar.gz
+[2024-04-27 11:57:54] INFO root fetch - processPackages [tweety-ns]: Downloading https://files.pythonhosted.org/packages/ed/03/16b0d66b32cc0ecee7f2601e23307618d323fa68f5d01d84dbdf79b7fe05/tweety_ns-1.1.3.tar.gz
+[2024-04-27 11:57:54] INFO root fetch - processPackages [ALLMDEV]: Downloading https://files.pythonhosted.org/packages/e0/94/9370b0f97fce2fd2d11a9859a5d15dda2fb5b8039b0ba91d0a14c73c0c86/ALLMDEV-1.2.5-py3-none-any.whl
+[2024-04-27 11:57:54] INFO root fetch - processPackages [ALLMDEV]: executing diffoscope
+[2024-04-27 11:57:54] INFO root fetch - processPackages [ALLMDEV]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ALLMDEV-1.2.4-py3-none-any.whl.zip tmp/ALLMDEV-1.2.5-py3-none-any.whl.zip --markdown 20240427/A/ALLMDEV/1.2.4-1.2.5/README.md --exclude *.pyd
+[2024-04-27 11:57:54] INFO root fetch - processPackages [nvfuser-cu121]: Downloading https://files.pythonhosted.org/packages/ae/74/927c13908af231b52fe16877e52dc622d3b2f29be0592e16ff6b1181f293/nvfuser_cu121-0.2.3.dev20240426.tar.gz
+[2024-04-27 11:57:54] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/8b/f1/92ed8721ca88b16abe3077a3c4eab024c8db4e94c089de7857daf8160a77/ctrip-app-ui-0.3.5.tar.gz
+[2024-04-27 11:57:54] INFO root fetch - processPackages [nvfuser-cu118]: Downloading https://files.pythonhosted.org/packages/2d/27/aef54c48b5b3b2d07964557c8151b284fb4c5a0d66216df7d3ee82df057d/nvfuser_cu118-0.2.3.dev20240426.tar.gz
+[2024-04-27 11:57:54] INFO root fetch - processPackages [ctrip-app-ui]: executing diffoscope
+[2024-04-27 11:57:54] INFO root fetch - processPackages [ctrip-app-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctrip-app-ui-0.3.4.tar.gz tmp/ctrip-app-ui-0.3.5.tar.gz --markdown 20240427/c/ctrip-app-ui/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-04-27 11:57:54] INFO root fetch - processPackages [nvfuser-cu121]: executing diffoscope
+[2024-04-27 11:57:54] INFO root fetch - processPackages [nvfuser-cu121]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu121-0.2.3.dev20240425.tar.gz tmp/nvfuser_cu121-0.2.3.dev20240426.tar.gz --markdown 20240427/n/nvfuser-cu121/0.2.3.dev20240425-0.2.3.dev20240426/README.md --exclude *.pyd
+[2024-04-27 11:57:54] INFO root fetch - processPackages [nvfuser-cu118]: executing diffoscope
+[2024-04-27 11:57:54] INFO root fetch - processPackages [nvfuser-cu118]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu118-0.2.3.dev20240425.tar.gz tmp/nvfuser_cu118-0.2.3.dev20240426.tar.gz --markdown 20240427/n/nvfuser-cu118/0.2.3.dev20240425-0.2.3.dev20240426/README.md --exclude *.pyd
+[2024-04-27 11:57:54] INFO root fetch - processPackages [tweety-ns]: Downloading https://files.pythonhosted.org/packages/15/17/ea2f0b4989177a3211819060de07428aae3afc8f6a7a72a545698db799fa/tweety_ns-1.1.4.tar.gz
+[2024-04-27 11:57:54] INFO root fetch - processPackages [tweety-ns]: executing diffoscope
+[2024-04-27 11:57:54] INFO root fetch - processPackages [tweety-ns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tweety_ns-1.1.3.tar.gz tmp/tweety_ns-1.1.4.tar.gz --markdown 20240427/t/tweety-ns/1.1.3-1.1.4/README.md --exclude *.pyd
+[2024-04-27 11:57:55] INFO root fetch - processPackages [ALLMDEV]: Remove: archive file [/home/abi/fetcher/tmp/ALLMDEV-1.2.4-py3-none-any.whl.zip]
+[2024-04-27 11:57:55] INFO root fetch - processPackages [ALLMDEV]: Remove: archive file [/home/abi/fetcher/tmp/ALLMDEV-1.2.5-py3-none-any.whl.zip]
+[2024-04-27 11:57:55] INFO root fetch - main [MainThread]: End processing [ALLMDEV]: success
+[2024-04-27 11:57:55] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.3.4.tar.gz]
+[2024-04-27 11:57:55] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.3.5.tar.gz]
+[2024-04-27 11:57:55] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
+[2024-04-27 11:57:55] INFO root fetch - processPackages [nvfuser-cu118]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu118-0.2.3.dev20240425.tar.gz]
+[2024-04-27 11:57:55] INFO root fetch - processPackages [nvfuser-cu118]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu118-0.2.3.dev20240426.tar.gz]
+[2024-04-27 11:57:55] INFO root fetch - main [MainThread]: End processing [nvfuser-cu118]: success
+[2024-04-27 11:57:55] INFO root fetch - processPackages [nvfuser-cu121]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu121-0.2.3.dev20240425.tar.gz]
+[2024-04-27 11:57:55] INFO root fetch - processPackages [nvfuser-cu121]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu121-0.2.3.dev20240426.tar.gz]
+[2024-04-27 11:57:55] INFO root fetch - main [MainThread]: End processing [nvfuser-cu121]: success
+[2024-04-27 11:57:55] INFO root fetch - processPackages [tweety-ns]: Remove: archive file [/home/abi/fetcher/tmp/tweety_ns-1.1.3.tar.gz]
+[2024-04-27 11:57:55] INFO root fetch - processPackages [tweety-ns]: Remove: archive file [/home/abi/fetcher/tmp/tweety_ns-1.1.4.tar.gz]
+[2024-04-27 11:57:55] INFO root fetch - main [MainThread]: End processing [tweety-ns]: success
+[2024-04-27 11:57:55] INFO root fetch - main [MainThread]: Store serial: [22957792]
