@@ -8176,3 +8176,24 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 06:11:02] INFO root fetch - processPackages [hypothesis-torch]: Remove: archive file [/home/abi/fetcher/tmp/hypothesis_torch-0.4.2.tar.gz]
 [2024-04-27 06:11:02] INFO root fetch - main [MainThread]: End processing [hypothesis-torch]: success
 [2024-04-27 06:11:02] INFO root fetch - main [MainThread]: Store serial: [22956328]
+[2024-04-27 06:13:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956328]
+[2024-04-27 06:13:10] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 06:13:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nl2query
+[2024-04-27 06:13:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: argnorm
+[2024-04-27 06:13:10] INFO root fetch - processPackages [argnorm]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-27 06:13:10] INFO root fetch - processPackages [nl2query]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-27 06:13:10] INFO root fetch - processPackages [argnorm]: Downloading https://files.pythonhosted.org/packages/07/f1/e68bf2b922ab7836bcf424b3b2bb5ae2224ed6aaaaf2a165035bbbc9ae62/argnorm-0.2.0.tar.gz
+[2024-04-27 06:13:10] INFO root fetch - processPackages [nl2query]: Downloading https://files.pythonhosted.org/packages/64/9b/49e593458ab5db60e7ef01e6b042040c65ece0fdf082c39064d0007c6c2e/nl2query-0.1.5.tar.gz
+[2024-04-27 06:13:11] INFO root fetch - processPackages [nl2query]: Downloading https://files.pythonhosted.org/packages/27/db/74aed3418006079c58e342d87eeafc4221504e28d8ce25482a745c4e3b86/nl2query-0.1.6.tar.gz
+[2024-04-27 06:13:11] INFO root fetch - processPackages [argnorm]: Downloading https://files.pythonhosted.org/packages/14/76/d2834e0c0542f7beb479ba120731839d1866710a2fc2650703ea61fdd4ee/argnorm-0.3.0-py3-none-any.whl
+[2024-04-27 06:13:11] INFO root fetch - processPackages [nl2query]: executing diffoscope
+[2024-04-27 06:13:11] INFO root fetch - processPackages [nl2query]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nl2query-0.1.5.tar.gz tmp/nl2query-0.1.6.tar.gz --markdown 20240427/n/nl2query/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-27 06:13:11] INFO root fetch - processPackages [argnorm]: executing diffoscope
+[2024-04-27 06:13:11] INFO root fetch - processPackages [argnorm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argnorm-0.2.0.tar.gz tmp/argnorm-0.3.0-py3-none-any.whl.zip --markdown 20240427/a/argnorm/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-04-27 06:13:11] INFO root fetch - processPackages [nl2query]: Remove: archive file [/home/abi/fetcher/tmp/nl2query-0.1.5.tar.gz]
+[2024-04-27 06:13:11] INFO root fetch - processPackages [nl2query]: Remove: archive file [/home/abi/fetcher/tmp/nl2query-0.1.6.tar.gz]
+[2024-04-27 06:13:11] INFO root fetch - main [MainThread]: End processing [nl2query]: success
+[2024-04-27 06:13:12] INFO root fetch - processPackages [argnorm]: Remove: archive file [/home/abi/fetcher/tmp/argnorm-0.2.0.tar.gz]
+[2024-04-27 06:13:12] INFO root fetch - processPackages [argnorm]: Remove: archive file [/home/abi/fetcher/tmp/argnorm-0.3.0-py3-none-any.whl.zip]
+[2024-04-27 06:13:12] INFO root fetch - main [MainThread]: End processing [argnorm]: success
+[2024-04-27 06:13:12] INFO root fetch - main [MainThread]: Store serial: [22956333]
