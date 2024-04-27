@@ -7786,3 +7786,17 @@ EOFError: EOF read where object expected
 [2024-04-27 05:40:39] INFO root fetch - processPackages [obvs]: Remove: archive file [/home/abi/fetcher/tmp/obvs-0.1.0.tar.gz]
 [2024-04-27 05:40:39] INFO root fetch - main [MainThread]: End processing [obvs]: success
 [2024-04-27 05:40:39] INFO root fetch - main [MainThread]: Store serial: [22956253]
+[2024-04-27 05:42:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956253]
+[2024-04-27 05:42:49] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-27 05:44:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956253]
+[2024-04-27 05:44:54] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 05:44:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-ddmrp-report-part-flow-index
+[2024-04-27 05:44:54] INFO root fetch - processPackages [odoo-addon-ddmrp-report-part-flow-index]: New version: [16.0.1.1.0] Old Version: [16.0.1.0.0.3]
+[2024-04-27 05:44:54] INFO root fetch - processPackages [odoo-addon-ddmrp-report-part-flow-index]: Downloading https://files.pythonhosted.org/packages/f6/57/4316619df4d573563d7726d64893360a3e545aa89a36bb3292eb06fb502c/odoo_addon_ddmrp_report_part_flow_index-16.0.1.0.0.3-py3-none-any.whl
+[2024-04-27 05:44:55] INFO root fetch - processPackages [odoo-addon-ddmrp-report-part-flow-index]: Downloading https://files.pythonhosted.org/packages/ee/23/4df96d28da6d3fab777b2cc63963294829df497c7259cf38f3a14d1b4f68/odoo_addon_ddmrp_report_part_flow_index-16.0.1.1.0-py3-none-any.whl
+[2024-04-27 05:44:55] INFO root fetch - processPackages [odoo-addon-ddmrp-report-part-flow-index]: executing diffoscope
+[2024-04-27 05:44:55] INFO root fetch - processPackages [odoo-addon-ddmrp-report-part-flow-index]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_ddmrp_report_part_flow_index-16.0.1.0.0.3-py3-none-any.whl.zip tmp/odoo_addon_ddmrp_report_part_flow_index-16.0.1.1.0-py3-none-any.whl.zip --markdown 20240427/o/odoo-addon-ddmrp-report-part-flow-index/16.0.1.0.0.3-16.0.1.1.0/README.md --exclude *.pyd
+[2024-04-27 05:44:55] INFO root fetch - processPackages [odoo-addon-ddmrp-report-part-flow-index]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_ddmrp_report_part_flow_index-16.0.1.0.0.3-py3-none-any.whl.zip]
+[2024-04-27 05:44:55] INFO root fetch - processPackages [odoo-addon-ddmrp-report-part-flow-index]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_ddmrp_report_part_flow_index-16.0.1.1.0-py3-none-any.whl.zip]
+[2024-04-27 05:44:55] INFO root fetch - main [MainThread]: End processing [odoo-addon-ddmrp-report-part-flow-index]: success
+[2024-04-27 05:44:55] INFO root fetch - main [MainThread]: Store serial: [22956255]
