@@ -6712,3 +6712,27 @@ EOFError: EOF read where object expected
 [2024-04-27 03:24:06] INFO root fetch - processPackages [pulumi]: Remove: archive file [/home/abi/fetcher/tmp/pulumi-3.99.0-py3-none-any.whl.zip]
 [2024-04-27 03:24:06] INFO root fetch - main [MainThread]: End processing [pulumi]: success
 [2024-04-27 03:24:06] INFO root fetch - main [MainThread]: Store serial: [22955505]
+[2024-04-27 03:26:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22955505]
+[2024-04-27 03:26:15] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 03:26:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lzypac
+[2024-04-27 03:26:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: onediff
+[2024-04-27 03:26:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: onediffx
+[2024-04-27 03:26:15] INFO root fetch - processPackages [onediffx]: New version: [1.0.0.dev202404260126] Old Version: [1.0.0.dev202404250127]
+[2024-04-27 03:26:15] INFO root fetch - processPackages [onediff]: New version: [1.0.0.dev202404260126] Old Version: [1.0.0.dev202404250127]
+[2024-04-27 03:26:15] WARNING root fetch - processPackages [lzypac]: Skipping, unable to determine old version
+[2024-04-27 03:26:15] INFO root fetch - main [MainThread]: End processing [lzypac] error
+[2024-04-27 03:26:15] INFO root fetch - processPackages [onediffx]: Downloading https://files.pythonhosted.org/packages/60/ea/912b909217eb95d92a50c5a423275f4f27e22dff1a2362de14a7f040cf7e/onediffx-1.0.0.dev202404250127.tar.gz
+[2024-04-27 03:26:15] INFO root fetch - processPackages [onediff]: Downloading https://files.pythonhosted.org/packages/8d/a4/788b8e796e8a5b3e8d6fd44e76ec7220c5accfa53760f7a845773b3137d2/onediff-1.0.0.dev202404250127.tar.gz
+[2024-04-27 03:26:16] INFO root fetch - processPackages [onediffx]: Downloading https://files.pythonhosted.org/packages/4b/f7/aa604f91b1692838def0d7a52341a0d91280db3057ff1eebd2281dbe2414/onediffx-1.0.0.dev202404260126.tar.gz
+[2024-04-27 03:26:16] INFO root fetch - processPackages [onediff]: Downloading https://files.pythonhosted.org/packages/92/82/96f32dfd406f2f7e218e2a5680cf7e1e1e7f2426debe173a6f8c62817860/onediff-1.0.0.dev202404260126.tar.gz
+[2024-04-27 03:26:16] INFO root fetch - processPackages [onediffx]: executing diffoscope
+[2024-04-27 03:26:16] INFO root fetch - processPackages [onediffx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onediffx-1.0.0.dev202404250127.tar.gz tmp/onediffx-1.0.0.dev202404260126.tar.gz --markdown 20240427/o/onediffx/1.0.0.dev202404250127-1.0.0.dev202404260126/README.md --exclude *.pyd
+[2024-04-27 03:26:16] INFO root fetch - processPackages [onediff]: executing diffoscope
+[2024-04-27 03:26:16] INFO root fetch - processPackages [onediff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onediff-1.0.0.dev202404250127.tar.gz tmp/onediff-1.0.0.dev202404260126.tar.gz --markdown 20240427/o/onediff/1.0.0.dev202404250127-1.0.0.dev202404260126/README.md --exclude *.pyd
+[2024-04-27 03:26:16] INFO root fetch - processPackages [onediffx]: Remove: archive file [/home/abi/fetcher/tmp/onediffx-1.0.0.dev202404250127.tar.gz]
+[2024-04-27 03:26:16] INFO root fetch - processPackages [onediffx]: Remove: archive file [/home/abi/fetcher/tmp/onediffx-1.0.0.dev202404260126.tar.gz]
+[2024-04-27 03:26:16] INFO root fetch - main [MainThread]: End processing [onediffx]: success
+[2024-04-27 03:26:17] INFO root fetch - processPackages [onediff]: Remove: archive file [/home/abi/fetcher/tmp/onediff-1.0.0.dev202404250127.tar.gz]
+[2024-04-27 03:26:17] INFO root fetch - processPackages [onediff]: Remove: archive file [/home/abi/fetcher/tmp/onediff-1.0.0.dev202404260126.tar.gz]
+[2024-04-27 03:26:17] INFO root fetch - main [MainThread]: End processing [onediff]: success
+[2024-04-27 03:26:17] INFO root fetch - main [MainThread]: Store serial: [22955566]
