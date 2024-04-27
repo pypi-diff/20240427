@@ -8618,3 +8618,33 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 06:37:04] INFO root fetch - processPackages [fplab]: Remove: archive file [/home/abi/fetcher/tmp/fplab-0.0.2.6.tar.gz]
 [2024-04-27 06:37:04] INFO root fetch - main [MainThread]: End processing [fplab]: success
 [2024-04-27 06:37:04] INFO root fetch - main [MainThread]: Store serial: [22956448]
+[2024-04-27 06:39:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956448]
+[2024-04-27 06:39:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 06:39:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xpart
+[2024-04-27 06:39:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aio-taginfo
+[2024-04-27 06:39:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xfields
+[2024-04-27 06:39:13] INFO root fetch - processPackages [xpart]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-04-27 06:39:13] INFO root fetch - processPackages [xfields]: New version: [0.9.4] Old Version: [0.9.3]
+[2024-04-27 06:39:13] INFO root fetch - processPackages [aio-taginfo]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-27 06:39:13] INFO root fetch - processPackages [xpart]: Downloading https://files.pythonhosted.org/packages/45/9a/44a870df04c746957f83128255e7ec5a7809a178bbe6842295dbfa76475d/xpart-0.9.2.tar.gz
+[2024-04-27 06:39:13] INFO root fetch - processPackages [xfields]: Downloading https://files.pythonhosted.org/packages/7a/77/3a6abbee5bec0b9a1a9208d8bfbb48c1d3847a3623b736877d07f2a19f3c/xfields-0.9.3.tar.gz
+[2024-04-27 06:39:13] INFO root fetch - processPackages [aio-taginfo]: Downloading https://files.pythonhosted.org/packages/ae/76/9b7b48fe33b5596ea404dec033d1f07694358b81c4fca0abcd1b020fb3a7/aio_taginfo-0.2.0.tar.gz
+[2024-04-27 06:39:14] INFO root fetch - processPackages [aio-taginfo]: Downloading https://files.pythonhosted.org/packages/1c/ff/1b95ff7b0f9bbc1bc36ed09e066d62d689dd021192b3a9630094cfaeb26d/aio_taginfo-0.3.0.tar.gz
+[2024-04-27 06:39:14] INFO root fetch - processPackages [xpart]: Downloading https://files.pythonhosted.org/packages/f6/d0/566ee9ad0e3d6ac9b9558d25816734b3fce476c9907cc04cd501da1072a3/xpart-0.9.3.tar.gz
+[2024-04-27 06:39:14] INFO root fetch - processPackages [xfields]: Downloading https://files.pythonhosted.org/packages/8b/54/cac5d52db408c1d03b97e7d6c7f37530ed94cdc6cec242e76f900759b3a3/xfields-0.9.4.tar.gz
+[2024-04-27 06:39:14] INFO root fetch - processPackages [aio-taginfo]: executing diffoscope
+[2024-04-27 06:39:14] INFO root fetch - processPackages [aio-taginfo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aio_taginfo-0.2.0.tar.gz tmp/aio_taginfo-0.3.0.tar.gz --markdown 20240427/a/aio-taginfo/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-04-27 06:39:14] INFO root fetch - processPackages [xpart]: executing diffoscope
+[2024-04-27 06:39:14] INFO root fetch - processPackages [xpart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xpart-0.9.2.tar.gz tmp/xpart-0.9.3.tar.gz --markdown 20240427/x/xpart/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-04-27 06:39:14] INFO root fetch - processPackages [xfields]: executing diffoscope
+[2024-04-27 06:39:14] INFO root fetch - processPackages [xfields]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xfields-0.9.3.tar.gz tmp/xfields-0.9.4.tar.gz --markdown 20240427/x/xfields/0.9.3-0.9.4/README.md --exclude *.pyd
+[2024-04-27 06:39:14] INFO root fetch - processPackages [aio-taginfo]: Remove: archive file [/home/abi/fetcher/tmp/aio_taginfo-0.2.0.tar.gz]
+[2024-04-27 06:39:14] INFO root fetch - processPackages [aio-taginfo]: Remove: archive file [/home/abi/fetcher/tmp/aio_taginfo-0.3.0.tar.gz]
+[2024-04-27 06:39:14] INFO root fetch - main [MainThread]: End processing [aio-taginfo]: success
+[2024-04-27 06:39:14] INFO root fetch - processPackages [xpart]: Remove: archive file [/home/abi/fetcher/tmp/xpart-0.9.2.tar.gz]
+[2024-04-27 06:39:14] INFO root fetch - processPackages [xpart]: Remove: archive file [/home/abi/fetcher/tmp/xpart-0.9.3.tar.gz]
+[2024-04-27 06:39:14] INFO root fetch - main [MainThread]: End processing [xpart]: success
+[2024-04-27 06:39:15] INFO root fetch - processPackages [xfields]: Remove: archive file [/home/abi/fetcher/tmp/xfields-0.9.3.tar.gz]
+[2024-04-27 06:39:15] INFO root fetch - processPackages [xfields]: Remove: archive file [/home/abi/fetcher/tmp/xfields-0.9.4.tar.gz]
+[2024-04-27 06:39:15] INFO root fetch - main [MainThread]: End processing [xfields]: success
+[2024-04-27 06:39:15] INFO root fetch - main [MainThread]: Store serial: [22956455]
