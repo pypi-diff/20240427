@@ -9654,3 +9654,15 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 08:20:00] INFO root fetch - processPackages [nestipy-dynamic-module]: Remove: archive file [/home/abi/fetcher/tmp/nestipy_dynamic_module-0.1.4.tar.gz]
 [2024-04-27 08:20:00] INFO root fetch - main [MainThread]: End processing [nestipy-dynamic-module]: success
 [2024-04-27 08:20:00] INFO root fetch - main [MainThread]: Store serial: [22956864]
+[2024-04-27 08:22:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956864]
+[2024-04-27 08:22:08] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 08:22:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fremu
+[2024-04-27 08:22:08] INFO root fetch - processPackages [fremu]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-27 08:22:09] INFO root fetch - processPackages [fremu]: Downloading https://files.pythonhosted.org/packages/b2/19/8d06b7cd2fa394e1173ca2678288b34f8a2665447b26ea3bce6502e78568/fremu-0.0.6.tar.gz
+[2024-04-27 08:22:09] INFO root fetch - processPackages [fremu]: Downloading https://files.pythonhosted.org/packages/0f/39/83838beed30870226c00704bdb8a1a4dbf1e0b505e411060e62d23733a30/fremu-0.0.7.tar.gz
+[2024-04-27 08:22:09] INFO root fetch - processPackages [fremu]: executing diffoscope
+[2024-04-27 08:22:09] INFO root fetch - processPackages [fremu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fremu-0.0.6.tar.gz tmp/fremu-0.0.7.tar.gz --markdown 20240427/f/fremu/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-27 08:22:10] INFO root fetch - processPackages [fremu]: Remove: archive file [/home/abi/fetcher/tmp/fremu-0.0.6.tar.gz]
+[2024-04-27 08:22:10] INFO root fetch - processPackages [fremu]: Remove: archive file [/home/abi/fetcher/tmp/fremu-0.0.7.tar.gz]
+[2024-04-27 08:22:10] INFO root fetch - main [MainThread]: End processing [fremu]: success
+[2024-04-27 08:22:10] INFO root fetch - main [MainThread]: Store serial: [22956867]
