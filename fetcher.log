@@ -15326,3 +15326,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 16:06:28] INFO root fetch - processPackages [magictk]: Remove: archive file [/home/abi/fetcher/tmp/magictk-1.0.1.57.tar.gz]
 [2024-04-27 16:06:28] INFO root fetch - main [MainThread]: End processing [magictk]: success
 [2024-04-27 16:06:28] INFO root fetch - main [MainThread]: Store serial: [22959319]
+[2024-04-27 16:08:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959319]
+[2024-04-27 16:08:37] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 16:08:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: puerml
+[2024-04-27 16:08:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hosted-flasks
+[2024-04-27 16:08:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: embykeeper
+[2024-04-27 16:08:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jaraco.home
+[2024-04-27 16:08:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nokey
+[2024-04-27 16:08:37] INFO root fetch - processPackages [nokey]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-27 16:08:37] INFO root fetch - processPackages [puerml]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-27 16:08:37] INFO root fetch - processPackages [nokey]: Downloading https://files.pythonhosted.org/packages/2c/6c/76986dbbc0ae844c72d0ffc9ba5337590ca03acce4ac0db3cd3832ab16ce/nokey-0.2.0.tar.gz
+[2024-04-27 16:08:37] INFO root fetch - processPackages [hosted-flasks]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-27 16:08:37] INFO root fetch - processPackages [jaraco.home]: New version: [3.9.0] Old Version: [3.8.1]
+[2024-04-27 16:08:37] INFO root fetch - processPackages [puerml]: Downloading https://files.pythonhosted.org/packages/c1/e4/523c5c69b02459ffb6e52a1a4b8f011d7875d2eed1aaeae02c5a0c948382/puerml-0.1.8.tar.gz
+[2024-04-27 16:08:37] INFO root fetch - processPackages [embykeeper]: New version: [3.2.9] Old Version: [3.2.8]
+[2024-04-27 16:08:37] INFO root fetch - processPackages [hosted-flasks]: Downloading https://files.pythonhosted.org/packages/50/00/38b2f4561727dcf5b154ca22fd524b0de9cde0e759ed161eb4e156a512fb/hosted-flasks-0.0.3.tar.gz
+[2024-04-27 16:08:37] INFO root fetch - processPackages [puerml]: Downloading https://files.pythonhosted.org/packages/17/cb/1f376cc111577cf8439db51d01dd8f17fa7c2754c4ecf4fa961fbb481835/puerml-0.1.9.tar.gz
+[2024-04-27 16:08:37] INFO root fetch - processPackages [jaraco.home]: Downloading https://files.pythonhosted.org/packages/5e/a8/b0736b83e4aa8aabdf6f12b590a767dee610f0442fd13f7de1e0ca5692d8/jaraco_home-3.8.1.tar.gz
+[2024-04-27 16:08:37] INFO root fetch - processPackages [embykeeper]: Downloading https://files.pythonhosted.org/packages/d0/e6/4bb1ee3290f4aba08e9d6751566f039db27dba7d51553fc0681095c6a015/embykeeper-3.2.8.tar.gz
+[2024-04-27 16:08:37] INFO root fetch - processPackages [nokey]: Downloading https://files.pythonhosted.org/packages/87/4b/86ec0ae5017454a1be5f0f733bf073ad33cc104d3f85921cd4bf2bbdd3c5/nokey-0.3.0.tar.gz
+[2024-04-27 16:08:37] INFO root fetch - processPackages [puerml]: executing diffoscope
+[2024-04-27 16:08:37] INFO root fetch - processPackages [puerml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/puerml-0.1.8.tar.gz tmp/puerml-0.1.9.tar.gz --markdown 20240427/p/puerml/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-27 16:08:37] INFO root fetch - processPackages [nokey]: executing diffoscope
+[2024-04-27 16:08:37] INFO root fetch - processPackages [nokey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nokey-0.2.0.tar.gz tmp/nokey-0.3.0.tar.gz --markdown 20240427/n/nokey/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-04-27 16:08:37] INFO root fetch - processPackages [hosted-flasks]: Downloading https://files.pythonhosted.org/packages/62/77/1a70178ff1c6bb9eec52a602b432bae7ef586268e899b0e30a3c6f0196b1/hosted-flasks-0.0.4.tar.gz
+[2024-04-27 16:08:38] INFO root fetch - processPackages [jaraco.home]: Downloading https://files.pythonhosted.org/packages/93/fb/a6625ca4f55a8a9a38045c6e717dbb9d0fcdda76220c951afe942310460d/jaraco_home-3.9.0.tar.gz
+[2024-04-27 16:08:38] INFO root fetch - processPackages [embykeeper]: Downloading https://files.pythonhosted.org/packages/02/85/cffd52bc872be074110305f46303d258fa7478eab3eae08d86465d0653a8/embykeeper-3.2.9.tar.gz
+[2024-04-27 16:08:38] INFO root fetch - processPackages [jaraco.home]: executing diffoscope
+[2024-04-27 16:08:38] INFO root fetch - processPackages [jaraco.home]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaraco_home-3.8.1.tar.gz tmp/jaraco_home-3.9.0.tar.gz --markdown 20240427/j/jaraco.home/3.8.1-3.9.0/README.md --exclude *.pyd
+[2024-04-27 16:08:38] INFO root fetch - processPackages [hosted-flasks]: executing diffoscope
+[2024-04-27 16:08:38] INFO root fetch - processPackages [hosted-flasks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hosted-flasks-0.0.3.tar.gz tmp/hosted-flasks-0.0.4.tar.gz --markdown 20240427/h/hosted-flasks/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-27 16:08:38] INFO root fetch - processPackages [embykeeper]: executing diffoscope
+[2024-04-27 16:08:38] INFO root fetch - processPackages [embykeeper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embykeeper-3.2.8.tar.gz tmp/embykeeper-3.2.9.tar.gz --markdown 20240427/e/embykeeper/3.2.8-3.2.9/README.md --exclude *.pyd
+[2024-04-27 16:08:38] INFO root fetch - processPackages [nokey]: Remove: archive file [/home/abi/fetcher/tmp/nokey-0.2.0.tar.gz]
+[2024-04-27 16:08:38] INFO root fetch - processPackages [nokey]: Remove: archive file [/home/abi/fetcher/tmp/nokey-0.3.0.tar.gz]
+[2024-04-27 16:08:38] INFO root fetch - main [MainThread]: End processing [nokey]: success
+[2024-04-27 16:08:38] INFO root fetch - processPackages [puerml]: Remove: archive file [/home/abi/fetcher/tmp/puerml-0.1.8.tar.gz]
+[2024-04-27 16:08:38] INFO root fetch - processPackages [puerml]: Remove: archive file [/home/abi/fetcher/tmp/puerml-0.1.9.tar.gz]
+[2024-04-27 16:08:38] INFO root fetch - main [MainThread]: End processing [puerml]: success
+[2024-04-27 16:08:38] INFO root fetch - processPackages [jaraco.home]: Remove: archive file [/home/abi/fetcher/tmp/jaraco_home-3.8.1.tar.gz]
+[2024-04-27 16:08:38] INFO root fetch - processPackages [jaraco.home]: Remove: archive file [/home/abi/fetcher/tmp/jaraco_home-3.9.0.tar.gz]
+[2024-04-27 16:08:38] INFO root fetch - main [MainThread]: End processing [jaraco.home]: success
+[2024-04-27 16:08:38] INFO root fetch - processPackages [hosted-flasks]: Remove: archive file [/home/abi/fetcher/tmp/hosted-flasks-0.0.3.tar.gz]
+[2024-04-27 16:08:38] INFO root fetch - processPackages [hosted-flasks]: Remove: archive file [/home/abi/fetcher/tmp/hosted-flasks-0.0.4.tar.gz]
+[2024-04-27 16:08:38] INFO root fetch - main [MainThread]: End processing [hosted-flasks]: success
+[2024-04-27 16:08:38] INFO root fetch - processPackages [embykeeper]: Remove: archive file [/home/abi/fetcher/tmp/embykeeper-3.2.8.tar.gz]
+[2024-04-27 16:08:38] INFO root fetch - processPackages [embykeeper]: Remove: archive file [/home/abi/fetcher/tmp/embykeeper-3.2.9.tar.gz]
+[2024-04-27 16:08:38] INFO root fetch - main [MainThread]: End processing [embykeeper]: success
+[2024-04-27 16:08:38] INFO root fetch - main [MainThread]: Store serial: [22959334]
