@@ -16960,3 +16960,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 17:59:08] INFO root fetch - processPackages [Mira-SimPEG]: Remove: archive file [/home/abi/fetcher/tmp/mira_simpeg-0.19.0.dev8.tar.gz]
 [2024-04-27 17:59:08] INFO root fetch - main [MainThread]: End processing [Mira-SimPEG]: success
 [2024-04-27 17:59:08] INFO root fetch - main [MainThread]: Store serial: [22960000]
+[2024-04-27 18:01:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960000]
+[2024-04-27 18:01:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 18:01:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jinjanator-plugin-format-xml
+[2024-04-27 18:01:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jinjanator-plugin-format-toml
+[2024-04-27 18:01:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: frost-rs
+[2024-04-27 18:01:20] INFO root fetch - processPackages [jinjanator-plugin-format-xml]: New version: [24.1.0] Old Version: [23.2.0]
+[2024-04-27 18:01:20] WARNING root fetch - processPackages [frost-rs]: Skipping, unable to determine old version
+[2024-04-27 18:01:20] INFO root fetch - main [MainThread]: End processing [frost-rs] error
+[2024-04-27 18:01:20] INFO root fetch - processPackages [jinjanator-plugin-format-toml]: New version: [24.1.0] Old Version: [23.2.0]
+[2024-04-27 18:01:21] INFO root fetch - processPackages [jinjanator-plugin-format-toml]: Downloading https://files.pythonhosted.org/packages/9c/6c/61d20b33bb67de95b6ed8a48e4c5f053a48f1d7f400d7ec14c6b26e546e0/jinjanator_plugin_format_toml-23.2.0.tar.gz
+[2024-04-27 18:01:21] INFO root fetch - processPackages [jinjanator-plugin-format-xml]: Downloading https://files.pythonhosted.org/packages/9b/d3/e7269c0790df0fb991847da21d8fd403c6b5f89db24fbbd08735baf8436c/jinjanator_plugin_format_xml-23.2.0.tar.gz
+[2024-04-27 18:01:21] INFO root fetch - processPackages [jinjanator-plugin-format-toml]: Downloading https://files.pythonhosted.org/packages/ae/c1/662fb30133dd8234654dbbeca88a8eaea78e12189ee60f0636e24e48a119/jinjanator_plugin_format_toml-24.1.0.tar.gz
+[2024-04-27 18:01:21] INFO root fetch - processPackages [jinjanator-plugin-format-xml]: Downloading https://files.pythonhosted.org/packages/be/7e/1eba273f7c722872592825c458d03c3b1b3656f5667ab6e9c517482d448b/jinjanator_plugin_format_xml-24.1.0.tar.gz
+[2024-04-27 18:01:21] INFO root fetch - processPackages [jinjanator-plugin-format-toml]: executing diffoscope
+[2024-04-27 18:01:21] INFO root fetch - processPackages [jinjanator-plugin-format-toml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jinjanator_plugin_format_toml-23.2.0.tar.gz tmp/jinjanator_plugin_format_toml-24.1.0.tar.gz --markdown 20240427/j/jinjanator-plugin-format-toml/23.2.0-24.1.0/README.md --exclude *.pyd
+[2024-04-27 18:01:21] INFO root fetch - processPackages [jinjanator-plugin-format-xml]: executing diffoscope
+[2024-04-27 18:01:21] INFO root fetch - processPackages [jinjanator-plugin-format-xml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jinjanator_plugin_format_xml-23.2.0.tar.gz tmp/jinjanator_plugin_format_xml-24.1.0.tar.gz --markdown 20240427/j/jinjanator-plugin-format-xml/23.2.0-24.1.0/README.md --exclude *.pyd
+[2024-04-27 18:01:22] INFO root fetch - processPackages [jinjanator-plugin-format-toml]: Remove: archive file [/home/abi/fetcher/tmp/jinjanator_plugin_format_toml-23.2.0.tar.gz]
+[2024-04-27 18:01:22] INFO root fetch - processPackages [jinjanator-plugin-format-toml]: Remove: archive file [/home/abi/fetcher/tmp/jinjanator_plugin_format_toml-24.1.0.tar.gz]
+[2024-04-27 18:01:22] INFO root fetch - main [MainThread]: End processing [jinjanator-plugin-format-toml]: success
+[2024-04-27 18:01:22] INFO root fetch - processPackages [jinjanator-plugin-format-xml]: Remove: archive file [/home/abi/fetcher/tmp/jinjanator_plugin_format_xml-23.2.0.tar.gz]
+[2024-04-27 18:01:22] INFO root fetch - processPackages [jinjanator-plugin-format-xml]: Remove: archive file [/home/abi/fetcher/tmp/jinjanator_plugin_format_xml-24.1.0.tar.gz]
+[2024-04-27 18:01:22] INFO root fetch - main [MainThread]: End processing [jinjanator-plugin-format-xml]: success
+[2024-04-27 18:01:22] INFO root fetch - main [MainThread]: Store serial: [22960011]
