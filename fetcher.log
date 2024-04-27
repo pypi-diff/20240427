@@ -9816,3 +9816,35 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 08:39:29] INFO root fetch - processPackages [arctix]: Remove: archive file [/home/abi/fetcher/tmp/arctix-0.0.3a0.tar.gz]
 [2024-04-27 08:39:29] INFO root fetch - main [MainThread]: End processing [arctix]: success
 [2024-04-27 08:39:29] INFO root fetch - main [MainThread]: Store serial: [22956962]
+[2024-04-27 08:41:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956962]
+[2024-04-27 08:41:38] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-27 08:43:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956962]
+[2024-04-27 08:43:43] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 08:43:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arctix
+[2024-04-27 08:43:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ppacls
+[2024-04-27 08:43:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tinyCUCM
+[2024-04-27 08:43:43] INFO root fetch - processPackages [arctix]: New version: [0.0.3a0] Old Version: [0.0.2a17]
+[2024-04-27 08:43:43] INFO root fetch - processPackages [arctix]: Downloading https://files.pythonhosted.org/packages/d9/a2/bd40eff5b7effc9de9cbd731606ad5e05ac13b1b7d94b0ca08c4107d76f9/arctix-0.0.2a17.tar.gz
+[2024-04-27 08:43:43] INFO root fetch - processPackages [ppacls]: New version: [0.4.3] Old Version: [0.4.2]
+[2024-04-27 08:43:43] INFO root fetch - processPackages [tinyCUCM]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-04-27 08:43:44] INFO root fetch - processPackages [ppacls]: Downloading https://files.pythonhosted.org/packages/3e/c0/44b23966d82fac6c2fa5c69692efd6ad4a93421f25c8a828edbf3c4db637/ppacls-0.4.2-py3-none-any.whl
+[2024-04-27 08:43:44] INFO root fetch - processPackages [tinyCUCM]: Downloading https://files.pythonhosted.org/packages/12/db/46267c5c389d4cbe2f67283038c2b8d22d43b14b1ea08f5ce8d39c527415/tinyCUCM-0.2.6.tar.gz
+[2024-04-27 08:43:44] INFO root fetch - processPackages [arctix]: Downloading https://files.pythonhosted.org/packages/4f/1f/3561e1269756a82588509b793f8df9c7e9987ed4fe4b1250b0e747201507/arctix-0.0.3a0.tar.gz
+[2024-04-27 08:43:44] INFO root fetch - processPackages [arctix]: executing diffoscope
+[2024-04-27 08:43:44] INFO root fetch - processPackages [arctix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arctix-0.0.2a17.tar.gz tmp/arctix-0.0.3a0.tar.gz --markdown 20240427/a/arctix/0.0.2a17-0.0.3a0/README.md --exclude *.pyd
+[2024-04-27 08:43:44] INFO root fetch - processPackages [ppacls]: Downloading https://files.pythonhosted.org/packages/ec/c7/7d11d45cb8b926b25dbe028edb849eefb097528547224847d5cce6c0ea82/ppacls-0.4.3-py3-none-any.whl
+[2024-04-27 08:43:44] INFO root fetch - processPackages [tinyCUCM]: Downloading https://files.pythonhosted.org/packages/02/10/00c7ee80449b833585234a0510df2766dee4205f2a2bc703c0ebc94ab8ea/tinycucm-0.2.7.tar.gz
+[2024-04-27 08:43:44] INFO root fetch - processPackages [ppacls]: executing diffoscope
+[2024-04-27 08:43:44] INFO root fetch - processPackages [ppacls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ppacls-0.4.2-py3-none-any.whl.zip tmp/ppacls-0.4.3-py3-none-any.whl.zip --markdown 20240427/p/ppacls/0.4.2-0.4.3/README.md --exclude *.pyd
+[2024-04-27 08:43:44] INFO root fetch - processPackages [tinyCUCM]: executing diffoscope
+[2024-04-27 08:43:44] INFO root fetch - processPackages [tinyCUCM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinyCUCM-0.2.6.tar.gz tmp/tinycucm-0.2.7.tar.gz --markdown 20240427/t/tinyCUCM/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-04-27 08:43:44] INFO root fetch - processPackages [arctix]: Remove: archive file [/home/abi/fetcher/tmp/arctix-0.0.2a17.tar.gz]
+[2024-04-27 08:43:44] INFO root fetch - processPackages [arctix]: Remove: archive file [/home/abi/fetcher/tmp/arctix-0.0.3a0.tar.gz]
+[2024-04-27 08:43:44] INFO root fetch - main [MainThread]: End processing [arctix]: success
+[2024-04-27 08:43:45] INFO root fetch - processPackages [tinyCUCM]: Remove: archive file [/home/abi/fetcher/tmp/tinyCUCM-0.2.6.tar.gz]
+[2024-04-27 08:43:45] INFO root fetch - processPackages [tinyCUCM]: Remove: archive file [/home/abi/fetcher/tmp/tinycucm-0.2.7.tar.gz]
+[2024-04-27 08:43:45] INFO root fetch - main [MainThread]: End processing [tinyCUCM]: success
+[2024-04-27 08:43:45] INFO root fetch - processPackages [ppacls]: Remove: archive file [/home/abi/fetcher/tmp/ppacls-0.4.2-py3-none-any.whl.zip]
+[2024-04-27 08:43:45] INFO root fetch - processPackages [ppacls]: Remove: archive file [/home/abi/fetcher/tmp/ppacls-0.4.3-py3-none-any.whl.zip]
+[2024-04-27 08:43:45] INFO root fetch - main [MainThread]: End processing [ppacls]: success
+[2024-04-27 08:43:45] INFO root fetch - main [MainThread]: Store serial: [22956970]
