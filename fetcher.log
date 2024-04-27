@@ -10554,3 +10554,24 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 09:47:10] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.96-py3-none-any.whl.zip]
 [2024-04-27 09:47:10] INFO root fetch - main [MainThread]: End processing [pypipr]: success
 [2024-04-27 09:47:10] INFO root fetch - main [MainThread]: Store serial: [22957288]
+[2024-04-27 09:49:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957288]
+[2024-04-27 09:49:19] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 09:49:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yes-chef
+[2024-04-27 09:49:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py4web
+[2024-04-27 09:49:19] INFO root fetch - processPackages [yes-chef]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-04-27 09:49:19] INFO root fetch - processPackages [yes-chef]: Downloading https://files.pythonhosted.org/packages/e5/c4/957ca9d5a0e72149e2c616698c1d5f0a44da5b17a2ad5bcfd77790c39f2c/yes_chef-0.9.1.tar.gz
+[2024-04-27 09:49:19] INFO root fetch - processPackages [py4web]: New version: [1.20240427.1] Old Version: [1.20240420.3]
+[2024-04-27 09:49:19] INFO root fetch - processPackages [py4web]: Downloading https://files.pythonhosted.org/packages/90/02/61d52c83630fb274611675ea119732f00b56a5fc15ba6731abfefab55772/py4web-1.20240420.3.tar.gz
+[2024-04-27 09:49:19] INFO root fetch - processPackages [yes-chef]: Downloading https://files.pythonhosted.org/packages/50/89/fe0e9590bd9326103f184f663a2912273a9fade9ca4726363165dfd8a68d/yes_chef-0.9.2.tar.gz
+[2024-04-27 09:49:19] INFO root fetch - processPackages [yes-chef]: executing diffoscope
+[2024-04-27 09:49:19] INFO root fetch - processPackages [yes-chef]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yes_chef-0.9.1.tar.gz tmp/yes_chef-0.9.2.tar.gz --markdown 20240427/y/yes-chef/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-04-27 09:49:20] INFO root fetch - processPackages [yes-chef]: Remove: archive file [/home/abi/fetcher/tmp/yes_chef-0.9.1.tar.gz]
+[2024-04-27 09:49:20] INFO root fetch - processPackages [yes-chef]: Remove: archive file [/home/abi/fetcher/tmp/yes_chef-0.9.2.tar.gz]
+[2024-04-27 09:49:20] INFO root fetch - main [MainThread]: End processing [yes-chef]: success
+[2024-04-27 09:49:20] INFO root fetch - processPackages [py4web]: Downloading https://files.pythonhosted.org/packages/93/27/1d19ed84c9c2289bf5be4bf562ea72f17f6280fd4a822bfa74e38bc2708c/py4web-1.20240427.1.tar.gz
+[2024-04-27 09:49:22] INFO root fetch - processPackages [py4web]: executing diffoscope
+[2024-04-27 09:49:22] INFO root fetch - processPackages [py4web]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py4web-1.20240420.3.tar.gz tmp/py4web-1.20240427.1.tar.gz --markdown 20240427/p/py4web/1.20240420.3-1.20240427.1/README.md --exclude *.pyd
+[2024-04-27 09:49:23] INFO root fetch - processPackages [py4web]: Remove: archive file [/home/abi/fetcher/tmp/py4web-1.20240420.3.tar.gz]
+[2024-04-27 09:49:23] INFO root fetch - processPackages [py4web]: Remove: archive file [/home/abi/fetcher/tmp/py4web-1.20240427.1.tar.gz]
+[2024-04-27 09:49:23] INFO root fetch - main [MainThread]: End processing [py4web]: success
+[2024-04-27 09:49:23] INFO root fetch - main [MainThread]: Store serial: [22957294]
