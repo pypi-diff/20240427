@@ -20347,3 +20347,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 22:02:18] INFO root fetch - processPackages [smartboiler]: Remove: archive file [/home/abi/fetcher/tmp/smartboiler-0.0.3.0.0.7.4.tar.gz]
 [2024-04-27 22:02:18] INFO root fetch - main [MainThread]: End processing [smartboiler]: success
 [2024-04-27 22:02:18] INFO root fetch - main [MainThread]: Store serial: [22961578]
+[2024-04-27 22:04:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961578]
+[2024-04-27 22:04:33] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 22:04:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: slepc
+[2024-04-27 22:04:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cpu-info
+[2024-04-27 22:04:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: slepc4py
+[2024-04-27 22:04:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: moto
+[2024-04-27 22:04:33] INFO root fetch - processPackages [moto]: New version: [5.0.6.dev9] Old Version: [5.0.6.dev8]
+[2024-04-27 22:04:33] INFO root fetch - processPackages [slepc]: New version: [3.9.0] Old Version: [3.8.0]
+[2024-04-27 22:04:33] WARNING root fetch - processPackages [cpu-info]: Skipping, unable to determine old version
+[2024-04-27 22:04:33] INFO root fetch - main [MainThread]: End processing [cpu-info] error
+[2024-04-27 22:04:33] INFO root fetch - processPackages [slepc4py]: New version: [3.9.0] Old Version: [3.8.0]
+[2024-04-27 22:04:33] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/cc/b5/00faf7a32b2d43303224e4c85e6ca1586aa38ed6bd7c49336b7ac8cebea7/moto-5.0.6.dev8.tar.gz
+[2024-04-27 22:04:34] INFO root fetch - processPackages [slepc]: Downloading https://files.pythonhosted.org/packages/08/05/388c9d4605cdfd73831e6c8eedb61b5e30d7ca3790bf8bc78d1e8ebef0f5/slepc-3.8.0.tar.gz
+[2024-04-27 22:04:34] INFO root fetch - processPackages [slepc4py]: Downloading https://files.pythonhosted.org/packages/9c/59/4c2d2626af94489c92efcc5404c2a902f817c7ef0ec5bd5f6cd5c24d91dd/slepc4py-3.8.0.tar.gz
+[2024-04-27 22:04:34] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/67/63/03d8401d8574b4b96cd00404b9b4b0f0791e6dc794bc44ad3730b7dd8e46/moto-5.0.6.dev9.tar.gz
+[2024-04-27 22:04:34] INFO root fetch - processPackages [slepc4py]: Downloading https://files.pythonhosted.org/packages/36/d1/579e50427fa96480d92458c7df5e46fc79f35c5fe158f36fe7a1688073c0/slepc4py-3.9.0.tar.gz
+[2024-04-27 22:04:34] INFO root fetch - processPackages [slepc4py]: executing diffoscope
+[2024-04-27 22:04:34] INFO root fetch - processPackages [slepc4py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slepc4py-3.8.0.tar.gz tmp/slepc4py-3.9.0.tar.gz --markdown 20240427/s/slepc4py/3.8.0-3.9.0/README.md --exclude *.pyd
+[2024-04-27 22:04:34] INFO root fetch - processPackages [moto]: executing diffoscope
+[2024-04-27 22:04:34] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-5.0.6.dev8.tar.gz tmp/moto-5.0.6.dev9.tar.gz --markdown 20240427/m/moto/5.0.6.dev8-5.0.6.dev9/README.md --exclude *.pyd
+[2024-04-27 22:04:36] INFO root fetch - processPackages [slepc]: Downloading https://files.pythonhosted.org/packages/25/ee/eca61b9a377111ffb10195d47bb6b8e8cb76b06b3e411065b7c99b4b084f/slepc-3.9.0.tar.gz
+[2024-04-27 22:04:38] INFO root fetch - processPackages [slepc]: executing diffoscope
+[2024-04-27 22:04:38] INFO root fetch - processPackages [slepc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slepc-3.8.0.tar.gz tmp/slepc-3.9.0.tar.gz --markdown 20240427/s/slepc/3.8.0-3.9.0/README.md --exclude *.pyd
+[2024-04-27 22:04:39] INFO root fetch - processPackages [slepc4py]: Remove: archive file [/home/abi/fetcher/tmp/slepc4py-3.8.0.tar.gz]
+[2024-04-27 22:04:39] INFO root fetch - processPackages [slepc4py]: Remove: archive file [/home/abi/fetcher/tmp/slepc4py-3.9.0.tar.gz]
+[2024-04-27 22:04:39] INFO root fetch - main [MainThread]: End processing [slepc4py]: success
+[2024-04-27 22:04:46] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.6.dev8.tar.gz]
+[2024-04-27 22:04:46] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.6.dev9.tar.gz]
+[2024-04-27 22:04:46] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2024-04-27 22:05:14] INFO root fetch - processPackages [slepc]: Remove: archive file [/home/abi/fetcher/tmp/slepc-3.8.0.tar.gz]
+[2024-04-27 22:05:14] INFO root fetch - processPackages [slepc]: Remove: archive file [/home/abi/fetcher/tmp/slepc-3.9.0.tar.gz]
+[2024-04-27 22:05:14] INFO root fetch - main [MainThread]: End processing [slepc]: success
+[2024-04-27 22:05:14] INFO root fetch - main [MainThread]: Store serial: [22961589]
