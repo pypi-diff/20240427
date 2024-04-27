@@ -12608,3 +12608,49 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 13:05:28] INFO root fetch - processPackages [colossalai]: Remove: archive file [/home/abi/fetcher/tmp/colossalai-0.3.7.tar.gz]
 [2024-04-27 13:05:28] INFO root fetch - main [MainThread]: End processing [colossalai]: success
 [2024-04-27 13:05:28] INFO root fetch - main [MainThread]: Store serial: [22958140]
+[2024-04-27 13:07:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958140]
+[2024-04-27 13:07:44] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 13:07:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-ucan
+[2024-04-27 13:07:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qg_toolkit
+[2024-04-27 13:07:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: snailshell
+[2024-04-27 13:07:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xbrl-filings-api
+[2024-04-27 13:07:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xbrl-filings-api
+[2024-04-27 13:07:44] INFO root fetch - processPackages [snailshell]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-27 13:07:44] INFO root fetch - processPackages [qg_toolkit]: New version: [1.0.2] Old Version: [1.0.0]
+[2024-04-27 13:07:44] INFO root fetch - processPackages [py-ucan]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-27 13:07:44] INFO root fetch - processPackages [snailshell]: Downloading https://files.pythonhosted.org/packages/28/70/cae4b29d322efc44d70ca0ed64cb9279f19cd1f9e328c4662b19c5196c4d/snailshell-0.2.8.tar.gz
+[2024-04-27 13:07:44] INFO root fetch - processPackages [xbrl-filings-api]: New version: [1.0a1] Old Version: [1.0.0.dev1]
+[2024-04-27 13:07:44] INFO root fetch - processPackages [xbrl-filings-api]: New version: [1.0a1] Old Version: [1.0.0.dev1]
+[2024-04-27 13:07:44] INFO root fetch - processPackages [qg_toolkit]: Downloading https://files.pythonhosted.org/packages/0a/86/e09632f725731bdf4c8986c24b9044317bb58ce3c9a28cc014afe460b67c/qg_toolkit-1.0.0.tar.gz
+[2024-04-27 13:07:44] INFO root fetch - processPackages [py-ucan]: Downloading https://files.pythonhosted.org/packages/1e/89/3f1129ee452a556d1a5b58dc1db4f7ea4101725937d1a671e528dcc8b3b7/py_ucan-0.2.0.tar.gz
+[2024-04-27 13:07:44] INFO root fetch - processPackages [xbrl-filings-api]: Downloading https://files.pythonhosted.org/packages/f0/c8/7566353fcdf29c7cc8cbf348718b21617d63b5f4f89e813f1462016d34cf/xbrl_filings_api-1.0.0.dev1.tar.gz
+[2024-04-27 13:07:44] INFO root fetch - processPackages [xbrl-filings-api]: Downloading https://files.pythonhosted.org/packages/f0/c8/7566353fcdf29c7cc8cbf348718b21617d63b5f4f89e813f1462016d34cf/xbrl_filings_api-1.0.0.dev1.tar.gz
+[2024-04-27 13:07:44] INFO root fetch - processPackages [qg_toolkit]: Downloading https://files.pythonhosted.org/packages/81/60/0e4b8fcdd5cf93bffdbc44ff4da93c1089d46992f1812ff2bdb3bec05809/qg_toolkit-1.0.2.tar.gz
+[2024-04-27 13:07:44] INFO root fetch - processPackages [py-ucan]: Downloading https://files.pythonhosted.org/packages/78/01/cb70767311e7c9846c8bcd7ffc272fef3f4da97d07ebef91b57e45a93b1c/py_ucan-0.3.0.tar.gz
+[2024-04-27 13:07:45] INFO root fetch - processPackages [qg_toolkit]: executing diffoscope
+[2024-04-27 13:07:45] INFO root fetch - processPackages [qg_toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qg_toolkit-1.0.0.tar.gz tmp/qg_toolkit-1.0.2.tar.gz --markdown 20240427/q/qg_toolkit/1.0.0-1.0.2/README.md --exclude *.pyd
+[2024-04-27 13:07:45] INFO root fetch - processPackages [py-ucan]: executing diffoscope
+[2024-04-27 13:07:45] INFO root fetch - processPackages [py-ucan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_ucan-0.2.0.tar.gz tmp/py_ucan-0.3.0.tar.gz --markdown 20240427/p/py-ucan/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-04-27 13:07:45] INFO root fetch - processPackages [xbrl-filings-api]: Downloading https://files.pythonhosted.org/packages/52/18/a98cfc5d35b17e493865824ebe6d775456f259be1c1f735801a9330181f3/xbrl_filings_api-1.0a1.tar.gz
+[2024-04-27 13:07:45] INFO root fetch - processPackages [xbrl-filings-api]: Downloading https://files.pythonhosted.org/packages/52/18/a98cfc5d35b17e493865824ebe6d775456f259be1c1f735801a9330181f3/xbrl_filings_api-1.0a1.tar.gz
+[2024-04-27 13:07:45] INFO root fetch - processPackages [snailshell]: Downloading https://files.pythonhosted.org/packages/71/9f/b99191b0a59da68e371d48cedcea65ef2bbe17b981e11133e2eeb1d69f46/snailshell-0.2.9.tar.gz
+[2024-04-27 13:07:45] INFO root fetch - processPackages [xbrl-filings-api]: executing diffoscope
+[2024-04-27 13:07:45] INFO root fetch - processPackages [xbrl-filings-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xbrl_filings_api-1.0.0.dev1.tar.gz tmp/xbrl_filings_api-1.0a1.tar.gz --markdown 20240427/x/xbrl-filings-api/1.0.0.dev1-1.0a1/README.md --exclude *.pyd
+[2024-04-27 13:07:45] INFO root fetch - processPackages [xbrl-filings-api]: executing diffoscope
+[2024-04-27 13:07:45] INFO root fetch - processPackages [xbrl-filings-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xbrl_filings_api-1.0.0.dev1.tar.gz tmp/xbrl_filings_api-1.0a1.tar.gz --markdown 20240427/x/xbrl-filings-api/1.0.0.dev1-1.0a1/README.md --exclude *.pyd
+[2024-04-27 13:07:45] INFO root fetch - processPackages [py-ucan]: Remove: archive file [/home/abi/fetcher/tmp/py_ucan-0.2.0.tar.gz]
+[2024-04-27 13:07:45] INFO root fetch - processPackages [py-ucan]: Remove: archive file [/home/abi/fetcher/tmp/py_ucan-0.3.0.tar.gz]
+[2024-04-27 13:07:45] INFO root fetch - main [MainThread]: End processing [py-ucan]: success
+[2024-04-27 13:07:45] INFO root fetch - processPackages [qg_toolkit]: Remove: archive file [/home/abi/fetcher/tmp/qg_toolkit-1.0.0.tar.gz]
+[2024-04-27 13:07:45] INFO root fetch - processPackages [qg_toolkit]: Remove: archive file [/home/abi/fetcher/tmp/qg_toolkit-1.0.2.tar.gz]
+[2024-04-27 13:07:45] INFO root fetch - main [MainThread]: End processing [qg_toolkit]: success
+[2024-04-27 13:07:45] INFO root fetch - processPackages [snailshell]: executing diffoscope
+[2024-04-27 13:07:45] INFO root fetch - processPackages [snailshell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snailshell-0.2.8.tar.gz tmp/snailshell-0.2.9.tar.gz --markdown 20240427/s/snailshell/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-27 13:07:45] INFO root fetch - processPackages [xbrl-filings-api]: Remove: archive file [/home/abi/fetcher/tmp/xbrl_filings_api-1.0.0.dev1.tar.gz]
+[2024-04-27 13:07:45] INFO root fetch - processPackages [xbrl-filings-api]: Remove: archive file [/home/abi/fetcher/tmp/xbrl_filings_api-1.0a1.tar.gz]
+[2024-04-27 13:07:45] INFO root fetch - main [MainThread]: End processing [xbrl-filings-api]: success
+[2024-04-27 13:07:46] INFO root fetch - main [MainThread]: End processing [xbrl-filings-api]: success
+[2024-04-27 13:07:46] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.8.tar.gz]
+[2024-04-27 13:07:46] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.9.tar.gz]
+[2024-04-27 13:07:46] INFO root fetch - main [MainThread]: End processing [snailshell]: success
+[2024-04-27 13:07:46] INFO root fetch - main [MainThread]: Store serial: [22958157]
