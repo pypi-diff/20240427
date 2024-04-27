@@ -14293,3 +14293,52 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 15:03:28] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
 [2024-04-27 15:03:28] INFO root fetch - main [MainThread]: End processing [yeref]: success
 [2024-04-27 15:03:28] INFO root fetch - main [MainThread]: Store serial: [22958886]
+[2024-04-27 15:05:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958886]
+[2024-04-27 15:05:37] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-27 15:05:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yeref
+[2024-04-27 15:05:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: capmonster-python
+[2024-04-27 15:05:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: stream-inflate
+[2024-04-27 15:05:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: praanscribe
+[2024-04-27 15:05:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: yeref
+[2024-04-27 15:05:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: uvx
+[2024-04-27 15:05:37] WARNING root fetch - processPackages [praanscribe]: Skipping, unable to determine old version
+[2024-04-27 15:05:37] INFO root fetch - main [MainThread]: End processing [praanscribe] error
+[2024-04-27 15:05:37] INFO root fetch - processPackages [uvx]: New version: [2.0.5] Old Version: [2.0.3]
+[2024-04-27 15:05:37] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-27 15:05:37] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-27 15:05:37] INFO root fetch - processPackages [stream-inflate]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 15:05:37] INFO root fetch - processPackages [capmonster-python]: New version: [3.2.0] Old Version: [3.1.0]
+[2024-04-27 15:05:37] INFO root fetch - processPackages [uvx]: Downloading https://files.pythonhosted.org/packages/b9/50/dc6dc087195bd31593e58f971eef4e557121243d0f5999ec9fb5bb7b7409/uvx-2.0.3.tar.gz
+[2024-04-27 15:05:37] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-04-27 15:05:37] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-04-27 15:05:37] INFO root fetch - processPackages [stream-inflate]: Downloading https://files.pythonhosted.org/packages/3d/ae/2a22f555cbab783596b700bdfb4856c538683bd43cfddddfae4722d68822/stream-inflate-0.0.8.tar.gz
+[2024-04-27 15:05:37] INFO root fetch - processPackages [capmonster-python]: Downloading https://files.pythonhosted.org/packages/36/d6/f462b44a1499b02ff448d565e86d96686cb606a0fea8904ebeab0c24ee01/capmonster_python-3.1.0.tar.gz
+[2024-04-27 15:05:37] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-04-27 15:05:37] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-04-27 15:05:37] INFO root fetch - processPackages [uvx]: Downloading https://files.pythonhosted.org/packages/ee/81/a37d1a6074a6efaa516f4337522b10b5f5badafcd05ba2e6577a9e95ecb2/uvx-2.0.5.tar.gz
+[2024-04-27 15:05:37] INFO root fetch - processPackages [stream-inflate]: Downloading https://files.pythonhosted.org/packages/d7/ae/64cd16dfb4e5e4ddcdd956a7982c33db9de848b11b55353bcfaac761f9f5/stream-inflate-0.0.9.tar.gz
+[2024-04-27 15:05:37] INFO root fetch - processPackages [uvx]: executing diffoscope
+[2024-04-27 15:05:37] INFO root fetch - processPackages [uvx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uvx-2.0.3.tar.gz tmp/uvx-2.0.5.tar.gz --markdown 20240427/u/uvx/2.0.3-2.0.5/README.md --exclude *.pyd
+[2024-04-27 15:05:37] INFO root fetch - processPackages [capmonster-python]: Downloading https://files.pythonhosted.org/packages/8e/e0/a41c9cdd515481ad33680ebd284c830eb801eb5c3c760d095a818fb33e4d/capmonster_python-3.2.0.tar.gz
+[2024-04-27 15:05:38] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-04-27 15:05:38] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240427/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-27 15:05:38] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-04-27 15:05:38] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240427/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-27 15:05:38] INFO root fetch - processPackages [stream-inflate]: executing diffoscope
+[2024-04-27 15:05:38] INFO root fetch - processPackages [stream-inflate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stream-inflate-0.0.8.tar.gz tmp/stream-inflate-0.0.9.tar.gz --markdown 20240427/s/stream-inflate/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 15:05:38] INFO root fetch - processPackages [capmonster-python]: executing diffoscope
+[2024-04-27 15:05:38] INFO root fetch - processPackages [capmonster-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/capmonster_python-3.1.0.tar.gz tmp/capmonster_python-3.2.0.tar.gz --markdown 20240427/c/capmonster-python/3.1.0-3.2.0/README.md --exclude *.pyd
+[2024-04-27 15:05:38] INFO root fetch - processPackages [stream-inflate]: Remove: archive file [/home/abi/fetcher/tmp/stream-inflate-0.0.8.tar.gz]
+[2024-04-27 15:05:38] INFO root fetch - processPackages [stream-inflate]: Remove: archive file [/home/abi/fetcher/tmp/stream-inflate-0.0.9.tar.gz]
+[2024-04-27 15:05:38] INFO root fetch - main [MainThread]: End processing [stream-inflate]: success
+[2024-04-27 15:05:38] INFO root fetch - processPackages [uvx]: Remove: archive file [/home/abi/fetcher/tmp/uvx-2.0.3.tar.gz]
+[2024-04-27 15:05:38] INFO root fetch - processPackages [uvx]: Remove: archive file [/home/abi/fetcher/tmp/uvx-2.0.5.tar.gz]
+[2024-04-27 15:05:38] INFO root fetch - main [MainThread]: End processing [uvx]: success
+[2024-04-27 15:05:38] INFO root fetch - processPackages [capmonster-python]: Remove: archive file [/home/abi/fetcher/tmp/capmonster_python-3.1.0.tar.gz]
+[2024-04-27 15:05:38] INFO root fetch - processPackages [capmonster-python]: Remove: archive file [/home/abi/fetcher/tmp/capmonster_python-3.2.0.tar.gz]
+[2024-04-27 15:05:38] INFO root fetch - main [MainThread]: End processing [capmonster-python]: success
+[2024-04-27 15:05:38] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-04-27 15:05:38] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-04-27 15:05:38] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-04-27 15:05:39] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-04-27 15:05:39] INFO root fetch - main [MainThread]: Store serial: [22958907]
