@@ -21450,3 +21450,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 23:31:57] INFO root fetch - processPackages [mgktools]: Remove: archive file [/home/abi/fetcher/tmp/mgktools-2.1.0.tar.gz]
 [2024-04-27 23:31:57] INFO root fetch - main [MainThread]: End processing [mgktools]: success
 [2024-04-27 23:31:57] INFO root fetch - main [MainThread]: Store serial: [22962113]
+[2024-04-27 23:34:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962113]
+[2024-04-27 23:34:07] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 23:34:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: maling
+[2024-04-27 23:34:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: webdriver-cache-manager
+[2024-04-27 23:34:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: TheSilent
+[2024-04-27 23:34:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: multi-vector-simulator
+[2024-04-27 23:34:07] INFO root fetch - processPackages [webdriver-cache-manager]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-27 23:34:07] INFO root fetch - processPackages [multi-vector-simulator]: New version: [1.1.0rc2] Old Version: [1.1.0rc1]
+[2024-04-27 23:34:07] INFO root fetch - processPackages [maling]: New version: [2.3.0] Old Version: [2.2.9]
+[2024-04-27 23:34:07] INFO root fetch - processPackages [webdriver-cache-manager]: Downloading https://files.pythonhosted.org/packages/a1/a3/a5d4b9e5bf24b9c476e8135a7f74b156b0521cab46f9843c3a6a69c0baae/webdriver_cache_manager-0.0.4.tar.gz
+[2024-04-27 23:34:07] INFO root fetch - processPackages [maling]: Downloading https://files.pythonhosted.org/packages/ca/bf/64e54e99888877fd017f388e5b2d0c5531b04892e3792f7502c3ab955027/maling-2.2.9.tar.gz
+[2024-04-27 23:34:07] INFO root fetch - processPackages [multi-vector-simulator]: Downloading https://files.pythonhosted.org/packages/cc/4c/338d0a14deb52d442a9189a00d3a22ff05e6a357e3247cb254ea9f4b0b53/multi-vector-simulator-1.1.0rc1.tar.gz
+[2024-04-27 23:34:07] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-27 23:34:07] INFO root fetch - processPackages [webdriver-cache-manager]: Downloading https://files.pythonhosted.org/packages/e5/16/688f773e56792fafc3bf7a51ecae06dd5171fcf4ff23d195f9ab7104de50/webdriver_cache_manager-0.0.5.tar.gz
+[2024-04-27 23:34:07] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/ad/09/2a1f42483bf3fbc17417489cf4f3d6ec17c5c763e219aa02ad1827f29dc1/TheSilent-0.0.98.tar.gz
+[2024-04-27 23:34:07] INFO root fetch - processPackages [maling]: Downloading https://files.pythonhosted.org/packages/e3/17/d5bdfc71256eb94170915e423486f219d29c854b71831ee4f7cdc1d6b616/maling-2.3.0.tar.gz
+[2024-04-27 23:34:07] INFO root fetch - processPackages [webdriver-cache-manager]: executing diffoscope
+[2024-04-27 23:34:07] INFO root fetch - processPackages [webdriver-cache-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webdriver_cache_manager-0.0.4.tar.gz tmp/webdriver_cache_manager-0.0.5.tar.gz --markdown 20240427/w/webdriver-cache-manager/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-27 23:34:07] INFO root fetch - processPackages [multi-vector-simulator]: Downloading https://files.pythonhosted.org/packages/dd/7d/5a65dbda4f69bebf78896ee8cc035e443ecec5a976a4f2032b75372f5816/multi-vector-simulator-1.1.0rc2.tar.gz
+[2024-04-27 23:34:07] INFO root fetch - processPackages [maling]: executing diffoscope
+[2024-04-27 23:34:07] INFO root fetch - processPackages [maling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maling-2.2.9.tar.gz tmp/maling-2.3.0.tar.gz --markdown 20240427/m/maling/2.2.9-2.3.0/README.md --exclude *.pyd
+[2024-04-27 23:34:07] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/38/21/9b42cfa55edd85cfd4fefba7fb94aab0891af2b6c90ef59e687a42228a0b/TheSilent-0.0.99.tar.gz
+[2024-04-27 23:34:07] INFO root fetch - processPackages [multi-vector-simulator]: executing diffoscope
+[2024-04-27 23:34:07] INFO root fetch - processPackages [multi-vector-simulator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multi-vector-simulator-1.1.0rc1.tar.gz tmp/multi-vector-simulator-1.1.0rc2.tar.gz --markdown 20240427/m/multi-vector-simulator/1.1.0rc1-1.1.0rc2/README.md --exclude *.pyd
+[2024-04-27 23:34:07] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2024-04-27 23:34:07] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20240427/T/TheSilent/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-27 23:34:08] INFO root fetch - processPackages [webdriver-cache-manager]: Remove: archive file [/home/abi/fetcher/tmp/webdriver_cache_manager-0.0.4.tar.gz]
+[2024-04-27 23:34:08] INFO root fetch - processPackages [webdriver-cache-manager]: Remove: archive file [/home/abi/fetcher/tmp/webdriver_cache_manager-0.0.5.tar.gz]
+[2024-04-27 23:34:08] INFO root fetch - main [MainThread]: End processing [webdriver-cache-manager]: success
+[2024-04-27 23:34:08] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.98.tar.gz]
+[2024-04-27 23:34:08] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.99.tar.gz]
+[2024-04-27 23:34:08] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2024-04-27 23:34:08] INFO root fetch - processPackages [multi-vector-simulator]: Remove: archive file [/home/abi/fetcher/tmp/multi-vector-simulator-1.1.0rc1.tar.gz]
+[2024-04-27 23:34:08] INFO root fetch - processPackages [multi-vector-simulator]: Remove: archive file [/home/abi/fetcher/tmp/multi-vector-simulator-1.1.0rc2.tar.gz]
+[2024-04-27 23:34:08] INFO root fetch - main [MainThread]: End processing [multi-vector-simulator]: success
+[2024-04-27 23:34:09] INFO root fetch - processPackages [maling]: Remove: archive file [/home/abi/fetcher/tmp/maling-2.2.9.tar.gz]
+[2024-04-27 23:34:09] INFO root fetch - processPackages [maling]: Remove: archive file [/home/abi/fetcher/tmp/maling-2.3.0.tar.gz]
+[2024-04-27 23:34:09] INFO root fetch - main [MainThread]: End processing [maling]: success
+[2024-04-27 23:34:09] INFO root fetch - main [MainThread]: Store serial: [22962124]
