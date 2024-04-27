@@ -20052,3 +20052,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 21:39:05] INFO root fetch - processPackages [bice]: Remove: archive file [/home/abi/fetcher/tmp/bice-0.3.8.tar.gz]
 [2024-04-27 21:39:05] INFO root fetch - main [MainThread]: End processing [bice]: success
 [2024-04-27 21:39:05] INFO root fetch - main [MainThread]: Store serial: [22961468]
+[2024-04-27 21:41:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961468]
+[2024-04-27 21:41:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 21:41:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: anydata
+[2024-04-27 21:41:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ypricemagic
+[2024-04-27 21:41:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: napatrackmater
+[2024-04-27 21:41:20] INFO root fetch - processPackages [napatrackmater]: New version: [5.1.3] Old Version: [5.1.2]
+[2024-04-27 21:41:20] INFO root fetch - processPackages [ypricemagic]: New version: [3.5.0] Old Version: [3.4.9]
+[2024-04-27 21:41:20] INFO root fetch - processPackages [anydata]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-27 21:41:20] INFO root fetch - processPackages [ypricemagic]: Downloading https://files.pythonhosted.org/packages/45/e5/14e7891913ab0da2b09c5c85c328bfafe1d5bb05e67a946565d15a66edc4/ypricemagic-3.4.9.tar.gz
+[2024-04-27 21:41:20] INFO root fetch - processPackages [napatrackmater]: Downloading https://files.pythonhosted.org/packages/d1/f5/adcacd31634cf8e7027e53bc1177e72e3692b6424eb70aa2e29fca6e3e40/napatrackmater-5.1.2.tar.gz
+[2024-04-27 21:41:20] INFO root fetch - processPackages [ypricemagic]: Downloading https://files.pythonhosted.org/packages/ef/22/0af50e8cb2fb50af1ac0d5617d4aa6dd902612bc64c4f76a8fa3fd24927a/ypricemagic-3.5.0.tar.gz
+[2024-04-27 21:41:20] INFO root fetch - processPackages [ypricemagic]: executing diffoscope
+[2024-04-27 21:41:20] INFO root fetch - processPackages [ypricemagic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ypricemagic-3.4.9.tar.gz tmp/ypricemagic-3.5.0.tar.gz --markdown 20240427/y/ypricemagic/3.4.9-3.5.0/README.md --exclude *.pyd
+[2024-04-27 21:41:20] INFO root fetch - processPackages [napatrackmater]: Downloading https://files.pythonhosted.org/packages/75/87/49ff8cbdcb71dd685eae985522e8439c4a87a19c8c6eca5c1aa0a8cf1e36/napatrackmater-5.1.3.tar.gz
+[2024-04-27 21:41:21] INFO root fetch - processPackages [napatrackmater]: executing diffoscope
+[2024-04-27 21:41:21] INFO root fetch - processPackages [napatrackmater]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napatrackmater-5.1.2.tar.gz tmp/napatrackmater-5.1.3.tar.gz --markdown 20240427/n/napatrackmater/5.1.2-5.1.3/README.md --exclude *.pyd
+[2024-04-27 21:41:21] INFO root fetch - processPackages [anydata]: Downloading https://files.pythonhosted.org/packages/eb/ec/4f12c03c81d3aebaab7fe984d61925d1050f8be6b928ce18f9276441a1f8/anydata-0.1.0.tar.gz
+[2024-04-27 21:41:21] INFO root fetch - processPackages [anydata]: Downloading https://files.pythonhosted.org/packages/bd/c0/05753a315ff103fb628bd223355be24fbb21be293fa3bc5c7dca34c3a78f/anydata-0.1.1.tar.gz
+[2024-04-27 21:41:22] INFO root fetch - processPackages [ypricemagic]: Remove: archive file [/home/abi/fetcher/tmp/ypricemagic-3.4.9.tar.gz]
+[2024-04-27 21:41:22] INFO root fetch - processPackages [ypricemagic]: Remove: archive file [/home/abi/fetcher/tmp/ypricemagic-3.5.0.tar.gz]
+[2024-04-27 21:41:22] INFO root fetch - main [MainThread]: End processing [ypricemagic]: success
+[2024-04-27 21:41:22] INFO root fetch - processPackages [anydata]: executing diffoscope
+[2024-04-27 21:41:22] INFO root fetch - processPackages [anydata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anydata-0.1.0.tar.gz tmp/anydata-0.1.1.tar.gz --markdown 20240427/a/anydata/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-27 21:41:22] INFO root fetch - processPackages [napatrackmater]: Remove: archive file [/home/abi/fetcher/tmp/napatrackmater-5.1.2.tar.gz]
+[2024-04-27 21:41:22] INFO root fetch - processPackages [napatrackmater]: Remove: archive file [/home/abi/fetcher/tmp/napatrackmater-5.1.3.tar.gz]
+[2024-04-27 21:41:22] INFO root fetch - main [MainThread]: End processing [napatrackmater]: success
+[2024-04-27 21:41:22] INFO root fetch - processPackages [anydata]: Remove: archive file [/home/abi/fetcher/tmp/anydata-0.1.0.tar.gz]
+[2024-04-27 21:41:22] INFO root fetch - processPackages [anydata]: Remove: archive file [/home/abi/fetcher/tmp/anydata-0.1.1.tar.gz]
+[2024-04-27 21:41:22] INFO root fetch - main [MainThread]: End processing [anydata]: success
+[2024-04-27 21:41:22] INFO root fetch - main [MainThread]: Store serial: [22961478]
