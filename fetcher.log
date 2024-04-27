@@ -18661,3 +18661,72 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 19:55:32] INFO root fetch - processPackages [htagui]: Remove: archive file [/home/abi/fetcher/tmp/htagui-0.5.4.tar.gz]
 [2024-04-27 19:55:32] INFO root fetch - main [MainThread]: End processing [htagui]: success
 [2024-04-27 19:55:32] INFO root fetch - main [MainThread]: Store serial: [22960881]
+[2024-04-27 19:57:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960881]
+[2024-04-27 19:57:46] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-27 19:57:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: starsol-fastapi-jwt-auth
+[2024-04-27 19:57:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: latch
+[2024-04-27 19:57:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ikabot
+[2024-04-27 19:57:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: telebot-components
+[2024-04-27 19:57:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tradedangerous
+[2024-04-27 19:57:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rms-pdsfile
+[2024-04-27 19:57:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: print-rank-0
+[2024-04-27 19:57:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: datafusion-stubs
+[2024-04-27 19:57:46] INFO root fetch - processPackages [datafusion-stubs]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-27 19:57:46] INFO root fetch - processPackages [telebot-components]: New version: [0.9.0] Old Version: [0.8.9]
+[2024-04-27 19:57:46] INFO root fetch - processPackages [tradedangerous]: New version: [11.0.5] Old Version: [11.0.4]
+[2024-04-27 19:57:46] WARNING root fetch - processPackages [starsol-fastapi-jwt-auth]: Skipping, unable to determine old version
+[2024-04-27 19:57:46] INFO root fetch - main [MainThread]: End processing [starsol-fastapi-jwt-auth] error
+[2024-04-27 19:57:46] INFO root fetch - processPackages [datafusion-stubs]: Downloading https://files.pythonhosted.org/packages/c0/6c/d0a27a1687e0e93d522b922cd7b5d4ebf02d73102895baa0529850d46a98/datafusion_stubs-0.0.2.tar.gz
+[2024-04-27 19:57:46] INFO root fetch - processPackages [telebot-components]: Downloading https://files.pythonhosted.org/packages/3a/da/e1a7548f1c8197cc3f9e3f2536ffb60ff45538ac1b8299ad48cbc0442a41/telebot_components-0.8.9.tar.gz
+[2024-04-27 19:57:46] INFO root fetch - processPackages [rms-pdsfile]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-27 19:57:46] INFO root fetch - processPackages [print-rank-0]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-27 19:57:46] INFO root fetch - processPackages [tradedangerous]: Downloading https://files.pythonhosted.org/packages/3b/67/c48b039d34ee1b49b14afe49dbf419ba4dca02f21b82434ce3626fc02279/tradedangerous-11.0.4.tar.gz
+[2024-04-27 19:57:46] INFO root fetch - processPackages [ikabot]: New version: [7.0.2] Old Version: [7.0.1]
+[2024-04-27 19:57:46] INFO root fetch - processPackages [latch]: New version: [2.9.6] Old Version: [2.9.5]
+[2024-04-27 19:57:47] INFO root fetch - processPackages [rms-pdsfile]: Downloading https://files.pythonhosted.org/packages/36/f8/3f71f578c8ede572a751b0629d8b393324b4f6f6d04824b3df87f03b77ac/rms_pdsfile-0.0.6.tar.gz
+[2024-04-27 19:57:47] INFO root fetch - processPackages [print-rank-0]: Downloading https://files.pythonhosted.org/packages/69/86/fe2991ad0f9cf6a683069b6f3063fef22e0f27633dda0bb778a689112802/print_rank_0-0.1.1.tar.gz
+[2024-04-27 19:57:47] INFO root fetch - processPackages [latch]: Downloading https://files.pythonhosted.org/packages/79/f7/1912dae713dbd539910745289141bab27e2ec23827c1f7112accaf98bdda/latch-2.9.5.tar.gz
+[2024-04-27 19:57:47] INFO root fetch - processPackages [telebot-components]: Downloading https://files.pythonhosted.org/packages/3d/a4/65f9b53df957f27dcf95b9842b09357aea3c698526cb565a12fb29da6d39/telebot_components-0.9.0.tar.gz
+[2024-04-27 19:57:47] INFO root fetch - processPackages [ikabot]: Downloading https://files.pythonhosted.org/packages/0c/c8/cacd2ad9b6630e2b8abeb5e722f59f0353d40482bea2c8887d55423c57ef/ikabot-7.0.1.tar.gz
+[2024-04-27 19:57:47] INFO root fetch - processPackages [datafusion-stubs]: Downloading https://files.pythonhosted.org/packages/4d/ea/48773a82b347aa1d3629dfbe0d7eeea0caec58183fafa2822aca367e3391/datafusion_stubs-0.0.3.tar.gz
+[2024-04-27 19:57:47] INFO root fetch - processPackages [telebot-components]: executing diffoscope
+[2024-04-27 19:57:47] INFO root fetch - processPackages [telebot-components]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telebot_components-0.8.9.tar.gz tmp/telebot_components-0.9.0.tar.gz --markdown 20240427/t/telebot-components/0.8.9-0.9.0/README.md --exclude *.pyd
+[2024-04-27 19:57:47] INFO root fetch - processPackages [tradedangerous]: Downloading https://files.pythonhosted.org/packages/97/88/b4927a80825b48684f363b315da44bb9db682b2ee926fd05b32a2fdafb47/tradedangerous-11.0.5.tar.gz
+[2024-04-27 19:57:47] INFO root fetch - processPackages [datafusion-stubs]: executing diffoscope
+[2024-04-27 19:57:47] INFO root fetch - processPackages [datafusion-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datafusion_stubs-0.0.2.tar.gz tmp/datafusion_stubs-0.0.3.tar.gz --markdown 20240427/d/datafusion-stubs/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-27 19:57:47] INFO root fetch - processPackages [tradedangerous]: executing diffoscope
+[2024-04-27 19:57:47] INFO root fetch - processPackages [tradedangerous]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tradedangerous-11.0.4.tar.gz tmp/tradedangerous-11.0.5.tar.gz --markdown 20240427/t/tradedangerous/11.0.4-11.0.5/README.md --exclude *.pyd
+[2024-04-27 19:57:47] INFO root fetch - processPackages [rms-pdsfile]: Downloading https://files.pythonhosted.org/packages/75/18/070e3c52f464c6d9ab40a3c3f0f124cebebfdf5a1bc384c13315a47edf05/rms_pdsfile-0.0.7.tar.gz
+[2024-04-27 19:57:47] INFO root fetch - processPackages [ikabot]: Downloading https://files.pythonhosted.org/packages/81/df/64149a72389728e047f1d6bde2ae9dbcb28283e2dc78f125f13a3d6cf97c/ikabot-7.0.2.tar.gz
+[2024-04-27 19:57:47] INFO root fetch - processPackages [latch]: Downloading https://files.pythonhosted.org/packages/5e/5a/e91171b6eca0ba929f7259719a3d389fd86242408d94dbf266925a9f4d21/latch-2.9.6.tar.gz
+[2024-04-27 19:57:47] INFO root fetch - processPackages [latch]: executing diffoscope
+[2024-04-27 19:57:47] INFO root fetch - processPackages [latch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latch-2.9.5.tar.gz tmp/latch-2.9.6.tar.gz --markdown 20240427/l/latch/2.9.5-2.9.6/README.md --exclude *.pyd
+[2024-04-27 19:57:47] INFO root fetch - processPackages [rms-pdsfile]: executing diffoscope
+[2024-04-27 19:57:47] INFO root fetch - processPackages [rms-pdsfile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rms_pdsfile-0.0.6.tar.gz tmp/rms_pdsfile-0.0.7.tar.gz --markdown 20240427/r/rms-pdsfile/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-27 19:57:47] INFO root fetch - processPackages [ikabot]: executing diffoscope
+[2024-04-27 19:57:47] INFO root fetch - processPackages [ikabot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ikabot-7.0.1.tar.gz tmp/ikabot-7.0.2.tar.gz --markdown 20240427/i/ikabot/7.0.1-7.0.2/README.md --exclude *.pyd
+[2024-04-27 19:57:47] INFO root fetch - processPackages [print-rank-0]: Downloading https://files.pythonhosted.org/packages/8e/32/914d1aac101add4e2f12a0c98bdf60b394572d8637ce157b4330cb5e7b1f/print_rank_0-0.1.2.tar.gz
+[2024-04-27 19:57:47] INFO root fetch - processPackages [datafusion-stubs]: Remove: archive file [/home/abi/fetcher/tmp/datafusion_stubs-0.0.2.tar.gz]
+[2024-04-27 19:57:47] INFO root fetch - processPackages [datafusion-stubs]: Remove: archive file [/home/abi/fetcher/tmp/datafusion_stubs-0.0.3.tar.gz]
+[2024-04-27 19:57:47] INFO root fetch - main [MainThread]: End processing [datafusion-stubs]: success
+[2024-04-27 19:57:48] INFO root fetch - processPackages [print-rank-0]: executing diffoscope
+[2024-04-27 19:57:48] INFO root fetch - processPackages [print-rank-0]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/print_rank_0-0.1.1.tar.gz tmp/print_rank_0-0.1.2.tar.gz --markdown 20240427/p/print-rank-0/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-27 19:57:48] INFO root fetch - processPackages [telebot-components]: Remove: archive file [/home/abi/fetcher/tmp/telebot_components-0.8.9.tar.gz]
+[2024-04-27 19:57:48] INFO root fetch - processPackages [telebot-components]: Remove: archive file [/home/abi/fetcher/tmp/telebot_components-0.9.0.tar.gz]
+[2024-04-27 19:57:48] INFO root fetch - main [MainThread]: End processing [telebot-components]: success
+[2024-04-27 19:57:48] INFO root fetch - processPackages [tradedangerous]: Remove: archive file [/home/abi/fetcher/tmp/tradedangerous-11.0.4.tar.gz]
+[2024-04-27 19:57:48] INFO root fetch - processPackages [tradedangerous]: Remove: archive file [/home/abi/fetcher/tmp/tradedangerous-11.0.5.tar.gz]
+[2024-04-27 19:57:48] INFO root fetch - main [MainThread]: End processing [tradedangerous]: success
+[2024-04-27 19:57:48] INFO root fetch - processPackages [latch]: Remove: archive file [/home/abi/fetcher/tmp/latch-2.9.5.tar.gz]
+[2024-04-27 19:57:48] INFO root fetch - processPackages [latch]: Remove: archive file [/home/abi/fetcher/tmp/latch-2.9.6.tar.gz]
+[2024-04-27 19:57:48] INFO root fetch - main [MainThread]: End processing [latch]: success
+[2024-04-27 19:57:48] INFO root fetch - processPackages [print-rank-0]: Remove: archive file [/home/abi/fetcher/tmp/print_rank_0-0.1.1.tar.gz]
+[2024-04-27 19:57:48] INFO root fetch - processPackages [print-rank-0]: Remove: archive file [/home/abi/fetcher/tmp/print_rank_0-0.1.2.tar.gz]
+[2024-04-27 19:57:48] INFO root fetch - main [MainThread]: End processing [print-rank-0]: success
+[2024-04-27 19:57:48] INFO root fetch - processPackages [ikabot]: Remove: archive file [/home/abi/fetcher/tmp/ikabot-7.0.1.tar.gz]
+[2024-04-27 19:57:48] INFO root fetch - processPackages [ikabot]: Remove: archive file [/home/abi/fetcher/tmp/ikabot-7.0.2.tar.gz]
+[2024-04-27 19:57:48] INFO root fetch - main [MainThread]: End processing [ikabot]: success
+[2024-04-27 19:57:48] INFO root fetch - processPackages [rms-pdsfile]: Remove: archive file [/home/abi/fetcher/tmp/rms_pdsfile-0.0.6.tar.gz]
+[2024-04-27 19:57:48] INFO root fetch - processPackages [rms-pdsfile]: Remove: archive file [/home/abi/fetcher/tmp/rms_pdsfile-0.0.7.tar.gz]
+[2024-04-27 19:57:48] INFO root fetch - main [MainThread]: End processing [rms-pdsfile]: success
+[2024-04-27 19:57:48] INFO root fetch - main [MainThread]: Store serial: [22960914]
