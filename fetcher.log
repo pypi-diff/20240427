@@ -12159,3 +12159,27 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 12:34:40] INFO root fetch - processPackages [furo]: Remove: archive file [/home/abi/fetcher/tmp/furo-2024.4.27.tar.gz]
 [2024-04-27 12:34:40] INFO root fetch - main [MainThread]: End processing [furo]: success
 [2024-04-27 12:34:40] INFO root fetch - main [MainThread]: Store serial: [22957971]
+[2024-04-27 12:36:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957971]
+[2024-04-27 12:36:48] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 12:36:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: adbpy3
+[2024-04-27 12:36:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gitlabform
+[2024-04-27 12:36:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: polyply
+[2024-04-27 12:36:48] WARNING root fetch - processPackages [adbpy3]: Skipping, unable to determine old version
+[2024-04-27 12:36:48] INFO root fetch - main [MainThread]: End processing [adbpy3] error
+[2024-04-27 12:36:48] INFO root fetch - processPackages [gitlabform]: New version: [3.9.7] Old Version: [3.9.6]
+[2024-04-27 12:36:48] INFO root fetch - processPackages [polyply]: New version: [1.7.0] Old Version: [1.6.1]
+[2024-04-27 12:36:49] INFO root fetch - processPackages [polyply]: Downloading https://files.pythonhosted.org/packages/af/d6/fa0cd035f62121f0257c1c7a8c12d5ab2db6bea0657a9d0a97c248e25d89/polyply-1.6.1.tar.gz
+[2024-04-27 12:36:49] INFO root fetch - processPackages [gitlabform]: Downloading https://files.pythonhosted.org/packages/8e/df/fecdfe198343b7c466397d7d836e8ece2914c76b64f2fd2ece7483badef3/gitlabform-3.9.6.tar.gz
+[2024-04-27 12:36:49] INFO root fetch - processPackages [gitlabform]: Downloading https://files.pythonhosted.org/packages/00/49/cff53f84ca94edda5f0d60cdc531752bc0aa36fb710fed4c0e8255f96da8/gitlabform-3.9.7.tar.gz
+[2024-04-27 12:36:49] INFO root fetch - processPackages [polyply]: Downloading https://files.pythonhosted.org/packages/16/52/da75ed492dcb85008d81e9d06106e49b42a22da69c9200f4074be378b59c/polyply-1.7.0.tar.gz
+[2024-04-27 12:36:49] INFO root fetch - processPackages [gitlabform]: executing diffoscope
+[2024-04-27 12:36:49] INFO root fetch - processPackages [gitlabform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitlabform-3.9.6.tar.gz tmp/gitlabform-3.9.7.tar.gz --markdown 20240427/g/gitlabform/3.9.6-3.9.7/README.md --exclude *.pyd
+[2024-04-27 12:36:49] INFO root fetch - processPackages [polyply]: executing diffoscope
+[2024-04-27 12:36:49] INFO root fetch - processPackages [polyply]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polyply-1.6.1.tar.gz tmp/polyply-1.7.0.tar.gz --markdown 20240427/p/polyply/1.6.1-1.7.0/README.md --exclude *.pyd
+[2024-04-27 12:36:50] INFO root fetch - processPackages [gitlabform]: Remove: archive file [/home/abi/fetcher/tmp/gitlabform-3.9.6.tar.gz]
+[2024-04-27 12:36:50] INFO root fetch - processPackages [gitlabform]: Remove: archive file [/home/abi/fetcher/tmp/gitlabform-3.9.7.tar.gz]
+[2024-04-27 12:36:50] INFO root fetch - main [MainThread]: End processing [gitlabform]: success
+[2024-04-27 12:36:51] INFO root fetch - processPackages [polyply]: Remove: archive file [/home/abi/fetcher/tmp/polyply-1.6.1.tar.gz]
+[2024-04-27 12:36:51] INFO root fetch - processPackages [polyply]: Remove: archive file [/home/abi/fetcher/tmp/polyply-1.7.0.tar.gz]
+[2024-04-27 12:36:51] INFO root fetch - main [MainThread]: End processing [polyply]: success
+[2024-04-27 12:36:51] INFO root fetch - main [MainThread]: Store serial: [22957980]
