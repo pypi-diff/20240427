@@ -18464,3 +18464,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 19:44:11] INFO root fetch - processPackages [EcoStock]: Remove: archive file [/home/abi/fetcher/tmp/EcoStock-0.2.tar.gz]
 [2024-04-27 19:44:11] INFO root fetch - main [MainThread]: End processing [EcoStock]: success
 [2024-04-27 19:44:11] INFO root fetch - main [MainThread]: Store serial: [22960691]
+[2024-04-27 19:46:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960691]
+[2024-04-27 19:46:25] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 19:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flet-contrib-core
+[2024-04-27 19:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flet-contrib-embed
+[2024-04-27 19:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flet-contrib-pyodide
+[2024-04-27 19:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flet-contrib-runtime
+[2024-04-27 19:46:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: flet-contribute
+[2024-04-27 19:46:25] WARNING root fetch - processPackages [flet-contrib-runtime]: Skipping, unable to determine old version
+[2024-04-27 19:46:25] INFO root fetch - main [MainThread]: End processing [flet-contrib-runtime] error
+[2024-04-27 19:46:25] WARNING root fetch - processPackages [flet-contrib-pyodide]: Skipping, unable to determine old version
+[2024-04-27 19:46:25] INFO root fetch - main [MainThread]: End processing [flet-contrib-pyodide] error
+[2024-04-27 19:46:25] WARNING root fetch - processPackages [flet-contrib-embed]: Skipping, unable to determine old version
+[2024-04-27 19:46:25] INFO root fetch - processPackages [flet-contrib-core]: New version: [2024.4.27.1744] Old Version: [2024.4.27.1724]
+[2024-04-27 19:46:25] INFO root fetch - main [MainThread]: End processing [flet-contrib-embed] error
+[2024-04-27 19:46:25] WARNING root fetch - processPackages [flet-contribute]: Skipping, unable to determine old version
+[2024-04-27 19:46:25] INFO root fetch - main [MainThread]: End processing [flet-contribute] error
+[2024-04-27 19:46:25] INFO root fetch - processPackages [flet-contrib-core]: Downloading https://files.pythonhosted.org/packages/63/b4/668ad7ee81ab305a7b6db73e633159fbab1b1d54a602c64739c700437d12/flet_contrib_core-2024.4.27.1724-py3-none-any.whl
+[2024-04-27 19:46:26] INFO root fetch - processPackages [flet-contrib-core]: Downloading https://files.pythonhosted.org/packages/4d/f5/3e6bed1aefc61141348150afed357763505f75159072784142ea25a25855/flet_contrib_core-2024.4.27.1744.tar.gz
+[2024-04-27 19:46:26] INFO root fetch - processPackages [flet-contrib-core]: executing diffoscope
+[2024-04-27 19:46:26] INFO root fetch - processPackages [flet-contrib-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_contrib_core-2024.4.27.1724-py3-none-any.whl.zip tmp/flet_contrib_core-2024.4.27.1744.tar.gz --markdown 20240427/f/flet-contrib-core/2024.4.27.1724-2024.4.27.1744/README.md --exclude *.pyd
+[2024-04-27 19:46:27] INFO root fetch - processPackages [flet-contrib-core]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_core-2024.4.27.1724-py3-none-any.whl.zip]
+[2024-04-27 19:46:27] INFO root fetch - processPackages [flet-contrib-core]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_core-2024.4.27.1744.tar.gz]
+[2024-04-27 19:46:27] INFO root fetch - main [MainThread]: End processing [flet-contrib-core]: success
+[2024-04-27 19:46:27] INFO root fetch - main [MainThread]: Store serial: [22960710]
