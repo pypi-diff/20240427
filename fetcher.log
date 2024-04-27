@@ -6873,3 +6873,18 @@ EOFError: EOF read where object expected
 [2024-04-27 03:50:13] INFO root fetch - processPackages [seqlog]: Remove: archive file [/home/abi/fetcher/tmp/seqlog-0.3.9-py2.py3-none-any.whl.zip]
 [2024-04-27 03:50:13] INFO root fetch - main [MainThread]: End processing [seqlog]: success
 [2024-04-27 03:50:13] INFO root fetch - main [MainThread]: Store serial: [22955936]
+[2024-04-27 03:52:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22955936]
+[2024-04-27 03:52:23] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 03:52:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bioregistry
+[2024-04-27 03:52:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mkdocs-sample-plugin
+[2024-04-27 03:52:23] INFO root fetch - processPackages [bioregistry]: New version: [0.9.97] Old Version: [0.9.96]
+[2024-04-27 03:52:23] WARNING root fetch - processPackages [mkdocs-sample-plugin]: Skipping, unable to determine old version
+[2024-04-27 03:52:23] INFO root fetch - main [MainThread]: End processing [mkdocs-sample-plugin] error
+[2024-04-27 03:52:23] INFO root fetch - processPackages [bioregistry]: Downloading https://files.pythonhosted.org/packages/48/3a/7ab0975f6c89bea709b279c9e39ef3be5439cfec168dbf3a614dac397663/bioregistry-0.9.96.tar.gz
+[2024-04-27 03:52:24] INFO root fetch - processPackages [bioregistry]: Downloading https://files.pythonhosted.org/packages/57/7b/30897578f436658ac1f334eb6e9f96ad0bacb0a54846670620df53a5a374/bioregistry-0.9.97.tar.gz
+[2024-04-27 03:52:24] INFO root fetch - processPackages [bioregistry]: executing diffoscope
+[2024-04-27 03:52:24] INFO root fetch - processPackages [bioregistry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioregistry-0.9.96.tar.gz tmp/bioregistry-0.9.97.tar.gz --markdown 20240427/b/bioregistry/0.9.96-0.9.97/README.md --exclude *.pyd
+[2024-04-27 03:53:31] INFO root fetch - processPackages [bioregistry]: Remove: archive file [/home/abi/fetcher/tmp/bioregistry-0.9.96.tar.gz]
+[2024-04-27 03:53:31] INFO root fetch - processPackages [bioregistry]: Remove: archive file [/home/abi/fetcher/tmp/bioregistry-0.9.97.tar.gz]
+[2024-04-27 03:53:31] INFO root fetch - main [MainThread]: End processing [bioregistry]: success
+[2024-04-27 03:53:31] INFO root fetch - main [MainThread]: Store serial: [22955948]
