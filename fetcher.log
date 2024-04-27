@@ -19569,3 +19569,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 21:00:43] INFO root fetch - processPackages [pymap]: Remove: archive file [/home/abi/fetcher/tmp/pymap-0.9.7.tar.gz]
 [2024-04-27 21:00:43] INFO root fetch - main [MainThread]: End processing [pymap]: success
 [2024-04-27 21:00:43] INFO root fetch - main [MainThread]: Store serial: [22961211]
+[2024-04-27 21:02:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961211]
+[2024-04-27 21:02:56] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 21:02:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: github-provenance-demo
+[2024-04-27 21:02:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: croning
+[2024-04-27 21:02:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: FrustrationDynamiX
+[2024-04-27 21:02:57] INFO root fetch - processPackages [FrustrationDynamiX]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-04-27 21:02:57] INFO root fetch - processPackages [FrustrationDynamiX]: Downloading https://files.pythonhosted.org/packages/01/ef/93f2259598b493e25df4501706a516856c0b72210f9913d03956ef1a7cc5/FrustrationDynamiX-0.2.4.tar.gz
+[2024-04-27 21:02:57] WARNING root fetch - processPackages [croning]: Skipping, unable to determine old version
+[2024-04-27 21:02:57] INFO root fetch - main [MainThread]: End processing [croning] error
+[2024-04-27 21:02:57] INFO root fetch - processPackages [github-provenance-demo]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 21:02:57] INFO root fetch - processPackages [github-provenance-demo]: Downloading https://files.pythonhosted.org/packages/63/88/b79fa31265e12b3e48dbe564934d180c081965f8e872b0c652173f1b9eb0/github-provenance-demo-0.0.8.tar.gz
+[2024-04-27 21:02:57] INFO root fetch - processPackages [FrustrationDynamiX]: Downloading https://files.pythonhosted.org/packages/c7/23/0f7761475ef735b89987e112aabf0c49c8c59fb6f95cf734a7cbae439832/FrustrationDynamiX-0.2.5.tar.gz
+[2024-04-27 21:02:57] INFO root fetch - processPackages [FrustrationDynamiX]: executing diffoscope
+[2024-04-27 21:02:57] INFO root fetch - processPackages [FrustrationDynamiX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FrustrationDynamiX-0.2.4.tar.gz tmp/FrustrationDynamiX-0.2.5.tar.gz --markdown 20240427/F/FrustrationDynamiX/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-04-27 21:02:57] INFO root fetch - processPackages [github-provenance-demo]: Downloading https://files.pythonhosted.org/packages/43/50/ed7376facac63060a3b96370349a75c57b9439747c84443e817348a52b92/github-provenance-demo-0.0.9.tar.gz
+[2024-04-27 21:02:58] INFO root fetch - processPackages [github-provenance-demo]: executing diffoscope
+[2024-04-27 21:02:58] INFO root fetch - processPackages [github-provenance-demo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/github-provenance-demo-0.0.8.tar.gz tmp/github-provenance-demo-0.0.9.tar.gz --markdown 20240427/g/github-provenance-demo/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 21:02:58] INFO root fetch - processPackages [FrustrationDynamiX]: Remove: archive file [/home/abi/fetcher/tmp/FrustrationDynamiX-0.2.4.tar.gz]
+[2024-04-27 21:02:58] INFO root fetch - processPackages [FrustrationDynamiX]: Remove: archive file [/home/abi/fetcher/tmp/FrustrationDynamiX-0.2.5.tar.gz]
+[2024-04-27 21:02:58] INFO root fetch - main [MainThread]: End processing [FrustrationDynamiX]: success
+[2024-04-27 21:02:58] INFO root fetch - processPackages [github-provenance-demo]: Remove: archive file [/home/abi/fetcher/tmp/github-provenance-demo-0.0.8.tar.gz]
+[2024-04-27 21:02:58] INFO root fetch - processPackages [github-provenance-demo]: Remove: archive file [/home/abi/fetcher/tmp/github-provenance-demo-0.0.9.tar.gz]
+[2024-04-27 21:02:58] INFO root fetch - main [MainThread]: End processing [github-provenance-demo]: success
+[2024-04-27 21:02:58] INFO root fetch - main [MainThread]: Store serial: [22961222]
