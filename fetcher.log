@@ -8749,3 +8749,15 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 06:47:54] WARNING root fetch - processPackages [mllm]: Skipping, unable to determine old version
 [2024-04-27 06:47:54] INFO root fetch - main [MainThread]: End processing [mllm] error
 [2024-04-27 06:47:54] INFO root fetch - main [MainThread]: Store serial: [22956516]
+[2024-04-27 06:49:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956516]
+[2024-04-27 06:50:02] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 06:50:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: whatshow-toolbox
+[2024-04-27 06:50:03] INFO root fetch - processPackages [whatshow-toolbox]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-27 06:50:03] INFO root fetch - processPackages [whatshow-toolbox]: Downloading https://files.pythonhosted.org/packages/a1/ac/513b275cf05020b238267e299bd3499022740a6b21f2201042ecbad877d9/whatshow_toolbox-1.0.2.tar.gz
+[2024-04-27 06:50:03] INFO root fetch - processPackages [whatshow-toolbox]: Downloading https://files.pythonhosted.org/packages/50/7c/af46d5e712e34f2eb603522654c42f0f53d5b75b21d098551cb3e5633e2f/whatshow_toolbox-1.0.3.tar.gz
+[2024-04-27 06:50:03] INFO root fetch - processPackages [whatshow-toolbox]: executing diffoscope
+[2024-04-27 06:50:03] INFO root fetch - processPackages [whatshow-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whatshow_toolbox-1.0.2.tar.gz tmp/whatshow_toolbox-1.0.3.tar.gz --markdown 20240427/w/whatshow-toolbox/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-04-27 06:50:04] INFO root fetch - processPackages [whatshow-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/whatshow_toolbox-1.0.2.tar.gz]
+[2024-04-27 06:50:04] INFO root fetch - processPackages [whatshow-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/whatshow_toolbox-1.0.3.tar.gz]
+[2024-04-27 06:50:04] INFO root fetch - main [MainThread]: End processing [whatshow-toolbox]: success
+[2024-04-27 06:50:04] INFO root fetch - main [MainThread]: Store serial: [22956519]
