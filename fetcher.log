@@ -2759,3 +2759,9 @@ EOFError: EOF read where object expected
 [2024-04-27 02:37:15] INFO root fetch - processPackages [granian]: Remove: archive file [/home/abi/fetcher/tmp/granian-1.3.0-pp38-pypy38_pp73-musllinux_1_1_aarch64.whl.zip]
 [2024-04-27 02:37:15] INFO root fetch - main [MainThread]: End processing [granian]: success
 [2024-04-27 02:37:15] INFO root fetch - main [MainThread]: Store serial: [22954444]
+[2024-04-27 02:39:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22954444]
+[2024-04-27 02:39:23] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 02:39:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyaair
+[2024-04-27 02:39:23] WARNING root fetch - processPackages [pyaair]: Skipping, unable to determine old version
+[2024-04-27 02:39:23] INFO root fetch - main [MainThread]: End processing [pyaair] error
+[2024-04-27 02:39:23] INFO root fetch - main [MainThread]: Store serial: [22954460]
