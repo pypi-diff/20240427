@@ -14152,3 +14152,96 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 14:54:27] INFO root fetch - main [MainThread]: End processing [openctp-ctp-cp]: success
 [2024-04-27 14:54:27] INFO root fetch - main [MainThread]: End processing [openctp-ctp-cp]: success
 [2024-04-27 14:54:27] INFO root fetch - main [MainThread]: Store serial: [22958777]
+[2024-04-27 14:56:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958777]
+[2024-04-27 14:56:53] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2024-04-27 14:56:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: litellm
+[2024-04-27 14:56:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yeref
+[2024-04-27 14:56:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ttpdant
+[2024-04-27 14:56:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: openctp-ctp-cp
+[2024-04-27 14:56:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: netsome
+[2024-04-27 14:56:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: praanscribe
+[2024-04-27 14:56:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyHana
+[2024-04-27 14:56:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: openctp-ctp-cp
+[2024-04-27 14:56:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: openctp-ctp-cp
+[2024-04-27 14:56:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pyrasp
+[2024-04-27 14:56:53] INFO root fetch - processPackages [netsome]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-04-27 14:56:53] INFO root fetch - processPackages [openctp-ctp-cp]: New version: [6.7.0] Old Version: [6.6.9]
+[2024-04-27 14:56:53] INFO root fetch - processPackages [openctp-ctp-cp]: New version: [6.7.0] Old Version: [6.6.9]
+[2024-04-27 14:56:53] INFO root fetch - processPackages [pyHana]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 14:56:53] INFO root fetch - processPackages [openctp-ctp-cp]: New version: [6.7.0] Old Version: [6.6.9]
+[2024-04-27 14:56:53] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-27 14:56:53] WARNING root fetch - processPackages [praanscribe]: Skipping, unable to determine old version
+[2024-04-27 14:56:53] INFO root fetch - processPackages [praanscribe]: Start processing: nlpswift
+[2024-04-27 14:56:53] INFO root fetch - main [MainThread]: End processing [praanscribe] error
+[2024-04-27 14:56:53] INFO root fetch - processPackages [litellm]: New version: [1.9.dev0] Old Version: [1.9.5]
+[2024-04-27 14:56:53] WARNING root fetch - processPackages [ttpdant]: Skipping, unable to determine old version
+[2024-04-27 14:56:53] INFO root fetch - processPackages [ttpdant]: Start processing: df2img
+[2024-04-27 14:56:53] INFO root fetch - main [MainThread]: End processing [ttpdant] error
+[2024-04-27 14:56:53] INFO root fetch - processPackages [pyrasp]: New version: [0.6.2] Old Version: [0.6.1rc2]
+[2024-04-27 14:56:53] INFO root fetch - processPackages [netsome]: Downloading https://files.pythonhosted.org/packages/07/cf/ec36d9c9dc961e3ce2648dc5d96dbbd661988a2212ab0c5fc5747e2f281b/netsome-0.3.3.tar.gz
+[2024-04-27 14:56:53] INFO root fetch - processPackages [openctp-ctp-cp]: Downloading https://files.pythonhosted.org/packages/2b/84/2b11e69f4b000c7e6c2b0fd2ff51fce0f710e128981fbcd44762c279aae7/openctp_ctp_cp-6.6.9-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-27 14:56:53] WARNING root fetch - processPackages [nlpswift]: Skipping, unable to determine old version
+[2024-04-27 14:56:53] INFO root fetch - processPackages [nlpswift]: Start processing: showCV
+[2024-04-27 14:56:53] INFO root fetch - main [MainThread]: End processing [nlpswift] error
+[2024-04-27 14:56:53] INFO root fetch - processPackages [pyHana]: Downloading https://files.pythonhosted.org/packages/f7/bd/4413dde8ffefdc3715bfdb0e2789860ce6abd12c900ecd9bdbf3df4da977/pyHana-0.0.8-py3-none-any.whl
+[2024-04-27 14:56:54] INFO root fetch - processPackages [openctp-ctp-cp]: Downloading https://files.pythonhosted.org/packages/2b/84/2b11e69f4b000c7e6c2b0fd2ff51fce0f710e128981fbcd44762c279aae7/openctp_ctp_cp-6.6.9-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-27 14:56:54] INFO root fetch - processPackages [openctp-ctp-cp]: Downloading https://files.pythonhosted.org/packages/2b/84/2b11e69f4b000c7e6c2b0fd2ff51fce0f710e128981fbcd44762c279aae7/openctp_ctp_cp-6.6.9-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-27 14:56:54] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-04-27 14:56:54] WARNING root fetch - processPackages [showCV]: Skipping, unable to determine old version
+[2024-04-27 14:56:54] INFO root fetch - main [MainThread]: End processing [showCV] error
+[2024-04-27 14:56:54] INFO root fetch - processPackages [df2img]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-27 14:56:54] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/38/f3/1cbeaf4074e7b284cd140263ff165948d8f4cc8f5dd72c89be43a0469387/litellm-1.9.5.tar.gz
+[2024-04-27 14:56:54] INFO root fetch - processPackages [pyrasp]: Downloading https://files.pythonhosted.org/packages/be/a7/01eaf79b80d993a63528dfe46350d509f2f22659e5b129d4f91c2a3f2d56/pyrasp-0.6.1rc2.tar.gz
+[2024-04-27 14:56:54] INFO root fetch - processPackages [netsome]: Downloading https://files.pythonhosted.org/packages/3e/31/fa60278bcb16cea43607caa645ee24c9c5631ed9dd19680be6b6ae66b9db/netsome-0.3.4.tar.gz
+[2024-04-27 14:56:54] INFO root fetch - processPackages [pyHana]: Downloading https://files.pythonhosted.org/packages/bf/0e/4838574234fed0b97643b3f635c68d512d1bed48aa073d330aae8d2a612b/pyHana-0.0.9-py3-none-any.whl
+[2024-04-27 14:56:54] INFO root fetch - processPackages [df2img]: Downloading https://files.pythonhosted.org/packages/02/71/eeda1125f9852509ab1f829833571d9f24e83f8174203241b598696a5633/df2img-0.2.8.tar.gz
+[2024-04-27 14:56:54] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-04-27 14:56:54] INFO root fetch - processPackages [netsome]: executing diffoscope
+[2024-04-27 14:56:54] INFO root fetch - processPackages [netsome]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netsome-0.3.3.tar.gz tmp/netsome-0.3.4.tar.gz --markdown 20240427/n/netsome/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-04-27 14:56:54] INFO root fetch - processPackages [pyHana]: executing diffoscope
+[2024-04-27 14:56:54] INFO root fetch - processPackages [pyHana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyHana-0.0.8-py3-none-any.whl.zip tmp/pyHana-0.0.9-py3-none-any.whl.zip --markdown 20240427/p/pyHana/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 14:56:54] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-04-27 14:56:54] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240427/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-27 14:56:54] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/ad/6c/162b83e9cf68f5a94c30153e835414c3ee11c8602ffaacc9a032851dfa26/litellm-1.9.dev0.tar.gz
+[2024-04-27 14:56:54] INFO root fetch - processPackages [pyrasp]: Downloading https://files.pythonhosted.org/packages/ec/21/20a209a943cdd5ec574d18c9a85168ab8741c1fa20a70c34a0d29d92533c/pyrasp-0.6.2.tar.gz
+[2024-04-27 14:56:54] INFO root fetch - processPackages [openctp-ctp-cp]: Downloading https://files.pythonhosted.org/packages/4a/df/e7dd3fdaaf54ac4bb83b52d507524d7ee478d6f9b4b25a40d64acb03cdba/openctp_ctp_cp-6.7.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-27 14:56:54] INFO root fetch - processPackages [openctp-ctp-cp]: Downloading https://files.pythonhosted.org/packages/4a/df/e7dd3fdaaf54ac4bb83b52d507524d7ee478d6f9b4b25a40d64acb03cdba/openctp_ctp_cp-6.7.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-27 14:56:54] INFO root fetch - processPackages [openctp-ctp-cp]: Downloading https://files.pythonhosted.org/packages/4a/df/e7dd3fdaaf54ac4bb83b52d507524d7ee478d6f9b4b25a40d64acb03cdba/openctp_ctp_cp-6.7.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-27 14:56:54] INFO root fetch - processPackages [df2img]: Downloading https://files.pythonhosted.org/packages/93/48/8c95b926658a33ea6bc490828b412081f51d7fb352090694e408fc5e0066/df2img-0.2.9.tar.gz
+[2024-04-27 14:56:54] INFO root fetch - processPackages [litellm]: executing diffoscope
+[2024-04-27 14:56:54] INFO root fetch - processPackages [litellm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/litellm-1.9.5.tar.gz tmp/litellm-1.9.dev0.tar.gz --markdown 20240427/l/litellm/1.9.5-1.9.dev0/README.md --exclude *.pyd
+[2024-04-27 14:56:54] INFO root fetch - processPackages [pyrasp]: executing diffoscope
+[2024-04-27 14:56:54] INFO root fetch - processPackages [pyrasp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrasp-0.6.1rc2.tar.gz tmp/pyrasp-0.6.2.tar.gz --markdown 20240427/p/pyrasp/0.6.1rc2-0.6.2/README.md --exclude *.pyd
+[2024-04-27 14:56:54] INFO root fetch - processPackages [df2img]: executing diffoscope
+[2024-04-27 14:56:54] INFO root fetch - processPackages [df2img]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/df2img-0.2.8.tar.gz tmp/df2img-0.2.9.tar.gz --markdown 20240427/d/df2img/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-27 14:56:55] INFO root fetch - processPackages [openctp-ctp-cp]: executing diffoscope
+[2024-04-27 14:56:55] INFO root fetch - processPackages [openctp-ctp-cp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openctp_ctp_cp-6.6.9-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/openctp_ctp_cp-6.7.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240427/o/openctp-ctp-cp/6.6.9-6.7.0/README.md --exclude *.pyd
+[2024-04-27 14:56:55] INFO root fetch - processPackages [netsome]: Remove: archive file [/home/abi/fetcher/tmp/netsome-0.3.3.tar.gz]
+[2024-04-27 14:56:55] INFO root fetch - processPackages [netsome]: Remove: archive file [/home/abi/fetcher/tmp/netsome-0.3.4.tar.gz]
+[2024-04-27 14:56:55] INFO root fetch - main [MainThread]: End processing [netsome]: success
+[2024-04-27 14:56:55] INFO root fetch - processPackages [openctp-ctp-cp]: executing diffoscope
+[2024-04-27 14:56:55] INFO root fetch - processPackages [openctp-ctp-cp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openctp_ctp_cp-6.6.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/openctp_ctp_cp-6.7.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240427/o/openctp-ctp-cp/6.6.9-6.7.0/README.md --exclude *.pyd
+[2024-04-27 14:56:55] INFO root fetch - processPackages [openctp-ctp-cp]: executing diffoscope
+[2024-04-27 14:56:55] INFO root fetch - processPackages [openctp-ctp-cp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openctp_ctp_cp-6.6.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/openctp_ctp_cp-6.7.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240427/o/openctp-ctp-cp/6.6.9-6.7.0/README.md --exclude *.pyd
+[2024-04-27 14:56:55] INFO root fetch - processPackages [pyHana]: Remove: archive file [/home/abi/fetcher/tmp/pyHana-0.0.8-py3-none-any.whl.zip]
+[2024-04-27 14:56:55] INFO root fetch - processPackages [pyHana]: Remove: archive file [/home/abi/fetcher/tmp/pyHana-0.0.9-py3-none-any.whl.zip]
+[2024-04-27 14:56:55] INFO root fetch - main [MainThread]: End processing [pyHana]: success
+[2024-04-27 14:56:55] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-04-27 14:56:55] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-04-27 14:56:55] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-04-27 14:56:55] INFO root fetch - processPackages [df2img]: Remove: archive file [/home/abi/fetcher/tmp/df2img-0.2.8.tar.gz]
+[2024-04-27 14:56:55] INFO root fetch - processPackages [df2img]: Remove: archive file [/home/abi/fetcher/tmp/df2img-0.2.9.tar.gz]
+[2024-04-27 14:56:55] INFO root fetch - main [MainThread]: End processing [df2img]: success
+[2024-04-27 14:56:55] INFO root fetch - processPackages [pyrasp]: Remove: archive file [/home/abi/fetcher/tmp/pyrasp-0.6.1rc2.tar.gz]
+[2024-04-27 14:56:55] INFO root fetch - processPackages [pyrasp]: Remove: archive file [/home/abi/fetcher/tmp/pyrasp-0.6.2.tar.gz]
+[2024-04-27 14:56:55] INFO root fetch - main [MainThread]: End processing [pyrasp]: success
+[2024-04-27 14:56:56] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.5.tar.gz]
+[2024-04-27 14:56:56] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.dev0.tar.gz]
+[2024-04-27 14:56:56] INFO root fetch - main [MainThread]: End processing [litellm]: success
+[2024-04-27 14:58:52] INFO root fetch - processPackages [openctp-ctp-cp]: Remove: archive file [/home/abi/fetcher/tmp/openctp_ctp_cp-6.6.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-27 14:58:52] INFO root fetch - processPackages [openctp-ctp-cp]: Remove: archive file [/home/abi/fetcher/tmp/openctp_ctp_cp-6.7.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-27 14:58:52] INFO root fetch - main [MainThread]: End processing [openctp-ctp-cp]: success
+[2024-04-27 14:58:55] INFO root fetch - main [MainThread]: End processing [openctp-ctp-cp]: success
+[2024-04-27 14:58:55] INFO root fetch - processPackages [openctp-ctp-cp]: Remove: archive file [/home/abi/fetcher/tmp/openctp_ctp_cp-6.6.9-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-27 14:58:55] INFO root fetch - main [MainThread]: End processing [openctp-ctp-cp]: success
+[2024-04-27 14:58:55] INFO root fetch - main [MainThread]: Store serial: [22958849]
