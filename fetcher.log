@@ -19456,3 +19456,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 20:49:28] INFO root fetch - processPackages [zato-apitest]: Remove: archive file [/home/abi/fetcher/tmp/zato-apitest-24.1.9.tar.gz]
 [2024-04-27 20:49:28] INFO root fetch - main [MainThread]: End processing [zato-apitest]: success
 [2024-04-27 20:49:28] INFO root fetch - main [MainThread]: Store serial: [22961171]
+[2024-04-27 20:51:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961171]
+[2024-04-27 20:51:41] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 20:51:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: petcmd
+[2024-04-27 20:51:41] INFO root fetch - processPackages [petcmd]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-04-27 20:51:41] INFO root fetch - processPackages [petcmd]: Downloading https://files.pythonhosted.org/packages/f4/b3/1ec245ed088ef5954cf744d530f8c23163d2c6f2170d69e41823c0ed6b9f/petcmd-0.2.7.tar.gz
+[2024-04-27 20:51:42] INFO root fetch - processPackages [petcmd]: Downloading https://files.pythonhosted.org/packages/5c/21/4b259b4c36725d7caab0aba8204968b30138c096f8f3d1fa32c537e8d3b6/petcmd-0.2.8.tar.gz
+[2024-04-27 20:51:42] INFO root fetch - processPackages [petcmd]: executing diffoscope
+[2024-04-27 20:51:42] INFO root fetch - processPackages [petcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/petcmd-0.2.7.tar.gz tmp/petcmd-0.2.8.tar.gz --markdown 20240427/p/petcmd/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-04-27 20:51:42] INFO root fetch - processPackages [petcmd]: Remove: archive file [/home/abi/fetcher/tmp/petcmd-0.2.7.tar.gz]
+[2024-04-27 20:51:42] INFO root fetch - processPackages [petcmd]: Remove: archive file [/home/abi/fetcher/tmp/petcmd-0.2.8.tar.gz]
+[2024-04-27 20:51:42] INFO root fetch - main [MainThread]: End processing [petcmd]: success
+[2024-04-27 20:51:42] INFO root fetch - main [MainThread]: Store serial: [22961175]
