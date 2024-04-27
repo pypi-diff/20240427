@@ -17600,3 +17600,50 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 18:43:51] INFO root fetch - processPackages [python-easyverein]: Remove: archive file [/home/abi/fetcher/tmp/python_easyverein-0.2.7.tar.gz]
 [2024-04-27 18:43:51] INFO root fetch - main [MainThread]: End processing [python-easyverein]: success
 [2024-04-27 18:43:51] INFO root fetch - main [MainThread]: Store serial: [22960243]
+[2024-04-27 18:46:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960243]
+[2024-04-27 18:46:04] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-27 18:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shelloracle
+[2024-04-27 18:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: swiss-army-man
+[2024-04-27 18:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ciscoconfparse2
+[2024-04-27 18:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: webdriver-browser
+[2024-04-27 18:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: SimpleSchemaGenerator
+[2024-04-27 18:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: datafusion-stubs
+[2024-04-27 18:46:05] INFO root fetch - processPackages [swiss-army-man]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-04-27 18:46:05] INFO root fetch - processPackages [shelloracle]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-04-27 18:46:05] WARNING root fetch - processPackages [datafusion-stubs]: Skipping, unable to determine old version
+[2024-04-27 18:46:05] INFO root fetch - main [MainThread]: End processing [datafusion-stubs] error
+[2024-04-27 18:46:05] INFO root fetch - processPackages [ciscoconfparse2]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-04-27 18:46:05] INFO root fetch - processPackages [webdriver-browser]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-27 18:46:05] INFO root fetch - processPackages [swiss-army-man]: Downloading https://files.pythonhosted.org/packages/48/1f/294f600f1fa28cd18c161440c03fb3b30e0c131a86552d9308f61aa90137/swiss_army_man-0.1.7.tar.gz
+[2024-04-27 18:46:05] INFO root fetch - processPackages [shelloracle]: Downloading https://files.pythonhosted.org/packages/f7/06/f720ad6faabe261cd2ae8bd03c4c95ea36672905422ecd31b612bd154efb/shelloracle-1.1.0.tar.gz
+[2024-04-27 18:46:05] INFO root fetch - processPackages [SimpleSchemaGenerator]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-27 18:46:05] INFO root fetch - processPackages [webdriver-browser]: Downloading https://files.pythonhosted.org/packages/b8/5d/3b6d7a15e6fd8e9e69b5de7ba1316ba1050763d4fa8a793b7c6677fc1757/webdriver_browser-0.1.5.tar.gz
+[2024-04-27 18:46:05] INFO root fetch - processPackages [ciscoconfparse2]: Downloading https://files.pythonhosted.org/packages/26/c5/d7a1bbb15197a52ec641fb3455b2bad160571ef08bbb87f61c8e83e45163/ciscoconfparse2-0.7.8.tar.gz
+[2024-04-27 18:46:05] INFO root fetch - processPackages [SimpleSchemaGenerator]: Downloading https://files.pythonhosted.org/packages/07/ac/d47a8f6b5ebf23b992e3a8cf102719d4a0abca216714a69dc66e74fbdc6e/SimpleSchemaGenerator-0.4.0-py3-none-any.whl
+[2024-04-27 18:46:05] INFO root fetch - processPackages [shelloracle]: Downloading https://files.pythonhosted.org/packages/1e/9e/d7e76dcf7441e4eadb4711a0ea137dfce237af0b7731644c969fe1d2ed57/shelloracle-1.1.1.tar.gz
+[2024-04-27 18:46:05] INFO root fetch - processPackages [swiss-army-man]: Downloading https://files.pythonhosted.org/packages/56/82/24e0c66ae73179bc5f3180da018b1c49aadae130d6093a4ba1f45acd2afa/swiss_army_man-0.1.9.tar.gz
+[2024-04-27 18:46:05] WARNING root fetch - processPackages [ciscoconfparse2]: Skipping package: exceeds size limit 12946892>=10485760
+[2024-04-27 18:46:05] INFO root fetch - main [MainThread]: End processing [ciscoconfparse2] error
+[2024-04-27 18:46:05] INFO root fetch - processPackages [shelloracle]: executing diffoscope
+[2024-04-27 18:46:05] INFO root fetch - processPackages [shelloracle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shelloracle-1.1.0.tar.gz tmp/shelloracle-1.1.1.tar.gz --markdown 20240427/s/shelloracle/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-04-27 18:46:05] INFO root fetch - processPackages [swiss-army-man]: executing diffoscope
+[2024-04-27 18:46:05] INFO root fetch - processPackages [swiss-army-man]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swiss_army_man-0.1.7.tar.gz tmp/swiss_army_man-0.1.9.tar.gz --markdown 20240427/s/swiss-army-man/0.1.7-0.1.9/README.md --exclude *.pyd
+[2024-04-27 18:46:05] INFO root fetch - processPackages [webdriver-browser]: Downloading https://files.pythonhosted.org/packages/14/a4/6bbab1d8d2c1cae703da3721cb18cdc0ab4ce1940bc773b55a3423027fe9/webdriver_browser-0.1.6.tar.gz
+[2024-04-27 18:46:05] INFO root fetch - processPackages [SimpleSchemaGenerator]: Downloading https://files.pythonhosted.org/packages/1a/bd/3e5a0eaf4494b651cf6054f09bfd5cf93b7662b8266c6d8f558e1a2472f4/SimpleSchemaGenerator-0.5.0-py3-none-any.whl
+[2024-04-27 18:46:05] INFO root fetch - processPackages [webdriver-browser]: executing diffoscope
+[2024-04-27 18:46:05] INFO root fetch - processPackages [webdriver-browser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webdriver_browser-0.1.5.tar.gz tmp/webdriver_browser-0.1.6.tar.gz --markdown 20240427/w/webdriver-browser/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-27 18:46:05] INFO root fetch - processPackages [SimpleSchemaGenerator]: executing diffoscope
+[2024-04-27 18:46:05] INFO root fetch - processPackages [SimpleSchemaGenerator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SimpleSchemaGenerator-0.4.0-py3-none-any.whl.zip tmp/SimpleSchemaGenerator-0.5.0-py3-none-any.whl.zip --markdown 20240427/S/SimpleSchemaGenerator/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-04-27 18:46:06] INFO root fetch - processPackages [swiss-army-man]: Remove: archive file [/home/abi/fetcher/tmp/swiss_army_man-0.1.7.tar.gz]
+[2024-04-27 18:46:06] INFO root fetch - processPackages [swiss-army-man]: Remove: archive file [/home/abi/fetcher/tmp/swiss_army_man-0.1.9.tar.gz]
+[2024-04-27 18:46:06] INFO root fetch - main [MainThread]: End processing [swiss-army-man]: success
+[2024-04-27 18:46:06] INFO root fetch - processPackages [shelloracle]: Remove: archive file [/home/abi/fetcher/tmp/shelloracle-1.1.0.tar.gz]
+[2024-04-27 18:46:06] INFO root fetch - processPackages [shelloracle]: Remove: archive file [/home/abi/fetcher/tmp/shelloracle-1.1.1.tar.gz]
+[2024-04-27 18:46:06] INFO root fetch - main [MainThread]: End processing [shelloracle]: success
+[2024-04-27 18:46:06] INFO root fetch - processPackages [webdriver-browser]: Remove: archive file [/home/abi/fetcher/tmp/webdriver_browser-0.1.5.tar.gz]
+[2024-04-27 18:46:06] INFO root fetch - processPackages [webdriver-browser]: Remove: archive file [/home/abi/fetcher/tmp/webdriver_browser-0.1.6.tar.gz]
+[2024-04-27 18:46:06] INFO root fetch - main [MainThread]: End processing [webdriver-browser]: success
+[2024-04-27 18:46:06] INFO root fetch - processPackages [SimpleSchemaGenerator]: Remove: archive file [/home/abi/fetcher/tmp/SimpleSchemaGenerator-0.4.0-py3-none-any.whl.zip]
+[2024-04-27 18:46:06] INFO root fetch - processPackages [SimpleSchemaGenerator]: Remove: archive file [/home/abi/fetcher/tmp/SimpleSchemaGenerator-0.5.0-py3-none-any.whl.zip]
+[2024-04-27 18:46:06] INFO root fetch - main [MainThread]: End processing [SimpleSchemaGenerator]: success
+[2024-04-27 18:46:06] INFO root fetch - main [MainThread]: Store serial: [22960262]
