@@ -19240,3 +19240,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 20:29:31] WARNING root fetch - processPackages [auto-update]: Skipping, unable to determine old version
 [2024-04-27 20:29:31] INFO root fetch - main [MainThread]: End processing [auto-update] error
 [2024-04-27 20:29:31] INFO root fetch - main [MainThread]: Store serial: [22961081]
+[2024-04-27 20:31:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961081]
+[2024-04-27 20:31:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 20:31:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: freegenius
+[2024-04-27 20:31:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ng-data-pipelines-sdk
+[2024-04-27 20:31:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pdf2dcm
+[2024-04-27 20:31:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bihyung
+[2024-04-27 20:31:45] INFO root fetch - processPackages [bihyung]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-27 20:31:45] INFO root fetch - processPackages [freegenius]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-27 20:31:45] INFO root fetch - processPackages [ng-data-pipelines-sdk]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-27 20:31:45] INFO root fetch - processPackages [pdf2dcm]: New version: [0.5.0] Old Version: [0.4.1]
+[2024-04-27 20:31:45] INFO root fetch - processPackages [bihyung]: Downloading https://files.pythonhosted.org/packages/e2/e4/859afe72a327fbd3e8d565a6a17513145e9ad01ebb9271e8fcfc48235e3e/bihyung-0.1.1.tar.gz
+[2024-04-27 20:31:45] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/a0/11/5ba8a88193161872ca0e3a8e3259d8675565af928d55781e5d7743df6b52/freegenius-0.1.5.tar.gz
+[2024-04-27 20:31:45] INFO root fetch - processPackages [ng-data-pipelines-sdk]: Downloading https://files.pythonhosted.org/packages/37/b3/28f9435aa1a3cc7b274d2bbb8406372f7915f41da2a66d8bdfd5dbd98ec4/ng_data_pipelines_sdk-0.2.0.tar.gz
+[2024-04-27 20:31:45] INFO root fetch - processPackages [pdf2dcm]: Downloading https://files.pythonhosted.org/packages/da/fe/3e0f15525561f28cb4af46fcca49791ea41f224c04ccdb0df0c3c63241a8/pdf2dcm-0.4.1.tar.gz
+[2024-04-27 20:31:45] INFO root fetch - processPackages [bihyung]: Downloading https://files.pythonhosted.org/packages/e2/6b/f8c8c6c60507806fc6c87b2779f9e6dd3f5fec01b19d075673503631a17a/bihyung-0.1.2.tar.gz
+[2024-04-27 20:31:46] INFO root fetch - processPackages [ng-data-pipelines-sdk]: Downloading https://files.pythonhosted.org/packages/2a/ec/adb9ecb6fae6381919c25c47e76c886ca1f4f846f2fb5f300d239942e52b/ng_data_pipelines_sdk-0.3.0.tar.gz
+[2024-04-27 20:31:46] INFO root fetch - processPackages [pdf2dcm]: Downloading https://files.pythonhosted.org/packages/fc/e5/2d3c96be12bd71de4f313c916e525b1a1787b6cacaf7aa0a76c2648c3d86/pdf2dcm-0.5.0.tar.gz
+[2024-04-27 20:31:46] INFO root fetch - processPackages [bihyung]: executing diffoscope
+[2024-04-27 20:31:46] INFO root fetch - processPackages [bihyung]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bihyung-0.1.1.tar.gz tmp/bihyung-0.1.2.tar.gz --markdown 20240427/b/bihyung/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-27 20:31:46] INFO root fetch - processPackages [ng-data-pipelines-sdk]: executing diffoscope
+[2024-04-27 20:31:46] INFO root fetch - processPackages [ng-data-pipelines-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ng_data_pipelines_sdk-0.2.0.tar.gz tmp/ng_data_pipelines_sdk-0.3.0.tar.gz --markdown 20240427/n/ng-data-pipelines-sdk/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-04-27 20:31:46] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/53/33/4a861b5684bc2eb43861b531cbb5a92df3f435adac1cbe8f38915947d26c/freegenius-0.1.6.tar.gz
+[2024-04-27 20:31:46] INFO root fetch - processPackages [pdf2dcm]: executing diffoscope
+[2024-04-27 20:31:46] INFO root fetch - processPackages [pdf2dcm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdf2dcm-0.4.1.tar.gz tmp/pdf2dcm-0.5.0.tar.gz --markdown 20240427/p/pdf2dcm/0.4.1-0.5.0/README.md --exclude *.pyd
+[2024-04-27 20:31:46] INFO root fetch - processPackages [freegenius]: executing diffoscope
+[2024-04-27 20:31:46] INFO root fetch - processPackages [freegenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freegenius-0.1.5.tar.gz tmp/freegenius-0.1.6.tar.gz --markdown 20240427/f/freegenius/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-27 20:31:46] INFO root fetch - processPackages [bihyung]: Remove: archive file [/home/abi/fetcher/tmp/bihyung-0.1.1.tar.gz]
+[2024-04-27 20:31:46] INFO root fetch - processPackages [bihyung]: Remove: archive file [/home/abi/fetcher/tmp/bihyung-0.1.2.tar.gz]
+[2024-04-27 20:31:46] INFO root fetch - main [MainThread]: End processing [bihyung]: success
+[2024-04-27 20:31:46] INFO root fetch - processPackages [pdf2dcm]: Remove: archive file [/home/abi/fetcher/tmp/pdf2dcm-0.4.1.tar.gz]
+[2024-04-27 20:31:46] INFO root fetch - processPackages [pdf2dcm]: Remove: archive file [/home/abi/fetcher/tmp/pdf2dcm-0.5.0.tar.gz]
+[2024-04-27 20:31:46] INFO root fetch - main [MainThread]: End processing [pdf2dcm]: success
+[2024-04-27 20:31:46] INFO root fetch - processPackages [ng-data-pipelines-sdk]: Remove: archive file [/home/abi/fetcher/tmp/ng_data_pipelines_sdk-0.2.0.tar.gz]
+[2024-04-27 20:31:46] INFO root fetch - processPackages [ng-data-pipelines-sdk]: Remove: archive file [/home/abi/fetcher/tmp/ng_data_pipelines_sdk-0.3.0.tar.gz]
+[2024-04-27 20:31:46] INFO root fetch - main [MainThread]: End processing [ng-data-pipelines-sdk]: success
+[2024-04-27 20:31:47] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.1.5.tar.gz]
+[2024-04-27 20:31:47] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.1.6.tar.gz]
+[2024-04-27 20:31:47] INFO root fetch - main [MainThread]: End processing [freegenius]: success
+[2024-04-27 20:31:47] INFO root fetch - main [MainThread]: Store serial: [22961097]
