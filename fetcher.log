@@ -17467,3 +17467,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 18:30:24] INFO root fetch - processPackages [hydrobricks]: Remove: archive file [/home/abi/fetcher/tmp/hydrobricks-0.7.1.tar.gz]
 [2024-04-27 18:30:24] INFO root fetch - main [MainThread]: End processing [hydrobricks]: success
 [2024-04-27 18:30:24] INFO root fetch - main [MainThread]: Store serial: [22960195]
+[2024-04-27 18:32:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960195]
+[2024-04-27 18:32:37] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 18:32:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: devgoldyutils
+[2024-04-27 18:32:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shelloracle
+[2024-04-27 18:32:37] INFO root fetch - processPackages [devgoldyutils]: New version: [3.0.0b1] Old Version: [2.5.8]
+[2024-04-27 18:32:37] INFO root fetch - processPackages [shelloracle]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-04-27 18:32:38] INFO root fetch - processPackages [shelloracle]: Downloading https://files.pythonhosted.org/packages/f7/06/f720ad6faabe261cd2ae8bd03c4c95ea36672905422ecd31b612bd154efb/shelloracle-1.1.0.tar.gz
+[2024-04-27 18:32:38] INFO root fetch - processPackages [devgoldyutils]: Downloading https://files.pythonhosted.org/packages/2c/0f/cca99c76d8b0ce8d615d5491e915c7cadb8a1025cf506479f6fd14ee3deb/devgoldyutils-2.5.8-py3-none-any.whl
+[2024-04-27 18:32:38] INFO root fetch - processPackages [shelloracle]: Downloading https://files.pythonhosted.org/packages/1e/9e/d7e76dcf7441e4eadb4711a0ea137dfce237af0b7731644c969fe1d2ed57/shelloracle-1.1.1.tar.gz
+[2024-04-27 18:32:38] INFO root fetch - processPackages [devgoldyutils]: Downloading https://files.pythonhosted.org/packages/15/39/eb87c3526374990e7eda3f6c5bd072756d44fd85c112d8bc486a221a7c58/devgoldyutils-3.0.0b1.tar.gz
+[2024-04-27 18:32:38] INFO root fetch - processPackages [shelloracle]: executing diffoscope
+[2024-04-27 18:32:38] INFO root fetch - processPackages [shelloracle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shelloracle-1.1.0.tar.gz tmp/shelloracle-1.1.1.tar.gz --markdown 20240427/s/shelloracle/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-04-27 18:32:38] INFO root fetch - processPackages [devgoldyutils]: executing diffoscope
+[2024-04-27 18:32:38] INFO root fetch - processPackages [devgoldyutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devgoldyutils-2.5.8-py3-none-any.whl.zip tmp/devgoldyutils-3.0.0b1.tar.gz --markdown 20240427/d/devgoldyutils/2.5.8-3.0.0b1/README.md --exclude *.pyd
+[2024-04-27 18:32:39] INFO root fetch - processPackages [devgoldyutils]: Remove: archive file [/home/abi/fetcher/tmp/devgoldyutils-2.5.8-py3-none-any.whl.zip]
+[2024-04-27 18:32:39] INFO root fetch - processPackages [devgoldyutils]: Remove: archive file [/home/abi/fetcher/tmp/devgoldyutils-3.0.0b1.tar.gz]
+[2024-04-27 18:32:39] INFO root fetch - main [MainThread]: End processing [devgoldyutils]: success
+[2024-04-27 18:32:39] INFO root fetch - processPackages [shelloracle]: Remove: archive file [/home/abi/fetcher/tmp/shelloracle-1.1.0.tar.gz]
+[2024-04-27 18:32:39] INFO root fetch - processPackages [shelloracle]: Remove: archive file [/home/abi/fetcher/tmp/shelloracle-1.1.1.tar.gz]
+[2024-04-27 18:32:39] INFO root fetch - main [MainThread]: End processing [shelloracle]: success
+[2024-04-27 18:32:39] INFO root fetch - main [MainThread]: Store serial: [22960201]
