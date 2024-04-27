@@ -19376,3 +19376,35 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 20:38:23] INFO root fetch - processPackages [napatrackmater]: Remove: archive file [/home/abi/fetcher/tmp/napatrackmater-5.1.2.tar.gz]
 [2024-04-27 20:38:23] INFO root fetch - main [MainThread]: End processing [napatrackmater]: success
 [2024-04-27 20:38:23] INFO root fetch - main [MainThread]: Store serial: [22961146]
+[2024-04-27 20:40:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961146]
+[2024-04-27 20:40:37] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-27 20:42:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961146]
+[2024-04-27 20:42:42] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 20:42:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gpt-engineer
+[2024-04-27 20:42:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: srt-to-vtt
+[2024-04-27 20:42:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: npc-sync
+[2024-04-27 20:42:42] INFO root fetch - processPackages [srt-to-vtt]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-04-27 20:42:42] INFO root fetch - processPackages [srt-to-vtt]: Downloading https://files.pythonhosted.org/packages/99/22/b055d94779d2f9909aadc3cfd672636d5367218f3038361bb6bca68524d2/srt_to_vtt-1.0.0.tar.gz
+[2024-04-27 20:42:43] INFO root fetch - processPackages [npc-sync]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-27 20:42:43] INFO root fetch - processPackages [gpt-engineer]: New version: [0.3.0] Old Version: [0.2.9]
+[2024-04-27 20:42:43] INFO root fetch - processPackages [gpt-engineer]: Downloading https://files.pythonhosted.org/packages/cf/75/09d46fca6a8043dbef879feb4e89a9d6703ac434a0a9f6e5ad5e5bd1a93d/gpt_engineer-0.2.9.tar.gz
+[2024-04-27 20:42:43] INFO root fetch - processPackages [npc-sync]: Downloading https://files.pythonhosted.org/packages/3e/90/df23bc7c44140347db7ea13f94f38ec346053657a3e4931c8ce7995cfc05/npc-sync-0.1.8.tar.gz
+[2024-04-27 20:42:43] INFO root fetch - processPackages [srt-to-vtt]: Downloading https://files.pythonhosted.org/packages/51/63/41958646b4365c67e8c18be3b14eb542d6491c455b5f7cf3154bb6e3d209/srt_to_vtt-1.1.0.tar.gz
+[2024-04-27 20:42:43] INFO root fetch - processPackages [srt-to-vtt]: executing diffoscope
+[2024-04-27 20:42:43] INFO root fetch - processPackages [srt-to-vtt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/srt_to_vtt-1.0.0.tar.gz tmp/srt_to_vtt-1.1.0.tar.gz --markdown 20240427/s/srt-to-vtt/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-04-27 20:42:43] INFO root fetch - processPackages [gpt-engineer]: Downloading https://files.pythonhosted.org/packages/21/e4/73db1611b852364c726bbade5f35d8ffc964c185aca5725b8cdaf67b8362/gpt_engineer-0.3.0.tar.gz
+[2024-04-27 20:42:43] INFO root fetch - processPackages [npc-sync]: Downloading https://files.pythonhosted.org/packages/c2/f9/c79aca2962e0a526469ef87a4cde8033c5d566b9ad82925e9493333d60e1/npc-sync-0.1.9.tar.gz
+[2024-04-27 20:42:43] INFO root fetch - processPackages [npc-sync]: executing diffoscope
+[2024-04-27 20:42:43] INFO root fetch - processPackages [npc-sync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/npc-sync-0.1.8.tar.gz tmp/npc-sync-0.1.9.tar.gz --markdown 20240427/n/npc-sync/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-27 20:42:43] INFO root fetch - processPackages [gpt-engineer]: executing diffoscope
+[2024-04-27 20:42:43] INFO root fetch - processPackages [gpt-engineer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_engineer-0.2.9.tar.gz tmp/gpt_engineer-0.3.0.tar.gz --markdown 20240427/g/gpt-engineer/0.2.9-0.3.0/README.md --exclude *.pyd
+[2024-04-27 20:42:43] INFO root fetch - processPackages [srt-to-vtt]: Remove: archive file [/home/abi/fetcher/tmp/srt_to_vtt-1.0.0.tar.gz]
+[2024-04-27 20:42:43] INFO root fetch - processPackages [srt-to-vtt]: Remove: archive file [/home/abi/fetcher/tmp/srt_to_vtt-1.1.0.tar.gz]
+[2024-04-27 20:42:43] INFO root fetch - main [MainThread]: End processing [srt-to-vtt]: success
+[2024-04-27 20:42:44] INFO root fetch - processPackages [npc-sync]: Remove: archive file [/home/abi/fetcher/tmp/npc-sync-0.1.8.tar.gz]
+[2024-04-27 20:42:44] INFO root fetch - processPackages [npc-sync]: Remove: archive file [/home/abi/fetcher/tmp/npc-sync-0.1.9.tar.gz]
+[2024-04-27 20:42:44] INFO root fetch - main [MainThread]: End processing [npc-sync]: success
+[2024-04-27 20:42:44] INFO root fetch - processPackages [gpt-engineer]: Remove: archive file [/home/abi/fetcher/tmp/gpt_engineer-0.2.9.tar.gz]
+[2024-04-27 20:42:44] INFO root fetch - processPackages [gpt-engineer]: Remove: archive file [/home/abi/fetcher/tmp/gpt_engineer-0.3.0.tar.gz]
+[2024-04-27 20:42:44] INFO root fetch - main [MainThread]: End processing [gpt-engineer]: success
+[2024-04-27 20:42:44] INFO root fetch - main [MainThread]: Store serial: [22961154]
