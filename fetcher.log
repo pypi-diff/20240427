@@ -18976,3 +18976,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 20:11:25] INFO root fetch - processPackages [pygama]: Remove: archive file [/home/abi/fetcher/tmp/pygama-2.0.0a1.tar.gz]
 [2024-04-27 20:11:25] INFO root fetch - main [MainThread]: End processing [pygama]: success
 [2024-04-27 20:11:25] INFO root fetch - main [MainThread]: Store serial: [22960997]
+[2024-04-27 20:13:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960997]
+[2024-04-27 20:13:38] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 20:13:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deltabot-cli
+[2024-04-27 20:13:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: whylogs-container-client
+[2024-04-27 20:13:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ezfs
+[2024-04-27 20:13:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: data-prep-lab-kfp
+[2024-04-27 20:13:39] INFO root fetch - processPackages [whylogs-container-client]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-27 20:13:39] INFO root fetch - processPackages [deltabot-cli]: New version: [6.1.0] Old Version: [6.0.1]
+[2024-04-27 20:13:39] INFO root fetch - processPackages [ezfs]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-27 20:13:39] INFO root fetch - processPackages [data-prep-lab-kfp]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-27 20:13:39] INFO root fetch - processPackages [whylogs-container-client]: Downloading https://files.pythonhosted.org/packages/7b/f3/90916c4830aa168ef810ac1f9396bb5f7131049ced86dda7a220c13604f1/whylogs_container_client-1.0.8.tar.gz
+[2024-04-27 20:13:39] INFO root fetch - processPackages [deltabot-cli]: Downloading https://files.pythonhosted.org/packages/2c/a9/97b90bdaebb8caa9546b6b206c331621e2e311bcc19b1c0e1809a15217b5/deltabot-cli-6.0.1.tar.gz
+[2024-04-27 20:13:39] INFO root fetch - processPackages [ezfs]: Downloading https://files.pythonhosted.org/packages/4a/0a/472802295a961f0d056f0c3393cfc544d66ca572d85f4d7e2e8734ec4792/ezfs-1.0.0.tar.gz
+[2024-04-27 20:13:39] INFO root fetch - processPackages [data-prep-lab-kfp]: Downloading https://files.pythonhosted.org/packages/d0/8f/715e1d415a17a2821b5e4bfeb39c4765fb96fed79011666cf938283787ce/data_prep_lab_kfp-0.1.5.tar.gz
+[2024-04-27 20:13:39] INFO root fetch - processPackages [ezfs]: Downloading https://files.pythonhosted.org/packages/fc/ac/23d6b19c31628799c5e86021bfb5369deb95fa3078044c928bf1af6abcc9/ezfs-1.0.1.tar.gz
+[2024-04-27 20:13:39] INFO root fetch - processPackages [whylogs-container-client]: Downloading https://files.pythonhosted.org/packages/e9/4d/6386d41bbae74c8626b1c6076e3f268c005d1e9e437287f3febebf7213ef/whylogs_container_client-1.0.9.tar.gz
+[2024-04-27 20:13:39] INFO root fetch - processPackages [deltabot-cli]: Downloading https://files.pythonhosted.org/packages/1b/b5/5e325ba878e32860aa0d95e5372139a0fda590b0fba0a5118801fd48fe89/deltabot_cli-6.1.0.tar.gz
+[2024-04-27 20:13:39] INFO root fetch - processPackages [whylogs-container-client]: executing diffoscope
+[2024-04-27 20:13:39] INFO root fetch - processPackages [whylogs-container-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whylogs_container_client-1.0.8.tar.gz tmp/whylogs_container_client-1.0.9.tar.gz --markdown 20240427/w/whylogs-container-client/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-27 20:13:39] INFO root fetch - processPackages [deltabot-cli]: executing diffoscope
+[2024-04-27 20:13:39] INFO root fetch - processPackages [deltabot-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deltabot-cli-6.0.1.tar.gz tmp/deltabot_cli-6.1.0.tar.gz --markdown 20240427/d/deltabot-cli/6.0.1-6.1.0/README.md --exclude *.pyd
+[2024-04-27 20:13:39] INFO root fetch - processPackages [ezfs]: executing diffoscope
+[2024-04-27 20:13:39] INFO root fetch - processPackages [ezfs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezfs-1.0.0.tar.gz tmp/ezfs-1.0.1.tar.gz --markdown 20240427/e/ezfs/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-27 20:13:39] INFO root fetch - processPackages [data-prep-lab-kfp]: Downloading https://files.pythonhosted.org/packages/2a/b9/bcf54d5b3ae78d05342a1fd62f5d7d52734867d08109cefa1b30b5329ccd/data_prep_lab_kfp-0.1.6.tar.gz
+[2024-04-27 20:13:40] INFO root fetch - processPackages [deltabot-cli]: Remove: archive file [/home/abi/fetcher/tmp/deltabot-cli-6.0.1.tar.gz]
+[2024-04-27 20:13:40] INFO root fetch - processPackages [deltabot-cli]: Remove: archive file [/home/abi/fetcher/tmp/deltabot_cli-6.1.0.tar.gz]
+[2024-04-27 20:13:40] INFO root fetch - main [MainThread]: End processing [deltabot-cli]: success
+[2024-04-27 20:13:40] INFO root fetch - processPackages [ezfs]: Remove: archive file [/home/abi/fetcher/tmp/ezfs-1.0.0.tar.gz]
+[2024-04-27 20:13:40] INFO root fetch - processPackages [ezfs]: Remove: archive file [/home/abi/fetcher/tmp/ezfs-1.0.1.tar.gz]
+[2024-04-27 20:13:40] INFO root fetch - main [MainThread]: End processing [ezfs]: success
+[2024-04-27 20:13:40] INFO root fetch - processPackages [whylogs-container-client]: Remove: archive file [/home/abi/fetcher/tmp/whylogs_container_client-1.0.8.tar.gz]
+[2024-04-27 20:13:40] INFO root fetch - processPackages [whylogs-container-client]: Remove: archive file [/home/abi/fetcher/tmp/whylogs_container_client-1.0.9.tar.gz]
+[2024-04-27 20:13:40] INFO root fetch - main [MainThread]: End processing [whylogs-container-client]: success
+[2024-04-27 20:13:40] INFO root fetch - processPackages [data-prep-lab-kfp]: executing diffoscope
+[2024-04-27 20:13:40] INFO root fetch - processPackages [data-prep-lab-kfp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_prep_lab_kfp-0.1.5.tar.gz tmp/data_prep_lab_kfp-0.1.6.tar.gz --markdown 20240427/d/data-prep-lab-kfp/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-27 20:13:41] INFO root fetch - processPackages [data-prep-lab-kfp]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_lab_kfp-0.1.5.tar.gz]
+[2024-04-27 20:13:41] INFO root fetch - processPackages [data-prep-lab-kfp]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_lab_kfp-0.1.6.tar.gz]
+[2024-04-27 20:13:41] INFO root fetch - main [MainThread]: End processing [data-prep-lab-kfp]: success
+[2024-04-27 20:13:41] INFO root fetch - main [MainThread]: Store serial: [22961006]
