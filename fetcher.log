@@ -11560,3 +11560,36 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 11:42:42] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.9.tar.gz]
 [2024-04-27 11:42:42] INFO root fetch - main [MainThread]: End processing [snailshell]: success
 [2024-04-27 11:42:42] INFO root fetch - main [MainThread]: Store serial: [22957721]
+[2024-04-27 11:44:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957721]
+[2024-04-27 11:44:50] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 11:44:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-115
+[2024-04-27 11:44:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: create-apifile
+[2024-04-27 11:44:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yes-chef
+[2024-04-27 11:44:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cefi
+[2024-04-27 11:44:51] INFO root fetch - processPackages [yes-chef]: New version: [0.9.4] Old Version: [0.9.3]
+[2024-04-27 11:44:51] INFO root fetch - processPackages [yes-chef]: Downloading https://files.pythonhosted.org/packages/83/d1/a301985214ec909e493b01fa2c5ba44d4aa57f21d3222ec55895ec468018/yes_chef-0.9.3.tar.gz
+[2024-04-27 11:44:51] WARNING root fetch - processPackages [create-apifile]: Skipping, unable to determine old version
+[2024-04-27 11:44:51] INFO root fetch - main [MainThread]: End processing [create-apifile] error
+[2024-04-27 11:44:51] INFO root fetch - processPackages [python-115]: New version: [0.0.6.9] Old Version: [0.0.6.8]
+[2024-04-27 11:44:51] INFO root fetch - processPackages [cefi]: New version: [4.6.9] Old Version: [4.6.8]
+[2024-04-27 11:44:51] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/0d/82/b9dc2663abe8e57bd0094c411156e50e539a5716a7046c349ddff3125ecc/python_115-0.0.6.8.tar.gz
+[2024-04-27 11:44:51] INFO root fetch - processPackages [cefi]: Downloading https://files.pythonhosted.org/packages/a5/94/6e85e18da3563b1ad7811b6f9e508f3b0f7ddf5cb41fe02283131c7f7091/cefi-4.6.8.tar.gz
+[2024-04-27 11:44:51] INFO root fetch - processPackages [yes-chef]: Downloading https://files.pythonhosted.org/packages/9e/c2/a5577a1a3e1286b66324e126070e9429bcf697cc75368aabdd90224b05af/yes_chef-0.9.4.tar.gz
+[2024-04-27 11:44:51] INFO root fetch - processPackages [yes-chef]: executing diffoscope
+[2024-04-27 11:44:51] INFO root fetch - processPackages [yes-chef]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yes_chef-0.9.3.tar.gz tmp/yes_chef-0.9.4.tar.gz --markdown 20240427/y/yes-chef/0.9.3-0.9.4/README.md --exclude *.pyd
+[2024-04-27 11:44:51] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/6d/47/bfe72207e79c7a6549a4b4536eb72aaf5ca1421c08a97018e0e3bbcd89dd/python_115-0.0.6.9.tar.gz
+[2024-04-27 11:44:51] INFO root fetch - processPackages [cefi]: Downloading https://files.pythonhosted.org/packages/c2/cc/76754a3cf60eeb32654cc9f45c78574a706fb6550a8ca489acc37041f027/cefi-4.6.9.tar.gz
+[2024-04-27 11:44:51] INFO root fetch - processPackages [python-115]: executing diffoscope
+[2024-04-27 11:44:51] INFO root fetch - processPackages [python-115]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_115-0.0.6.8.tar.gz tmp/python_115-0.0.6.9.tar.gz --markdown 20240427/p/python-115/0.0.6.8-0.0.6.9/README.md --exclude *.pyd
+[2024-04-27 11:44:51] INFO root fetch - processPackages [cefi]: executing diffoscope
+[2024-04-27 11:44:51] INFO root fetch - processPackages [cefi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cefi-4.6.8.tar.gz tmp/cefi-4.6.9.tar.gz --markdown 20240427/c/cefi/4.6.8-4.6.9/README.md --exclude *.pyd
+[2024-04-27 11:44:52] INFO root fetch - processPackages [yes-chef]: Remove: archive file [/home/abi/fetcher/tmp/yes_chef-0.9.3.tar.gz]
+[2024-04-27 11:44:52] INFO root fetch - processPackages [yes-chef]: Remove: archive file [/home/abi/fetcher/tmp/yes_chef-0.9.4.tar.gz]
+[2024-04-27 11:44:52] INFO root fetch - main [MainThread]: End processing [yes-chef]: success
+[2024-04-27 11:44:52] INFO root fetch - processPackages [cefi]: Remove: archive file [/home/abi/fetcher/tmp/cefi-4.6.8.tar.gz]
+[2024-04-27 11:44:52] INFO root fetch - processPackages [cefi]: Remove: archive file [/home/abi/fetcher/tmp/cefi-4.6.9.tar.gz]
+[2024-04-27 11:44:52] INFO root fetch - main [MainThread]: End processing [cefi]: success
+[2024-04-27 11:44:52] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.6.8.tar.gz]
+[2024-04-27 11:44:52] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.6.9.tar.gz]
+[2024-04-27 11:44:52] INFO root fetch - main [MainThread]: End processing [python-115]: success
+[2024-04-27 11:44:52] INFO root fetch - main [MainThread]: Store serial: [22957736]
