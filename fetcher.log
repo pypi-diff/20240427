@@ -18289,3 +18289,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 19:28:36] INFO root fetch - processPackages [monarchmoney]: Remove: archive file [/home/abi/fetcher/tmp/monarchmoney-0.1.9.tar.gz]
 [2024-04-27 19:28:36] INFO root fetch - main [MainThread]: End processing [monarchmoney]: success
 [2024-04-27 19:28:36] INFO root fetch - main [MainThread]: Store serial: [22960552]
+[2024-04-27 19:30:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960552]
+[2024-04-27 19:30:48] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 19:30:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: enderchest
+[2024-04-27 19:30:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: base-agent
+[2024-04-27 19:30:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: simple-smtp-mailer
+[2024-04-27 19:30:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sensors_connectivity
+[2024-04-27 19:30:48] WARNING root fetch - processPackages [simple-smtp-mailer]: Skipping, unable to determine old version
+[2024-04-27 19:30:48] INFO root fetch - main [MainThread]: End processing [simple-smtp-mailer] error
+[2024-04-27 19:30:48] INFO root fetch - processPackages [base-agent]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-27 19:30:48] INFO root fetch - processPackages [enderchest]: New version: [0.1.6rc1] Old Version: [0.1.6b1]
+[2024-04-27 19:30:49] INFO root fetch - processPackages [sensors_connectivity]: New version: [1.6.2] Old Version: [1.6.1]
+[2024-04-27 19:30:49] INFO root fetch - processPackages [base-agent]: Downloading https://files.pythonhosted.org/packages/a8/86/01621c185aee1a3b83d839356ee07ebab5c29282ce10377401a0a5665e8a/base-agent-0.1.0.tar.gz
+[2024-04-27 19:30:49] INFO root fetch - processPackages [enderchest]: Downloading https://files.pythonhosted.org/packages/14/9e/963185860a0e1fd283619db135018d1c9a05e201571050a22afa5c5fb804/enderchest-0.1.6b1.tar.gz
+[2024-04-27 19:30:49] INFO root fetch - processPackages [sensors_connectivity]: Downloading https://files.pythonhosted.org/packages/c6/29/2cb1bff36cf76d03899ea87f4bc3424d9f2199cb6da8a69be972af1fc739/sensors_connectivity-1.6.1.tar.gz
+[2024-04-27 19:30:49] INFO root fetch - processPackages [enderchest]: Downloading https://files.pythonhosted.org/packages/05/eb/adfe8c77f0dd3d6f410b2d69c31142bab7e2c68cdbb41793cacca37a44c3/enderchest-0.1.6rc1.tar.gz
+[2024-04-27 19:30:49] INFO root fetch - processPackages [base-agent]: Downloading https://files.pythonhosted.org/packages/cd/00/0d17a7231b00b3a077416280bf02d71475db3a92d7791efa552f0dc1afa0/base-agent-0.1.1.tar.gz
+[2024-04-27 19:30:49] INFO root fetch - processPackages [base-agent]: executing diffoscope
+[2024-04-27 19:30:49] INFO root fetch - processPackages [base-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/base-agent-0.1.0.tar.gz tmp/base-agent-0.1.1.tar.gz --markdown 20240427/b/base-agent/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-27 19:30:49] INFO root fetch - processPackages [enderchest]: executing diffoscope
+[2024-04-27 19:30:49] INFO root fetch - processPackages [enderchest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enderchest-0.1.6b1.tar.gz tmp/enderchest-0.1.6rc1.tar.gz --markdown 20240427/e/enderchest/0.1.6b1-0.1.6rc1/README.md --exclude *.pyd
+[2024-04-27 19:30:49] INFO root fetch - processPackages [sensors_connectivity]: Downloading https://files.pythonhosted.org/packages/15/a4/d0d8e124cda8924dc09fc6c10b96d9bedef3257e8f15b231b850d69a8464/sensors_connectivity-1.6.2.tar.gz
+[2024-04-27 19:30:50] INFO root fetch - processPackages [base-agent]: Remove: archive file [/home/abi/fetcher/tmp/base-agent-0.1.0.tar.gz]
+[2024-04-27 19:30:50] INFO root fetch - processPackages [base-agent]: Remove: archive file [/home/abi/fetcher/tmp/base-agent-0.1.1.tar.gz]
+[2024-04-27 19:30:50] INFO root fetch - main [MainThread]: End processing [base-agent]: success
+[2024-04-27 19:30:50] INFO root fetch - processPackages [sensors_connectivity]: executing diffoscope
+[2024-04-27 19:30:50] INFO root fetch - processPackages [sensors_connectivity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sensors_connectivity-1.6.1.tar.gz tmp/sensors_connectivity-1.6.2.tar.gz --markdown 20240427/s/sensors_connectivity/1.6.1-1.6.2/README.md --exclude *.pyd
+[2024-04-27 19:30:50] INFO root fetch - processPackages [enderchest]: Remove: archive file [/home/abi/fetcher/tmp/enderchest-0.1.6b1.tar.gz]
+[2024-04-27 19:30:50] INFO root fetch - processPackages [enderchest]: Remove: archive file [/home/abi/fetcher/tmp/enderchest-0.1.6rc1.tar.gz]
+[2024-04-27 19:30:50] INFO root fetch - main [MainThread]: End processing [enderchest]: success
+[2024-04-27 19:30:50] INFO root fetch - processPackages [sensors_connectivity]: Remove: archive file [/home/abi/fetcher/tmp/sensors_connectivity-1.6.1.tar.gz]
+[2024-04-27 19:30:50] INFO root fetch - processPackages [sensors_connectivity]: Remove: archive file [/home/abi/fetcher/tmp/sensors_connectivity-1.6.2.tar.gz]
+[2024-04-27 19:30:50] INFO root fetch - main [MainThread]: End processing [sensors_connectivity]: success
+[2024-04-27 19:30:50] INFO root fetch - main [MainThread]: Store serial: [22960565]
