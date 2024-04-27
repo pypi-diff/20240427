@@ -10102,3 +10102,27 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 08:59:17] INFO root fetch - processPackages [arcade-accelerate]: Remove: archive file [/home/abi/fetcher/tmp/arcade_accelerate-1.0.2.tar.gz]
 [2024-04-27 08:59:17] INFO root fetch - main [MainThread]: End processing [arcade-accelerate]: success
 [2024-04-27 08:59:17] INFO root fetch - main [MainThread]: Store serial: [22957099]
+[2024-04-27 09:01:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957099]
+[2024-04-27 09:01:29] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 09:01:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: woa
+[2024-04-27 09:01:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: travdata
+[2024-04-27 09:01:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wipo-gbd-pypers
+[2024-04-27 09:01:29] WARNING root fetch - processPackages [woa]: Skipping, unable to determine old version
+[2024-04-27 09:01:29] INFO root fetch - main [MainThread]: End processing [woa] error
+[2024-04-27 09:01:29] INFO root fetch - processPackages [travdata]: New version: [0.4.0] Old Version: [0.3.2]
+[2024-04-27 09:01:29] INFO root fetch - processPackages [wipo-gbd-pypers]: New version: [2.1.9] Old Version: [2.1.8]
+[2024-04-27 09:01:29] INFO root fetch - processPackages [wipo-gbd-pypers]: Downloading https://files.pythonhosted.org/packages/74/29/2a23e2af74f32e0544308c00d9b819eeadcd723a8c9b7f8e0fa8830c07f6/wipo_gbd_pypers-2.1.8-py3-none-any.whl
+[2024-04-27 09:01:29] INFO root fetch - processPackages [travdata]: Downloading https://files.pythonhosted.org/packages/ab/77/04b5115542467457b13a9f7562868789d56df9bc57c97d3997737fcbca53/travdata-0.3.2.tar.gz
+[2024-04-27 09:01:30] INFO root fetch - processPackages [travdata]: Downloading https://files.pythonhosted.org/packages/8e/40/c38cbf8daad4450d4f745e3e58e29b9a387541e6d61f7d71f85a5fd395f1/travdata-0.4.0.tar.gz
+[2024-04-27 09:01:30] INFO root fetch - processPackages [travdata]: executing diffoscope
+[2024-04-27 09:01:30] INFO root fetch - processPackages [travdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/travdata-0.3.2.tar.gz tmp/travdata-0.4.0.tar.gz --markdown 20240427/t/travdata/0.3.2-0.4.0/README.md --exclude *.pyd
+[2024-04-27 09:01:30] INFO root fetch - processPackages [wipo-gbd-pypers]: Downloading https://files.pythonhosted.org/packages/2c/80/047a147df7a7d8fc36a238c3c74f35936edc68ca56cb763590dc7302ee4c/wipo_gbd_pypers-2.1.9-py3-none-any.whl
+[2024-04-27 09:01:30] INFO root fetch - processPackages [wipo-gbd-pypers]: executing diffoscope
+[2024-04-27 09:01:30] INFO root fetch - processPackages [wipo-gbd-pypers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wipo_gbd_pypers-2.1.8-py3-none-any.whl.zip tmp/wipo_gbd_pypers-2.1.9-py3-none-any.whl.zip --markdown 20240427/w/wipo-gbd-pypers/2.1.8-2.1.9/README.md --exclude *.pyd
+[2024-04-27 09:01:31] INFO root fetch - processPackages [travdata]: Remove: archive file [/home/abi/fetcher/tmp/travdata-0.3.2.tar.gz]
+[2024-04-27 09:01:31] INFO root fetch - processPackages [travdata]: Remove: archive file [/home/abi/fetcher/tmp/travdata-0.4.0.tar.gz]
+[2024-04-27 09:01:31] INFO root fetch - main [MainThread]: End processing [travdata]: success
+[2024-04-27 09:01:32] INFO root fetch - processPackages [wipo-gbd-pypers]: Remove: archive file [/home/abi/fetcher/tmp/wipo_gbd_pypers-2.1.8-py3-none-any.whl.zip]
+[2024-04-27 09:01:32] INFO root fetch - processPackages [wipo-gbd-pypers]: Remove: archive file [/home/abi/fetcher/tmp/wipo_gbd_pypers-2.1.9-py3-none-any.whl.zip]
+[2024-04-27 09:01:32] INFO root fetch - main [MainThread]: End processing [wipo-gbd-pypers]: success
+[2024-04-27 09:01:32] INFO root fetch - main [MainThread]: Store serial: [22957110]
