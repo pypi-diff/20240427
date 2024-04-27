@@ -7534,3 +7534,24 @@ EOFError: EOF read where object expected
 [2024-04-27 05:12:32] INFO root fetch - processPackages [trade-database-manager]: Remove: archive file [/home/abi/fetcher/tmp/trade_database_manager-0.0.1.dev4.tar.gz]
 [2024-04-27 05:12:32] INFO root fetch - main [MainThread]: End processing [trade-database-manager]: success
 [2024-04-27 05:12:32] INFO root fetch - main [MainThread]: Store serial: [22956183]
+[2024-04-27 05:14:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956183]
+[2024-04-27 05:14:41] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 05:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torch-choice
+[2024-04-27 05:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-commission
+[2024-04-27 05:14:41] INFO root fetch - processPackages [odoo-addon-commission]: New version: [17.0.1.0.0.5] Old Version: [17.0.1.0.0.4]
+[2024-04-27 05:14:41] INFO root fetch - processPackages [odoo-addon-commission]: Downloading https://files.pythonhosted.org/packages/f8/36/24e37368a21041c63ac24fde57d0b5f064634ac3d188c2a9977d18016c5d/odoo_addon_commission-17.0.1.0.0.4-py3-none-any.whl
+[2024-04-27 05:14:41] INFO root fetch - processPackages [torch-choice]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-04-27 05:14:41] INFO root fetch - processPackages [odoo-addon-commission]: Downloading https://files.pythonhosted.org/packages/75/1f/bf1cb0eb36159b0ad122b37fb99fe773c4d66b32f18fc0dc99b9d8382223/odoo_addon_commission-17.0.1.0.0.5-py3-none-any.whl
+[2024-04-27 05:14:41] INFO root fetch - processPackages [torch-choice]: Downloading https://files.pythonhosted.org/packages/70/57/a575f6ca1ec4c3c5e3c58c5d0d3f091d01f9ef3e8aec03c52706f795c05c/torch_choice-1.0.5.tar.gz
+[2024-04-27 05:14:41] INFO root fetch - processPackages [odoo-addon-commission]: executing diffoscope
+[2024-04-27 05:14:41] INFO root fetch - processPackages [odoo-addon-commission]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_commission-17.0.1.0.0.4-py3-none-any.whl.zip tmp/odoo_addon_commission-17.0.1.0.0.5-py3-none-any.whl.zip --markdown 20240427/o/odoo-addon-commission/17.0.1.0.0.4-17.0.1.0.0.5/README.md --exclude *.pyd
+[2024-04-27 05:14:41] INFO root fetch - processPackages [torch-choice]: Downloading https://files.pythonhosted.org/packages/95/49/a48358754f568bd47df0cf952f004157caa50ca905c097a48e9efb7fce7f/torch_choice-1.0.6.tar.gz
+[2024-04-27 05:14:42] INFO root fetch - processPackages [torch-choice]: executing diffoscope
+[2024-04-27 05:14:42] INFO root fetch - processPackages [torch-choice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_choice-1.0.5.tar.gz tmp/torch_choice-1.0.6.tar.gz --markdown 20240427/t/torch-choice/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-04-27 05:14:42] INFO root fetch - processPackages [odoo-addon-commission]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_commission-17.0.1.0.0.4-py3-none-any.whl.zip]
+[2024-04-27 05:14:42] INFO root fetch - processPackages [odoo-addon-commission]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_commission-17.0.1.0.0.5-py3-none-any.whl.zip]
+[2024-04-27 05:14:42] INFO root fetch - main [MainThread]: End processing [odoo-addon-commission]: success
+[2024-04-27 05:14:42] INFO root fetch - processPackages [torch-choice]: Remove: archive file [/home/abi/fetcher/tmp/torch_choice-1.0.5.tar.gz]
+[2024-04-27 05:14:42] INFO root fetch - processPackages [torch-choice]: Remove: archive file [/home/abi/fetcher/tmp/torch_choice-1.0.6.tar.gz]
+[2024-04-27 05:14:42] INFO root fetch - main [MainThread]: End processing [torch-choice]: success
+[2024-04-27 05:14:42] INFO root fetch - main [MainThread]: Store serial: [22956188]
