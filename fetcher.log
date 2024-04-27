@@ -6783,3 +6783,24 @@ EOFError: EOF read where object expected
 [2024-04-27 03:35:02] INFO root fetch - processPackages [eznf]: Remove: archive file [/home/abi/fetcher/tmp/eznf-0.9.2.tar.gz]
 [2024-04-27 03:35:02] INFO root fetch - main [MainThread]: End processing [eznf]: success
 [2024-04-27 03:35:02] INFO root fetch - main [MainThread]: Store serial: [22955792]
+[2024-04-27 03:37:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22955792]
+[2024-04-27 03:37:11] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 03:37:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyAgrum-nightly
+[2024-04-27 03:37:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ctrip-app-ui
+[2024-04-27 03:37:12] INFO root fetch - processPackages [ctrip-app-ui]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-04-27 03:37:12] INFO root fetch - processPackages [pyAgrum-nightly]: New version: [1.9.0.9.dev202310191697564854] Old Version: [1.9.0.9.dev202310181697564854]
+[2024-04-27 03:37:12] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/63/78/bdac1503d95780115692fcd3f8e5bae8eee3328ba1b1a462607170a405e8/ctrip-app-ui-0.2.2.tar.gz
+[2024-04-27 03:37:12] INFO root fetch - processPackages [pyAgrum-nightly]: Downloading https://files.pythonhosted.org/packages/64/23/4308469c4be3abcfc53ec2ccbd7dcca1618077035522cae4b364a9c6cc56/pyAgrum_nightly-1.9.0.9.dev202310181697564854-cp39-cp39-win_amd64.whl
+[2024-04-27 03:37:12] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/0c/0c/7287c47ef2e4c4dd5360110a7072ac6a67684d21844b7f6c9a5a94692142/ctrip-app-ui-0.2.3.tar.gz
+[2024-04-27 03:37:12] INFO root fetch - processPackages [pyAgrum-nightly]: Downloading https://files.pythonhosted.org/packages/84/cc/6d2d3b13a2080cfbfa9792321774075d119b4fa37902c5a9d93d8eccf13d/pyAgrum_nightly-1.9.0.9.dev202310191697564854-cp39-cp39-win_amd64.whl
+[2024-04-27 03:37:12] INFO root fetch - processPackages [ctrip-app-ui]: executing diffoscope
+[2024-04-27 03:37:12] INFO root fetch - processPackages [ctrip-app-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctrip-app-ui-0.2.2.tar.gz tmp/ctrip-app-ui-0.2.3.tar.gz --markdown 20240427/c/ctrip-app-ui/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-04-27 03:37:12] INFO root fetch - processPackages [pyAgrum-nightly]: executing diffoscope
+[2024-04-27 03:37:12] INFO root fetch - processPackages [pyAgrum-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyAgrum_nightly-1.9.0.9.dev202310181697564854-cp39-cp39-win_amd64.whl.zip tmp/pyAgrum_nightly-1.9.0.9.dev202310191697564854-cp39-cp39-win_amd64.whl.zip --markdown 20240427/p/pyAgrum-nightly/1.9.0.9.dev202310181697564854-1.9.0.9.dev202310191697564854/README.md --exclude *.pyd
+[2024-04-27 03:37:13] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.2.2.tar.gz]
+[2024-04-27 03:37:13] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.2.3.tar.gz]
+[2024-04-27 03:37:13] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
+[2024-04-27 03:37:13] INFO root fetch - processPackages [pyAgrum-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyAgrum_nightly-1.9.0.9.dev202310181697564854-cp39-cp39-win_amd64.whl.zip]
+[2024-04-27 03:37:13] INFO root fetch - processPackages [pyAgrum-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyAgrum_nightly-1.9.0.9.dev202310191697564854-cp39-cp39-win_amd64.whl.zip]
+[2024-04-27 03:37:13] INFO root fetch - main [MainThread]: End processing [pyAgrum-nightly]: success
+[2024-04-27 03:37:13] INFO root fetch - main [MainThread]: Store serial: [22955858]
