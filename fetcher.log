@@ -17782,3 +17782,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 18:57:09] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.9.tar.gz]
 [2024-04-27 18:57:09] INFO root fetch - main [MainThread]: End processing [mteb]: success
 [2024-04-27 18:57:09] INFO root fetch - main [MainThread]: Store serial: [22960314]
+[2024-04-27 18:59:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960314]
+[2024-04-27 18:59:23] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 18:59:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: istr-python
+[2024-04-27 18:59:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: swiss-army-man
+[2024-04-27 18:59:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yaml-package
+[2024-04-27 18:59:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pillow-jxl-plugin
+[2024-04-27 18:59:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mlops-api-gemstack
+[2024-04-27 18:59:23] INFO root fetch - processPackages [mlops-api-gemstack]: New version: [0.3.7] Old Version: [0.3.6]
+[2024-04-27 18:59:24] INFO root fetch - processPackages [swiss-army-man]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-04-27 18:59:24] INFO root fetch - processPackages [mlops-api-gemstack]: Downloading https://files.pythonhosted.org/packages/88/45/531354bd762a87544035860a46c0158f90d3acd2da5de74f2a5439f74bbe/mlops_api_gemstack-0.3.6.tar.gz
+[2024-04-27 18:59:24] INFO root fetch - processPackages [swiss-army-man]: Downloading https://files.pythonhosted.org/packages/48/1f/294f600f1fa28cd18c161440c03fb3b30e0c131a86552d9308f61aa90137/swiss_army_man-0.1.7.tar.gz
+[2024-04-27 18:59:24] WARNING root fetch - processPackages [yaml-package]: Skipping, unable to determine old version
+[2024-04-27 18:59:24] INFO root fetch - main [MainThread]: End processing [yaml-package] error
+[2024-04-27 18:59:24] INFO root fetch - processPackages [istr-python]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-27 18:59:24] INFO root fetch - processPackages [pillow-jxl-plugin]: New version: [1.2.4] Old Version: [1.2.3]
+[2024-04-27 18:59:24] INFO root fetch - processPackages [istr-python]: Downloading https://files.pythonhosted.org/packages/2f/16/a3bdd98f1339d11273a38258a5d1d0556f67c43c8493bef85e61034152db/istr_python-0.1.1.tar.gz
+[2024-04-27 18:59:24] INFO root fetch - processPackages [swiss-army-man]: Downloading https://files.pythonhosted.org/packages/56/82/24e0c66ae73179bc5f3180da018b1c49aadae130d6093a4ba1f45acd2afa/swiss_army_man-0.1.9.tar.gz
+[2024-04-27 18:59:24] INFO root fetch - processPackages [pillow-jxl-plugin]: Downloading https://files.pythonhosted.org/packages/22/e1/5e4eee9fc3633b120b81814aabe224db7d70d036935f1eb2fdf3050f046f/pillow_jxl_plugin-1.2.3.tar.gz
+[2024-04-27 18:59:24] INFO root fetch - processPackages [mlops-api-gemstack]: Downloading https://files.pythonhosted.org/packages/65/88/dbe7c8eaf680bf567d98e9f18f9b1a4e172756fa10f1b28780d055a81faf/mlops_api_gemstack-0.3.7.tar.gz
+[2024-04-27 18:59:24] INFO root fetch - processPackages [swiss-army-man]: executing diffoscope
+[2024-04-27 18:59:24] INFO root fetch - processPackages [swiss-army-man]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swiss_army_man-0.1.7.tar.gz tmp/swiss_army_man-0.1.9.tar.gz --markdown 20240427/s/swiss-army-man/0.1.7-0.1.9/README.md --exclude *.pyd
+[2024-04-27 18:59:24] INFO root fetch - processPackages [mlops-api-gemstack]: executing diffoscope
+[2024-04-27 18:59:24] INFO root fetch - processPackages [mlops-api-gemstack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlops_api_gemstack-0.3.6.tar.gz tmp/mlops_api_gemstack-0.3.7.tar.gz --markdown 20240427/m/mlops-api-gemstack/0.3.6-0.3.7/README.md --exclude *.pyd
+[2024-04-27 18:59:24] INFO root fetch - processPackages [istr-python]: Downloading https://files.pythonhosted.org/packages/0a/e9/b9fed61eb8f627f663263be97cf5344ac5c45fd7def183b6ec782bb45051/istr_python-0.1.2.tar.gz
+[2024-04-27 18:59:24] INFO root fetch - processPackages [pillow-jxl-plugin]: Downloading https://files.pythonhosted.org/packages/da/a3/0d3bdba4c35aba04128ec0ce83c58adbc516633658bd3d3d959e507d0b6a/pillow_jxl_plugin-1.2.4.tar.gz
+[2024-04-27 18:59:24] INFO root fetch - processPackages [istr-python]: executing diffoscope
+[2024-04-27 18:59:24] INFO root fetch - processPackages [istr-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/istr_python-0.1.1.tar.gz tmp/istr_python-0.1.2.tar.gz --markdown 20240427/i/istr-python/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-27 18:59:25] INFO root fetch - processPackages [pillow-jxl-plugin]: executing diffoscope
+[2024-04-27 18:59:25] INFO root fetch - processPackages [pillow-jxl-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pillow_jxl_plugin-1.2.3.tar.gz tmp/pillow_jxl_plugin-1.2.4.tar.gz --markdown 20240427/p/pillow-jxl-plugin/1.2.3-1.2.4/README.md --exclude *.pyd
+[2024-04-27 18:59:25] INFO root fetch - processPackages [swiss-army-man]: Remove: archive file [/home/abi/fetcher/tmp/swiss_army_man-0.1.7.tar.gz]
+[2024-04-27 18:59:25] INFO root fetch - processPackages [swiss-army-man]: Remove: archive file [/home/abi/fetcher/tmp/swiss_army_man-0.1.9.tar.gz]
+[2024-04-27 18:59:25] INFO root fetch - main [MainThread]: End processing [swiss-army-man]: success
+[2024-04-27 18:59:25] INFO root fetch - processPackages [mlops-api-gemstack]: Remove: archive file [/home/abi/fetcher/tmp/mlops_api_gemstack-0.3.6.tar.gz]
+[2024-04-27 18:59:25] INFO root fetch - processPackages [mlops-api-gemstack]: Remove: archive file [/home/abi/fetcher/tmp/mlops_api_gemstack-0.3.7.tar.gz]
+[2024-04-27 18:59:25] INFO root fetch - main [MainThread]: End processing [mlops-api-gemstack]: success
+[2024-04-27 18:59:25] INFO root fetch - processPackages [istr-python]: Remove: archive file [/home/abi/fetcher/tmp/istr_python-0.1.1.tar.gz]
+[2024-04-27 18:59:25] INFO root fetch - processPackages [istr-python]: Remove: archive file [/home/abi/fetcher/tmp/istr_python-0.1.2.tar.gz]
+[2024-04-27 18:59:25] INFO root fetch - main [MainThread]: End processing [istr-python]: success
+[2024-04-27 18:59:25] INFO root fetch - processPackages [pillow-jxl-plugin]: Remove: archive file [/home/abi/fetcher/tmp/pillow_jxl_plugin-1.2.3.tar.gz]
+[2024-04-27 18:59:25] INFO root fetch - processPackages [pillow-jxl-plugin]: Remove: archive file [/home/abi/fetcher/tmp/pillow_jxl_plugin-1.2.4.tar.gz]
+[2024-04-27 18:59:25] INFO root fetch - main [MainThread]: End processing [pillow-jxl-plugin]: success
+[2024-04-27 18:59:25] INFO root fetch - main [MainThread]: Store serial: [22960347]
