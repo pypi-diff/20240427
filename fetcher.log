@@ -6828,3 +6828,15 @@ EOFError: EOF read where object expected
 [2024-04-27 03:41:33] INFO root fetch - processPackages [paper-qa]: Remove: archive file [/home/abi/fetcher/tmp/paper_qa-4.6.0.tar.gz]
 [2024-04-27 03:41:33] INFO root fetch - main [MainThread]: End processing [paper-qa]: success
 [2024-04-27 03:41:33] INFO root fetch - main [MainThread]: Store serial: [22955910]
+[2024-04-27 03:43:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22955910]
+[2024-04-27 03:43:41] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 03:43:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flowdata
+[2024-04-27 03:43:42] INFO root fetch - processPackages [flowdata]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-27 03:43:42] INFO root fetch - processPackages [flowdata]: Downloading https://files.pythonhosted.org/packages/f6/97/38d04c90a1f220305fba7ebb0381658c41d63ecfebbea034551021438133/flowdata-0.1.3.tar.gz
+[2024-04-27 03:43:42] INFO root fetch - processPackages [flowdata]: Downloading https://files.pythonhosted.org/packages/a9/86/f6f7cc6ea93fdac13b53c4ba9eeb0aaef201ae320e171e8cfb03311a4e8b/flowdata-0.1.4.tar.gz
+[2024-04-27 03:43:42] INFO root fetch - processPackages [flowdata]: executing diffoscope
+[2024-04-27 03:43:42] INFO root fetch - processPackages [flowdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowdata-0.1.3.tar.gz tmp/flowdata-0.1.4.tar.gz --markdown 20240427/f/flowdata/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-27 03:43:43] INFO root fetch - processPackages [flowdata]: Remove: archive file [/home/abi/fetcher/tmp/flowdata-0.1.3.tar.gz]
+[2024-04-27 03:43:43] INFO root fetch - processPackages [flowdata]: Remove: archive file [/home/abi/fetcher/tmp/flowdata-0.1.4.tar.gz]
+[2024-04-27 03:43:43] INFO root fetch - main [MainThread]: End processing [flowdata]: success
+[2024-04-27 03:43:43] INFO root fetch - main [MainThread]: Store serial: [22955915]
