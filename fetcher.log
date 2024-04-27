@@ -6846,3 +6846,15 @@ EOFError: EOF read where object expected
 [2024-04-27 03:45:52] WARNING root fetch - processPackages [django-utilitybox]: Skipping, unable to determine old version
 [2024-04-27 03:45:52] INFO root fetch - main [MainThread]: End processing [django-utilitybox] error
 [2024-04-27 03:45:52] INFO root fetch - main [MainThread]: Store serial: [22955919]
+[2024-04-27 03:47:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22955919]
+[2024-04-27 03:48:00] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 03:48:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tool-use
+[2024-04-27 03:48:00] INFO root fetch - processPackages [tool-use]: New version: [0.2.0] Old Version: [0.1.1rc6]
+[2024-04-27 03:48:01] INFO root fetch - processPackages [tool-use]: Downloading https://files.pythonhosted.org/packages/1d/ac/ba348b4e1b04bcdc6b250e8e264c27bc06744ee1092d2b95cde0d713dc85/tool_use-0.1.1rc6.tar.gz
+[2024-04-27 03:48:01] INFO root fetch - processPackages [tool-use]: Downloading https://files.pythonhosted.org/packages/da/08/cb5ff7b8413fe774cecafb5ad39713f4bf50202c076828964c2e899d3ad4/tool_use-0.2.0.tar.gz
+[2024-04-27 03:48:01] INFO root fetch - processPackages [tool-use]: executing diffoscope
+[2024-04-27 03:48:01] INFO root fetch - processPackages [tool-use]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tool_use-0.1.1rc6.tar.gz tmp/tool_use-0.2.0.tar.gz --markdown 20240427/t/tool-use/0.1.1rc6-0.2.0/README.md --exclude *.pyd
+[2024-04-27 03:48:02] INFO root fetch - processPackages [tool-use]: Remove: archive file [/home/abi/fetcher/tmp/tool_use-0.1.1rc6.tar.gz]
+[2024-04-27 03:48:02] INFO root fetch - processPackages [tool-use]: Remove: archive file [/home/abi/fetcher/tmp/tool_use-0.2.0.tar.gz]
+[2024-04-27 03:48:02] INFO root fetch - main [MainThread]: End processing [tool-use]: success
+[2024-04-27 03:48:02] INFO root fetch - main [MainThread]: Store serial: [22955928]
