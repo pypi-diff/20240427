@@ -18069,3 +18069,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 19:15:07] INFO root fetch - main [MainThread]: End processing [zonefile-parser]: success
 [2024-04-27 19:15:07] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2024-04-27 19:15:07] INFO root fetch - main [MainThread]: Store serial: [22960439]
+[2024-04-27 19:17:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960439]
+[2024-04-27 19:17:19] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 19:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: biliup
+[2024-04-27 19:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: libdev
+[2024-04-27 19:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cosmicweb-music
+[2024-04-27 19:17:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: arm-text-detection
+[2024-04-27 19:17:20] INFO root fetch - processPackages [libdev]: New version: [0.9] Old Version: [0.8]
+[2024-04-27 19:17:20] INFO root fetch - processPackages [libdev]: Downloading https://files.pythonhosted.org/packages/e2/8d/bcacab1d4f911d6fbf6c411dfb5a06ce836e521ccc40dc8175441fdb80b8/libdev-0.8.tar.gz
+[2024-04-27 19:17:20] INFO root fetch - processPackages [cosmicweb-music]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-27 19:17:20] INFO root fetch - processPackages [biliup]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-04-27 19:17:20] WARNING root fetch - processPackages [arm-text-detection]: Skipping, unable to determine old version
+[2024-04-27 19:17:20] INFO root fetch - main [MainThread]: End processing [arm-text-detection] error
+[2024-04-27 19:17:20] INFO root fetch - processPackages [libdev]: Downloading https://files.pythonhosted.org/packages/7d/2f/227c058dbbd649c3bb70bbd6d279691828eba2b5bac3cf27685382669b09/libdev-0.9.tar.gz
+[2024-04-27 19:17:20] INFO root fetch - processPackages [cosmicweb-music]: Downloading https://files.pythonhosted.org/packages/b4/3c/1d28d0a43b70c44666af5c7129436b9436a8684d0d664116f001caa2a9b1/cosmicweb_music-0.2.0.tar.gz
+[2024-04-27 19:17:20] INFO root fetch - processPackages [biliup]: Downloading https://files.pythonhosted.org/packages/33/26/87446b9e80024414938248abd6d5d23524d52b9a0e07980909695db33a0a/biliup-0.4.8.tar.gz
+[2024-04-27 19:17:20] INFO root fetch - processPackages [libdev]: executing diffoscope
+[2024-04-27 19:17:20] INFO root fetch - processPackages [libdev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libdev-0.8.tar.gz tmp/libdev-0.9.tar.gz --markdown 20240427/l/libdev/0.8-0.9/README.md --exclude *.pyd
+[2024-04-27 19:17:20] INFO root fetch - processPackages [cosmicweb-music]: Downloading https://files.pythonhosted.org/packages/85/d6/e96381bb55db080aaafe48a1466a3edfe1c558ab16ac4c74b05303cff03c/cosmicweb_music-0.3.0.tar.gz
+[2024-04-27 19:17:20] INFO root fetch - processPackages [biliup]: Downloading https://files.pythonhosted.org/packages/ca/50/28c81627954370eeba7075b44c9ef20597ed8f140a1390c814dd976e6c70/biliup-0.4.9.tar.gz
+[2024-04-27 19:17:21] INFO root fetch - processPackages [biliup]: executing diffoscope
+[2024-04-27 19:17:21] INFO root fetch - processPackages [biliup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biliup-0.4.8.tar.gz tmp/biliup-0.4.9.tar.gz --markdown 20240427/b/biliup/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-04-27 19:17:21] INFO root fetch - processPackages [libdev]: Remove: archive file [/home/abi/fetcher/tmp/libdev-0.8.tar.gz]
+[2024-04-27 19:17:21] INFO root fetch - processPackages [libdev]: Remove: archive file [/home/abi/fetcher/tmp/libdev-0.9.tar.gz]
+[2024-04-27 19:17:21] INFO root fetch - main [MainThread]: End processing [libdev]: success
+[2024-04-27 19:17:21] INFO root fetch - processPackages [cosmicweb-music]: executing diffoscope
+[2024-04-27 19:17:21] INFO root fetch - processPackages [cosmicweb-music]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cosmicweb_music-0.2.0.tar.gz tmp/cosmicweb_music-0.3.0.tar.gz --markdown 20240427/c/cosmicweb-music/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-04-27 19:17:21] INFO root fetch - processPackages [biliup]: Remove: archive file [/home/abi/fetcher/tmp/biliup-0.4.8.tar.gz]
+[2024-04-27 19:17:21] INFO root fetch - processPackages [biliup]: Remove: archive file [/home/abi/fetcher/tmp/biliup-0.4.9.tar.gz]
+[2024-04-27 19:17:21] INFO root fetch - main [MainThread]: End processing [biliup]: success
+[2024-04-27 19:17:21] INFO root fetch - processPackages [cosmicweb-music]: Remove: archive file [/home/abi/fetcher/tmp/cosmicweb_music-0.2.0.tar.gz]
+[2024-04-27 19:17:21] INFO root fetch - processPackages [cosmicweb-music]: Remove: archive file [/home/abi/fetcher/tmp/cosmicweb_music-0.3.0.tar.gz]
+[2024-04-27 19:17:21] INFO root fetch - main [MainThread]: End processing [cosmicweb-music]: success
+[2024-04-27 19:17:21] INFO root fetch - main [MainThread]: Store serial: [22960448]
