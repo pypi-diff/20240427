@@ -11098,3 +11098,42 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 10:52:51] INFO root fetch - processPackages [myPYPI9]: Remove: archive file [/home/abi/fetcher/tmp/mypypi9-0.7.9.tar.gz]
 [2024-04-27 10:52:51] INFO root fetch - main [MainThread]: End processing [myPYPI9]: success
 [2024-04-27 10:52:51] INFO root fetch - main [MainThread]: Store serial: [22957552]
+[2024-04-27 10:54:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957552]
+[2024-04-27 10:55:00] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 10:55:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: malet
+[2024-04-27 10:55:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bgutils-hddly
+[2024-04-27 10:55:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jetline
+[2024-04-27 10:55:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vbproblemcomposer
+[2024-04-27 10:55:00] INFO root fetch - processPackages [jetline]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-27 10:55:00] INFO root fetch - processPackages [bgutils-hddly]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-27 10:55:00] INFO root fetch - processPackages [vbproblemcomposer]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-27 10:55:00] INFO root fetch - processPackages [malet]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-27 10:55:00] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/b6/e6/b38dd1ba89a151f269fb2933c2ae8c7931018b8a8127636b88330ab479ca/jetline-0.1.2.tar.gz
+[2024-04-27 10:55:00] INFO root fetch - processPackages [bgutils-hddly]: Downloading https://files.pythonhosted.org/packages/07/22/a69a45ea0621e457373043238ae8172d597dde38054d258752459d22fd6a/bgutils_hddly-1.1.8-py3-none-any.whl
+[2024-04-27 10:55:00] INFO root fetch - processPackages [vbproblemcomposer]: Downloading https://files.pythonhosted.org/packages/6a/56/8ed85213e4af0caed94ecb11a987d8fbd10c0e6bd906465378da28f3c7ec/vbproblemcomposer-0.1.1.tar.gz
+[2024-04-27 10:55:00] INFO root fetch - processPackages [malet]: Downloading https://files.pythonhosted.org/packages/37/d3/a5d7477a20c6fd6f8f1c1417ef57e3ab5c60831aac980952a01cb2329cd5/malet-0.1.8.tar.gz
+[2024-04-27 10:55:00] INFO root fetch - processPackages [bgutils-hddly]: Downloading https://files.pythonhosted.org/packages/68/b8/73eaefe5a7f9214b0aa5443f4083f56d3a6492768411b1a003302b66bf45/bgutils_hddly-1.1.9.tar.gz
+[2024-04-27 10:55:00] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/aa/e4/d2b1243055ee2841fa51c33d8507410f8c7c4f34fb7ec8d77e7adbb882eb/jetline-0.1.3.tar.gz
+[2024-04-27 10:55:01] INFO root fetch - processPackages [bgutils-hddly]: executing diffoscope
+[2024-04-27 10:55:01] INFO root fetch - processPackages [bgutils-hddly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bgutils_hddly-1.1.8-py3-none-any.whl.zip tmp/bgutils_hddly-1.1.9.tar.gz --markdown 20240427/b/bgutils-hddly/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-04-27 10:55:01] INFO root fetch - processPackages [jetline]: executing diffoscope
+[2024-04-27 10:55:01] INFO root fetch - processPackages [jetline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jetline-0.1.2.tar.gz tmp/jetline-0.1.3.tar.gz --markdown 20240427/j/jetline/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-27 10:55:01] INFO root fetch - processPackages [vbproblemcomposer]: Downloading https://files.pythonhosted.org/packages/73/c4/cbf22e22499e81afa5bbfbc5096d35b5a439440427d4feeb8ed1b3e65eea/vbproblemcomposer-0.1.2.tar.gz
+[2024-04-27 10:55:01] INFO root fetch - processPackages [malet]: Downloading https://files.pythonhosted.org/packages/bb/27/d7404ebdb123f6eab488ed06813316bb532043dd267554a30981adbd25b8/malet-0.1.9.tar.gz
+[2024-04-27 10:55:01] INFO root fetch - processPackages [vbproblemcomposer]: executing diffoscope
+[2024-04-27 10:55:01] INFO root fetch - processPackages [vbproblemcomposer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vbproblemcomposer-0.1.1.tar.gz tmp/vbproblemcomposer-0.1.2.tar.gz --markdown 20240427/v/vbproblemcomposer/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-27 10:55:01] INFO root fetch - processPackages [malet]: executing diffoscope
+[2024-04-27 10:55:01] INFO root fetch - processPackages [malet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/malet-0.1.8.tar.gz tmp/malet-0.1.9.tar.gz --markdown 20240427/m/malet/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-27 10:55:01] INFO root fetch - processPackages [bgutils-hddly]: Remove: archive file [/home/abi/fetcher/tmp/bgutils_hddly-1.1.8-py3-none-any.whl.zip]
+[2024-04-27 10:55:01] INFO root fetch - processPackages [bgutils-hddly]: Remove: archive file [/home/abi/fetcher/tmp/bgutils_hddly-1.1.9.tar.gz]
+[2024-04-27 10:55:01] INFO root fetch - main [MainThread]: End processing [bgutils-hddly]: success
+[2024-04-27 10:55:01] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.2.tar.gz]
+[2024-04-27 10:55:01] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.3.tar.gz]
+[2024-04-27 10:55:01] INFO root fetch - main [MainThread]: End processing [jetline]: success
+[2024-04-27 10:55:01] INFO root fetch - processPackages [vbproblemcomposer]: Remove: archive file [/home/abi/fetcher/tmp/vbproblemcomposer-0.1.1.tar.gz]
+[2024-04-27 10:55:01] INFO root fetch - processPackages [vbproblemcomposer]: Remove: archive file [/home/abi/fetcher/tmp/vbproblemcomposer-0.1.2.tar.gz]
+[2024-04-27 10:55:01] INFO root fetch - main [MainThread]: End processing [vbproblemcomposer]: success
+[2024-04-27 10:55:02] INFO root fetch - processPackages [malet]: Remove: archive file [/home/abi/fetcher/tmp/malet-0.1.8.tar.gz]
+[2024-04-27 10:55:02] INFO root fetch - processPackages [malet]: Remove: archive file [/home/abi/fetcher/tmp/malet-0.1.9.tar.gz]
+[2024-04-27 10:55:02] INFO root fetch - main [MainThread]: End processing [malet]: success
+[2024-04-27 10:55:02] INFO root fetch - main [MainThread]: Store serial: [22957564]
