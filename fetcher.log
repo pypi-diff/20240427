@@ -19901,3 +19901,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 21:25:35] INFO root fetch - processPackages [findatapy]: Remove: archive file [/home/abi/fetcher/tmp/findatapy-0.1.9.tar.gz]
 [2024-04-27 21:25:35] INFO root fetch - main [MainThread]: End processing [findatapy]: success
 [2024-04-27 21:25:35] INFO root fetch - main [MainThread]: Store serial: [22961379]
+[2024-04-27 21:27:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961379]
+[2024-04-27 21:27:50] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 21:27:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scrapegraphai
+[2024-04-27 21:27:50] INFO root fetch - processPackages [scrapegraphai]: New version: [0.4.0b3] Old Version: [0.4.0b2]
+[2024-04-27 21:27:50] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/db/0d/fc8fd75d79b6c67e21064298999f37ff9e0a52e095a03b76f5087f94a7d6/scrapegraphai-0.4.0b2.tar.gz
+[2024-04-27 21:27:51] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/0f/06/bfe14a74ca017dfe248649e5ab6f4419c19154bae26bed84dcf679c89c11/scrapegraphai-0.4.0b3.tar.gz
+[2024-04-27 21:27:51] INFO root fetch - processPackages [scrapegraphai]: executing diffoscope
+[2024-04-27 21:27:51] INFO root fetch - processPackages [scrapegraphai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapegraphai-0.4.0b2.tar.gz tmp/scrapegraphai-0.4.0b3.tar.gz --markdown 20240427/s/scrapegraphai/0.4.0b2-0.4.0b3/README.md --exclude *.pyd
+[2024-04-27 21:27:51] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-0.4.0b2.tar.gz]
+[2024-04-27 21:27:51] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-0.4.0b3.tar.gz]
+[2024-04-27 21:27:51] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
+[2024-04-27 21:27:51] INFO root fetch - main [MainThread]: Store serial: [22961382]
