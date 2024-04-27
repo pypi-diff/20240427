@@ -16589,3 +16589,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 17:28:05] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.1.5.tar.gz]
 [2024-04-27 17:28:05] INFO root fetch - main [MainThread]: End processing [freegenius]: success
 [2024-04-27 17:28:05] INFO root fetch - main [MainThread]: Store serial: [22959818]
+[2024-04-27 17:30:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959818]
+[2024-04-27 17:30:14] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 17:30:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pass50
+[2024-04-27 17:30:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ccxt
+[2024-04-27 17:30:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-mbedtls
+[2024-04-27 17:30:14] INFO root fetch - processPackages [pass50]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-27 17:30:14] INFO root fetch - processPackages [ccxt]: New version: [4.3.9] Old Version: [4.3.8]
+[2024-04-27 17:30:14] INFO root fetch - processPackages [pass50]: Downloading https://files.pythonhosted.org/packages/93/48/e5888ee2b056986b00516f89752a58fb6c8e47e06ea3b6000f8f3f9a8593/pass50-0.0.1.tar.gz
+[2024-04-27 17:30:14] INFO root fetch - processPackages [ccxt]: Downloading https://files.pythonhosted.org/packages/1c/a1/3a1a3f9672e43a2620d2ab195c398183c3594751d3a306bd022e7ceccbb7/ccxt-4.3.8.tar.gz
+[2024-04-27 17:30:15] INFO root fetch - processPackages [pass50]: Downloading https://files.pythonhosted.org/packages/93/66/29dfc93853b2bba5edb9e2d70fa8e70663f1fe626ae403d6749dc3810e48/pass50-0.0.2.tar.gz
+[2024-04-27 17:30:15] INFO root fetch - processPackages [python-mbedtls]: New version: [2.9.2] Old Version: [2.9.0]
+[2024-04-27 17:30:15] INFO root fetch - processPackages [pass50]: executing diffoscope
+[2024-04-27 17:30:15] INFO root fetch - processPackages [pass50]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pass50-0.0.1.tar.gz tmp/pass50-0.0.2.tar.gz --markdown 20240427/p/pass50/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-27 17:30:15] INFO root fetch - processPackages [python-mbedtls]: Downloading https://files.pythonhosted.org/packages/27/02/b41e6d5238c780b6e65425fb9112fb391c1ffa5666a59bac61cf2f1d66ac/python-mbedtls-2.9.0.tar.gz
+[2024-04-27 17:30:15] INFO root fetch - processPackages [ccxt]: Downloading https://files.pythonhosted.org/packages/f0/34/c7c38c5c0bec0a22183d7eed68184bef3efe315a8570460824012267cbac/ccxt-4.3.9.tar.gz
+[2024-04-27 17:30:15] INFO root fetch - processPackages [pass50]: Remove: archive file [/home/abi/fetcher/tmp/pass50-0.0.1.tar.gz]
+[2024-04-27 17:30:15] INFO root fetch - processPackages [pass50]: Remove: archive file [/home/abi/fetcher/tmp/pass50-0.0.2.tar.gz]
+[2024-04-27 17:30:15] INFO root fetch - main [MainThread]: End processing [pass50]: success
+[2024-04-27 17:30:15] INFO root fetch - processPackages [ccxt]: executing diffoscope
+[2024-04-27 17:30:15] INFO root fetch - processPackages [ccxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccxt-4.3.8.tar.gz tmp/ccxt-4.3.9.tar.gz --markdown 20240427/c/ccxt/4.3.8-4.3.9/README.md --exclude *.pyd
+[2024-04-27 17:30:15] INFO root fetch - processPackages [python-mbedtls]: Downloading https://files.pythonhosted.org/packages/88/b7/b926727e3433ca2072e61572a36229ac21ebd46b0dca320d1c09f6fcd108/python-mbedtls-2.9.2.tar.gz
+[2024-04-27 17:30:15] INFO root fetch - processPackages [python-mbedtls]: executing diffoscope
+[2024-04-27 17:30:15] INFO root fetch - processPackages [python-mbedtls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-mbedtls-2.9.0.tar.gz tmp/python-mbedtls-2.9.2.tar.gz --markdown 20240427/p/python-mbedtls/2.9.0-2.9.2/README.md --exclude *.pyd
+[2024-04-27 17:30:17] INFO root fetch - processPackages [python-mbedtls]: Remove: archive file [/home/abi/fetcher/tmp/python-mbedtls-2.9.0.tar.gz]
+[2024-04-27 17:30:17] INFO root fetch - processPackages [python-mbedtls]: Remove: archive file [/home/abi/fetcher/tmp/python-mbedtls-2.9.2.tar.gz]
+[2024-04-27 17:30:17] INFO root fetch - main [MainThread]: End processing [python-mbedtls]: success
+[2024-04-27 17:30:19] INFO root fetch - processPackages [ccxt]: Remove: archive file [/home/abi/fetcher/tmp/ccxt-4.3.8.tar.gz]
+[2024-04-27 17:30:19] INFO root fetch - processPackages [ccxt]: Remove: archive file [/home/abi/fetcher/tmp/ccxt-4.3.9.tar.gz]
+[2024-04-27 17:30:19] INFO root fetch - main [MainThread]: End processing [ccxt]: success
+[2024-04-27 17:30:19] INFO root fetch - main [MainThread]: Store serial: [22959838]
