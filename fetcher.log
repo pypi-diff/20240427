@@ -2830,3 +2830,24 @@ EOFError: EOF read where object expected
 [2024-04-27 02:48:26] INFO root fetch - processPackages [bioversions]: Remove: archive file [/home/abi/fetcher/tmp/bioversions-0.5.99.tar.gz]
 [2024-04-27 02:48:26] INFO root fetch - main [MainThread]: End processing [bioversions]: success
 [2024-04-27 02:48:26] INFO root fetch - main [MainThread]: Store serial: [22954479]
+[2024-04-27 02:50:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22954479]
+[2024-04-27 02:50:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 02:50:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-sns-notify
+[2024-04-27 02:50:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: azure-template
+[2024-04-27 02:50:36] INFO root fetch - processPackages [cdk-sns-notify]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-27 02:50:36] INFO root fetch - processPackages [azure-template]: New version: [0.1.0b971103] Old Version: [0.1.0b954542]
+[2024-04-27 02:50:36] INFO root fetch - processPackages [cdk-sns-notify]: Downloading https://files.pythonhosted.org/packages/63/7d/ec62f3b7c0e08e1437b2036911a0d42b75ee30ea2cbb819399bdf8b55111/cdk-sns-notify-0.0.98.tar.gz
+[2024-04-27 02:50:36] INFO root fetch - processPackages [cdk-sns-notify]: Downloading https://files.pythonhosted.org/packages/18/81/3593e022c53913815c1207f0d20763efc2764992a13c81d641f3a01edf7d/cdk-sns-notify-0.0.99.tar.gz
+[2024-04-27 02:50:36] INFO root fetch - processPackages [azure-template]: Downloading https://files.pythonhosted.org/packages/82/04/b1cf5ee1227ca7899decd531cd1521ea523ed4cbdc8ce0e3d7e58ca8331c/azure-template-0.1.0b954542.zip
+[2024-04-27 02:50:36] INFO root fetch - processPackages [cdk-sns-notify]: executing diffoscope
+[2024-04-27 02:50:36] INFO root fetch - processPackages [cdk-sns-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sns-notify-0.0.98.tar.gz tmp/cdk-sns-notify-0.0.99.tar.gz --markdown 20240427/c/cdk-sns-notify/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-27 02:50:36] INFO root fetch - processPackages [azure-template]: Downloading https://files.pythonhosted.org/packages/a3/ab/51e8db029e6b46655758882e5ee630afbf245243726a418c4125d2ae7e4e/azure-template-0.1.0b971103.zip
+[2024-04-27 02:50:36] INFO root fetch - processPackages [azure-template]: executing diffoscope
+[2024-04-27 02:50:36] INFO root fetch - processPackages [azure-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azure-template-0.1.0b954542.zip tmp/azure-template-0.1.0b971103.zip --markdown 20240427/a/azure-template/0.1.0b954542-0.1.0b971103/README.md --exclude *.pyd
+[2024-04-27 02:50:37] INFO root fetch - processPackages [cdk-sns-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-sns-notify-0.0.98.tar.gz]
+[2024-04-27 02:50:37] INFO root fetch - processPackages [cdk-sns-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-sns-notify-0.0.99.tar.gz]
+[2024-04-27 02:50:37] INFO root fetch - main [MainThread]: End processing [cdk-sns-notify]: success
+[2024-04-27 02:50:37] INFO root fetch - processPackages [azure-template]: Remove: archive file [/home/abi/fetcher/tmp/azure-template-0.1.0b954542.zip]
+[2024-04-27 02:50:37] INFO root fetch - processPackages [azure-template]: Remove: archive file [/home/abi/fetcher/tmp/azure-template-0.1.0b971103.zip]
+[2024-04-27 02:50:37] INFO root fetch - main [MainThread]: End processing [azure-template]: success
+[2024-04-27 02:50:37] INFO root fetch - main [MainThread]: Store serial: [22954487]
