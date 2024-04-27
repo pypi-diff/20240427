@@ -11002,3 +11002,36 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 10:41:43] INFO root fetch - processPackages [geospaNN]: Remove: archive file [/home/abi/fetcher/tmp/geospann-0.1.2.tar.gz]
 [2024-04-27 10:41:43] INFO root fetch - main [MainThread]: End processing [geospaNN]: success
 [2024-04-27 10:41:43] INFO root fetch - main [MainThread]: Store serial: [22957474]
+[2024-04-27 10:43:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957474]
+[2024-04-27 10:43:52] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 10:43:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kuzu
+[2024-04-27 10:43:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fivetran-connector-sdk
+[2024-04-27 10:43:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: humlab-penelope
+[2024-04-27 10:43:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: twill
+[2024-04-27 10:43:52] INFO root fetch - processPackages [twill]: New version: [3.2.3] Old Version: [3.2.2]
+[2024-04-27 10:43:52] WARNING root fetch - processPackages [fivetran-connector-sdk]: Skipping, unable to determine old version
+[2024-04-27 10:43:52] INFO root fetch - main [MainThread]: End processing [fivetran-connector-sdk] error
+[2024-04-27 10:43:52] INFO root fetch - processPackages [humlab-penelope]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-04-27 10:43:52] INFO root fetch - processPackages [kuzu]: New version: [0.3.3.dev48] Old Version: [0.3.3.dev47]
+[2024-04-27 10:43:52] INFO root fetch - processPackages [twill]: Downloading https://files.pythonhosted.org/packages/72/66/62d42ed259f5aad428b77465ca8a7a1bbaf8cc4910d9dd67d99605247186/twill-3.2.2.tar.gz
+[2024-04-27 10:43:52] INFO root fetch - processPackages [humlab-penelope]: Downloading https://files.pythonhosted.org/packages/d8/ca/dedea523957beaa5dab86604ac3a1877a34c4a4036306f5610f37f3eeb10/humlab-penelope-0.7.8.tar.gz
+[2024-04-27 10:43:53] INFO root fetch - processPackages [twill]: Downloading https://files.pythonhosted.org/packages/b9/c7/14b44e5eb35847ba131313004c5352bdd611aec2d67102e826cc0df93fe9/twill-3.2.3.tar.gz
+[2024-04-27 10:43:53] INFO root fetch - processPackages [humlab-penelope]: Downloading https://files.pythonhosted.org/packages/cd/64/b400304bb580cd93a392737813c0281428d325fb97fce6726ec5b53a4fd3/humlab-penelope-0.7.9.tar.gz
+[2024-04-27 10:43:53] INFO root fetch - processPackages [kuzu]: Downloading https://files.pythonhosted.org/packages/e3/01/d88153bd260d13358171f71edcc48b1042dee73a9f50af68d84d1af0dafb/kuzu-0.3.3.dev47.tar.gz
+[2024-04-27 10:43:53] INFO root fetch - processPackages [twill]: executing diffoscope
+[2024-04-27 10:43:53] INFO root fetch - processPackages [twill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twill-3.2.2.tar.gz tmp/twill-3.2.3.tar.gz --markdown 20240427/t/twill/3.2.2-3.2.3/README.md --exclude *.pyd
+[2024-04-27 10:43:53] INFO root fetch - processPackages [humlab-penelope]: executing diffoscope
+[2024-04-27 10:43:53] INFO root fetch - processPackages [humlab-penelope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/humlab-penelope-0.7.8.tar.gz tmp/humlab-penelope-0.7.9.tar.gz --markdown 20240427/h/humlab-penelope/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-04-27 10:43:54] INFO root fetch - processPackages [kuzu]: Downloading https://files.pythonhosted.org/packages/01/ad/c3e21f2dda1cdd9f2448b9c2c8db83b4e39eaf761b06c568b4f3c5fe8837/kuzu-0.3.3.dev48.tar.gz
+[2024-04-27 10:43:54] INFO root fetch - processPackages [twill]: Remove: archive file [/home/abi/fetcher/tmp/twill-3.2.2.tar.gz]
+[2024-04-27 10:43:54] INFO root fetch - processPackages [twill]: Remove: archive file [/home/abi/fetcher/tmp/twill-3.2.3.tar.gz]
+[2024-04-27 10:43:54] INFO root fetch - main [MainThread]: End processing [twill]: success
+[2024-04-27 10:43:55] INFO root fetch - processPackages [humlab-penelope]: Remove: archive file [/home/abi/fetcher/tmp/humlab-penelope-0.7.8.tar.gz]
+[2024-04-27 10:43:55] INFO root fetch - processPackages [humlab-penelope]: Remove: archive file [/home/abi/fetcher/tmp/humlab-penelope-0.7.9.tar.gz]
+[2024-04-27 10:43:55] INFO root fetch - main [MainThread]: End processing [humlab-penelope]: success
+[2024-04-27 10:43:55] INFO root fetch - processPackages [kuzu]: executing diffoscope
+[2024-04-27 10:43:55] INFO root fetch - processPackages [kuzu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kuzu-0.3.3.dev47.tar.gz tmp/kuzu-0.3.3.dev48.tar.gz --markdown 20240427/k/kuzu/0.3.3.dev47-0.3.3.dev48/README.md --exclude *.pyd
+[2024-04-27 10:44:01] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.3.3.dev47.tar.gz]
+[2024-04-27 10:44:01] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.3.3.dev48.tar.gz]
+[2024-04-27 10:44:01] INFO root fetch - main [MainThread]: End processing [kuzu]: success
+[2024-04-27 10:44:01] INFO root fetch - main [MainThread]: Store serial: [22957515]
