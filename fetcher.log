@@ -7937,3 +7937,36 @@ EOFError: EOF read where object expected
 [2024-04-27 06:00:08] INFO root fetch - processPackages [PythonicDISORT]: Remove: archive file [/home/abi/fetcher/tmp/pythonicdisort-0.7.0.tar.gz]
 [2024-04-27 06:00:08] INFO root fetch - main [MainThread]: End processing [PythonicDISORT]: success
 [2024-04-27 06:00:08] INFO root fetch - main [MainThread]: Store serial: [22956294]
+[2024-04-27 06:02:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956294]
+[2024-04-27 06:02:17] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 06:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dify-client-python
+[2024-04-27 06:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: package-auto-assembler
+[2024-04-27 06:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: honeybee-radiance
+[2024-04-27 06:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: honeybee-energy
+[2024-04-27 06:02:17] INFO root fetch - processPackages [package-auto-assembler]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 06:02:17] INFO root fetch - processPackages [honeybee-radiance]: New version: [1.9.2] Old Version: [1.9.1]
+[2024-04-27 06:02:17] INFO root fetch - processPackages [package-auto-assembler]: Downloading https://files.pythonhosted.org/packages/42/9d/48cf5fd953ac330a1717ea627f2bbfeafdbee0e0f1549c1e52098f7bcafa/package_auto_assembler-0.0.8.tar.gz
+[2024-04-27 06:02:17] WARNING root fetch - processPackages [dify-client-python]: Skipping, unable to determine old version
+[2024-04-27 06:02:17] INFO root fetch - main [MainThread]: End processing [dify-client-python] error
+[2024-04-27 06:02:17] INFO root fetch - processPackages [honeybee-radiance]: Downloading https://files.pythonhosted.org/packages/48/ae/cca3e8aac6a72593fde7860cbf91882050c1a465c316efc2e0472bfa36e1/honeybee-radiance-1.9.1.tar.gz
+[2024-04-27 06:02:17] INFO root fetch - processPackages [honeybee-energy]: New version: [1.99.9] Old Version: [1.99.8]
+[2024-04-27 06:02:17] INFO root fetch - processPackages [package-auto-assembler]: Downloading https://files.pythonhosted.org/packages/96/f6/567914ebd8974f8f40f5c4ae391d3aaea467e53d337fa5382b5f6d334922/package_auto_assembler-0.0.9.tar.gz
+[2024-04-27 06:02:17] INFO root fetch - processPackages [honeybee-energy]: Downloading https://files.pythonhosted.org/packages/b1/ab/c8fb70e349d71cce95bac52782f7ea0659a6987ed84dd41c7fe2ef40806c/honeybee-energy-1.99.8.tar.gz
+[2024-04-27 06:02:17] INFO root fetch - processPackages [honeybee-radiance]: Downloading https://files.pythonhosted.org/packages/50/24/71a3a4863bb39caef68dcd79f1b380133b1f1968426af26bc9c4812376d1/honeybee-radiance-1.9.2.tar.gz
+[2024-04-27 06:02:17] INFO root fetch - processPackages [package-auto-assembler]: executing diffoscope
+[2024-04-27 06:02:17] INFO root fetch - processPackages [package-auto-assembler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/package_auto_assembler-0.0.8.tar.gz tmp/package_auto_assembler-0.0.9.tar.gz --markdown 20240427/p/package-auto-assembler/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 06:02:17] INFO root fetch - processPackages [honeybee-radiance]: executing diffoscope
+[2024-04-27 06:02:17] INFO root fetch - processPackages [honeybee-radiance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeybee-radiance-1.9.1.tar.gz tmp/honeybee-radiance-1.9.2.tar.gz --markdown 20240427/h/honeybee-radiance/1.9.1-1.9.2/README.md --exclude *.pyd
+[2024-04-27 06:02:18] INFO root fetch - processPackages [honeybee-energy]: Downloading https://files.pythonhosted.org/packages/8d/5e/1bc90eeaf45799cc7d5cda125017c1e4e2cf0ef068cd3db60d971b9596ba/honeybee-energy-1.99.9.tar.gz
+[2024-04-27 06:02:18] INFO root fetch - processPackages [package-auto-assembler]: Remove: archive file [/home/abi/fetcher/tmp/package_auto_assembler-0.0.8.tar.gz]
+[2024-04-27 06:02:18] INFO root fetch - processPackages [package-auto-assembler]: Remove: archive file [/home/abi/fetcher/tmp/package_auto_assembler-0.0.9.tar.gz]
+[2024-04-27 06:02:18] INFO root fetch - main [MainThread]: End processing [package-auto-assembler]: success
+[2024-04-27 06:02:18] INFO root fetch - processPackages [honeybee-energy]: executing diffoscope
+[2024-04-27 06:02:18] INFO root fetch - processPackages [honeybee-energy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeybee-energy-1.99.8.tar.gz tmp/honeybee-energy-1.99.9.tar.gz --markdown 20240427/h/honeybee-energy/1.99.8-1.99.9/README.md --exclude *.pyd
+[2024-04-27 06:02:19] INFO root fetch - processPackages [honeybee-radiance]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-radiance-1.9.1.tar.gz]
+[2024-04-27 06:02:19] INFO root fetch - processPackages [honeybee-radiance]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-radiance-1.9.2.tar.gz]
+[2024-04-27 06:02:19] INFO root fetch - main [MainThread]: End processing [honeybee-radiance]: success
+[2024-04-27 06:02:19] INFO root fetch - processPackages [honeybee-energy]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-energy-1.99.8.tar.gz]
+[2024-04-27 06:02:19] INFO root fetch - processPackages [honeybee-energy]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-energy-1.99.9.tar.gz]
+[2024-04-27 06:02:19] INFO root fetch - main [MainThread]: End processing [honeybee-energy]: success
+[2024-04-27 06:02:19] INFO root fetch - main [MainThread]: Store serial: [22956308]
