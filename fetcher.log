@@ -12654,3 +12654,17 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 13:07:46] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.9.tar.gz]
 [2024-04-27 13:07:46] INFO root fetch - main [MainThread]: End processing [snailshell]: success
 [2024-04-27 13:07:46] INFO root fetch - main [MainThread]: Store serial: [22958157]
+[2024-04-27 13:09:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958157]
+[2024-04-27 13:09:55] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-27 13:11:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958160]
+[2024-04-27 13:12:00] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 13:12:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fastbench
+[2024-04-27 13:12:00] INFO root fetch - processPackages [fastbench]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-27 13:12:00] INFO root fetch - processPackages [fastbench]: Downloading https://files.pythonhosted.org/packages/c5/78/4912daaf097e245ff83db776e52e6999d0153251c52e1dc96175ea92e154/fastbench-0.1.1.tar.gz
+[2024-04-27 13:12:01] INFO root fetch - processPackages [fastbench]: Downloading https://files.pythonhosted.org/packages/5c/4a/3aecb7be554ec6159f35418879a6bb9cc184f7a230aa8fcdffa798e7be15/fastbench-0.1.2.tar.gz
+[2024-04-27 13:12:01] INFO root fetch - processPackages [fastbench]: executing diffoscope
+[2024-04-27 13:12:01] INFO root fetch - processPackages [fastbench]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastbench-0.1.1.tar.gz tmp/fastbench-0.1.2.tar.gz --markdown 20240427/f/fastbench/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-27 13:12:01] INFO root fetch - processPackages [fastbench]: Remove: archive file [/home/abi/fetcher/tmp/fastbench-0.1.1.tar.gz]
+[2024-04-27 13:12:01] INFO root fetch - processPackages [fastbench]: Remove: archive file [/home/abi/fetcher/tmp/fastbench-0.1.2.tar.gz]
+[2024-04-27 13:12:01] INFO root fetch - main [MainThread]: End processing [fastbench]: success
+[2024-04-27 13:12:01] INFO root fetch - main [MainThread]: Store serial: [22958164]
