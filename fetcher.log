@@ -16319,3 +16319,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 17:10:21] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240426-py3-none-win_amd64.whl.zip]
 [2024-04-27 17:10:21] INFO root fetch - main [MainThread]: End processing [ipex-llm]: success
 [2024-04-27 17:10:21] INFO root fetch - main [MainThread]: Store serial: [22959705]
+[2024-04-27 17:12:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959705]
+[2024-04-27 17:12:38] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-27 17:12:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ft260
+[2024-04-27 17:12:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sluyspy
+[2024-04-27 17:12:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytest-initry
+[2024-04-27 17:12:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spectrum-io
+[2024-04-27 17:12:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: freegenius
+[2024-04-27 17:12:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: FlexGet
+[2024-04-27 17:12:38] INFO root fetch - processPackages [ft260]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-27 17:12:38] INFO root fetch - processPackages [freegenius]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-27 17:12:38] INFO root fetch - processPackages [pytest-initry]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-27 17:12:38] INFO root fetch - processPackages [sluyspy]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 17:12:38] INFO root fetch - processPackages [spectrum-io]: New version: [0.4.3] Old Version: [0.4.2]
+[2024-04-27 17:12:38] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/6a/d5/fb8be749684b76e4c7bf1036a5b1c6c38ff4a472a3e7ab70a7fabbec87d6/freegenius-0.1.1.tar.gz
+[2024-04-27 17:12:38] INFO root fetch - processPackages [ft260]: Downloading https://files.pythonhosted.org/packages/df/b8/433c823e39821c18d4256884856545c44d9545e910a983be173e3dd936ea/ft260-0.1.0.tar.gz
+[2024-04-27 17:12:38] INFO root fetch - processPackages [pytest-initry]: Downloading https://files.pythonhosted.org/packages/76/46/5bcd31c677b98669feda28b21b864b392196d41ee3651a657262a97d6a2b/pytest_initry-0.2.0.tar.gz
+[2024-04-27 17:12:38] INFO root fetch - processPackages [FlexGet]: New version: [3.9.9] Old Version: [3.9.8]
+[2024-04-27 17:12:38] INFO root fetch - processPackages [spectrum-io]: Downloading https://files.pythonhosted.org/packages/9c/78/5b0913b0a2cca1aa781908c13f1faa6e343bdd0d0e0f72a4e7b0e0e49a27/spectrum_io-0.4.2.tar.gz
+[2024-04-27 17:12:38] INFO root fetch - processPackages [sluyspy]: Downloading https://files.pythonhosted.org/packages/2e/a4/4900e50b59fbb28d4aab27262e301da21d524f63b67822a6e0d4a96ffa07/sluyspy-0.0.8.tar.gz
+[2024-04-27 17:12:38] INFO root fetch - processPackages [FlexGet]: Downloading https://files.pythonhosted.org/packages/1b/a4/72351e7f49841c311d4b869381ac6d49fe8629b509f1f6dec63c21a6c474/FlexGet-3.9.8.tar.gz
+[2024-04-27 17:12:38] INFO root fetch - processPackages [ft260]: Downloading https://files.pythonhosted.org/packages/57/bb/ff0f157f09897b593b59b1e532f3ccf85d2236294850aa726a13e36a12ba/ft260-0.1.1.tar.gz
+[2024-04-27 17:12:39] INFO root fetch - processPackages [pytest-initry]: Downloading https://files.pythonhosted.org/packages/0b/bf/9bf5265d08e59d9dedb0f9f03cc89c97973a643499325706388d8ed0bb8e/pytest_initry-0.3.0.tar.gz
+[2024-04-27 17:12:39] INFO root fetch - processPackages [spectrum-io]: Downloading https://files.pythonhosted.org/packages/3f/a5/e2277357ac07d7424a18d29dc05755fc9c57ecc2d9bdd03e5daef2b07522/spectrum_io-0.4.3.tar.gz
+[2024-04-27 17:12:39] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/b7/a1/d4c3a5718c3c1cec4fac405354526076c1d2049a976e1c117785bf6d16b2/freegenius-0.1.2.tar.gz
+[2024-04-27 17:12:39] INFO root fetch - processPackages [ft260]: executing diffoscope
+[2024-04-27 17:12:39] INFO root fetch - processPackages [pytest-initry]: executing diffoscope
+[2024-04-27 17:12:39] INFO root fetch - processPackages [ft260]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ft260-0.1.0.tar.gz tmp/ft260-0.1.1.tar.gz --markdown 20240427/f/ft260/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-27 17:12:39] INFO root fetch - processPackages [pytest-initry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_initry-0.2.0.tar.gz tmp/pytest_initry-0.3.0.tar.gz --markdown 20240427/p/pytest-initry/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-04-27 17:12:39] INFO root fetch - processPackages [spectrum-io]: executing diffoscope
+[2024-04-27 17:12:39] INFO root fetch - processPackages [spectrum-io]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spectrum_io-0.4.2.tar.gz tmp/spectrum_io-0.4.3.tar.gz --markdown 20240427/s/spectrum-io/0.4.2-0.4.3/README.md --exclude *.pyd
+[2024-04-27 17:12:39] INFO root fetch - processPackages [freegenius]: executing diffoscope
+[2024-04-27 17:12:39] INFO root fetch - processPackages [freegenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freegenius-0.1.1.tar.gz tmp/freegenius-0.1.2.tar.gz --markdown 20240427/f/freegenius/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-27 17:12:39] INFO root fetch - processPackages [sluyspy]: Downloading https://files.pythonhosted.org/packages/57/63/315f0a2381b239ccca34d6bc6a450de14abd766af694e35bd2e06340f14d/sluyspy-0.0.9.tar.gz
+[2024-04-27 17:12:39] INFO root fetch - processPackages [sluyspy]: executing diffoscope
+[2024-04-27 17:12:39] INFO root fetch - processPackages [sluyspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sluyspy-0.0.8.tar.gz tmp/sluyspy-0.0.9.tar.gz --markdown 20240427/s/sluyspy/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 17:12:39] INFO root fetch - processPackages [FlexGet]: Downloading https://files.pythonhosted.org/packages/4a/1f/6a3129847967fa5a426843d04c6aff1d046ee9c348a1df1571a4d8f885f4/FlexGet-3.9.9.tar.gz
+[2024-04-27 17:12:39] INFO root fetch - processPackages [ft260]: Remove: archive file [/home/abi/fetcher/tmp/ft260-0.1.0.tar.gz]
+[2024-04-27 17:12:39] INFO root fetch - processPackages [ft260]: Remove: archive file [/home/abi/fetcher/tmp/ft260-0.1.1.tar.gz]
+[2024-04-27 17:12:39] INFO root fetch - main [MainThread]: End processing [ft260]: success
+[2024-04-27 17:12:39] INFO root fetch - processPackages [spectrum-io]: Remove: archive file [/home/abi/fetcher/tmp/spectrum_io-0.4.2.tar.gz]
+[2024-04-27 17:12:39] INFO root fetch - processPackages [spectrum-io]: Remove: archive file [/home/abi/fetcher/tmp/spectrum_io-0.4.3.tar.gz]
+[2024-04-27 17:12:39] INFO root fetch - main [MainThread]: End processing [spectrum-io]: success
+[2024-04-27 17:12:40] INFO root fetch - processPackages [pytest-initry]: Remove: archive file [/home/abi/fetcher/tmp/pytest_initry-0.2.0.tar.gz]
+[2024-04-27 17:12:40] INFO root fetch - processPackages [pytest-initry]: Remove: archive file [/home/abi/fetcher/tmp/pytest_initry-0.3.0.tar.gz]
+[2024-04-27 17:12:40] INFO root fetch - main [MainThread]: End processing [pytest-initry]: success
+[2024-04-27 17:12:40] INFO root fetch - processPackages [sluyspy]: Remove: archive file [/home/abi/fetcher/tmp/sluyspy-0.0.8.tar.gz]
+[2024-04-27 17:12:40] INFO root fetch - processPackages [sluyspy]: Remove: archive file [/home/abi/fetcher/tmp/sluyspy-0.0.9.tar.gz]
+[2024-04-27 17:12:40] INFO root fetch - main [MainThread]: End processing [sluyspy]: success
+[2024-04-27 17:12:40] INFO root fetch - processPackages [FlexGet]: executing diffoscope
+[2024-04-27 17:12:40] INFO root fetch - processPackages [FlexGet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FlexGet-3.9.8.tar.gz tmp/FlexGet-3.9.9.tar.gz --markdown 20240427/F/FlexGet/3.9.8-3.9.9/README.md --exclude *.pyd
+[2024-04-27 17:12:41] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.1.1.tar.gz]
+[2024-04-27 17:12:41] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.1.2.tar.gz]
+[2024-04-27 17:12:41] INFO root fetch - main [MainThread]: End processing [freegenius]: success
+[2024-04-27 17:12:45] INFO root fetch - processPackages [FlexGet]: Remove: archive file [/home/abi/fetcher/tmp/FlexGet-3.9.8.tar.gz]
+[2024-04-27 17:12:45] INFO root fetch - processPackages [FlexGet]: Remove: archive file [/home/abi/fetcher/tmp/FlexGet-3.9.9.tar.gz]
+[2024-04-27 17:12:45] INFO root fetch - main [MainThread]: End processing [FlexGet]: success
+[2024-04-27 17:12:45] INFO root fetch - main [MainThread]: Store serial: [22959723]
