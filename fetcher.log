@@ -16118,3 +16118,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 16:56:47] INFO root fetch - processPackages [rustfst-python]: Remove: archive file [/home/abi/fetcher/tmp/rustfst_python-1.0.0-cp310-cp310-musllinux_1_1_x86_64.whl.zip]
 [2024-04-27 16:56:47] INFO root fetch - main [MainThread]: End processing [rustfst-python]: success
 [2024-04-27 16:56:47] INFO root fetch - main [MainThread]: Store serial: [22959604]
+[2024-04-27 16:58:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959604]
+[2024-04-27 16:58:55] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 16:58:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Color-Palette-Generator
+[2024-04-27 16:58:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: harlequin-databricks
+[2024-04-27 16:58:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: astroconst
+[2024-04-27 16:58:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: openai-api-with-easy-tools-and-web-browsing
+[2024-04-27 16:58:56] INFO root fetch - processPackages [openai-api-with-easy-tools-and-web-browsing]: New version: [1.0.1] Old Version: [0.0.1]
+[2024-04-27 16:58:56] WARNING root fetch - processPackages [Color-Palette-Generator]: Skipping, unable to determine old version
+[2024-04-27 16:58:56] INFO root fetch - main [MainThread]: End processing [Color-Palette-Generator] error
+[2024-04-27 16:58:56] INFO root fetch - processPackages [astroconst]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 16:58:56] INFO root fetch - processPackages [harlequin-databricks]: New version: [0.3.0] Old Version: [0.2.1]
+[2024-04-27 16:58:56] INFO root fetch - processPackages [openai-api-with-easy-tools-and-web-browsing]: Downloading https://files.pythonhosted.org/packages/23/6c/0cedff5553e9337dabcafa1395b0b73291d685d73fad6db67771d2d27236/openai_api_with_easy_tools_and_web_browsing-0.0.1.tar.gz
+[2024-04-27 16:58:56] INFO root fetch - processPackages [astroconst]: Downloading https://files.pythonhosted.org/packages/cb/65/331b7195cb6aeb9a070aab8817641a399ec84ee4ce13c0a83e67b3ce0944/astroconst-0.0.8.tar.gz
+[2024-04-27 16:58:56] INFO root fetch - processPackages [harlequin-databricks]: Downloading https://files.pythonhosted.org/packages/64/d1/b07f5ec1efe0fae9fa72ad4def7fca5508864aa812859fb5a8840f8867e3/harlequin_databricks-0.2.1.tar.gz
+[2024-04-27 16:58:56] INFO root fetch - processPackages [openai-api-with-easy-tools-and-web-browsing]: Downloading https://files.pythonhosted.org/packages/53/82/1914fa39e1d6e0789b648241f909eb516d0929a0afe1027e0f094c0778c9/openai_api_with_easy_tools_and_web_browsing-1.0.1.tar.gz
+[2024-04-27 16:58:56] INFO root fetch - processPackages [astroconst]: Downloading https://files.pythonhosted.org/packages/cb/5b/24eb67d79d65acdaf6514a7e50cd8f2714917681986a62bf0ff4f1f9d00e/astroconst-0.0.9.tar.gz
+[2024-04-27 16:58:56] INFO root fetch - processPackages [harlequin-databricks]: Downloading https://files.pythonhosted.org/packages/f4/a3/52d47c1779554330564a66aa7029cc0363bc738b29697d756ab913106a89/harlequin_databricks-0.3.0.tar.gz
+[2024-04-27 16:58:56] INFO root fetch - processPackages [openai-api-with-easy-tools-and-web-browsing]: executing diffoscope
+[2024-04-27 16:58:56] INFO root fetch - processPackages [openai-api-with-easy-tools-and-web-browsing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openai_api_with_easy_tools_and_web_browsing-0.0.1.tar.gz tmp/openai_api_with_easy_tools_and_web_browsing-1.0.1.tar.gz --markdown 20240427/o/openai-api-with-easy-tools-and-web-browsing/0.0.1-1.0.1/README.md --exclude *.pyd
+[2024-04-27 16:58:56] INFO root fetch - processPackages [astroconst]: executing diffoscope
+[2024-04-27 16:58:56] INFO root fetch - processPackages [astroconst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astroconst-0.0.8.tar.gz tmp/astroconst-0.0.9.tar.gz --markdown 20240427/a/astroconst/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 16:58:56] INFO root fetch - processPackages [harlequin-databricks]: executing diffoscope
+[2024-04-27 16:58:56] INFO root fetch - processPackages [harlequin-databricks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/harlequin_databricks-0.2.1.tar.gz tmp/harlequin_databricks-0.3.0.tar.gz --markdown 20240427/h/harlequin-databricks/0.2.1-0.3.0/README.md --exclude *.pyd
+[2024-04-27 16:58:57] INFO root fetch - processPackages [openai-api-with-easy-tools-and-web-browsing]: Remove: archive file [/home/abi/fetcher/tmp/openai_api_with_easy_tools_and_web_browsing-0.0.1.tar.gz]
+[2024-04-27 16:58:57] INFO root fetch - processPackages [openai-api-with-easy-tools-and-web-browsing]: Remove: archive file [/home/abi/fetcher/tmp/openai_api_with_easy_tools_and_web_browsing-1.0.1.tar.gz]
+[2024-04-27 16:58:57] INFO root fetch - main [MainThread]: End processing [openai-api-with-easy-tools-and-web-browsing]: success
+[2024-04-27 16:58:57] INFO root fetch - processPackages [astroconst]: Remove: archive file [/home/abi/fetcher/tmp/astroconst-0.0.8.tar.gz]
+[2024-04-27 16:58:57] INFO root fetch - processPackages [astroconst]: Remove: archive file [/home/abi/fetcher/tmp/astroconst-0.0.9.tar.gz]
+[2024-04-27 16:58:57] INFO root fetch - main [MainThread]: End processing [astroconst]: success
+[2024-04-27 16:58:57] INFO root fetch - processPackages [harlequin-databricks]: Remove: archive file [/home/abi/fetcher/tmp/harlequin_databricks-0.2.1.tar.gz]
+[2024-04-27 16:58:57] INFO root fetch - processPackages [harlequin-databricks]: Remove: archive file [/home/abi/fetcher/tmp/harlequin_databricks-0.3.0.tar.gz]
+[2024-04-27 16:58:57] INFO root fetch - main [MainThread]: End processing [harlequin-databricks]: success
+[2024-04-27 16:58:57] INFO root fetch - main [MainThread]: Store serial: [22959635]
