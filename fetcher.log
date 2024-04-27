@@ -14098,3 +14098,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 14:50:11] INFO root fetch - processPackages [datamana]: Remove: archive file [/home/abi/fetcher/tmp/datamana-0.0.9.tar.gz]
 [2024-04-27 14:50:11] INFO root fetch - main [MainThread]: End processing [datamana]: success
 [2024-04-27 14:50:11] INFO root fetch - main [MainThread]: Store serial: [22958755]
+[2024-04-27 14:52:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958755]
+[2024-04-27 14:52:19] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-27 14:52:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: librus-apix
+[2024-04-27 14:52:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openctp-ctp-cp
+[2024-04-27 14:52:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pipelinechain
+[2024-04-27 14:52:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: openctp-ctp-cp
+[2024-04-27 14:52:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: py-dbchat
+[2024-04-27 14:52:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: openctp-ctp-cp
+[2024-04-27 14:52:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: openctp-ctp-cp
+[2024-04-27 14:52:20] INFO root fetch - processPackages [py-dbchat]: New version: [0.0.2rc97.post1] Old Version: [0.0.2rc96.post1]
+[2024-04-27 14:52:20] INFO root fetch - processPackages [openctp-ctp-cp]: New version: [6.7.0] Old Version: [6.6.9]
+[2024-04-27 14:52:20] INFO root fetch - processPackages [openctp-ctp-cp]: New version: [6.7.0] Old Version: [6.6.9]
+[2024-04-27 14:52:20] INFO root fetch - processPackages [openctp-ctp-cp]: New version: [6.7.0] Old Version: [6.6.9]
+[2024-04-27 14:52:20] INFO root fetch - processPackages [openctp-ctp-cp]: New version: [6.7.0] Old Version: [6.6.9]
+[2024-04-27 14:52:20] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/62/c9/abb5addce1d123a3570c0632d105f5389be93435bd93972a8729002d89ea/py_dbchat-0.0.2rc96.post1.tar.gz
+[2024-04-27 14:52:20] INFO root fetch - processPackages [librus-apix]: New version: [0.7.2] Old Version: [0.7.1]
+[2024-04-27 14:52:20] WARNING root fetch - processPackages [pipelinechain]: Skipping, unable to determine old version
+[2024-04-27 14:52:20] INFO root fetch - main [MainThread]: End processing [pipelinechain] error
+[2024-04-27 14:52:20] INFO root fetch - processPackages [openctp-ctp-cp]: Downloading https://files.pythonhosted.org/packages/2b/84/2b11e69f4b000c7e6c2b0fd2ff51fce0f710e128981fbcd44762c279aae7/openctp_ctp_cp-6.6.9-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-27 14:52:20] INFO root fetch - processPackages [openctp-ctp-cp]: Downloading https://files.pythonhosted.org/packages/2b/84/2b11e69f4b000c7e6c2b0fd2ff51fce0f710e128981fbcd44762c279aae7/openctp_ctp_cp-6.6.9-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-27 14:52:20] INFO root fetch - processPackages [openctp-ctp-cp]: Downloading https://files.pythonhosted.org/packages/2b/84/2b11e69f4b000c7e6c2b0fd2ff51fce0f710e128981fbcd44762c279aae7/openctp_ctp_cp-6.6.9-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-27 14:52:20] INFO root fetch - processPackages [openctp-ctp-cp]: Downloading https://files.pythonhosted.org/packages/2b/84/2b11e69f4b000c7e6c2b0fd2ff51fce0f710e128981fbcd44762c279aae7/openctp_ctp_cp-6.6.9-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-27 14:52:20] INFO root fetch - processPackages [librus-apix]: Downloading https://files.pythonhosted.org/packages/5f/15/63382a301294e78b7b2c928e398cd07997405a2c143f8a7ddacaa02c09ed/librus_apix-0.7.1.tar.gz
+[2024-04-27 14:52:20] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/a6/df/ca8133957e8861b1545383331d93d14f48a91b9c59d7e758448c87525e68/py_dbchat-0.0.2rc97.post1.tar.gz
+[2024-04-27 14:52:20] INFO root fetch - processPackages [py-dbchat]: executing diffoscope
+[2024-04-27 14:52:20] INFO root fetch - processPackages [py-dbchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_dbchat-0.0.2rc96.post1.tar.gz tmp/py_dbchat-0.0.2rc97.post1.tar.gz --markdown 20240427/p/py-dbchat/0.0.2rc96.post1-0.0.2rc97.post1/README.md --exclude *.pyd
+[2024-04-27 14:52:20] INFO root fetch - processPackages [librus-apix]: Downloading https://files.pythonhosted.org/packages/f0/38/7927667b150766266ac4986499b292e527a430d188c130eb620190494ff5/librus_apix-0.7.2.tar.gz
+[2024-04-27 14:52:20] INFO root fetch - processPackages [librus-apix]: executing diffoscope
+[2024-04-27 14:52:20] INFO root fetch - processPackages [librus-apix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/librus_apix-0.7.1.tar.gz tmp/librus_apix-0.7.2.tar.gz --markdown 20240427/l/librus-apix/0.7.1-0.7.2/README.md --exclude *.pyd
+[2024-04-27 14:52:21] INFO root fetch - processPackages [librus-apix]: Remove: archive file [/home/abi/fetcher/tmp/librus_apix-0.7.1.tar.gz]
+[2024-04-27 14:52:21] INFO root fetch - processPackages [librus-apix]: Remove: archive file [/home/abi/fetcher/tmp/librus_apix-0.7.2.tar.gz]
+[2024-04-27 14:52:21] INFO root fetch - main [MainThread]: End processing [librus-apix]: success
+[2024-04-27 14:52:21] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc96.post1.tar.gz]
+[2024-04-27 14:52:21] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc97.post1.tar.gz]
+[2024-04-27 14:52:21] INFO root fetch - main [MainThread]: End processing [py-dbchat]: success
+[2024-04-27 14:52:22] INFO root fetch - processPackages [openctp-ctp-cp]: Downloading https://files.pythonhosted.org/packages/4a/df/e7dd3fdaaf54ac4bb83b52d507524d7ee478d6f9b4b25a40d64acb03cdba/openctp_ctp_cp-6.7.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-27 14:52:22] INFO root fetch - processPackages [openctp-ctp-cp]: Downloading https://files.pythonhosted.org/packages/4a/df/e7dd3fdaaf54ac4bb83b52d507524d7ee478d6f9b4b25a40d64acb03cdba/openctp_ctp_cp-6.7.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-27 14:52:22] INFO root fetch - processPackages [openctp-ctp-cp]: Downloading https://files.pythonhosted.org/packages/4a/df/e7dd3fdaaf54ac4bb83b52d507524d7ee478d6f9b4b25a40d64acb03cdba/openctp_ctp_cp-6.7.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-27 14:52:22] INFO root fetch - processPackages [openctp-ctp-cp]: Downloading https://files.pythonhosted.org/packages/4a/df/e7dd3fdaaf54ac4bb83b52d507524d7ee478d6f9b4b25a40d64acb03cdba/openctp_ctp_cp-6.7.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-27 14:52:26] INFO root fetch - processPackages [openctp-ctp-cp]: executing diffoscope
+[2024-04-27 14:52:26] INFO root fetch - processPackages [openctp-ctp-cp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openctp_ctp_cp-6.6.9-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/openctp_ctp_cp-6.7.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240427/o/openctp-ctp-cp/6.6.9-6.7.0/README.md --exclude *.pyd
+[2024-04-27 14:52:26] INFO root fetch - processPackages [openctp-ctp-cp]: executing diffoscope
+[2024-04-27 14:52:26] INFO root fetch - processPackages [openctp-ctp-cp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openctp_ctp_cp-6.6.9-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/openctp_ctp_cp-6.7.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240427/o/openctp-ctp-cp/6.6.9-6.7.0/README.md --exclude *.pyd
+[2024-04-27 14:52:26] INFO root fetch - processPackages [openctp-ctp-cp]: executing diffoscope
+[2024-04-27 14:52:26] INFO root fetch - processPackages [openctp-ctp-cp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openctp_ctp_cp-6.6.9-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/openctp_ctp_cp-6.7.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240427/o/openctp-ctp-cp/6.6.9-6.7.0/README.md --exclude *.pyd
+[2024-04-27 14:52:26] INFO root fetch - processPackages [openctp-ctp-cp]: executing diffoscope
+[2024-04-27 14:52:26] INFO root fetch - processPackages [openctp-ctp-cp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openctp_ctp_cp-6.6.9-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/openctp_ctp_cp-6.7.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240427/o/openctp-ctp-cp/6.6.9-6.7.0/README.md --exclude *.pyd
+[2024-04-27 14:54:26] INFO root fetch - processPackages [openctp-ctp-cp]: Remove: archive file [/home/abi/fetcher/tmp/openctp_ctp_cp-6.6.9-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-27 14:54:26] INFO root fetch - processPackages [openctp-ctp-cp]: Remove: archive file [/home/abi/fetcher/tmp/openctp_ctp_cp-6.7.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-27 14:54:26] INFO root fetch - main [MainThread]: End processing [openctp-ctp-cp]: success
+[2024-04-27 14:54:26] INFO root fetch - main [MainThread]: End processing [openctp-ctp-cp]: success
+[2024-04-27 14:54:27] INFO root fetch - main [MainThread]: End processing [openctp-ctp-cp]: success
+[2024-04-27 14:54:27] INFO root fetch - main [MainThread]: End processing [openctp-ctp-cp]: success
+[2024-04-27 14:54:27] INFO root fetch - main [MainThread]: Store serial: [22958777]
