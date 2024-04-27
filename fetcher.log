@@ -17959,3 +17959,67 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 19:10:38] INFO root fetch - processPackages [napatrackmater]: Remove: archive file [/home/abi/fetcher/tmp/napatrackmater-5.1.2.tar.gz]
 [2024-04-27 19:10:38] INFO root fetch - main [MainThread]: End processing [napatrackmater]: success
 [2024-04-27 19:10:38] INFO root fetch - main [MainThread]: Store serial: [22960400]
+[2024-04-27 19:12:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960400]
+[2024-04-27 19:12:50] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-27 19:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: htagui
+[2024-04-27 19:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kkba-mathUtils
+[2024-04-27 19:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kkba-mathUtils
+[2024-04-27 19:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: geoparser
+[2024-04-27 19:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: scrapegraphai
+[2024-04-27 19:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: psyke
+[2024-04-27 19:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: swiss-army-man
+[2024-04-27 19:12:51] INFO root fetch - processPackages [scrapegraphai]: New version: [0.4.0b1] Old Version: [0.3.0b2]
+[2024-04-27 19:12:51] INFO root fetch - processPackages [geoparser]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-27 19:12:51] INFO root fetch - processPackages [swiss-army-man]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-04-27 19:12:51] INFO root fetch - processPackages [kkba-mathUtils]: New version: [1.0.0] Old Version: [0.0.1]
+[2024-04-27 19:12:51] INFO root fetch - processPackages [kkba-mathUtils]: New version: [1.0.0] Old Version: [0.0.1]
+[2024-04-27 19:12:51] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/e0/81/eec25d662d7245c7ddb53ecf4a0eca84bda105b9a325bc6df9bc1e89036d/scrapegraphai-0.3.0b2.tar.gz
+[2024-04-27 19:12:51] INFO root fetch - processPackages [htagui]: New version: [0.5.4] Old Version: [0.5.3]
+[2024-04-27 19:12:51] INFO root fetch - processPackages [geoparser]: Downloading https://files.pythonhosted.org/packages/d6/83/256b9712343e7b4467b7babd0ce9cfc6e7338d7fa1636a0b35e6384f5a68/geoparser-0.1.2.tar.gz
+[2024-04-27 19:12:51] INFO root fetch - processPackages [psyke]: New version: [0.8.4] Old Version: [0.8.3.dev2]
+[2024-04-27 19:12:51] INFO root fetch - processPackages [swiss-army-man]: Downloading https://files.pythonhosted.org/packages/48/1f/294f600f1fa28cd18c161440c03fb3b30e0c131a86552d9308f61aa90137/swiss_army_man-0.1.7.tar.gz
+[2024-04-27 19:12:51] INFO root fetch - processPackages [kkba-mathUtils]: Downloading https://files.pythonhosted.org/packages/ca/b4/a25971524d3f079224a5548a22957566561e5bb826c4ae4e6d201f1b2636/kkba_mathutils-0.0.1.tar.gz
+[2024-04-27 19:12:51] INFO root fetch - processPackages [kkba-mathUtils]: Downloading https://files.pythonhosted.org/packages/ca/b4/a25971524d3f079224a5548a22957566561e5bb826c4ae4e6d201f1b2636/kkba_mathutils-0.0.1.tar.gz
+[2024-04-27 19:12:51] INFO root fetch - processPackages [htagui]: Downloading https://files.pythonhosted.org/packages/e7/8f/2e9c322faf9cfd6c17170ac4f45580de8cee0d2142b9ebda985df8aa99a9/htagui-0.5.3.tar.gz
+[2024-04-27 19:12:51] INFO root fetch - processPackages [psyke]: Downloading https://files.pythonhosted.org/packages/bb/41/0b0385f3b4fb9c12962a2a05db742f44baaf322799856f89c3b0d3ab6ce5/psyke-0.8.3.dev2.tar.gz
+[2024-04-27 19:12:51] INFO root fetch - processPackages [swiss-army-man]: Downloading https://files.pythonhosted.org/packages/56/82/24e0c66ae73179bc5f3180da018b1c49aadae130d6093a4ba1f45acd2afa/swiss_army_man-0.1.9.tar.gz
+[2024-04-27 19:12:51] INFO root fetch - processPackages [geoparser]: Downloading https://files.pythonhosted.org/packages/49/db/f9cf35da97fe25a2e80ba39bd4a814d2e838c9926c0bd38c86b7db8a92be/geoparser-0.1.3.tar.gz
+[2024-04-27 19:12:51] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/0b/2b/e10b9598d51e704012e272dd85c7b0e78de6358e59af8b06bf7172169c6f/scrapegraphai-0.4.0b1.tar.gz
+[2024-04-27 19:12:51] INFO root fetch - processPackages [geoparser]: executing diffoscope
+[2024-04-27 19:12:51] INFO root fetch - processPackages [geoparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geoparser-0.1.2.tar.gz tmp/geoparser-0.1.3.tar.gz --markdown 20240427/g/geoparser/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-27 19:12:51] INFO root fetch - processPackages [kkba-mathUtils]: Downloading https://files.pythonhosted.org/packages/6f/65/dae2016443eea348bce96397d6e71e297437400701da46fcebdb39f2cd11/kkba_mathutils-1.0.0.tar.gz
+[2024-04-27 19:12:51] INFO root fetch - processPackages [kkba-mathUtils]: Downloading https://files.pythonhosted.org/packages/6f/65/dae2016443eea348bce96397d6e71e297437400701da46fcebdb39f2cd11/kkba_mathutils-1.0.0.tar.gz
+[2024-04-27 19:12:51] INFO root fetch - processPackages [scrapegraphai]: executing diffoscope
+[2024-04-27 19:12:51] INFO root fetch - processPackages [scrapegraphai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapegraphai-0.3.0b2.tar.gz tmp/scrapegraphai-0.4.0b1.tar.gz --markdown 20240427/s/scrapegraphai/0.3.0b2-0.4.0b1/README.md --exclude *.pyd
+[2024-04-27 19:12:51] INFO root fetch - processPackages [htagui]: Downloading https://files.pythonhosted.org/packages/e8/da/89d298357fbebdb5947575e57dc8038c202d542b0b37c22d0fd0c0a862ec/htagui-0.5.4.tar.gz
+[2024-04-27 19:12:51] INFO root fetch - processPackages [psyke]: Downloading https://files.pythonhosted.org/packages/d2/4c/5e61cbe8610c784f3f446dcb991e4ca9361b221b46aa6f5c8e4ebcf0b3bf/psyke-0.8.4.tar.gz
+[2024-04-27 19:12:51] INFO root fetch - processPackages [kkba-mathUtils]: executing diffoscope
+[2024-04-27 19:12:51] INFO root fetch - processPackages [kkba-mathUtils]: executing diffoscope
+[2024-04-27 19:12:51] INFO root fetch - processPackages [kkba-mathUtils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kkba_mathutils-0.0.1.tar.gz tmp/kkba_mathutils-1.0.0.tar.gz --markdown 20240427/k/kkba-mathUtils/0.0.1-1.0.0/README.md --exclude *.pyd
+[2024-04-27 19:12:51] INFO root fetch - processPackages [kkba-mathUtils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kkba_mathutils-0.0.1.tar.gz tmp/kkba_mathutils-1.0.0.tar.gz --markdown 20240427/k/kkba-mathUtils/0.0.1-1.0.0/README.md --exclude *.pyd
+[2024-04-27 19:12:51] INFO root fetch - processPackages [htagui]: executing diffoscope
+[2024-04-27 19:12:51] INFO root fetch - processPackages [htagui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htagui-0.5.3.tar.gz tmp/htagui-0.5.4.tar.gz --markdown 20240427/h/htagui/0.5.3-0.5.4/README.md --exclude *.pyd
+[2024-04-27 19:12:52] INFO root fetch - processPackages [psyke]: executing diffoscope
+[2024-04-27 19:12:52] INFO root fetch - processPackages [psyke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psyke-0.8.3.dev2.tar.gz tmp/psyke-0.8.4.tar.gz --markdown 20240427/p/psyke/0.8.3.dev2-0.8.4/README.md --exclude *.pyd
+[2024-04-27 19:12:52] INFO root fetch - processPackages [swiss-army-man]: executing diffoscope
+[2024-04-27 19:12:52] INFO root fetch - processPackages [swiss-army-man]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swiss_army_man-0.1.7.tar.gz tmp/swiss_army_man-0.1.9.tar.gz --markdown 20240427/s/swiss-army-man/0.1.7-0.1.9/README.md --exclude *.pyd
+[2024-04-27 19:12:52] INFO root fetch - processPackages [geoparser]: Remove: archive file [/home/abi/fetcher/tmp/geoparser-0.1.2.tar.gz]
+[2024-04-27 19:12:52] INFO root fetch - processPackages [geoparser]: Remove: archive file [/home/abi/fetcher/tmp/geoparser-0.1.3.tar.gz]
+[2024-04-27 19:12:52] INFO root fetch - main [MainThread]: End processing [geoparser]: success
+[2024-04-27 19:12:52] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-0.3.0b2.tar.gz]
+[2024-04-27 19:12:52] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-0.4.0b1.tar.gz]
+[2024-04-27 19:12:52] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
+[2024-04-27 19:12:52] INFO root fetch - processPackages [kkba-mathUtils]: Remove: archive file [/home/abi/fetcher/tmp/kkba_mathutils-0.0.1.tar.gz]
+[2024-04-27 19:12:52] INFO root fetch - processPackages [kkba-mathUtils]: Remove: archive file [/home/abi/fetcher/tmp/kkba_mathutils-1.0.0.tar.gz]
+[2024-04-27 19:12:52] INFO root fetch - main [MainThread]: End processing [kkba-mathUtils]: success
+[2024-04-27 19:12:52] INFO root fetch - processPackages [swiss-army-man]: Remove: archive file [/home/abi/fetcher/tmp/swiss_army_man-0.1.7.tar.gz]
+[2024-04-27 19:12:52] INFO root fetch - processPackages [swiss-army-man]: Remove: archive file [/home/abi/fetcher/tmp/swiss_army_man-0.1.9.tar.gz]
+[2024-04-27 19:12:52] INFO root fetch - main [MainThread]: End processing [swiss-army-man]: success
+[2024-04-27 19:12:52] INFO root fetch - main [MainThread]: End processing [kkba-mathUtils]: success
+[2024-04-27 19:12:52] INFO root fetch - processPackages [psyke]: Remove: archive file [/home/abi/fetcher/tmp/psyke-0.8.3.dev2.tar.gz]
+[2024-04-27 19:12:52] INFO root fetch - processPackages [psyke]: Remove: archive file [/home/abi/fetcher/tmp/psyke-0.8.4.tar.gz]
+[2024-04-27 19:12:52] INFO root fetch - main [MainThread]: End processing [psyke]: success
+[2024-04-27 19:12:53] INFO root fetch - processPackages [htagui]: Remove: archive file [/home/abi/fetcher/tmp/htagui-0.5.3.tar.gz]
+[2024-04-27 19:12:53] INFO root fetch - processPackages [htagui]: Remove: archive file [/home/abi/fetcher/tmp/htagui-0.5.4.tar.gz]
+[2024-04-27 19:12:53] INFO root fetch - main [MainThread]: End processing [htagui]: success
+[2024-04-27 19:12:53] INFO root fetch - main [MainThread]: Store serial: [22960424]
