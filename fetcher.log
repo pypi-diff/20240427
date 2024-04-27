@@ -19992,3 +19992,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 21:34:33] INFO root fetch - processPackages [ypricemagic]: Remove: archive file [/home/abi/fetcher/tmp/ypricemagic-3.5.0.tar.gz]
 [2024-04-27 21:34:33] INFO root fetch - main [MainThread]: End processing [ypricemagic]: success
 [2024-04-27 21:34:33] INFO root fetch - main [MainThread]: Store serial: [22961451]
+[2024-04-27 21:36:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961451]
+[2024-04-27 21:36:48] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 21:36:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rooms-shared-services
+[2024-04-27 21:36:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cmdict
+[2024-04-27 21:36:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytapo
+[2024-04-27 21:36:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ez-a-sync
+[2024-04-27 21:36:48] INFO root fetch - processPackages [rooms-shared-services]: New version: [0.1.99] Old Version: [0.1.97]
+[2024-04-27 21:36:48] INFO root fetch - processPackages [cmdict]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-04-27 21:36:48] INFO root fetch - processPackages [rooms-shared-services]: Downloading https://files.pythonhosted.org/packages/16/6e/7a35dabe25e96c04274cbd9f69a6e68b4f36dc149e22451fb099f79d153e/rooms_shared_services-0.1.97.tar.gz
+[2024-04-27 21:36:48] INFO root fetch - processPackages [ez-a-sync]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-04-27 21:36:48] INFO root fetch - processPackages [pytapo]: New version: [3.3.9] Old Version: [3.3.8]
+[2024-04-27 21:36:48] INFO root fetch - processPackages [rooms-shared-services]: Downloading https://files.pythonhosted.org/packages/69/d1/238526d33d58183ec73b9cb900a4aea16c13e7618af0394e6c55838d4395/rooms_shared_services-0.1.99.tar.gz
+[2024-04-27 21:36:48] INFO root fetch - processPackages [cmdict]: Downloading https://files.pythonhosted.org/packages/47/81/dce653f2ada989c3d2c068850b49128670874491e7e5f3e5f8877c0f332a/cmdict-0.1.7.tar.gz
+[2024-04-27 21:36:48] INFO root fetch - processPackages [ez-a-sync]: Downloading https://files.pythonhosted.org/packages/79/96/435db21d769b668a77c8c5d9f4cc5e215ebeeffd9d5daa274e7f0e166e92/ez-a-sync-0.9.2.tar.gz
+[2024-04-27 21:36:48] INFO root fetch - processPackages [pytapo]: Downloading https://files.pythonhosted.org/packages/5c/ce/a798651f742e106fe9c0c2b14ef2c83fc0bb48e3decf79b0c37f51ec0c69/pytapo-3.3.8.tar.gz
+[2024-04-27 21:36:48] INFO root fetch - processPackages [rooms-shared-services]: executing diffoscope
+[2024-04-27 21:36:48] INFO root fetch - processPackages [rooms-shared-services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rooms_shared_services-0.1.97.tar.gz tmp/rooms_shared_services-0.1.99.tar.gz --markdown 20240427/r/rooms-shared-services/0.1.97-0.1.99/README.md --exclude *.pyd
+[2024-04-27 21:36:48] INFO root fetch - processPackages [cmdict]: Downloading https://files.pythonhosted.org/packages/e9/41/8bf57f9e8ffc2389c5c15a0d433c8f2a2db961c0b956d1917bbf9dbe35b2/cmdict-0.1.9.tar.gz
+[2024-04-27 21:36:48] INFO root fetch - processPackages [ez-a-sync]: Downloading https://files.pythonhosted.org/packages/f4/19/7b1bac3b3ef8f548fcfcd916ecaf6c392d75ff5997e785d688f5270478f1/ez-a-sync-0.9.3.tar.gz
+[2024-04-27 21:36:49] INFO root fetch - processPackages [pytapo]: Downloading https://files.pythonhosted.org/packages/4c/8f/4231a725a9f68a60df4b51153a112b2e12a542c92e1147a2380921def860/pytapo-3.3.9.tar.gz
+[2024-04-27 21:36:49] INFO root fetch - processPackages [cmdict]: executing diffoscope
+[2024-04-27 21:36:49] INFO root fetch - processPackages [cmdict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cmdict-0.1.7.tar.gz tmp/cmdict-0.1.9.tar.gz --markdown 20240427/c/cmdict/0.1.7-0.1.9/README.md --exclude *.pyd
+[2024-04-27 21:36:49] INFO root fetch - processPackages [ez-a-sync]: executing diffoscope
+[2024-04-27 21:36:49] INFO root fetch - processPackages [ez-a-sync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ez-a-sync-0.9.2.tar.gz tmp/ez-a-sync-0.9.3.tar.gz --markdown 20240427/e/ez-a-sync/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-04-27 21:36:49] INFO root fetch - processPackages [rooms-shared-services]: Remove: archive file [/home/abi/fetcher/tmp/rooms_shared_services-0.1.97.tar.gz]
+[2024-04-27 21:36:49] INFO root fetch - processPackages [rooms-shared-services]: Remove: archive file [/home/abi/fetcher/tmp/rooms_shared_services-0.1.99.tar.gz]
+[2024-04-27 21:36:49] INFO root fetch - main [MainThread]: End processing [rooms-shared-services]: success
+[2024-04-27 21:36:49] INFO root fetch - processPackages [pytapo]: executing diffoscope
+[2024-04-27 21:36:49] INFO root fetch - processPackages [pytapo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytapo-3.3.8.tar.gz tmp/pytapo-3.3.9.tar.gz --markdown 20240427/p/pytapo/3.3.8-3.3.9/README.md --exclude *.pyd
+[2024-04-27 21:36:49] INFO root fetch - processPackages [cmdict]: Remove: archive file [/home/abi/fetcher/tmp/cmdict-0.1.7.tar.gz]
+[2024-04-27 21:36:49] INFO root fetch - processPackages [cmdict]: Remove: archive file [/home/abi/fetcher/tmp/cmdict-0.1.9.tar.gz]
+[2024-04-27 21:36:49] INFO root fetch - main [MainThread]: End processing [cmdict]: success
+[2024-04-27 21:36:49] INFO root fetch - processPackages [ez-a-sync]: Remove: archive file [/home/abi/fetcher/tmp/ez-a-sync-0.9.2.tar.gz]
+[2024-04-27 21:36:49] INFO root fetch - processPackages [ez-a-sync]: Remove: archive file [/home/abi/fetcher/tmp/ez-a-sync-0.9.3.tar.gz]
+[2024-04-27 21:36:49] INFO root fetch - main [MainThread]: End processing [ez-a-sync]: success
+[2024-04-27 21:36:49] INFO root fetch - processPackages [pytapo]: Remove: archive file [/home/abi/fetcher/tmp/pytapo-3.3.8.tar.gz]
+[2024-04-27 21:36:49] INFO root fetch - processPackages [pytapo]: Remove: archive file [/home/abi/fetcher/tmp/pytapo-3.3.9.tar.gz]
+[2024-04-27 21:36:49] INFO root fetch - main [MainThread]: End processing [pytapo]: success
+[2024-04-27 21:36:49] INFO root fetch - main [MainThread]: Store serial: [22961463]
