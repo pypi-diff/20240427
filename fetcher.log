@@ -14806,3 +14806,19 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 15:33:26] INFO root fetch - processPackages [funcs-aux]: Remove: archive file [/home/abi/fetcher/tmp/funcs_aux-0.1.3.tar.gz]
 [2024-04-27 15:33:26] INFO root fetch - main [MainThread]: End processing [funcs-aux]: success
 [2024-04-27 15:33:26] INFO root fetch - main [MainThread]: Store serial: [22959145]
+[2024-04-27 15:35:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959145]
+[2024-04-27 15:35:35] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-27 15:37:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959148]
+[2024-04-27 15:37:41] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-27 15:39:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959148]
+[2024-04-27 15:39:46] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 15:39:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flux-local
+[2024-04-27 15:39:46] INFO root fetch - processPackages [flux-local]: New version: [5.1.0] Old Version: [5.0.1]
+[2024-04-27 15:39:47] INFO root fetch - processPackages [flux-local]: Downloading https://files.pythonhosted.org/packages/04/9d/0efcef8cf743077b576377e72ebeb9716e29d9f8ffc1754b87df90b9f3f6/flux_local-5.0.1.tar.gz
+[2024-04-27 15:39:47] INFO root fetch - processPackages [flux-local]: Downloading https://files.pythonhosted.org/packages/f9/91/4909e2a9f7c95ad720a970aabb5a7f1cbfdd803165d185d1a92557f0efbb/flux_local-5.1.0.tar.gz
+[2024-04-27 15:39:47] INFO root fetch - processPackages [flux-local]: executing diffoscope
+[2024-04-27 15:39:47] INFO root fetch - processPackages [flux-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flux_local-5.0.1.tar.gz tmp/flux_local-5.1.0.tar.gz --markdown 20240427/f/flux-local/5.0.1-5.1.0/README.md --exclude *.pyd
+[2024-04-27 15:39:48] INFO root fetch - processPackages [flux-local]: Remove: archive file [/home/abi/fetcher/tmp/flux_local-5.0.1.tar.gz]
+[2024-04-27 15:39:48] INFO root fetch - processPackages [flux-local]: Remove: archive file [/home/abi/fetcher/tmp/flux_local-5.1.0.tar.gz]
+[2024-04-27 15:39:48] INFO root fetch - main [MainThread]: End processing [flux-local]: success
+[2024-04-27 15:39:48] INFO root fetch - main [MainThread]: Store serial: [22959151]
