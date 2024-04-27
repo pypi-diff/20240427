@@ -16760,3 +16760,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 17:41:26] INFO root fetch - processPackages [brave-search]: Remove: archive file [/home/abi/fetcher/tmp/brave_search-0.2.0.tar.gz]
 [2024-04-27 17:41:26] INFO root fetch - main [MainThread]: End processing [brave-search]: success
 [2024-04-27 17:41:26] INFO root fetch - main [MainThread]: Store serial: [22959917]
+[2024-04-27 17:43:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959917]
+[2024-04-27 17:43:37] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 17:43:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ozon-ord
+[2024-04-27 17:43:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: axidence
+[2024-04-27 17:43:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: letmedoit
+[2024-04-27 17:43:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: easypaddleocr
+[2024-04-27 17:43:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sanda
+[2024-04-27 17:43:37] INFO root fetch - processPackages [easypaddleocr]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-27 17:43:37] INFO root fetch - processPackages [letmedoit]: New version: [2.1.9] Old Version: [2.1.84]
+[2024-04-27 17:43:37] INFO root fetch - processPackages [easypaddleocr]: Downloading https://files.pythonhosted.org/packages/a3/d8/6828e3e4abf4117d08fc3d094a11e9da368d667f2a32b9441c9917b4ef78/easypaddleocr-0.1.3.tar.gz
+[2024-04-27 17:43:37] INFO root fetch - processPackages [axidence]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-27 17:43:37] WARNING root fetch - processPackages [sanda]: Skipping, unable to determine old version
+[2024-04-27 17:43:37] INFO root fetch - main [MainThread]: End processing [sanda] error
+[2024-04-27 17:43:37] WARNING root fetch - processPackages [ozon-ord]: Skipping, unable to determine old version
+[2024-04-27 17:43:37] INFO root fetch - main [MainThread]: End processing [ozon-ord] error
+[2024-04-27 17:43:37] INFO root fetch - processPackages [letmedoit]: Downloading https://files.pythonhosted.org/packages/da/38/47ccf8be6175abfa38382369b41e013348998e06148696ca942210978282/letmedoit-2.1.84.tar.gz
+[2024-04-27 17:43:37] INFO root fetch - processPackages [axidence]: Downloading https://files.pythonhosted.org/packages/d7/cf/c16fc68c44a0804e8dd8a792b853197a7d9032005579b4b13222e83cc220/axidence-0.1.0.tar.gz
+[2024-04-27 17:43:37] INFO root fetch - processPackages [easypaddleocr]: Downloading https://files.pythonhosted.org/packages/8a/2c/c91fad36b99c6394afeb166aabd4f5395c3e468e6de88b2db624cfaec8a2/easypaddleocr-0.1.4.tar.gz
+[2024-04-27 17:43:37] INFO root fetch - processPackages [easypaddleocr]: executing diffoscope
+[2024-04-27 17:43:37] INFO root fetch - processPackages [easypaddleocr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easypaddleocr-0.1.3.tar.gz tmp/easypaddleocr-0.1.4.tar.gz --markdown 20240427/e/easypaddleocr/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-27 17:43:37] INFO root fetch - processPackages [axidence]: Downloading https://files.pythonhosted.org/packages/4f/cf/976efe84d7d0b7dcb9c0ec41fb9e695f4fb56f2a89a127575fcbef4e2333/axidence-0.2.0.tar.gz
+[2024-04-27 17:43:37] INFO root fetch - processPackages [letmedoit]: Downloading https://files.pythonhosted.org/packages/07/dc/33e8330ea1750ecb1060d75f8570d57444acbe7dc8425a53dcd3ec47b037/letmedoit-2.1.9.tar.gz
+[2024-04-27 17:43:37] INFO root fetch - processPackages [axidence]: executing diffoscope
+[2024-04-27 17:43:37] INFO root fetch - processPackages [axidence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/axidence-0.1.0.tar.gz tmp/axidence-0.2.0.tar.gz --markdown 20240427/a/axidence/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-27 17:43:38] INFO root fetch - processPackages [letmedoit]: executing diffoscope
+[2024-04-27 17:43:38] INFO root fetch - processPackages [letmedoit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/letmedoit-2.1.84.tar.gz tmp/letmedoit-2.1.9.tar.gz --markdown 20240427/l/letmedoit/2.1.84-2.1.9/README.md --exclude *.pyd
+[2024-04-27 17:43:38] INFO root fetch - processPackages [axidence]: Remove: archive file [/home/abi/fetcher/tmp/axidence-0.1.0.tar.gz]
+[2024-04-27 17:43:38] INFO root fetch - processPackages [axidence]: Remove: archive file [/home/abi/fetcher/tmp/axidence-0.2.0.tar.gz]
+[2024-04-27 17:43:38] INFO root fetch - main [MainThread]: End processing [axidence]: success
+[2024-04-27 17:43:38] INFO root fetch - processPackages [easypaddleocr]: Remove: archive file [/home/abi/fetcher/tmp/easypaddleocr-0.1.3.tar.gz]
+[2024-04-27 17:43:38] INFO root fetch - processPackages [easypaddleocr]: Remove: archive file [/home/abi/fetcher/tmp/easypaddleocr-0.1.4.tar.gz]
+[2024-04-27 17:43:38] INFO root fetch - main [MainThread]: End processing [easypaddleocr]: success
+[2024-04-27 17:43:39] INFO root fetch - processPackages [letmedoit]: Remove: archive file [/home/abi/fetcher/tmp/letmedoit-2.1.84.tar.gz]
+[2024-04-27 17:43:39] INFO root fetch - processPackages [letmedoit]: Remove: archive file [/home/abi/fetcher/tmp/letmedoit-2.1.9.tar.gz]
+[2024-04-27 17:43:39] INFO root fetch - main [MainThread]: End processing [letmedoit]: success
+[2024-04-27 17:43:39] INFO root fetch - main [MainThread]: Store serial: [22959942]
