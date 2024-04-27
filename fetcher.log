@@ -11417,3 +11417,15 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 11:31:45] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc96.post1.tar.gz]
 [2024-04-27 11:31:45] INFO root fetch - main [MainThread]: End processing [py-dbchat]: success
 [2024-04-27 11:31:45] INFO root fetch - main [MainThread]: Store serial: [22957670]
+[2024-04-27 11:33:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957670]
+[2024-04-27 11:33:53] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 11:33:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ALLMDEV
+[2024-04-27 11:33:53] INFO root fetch - processPackages [ALLMDEV]: New version: [1.2.5] Old Version: [1.2.4]
+[2024-04-27 11:33:54] INFO root fetch - processPackages [ALLMDEV]: Downloading https://files.pythonhosted.org/packages/ed/c2/a798fbf4434cd80fa976070aa87bb03048471cce11583155b4082e18c3f4/ALLMDEV-1.2.4-py3-none-any.whl
+[2024-04-27 11:33:54] INFO root fetch - processPackages [ALLMDEV]: Downloading https://files.pythonhosted.org/packages/e0/94/9370b0f97fce2fd2d11a9859a5d15dda2fb5b8039b0ba91d0a14c73c0c86/ALLMDEV-1.2.5-py3-none-any.whl
+[2024-04-27 11:33:54] INFO root fetch - processPackages [ALLMDEV]: executing diffoscope
+[2024-04-27 11:33:54] INFO root fetch - processPackages [ALLMDEV]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ALLMDEV-1.2.4-py3-none-any.whl.zip tmp/ALLMDEV-1.2.5-py3-none-any.whl.zip --markdown 20240427/A/ALLMDEV/1.2.4-1.2.5/README.md --exclude *.pyd
+[2024-04-27 11:33:55] INFO root fetch - processPackages [ALLMDEV]: Remove: archive file [/home/abi/fetcher/tmp/ALLMDEV-1.2.4-py3-none-any.whl.zip]
+[2024-04-27 11:33:55] INFO root fetch - processPackages [ALLMDEV]: Remove: archive file [/home/abi/fetcher/tmp/ALLMDEV-1.2.5-py3-none-any.whl.zip]
+[2024-04-27 11:33:55] INFO root fetch - main [MainThread]: End processing [ALLMDEV]: success
+[2024-04-27 11:33:55] INFO root fetch - main [MainThread]: Store serial: [22957674]
