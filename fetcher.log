@@ -18322,3 +18322,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 19:30:50] INFO root fetch - processPackages [sensors_connectivity]: Remove: archive file [/home/abi/fetcher/tmp/sensors_connectivity-1.6.2.tar.gz]
 [2024-04-27 19:30:50] INFO root fetch - main [MainThread]: End processing [sensors_connectivity]: success
 [2024-04-27 19:30:50] INFO root fetch - main [MainThread]: Store serial: [22960565]
+[2024-04-27 19:33:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960565]
+[2024-04-27 19:33:05] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-27 19:33:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sensors_connectivity
+[2024-04-27 19:33:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cocoon-data
+[2024-04-27 19:33:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mlops-api-gemstack
+[2024-04-27 19:33:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: coc.py
+[2024-04-27 19:33:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vdaq-ana
+[2024-04-27 19:33:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: req-compile
+[2024-04-27 19:33:05] INFO root fetch - processPackages [mlops-api-gemstack]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-27 19:33:05] INFO root fetch - processPackages [cocoon-data]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-27 19:33:05] INFO root fetch - processPackages [sensors_connectivity]: New version: [1.6.2] Old Version: [1.6.1]
+[2024-04-27 19:33:05] INFO root fetch - processPackages [mlops-api-gemstack]: Downloading https://files.pythonhosted.org/packages/cf/fb/a804af62f4a6462d363660cd278a42f2fed91653409ac5d9041641762536/mlops_api_gemstack-0.3.8.tar.gz
+[2024-04-27 19:33:05] INFO root fetch - processPackages [cocoon-data]: Downloading https://files.pythonhosted.org/packages/ac/3c/a1a6c95be4d731fc0db8d40b132730891186370f3cd304837773aa0dcce9/cocoon_data-0.1.8.tar.gz
+[2024-04-27 19:33:05] INFO root fetch - processPackages [sensors_connectivity]: Downloading https://files.pythonhosted.org/packages/c6/29/2cb1bff36cf76d03899ea87f4bc3424d9f2199cb6da8a69be972af1fc739/sensors_connectivity-1.6.1.tar.gz
+[2024-04-27 19:33:05] WARNING root fetch - processPackages [vdaq-ana]: Skipping, unable to determine old version
+[2024-04-27 19:33:05] INFO root fetch - main [MainThread]: End processing [vdaq-ana] error
+[2024-04-27 19:33:05] INFO root fetch - processPackages [coc.py]: New version: [3.5.2] Old Version: [3.4.2]
+[2024-04-27 19:33:05] INFO root fetch - processPackages [req-compile]: New version: [1.0.0rc9] Old Version: [1.0.0rc8]
+[2024-04-27 19:33:05] INFO root fetch - processPackages [coc.py]: Downloading https://files.pythonhosted.org/packages/d7/71/f498bfa5f34ebb388943afde844aad4955229529d615719607873936762d/coc_py-3.4.2.tar.gz
+[2024-04-27 19:33:05] INFO root fetch - processPackages [sensors_connectivity]: Downloading https://files.pythonhosted.org/packages/15/a4/d0d8e124cda8924dc09fc6c10b96d9bedef3257e8f15b231b850d69a8464/sensors_connectivity-1.6.2.tar.gz
+[2024-04-27 19:33:05] INFO root fetch - processPackages [cocoon-data]: Downloading https://files.pythonhosted.org/packages/0b/b9/048ffb4abe066854ebc4d24ca277250c5668844b84d602ff0be9adf8b231/cocoon_data-0.1.9.tar.gz
+[2024-04-27 19:33:05] INFO root fetch - processPackages [req-compile]: Downloading https://files.pythonhosted.org/packages/96/9b/d5e46a5c84a6cf0477d84a18587a02cef26b51708a41c9dcc16b6f6ec748/req-compile-1.0.0rc8.tar.gz
+[2024-04-27 19:33:05] INFO root fetch - processPackages [mlops-api-gemstack]: Downloading https://files.pythonhosted.org/packages/b4/b0/a8255d245178b0ceb7c350781eb1ead7b4117851090863c26a16ee315375/mlops_api_gemstack-0.3.9.tar.gz
+[2024-04-27 19:33:05] INFO root fetch - processPackages [sensors_connectivity]: executing diffoscope
+[2024-04-27 19:33:05] INFO root fetch - processPackages [sensors_connectivity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sensors_connectivity-1.6.1.tar.gz tmp/sensors_connectivity-1.6.2.tar.gz --markdown 20240427/s/sensors_connectivity/1.6.1-1.6.2/README.md --exclude *.pyd
+[2024-04-27 19:33:05] INFO root fetch - processPackages [cocoon-data]: executing diffoscope
+[2024-04-27 19:33:05] INFO root fetch - processPackages [cocoon-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cocoon_data-0.1.8.tar.gz tmp/cocoon_data-0.1.9.tar.gz --markdown 20240427/c/cocoon-data/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-27 19:33:05] INFO root fetch - processPackages [mlops-api-gemstack]: executing diffoscope
+[2024-04-27 19:33:05] INFO root fetch - processPackages [mlops-api-gemstack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlops_api_gemstack-0.3.8.tar.gz tmp/mlops_api_gemstack-0.3.9.tar.gz --markdown 20240427/m/mlops-api-gemstack/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-27 19:33:05] INFO root fetch - processPackages [coc.py]: Downloading https://files.pythonhosted.org/packages/eb/4a/1dc8565773129c0f588b1adf302637d4014b1427281a138ebd69fc178428/coc_py-3.5.2.tar.gz
+[2024-04-27 19:33:06] INFO root fetch - processPackages [req-compile]: Downloading https://files.pythonhosted.org/packages/fc/cb/0a81d71ea9afc0f413877a3fa62c1fb73698e1166c5e241802b8739c7fcd/req-compile-1.0.0rc9.tar.gz
+[2024-04-27 19:33:06] INFO root fetch - processPackages [coc.py]: executing diffoscope
+[2024-04-27 19:33:06] INFO root fetch - processPackages [coc.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coc_py-3.4.2.tar.gz tmp/coc_py-3.5.2.tar.gz --markdown 20240427/c/coc.py/3.4.2-3.5.2/README.md --exclude *.pyd
+[2024-04-27 19:33:06] INFO root fetch - processPackages [req-compile]: executing diffoscope
+[2024-04-27 19:33:06] INFO root fetch - processPackages [req-compile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/req-compile-1.0.0rc8.tar.gz tmp/req-compile-1.0.0rc9.tar.gz --markdown 20240427/r/req-compile/1.0.0rc8-1.0.0rc9/README.md --exclude *.pyd
+[2024-04-27 19:33:06] INFO root fetch - processPackages [mlops-api-gemstack]: Remove: archive file [/home/abi/fetcher/tmp/mlops_api_gemstack-0.3.8.tar.gz]
+[2024-04-27 19:33:06] INFO root fetch - processPackages [mlops-api-gemstack]: Remove: archive file [/home/abi/fetcher/tmp/mlops_api_gemstack-0.3.9.tar.gz]
+[2024-04-27 19:33:06] INFO root fetch - main [MainThread]: End processing [mlops-api-gemstack]: success
+[2024-04-27 19:33:06] INFO root fetch - processPackages [cocoon-data]: Remove: archive file [/home/abi/fetcher/tmp/cocoon_data-0.1.8.tar.gz]
+[2024-04-27 19:33:06] INFO root fetch - processPackages [cocoon-data]: Remove: archive file [/home/abi/fetcher/tmp/cocoon_data-0.1.9.tar.gz]
+[2024-04-27 19:33:06] INFO root fetch - main [MainThread]: End processing [cocoon-data]: success
+[2024-04-27 19:33:06] INFO root fetch - processPackages [sensors_connectivity]: Remove: archive file [/home/abi/fetcher/tmp/sensors_connectivity-1.6.1.tar.gz]
+[2024-04-27 19:33:06] INFO root fetch - processPackages [sensors_connectivity]: Remove: archive file [/home/abi/fetcher/tmp/sensors_connectivity-1.6.2.tar.gz]
+[2024-04-27 19:33:06] INFO root fetch - main [MainThread]: End processing [sensors_connectivity]: success
+[2024-04-27 19:33:06] INFO root fetch - processPackages [req-compile]: Remove: archive file [/home/abi/fetcher/tmp/req-compile-1.0.0rc8.tar.gz]
+[2024-04-27 19:33:06] INFO root fetch - processPackages [req-compile]: Remove: archive file [/home/abi/fetcher/tmp/req-compile-1.0.0rc9.tar.gz]
+[2024-04-27 19:33:06] INFO root fetch - main [MainThread]: End processing [req-compile]: success
+[2024-04-27 19:33:07] INFO root fetch - processPackages [coc.py]: Remove: archive file [/home/abi/fetcher/tmp/coc_py-3.4.2.tar.gz]
+[2024-04-27 19:33:07] INFO root fetch - processPackages [coc.py]: Remove: archive file [/home/abi/fetcher/tmp/coc_py-3.5.2.tar.gz]
+[2024-04-27 19:33:07] INFO root fetch - main [MainThread]: End processing [coc.py]: success
+[2024-04-27 19:33:07] INFO root fetch - main [MainThread]: Store serial: [22960586]
