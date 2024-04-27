@@ -16085,3 +16085,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 16:52:24] INFO root fetch - processPackages [mckinseysolvegame]: Remove: archive file [/home/abi/fetcher/tmp/mckinseysolvegame-0.8.3.tar.gz]
 [2024-04-27 16:52:24] INFO root fetch - main [MainThread]: End processing [mckinseysolvegame]: success
 [2024-04-27 16:52:24] INFO root fetch - main [MainThread]: Store serial: [22959595]
+[2024-04-27 16:54:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959595]
+[2024-04-27 16:54:33] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 16:54:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flatpack
+[2024-04-27 16:54:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: marksplitz
+[2024-04-27 16:54:33] INFO root fetch - processPackages [flatpack]: New version: [3.3.9] Old Version: [3.3.8]
+[2024-04-27 16:54:33] INFO root fetch - processPackages [marksplitz]: New version: [0.1.dev8] Old Version: [0.1.dev10]
+[2024-04-27 16:54:33] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/42/48/84e949164975b341645163f536ee4ca8329c4e3dfa6d143c2806a0849a54/flatpack-3.3.8.tar.gz
+[2024-04-27 16:54:33] INFO root fetch - processPackages [marksplitz]: Downloading https://files.pythonhosted.org/packages/00/28/7d021868d507788874255899b4e6bbc87e246313e143ea66e2470ffc136e/marksplitz-0.1.dev10.tar.gz
+[2024-04-27 16:54:33] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/11/54/065825e8640b062c83c07c97d8dea514db8a5c0ea3c272834b88c568d82e/flatpack-3.3.9.tar.gz
+[2024-04-27 16:54:33] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-04-27 16:54:33] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.3.8.tar.gz tmp/flatpack-3.3.9.tar.gz --markdown 20240427/f/flatpack/3.3.8-3.3.9/README.md --exclude *.pyd
+[2024-04-27 16:54:33] INFO root fetch - processPackages [marksplitz]: Downloading https://files.pythonhosted.org/packages/b7/40/548e29eddd79ebf95f832a5c4b00e8124b56a84c1438098875090fcab7dd/marksplitz-0.1.dev8.tar.gz
+[2024-04-27 16:54:34] INFO root fetch - processPackages [marksplitz]: executing diffoscope
+[2024-04-27 16:54:34] INFO root fetch - processPackages [marksplitz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/marksplitz-0.1.dev10.tar.gz tmp/marksplitz-0.1.dev8.tar.gz --markdown 20240427/m/marksplitz/0.1.dev10-0.1.dev8/README.md --exclude *.pyd
+[2024-04-27 16:54:34] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.8.tar.gz]
+[2024-04-27 16:54:34] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.9.tar.gz]
+[2024-04-27 16:54:34] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-04-27 16:54:34] INFO root fetch - processPackages [marksplitz]: Remove: archive file [/home/abi/fetcher/tmp/marksplitz-0.1.dev10.tar.gz]
+[2024-04-27 16:54:34] INFO root fetch - processPackages [marksplitz]: Remove: archive file [/home/abi/fetcher/tmp/marksplitz-0.1.dev8.tar.gz]
+[2024-04-27 16:54:34] INFO root fetch - main [MainThread]: End processing [marksplitz]: success
+[2024-04-27 16:54:34] INFO root fetch - main [MainThread]: Store serial: [22959601]
