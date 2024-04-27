@@ -9702,3 +9702,24 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 08:26:30] INFO root fetch - processPackages [tailucas-pylib]: Remove: archive file [/home/abi/fetcher/tmp/tailucas_pylib-0.2.8.tar.gz]
 [2024-04-27 08:26:30] INFO root fetch - main [MainThread]: End processing [tailucas-pylib]: success
 [2024-04-27 08:26:30] INFO root fetch - main [MainThread]: Store serial: [22956880]
+[2024-04-27 08:28:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956880]
+[2024-04-27 08:28:38] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 08:28:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: agixtsdk
+[2024-04-27 08:28:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: anycrc
+[2024-04-27 08:28:38] INFO root fetch - processPackages [agixtsdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 08:28:39] INFO root fetch - processPackages [anycrc]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-04-27 08:28:39] INFO root fetch - processPackages [agixtsdk]: Downloading https://files.pythonhosted.org/packages/fc/f4/85d852d47773fa6751a3ed8d3ca02e654579a0a110cdc23896aebd954b2c/agixtsdk-0.0.8.tar.gz
+[2024-04-27 08:28:39] INFO root fetch - processPackages [anycrc]: Downloading https://files.pythonhosted.org/packages/e4/6d/ff0921904465f301f52443453c093ffb82fb63fd8e2fe2758fc9fe7d7f02/anycrc-0.5.0.tar.gz
+[2024-04-27 08:28:39] INFO root fetch - processPackages [agixtsdk]: Downloading https://files.pythonhosted.org/packages/74/75/1048551801b0e2aa197b36b7a2d249437127d0d21a98a3aea7016e0929b9/agixtsdk-0.0.9.tar.gz
+[2024-04-27 08:28:39] INFO root fetch - processPackages [agixtsdk]: executing diffoscope
+[2024-04-27 08:28:39] INFO root fetch - processPackages [agixtsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agixtsdk-0.0.8.tar.gz tmp/agixtsdk-0.0.9.tar.gz --markdown 20240427/a/agixtsdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 08:28:39] INFO root fetch - processPackages [anycrc]: Downloading https://files.pythonhosted.org/packages/29/53/1c9a7e085b6eaea4d8759916d13b46df4b3d279d24b88d2af59e387917a4/anycrc-0.6.0-cp311-cp311-manylinux_2_17_i686.manylinux2014_i686.whl
+[2024-04-27 08:28:40] INFO root fetch - processPackages [agixtsdk]: Remove: archive file [/home/abi/fetcher/tmp/agixtsdk-0.0.8.tar.gz]
+[2024-04-27 08:28:40] INFO root fetch - processPackages [agixtsdk]: Remove: archive file [/home/abi/fetcher/tmp/agixtsdk-0.0.9.tar.gz]
+[2024-04-27 08:28:40] INFO root fetch - main [MainThread]: End processing [agixtsdk]: success
+[2024-04-27 08:28:40] INFO root fetch - processPackages [anycrc]: executing diffoscope
+[2024-04-27 08:28:40] INFO root fetch - processPackages [anycrc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anycrc-0.5.0.tar.gz tmp/anycrc-0.6.0-cp311-cp311-manylinux_2_17_i686.manylinux2014_i686.whl.zip --markdown 20240427/a/anycrc/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-04-27 08:28:40] INFO root fetch - processPackages [anycrc]: Remove: archive file [/home/abi/fetcher/tmp/anycrc-0.5.0.tar.gz]
+[2024-04-27 08:28:40] INFO root fetch - processPackages [anycrc]: Remove: archive file [/home/abi/fetcher/tmp/anycrc-0.6.0-cp311-cp311-manylinux_2_17_i686.manylinux2014_i686.whl.zip]
+[2024-04-27 08:28:40] INFO root fetch - main [MainThread]: End processing [anycrc]: success
+[2024-04-27 08:28:40] INFO root fetch - main [MainThread]: Store serial: [22956893]
