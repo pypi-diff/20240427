@@ -21311,3 +21311,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 23:21:00] INFO root fetch - processPackages [odoo-addon-business-requirement]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_business_requirement-16.0.1.0.1-py3-none-any.whl.zip]
 [2024-04-27 23:21:00] INFO root fetch - main [MainThread]: End processing [odoo-addon-business-requirement]: success
 [2024-04-27 23:21:00] INFO root fetch - main [MainThread]: Store serial: [22962054]
+[2024-04-27 23:23:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962054]
+[2024-04-27 23:23:09] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 23:23:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: glaider
+[2024-04-27 23:23:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: multi-vector-simulator
+[2024-04-27 23:23:09] WARNING root fetch - processPackages [glaider]: Skipping, unable to determine old version
+[2024-04-27 23:23:09] INFO root fetch - main [MainThread]: End processing [glaider] error
+[2024-04-27 23:23:09] INFO root fetch - processPackages [multi-vector-simulator]: New version: [1.1.0rc1] Old Version: [1.0.7rc3]
+[2024-04-27 23:23:09] INFO root fetch - processPackages [multi-vector-simulator]: Downloading https://files.pythonhosted.org/packages/13/19/b58498a02290c9fc51c7ded8d876808bf934de1b54dcbd7355b57402917e/multi-vector-simulator-1.0.7rc3.tar.gz
+[2024-04-27 23:23:10] INFO root fetch - processPackages [multi-vector-simulator]: Downloading https://files.pythonhosted.org/packages/cc/4c/338d0a14deb52d442a9189a00d3a22ff05e6a357e3247cb254ea9f4b0b53/multi-vector-simulator-1.1.0rc1.tar.gz
+[2024-04-27 23:23:10] INFO root fetch - processPackages [multi-vector-simulator]: executing diffoscope
+[2024-04-27 23:23:10] INFO root fetch - processPackages [multi-vector-simulator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multi-vector-simulator-1.0.7rc3.tar.gz tmp/multi-vector-simulator-1.1.0rc1.tar.gz --markdown 20240427/m/multi-vector-simulator/1.0.7rc3-1.1.0rc1/README.md --exclude *.pyd
+[2024-04-27 23:23:11] INFO root fetch - processPackages [multi-vector-simulator]: Remove: archive file [/home/abi/fetcher/tmp/multi-vector-simulator-1.0.7rc3.tar.gz]
+[2024-04-27 23:23:11] INFO root fetch - processPackages [multi-vector-simulator]: Remove: archive file [/home/abi/fetcher/tmp/multi-vector-simulator-1.1.0rc1.tar.gz]
+[2024-04-27 23:23:11] INFO root fetch - main [MainThread]: End processing [multi-vector-simulator]: success
+[2024-04-27 23:23:11] INFO root fetch - main [MainThread]: Store serial: [22962067]
