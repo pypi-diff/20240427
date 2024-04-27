@@ -7383,3 +7383,19 @@ EOFError: EOF read where object expected
 [2024-04-27 04:53:08] INFO root fetch - processPackages [xl2roefact]: Remove: archive file [/home/abi/fetcher/tmp/xl2roefact-0.6rc0.tar.gz]
 [2024-04-27 04:53:08] INFO root fetch - main [MainThread]: End processing [xl2roefact]: success
 [2024-04-27 04:53:08] INFO root fetch - main [MainThread]: Store serial: [22956140]
+[2024-04-27 04:55:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956140]
+[2024-04-27 04:55:17] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-27 04:57:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956140]
+[2024-04-27 04:57:23] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-27 04:59:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956140]
+[2024-04-27 04:59:28] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 04:59:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: milvus-api
+[2024-04-27 04:59:28] INFO root fetch - processPackages [milvus-api]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-27 04:59:29] INFO root fetch - processPackages [milvus-api]: Downloading https://files.pythonhosted.org/packages/59/f0/55f17ee9b52ab25de2736df19a7a8fafb70e12e547eb7849d1005d0aa06e/milvus_api-0.1.3.tar.gz
+[2024-04-27 04:59:29] INFO root fetch - processPackages [milvus-api]: Downloading https://files.pythonhosted.org/packages/b2/1f/e6bb304a1911e5b154068593695ecaaebe6c0920ef7ae60a1b966818e187/milvus_api-0.1.4.tar.gz
+[2024-04-27 04:59:29] INFO root fetch - processPackages [milvus-api]: executing diffoscope
+[2024-04-27 04:59:29] INFO root fetch - processPackages [milvus-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/milvus_api-0.1.3.tar.gz tmp/milvus_api-0.1.4.tar.gz --markdown 20240427/m/milvus-api/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-27 04:59:30] INFO root fetch - processPackages [milvus-api]: Remove: archive file [/home/abi/fetcher/tmp/milvus_api-0.1.3.tar.gz]
+[2024-04-27 04:59:30] INFO root fetch - processPackages [milvus-api]: Remove: archive file [/home/abi/fetcher/tmp/milvus_api-0.1.4.tar.gz]
+[2024-04-27 04:59:30] INFO root fetch - main [MainThread]: End processing [milvus-api]: success
+[2024-04-27 04:59:30] INFO root fetch - main [MainThread]: Store serial: [22956143]
