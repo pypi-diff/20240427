@@ -15457,3 +15457,58 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 16:13:03] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.1.9.tar.gz]
 [2024-04-27 16:13:03] INFO root fetch - main [MainThread]: End processing [pygpt-net]: success
 [2024-04-27 16:13:03] INFO root fetch - main [MainThread]: Store serial: [22959361]
+[2024-04-27 16:15:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959361]
+[2024-04-27 16:15:12] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-27 16:15:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2024-04-27 16:15:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flatpack
+[2024-04-27 16:15:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2024-04-27 16:15:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: felupe
+[2024-04-27 16:15:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: adafruit-circuitpython-requests
+[2024-04-27 16:15:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: kss
+[2024-04-27 16:15:12] INFO root fetch - processPackages [adafruit-circuitpython-requests]: New version: [3.2.5] Old Version: [3.2.4]
+[2024-04-27 16:15:12] INFO root fetch - processPackages [flatpack]: New version: [3.3.9] Old Version: [3.3.8]
+[2024-04-27 16:15:12] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/42/48/84e949164975b341645163f536ee4ca8329c4e3dfa6d143c2806a0849a54/flatpack-3.3.8.tar.gz
+[2024-04-27 16:15:12] INFO root fetch - processPackages [kss]: New version: [5.3.0.dev0] Old Version: [5.2.0]
+[2024-04-27 16:15:12] INFO root fetch - processPackages [felupe]: New version: [8.5.0] Old Version: [8.4.0]
+[2024-04-27 16:15:13] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-04-27 16:15:13] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-04-27 16:15:13] INFO root fetch - processPackages [adafruit-circuitpython-requests]: Downloading https://files.pythonhosted.org/packages/db/61/16991130d1ac0cf821fb7a7248a3abf36f9e56aa930fe58713a7659e0610/adafruit-circuitpython-requests-3.2.4.tar.gz
+[2024-04-27 16:15:13] INFO root fetch - processPackages [kss]: Downloading https://files.pythonhosted.org/packages/9d/25/779fbf04731e211208dd3a9f8aeb96e07fe459e02bfd09ffb77cb7576266/kss-5.2.0.tar.gz
+[2024-04-27 16:15:13] INFO root fetch - processPackages [felupe]: Downloading https://files.pythonhosted.org/packages/a8/b8/4d112c48db6d65b146e2770fe25a5f76dae206bd358e269db4293df6c325/felupe-8.4.0.tar.gz
+[2024-04-27 16:15:13] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/11/54/065825e8640b062c83c07c97d8dea514db8a5c0ea3c272834b88c568d82e/flatpack-3.3.9.tar.gz
+[2024-04-27 16:15:13] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-04-27 16:15:13] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-04-27 16:15:13] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-04-27 16:15:13] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.3.8.tar.gz tmp/flatpack-3.3.9.tar.gz --markdown 20240427/f/flatpack/3.3.8-3.3.9/README.md --exclude *.pyd
+[2024-04-27 16:15:13] INFO root fetch - processPackages [adafruit-circuitpython-requests]: Downloading https://files.pythonhosted.org/packages/84/bc/1929b620bc944b6a9bbaa700c87ec45b29a956db05bd673b76075ff85903/adafruit_circuitpython_requests-3.2.5.tar.gz
+[2024-04-27 16:15:13] INFO root fetch - processPackages [felupe]: Downloading https://files.pythonhosted.org/packages/90/d4/645bab993ada8f5cfdf1e26604d79c2eece48c4f53646d70f62a543c5c60/felupe-8.5.0.tar.gz
+[2024-04-27 16:15:13] INFO root fetch - processPackages [kss]: Downloading https://files.pythonhosted.org/packages/14/13/52b74448eb6c3e56ad43b4c2b99286f009543cc788a1b138e1bd01ec910b/kss-5.3.0.dev0.tar.gz
+[2024-04-27 16:15:13] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-04-27 16:15:13] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-04-27 16:15:13] INFO root fetch - processPackages [adafruit-circuitpython-requests]: executing diffoscope
+[2024-04-27 16:15:13] INFO root fetch - processPackages [adafruit-circuitpython-requests]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adafruit-circuitpython-requests-3.2.4.tar.gz tmp/adafruit_circuitpython_requests-3.2.5.tar.gz --markdown 20240427/a/adafruit-circuitpython-requests/3.2.4-3.2.5/README.md --exclude *.pyd
+[2024-04-27 16:15:13] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-04-27 16:15:13] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-04-27 16:15:13] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240427/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-04-27 16:15:13] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240427/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-04-27 16:15:13] INFO root fetch - processPackages [felupe]: executing diffoscope
+[2024-04-27 16:15:13] INFO root fetch - processPackages [felupe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/felupe-8.4.0.tar.gz tmp/felupe-8.5.0.tar.gz --markdown 20240427/f/felupe/8.4.0-8.5.0/README.md --exclude *.pyd
+[2024-04-27 16:15:14] INFO root fetch - processPackages [kss]: executing diffoscope
+[2024-04-27 16:15:14] INFO root fetch - processPackages [kss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kss-5.2.0.tar.gz tmp/kss-5.3.0.dev0.tar.gz --markdown 20240427/k/kss/5.2.0-5.3.0.dev0/README.md --exclude *.pyd
+[2024-04-27 16:15:14] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.8.tar.gz]
+[2024-04-27 16:15:14] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.9.tar.gz]
+[2024-04-27 16:15:14] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-04-27 16:15:14] INFO root fetch - processPackages [adafruit-circuitpython-requests]: Remove: archive file [/home/abi/fetcher/tmp/adafruit-circuitpython-requests-3.2.4.tar.gz]
+[2024-04-27 16:15:14] INFO root fetch - processPackages [adafruit-circuitpython-requests]: Remove: archive file [/home/abi/fetcher/tmp/adafruit_circuitpython_requests-3.2.5.tar.gz]
+[2024-04-27 16:15:14] INFO root fetch - main [MainThread]: End processing [adafruit-circuitpython-requests]: success
+[2024-04-27 16:15:14] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-04-27 16:15:14] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-04-27 16:15:14] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-04-27 16:15:14] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-04-27 16:15:14] INFO root fetch - processPackages [kss]: Remove: archive file [/home/abi/fetcher/tmp/kss-5.2.0.tar.gz]
+[2024-04-27 16:15:14] INFO root fetch - processPackages [kss]: Remove: archive file [/home/abi/fetcher/tmp/kss-5.3.0.dev0.tar.gz]
+[2024-04-27 16:15:14] INFO root fetch - main [MainThread]: End processing [kss]: success
+[2024-04-27 16:15:15] INFO root fetch - processPackages [felupe]: Remove: archive file [/home/abi/fetcher/tmp/felupe-8.4.0.tar.gz]
+[2024-04-27 16:15:15] INFO root fetch - processPackages [felupe]: Remove: archive file [/home/abi/fetcher/tmp/felupe-8.5.0.tar.gz]
+[2024-04-27 16:15:15] INFO root fetch - main [MainThread]: End processing [felupe]: success
+[2024-04-27 16:15:15] INFO root fetch - main [MainThread]: Store serial: [22959380]
