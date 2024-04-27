@@ -19697,3 +19697,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 21:12:02] INFO root fetch - processPackages [danielutils]: Remove: archive file [/home/abi/fetcher/tmp/danielutils-0.9.77.tar.gz]
 [2024-04-27 21:12:02] INFO root fetch - main [MainThread]: End processing [danielutils]: success
 [2024-04-27 21:12:02] INFO root fetch - main [MainThread]: Store serial: [22961307]
+[2024-04-27 21:14:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961307]
+[2024-04-27 21:14:15] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 21:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: github-provenance-demo
+[2024-04-27 21:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: amino.py.api
+[2024-04-27 21:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: danielutils
+[2024-04-27 21:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: swiss-army-man
+[2024-04-27 21:14:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: FrustrationDynamiX
+[2024-04-27 21:14:16] INFO root fetch - processPackages [github-provenance-demo]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 21:14:16] INFO root fetch - processPackages [FrustrationDynamiX]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-04-27 21:14:16] INFO root fetch - processPackages [danielutils]: New version: [0.9.77] Old Version: [0.9.76]
+[2024-04-27 21:14:16] INFO root fetch - processPackages [swiss-army-man]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-04-27 21:14:16] INFO root fetch - processPackages [github-provenance-demo]: Downloading https://files.pythonhosted.org/packages/63/88/b79fa31265e12b3e48dbe564934d180c081965f8e872b0c652173f1b9eb0/github-provenance-demo-0.0.8.tar.gz
+[2024-04-27 21:14:16] INFO root fetch - processPackages [FrustrationDynamiX]: Downloading https://files.pythonhosted.org/packages/08/47/27fd5adaa96f2d4610baadd7943bcfee8267d595d6c6eb6ecfc6a2c93e20/FrustrationDynamiX-0.2.6.tar.gz
+[2024-04-27 21:14:16] INFO root fetch - processPackages [swiss-army-man]: Downloading https://files.pythonhosted.org/packages/48/1f/294f600f1fa28cd18c161440c03fb3b30e0c131a86552d9308f61aa90137/swiss_army_man-0.1.7.tar.gz
+[2024-04-27 21:14:16] WARNING root fetch - processPackages [amino.py.api]: Skipping, unable to determine old version
+[2024-04-27 21:14:16] INFO root fetch - main [MainThread]: End processing [amino.py.api] error
+[2024-04-27 21:14:16] INFO root fetch - processPackages [danielutils]: Downloading https://files.pythonhosted.org/packages/ca/6c/16f6889ba052bc474022fc2b841d8c78cc901d5ca74f3d59582234ff4a9e/danielutils-0.9.76.tar.gz
+[2024-04-27 21:14:16] INFO root fetch - processPackages [github-provenance-demo]: Downloading https://files.pythonhosted.org/packages/43/50/ed7376facac63060a3b96370349a75c57b9439747c84443e817348a52b92/github-provenance-demo-0.0.9.tar.gz
+[2024-04-27 21:14:16] INFO root fetch - processPackages [swiss-army-man]: Downloading https://files.pythonhosted.org/packages/56/82/24e0c66ae73179bc5f3180da018b1c49aadae130d6093a4ba1f45acd2afa/swiss_army_man-0.1.9.tar.gz
+[2024-04-27 21:14:16] INFO root fetch - processPackages [danielutils]: Downloading https://files.pythonhosted.org/packages/12/8b/cdbfeea73a53646e2bda7f38c6336a64640431fea017533e097d3c264cf4/danielutils-0.9.77.tar.gz
+[2024-04-27 21:14:16] INFO root fetch - processPackages [FrustrationDynamiX]: Downloading https://files.pythonhosted.org/packages/e1/6b/8c4d38656f7a900da2cb4f1d1ba703fc2336df66befa28b8660d0a56057b/FrustrationDynamiX-0.2.7.tar.gz
+[2024-04-27 21:14:16] INFO root fetch - processPackages [github-provenance-demo]: executing diffoscope
+[2024-04-27 21:14:16] INFO root fetch - processPackages [github-provenance-demo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/github-provenance-demo-0.0.8.tar.gz tmp/github-provenance-demo-0.0.9.tar.gz --markdown 20240427/g/github-provenance-demo/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 21:14:16] INFO root fetch - processPackages [swiss-army-man]: executing diffoscope
+[2024-04-27 21:14:16] INFO root fetch - processPackages [swiss-army-man]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swiss_army_man-0.1.7.tar.gz tmp/swiss_army_man-0.1.9.tar.gz --markdown 20240427/s/swiss-army-man/0.1.7-0.1.9/README.md --exclude *.pyd
+[2024-04-27 21:14:16] INFO root fetch - processPackages [danielutils]: executing diffoscope
+[2024-04-27 21:14:16] INFO root fetch - processPackages [danielutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/danielutils-0.9.76.tar.gz tmp/danielutils-0.9.77.tar.gz --markdown 20240427/d/danielutils/0.9.76-0.9.77/README.md --exclude *.pyd
+[2024-04-27 21:14:16] INFO root fetch - processPackages [FrustrationDynamiX]: executing diffoscope
+[2024-04-27 21:14:16] INFO root fetch - processPackages [FrustrationDynamiX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FrustrationDynamiX-0.2.6.tar.gz tmp/FrustrationDynamiX-0.2.7.tar.gz --markdown 20240427/F/FrustrationDynamiX/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-04-27 21:14:17] INFO root fetch - processPackages [github-provenance-demo]: Remove: archive file [/home/abi/fetcher/tmp/github-provenance-demo-0.0.8.tar.gz]
+[2024-04-27 21:14:17] INFO root fetch - processPackages [github-provenance-demo]: Remove: archive file [/home/abi/fetcher/tmp/github-provenance-demo-0.0.9.tar.gz]
+[2024-04-27 21:14:17] INFO root fetch - main [MainThread]: End processing [github-provenance-demo]: success
+[2024-04-27 21:14:17] INFO root fetch - processPackages [swiss-army-man]: Remove: archive file [/home/abi/fetcher/tmp/swiss_army_man-0.1.7.tar.gz]
+[2024-04-27 21:14:17] INFO root fetch - processPackages [swiss-army-man]: Remove: archive file [/home/abi/fetcher/tmp/swiss_army_man-0.1.9.tar.gz]
+[2024-04-27 21:14:17] INFO root fetch - main [MainThread]: End processing [swiss-army-man]: success
+[2024-04-27 21:14:17] INFO root fetch - processPackages [FrustrationDynamiX]: Remove: archive file [/home/abi/fetcher/tmp/FrustrationDynamiX-0.2.6.tar.gz]
+[2024-04-27 21:14:17] INFO root fetch - processPackages [FrustrationDynamiX]: Remove: archive file [/home/abi/fetcher/tmp/FrustrationDynamiX-0.2.7.tar.gz]
+[2024-04-27 21:14:17] INFO root fetch - main [MainThread]: End processing [FrustrationDynamiX]: success
+[2024-04-27 21:14:17] INFO root fetch - processPackages [danielutils]: Remove: archive file [/home/abi/fetcher/tmp/danielutils-0.9.76.tar.gz]
+[2024-04-27 21:14:17] INFO root fetch - processPackages [danielutils]: Remove: archive file [/home/abi/fetcher/tmp/danielutils-0.9.77.tar.gz]
+[2024-04-27 21:14:17] INFO root fetch - main [MainThread]: End processing [danielutils]: success
+[2024-04-27 21:14:17] INFO root fetch - main [MainThread]: Store serial: [22961324]
