@@ -9973,3 +9973,51 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 08:48:12] INFO root fetch - processPackages [masr]: Remove: archive file [/home/abi/fetcher/tmp/masr-2.3.7-py3-none-any.whl.zip]
 [2024-04-27 08:48:12] INFO root fetch - main [MainThread]: End processing [masr]: success
 [2024-04-27 08:48:12] INFO root fetch - main [MainThread]: Store serial: [22956997]
+[2024-04-27 08:50:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956997]
+[2024-04-27 08:50:21] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 08:50:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: masr
+[2024-04-27 08:50:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: truefoundry
+[2024-04-27 08:50:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: media-manager
+[2024-04-27 08:50:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ppasr
+[2024-04-27 08:50:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ppvector
+[2024-04-27 08:50:21] INFO root fetch - processPackages [masr]: New version: [2.3.7] Old Version: [2.3.6]
+[2024-04-27 08:50:21] INFO root fetch - processPackages [media-manager]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-27 08:50:21] INFO root fetch - processPackages [truefoundry]: New version: [0.2.0rc8] Old Version: [0.2.0rc7]
+[2024-04-27 08:50:21] INFO root fetch - processPackages [masr]: Downloading https://files.pythonhosted.org/packages/45/d2/722f8dff2fc54597b80d49112ca3a18dfde7bcd747b9a6979c3a6cb48255/masr-2.3.6-py3-none-any.whl
+[2024-04-27 08:50:21] INFO root fetch - processPackages [ppasr]: New version: [2.4.7] Old Version: [2.4.6]
+[2024-04-27 08:50:21] INFO root fetch - processPackages [truefoundry]: Downloading https://files.pythonhosted.org/packages/e8/c7/6d01e95e1dd503f66efa75aade2d109470185f9094389fe09ffb5bf401da/truefoundry-0.2.0rc7.tar.gz
+[2024-04-27 08:50:21] INFO root fetch - processPackages [ppvector]: New version: [1.0.2] Old Version: [1.0.0]
+[2024-04-27 08:50:21] INFO root fetch - processPackages [media-manager]: Downloading https://files.pythonhosted.org/packages/75/11/acc8a436463477db369c803d9007e03acdd0b43a677cd0cbb78b7ea5b3bb/media_manager-0.8.0-py2.py3-none-any.whl
+[2024-04-27 08:50:21] INFO root fetch - processPackages [media-manager]: Downloading https://files.pythonhosted.org/packages/9b/a7/1155a373b195bebb88c0274982964c45aecd8d7206b2f4731838007628fd/media_manager-0.9.0-py2.py3-none-any.whl
+[2024-04-27 08:50:21] INFO root fetch - processPackages [truefoundry]: Downloading https://files.pythonhosted.org/packages/0a/ba/56d831ddf0462f0fdd5a69e97431fd425a3c2f36e4eaf631946f3b7ccac3/truefoundry-0.2.0rc8.tar.gz
+[2024-04-27 08:50:21] INFO root fetch - processPackages [ppasr]: Downloading https://files.pythonhosted.org/packages/e6/d0/7e6ba4c0c6782f8c44c6d55beb07b907c1a7ced0ff60fda39f99675065ad/ppasr-2.4.6-py3-none-any.whl
+[2024-04-27 08:50:21] INFO root fetch - processPackages [masr]: Downloading https://files.pythonhosted.org/packages/b0/f4/416ee31db0bdd1945c4ed1dc37bbf5c5bece5b6e4309deab8fa7170c7084/masr-2.3.7-py3-none-any.whl
+[2024-04-27 08:50:21] INFO root fetch - processPackages [truefoundry]: executing diffoscope
+[2024-04-27 08:50:21] INFO root fetch - processPackages [truefoundry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/truefoundry-0.2.0rc7.tar.gz tmp/truefoundry-0.2.0rc8.tar.gz --markdown 20240427/t/truefoundry/0.2.0rc7-0.2.0rc8/README.md --exclude *.pyd
+[2024-04-27 08:50:21] INFO root fetch - processPackages [media-manager]: executing diffoscope
+[2024-04-27 08:50:21] INFO root fetch - processPackages [media-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/media_manager-0.8.0-py2.py3-none-any.whl.zip tmp/media_manager-0.9.0-py2.py3-none-any.whl.zip --markdown 20240427/m/media-manager/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-27 08:50:22] INFO root fetch - processPackages [masr]: executing diffoscope
+[2024-04-27 08:50:22] INFO root fetch - processPackages [masr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/masr-2.3.6-py3-none-any.whl.zip tmp/masr-2.3.7-py3-none-any.whl.zip --markdown 20240427/m/masr/2.3.6-2.3.7/README.md --exclude *.pyd
+[2024-04-27 08:50:22] INFO root fetch - processPackages [ppasr]: Downloading https://files.pythonhosted.org/packages/06/28/9696ae6815270b135a570129b783dc1c381222c88d19384b212dbec94625/ppasr-2.4.7-py3-none-any.whl
+[2024-04-27 08:50:22] INFO root fetch - processPackages [media-manager]: Remove: archive file [/home/abi/fetcher/tmp/media_manager-0.8.0-py2.py3-none-any.whl.zip]
+[2024-04-27 08:50:22] INFO root fetch - processPackages [media-manager]: Remove: archive file [/home/abi/fetcher/tmp/media_manager-0.9.0-py2.py3-none-any.whl.zip]
+[2024-04-27 08:50:22] INFO root fetch - main [MainThread]: End processing [media-manager]: success
+[2024-04-27 08:50:22] INFO root fetch - processPackages [truefoundry]: Remove: archive file [/home/abi/fetcher/tmp/truefoundry-0.2.0rc7.tar.gz]
+[2024-04-27 08:50:22] INFO root fetch - processPackages [truefoundry]: Remove: archive file [/home/abi/fetcher/tmp/truefoundry-0.2.0rc8.tar.gz]
+[2024-04-27 08:50:22] INFO root fetch - main [MainThread]: End processing [truefoundry]: success
+[2024-04-27 08:50:22] INFO root fetch - processPackages [ppasr]: executing diffoscope
+[2024-04-27 08:50:22] INFO root fetch - processPackages [ppasr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ppasr-2.4.6-py3-none-any.whl.zip tmp/ppasr-2.4.7-py3-none-any.whl.zip --markdown 20240427/p/ppasr/2.4.6-2.4.7/README.md --exclude *.pyd
+[2024-04-27 08:50:22] INFO root fetch - processPackages [masr]: Remove: archive file [/home/abi/fetcher/tmp/masr-2.3.6-py3-none-any.whl.zip]
+[2024-04-27 08:50:22] INFO root fetch - processPackages [masr]: Remove: archive file [/home/abi/fetcher/tmp/masr-2.3.7-py3-none-any.whl.zip]
+[2024-04-27 08:50:22] INFO root fetch - main [MainThread]: End processing [masr]: success
+[2024-04-27 08:50:23] INFO root fetch - processPackages [ppasr]: Remove: archive file [/home/abi/fetcher/tmp/ppasr-2.4.6-py3-none-any.whl.zip]
+[2024-04-27 08:50:23] INFO root fetch - processPackages [ppasr]: Remove: archive file [/home/abi/fetcher/tmp/ppasr-2.4.7-py3-none-any.whl.zip]
+[2024-04-27 08:50:23] INFO root fetch - main [MainThread]: End processing [ppasr]: success
+[2024-04-27 08:50:28] INFO root fetch - processPackages [ppvector]: Downloading https://files.pythonhosted.org/packages/ed/d5/a93d2aa26d2babac574cc4cfb7a214a591bd9f5cf9cc16eeac700e1136ac/ppvector-1.0.0-py3-none-any.whl
+[2024-04-27 08:50:36] INFO root fetch - processPackages [ppvector]: Downloading https://files.pythonhosted.org/packages/13/b9/8b88ae81795e0c01ac66e40bcf206e11ce5b9972c9044d634cbe17292d5f/ppvector-1.0.2-py3-none-any.whl
+[2024-04-27 08:50:36] INFO root fetch - processPackages [ppvector]: executing diffoscope
+[2024-04-27 08:50:36] INFO root fetch - processPackages [ppvector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ppvector-1.0.0-py3-none-any.whl.zip tmp/ppvector-1.0.2-py3-none-any.whl.zip --markdown 20240427/p/ppvector/1.0.0-1.0.2/README.md --exclude *.pyd
+[2024-04-27 08:50:36] INFO root fetch - processPackages [ppvector]: Remove: archive file [/home/abi/fetcher/tmp/ppvector-1.0.0-py3-none-any.whl.zip]
+[2024-04-27 08:50:36] INFO root fetch - processPackages [ppvector]: Remove: archive file [/home/abi/fetcher/tmp/ppvector-1.0.2-py3-none-any.whl.zip]
+[2024-04-27 08:50:36] INFO root fetch - main [MainThread]: End processing [ppvector]: success
+[2024-04-27 08:50:36] INFO root fetch - main [MainThread]: Store serial: [22957008]
