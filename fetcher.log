@@ -20674,3 +20674,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 22:28:28] INFO root fetch - processPackages [pyodide-mkdocs-theme]: Remove: archive file [/home/abi/fetcher/tmp/pyodide_mkdocs_theme-0.5.0.tar.gz]
 [2024-04-27 22:28:28] INFO root fetch - main [MainThread]: End processing [pyodide-mkdocs-theme]: success
 [2024-04-27 22:28:28] INFO root fetch - main [MainThread]: Store serial: [22961696]
+[2024-04-27 22:30:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961696]
+[2024-04-27 22:30:44] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-27 22:30:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ownlib
+[2024-04-27 22:30:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sql-unit-test
+[2024-04-27 22:30:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: thucyd
+[2024-04-27 22:30:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: generic-exporters
+[2024-04-27 22:30:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: weblinx
+[2024-04-27 22:30:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyayay
+[2024-04-27 22:30:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cpu-info
+[2024-04-27 22:30:44] INFO root fetch - processPackages [thucyd]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-04-27 22:30:44] WARNING root fetch - processPackages [cpu-info]: Skipping, unable to determine old version
+[2024-04-27 22:30:44] INFO root fetch - main [MainThread]: End processing [cpu-info] error
+[2024-04-27 22:30:44] INFO root fetch - processPackages [thucyd]: Downloading https://files.pythonhosted.org/packages/c0/86/2511d7e5ce8bd280f6e430b0e123874cc5d6d852556a6e84fa2ae973d031/thucyd-0.2.5.tar.gz
+[2024-04-27 22:30:44] INFO root fetch - processPackages [weblinx]: New version: [0.3.0rc1] Old Version: [0.2.4]
+[2024-04-27 22:30:44] INFO root fetch - processPackages [ownlib]: New version: [0.0.1b5] Old Version: [0.0.1b4]
+[2024-04-27 22:30:44] WARNING root fetch - processPackages [sql-unit-test]: Skipping, unable to determine old version
+[2024-04-27 22:30:44] INFO root fetch - main [MainThread]: End processing [sql-unit-test] error
+[2024-04-27 22:30:44] INFO root fetch - processPackages [generic-exporters]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-27 22:30:44] INFO root fetch - processPackages [pyayay]: New version: [0.1.1.dev0] Old Version: [0.1.0a2]
+[2024-04-27 22:30:44] INFO root fetch - processPackages [weblinx]: Downloading https://files.pythonhosted.org/packages/fa/b8/315f7c935646e27045cbbbba73189dc31149e70597b6e46a79e84d8f1b3c/weblinx-0.2.4.tar.gz
+[2024-04-27 22:30:44] INFO root fetch - processPackages [ownlib]: Downloading https://files.pythonhosted.org/packages/53/bf/8f2795d3849162bec1bb5d7d3c381dc21e4a7cf0192428aa36842ea599ae/ownlib-0.0.1b4.tar.gz
+[2024-04-27 22:30:44] INFO root fetch - processPackages [generic-exporters]: Downloading https://files.pythonhosted.org/packages/1c/08/486d92015def58bb5c2ef8bcb2b5c8640c80acf5d2121b8e5b4fe1681d12/generic_exporters-0.0.7.tar.gz
+[2024-04-27 22:30:44] INFO root fetch - processPackages [thucyd]: Downloading https://files.pythonhosted.org/packages/c6/1c/20d82c4b3774f97f0cbc34603ad9ebceb15411660283b635df4874d04962/thucyd-0.2.6.tar.gz
+[2024-04-27 22:30:45] INFO root fetch - processPackages [pyayay]: Downloading https://files.pythonhosted.org/packages/bc/2f/cfb4440ea64b8a925ed5510a2aaf0a2c61d71d517222cd28bc178b91a29f/pyayay-0.1.0a2.tar.gz
+[2024-04-27 22:30:45] INFO root fetch - processPackages [thucyd]: executing diffoscope
+[2024-04-27 22:30:45] INFO root fetch - processPackages [thucyd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thucyd-0.2.5.tar.gz tmp/thucyd-0.2.6.tar.gz --markdown 20240427/t/thucyd/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-04-27 22:30:45] INFO root fetch - processPackages [ownlib]: Downloading https://files.pythonhosted.org/packages/a7/c8/7680943039a09435df0a716e611a13230e4d4ec41455cc3b8e4901099dbb/ownlib-0.0.1b5.tar.gz
+[2024-04-27 22:30:45] INFO root fetch - processPackages [weblinx]: Downloading https://files.pythonhosted.org/packages/70/46/c963d2d7ebf19cc69c70a01e660b40982979c30fa3e4eca713bd0c75ce9d/weblinx-0.3.0rc1.tar.gz
+[2024-04-27 22:30:45] INFO root fetch - processPackages [generic-exporters]: Downloading https://files.pythonhosted.org/packages/bd/19/1f8c17f429c446f3b0db26d6fd4951e956be16ee417d61819678a52fe47a/generic_exporters-0.0.8.tar.gz
+[2024-04-27 22:30:45] INFO root fetch - processPackages [ownlib]: executing diffoscope
+[2024-04-27 22:30:45] INFO root fetch - processPackages [ownlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ownlib-0.0.1b4.tar.gz tmp/ownlib-0.0.1b5.tar.gz --markdown 20240427/o/ownlib/0.0.1b4-0.0.1b5/README.md --exclude *.pyd
+[2024-04-27 22:30:45] INFO root fetch - processPackages [pyayay]: Downloading https://files.pythonhosted.org/packages/54/94/0fe67697b0e4143eb57be44c84f2dc7f867660a7ef953850e892994adcf3/pyayay-0.1.1.dev0-pp39-pypy39_pp73-manylinux_2_17_i686.manylinux2014_i686.whl
+[2024-04-27 22:30:45] INFO root fetch - processPackages [weblinx]: executing diffoscope
+[2024-04-27 22:30:45] INFO root fetch - processPackages [weblinx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weblinx-0.2.4.tar.gz tmp/weblinx-0.3.0rc1.tar.gz --markdown 20240427/w/weblinx/0.2.4-0.3.0rc1/README.md --exclude *.pyd
+[2024-04-27 22:30:45] INFO root fetch - processPackages [generic-exporters]: executing diffoscope
+[2024-04-27 22:30:45] INFO root fetch - processPackages [generic-exporters]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/generic_exporters-0.0.7.tar.gz tmp/generic_exporters-0.0.8.tar.gz --markdown 20240427/g/generic-exporters/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-27 22:30:45] INFO root fetch - processPackages [thucyd]: Remove: archive file [/home/abi/fetcher/tmp/thucyd-0.2.5.tar.gz]
+[2024-04-27 22:30:45] INFO root fetch - processPackages [thucyd]: Remove: archive file [/home/abi/fetcher/tmp/thucyd-0.2.6.tar.gz]
+[2024-04-27 22:30:45] INFO root fetch - main [MainThread]: End processing [thucyd]: success
+[2024-04-27 22:30:45] INFO root fetch - processPackages [ownlib]: Remove: archive file [/home/abi/fetcher/tmp/ownlib-0.0.1b4.tar.gz]
+[2024-04-27 22:30:45] INFO root fetch - processPackages [ownlib]: Remove: archive file [/home/abi/fetcher/tmp/ownlib-0.0.1b5.tar.gz]
+[2024-04-27 22:30:45] INFO root fetch - main [MainThread]: End processing [ownlib]: success
+[2024-04-27 22:30:46] INFO root fetch - processPackages [weblinx]: Remove: archive file [/home/abi/fetcher/tmp/weblinx-0.2.4.tar.gz]
+[2024-04-27 22:30:46] INFO root fetch - processPackages [weblinx]: Remove: archive file [/home/abi/fetcher/tmp/weblinx-0.3.0rc1.tar.gz]
+[2024-04-27 22:30:46] INFO root fetch - main [MainThread]: End processing [weblinx]: success
+[2024-04-27 22:30:46] INFO root fetch - processPackages [generic-exporters]: Remove: archive file [/home/abi/fetcher/tmp/generic_exporters-0.0.7.tar.gz]
+[2024-04-27 22:30:46] INFO root fetch - processPackages [generic-exporters]: Remove: archive file [/home/abi/fetcher/tmp/generic_exporters-0.0.8.tar.gz]
+[2024-04-27 22:30:46] INFO root fetch - main [MainThread]: End processing [generic-exporters]: success
+[2024-04-27 22:30:46] INFO root fetch - processPackages [pyayay]: executing diffoscope
+[2024-04-27 22:30:46] INFO root fetch - processPackages [pyayay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyayay-0.1.0a2.tar.gz tmp/pyayay-0.1.1.dev0-pp39-pypy39_pp73-manylinux_2_17_i686.manylinux2014_i686.whl.zip --markdown 20240427/p/pyayay/0.1.0a2-0.1.1.dev0/README.md --exclude *.pyd
+[2024-04-27 22:30:46] INFO root fetch - processPackages [pyayay]: Remove: archive file [/home/abi/fetcher/tmp/pyayay-0.1.0a2.tar.gz]
+[2024-04-27 22:30:46] INFO root fetch - processPackages [pyayay]: Remove: archive file [/home/abi/fetcher/tmp/pyayay-0.1.1.dev0-pp39-pypy39_pp73-manylinux_2_17_i686.manylinux2014_i686.whl.zip]
+[2024-04-27 22:30:46] INFO root fetch - main [MainThread]: End processing [pyayay]: success
+[2024-04-27 22:30:46] INFO root fetch - main [MainThread]: Store serial: [22961768]
