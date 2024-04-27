@@ -7105,3 +7105,26 @@ EOFError: EOF read where object expected
 [2024-04-27 04:24:01] INFO root fetch - processPackages [inboard]: Remove: archive file [/home/abi/fetcher/tmp/inboard-0.9.5.tar.gz]
 [2024-04-27 04:24:01] INFO root fetch - main [MainThread]: End processing [inboard]: success
 [2024-04-27 04:24:01] INFO root fetch - main [MainThread]: Store serial: [22956035]
+[2024-04-27 04:26:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956035]
+[2024-04-27 04:26:10] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-27 04:28:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956036]
+[2024-04-27 04:28:15] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 04:28:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: redhat-assisted-installer
+[2024-04-27 04:28:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bucketed-scene-flow-eval
+[2024-04-27 04:28:15] INFO root fetch - processPackages [redhat-assisted-installer]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-27 04:28:15] INFO root fetch - processPackages [bucketed-scene-flow-eval]: New version: [2.0.7] Old Version: [2.0.6]
+[2024-04-27 04:28:15] INFO root fetch - processPackages [bucketed-scene-flow-eval]: Downloading https://files.pythonhosted.org/packages/e6/04/202386f6a007c113cf582797ff1a4b9cfa51bd8945da2f940aeadc44c262/bucketed_scene_flow_eval-2.0.6.tar.gz
+[2024-04-27 04:28:16] INFO root fetch - processPackages [redhat-assisted-installer]: Downloading https://files.pythonhosted.org/packages/cf/a5/d64a7685be594a1e8b75f461c5d2221207b5418827ac0a7dc9bc53dda043/redhat_assisted_installer-0.0.7.tar.gz
+[2024-04-27 04:28:16] INFO root fetch - processPackages [bucketed-scene-flow-eval]: Downloading https://files.pythonhosted.org/packages/dc/d9/80d59a8b70f06ef3254a88f57a3425b973563cc40b9b6ef94a08f562a433/bucketed_scene_flow_eval-2.0.7.tar.gz
+[2024-04-27 04:28:16] INFO root fetch - processPackages [bucketed-scene-flow-eval]: executing diffoscope
+[2024-04-27 04:28:16] INFO root fetch - processPackages [bucketed-scene-flow-eval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bucketed_scene_flow_eval-2.0.6.tar.gz tmp/bucketed_scene_flow_eval-2.0.7.tar.gz --markdown 20240427/b/bucketed-scene-flow-eval/2.0.6-2.0.7/README.md --exclude *.pyd
+[2024-04-27 04:28:16] INFO root fetch - processPackages [redhat-assisted-installer]: Downloading https://files.pythonhosted.org/packages/a0/39/11a7f72b6d6c605fc8656b11767093705e095f7e6034e7bfc73e21d9c481/redhat_assisted_installer-0.0.8.tar.gz
+[2024-04-27 04:28:16] INFO root fetch - processPackages [redhat-assisted-installer]: executing diffoscope
+[2024-04-27 04:28:16] INFO root fetch - processPackages [redhat-assisted-installer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redhat_assisted_installer-0.0.7.tar.gz tmp/redhat_assisted_installer-0.0.8.tar.gz --markdown 20240427/r/redhat-assisted-installer/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-27 04:28:16] INFO root fetch - processPackages [bucketed-scene-flow-eval]: Remove: archive file [/home/abi/fetcher/tmp/bucketed_scene_flow_eval-2.0.6.tar.gz]
+[2024-04-27 04:28:16] INFO root fetch - processPackages [bucketed-scene-flow-eval]: Remove: archive file [/home/abi/fetcher/tmp/bucketed_scene_flow_eval-2.0.7.tar.gz]
+[2024-04-27 04:28:16] INFO root fetch - main [MainThread]: End processing [bucketed-scene-flow-eval]: success
+[2024-04-27 04:28:16] INFO root fetch - processPackages [redhat-assisted-installer]: Remove: archive file [/home/abi/fetcher/tmp/redhat_assisted_installer-0.0.7.tar.gz]
+[2024-04-27 04:28:16] INFO root fetch - processPackages [redhat-assisted-installer]: Remove: archive file [/home/abi/fetcher/tmp/redhat_assisted_installer-0.0.8.tar.gz]
+[2024-04-27 04:28:16] INFO root fetch - main [MainThread]: End processing [redhat-assisted-installer]: success
+[2024-04-27 04:28:16] INFO root fetch - main [MainThread]: Store serial: [22956042]
