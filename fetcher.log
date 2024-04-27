@@ -10782,3 +10782,18 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 10:13:20] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.1.9.tar.gz]
 [2024-04-27 10:13:20] INFO root fetch - main [MainThread]: End processing [pygpt-net]: success
 [2024-04-27 10:13:20] INFO root fetch - main [MainThread]: Store serial: [22957385]
+[2024-04-27 10:15:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957385]
+[2024-04-27 10:15:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 10:15:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: koji-fedoramessaging-messages
+[2024-04-27 10:15:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fancy_printer
+[2024-04-27 10:15:29] INFO root fetch - processPackages [koji-fedoramessaging-messages]: New version: [1.2.4] Old Version: [1.2.3]
+[2024-04-27 10:15:29] WARNING root fetch - processPackages [fancy_printer]: Skipping, unable to determine old version
+[2024-04-27 10:15:29] INFO root fetch - main [MainThread]: End processing [fancy_printer] error
+[2024-04-27 10:15:29] INFO root fetch - processPackages [koji-fedoramessaging-messages]: Downloading https://files.pythonhosted.org/packages/3b/5b/106cb41d9e34bc09336b1c58817d30182632bb635868c6a598d870fdc3dd/koji_fedoramessaging_messages-1.2.3.tar.gz
+[2024-04-27 10:15:29] INFO root fetch - processPackages [koji-fedoramessaging-messages]: Downloading https://files.pythonhosted.org/packages/a8/ad/eb8902d9279a69482b7fdca57f3f7c65c696ed7ca7b78672be71fc5473f1/koji_fedoramessaging_messages-1.2.4.tar.gz
+[2024-04-27 10:15:30] INFO root fetch - processPackages [koji-fedoramessaging-messages]: executing diffoscope
+[2024-04-27 10:15:30] INFO root fetch - processPackages [koji-fedoramessaging-messages]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/koji_fedoramessaging_messages-1.2.3.tar.gz tmp/koji_fedoramessaging_messages-1.2.4.tar.gz --markdown 20240427/k/koji-fedoramessaging-messages/1.2.3-1.2.4/README.md --exclude *.pyd
+[2024-04-27 10:15:30] INFO root fetch - processPackages [koji-fedoramessaging-messages]: Remove: archive file [/home/abi/fetcher/tmp/koji_fedoramessaging_messages-1.2.3.tar.gz]
+[2024-04-27 10:15:30] INFO root fetch - processPackages [koji-fedoramessaging-messages]: Remove: archive file [/home/abi/fetcher/tmp/koji_fedoramessaging_messages-1.2.4.tar.gz]
+[2024-04-27 10:15:30] INFO root fetch - main [MainThread]: End processing [koji-fedoramessaging-messages]: success
+[2024-04-27 10:15:30] INFO root fetch - main [MainThread]: Store serial: [22957395]
