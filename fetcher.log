@@ -7665,3 +7665,15 @@ EOFError: EOF read where object expected
 [2024-04-27 05:23:28] INFO root fetch - processPackages [streamlit-ldap-authenticator]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-ldap-authenticator-0.2.5.tar.gz]
 [2024-04-27 05:23:28] INFO root fetch - main [MainThread]: End processing [streamlit-ldap-authenticator]: success
 [2024-04-27 05:23:28] INFO root fetch - main [MainThread]: Store serial: [22956221]
+[2024-04-27 05:25:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956221]
+[2024-04-27 05:25:36] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 05:25:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: queue-worker-local
+[2024-04-27 05:25:36] INFO root fetch - processPackages [queue-worker-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 05:25:36] INFO root fetch - processPackages [queue-worker-local]: Downloading https://files.pythonhosted.org/packages/7f/d9/fa0def6b3a566ced04835c9ae35bd0c97f2e24eec77224b0908e1a709b35/queue-worker-local-0.0.8.tar.gz
+[2024-04-27 05:25:36] INFO root fetch - processPackages [queue-worker-local]: Downloading https://files.pythonhosted.org/packages/e7/be/a67b2e43f60298d9c8a3f8953b2cab611ed6508ecc046a1d9189e6ef932a/queue-worker-local-0.0.9.tar.gz
+[2024-04-27 05:25:37] INFO root fetch - processPackages [queue-worker-local]: executing diffoscope
+[2024-04-27 05:25:37] INFO root fetch - processPackages [queue-worker-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/queue-worker-local-0.0.8.tar.gz tmp/queue-worker-local-0.0.9.tar.gz --markdown 20240427/q/queue-worker-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 05:25:37] INFO root fetch - processPackages [queue-worker-local]: Remove: archive file [/home/abi/fetcher/tmp/queue-worker-local-0.0.8.tar.gz]
+[2024-04-27 05:25:37] INFO root fetch - processPackages [queue-worker-local]: Remove: archive file [/home/abi/fetcher/tmp/queue-worker-local-0.0.9.tar.gz]
+[2024-04-27 05:25:37] INFO root fetch - main [MainThread]: End processing [queue-worker-local]: success
+[2024-04-27 05:25:37] INFO root fetch - main [MainThread]: Store serial: [22956224]
