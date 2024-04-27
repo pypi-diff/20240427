@@ -21627,3 +21627,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 23:47:24] INFO root fetch - processPackages [maling]: Remove: archive file [/home/abi/fetcher/tmp/maling-2.3.1.tar.gz]
 [2024-04-27 23:47:25] INFO root fetch - main [MainThread]: End processing [maling]: success
 [2024-04-27 23:47:25] INFO root fetch - main [MainThread]: Store serial: [22962241]
+[2024-04-27 23:49:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962241]
+[2024-04-27 23:49:33] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 23:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: DLStudio
+[2024-04-27 23:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: poethepoet
+[2024-04-27 23:49:33] INFO root fetch - processPackages [DLStudio]: New version: [2.4.8] Old Version: [2.4.3]
+[2024-04-27 23:49:33] INFO root fetch - processPackages [poethepoet]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-27 23:49:34] INFO root fetch - processPackages [DLStudio]: Downloading https://files.pythonhosted.org/packages/ad/5a/a64c727d27b4653c39d004c16492788b97c0cb1279abb2c5cda6d248b7c3/DLStudio-2.4.3.tar.gz
+[2024-04-27 23:49:34] INFO root fetch - processPackages [poethepoet]: Downloading https://files.pythonhosted.org/packages/17/79/9c14ec804257040afca9612def3ae0a2160547fe80276f1c8445844084b7/poethepoet-0.8.0.tar.gz
+[2024-04-27 23:49:34] INFO root fetch - processPackages [DLStudio]: Downloading https://files.pythonhosted.org/packages/3f/7b/38f8f989aac0f809102debdc4930161f13456b7824cbf532ecadad27860b/DLStudio-2.4.8.tar.gz
+[2024-04-27 23:49:34] INFO root fetch - processPackages [poethepoet]: Downloading https://files.pythonhosted.org/packages/12/67/034b12e52f7f13a98d0a04c0f9c5330f08f7aa83096a13b1414a9d54e088/poethepoet-0.9.0.tar.gz
+[2024-04-27 23:49:34] INFO root fetch - processPackages [DLStudio]: executing diffoscope
+[2024-04-27 23:49:34] INFO root fetch - processPackages [DLStudio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DLStudio-2.4.3.tar.gz tmp/DLStudio-2.4.8.tar.gz --markdown 20240427/D/DLStudio/2.4.3-2.4.8/README.md --exclude *.pyd
+[2024-04-27 23:49:34] INFO root fetch - processPackages [poethepoet]: executing diffoscope
+[2024-04-27 23:49:34] INFO root fetch - processPackages [poethepoet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poethepoet-0.8.0.tar.gz tmp/poethepoet-0.9.0.tar.gz --markdown 20240427/p/poethepoet/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-27 23:49:35] INFO root fetch - processPackages [poethepoet]: Remove: archive file [/home/abi/fetcher/tmp/poethepoet-0.8.0.tar.gz]
+[2024-04-27 23:49:35] INFO root fetch - processPackages [poethepoet]: Remove: archive file [/home/abi/fetcher/tmp/poethepoet-0.9.0.tar.gz]
+[2024-04-27 23:49:35] INFO root fetch - main [MainThread]: End processing [poethepoet]: success
+[2024-04-27 23:49:35] INFO root fetch - processPackages [DLStudio]: Remove: archive file [/home/abi/fetcher/tmp/DLStudio-2.4.3.tar.gz]
+[2024-04-27 23:49:35] INFO root fetch - processPackages [DLStudio]: Remove: archive file [/home/abi/fetcher/tmp/DLStudio-2.4.8.tar.gz]
+[2024-04-27 23:49:35] INFO root fetch - main [MainThread]: End processing [DLStudio]: success
+[2024-04-27 23:49:35] INFO root fetch - main [MainThread]: Store serial: [22962246]
