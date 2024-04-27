@@ -20940,3 +20940,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 22:44:10] INFO root fetch - processPackages [openadapt]: Remove: archive file [/home/abi/fetcher/tmp/openadapt-0.9.0.tar.gz]
 [2024-04-27 22:44:10] INFO root fetch - main [MainThread]: End processing [openadapt]: success
 [2024-04-27 22:44:10] INFO root fetch - main [MainThread]: Store serial: [22961851]
+[2024-04-27 22:46:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961851]
+[2024-04-27 22:46:28] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-27 22:46:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iree-turbine
+[2024-04-27 22:46:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shark-turbine
+[2024-04-27 22:46:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: moto
+[2024-04-27 22:46:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gameon
+[2024-04-27 22:46:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: amjd
+[2024-04-27 22:46:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pycis-cli
+[2024-04-27 22:46:28] WARNING root fetch - processPackages [amjd]: Skipping, unable to determine old version
+[2024-04-27 22:46:28] INFO root fetch - main [MainThread]: End processing [amjd] error
+[2024-04-27 22:46:28] INFO root fetch - processPackages [moto]: New version: [5.0.6.dev9] Old Version: [5.0.6.dev8]
+[2024-04-27 22:46:28] INFO root fetch - processPackages [gameon]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-04-27 22:46:28] INFO root fetch - processPackages [iree-turbine]: New version: [2.3.0rc20240410] Old Version: [2.3.0]
+[2024-04-27 22:46:28] INFO root fetch - processPackages [shark-turbine]: New version: [2.3.0rc20240410] Old Version: [2.3.0]
+[2024-04-27 22:46:28] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/cc/b5/00faf7a32b2d43303224e4c85e6ca1586aa38ed6bd7c49336b7ac8cebea7/moto-5.0.6.dev8.tar.gz
+[2024-04-27 22:46:28] INFO root fetch - processPackages [pycis-cli]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-27 22:46:28] INFO root fetch - processPackages [gameon]: Downloading https://files.pythonhosted.org/packages/71/35/d9171b07d8515c0330d3db395b3f6225b36dc924a2ac0eba21249a25c605/gameon-1.0.3.tar.gz
+[2024-04-27 22:46:28] INFO root fetch - processPackages [shark-turbine]: Downloading https://files.pythonhosted.org/packages/14/76/7068b3714cc6a4dd60c75ad7d39a32887953cb360c19a25ba747f6f3527e/shark_turbine-2.3.0-py3-none-any.whl
+[2024-04-27 22:46:28] INFO root fetch - processPackages [iree-turbine]: Downloading https://files.pythonhosted.org/packages/04/e2/8edbee1c81874ab5c0066baadf5d2fd1ea82be9ffb575d3c8a16076b3d53/iree_turbine-2.3.0-py3-none-any.whl
+[2024-04-27 22:46:28] INFO root fetch - processPackages [pycis-cli]: Downloading https://files.pythonhosted.org/packages/a6/b8/39d0aa038c5099129a02d37e8724908ec417b3ce23cd66def1b928f27046/pycis_cli-0.1.1.tar.gz
+[2024-04-27 22:46:28] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/67/63/03d8401d8574b4b96cd00404b9b4b0f0791e6dc794bc44ad3730b7dd8e46/moto-5.0.6.dev9.tar.gz
+[2024-04-27 22:46:28] INFO root fetch - processPackages [gameon]: Downloading https://files.pythonhosted.org/packages/42/28/18d1a4a9f5d1d572cb69c14a5cac31808283b76ab67a26eee6bb8c3fc5b4/gameon-1.0.4.tar.gz
+[2024-04-27 22:46:28] INFO root fetch - processPackages [iree-turbine]: Downloading https://files.pythonhosted.org/packages/14/a7/5690683c661c28a3bafb321c52de855e6789bfe991ba589bc565a06ca0d2/iree_turbine-2.3.0rc20240410-py3-none-any.whl
+[2024-04-27 22:46:28] INFO root fetch - processPackages [gameon]: executing diffoscope
+[2024-04-27 22:46:28] INFO root fetch - processPackages [gameon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gameon-1.0.3.tar.gz tmp/gameon-1.0.4.tar.gz --markdown 20240427/g/gameon/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-04-27 22:46:29] INFO root fetch - processPackages [pycis-cli]: Downloading https://files.pythonhosted.org/packages/7b/ee/d1dd0afff5da88b5cd35c092500f133a7a63bbee7d5a0d555aa6e6066365/pycis_cli-0.1.2.tar.gz
+[2024-04-27 22:46:29] INFO root fetch - processPackages [shark-turbine]: Downloading https://files.pythonhosted.org/packages/66/89/7b34dcbd246dcd7d815dcf9ca178c3905c0f6bae914b4a5a62e9e3a4f3b1/shark_turbine-2.3.0rc20240410-py3-none-any.whl
+[2024-04-27 22:46:29] INFO root fetch - processPackages [moto]: executing diffoscope
+[2024-04-27 22:46:29] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-5.0.6.dev8.tar.gz tmp/moto-5.0.6.dev9.tar.gz --markdown 20240427/m/moto/5.0.6.dev8-5.0.6.dev9/README.md --exclude *.pyd
+[2024-04-27 22:46:29] INFO root fetch - processPackages [iree-turbine]: executing diffoscope
+[2024-04-27 22:46:29] INFO root fetch - processPackages [iree-turbine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iree_turbine-2.3.0-py3-none-any.whl.zip tmp/iree_turbine-2.3.0rc20240410-py3-none-any.whl.zip --markdown 20240427/i/iree-turbine/2.3.0-2.3.0rc20240410/README.md --exclude *.pyd
+[2024-04-27 22:46:29] INFO root fetch - processPackages [shark-turbine]: executing diffoscope
+[2024-04-27 22:46:29] INFO root fetch - processPackages [shark-turbine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shark_turbine-2.3.0-py3-none-any.whl.zip tmp/shark_turbine-2.3.0rc20240410-py3-none-any.whl.zip --markdown 20240427/s/shark-turbine/2.3.0-2.3.0rc20240410/README.md --exclude *.pyd
+[2024-04-27 22:46:29] INFO root fetch - processPackages [pycis-cli]: executing diffoscope
+[2024-04-27 22:46:29] INFO root fetch - processPackages [pycis-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycis_cli-0.1.1.tar.gz tmp/pycis_cli-0.1.2.tar.gz --markdown 20240427/p/pycis-cli/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-27 22:46:29] INFO root fetch - processPackages [gameon]: Remove: archive file [/home/abi/fetcher/tmp/gameon-1.0.3.tar.gz]
+[2024-04-27 22:46:29] INFO root fetch - processPackages [gameon]: Remove: archive file [/home/abi/fetcher/tmp/gameon-1.0.4.tar.gz]
+[2024-04-27 22:46:29] INFO root fetch - main [MainThread]: End processing [gameon]: success
+[2024-04-27 22:46:29] INFO root fetch - processPackages [pycis-cli]: Remove: archive file [/home/abi/fetcher/tmp/pycis_cli-0.1.1.tar.gz]
+[2024-04-27 22:46:29] INFO root fetch - processPackages [pycis-cli]: Remove: archive file [/home/abi/fetcher/tmp/pycis_cli-0.1.2.tar.gz]
+[2024-04-27 22:46:29] INFO root fetch - main [MainThread]: End processing [pycis-cli]: success
+[2024-04-27 22:46:30] INFO root fetch - processPackages [iree-turbine]: Remove: archive file [/home/abi/fetcher/tmp/iree_turbine-2.3.0-py3-none-any.whl.zip]
+[2024-04-27 22:46:30] INFO root fetch - processPackages [iree-turbine]: Remove: archive file [/home/abi/fetcher/tmp/iree_turbine-2.3.0rc20240410-py3-none-any.whl.zip]
+[2024-04-27 22:46:30] INFO root fetch - main [MainThread]: End processing [iree-turbine]: success
+[2024-04-27 22:46:30] INFO root fetch - processPackages [shark-turbine]: Remove: archive file [/home/abi/fetcher/tmp/shark_turbine-2.3.0-py3-none-any.whl.zip]
+[2024-04-27 22:46:30] INFO root fetch - processPackages [shark-turbine]: Remove: archive file [/home/abi/fetcher/tmp/shark_turbine-2.3.0rc20240410-py3-none-any.whl.zip]
+[2024-04-27 22:46:30] INFO root fetch - main [MainThread]: End processing [shark-turbine]: success
+[2024-04-27 22:46:40] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.6.dev8.tar.gz]
+[2024-04-27 22:46:40] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.6.dev9.tar.gz]
+[2024-04-27 22:46:40] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2024-04-27 22:46:40] INFO root fetch - main [MainThread]: Store serial: [22961866]
