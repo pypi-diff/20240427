@@ -17579,3 +17579,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 18:41:37] INFO root fetch - processPackages [prisoners-dilemma-sdk]: Remove: archive file [/home/abi/fetcher/tmp/prisoners_dilemma_sdk-0.0.4.tar.gz]
 [2024-04-27 18:41:37] INFO root fetch - main [MainThread]: End processing [prisoners-dilemma-sdk]: success
 [2024-04-27 18:41:37] INFO root fetch - main [MainThread]: Store serial: [22960236]
+[2024-04-27 18:43:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960236]
+[2024-04-27 18:43:49] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 18:43:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nl2query
+[2024-04-27 18:43:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-easyverein
+[2024-04-27 18:43:49] INFO root fetch - processPackages [nl2query]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-27 18:43:49] INFO root fetch - processPackages [nl2query]: Downloading https://files.pythonhosted.org/packages/64/9b/49e593458ab5db60e7ef01e6b042040c65ece0fdf082c39064d0007c6c2e/nl2query-0.1.5.tar.gz
+[2024-04-27 18:43:49] INFO root fetch - processPackages [python-easyverein]: New version: [0.2.7] Old Version: [0.2.5]
+[2024-04-27 18:43:50] INFO root fetch - processPackages [nl2query]: Downloading https://files.pythonhosted.org/packages/27/db/74aed3418006079c58e342d87eeafc4221504e28d8ce25482a745c4e3b86/nl2query-0.1.6.tar.gz
+[2024-04-27 18:43:50] INFO root fetch - processPackages [python-easyverein]: Downloading https://files.pythonhosted.org/packages/8f/64/90e8419be694fddeac0c4ebf10dc1ff1db166379112463c9f72526a4f3af/python_easyverein-0.2.5.tar.gz
+[2024-04-27 18:43:50] INFO root fetch - processPackages [nl2query]: executing diffoscope
+[2024-04-27 18:43:50] INFO root fetch - processPackages [nl2query]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nl2query-0.1.5.tar.gz tmp/nl2query-0.1.6.tar.gz --markdown 20240427/n/nl2query/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-27 18:43:50] INFO root fetch - processPackages [python-easyverein]: Downloading https://files.pythonhosted.org/packages/17/96/f4c47b545086a6b9d4551404bcebd5a8b6c46df7af2f6547e57b21bb1003/python_easyverein-0.2.7.tar.gz
+[2024-04-27 18:43:50] INFO root fetch - processPackages [python-easyverein]: executing diffoscope
+[2024-04-27 18:43:50] INFO root fetch - processPackages [python-easyverein]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_easyverein-0.2.5.tar.gz tmp/python_easyverein-0.2.7.tar.gz --markdown 20240427/p/python-easyverein/0.2.5-0.2.7/README.md --exclude *.pyd
+[2024-04-27 18:43:50] INFO root fetch - processPackages [nl2query]: Remove: archive file [/home/abi/fetcher/tmp/nl2query-0.1.5.tar.gz]
+[2024-04-27 18:43:50] INFO root fetch - processPackages [nl2query]: Remove: archive file [/home/abi/fetcher/tmp/nl2query-0.1.6.tar.gz]
+[2024-04-27 18:43:50] INFO root fetch - main [MainThread]: End processing [nl2query]: success
+[2024-04-27 18:43:51] INFO root fetch - processPackages [python-easyverein]: Remove: archive file [/home/abi/fetcher/tmp/python_easyverein-0.2.5.tar.gz]
+[2024-04-27 18:43:51] INFO root fetch - processPackages [python-easyverein]: Remove: archive file [/home/abi/fetcher/tmp/python_easyverein-0.2.7.tar.gz]
+[2024-04-27 18:43:51] INFO root fetch - main [MainThread]: End processing [python-easyverein]: success
+[2024-04-27 18:43:51] INFO root fetch - main [MainThread]: Store serial: [22960243]
