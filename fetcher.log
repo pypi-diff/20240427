@@ -7844,3 +7844,24 @@ EOFError: EOF read where object expected
 [2024-04-27 05:51:27] INFO root fetch - processPackages [obvs]: Remove: archive file [/home/abi/fetcher/tmp/obvs-0.1.0.tar.gz]
 [2024-04-27 05:51:27] INFO root fetch - main [MainThread]: End processing [obvs]: success
 [2024-04-27 05:51:27] INFO root fetch - main [MainThread]: Store serial: [22956271]
+[2024-04-27 05:53:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956271]
+[2024-04-27 05:53:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 05:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aioruckus
+[2024-04-27 05:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-website-sale-hide-price
+[2024-04-27 05:53:36] INFO root fetch - processPackages [odoo-addon-website-sale-hide-price]: New version: [17.0.1.0.0.5] Old Version: [17.0.1.0.0.3]
+[2024-04-27 05:53:36] INFO root fetch - processPackages [aioruckus]: New version: [0.38] Old Version: [0.37]
+[2024-04-27 05:53:36] INFO root fetch - processPackages [odoo-addon-website-sale-hide-price]: Downloading https://files.pythonhosted.org/packages/9c/20/a23a773608da1acd965a2b545fcefe2b9958e4402487077cd0e7346c652e/odoo_addon_website_sale_hide_price-17.0.1.0.0.3-py3-none-any.whl
+[2024-04-27 05:53:36] INFO root fetch - processPackages [aioruckus]: Downloading https://files.pythonhosted.org/packages/d1/9b/48d4fa488c6d67b276076d0524402c016dcbb3754fb15aabb44d3cbc229b/aioruckus-0.37.tar.gz
+[2024-04-27 05:53:37] INFO root fetch - processPackages [aioruckus]: Downloading https://files.pythonhosted.org/packages/db/2d/eee2f9649ebd44a8d2d7b5a9f8ce4df800187f7f16b6d3d5d8b6615ebfcc/aioruckus-0.38-py3-none-any.whl
+[2024-04-27 05:53:37] INFO root fetch - processPackages [odoo-addon-website-sale-hide-price]: Downloading https://files.pythonhosted.org/packages/81/dd/581f513e3babf0bac6cbadf3e432b53f541be3ebeff747100ad568faf3a3/odoo_addon_website_sale_hide_price-17.0.1.0.0.5-py3-none-any.whl
+[2024-04-27 05:53:37] INFO root fetch - processPackages [aioruckus]: executing diffoscope
+[2024-04-27 05:53:37] INFO root fetch - processPackages [aioruckus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioruckus-0.37.tar.gz tmp/aioruckus-0.38-py3-none-any.whl.zip --markdown 20240427/a/aioruckus/0.37-0.38/README.md --exclude *.pyd
+[2024-04-27 05:53:37] INFO root fetch - processPackages [odoo-addon-website-sale-hide-price]: executing diffoscope
+[2024-04-27 05:53:37] INFO root fetch - processPackages [odoo-addon-website-sale-hide-price]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_website_sale_hide_price-17.0.1.0.0.3-py3-none-any.whl.zip tmp/odoo_addon_website_sale_hide_price-17.0.1.0.0.5-py3-none-any.whl.zip --markdown 20240427/o/odoo-addon-website-sale-hide-price/17.0.1.0.0.3-17.0.1.0.0.5/README.md --exclude *.pyd
+[2024-04-27 05:53:37] INFO root fetch - processPackages [aioruckus]: Remove: archive file [/home/abi/fetcher/tmp/aioruckus-0.37.tar.gz]
+[2024-04-27 05:53:37] INFO root fetch - processPackages [aioruckus]: Remove: archive file [/home/abi/fetcher/tmp/aioruckus-0.38-py3-none-any.whl.zip]
+[2024-04-27 05:53:37] INFO root fetch - main [MainThread]: End processing [aioruckus]: success
+[2024-04-27 05:53:37] INFO root fetch - processPackages [odoo-addon-website-sale-hide-price]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_website_sale_hide_price-17.0.1.0.0.3-py3-none-any.whl.zip]
+[2024-04-27 05:53:37] INFO root fetch - processPackages [odoo-addon-website-sale-hide-price]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_website_sale_hide_price-17.0.1.0.0.5-py3-none-any.whl.zip]
+[2024-04-27 05:53:37] INFO root fetch - main [MainThread]: End processing [odoo-addon-website-sale-hide-price]: success
+[2024-04-27 05:53:37] INFO root fetch - main [MainThread]: Store serial: [22956275]
