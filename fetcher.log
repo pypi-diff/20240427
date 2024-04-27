@@ -19468,3 +19468,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 20:51:42] INFO root fetch - processPackages [petcmd]: Remove: archive file [/home/abi/fetcher/tmp/petcmd-0.2.8.tar.gz]
 [2024-04-27 20:51:42] INFO root fetch - main [MainThread]: End processing [petcmd]: success
 [2024-04-27 20:51:42] INFO root fetch - main [MainThread]: Store serial: [22961175]
+[2024-04-27 20:53:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961175]
+[2024-04-27 20:53:56] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 20:53:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FrustrationDynamiX
+[2024-04-27 20:53:56] INFO root fetch - processPackages [FrustrationDynamiX]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-04-27 20:53:56] INFO root fetch - processPackages [FrustrationDynamiX]: Downloading https://files.pythonhosted.org/packages/a2/9e/d67571af64d83417b8e0728f584f9b0cb04922e0ad48da0074388461c1ef/FrustrationDynamiX-0.2.3.tar.gz
+[2024-04-27 20:53:57] INFO root fetch - processPackages [FrustrationDynamiX]: Downloading https://files.pythonhosted.org/packages/01/ef/93f2259598b493e25df4501706a516856c0b72210f9913d03956ef1a7cc5/FrustrationDynamiX-0.2.4.tar.gz
+[2024-04-27 20:53:57] INFO root fetch - processPackages [FrustrationDynamiX]: executing diffoscope
+[2024-04-27 20:53:57] INFO root fetch - processPackages [FrustrationDynamiX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FrustrationDynamiX-0.2.3.tar.gz tmp/FrustrationDynamiX-0.2.4.tar.gz --markdown 20240427/F/FrustrationDynamiX/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-04-27 20:53:57] INFO root fetch - processPackages [FrustrationDynamiX]: Remove: archive file [/home/abi/fetcher/tmp/FrustrationDynamiX-0.2.3.tar.gz]
+[2024-04-27 20:53:57] INFO root fetch - processPackages [FrustrationDynamiX]: Remove: archive file [/home/abi/fetcher/tmp/FrustrationDynamiX-0.2.4.tar.gz]
+[2024-04-27 20:53:57] INFO root fetch - main [MainThread]: End processing [FrustrationDynamiX]: success
+[2024-04-27 20:53:57] INFO root fetch - main [MainThread]: Store serial: [22961178]
