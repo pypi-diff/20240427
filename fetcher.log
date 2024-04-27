@@ -20271,3 +20271,61 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 21:57:16] WARNING root fetch - processPackages [datasette-sqlite-vec]: Skipping, unable to determine old version
 [2024-04-27 21:57:16] INFO root fetch - main [MainThread]: End processing [datasette-sqlite-vec] error
 [2024-04-27 21:57:16] INFO root fetch - main [MainThread]: Store serial: [22961551]
+[2024-04-27 21:59:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961551]
+[2024-04-27 21:59:31] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-27 21:59:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: telegrinder
+[2024-04-27 21:59:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyDecision
+[2024-04-27 21:59:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bice
+[2024-04-27 21:59:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: karellen-llvm-clang
+[2024-04-27 21:59:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: karellen-llvm-core
+[2024-04-27 21:59:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: karellen-llvm-toolchain-tools
+[2024-04-27 21:59:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyslth
+[2024-04-27 21:59:31] INFO root fetch - processPackages [bice]: New version: [0.3.8] Old Version: [0.3.7]
+[2024-04-27 21:59:31] INFO root fetch - processPackages [pyDecision]: New version: [4.5.2] Old Version: [4.5.1]
+[2024-04-27 21:59:31] INFO root fetch - processPackages [karellen-llvm-toolchain-tools]: New version: [18.1.4.0.post18] Old Version: [18.1.4.0]
+[2024-04-27 21:59:31] INFO root fetch - processPackages [telegrinder]: New version: [0.1.dev9] Old Version: [0.1.dev8]
+[2024-04-27 21:59:31] INFO root fetch - processPackages [bice]: Downloading https://files.pythonhosted.org/packages/ac/79/d3c5d832c4071cbd7e428dbfd0abbf0ebadc85c07d57e96e067e6c78fc2c/bice-0.3.7.tar.gz
+[2024-04-27 21:59:31] INFO root fetch - processPackages [karellen-llvm-clang]: New version: [18.1.4.0.post18] Old Version: [18.1.4.0]
+[2024-04-27 21:59:31] INFO root fetch - processPackages [pyslth]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-27 21:59:31] INFO root fetch - processPackages [karellen-llvm-core]: New version: [18.1.4.0.post18] Old Version: [18.1.4.0]
+[2024-04-27 21:59:31] INFO root fetch - processPackages [pyDecision]: Downloading https://files.pythonhosted.org/packages/52/a5/a5f5bd6aa9d244b27914c01fab96f74629a9d32f0f277902870bf17bebda/pyDecision-4.5.1.tar.gz
+[2024-04-27 21:59:31] INFO root fetch - processPackages [karellen-llvm-clang]: Downloading https://files.pythonhosted.org/packages/f2/4e/041ca936dffbbb44c97b9f854ccb88bc017029a0f161875f4899330509bb/karellen_llvm_clang-18.1.4.0-py3-none-manylinux2014_x86_64.whl
+[2024-04-27 21:59:31] INFO root fetch - processPackages [telegrinder]: Downloading https://files.pythonhosted.org/packages/9f/e3/069b61da2cb5f3c95c9a8f0fe90ded63845e408b4986688f4365897cae5d/telegrinder-0.1.dev8.tar.gz
+[2024-04-27 21:59:31] INFO root fetch - processPackages [karellen-llvm-core]: Downloading https://files.pythonhosted.org/packages/36/01/b0adb83428fe39e574892593437ee80a0d8038da0fbc39385f839637016a/karellen_llvm_core-18.1.4.0-py3-none-manylinux2014_x86_64.whl
+[2024-04-27 21:59:31] INFO root fetch - processPackages [karellen-llvm-toolchain-tools]: Downloading https://files.pythonhosted.org/packages/62/87/701556243fc433c6a67e495a5a244ac81790e3c1a124619db26279387ef3/karellen_llvm_toolchain_tools-18.1.4.0-py3-none-manylinux2014_x86_64.whl
+[2024-04-27 21:59:31] INFO root fetch - processPackages [pyslth]: Downloading https://files.pythonhosted.org/packages/de/31/0e300a0c47ed1cf0f9d749cadee867c5dcdc8271c24fe301c69f79dc8213/pyslth-0.1.4.tar.gz
+[2024-04-27 21:59:31] INFO root fetch - processPackages [bice]: Downloading https://files.pythonhosted.org/packages/02/55/df0c715286dddab126c0484db2acb986579ad095f3feffd0561c187d1acc/bice-0.3.8.tar.gz
+[2024-04-27 21:59:32] WARNING root fetch - processPackages [karellen-llvm-core]: Skipping package: exceeds size limit 28600461>=10485760
+[2024-04-27 21:59:32] INFO root fetch - main [MainThread]: End processing [karellen-llvm-core] error
+[2024-04-27 21:59:32] INFO root fetch - processPackages [bice]: executing diffoscope
+[2024-04-27 21:59:32] INFO root fetch - processPackages [bice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bice-0.3.7.tar.gz tmp/bice-0.3.8.tar.gz --markdown 20240427/b/bice/0.3.7-0.3.8/README.md --exclude *.pyd
+[2024-04-27 21:59:32] INFO root fetch - processPackages [telegrinder]: Downloading https://files.pythonhosted.org/packages/e9/a9/c3bf87df366e6ffbdfa5acd5fb9f5c497409b9635680b7432a2d93c7fa25/telegrinder-0.1.dev9.tar.gz
+[2024-04-27 21:59:32] INFO root fetch - processPackages [pyDecision]: Downloading https://files.pythonhosted.org/packages/a5/2c/d5a3348bd8e13e3d929445936de59c525bcb39b19ebd4746ec3958adf967/pyDecision-4.5.2.tar.gz
+[2024-04-27 21:59:32] INFO root fetch - processPackages [telegrinder]: executing diffoscope
+[2024-04-27 21:59:32] INFO root fetch - processPackages [telegrinder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telegrinder-0.1.dev8.tar.gz tmp/telegrinder-0.1.dev9.tar.gz --markdown 20240427/t/telegrinder/0.1.dev8-0.1.dev9/README.md --exclude *.pyd
+[2024-04-27 21:59:32] INFO root fetch - processPackages [pyDecision]: executing diffoscope
+[2024-04-27 21:59:32] INFO root fetch - processPackages [pyDecision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyDecision-4.5.1.tar.gz tmp/pyDecision-4.5.2.tar.gz --markdown 20240427/p/pyDecision/4.5.1-4.5.2/README.md --exclude *.pyd
+[2024-04-27 21:59:32] INFO root fetch - processPackages [pyslth]: Downloading https://files.pythonhosted.org/packages/c4/63/72dd8e20a72981d028905958c33f3f0128fff120ccad2d8caf6379d8981f/pyslth-0.1.5.tar.gz
+[2024-04-27 21:59:32] INFO root fetch - processPackages [bice]: Remove: archive file [/home/abi/fetcher/tmp/bice-0.3.7.tar.gz]
+[2024-04-27 21:59:32] INFO root fetch - processPackages [bice]: Remove: archive file [/home/abi/fetcher/tmp/bice-0.3.8.tar.gz]
+[2024-04-27 21:59:32] INFO root fetch - main [MainThread]: End processing [bice]: success
+[2024-04-27 21:59:32] INFO root fetch - processPackages [pyslth]: executing diffoscope
+[2024-04-27 21:59:32] INFO root fetch - processPackages [pyslth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyslth-0.1.4.tar.gz tmp/pyslth-0.1.5.tar.gz --markdown 20240427/p/pyslth/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-27 21:59:32] WARNING root fetch - processPackages [karellen-llvm-clang]: Skipping package: exceeds size limit 78643506>=10485760
+[2024-04-27 21:59:32] INFO root fetch - main [MainThread]: End processing [karellen-llvm-clang] error
+[2024-04-27 21:59:33] INFO root fetch - processPackages [telegrinder]: Remove: archive file [/home/abi/fetcher/tmp/telegrinder-0.1.dev8.tar.gz]
+[2024-04-27 21:59:33] INFO root fetch - processPackages [telegrinder]: Remove: archive file [/home/abi/fetcher/tmp/telegrinder-0.1.dev9.tar.gz]
+[2024-04-27 21:59:33] INFO root fetch - main [MainThread]: End processing [telegrinder]: success
+[2024-04-27 21:59:33] INFO root fetch - processPackages [pyDecision]: Remove: archive file [/home/abi/fetcher/tmp/pyDecision-4.5.1.tar.gz]
+[2024-04-27 21:59:33] INFO root fetch - processPackages [pyDecision]: Remove: archive file [/home/abi/fetcher/tmp/pyDecision-4.5.2.tar.gz]
+[2024-04-27 21:59:33] INFO root fetch - main [MainThread]: End processing [pyDecision]: success
+[2024-04-27 21:59:33] INFO root fetch - processPackages [karellen-llvm-toolchain-tools]: Downloading https://files.pythonhosted.org/packages/ca/e7/82193d87698ce1ca2f5a630612a94ce613f9b51e5520f4e98d4340174dc6/karellen_llvm_toolchain_tools-18.1.4.0.post18-py3-none-manylinux2014_x86_64.whl
+[2024-04-27 21:59:33] INFO root fetch - processPackages [karellen-llvm-toolchain-tools]: executing diffoscope
+[2024-04-27 21:59:33] INFO root fetch - processPackages [karellen-llvm-toolchain-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/karellen_llvm_toolchain_tools-18.1.4.0-py3-none-manylinux2014_x86_64.whl.zip tmp/karellen_llvm_toolchain_tools-18.1.4.0.post18-py3-none-manylinux2014_x86_64.whl.zip --markdown 20240427/k/karellen-llvm-toolchain-tools/18.1.4.0-18.1.4.0.post18/README.md --exclude *.pyd
+[2024-04-27 21:59:33] INFO root fetch - processPackages [pyslth]: Remove: archive file [/home/abi/fetcher/tmp/pyslth-0.1.4.tar.gz]
+[2024-04-27 21:59:33] INFO root fetch - processPackages [pyslth]: Remove: archive file [/home/abi/fetcher/tmp/pyslth-0.1.5.tar.gz]
+[2024-04-27 21:59:33] INFO root fetch - main [MainThread]: End processing [pyslth]: success
+[2024-04-27 22:00:01] INFO root fetch - processPackages [karellen-llvm-toolchain-tools]: Remove: archive file [/home/abi/fetcher/tmp/karellen_llvm_toolchain_tools-18.1.4.0-py3-none-manylinux2014_x86_64.whl.zip]
+[2024-04-27 22:00:01] INFO root fetch - processPackages [karellen-llvm-toolchain-tools]: Remove: archive file [/home/abi/fetcher/tmp/karellen_llvm_toolchain_tools-18.1.4.0.post18-py3-none-manylinux2014_x86_64.whl.zip]
+[2024-04-27 22:00:01] INFO root fetch - main [MainThread]: End processing [karellen-llvm-toolchain-tools]: success
+[2024-04-27 22:00:01] INFO root fetch - main [MainThread]: Store serial: [22961567]
