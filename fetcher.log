@@ -11512,3 +11512,51 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 11:40:27] INFO root fetch - processPackages [rwmapeditor-exgcdwu]: Remove: archive file [/home/abi/fetcher/tmp/rwmapeditor_exgcdwu-1.4.0.tar.gz]
 [2024-04-27 11:40:27] INFO root fetch - main [MainThread]: End processing [rwmapeditor-exgcdwu]: success
 [2024-04-27 11:40:27] INFO root fetch - main [MainThread]: Store serial: [22957707]
+[2024-04-27 11:42:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957707]
+[2024-04-27 11:42:36] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 11:42:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: HapooDB
+[2024-04-27 11:42:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyscinloopsr
+[2024-04-27 11:42:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yolosplitter
+[2024-04-27 11:42:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: snailshell
+[2024-04-27 11:42:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: music-kraken
+[2024-04-27 11:42:36] INFO root fetch - processPackages [pyscinloopsr]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-27 11:42:36] INFO root fetch - processPackages [pyscinloopsr]: Downloading https://files.pythonhosted.org/packages/98/21/5809d8e4c42d0207d6fd61e35cf0683da0e0cc5f1d10fa87e864b000cfa6/pyscinloopsr-1.0.8.tar.gz
+[2024-04-27 11:42:36] INFO root fetch - processPackages [yolosplitter]: New version: [0.4.9.1] Old Version: [0.4.9]
+[2024-04-27 11:42:36] INFO root fetch - processPackages [snailshell]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-27 11:42:36] INFO root fetch - processPackages [music-kraken]: New version: [1.9.0] Old Version: [1.7.0]
+[2024-04-27 11:42:36] INFO root fetch - processPackages [HapooDB]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-27 11:42:36] INFO root fetch - processPackages [yolosplitter]: Downloading https://files.pythonhosted.org/packages/92/17/7840078547aaada7c26d0ed446317824603ac85965d3e45b0f4cc03ce23a/yolosplitter-0.4.9.tar.gz
+[2024-04-27 11:42:36] INFO root fetch - processPackages [pyscinloopsr]: Downloading https://files.pythonhosted.org/packages/c2/79/a3b3e1c4377a54b84d92a6ce4a8d70f9bb57364bdbe1ec2657397e8360cd/pyscinloopsr-1.0.9.tar.gz
+[2024-04-27 11:42:37] INFO root fetch - processPackages [music-kraken]: Downloading https://files.pythonhosted.org/packages/cb/06/8ae70afb14c2307fb716d0fe36aad66a90c9e2598f47879c1277c5f23318/music_kraken-1.7.0.tar.gz
+[2024-04-27 11:42:37] INFO root fetch - processPackages [snailshell]: Downloading https://files.pythonhosted.org/packages/28/70/cae4b29d322efc44d70ca0ed64cb9279f19cd1f9e328c4662b19c5196c4d/snailshell-0.2.8.tar.gz
+[2024-04-27 11:42:37] INFO root fetch - processPackages [pyscinloopsr]: executing diffoscope
+[2024-04-27 11:42:37] INFO root fetch - processPackages [pyscinloopsr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscinloopsr-1.0.8.tar.gz tmp/pyscinloopsr-1.0.9.tar.gz --markdown 20240427/p/pyscinloopsr/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-27 11:42:37] INFO root fetch - processPackages [HapooDB]: Downloading https://files.pythonhosted.org/packages/0c/2e/913ca98dc0ae0258f6c43c3a73c7dd74ddceeaecf0ffd58db09904666388/HapooDB-0.0.2.tar.gz
+[2024-04-27 11:42:37] INFO root fetch - processPackages [yolosplitter]: Downloading https://files.pythonhosted.org/packages/4c/1a/99580b5572aeb953d54e4b6355ea263d5d5773fc2505717bb9f3f4f0a8c6/yolosplitter-0.4.9.1.tar.gz
+[2024-04-27 11:42:37] INFO root fetch - processPackages [HapooDB]: Downloading https://files.pythonhosted.org/packages/4b/48/3ce99d2e1adff353ec31fe05b568355078f3045bf7706f71cb99f60da255/HapooDB-0.0.3.tar.gz
+[2024-04-27 11:42:37] INFO root fetch - processPackages [music-kraken]: Downloading https://files.pythonhosted.org/packages/f6/bf/5cddc4d49d5389dbb323168d462c1ecc653460365394780a774f82856f43/music_kraken-1.9.0.tar.gz
+[2024-04-27 11:42:37] INFO root fetch - processPackages [yolosplitter]: executing diffoscope
+[2024-04-27 11:42:37] INFO root fetch - processPackages [yolosplitter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yolosplitter-0.4.9.tar.gz tmp/yolosplitter-0.4.9.1.tar.gz --markdown 20240427/y/yolosplitter/0.4.9-0.4.9.1/README.md --exclude *.pyd
+[2024-04-27 11:42:37] INFO root fetch - processPackages [HapooDB]: executing diffoscope
+[2024-04-27 11:42:37] INFO root fetch - processPackages [HapooDB]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HapooDB-0.0.2.tar.gz tmp/HapooDB-0.0.3.tar.gz --markdown 20240427/H/HapooDB/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-27 11:42:37] INFO root fetch - processPackages [pyscinloopsr]: Remove: archive file [/home/abi/fetcher/tmp/pyscinloopsr-1.0.8.tar.gz]
+[2024-04-27 11:42:37] INFO root fetch - processPackages [pyscinloopsr]: Remove: archive file [/home/abi/fetcher/tmp/pyscinloopsr-1.0.9.tar.gz]
+[2024-04-27 11:42:37] INFO root fetch - main [MainThread]: End processing [pyscinloopsr]: success
+[2024-04-27 11:42:37] INFO root fetch - processPackages [music-kraken]: executing diffoscope
+[2024-04-27 11:42:37] INFO root fetch - processPackages [music-kraken]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/music_kraken-1.7.0.tar.gz tmp/music_kraken-1.9.0.tar.gz --markdown 20240427/m/music-kraken/1.7.0-1.9.0/README.md --exclude *.pyd
+[2024-04-27 11:42:38] INFO root fetch - processPackages [HapooDB]: Remove: archive file [/home/abi/fetcher/tmp/HapooDB-0.0.2.tar.gz]
+[2024-04-27 11:42:38] INFO root fetch - processPackages [HapooDB]: Remove: archive file [/home/abi/fetcher/tmp/HapooDB-0.0.3.tar.gz]
+[2024-04-27 11:42:38] INFO root fetch - main [MainThread]: End processing [HapooDB]: success
+[2024-04-27 11:42:38] INFO root fetch - processPackages [yolosplitter]: Remove: archive file [/home/abi/fetcher/tmp/yolosplitter-0.4.9.tar.gz]
+[2024-04-27 11:42:38] INFO root fetch - processPackages [yolosplitter]: Remove: archive file [/home/abi/fetcher/tmp/yolosplitter-0.4.9.1.tar.gz]
+[2024-04-27 11:42:38] INFO root fetch - main [MainThread]: End processing [yolosplitter]: success
+[2024-04-27 11:42:38] INFO root fetch - processPackages [music-kraken]: Remove: archive file [/home/abi/fetcher/tmp/music_kraken-1.7.0.tar.gz]
+[2024-04-27 11:42:38] INFO root fetch - processPackages [music-kraken]: Remove: archive file [/home/abi/fetcher/tmp/music_kraken-1.9.0.tar.gz]
+[2024-04-27 11:42:38] INFO root fetch - main [MainThread]: End processing [music-kraken]: success
+[2024-04-27 11:42:38] INFO root fetch - processPackages [snailshell]: Downloading https://files.pythonhosted.org/packages/71/9f/b99191b0a59da68e371d48cedcea65ef2bbe17b981e11133e2eeb1d69f46/snailshell-0.2.9.tar.gz
+[2024-04-27 11:42:40] INFO root fetch - processPackages [snailshell]: executing diffoscope
+[2024-04-27 11:42:40] INFO root fetch - processPackages [snailshell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snailshell-0.2.8.tar.gz tmp/snailshell-0.2.9.tar.gz --markdown 20240427/s/snailshell/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-27 11:42:42] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.8.tar.gz]
+[2024-04-27 11:42:42] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.9.tar.gz]
+[2024-04-27 11:42:42] INFO root fetch - main [MainThread]: End processing [snailshell]: success
+[2024-04-27 11:42:42] INFO root fetch - main [MainThread]: Store serial: [22957721]
