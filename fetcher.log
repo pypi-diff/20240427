@@ -21090,3 +21090,12 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 23:00:27] INFO root fetch - processPackages [pycis-cli]: Remove: archive file [/home/abi/fetcher/tmp/pycis_cli-0.1.2.tar.gz]
 [2024-04-27 23:00:27] INFO root fetch - main [MainThread]: End processing [pycis-cli]: success
 [2024-04-27 23:00:27] INFO root fetch - main [MainThread]: Store serial: [22961960]
+[2024-04-27 23:02:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961960]
+[2024-04-27 23:02:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 23:02:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fastflow-tensorflow
+[2024-04-27 23:02:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastflow-tensorflow
+[2024-04-27 23:02:45] WARNING root fetch - processPackages [fastflow-tensorflow]: Skipping, unable to determine old version
+[2024-04-27 23:02:45] INFO root fetch - main [MainThread]: End processing [fastflow-tensorflow] error
+[2024-04-27 23:02:45] WARNING root fetch - processPackages [fastflow-tensorflow]: Skipping, unable to determine old version
+[2024-04-27 23:02:45] INFO root fetch - main [MainThread]: End processing [fastflow-tensorflow] error
+[2024-04-27 23:02:45] INFO root fetch - main [MainThread]: Store serial: [22961964]
