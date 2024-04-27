@@ -7447,3 +7447,24 @@ EOFError: EOF read where object expected
 [2024-04-27 05:03:50] WARNING root fetch - processPackages [odoo-addons-oca-automation]: Skipping, unable to determine old version
 [2024-04-27 05:03:50] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-automation] error
 [2024-04-27 05:03:50] INFO root fetch - main [MainThread]: Store serial: [22956161]
+[2024-04-27 05:05:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956161]
+[2024-04-27 05:05:58] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 05:05:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ctrip-app-ui
+[2024-04-27 05:05:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: docsig
+[2024-04-27 05:05:58] INFO root fetch - processPackages [ctrip-app-ui]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-04-27 05:05:59] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/9e/76/860bbf775d46ddffb69309ca6989eaf6e2e759a02f36a1840182d462d337/ctrip-app-ui-0.2.7.tar.gz
+[2024-04-27 05:05:59] INFO root fetch - processPackages [docsig]: New version: [0.9.0] Old Version: [0.7.0]
+[2024-04-27 05:05:59] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/b5/88/a30ff378f5708d720a53c5f649382eed03d5f61bbff51b40b0ccde1119b6/ctrip-app-ui-0.2.8.tar.gz
+[2024-04-27 05:05:59] INFO root fetch - processPackages [docsig]: Downloading https://files.pythonhosted.org/packages/b7/aa/3a58eed65c9cd6b8bd5a25e3fb75d0dab2ecdda4b36d07b1e482c485f72b/docsig-0.7.0.tar.gz
+[2024-04-27 05:05:59] INFO root fetch - processPackages [ctrip-app-ui]: executing diffoscope
+[2024-04-27 05:05:59] INFO root fetch - processPackages [ctrip-app-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctrip-app-ui-0.2.7.tar.gz tmp/ctrip-app-ui-0.2.8.tar.gz --markdown 20240427/c/ctrip-app-ui/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-04-27 05:05:59] INFO root fetch - processPackages [docsig]: Downloading https://files.pythonhosted.org/packages/a5/8b/f9b2d72f71a3977e2edb7a543e8805b8f859ed021086b9eb63b07f9aa86d/docsig-0.9.0.tar.gz
+[2024-04-27 05:05:59] INFO root fetch - processPackages [docsig]: executing diffoscope
+[2024-04-27 05:05:59] INFO root fetch - processPackages [docsig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docsig-0.7.0.tar.gz tmp/docsig-0.9.0.tar.gz --markdown 20240427/d/docsig/0.7.0-0.9.0/README.md --exclude *.pyd
+[2024-04-27 05:06:00] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.2.7.tar.gz]
+[2024-04-27 05:06:00] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.2.8.tar.gz]
+[2024-04-27 05:06:00] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
+[2024-04-27 05:06:00] INFO root fetch - processPackages [docsig]: Remove: archive file [/home/abi/fetcher/tmp/docsig-0.7.0.tar.gz]
+[2024-04-27 05:06:00] INFO root fetch - processPackages [docsig]: Remove: archive file [/home/abi/fetcher/tmp/docsig-0.9.0.tar.gz]
+[2024-04-27 05:06:00] INFO root fetch - main [MainThread]: End processing [docsig]: success
+[2024-04-27 05:06:00] INFO root fetch - main [MainThread]: Store serial: [22956163]
