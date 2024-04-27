@@ -7555,3 +7555,20 @@ EOFError: EOF read where object expected
 [2024-04-27 05:14:42] INFO root fetch - processPackages [torch-choice]: Remove: archive file [/home/abi/fetcher/tmp/torch_choice-1.0.6.tar.gz]
 [2024-04-27 05:14:42] INFO root fetch - main [MainThread]: End processing [torch-choice]: success
 [2024-04-27 05:14:42] INFO root fetch - main [MainThread]: Store serial: [22956188]
+[2024-04-27 05:16:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956188]
+[2024-04-27 05:16:51] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 05:16:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pdm-conda
+[2024-04-27 05:16:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aesim.simba
+[2024-04-27 05:16:51] INFO root fetch - processPackages [pdm-conda]: New version: [0.9.3b1] Old Version: [0.9.3b0]
+[2024-04-27 05:16:51] INFO root fetch - processPackages [aesim.simba]: New version: [2024.4.5a1] Old Version: [2024.4.26a1]
+[2024-04-27 05:16:51] INFO root fetch - processPackages [aesim.simba]: Downloading https://files.pythonhosted.org/packages/86/3d/c5d2f6a059adfb2e3d575157ebe7dca9f8d1ceaca8efced53c4b9c2c0e53/aesim.simba-2024.4.26a1-py3-none-win_amd64.whl
+[2024-04-27 05:16:51] INFO root fetch - processPackages [pdm-conda]: Downloading https://files.pythonhosted.org/packages/5d/1b/dc1cb149f079d3d41db755870a003994c36588d5a196747c0b7e42194938/pdm_conda-0.9.3b0.tar.gz
+[2024-04-27 05:16:52] WARNING root fetch - processPackages [aesim.simba]: Skipping package: exceeds size limit 76465355>=10485760
+[2024-04-27 05:16:52] INFO root fetch - main [MainThread]: End processing [aesim.simba] error
+[2024-04-27 05:16:52] INFO root fetch - processPackages [pdm-conda]: Downloading https://files.pythonhosted.org/packages/23/ae/9ae2762f3341650d36462bc006fcb4de1bea93e1cf224fb94dc45f376d38/pdm_conda-0.9.3b1.tar.gz
+[2024-04-27 05:16:52] INFO root fetch - processPackages [pdm-conda]: executing diffoscope
+[2024-04-27 05:16:52] INFO root fetch - processPackages [pdm-conda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdm_conda-0.9.3b0.tar.gz tmp/pdm_conda-0.9.3b1.tar.gz --markdown 20240427/p/pdm-conda/0.9.3b0-0.9.3b1/README.md --exclude *.pyd
+[2024-04-27 05:16:52] INFO root fetch - processPackages [pdm-conda]: Remove: archive file [/home/abi/fetcher/tmp/pdm_conda-0.9.3b0.tar.gz]
+[2024-04-27 05:16:52] INFO root fetch - processPackages [pdm-conda]: Remove: archive file [/home/abi/fetcher/tmp/pdm_conda-0.9.3b1.tar.gz]
+[2024-04-27 05:16:52] INFO root fetch - main [MainThread]: End processing [pdm-conda]: success
+[2024-04-27 05:16:52] INFO root fetch - main [MainThread]: Store serial: [22956194]
