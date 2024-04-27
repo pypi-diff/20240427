@@ -13858,3 +13858,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 14:30:22] INFO root fetch - processPackages [psyaitools]: Remove: archive file [/home/abi/fetcher/tmp/psyaitools-0.1.6.dev2.tar.gz]
 [2024-04-27 14:30:22] INFO root fetch - main [MainThread]: End processing [psyaitools]: success
 [2024-04-27 14:30:22] INFO root fetch - main [MainThread]: Store serial: [22958673]
+[2024-04-27 14:32:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958673]
+[2024-04-27 14:32:31] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 14:32:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shimpiproductions-3.1
+[2024-04-27 14:32:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: underactuated
+[2024-04-27 14:32:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sim_rl
+[2024-04-27 14:32:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nlpswift
+[2024-04-27 14:32:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wise-utils
+[2024-04-27 14:32:31] WARNING root fetch - processPackages [shimpiproductions-3.1]: Skipping, unable to determine old version
+[2024-04-27 14:32:31] INFO root fetch - main [MainThread]: End processing [shimpiproductions-3.1] error
+[2024-04-27 14:32:31] WARNING root fetch - processPackages [sim_rl]: Skipping, unable to determine old version
+[2024-04-27 14:32:31] INFO root fetch - main [MainThread]: End processing [sim_rl] error
+[2024-04-27 14:32:31] INFO root fetch - processPackages [wise-utils]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-04-27 14:32:31] INFO root fetch - processPackages [wise-utils]: Downloading https://files.pythonhosted.org/packages/26/97/ecc7fcaf9343ff08a832f70b45b13732cab6cf68b4b037ba7993063dda04/wise_utils-1.1.1.tar.gz
+[2024-04-27 14:32:31] INFO root fetch - processPackages [underactuated]: New version: [2024.4.7] Old Version: [2024.4.27]
+[2024-04-27 14:32:31] WARNING root fetch - processPackages [nlpswift]: Skipping, unable to determine old version
+[2024-04-27 14:32:31] INFO root fetch - main [MainThread]: End processing [nlpswift] error
+[2024-04-27 14:32:31] INFO root fetch - processPackages [underactuated]: Downloading https://files.pythonhosted.org/packages/31/07/f134da84d2b5b062c29663fd0940351973ff07ce8e5fce6a0c2cc8d72f66/underactuated-2024.4.27.tar.gz
+[2024-04-27 14:32:31] INFO root fetch - processPackages [wise-utils]: Downloading https://files.pythonhosted.org/packages/db/b4/a65422be7c5894452f6cd19d25876e40ad38d70d9321f5ff109b0409e5f4/wise_utils-1.1.2.tar.gz
+[2024-04-27 14:32:31] INFO root fetch - processPackages [wise-utils]: executing diffoscope
+[2024-04-27 14:32:31] INFO root fetch - processPackages [wise-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wise_utils-1.1.1.tar.gz tmp/wise_utils-1.1.2.tar.gz --markdown 20240427/w/wise-utils/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-04-27 14:32:31] INFO root fetch - processPackages [underactuated]: Downloading https://files.pythonhosted.org/packages/e9/69/e2c440d1524d4aa6ee285ff4d731759dfa2efd19339b8b8e955777a328a7/underactuated-2024.4.7.tar.gz
+[2024-04-27 14:32:32] INFO root fetch - processPackages [underactuated]: executing diffoscope
+[2024-04-27 14:32:32] INFO root fetch - processPackages [underactuated]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/underactuated-2024.4.27.tar.gz tmp/underactuated-2024.4.7.tar.gz --markdown 20240427/u/underactuated/2024.4.27-2024.4.7/README.md --exclude *.pyd
+[2024-04-27 14:32:32] INFO root fetch - processPackages [wise-utils]: Remove: archive file [/home/abi/fetcher/tmp/wise_utils-1.1.1.tar.gz]
+[2024-04-27 14:32:32] INFO root fetch - processPackages [wise-utils]: Remove: archive file [/home/abi/fetcher/tmp/wise_utils-1.1.2.tar.gz]
+[2024-04-27 14:32:32] INFO root fetch - main [MainThread]: End processing [wise-utils]: success
+[2024-04-27 14:32:33] INFO root fetch - processPackages [underactuated]: Remove: archive file [/home/abi/fetcher/tmp/underactuated-2024.4.27.tar.gz]
+[2024-04-27 14:32:33] INFO root fetch - processPackages [underactuated]: Remove: archive file [/home/abi/fetcher/tmp/underactuated-2024.4.7.tar.gz]
+[2024-04-27 14:32:33] INFO root fetch - main [MainThread]: End processing [underactuated]: success
+[2024-04-27 14:32:33] INFO root fetch - main [MainThread]: Store serial: [22958691]
