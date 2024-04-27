@@ -11836,3 +11836,36 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 12:08:33] INFO root fetch - processPackages [agt-server]: Remove: archive file [/home/abi/fetcher/tmp/agt_server-1.3.4.tar.gz]
 [2024-04-27 12:08:33] INFO root fetch - main [MainThread]: End processing [agt-server]: success
 [2024-04-27 12:08:33] INFO root fetch - main [MainThread]: Store serial: [22957818]
+[2024-04-27 12:10:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957818]
+[2024-04-27 12:10:42] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 12:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fastbench
+[2024-04-27 12:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: prometheus-pve-exporter
+[2024-04-27 12:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mlsauce
+[2024-04-27 12:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tf-keras-nightly
+[2024-04-27 12:10:42] INFO root fetch - processPackages [mlsauce]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-27 12:10:42] INFO root fetch - processPackages [tf-keras-nightly]: New version: [2.17.0.dev2024042609] Old Version: [2.17.0.dev2024042509]
+[2024-04-27 12:10:42] WARNING root fetch - processPackages [fastbench]: Skipping, unable to determine old version
+[2024-04-27 12:10:42] INFO root fetch - main [MainThread]: End processing [fastbench] error
+[2024-04-27 12:10:42] INFO root fetch - processPackages [mlsauce]: Downloading https://files.pythonhosted.org/packages/09/f7/2b520a477f7710396348e4b9d582826758d5b083fe9b79613abe9c1435dd/mlsauce-0.9.0.tar.gz
+[2024-04-27 12:10:42] INFO root fetch - processPackages [prometheus-pve-exporter]: New version: [3.3.0] Old Version: [3.2.5]
+[2024-04-27 12:10:42] INFO root fetch - processPackages [tf-keras-nightly]: Downloading https://files.pythonhosted.org/packages/1a/6e/bf640f3cf20ec91c68d705f071e85f083f7788d3b1be3b6d00e07ff7f4c3/tf_keras_nightly-2.17.0.dev2024042509.tar.gz
+[2024-04-27 12:10:42] INFO root fetch - processPackages [prometheus-pve-exporter]: Downloading https://files.pythonhosted.org/packages/e6/c7/d425d4294b6c6c574d73696ca3c072b11829bf014f077563a2c398dbf4cd/prometheus_pve_exporter-3.2.5.tar.gz
+[2024-04-27 12:10:42] INFO root fetch - processPackages [mlsauce]: Downloading https://files.pythonhosted.org/packages/34/94/ecad26410f10cd9ffb719f2bc235ed21c44541226f01a963cd37706f4b37/mlsauce-0.9.1.tar.gz
+[2024-04-27 12:10:42] INFO root fetch - processPackages [mlsauce]: executing diffoscope
+[2024-04-27 12:10:42] INFO root fetch - processPackages [mlsauce]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlsauce-0.9.0.tar.gz tmp/mlsauce-0.9.1.tar.gz --markdown 20240427/m/mlsauce/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-04-27 12:10:42] INFO root fetch - processPackages [tf-keras-nightly]: Downloading https://files.pythonhosted.org/packages/1d/97/1bed052b0652b8b9cea1ef22bcbbca2ba38a8ffca4403c4621c4c54a4748/tf_keras_nightly-2.17.0.dev2024042609.tar.gz
+[2024-04-27 12:10:42] INFO root fetch - processPackages [prometheus-pve-exporter]: Downloading https://files.pythonhosted.org/packages/ca/56/11390a09fea9460793937143260f4f5f53a3dab128ec019e6c63fdf2d220/prometheus_pve_exporter-3.3.0.tar.gz
+[2024-04-27 12:10:43] INFO root fetch - processPackages [prometheus-pve-exporter]: executing diffoscope
+[2024-04-27 12:10:43] INFO root fetch - processPackages [prometheus-pve-exporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prometheus_pve_exporter-3.2.5.tar.gz tmp/prometheus_pve_exporter-3.3.0.tar.gz --markdown 20240427/p/prometheus-pve-exporter/3.2.5-3.3.0/README.md --exclude *.pyd
+[2024-04-27 12:10:43] INFO root fetch - processPackages [tf-keras-nightly]: executing diffoscope
+[2024-04-27 12:10:43] INFO root fetch - processPackages [tf-keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_keras_nightly-2.17.0.dev2024042509.tar.gz tmp/tf_keras_nightly-2.17.0.dev2024042609.tar.gz --markdown 20240427/t/tf-keras-nightly/2.17.0.dev2024042509-2.17.0.dev2024042609/README.md --exclude *.pyd
+[2024-04-27 12:10:43] INFO root fetch - processPackages [mlsauce]: Remove: archive file [/home/abi/fetcher/tmp/mlsauce-0.9.0.tar.gz]
+[2024-04-27 12:10:43] INFO root fetch - processPackages [mlsauce]: Remove: archive file [/home/abi/fetcher/tmp/mlsauce-0.9.1.tar.gz]
+[2024-04-27 12:10:43] INFO root fetch - main [MainThread]: End processing [mlsauce]: success
+[2024-04-27 12:10:43] INFO root fetch - processPackages [prometheus-pve-exporter]: Remove: archive file [/home/abi/fetcher/tmp/prometheus_pve_exporter-3.2.5.tar.gz]
+[2024-04-27 12:10:43] INFO root fetch - processPackages [prometheus-pve-exporter]: Remove: archive file [/home/abi/fetcher/tmp/prometheus_pve_exporter-3.3.0.tar.gz]
+[2024-04-27 12:10:43] INFO root fetch - main [MainThread]: End processing [prometheus-pve-exporter]: success
+[2024-04-27 12:10:45] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras_nightly-2.17.0.dev2024042509.tar.gz]
+[2024-04-27 12:10:45] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras_nightly-2.17.0.dev2024042609.tar.gz]
+[2024-04-27 12:10:45] INFO root fetch - main [MainThread]: End processing [tf-keras-nightly]: success
+[2024-04-27 12:10:45] INFO root fetch - main [MainThread]: Store serial: [22957831]
