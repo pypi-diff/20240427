@@ -19334,3 +19334,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 20:36:08] INFO root fetch - processPackages [zato-apitest]: Remove: archive file [/home/abi/fetcher/tmp/zato-apitest-24.1.9.tar.gz]
 [2024-04-27 20:36:08] INFO root fetch - main [MainThread]: End processing [zato-apitest]: success
 [2024-04-27 20:36:08] INFO root fetch - main [MainThread]: Store serial: [22961126]
+[2024-04-27 20:38:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961126]
+[2024-04-27 20:38:21] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 20:38:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: prueba-nashe
+[2024-04-27 20:38:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: terminaltype
+[2024-04-27 20:38:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flatpack
+[2024-04-27 20:38:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ng-data-pipelines-sdk
+[2024-04-27 20:38:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: napatrackmater
+[2024-04-27 20:38:21] INFO root fetch - processPackages [ng-data-pipelines-sdk]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-27 20:38:21] INFO root fetch - processPackages [napatrackmater]: New version: [5.1.2] Old Version: [5.1.1]
+[2024-04-27 20:38:21] INFO root fetch - processPackages [flatpack]: New version: [3.3.9] Old Version: [3.3.8]
+[2024-04-27 20:38:21] INFO root fetch - processPackages [ng-data-pipelines-sdk]: Downloading https://files.pythonhosted.org/packages/37/b3/28f9435aa1a3cc7b274d2bbb8406372f7915f41da2a66d8bdfd5dbd98ec4/ng_data_pipelines_sdk-0.2.0.tar.gz
+[2024-04-27 20:38:21] INFO root fetch - processPackages [terminaltype]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-27 20:38:21] WARNING root fetch - processPackages [prueba-nashe]: Skipping, unable to determine old version
+[2024-04-27 20:38:21] INFO root fetch - main [MainThread]: End processing [prueba-nashe] error
+[2024-04-27 20:38:21] INFO root fetch - processPackages [napatrackmater]: Downloading https://files.pythonhosted.org/packages/55/19/032fa9df2522d334231bf2fd0a1fff6e808b5cd10facddfe32112be8c9e5/napatrackmater-5.1.1.tar.gz
+[2024-04-27 20:38:21] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/42/48/84e949164975b341645163f536ee4ca8329c4e3dfa6d143c2806a0849a54/flatpack-3.3.8.tar.gz
+[2024-04-27 20:38:21] INFO root fetch - processPackages [ng-data-pipelines-sdk]: Downloading https://files.pythonhosted.org/packages/2a/ec/adb9ecb6fae6381919c25c47e76c886ca1f4f846f2fb5f300d239942e52b/ng_data_pipelines_sdk-0.3.0.tar.gz
+[2024-04-27 20:38:21] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/11/54/065825e8640b062c83c07c97d8dea514db8a5c0ea3c272834b88c568d82e/flatpack-3.3.9.tar.gz
+[2024-04-27 20:38:21] INFO root fetch - processPackages [ng-data-pipelines-sdk]: executing diffoscope
+[2024-04-27 20:38:21] INFO root fetch - processPackages [ng-data-pipelines-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ng_data_pipelines_sdk-0.2.0.tar.gz tmp/ng_data_pipelines_sdk-0.3.0.tar.gz --markdown 20240427/n/ng-data-pipelines-sdk/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-04-27 20:38:21] INFO root fetch - processPackages [terminaltype]: Downloading https://files.pythonhosted.org/packages/ed/a3/72ed8da809b7c6222dab7fa616098c50e7496ae6512ffa9288b3e4308b2d/terminaltype-0.0.1.tar.gz
+[2024-04-27 20:38:21] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-04-27 20:38:21] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.3.8.tar.gz tmp/flatpack-3.3.9.tar.gz --markdown 20240427/f/flatpack/3.3.8-3.3.9/README.md --exclude *.pyd
+[2024-04-27 20:38:21] INFO root fetch - processPackages [napatrackmater]: Downloading https://files.pythonhosted.org/packages/d1/f5/adcacd31634cf8e7027e53bc1177e72e3692b6424eb70aa2e29fca6e3e40/napatrackmater-5.1.2.tar.gz
+[2024-04-27 20:38:22] INFO root fetch - processPackages [terminaltype]: Downloading https://files.pythonhosted.org/packages/10/c7/9860a92d7ff29d9b32462f25b9a37f7d80cc679c445da9498080ef2e5e7b/terminaltype-0.0.2.tar.gz
+[2024-04-27 20:38:22] INFO root fetch - processPackages [napatrackmater]: executing diffoscope
+[2024-04-27 20:38:22] INFO root fetch - processPackages [napatrackmater]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napatrackmater-5.1.1.tar.gz tmp/napatrackmater-5.1.2.tar.gz --markdown 20240427/n/napatrackmater/5.1.1-5.1.2/README.md --exclude *.pyd
+[2024-04-27 20:38:22] INFO root fetch - processPackages [terminaltype]: executing diffoscope
+[2024-04-27 20:38:22] INFO root fetch - processPackages [terminaltype]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terminaltype-0.0.1.tar.gz tmp/terminaltype-0.0.2.tar.gz --markdown 20240427/t/terminaltype/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-27 20:38:22] INFO root fetch - processPackages [ng-data-pipelines-sdk]: Remove: archive file [/home/abi/fetcher/tmp/ng_data_pipelines_sdk-0.2.0.tar.gz]
+[2024-04-27 20:38:22] INFO root fetch - processPackages [ng-data-pipelines-sdk]: Remove: archive file [/home/abi/fetcher/tmp/ng_data_pipelines_sdk-0.3.0.tar.gz]
+[2024-04-27 20:38:22] INFO root fetch - main [MainThread]: End processing [ng-data-pipelines-sdk]: success
+[2024-04-27 20:38:22] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.8.tar.gz]
+[2024-04-27 20:38:22] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.9.tar.gz]
+[2024-04-27 20:38:22] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-04-27 20:38:22] INFO root fetch - processPackages [terminaltype]: Remove: archive file [/home/abi/fetcher/tmp/terminaltype-0.0.1.tar.gz]
+[2024-04-27 20:38:22] INFO root fetch - processPackages [terminaltype]: Remove: archive file [/home/abi/fetcher/tmp/terminaltype-0.0.2.tar.gz]
+[2024-04-27 20:38:22] INFO root fetch - main [MainThread]: End processing [terminaltype]: success
+[2024-04-27 20:38:23] INFO root fetch - processPackages [napatrackmater]: Remove: archive file [/home/abi/fetcher/tmp/napatrackmater-5.1.1.tar.gz]
+[2024-04-27 20:38:23] INFO root fetch - processPackages [napatrackmater]: Remove: archive file [/home/abi/fetcher/tmp/napatrackmater-5.1.2.tar.gz]
+[2024-04-27 20:38:23] INFO root fetch - main [MainThread]: End processing [napatrackmater]: success
+[2024-04-27 20:38:23] INFO root fetch - main [MainThread]: Store serial: [22961146]
