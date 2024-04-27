@@ -7158,3 +7158,42 @@ EOFError: EOF read where object expected
 [2024-04-27 04:30:27] INFO root fetch - processPackages [agency-swarm]: Remove: archive file [/home/abi/fetcher/tmp/agency_swarm-0.2.0.tar.gz]
 [2024-04-27 04:30:27] INFO root fetch - main [MainThread]: End processing [agency-swarm]: success
 [2024-04-27 04:30:27] INFO root fetch - main [MainThread]: Store serial: [22956057]
+[2024-04-27 04:32:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956057]
+[2024-04-27 04:32:36] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 04:32:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lbt-honeybee
+[2024-04-27 04:32:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kkpyai
+[2024-04-27 04:32:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dragonfly-energy
+[2024-04-27 04:32:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: redhat-assisted-installer
+[2024-04-27 04:32:36] INFO root fetch - processPackages [redhat-assisted-installer]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 04:32:36] INFO root fetch - processPackages [kkpyai]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-27 04:32:36] INFO root fetch - processPackages [dragonfly-energy]: New version: [1.9.9] Old Version: [1.9.8]
+[2024-04-27 04:32:36] INFO root fetch - processPackages [kkpyai]: Downloading https://files.pythonhosted.org/packages/41/d3/9eaff2d61cda5a93cc3aa554dac6f205851c8b6303358abc745bc574c29b/kkpyai-0.8.0.tar.gz
+[2024-04-27 04:32:36] INFO root fetch - processPackages [redhat-assisted-installer]: Downloading https://files.pythonhosted.org/packages/a0/39/11a7f72b6d6c605fc8656b11767093705e095f7e6034e7bfc73e21d9c481/redhat_assisted_installer-0.0.8.tar.gz
+[2024-04-27 04:32:36] INFO root fetch - processPackages [dragonfly-energy]: Downloading https://files.pythonhosted.org/packages/20/4e/115840f938ee254b23bd515351ba786228441464717f8557431f914e75f4/dragonfly-energy-1.9.8.tar.gz
+[2024-04-27 04:32:36] INFO root fetch - processPackages [lbt-honeybee]: New version: [0.8.99] Old Version: [0.8.98]
+[2024-04-27 04:32:37] INFO root fetch - processPackages [lbt-honeybee]: Downloading https://files.pythonhosted.org/packages/b5/a0/c6742c4b1a93565a552f073a8cad3689b9e2edcf401d45bd9fddf0485a8d/lbt-honeybee-0.8.98.tar.gz
+[2024-04-27 04:32:37] INFO root fetch - processPackages [kkpyai]: Downloading https://files.pythonhosted.org/packages/5d/fb/68ee41a5230bff7f50616754d4177eecd0f6602c85b5310d16ae044f2361/kkpyai-0.9.0.tar.gz
+[2024-04-27 04:32:37] INFO root fetch - processPackages [dragonfly-energy]: Downloading https://files.pythonhosted.org/packages/09/b6/c12f13159c5beb3b855a32f792faef162ad37358d2e0d3311cbd68a969db/dragonfly-energy-1.9.9.tar.gz
+[2024-04-27 04:32:37] INFO root fetch - processPackages [lbt-honeybee]: Downloading https://files.pythonhosted.org/packages/f1/61/4f36e668d3e1767b0f4d921481ad087bec472a2afc14ea20f916e083c690/lbt-honeybee-0.8.99.tar.gz
+[2024-04-27 04:32:37] INFO root fetch - processPackages [redhat-assisted-installer]: Downloading https://files.pythonhosted.org/packages/59/40/1c9a14e7024177afe58f2a070356a232ba39d66549aea7129f0ce45d3720/redhat_assisted_installer-0.0.9.tar.gz
+[2024-04-27 04:32:37] INFO root fetch - processPackages [kkpyai]: executing diffoscope
+[2024-04-27 04:32:37] INFO root fetch - processPackages [kkpyai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kkpyai-0.8.0.tar.gz tmp/kkpyai-0.9.0.tar.gz --markdown 20240427/k/kkpyai/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-27 04:32:37] INFO root fetch - processPackages [dragonfly-energy]: executing diffoscope
+[2024-04-27 04:32:37] INFO root fetch - processPackages [dragonfly-energy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-energy-1.9.8.tar.gz tmp/dragonfly-energy-1.9.9.tar.gz --markdown 20240427/d/dragonfly-energy/1.9.8-1.9.9/README.md --exclude *.pyd
+[2024-04-27 04:32:37] INFO root fetch - processPackages [lbt-honeybee]: executing diffoscope
+[2024-04-27 04:32:37] INFO root fetch - processPackages [lbt-honeybee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-honeybee-0.8.98.tar.gz tmp/lbt-honeybee-0.8.99.tar.gz --markdown 20240427/l/lbt-honeybee/0.8.98-0.8.99/README.md --exclude *.pyd
+[2024-04-27 04:32:37] INFO root fetch - processPackages [redhat-assisted-installer]: executing diffoscope
+[2024-04-27 04:32:37] INFO root fetch - processPackages [redhat-assisted-installer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redhat_assisted_installer-0.0.8.tar.gz tmp/redhat_assisted_installer-0.0.9.tar.gz --markdown 20240427/r/redhat-assisted-installer/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 04:32:38] INFO root fetch - processPackages [kkpyai]: Remove: archive file [/home/abi/fetcher/tmp/kkpyai-0.8.0.tar.gz]
+[2024-04-27 04:32:38] INFO root fetch - processPackages [kkpyai]: Remove: archive file [/home/abi/fetcher/tmp/kkpyai-0.9.0.tar.gz]
+[2024-04-27 04:32:38] INFO root fetch - main [MainThread]: End processing [kkpyai]: success
+[2024-04-27 04:32:38] INFO root fetch - processPackages [redhat-assisted-installer]: Remove: archive file [/home/abi/fetcher/tmp/redhat_assisted_installer-0.0.8.tar.gz]
+[2024-04-27 04:32:38] INFO root fetch - processPackages [redhat-assisted-installer]: Remove: archive file [/home/abi/fetcher/tmp/redhat_assisted_installer-0.0.9.tar.gz]
+[2024-04-27 04:32:38] INFO root fetch - main [MainThread]: End processing [redhat-assisted-installer]: success
+[2024-04-27 04:32:38] INFO root fetch - processPackages [lbt-honeybee]: Remove: archive file [/home/abi/fetcher/tmp/lbt-honeybee-0.8.98.tar.gz]
+[2024-04-27 04:32:38] INFO root fetch - processPackages [lbt-honeybee]: Remove: archive file [/home/abi/fetcher/tmp/lbt-honeybee-0.8.99.tar.gz]
+[2024-04-27 04:32:38] INFO root fetch - main [MainThread]: End processing [lbt-honeybee]: success
+[2024-04-27 04:32:38] INFO root fetch - processPackages [dragonfly-energy]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-energy-1.9.8.tar.gz]
+[2024-04-27 04:32:38] INFO root fetch - processPackages [dragonfly-energy]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-energy-1.9.9.tar.gz]
+[2024-04-27 04:32:38] INFO root fetch - main [MainThread]: End processing [dragonfly-energy]: success
+[2024-04-27 04:32:38] INFO root fetch - main [MainThread]: Store serial: [22956069]
