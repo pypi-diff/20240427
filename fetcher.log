@@ -18373,3 +18373,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 19:33:07] INFO root fetch - processPackages [coc.py]: Remove: archive file [/home/abi/fetcher/tmp/coc_py-3.5.2.tar.gz]
 [2024-04-27 19:33:07] INFO root fetch - main [MainThread]: End processing [coc.py]: success
 [2024-04-27 19:33:07] INFO root fetch - main [MainThread]: Store serial: [22960586]
+[2024-04-27 19:35:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960586]
+[2024-04-27 19:35:20] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 19:35:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: untie
+[2024-04-27 19:35:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyayay
+[2024-04-27 19:35:20] WARNING root fetch - processPackages [untie]: Skipping, unable to determine old version
+[2024-04-27 19:35:20] INFO root fetch - main [MainThread]: End processing [untie] error
+[2024-04-27 19:35:20] INFO root fetch - processPackages [pyayay]: New version: [0.1.0a2] Old Version: [0.1.0]
+[2024-04-27 19:35:20] INFO root fetch - processPackages [pyayay]: Downloading https://files.pythonhosted.org/packages/25/be/46987994a90dbe219aa77be11c9d4e52e4638ba698bc7daeb21a05e9d930/pyayay-0.1.0.tar.gz
+[2024-04-27 19:35:21] INFO root fetch - processPackages [pyayay]: Downloading https://files.pythonhosted.org/packages/bc/2f/cfb4440ea64b8a925ed5510a2aaf0a2c61d71d517222cd28bc178b91a29f/pyayay-0.1.0a2.tar.gz
+[2024-04-27 19:35:21] INFO root fetch - processPackages [pyayay]: executing diffoscope
+[2024-04-27 19:35:21] INFO root fetch - processPackages [pyayay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyayay-0.1.0.tar.gz tmp/pyayay-0.1.0a2.tar.gz --markdown 20240427/p/pyayay/0.1.0-0.1.0a2/README.md --exclude *.pyd
+[2024-04-27 19:35:21] INFO root fetch - processPackages [pyayay]: Remove: archive file [/home/abi/fetcher/tmp/pyayay-0.1.0.tar.gz]
+[2024-04-27 19:35:21] INFO root fetch - processPackages [pyayay]: Remove: archive file [/home/abi/fetcher/tmp/pyayay-0.1.0a2.tar.gz]
+[2024-04-27 19:35:21] INFO root fetch - main [MainThread]: End processing [pyayay]: success
+[2024-04-27 19:35:21] INFO root fetch - main [MainThread]: Store serial: [22960648]
