@@ -7361,3 +7361,13 @@ EOFError: EOF read where object expected
 [2024-04-27 04:45:47] INFO root fetch - processPackages [qLDPC]: Remove: archive file [/home/abi/fetcher/tmp/qldpc-0.0.9.tar.gz]
 [2024-04-27 04:45:47] INFO root fetch - main [MainThread]: End processing [qLDPC]: success
 [2024-04-27 04:45:47] INFO root fetch - main [MainThread]: Store serial: [22956134]
+[2024-04-27 04:47:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956134]
+[2024-04-27 04:47:57] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 04:47:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: netron
+[2024-04-27 04:47:57] INFO root fetch - processPackages [netron]: New version: [7.6.2] Old Version: [7.6.1]
+[2024-04-27 04:47:57] INFO root fetch - processPackages [netron]: Downloading https://files.pythonhosted.org/packages/d6/15/e6f22ed60767b290e25945e2cc83b08ae360a2cf7e69ae9f59ff0087ca86/netron-7.6.2-py3-none-any.whl
+[2024-04-27 04:47:58] INFO root fetch - processPackages [netron]: executing diffoscope
+[2024-04-27 04:47:58] INFO root fetch - processPackages [netron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netron-7.6.1-py3-none-any.whl.zip tmp/netron-7.6.2-py3-none-any.whl.zip --markdown 20240427/n/netron/7.6.1-7.6.2/README.md --exclude *.pyd
+[2024-04-27 04:50:58] ERROR root fetch - processPackages [netron]: Timeout during execution of pkgdiff
+[2024-04-27 04:50:58] INFO root fetch - main [MainThread]: End processing [netron] error
+[2024-04-27 04:50:58] INFO root fetch - main [MainThread]: Store serial: [22956137]
