@@ -8597,3 +8597,24 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 06:34:54] INFO root fetch - processPackages [ctkchart]: Remove: archive file [/home/abi/fetcher/tmp/ctkchart-2.1.2.tar.gz]
 [2024-04-27 06:34:54] INFO root fetch - main [MainThread]: End processing [ctkchart]: success
 [2024-04-27 06:34:54] INFO root fetch - main [MainThread]: Store serial: [22956443]
+[2024-04-27 06:36:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956443]
+[2024-04-27 06:37:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 06:37:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fplab
+[2024-04-27 06:37:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scrapework
+[2024-04-27 06:37:03] INFO root fetch - processPackages [fplab]: New version: [0.0.2.6] Old Version: [0.0.2.5]
+[2024-04-27 06:37:03] INFO root fetch - processPackages [scrapework]: New version: [0.4.7] Old Version: [0.4.6]
+[2024-04-27 06:37:03] INFO root fetch - processPackages [scrapework]: Downloading https://files.pythonhosted.org/packages/df/7f/0b2b07bc8a34f4c0b521f571e8ba20be4989f63d10b80ba5d8a343114a2d/scrapework-0.4.6.tar.gz
+[2024-04-27 06:37:03] INFO root fetch - processPackages [fplab]: Downloading https://files.pythonhosted.org/packages/8b/71/802c1bbb9fc65646f353b5d0f8a57aeddb51cb406a4d2359d60adfe5f720/fplab-0.0.2.5.tar.gz
+[2024-04-27 06:37:03] INFO root fetch - processPackages [scrapework]: Downloading https://files.pythonhosted.org/packages/d5/bf/73e2c648a504b52d6677e25d055bb403cda4d244ac86e45023ab41f09294/scrapework-0.4.7.tar.gz
+[2024-04-27 06:37:03] INFO root fetch - processPackages [scrapework]: executing diffoscope
+[2024-04-27 06:37:03] INFO root fetch - processPackages [scrapework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapework-0.4.6.tar.gz tmp/scrapework-0.4.7.tar.gz --markdown 20240427/s/scrapework/0.4.6-0.4.7/README.md --exclude *.pyd
+[2024-04-27 06:37:03] INFO root fetch - processPackages [fplab]: Downloading https://files.pythonhosted.org/packages/d3/bd/260540609293c4c5e8dcfca24436db17afefbb06145b7474149c1fac2d1e/fplab-0.0.2.6.tar.gz
+[2024-04-27 06:37:03] INFO root fetch - processPackages [fplab]: executing diffoscope
+[2024-04-27 06:37:03] INFO root fetch - processPackages [fplab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fplab-0.0.2.5.tar.gz tmp/fplab-0.0.2.6.tar.gz --markdown 20240427/f/fplab/0.0.2.5-0.0.2.6/README.md --exclude *.pyd
+[2024-04-27 06:37:04] INFO root fetch - processPackages [scrapework]: Remove: archive file [/home/abi/fetcher/tmp/scrapework-0.4.6.tar.gz]
+[2024-04-27 06:37:04] INFO root fetch - processPackages [scrapework]: Remove: archive file [/home/abi/fetcher/tmp/scrapework-0.4.7.tar.gz]
+[2024-04-27 06:37:04] INFO root fetch - main [MainThread]: End processing [scrapework]: success
+[2024-04-27 06:37:04] INFO root fetch - processPackages [fplab]: Remove: archive file [/home/abi/fetcher/tmp/fplab-0.0.2.5.tar.gz]
+[2024-04-27 06:37:04] INFO root fetch - processPackages [fplab]: Remove: archive file [/home/abi/fetcher/tmp/fplab-0.0.2.6.tar.gz]
+[2024-04-27 06:37:04] INFO root fetch - main [MainThread]: End processing [fplab]: success
+[2024-04-27 06:37:04] INFO root fetch - main [MainThread]: Store serial: [22956448]
