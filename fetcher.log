@@ -10676,3 +10676,26 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 10:02:31] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
 [2024-04-27 10:02:31] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
 [2024-04-27 10:02:31] INFO root fetch - main [MainThread]: Store serial: [22957327]
+[2024-04-27 10:04:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957327]
+[2024-04-27 10:04:39] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-27 10:06:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957327]
+[2024-04-27 10:06:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 10:06:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: google-api-support
+[2024-04-27 10:06:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: trustllm
+[2024-04-27 10:06:45] INFO root fetch - processPackages [google-api-support]: New version: [0.1.7] Old Version: [0.1.4]
+[2024-04-27 10:06:45] INFO root fetch - processPackages [trustllm]: New version: [0.3.0] Old Version: [0.2.4]
+[2024-04-27 10:06:45] INFO root fetch - processPackages [google-api-support]: Downloading https://files.pythonhosted.org/packages/4f/65/24cd8fb027eca9a1e33b73a352ea6aafd4918a1760c29590bd44b87e72ae/google-api-support-0.1.4.tar.gz
+[2024-04-27 10:06:45] INFO root fetch - processPackages [google-api-support]: Downloading https://files.pythonhosted.org/packages/e4/6f/23c976af10e264597fd133244b4c2880372a8cc80ec4211e1477a34ae0bd/google_api_support-0.1.7.tar.gz
+[2024-04-27 10:06:46] INFO root fetch - processPackages [google-api-support]: executing diffoscope
+[2024-04-27 10:06:46] INFO root fetch - processPackages [google-api-support]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/google-api-support-0.1.4.tar.gz tmp/google_api_support-0.1.7.tar.gz --markdown 20240427/g/google-api-support/0.1.4-0.1.7/README.md --exclude *.pyd
+[2024-04-27 10:06:46] INFO root fetch - processPackages [google-api-support]: Remove: archive file [/home/abi/fetcher/tmp/google-api-support-0.1.4.tar.gz]
+[2024-04-27 10:06:46] INFO root fetch - processPackages [google-api-support]: Remove: archive file [/home/abi/fetcher/tmp/google_api_support-0.1.7.tar.gz]
+[2024-04-27 10:06:46] INFO root fetch - main [MainThread]: End processing [google-api-support]: success
+[2024-04-27 10:06:50] INFO root fetch - processPackages [trustllm]: Downloading https://files.pythonhosted.org/packages/f3/37/813d5faabac7b309a6cad1f2272f31c143098514ba8b5074519bb3cd4a9e/trustllm-0.2.4.tar.gz
+[2024-04-27 10:06:50] INFO root fetch - processPackages [trustllm]: Downloading https://files.pythonhosted.org/packages/4d/99/001c185e5e6c9dec022908d2725bcd7a91ec8252f9cc405c29f35774ecf3/trustllm-0.3.0-py3-none-any.whl
+[2024-04-27 10:06:50] INFO root fetch - processPackages [trustllm]: executing diffoscope
+[2024-04-27 10:06:50] INFO root fetch - processPackages [trustllm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trustllm-0.2.4.tar.gz tmp/trustllm-0.3.0-py3-none-any.whl.zip --markdown 20240427/t/trustllm/0.2.4-0.3.0/README.md --exclude *.pyd
+[2024-04-27 10:06:51] INFO root fetch - processPackages [trustllm]: Remove: archive file [/home/abi/fetcher/tmp/trustllm-0.2.4.tar.gz]
+[2024-04-27 10:06:51] INFO root fetch - processPackages [trustllm]: Remove: archive file [/home/abi/fetcher/tmp/trustllm-0.3.0-py3-none-any.whl.zip]
+[2024-04-27 10:06:51] INFO root fetch - main [MainThread]: End processing [trustllm]: success
+[2024-04-27 10:06:51] INFO root fetch - main [MainThread]: Store serial: [22957342]
