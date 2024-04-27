@@ -11233,3 +11233,39 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 11:10:08] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.3.4.tar.gz]
 [2024-04-27 11:10:08] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
 [2024-04-27 11:10:08] INFO root fetch - main [MainThread]: Store serial: [22957596]
+[2024-04-27 11:12:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957596]
+[2024-04-27 11:12:16] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 11:12:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Bl2seqWrapperCW
+[2024-04-27 11:12:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: myPYPI9
+[2024-04-27 11:12:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: netsome
+[2024-04-27 11:12:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dash-spread-grid
+[2024-04-27 11:12:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cNumPKG
+[2024-04-27 11:12:16] INFO root fetch - processPackages [myPYPI9]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-04-27 11:12:16] INFO root fetch - processPackages [dash-spread-grid]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 11:12:16] INFO root fetch - processPackages [myPYPI9]: Downloading https://files.pythonhosted.org/packages/d2/03/5b0462b74e5bbe20e7683813ed6047ef9b8e0e11bbf832307c81a6eb57b0/mypypi9-0.7.8.tar.gz
+[2024-04-27 11:12:16] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/9f/39/3477f65f22676264317bcb1d617b220ddcc8d09f85a7eb7904d8c2676dae/dash_spread_grid-0.0.8.tar.gz
+[2024-04-27 11:12:16] INFO root fetch - processPackages [netsome]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-04-27 11:12:16] WARNING root fetch - processPackages [cNumPKG]: Skipping, unable to determine old version
+[2024-04-27 11:12:16] INFO root fetch - main [MainThread]: End processing [cNumPKG] error
+[2024-04-27 11:12:16] WARNING root fetch - processPackages [Bl2seqWrapperCW]: Skipping, unable to determine old version
+[2024-04-27 11:12:16] INFO root fetch - main [MainThread]: End processing [Bl2seqWrapperCW] error
+[2024-04-27 11:12:17] INFO root fetch - processPackages [myPYPI9]: Downloading https://files.pythonhosted.org/packages/59/50/e6ade8fa894f63707b31ffb2a965aa60c3b56b9ba31f82374779f571167e/mypypi9-0.7.9.tar.gz
+[2024-04-27 11:12:17] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/37/f7/3991c1c5cd26d592773df3381df4e17ae14f51d47af4fd52b7419949494b/dash_spread_grid-0.0.9.tar.gz
+[2024-04-27 11:12:17] INFO root fetch - processPackages [netsome]: Downloading https://files.pythonhosted.org/packages/07/cf/ec36d9c9dc961e3ce2648dc5d96dbbd661988a2212ab0c5fc5747e2f281b/netsome-0.3.3.tar.gz
+[2024-04-27 11:12:17] INFO root fetch - processPackages [myPYPI9]: executing diffoscope
+[2024-04-27 11:12:17] INFO root fetch - processPackages [myPYPI9]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypypi9-0.7.8.tar.gz tmp/mypypi9-0.7.9.tar.gz --markdown 20240427/m/myPYPI9/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-04-27 11:12:17] INFO root fetch - processPackages [dash-spread-grid]: executing diffoscope
+[2024-04-27 11:12:17] INFO root fetch - processPackages [dash-spread-grid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_spread_grid-0.0.8.tar.gz tmp/dash_spread_grid-0.0.9.tar.gz --markdown 20240427/d/dash-spread-grid/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 11:12:17] INFO root fetch - processPackages [netsome]: Downloading https://files.pythonhosted.org/packages/3e/31/fa60278bcb16cea43607caa645ee24c9c5631ed9dd19680be6b6ae66b9db/netsome-0.3.4.tar.gz
+[2024-04-27 11:12:17] INFO root fetch - processPackages [netsome]: executing diffoscope
+[2024-04-27 11:12:17] INFO root fetch - processPackages [netsome]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netsome-0.3.3.tar.gz tmp/netsome-0.3.4.tar.gz --markdown 20240427/n/netsome/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-04-27 11:12:17] INFO root fetch - processPackages [myPYPI9]: Remove: archive file [/home/abi/fetcher/tmp/mypypi9-0.7.8.tar.gz]
+[2024-04-27 11:12:17] INFO root fetch - processPackages [myPYPI9]: Remove: archive file [/home/abi/fetcher/tmp/mypypi9-0.7.9.tar.gz]
+[2024-04-27 11:12:17] INFO root fetch - main [MainThread]: End processing [myPYPI9]: success
+[2024-04-27 11:12:18] INFO root fetch - processPackages [netsome]: Remove: archive file [/home/abi/fetcher/tmp/netsome-0.3.3.tar.gz]
+[2024-04-27 11:12:18] INFO root fetch - processPackages [netsome]: Remove: archive file [/home/abi/fetcher/tmp/netsome-0.3.4.tar.gz]
+[2024-04-27 11:12:18] INFO root fetch - main [MainThread]: End processing [netsome]: success
+[2024-04-27 11:12:18] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.8.tar.gz]
+[2024-04-27 11:12:18] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.9.tar.gz]
+[2024-04-27 11:12:18] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
+[2024-04-27 11:12:18] INFO root fetch - main [MainThread]: Store serial: [22957615]
