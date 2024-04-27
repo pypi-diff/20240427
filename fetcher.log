@@ -2687,3 +2687,15 @@ EOFError: EOF read where object expected
 [2024-04-27 02:30:39] INFO root fetch - processPackages [arraylake]: Remove: archive file [/home/abi/fetcher/tmp/arraylake-0.9.6.tar.gz]
 [2024-04-27 02:30:39] INFO root fetch - main [MainThread]: End processing [arraylake]: success
 [2024-04-27 02:30:39] INFO root fetch - main [MainThread]: Store serial: [22954374]
+[2024-04-27 02:32:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22954374]
+[2024-04-27 02:32:49] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 02:32:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: codeanim
+[2024-04-27 02:32:49] INFO root fetch - processPackages [codeanim]: New version: [0.0.9] Old Version: [0.0.17]
+[2024-04-27 02:32:49] INFO root fetch - processPackages [codeanim]: Downloading https://files.pythonhosted.org/packages/07/6f/b91348897c1cd85c6fb58b7b0e92a29c165adffa2479742dd74d76f9951f/codeanim-0.0.17.tar.gz
+[2024-04-27 02:32:49] INFO root fetch - processPackages [codeanim]: Downloading https://files.pythonhosted.org/packages/0d/0a/113fb1061a227875dba0e8349c9477a7eb7d1b7d9bf479b7bbc7157fc9a1/codeanim-0.0.9.tar.gz
+[2024-04-27 02:32:49] INFO root fetch - processPackages [codeanim]: executing diffoscope
+[2024-04-27 02:32:49] INFO root fetch - processPackages [codeanim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codeanim-0.0.17.tar.gz tmp/codeanim-0.0.9.tar.gz --markdown 20240427/c/codeanim/0.0.17-0.0.9/README.md --exclude *.pyd
+[2024-04-27 02:32:50] INFO root fetch - processPackages [codeanim]: Remove: archive file [/home/abi/fetcher/tmp/codeanim-0.0.17.tar.gz]
+[2024-04-27 02:32:50] INFO root fetch - processPackages [codeanim]: Remove: archive file [/home/abi/fetcher/tmp/codeanim-0.0.9.tar.gz]
+[2024-04-27 02:32:50] INFO root fetch - main [MainThread]: End processing [codeanim]: success
+[2024-04-27 02:32:50] INFO root fetch - main [MainThread]: Store serial: [22954386]
