@@ -10650,3 +10650,29 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 09:58:11] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240427-cp39-cp39-win_amd64.whl.zip]
 [2024-04-27 09:58:11] INFO root fetch - main [MainThread]: End processing [tf-nightly]: success
 [2024-04-27 09:58:11] INFO root fetch - main [MainThread]: Store serial: [22957316]
+[2024-04-27 10:00:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957316]
+[2024-04-27 10:00:21] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-27 10:02:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957316]
+[2024-04-27 10:02:27] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 10:02:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: afeng-py-tools
+[2024-04-27 10:02:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rate-control
+[2024-04-27 10:02:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pathlib-next
+[2024-04-27 10:02:27] WARNING root fetch - processPackages [pathlib-next]: Skipping, unable to determine old version
+[2024-04-27 10:02:27] INFO root fetch - main [MainThread]: End processing [pathlib-next] error
+[2024-04-27 10:02:27] INFO root fetch - processPackages [rate-control]: New version: [3.0.1] Old Version: [3.0.0]
+[2024-04-27 10:02:27] INFO root fetch - processPackages [afeng-py-tools]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-27 10:02:28] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/03/96/e24f6bbf418707708ed1ab31dd8f4af000cdfcd56c3955e6bcf876e28182/afeng-py-tools-0.0.98.tar.gz
+[2024-04-27 10:02:29] INFO root fetch - processPackages [rate-control]: Downloading https://files.pythonhosted.org/packages/53/b1/141a34afe85c556003d2abb8ceafb2ce1a3f03991e33b67b35108847c16b/rate_control-3.0.0.tar.gz
+[2024-04-27 10:02:29] INFO root fetch - processPackages [rate-control]: Downloading https://files.pythonhosted.org/packages/ea/ca/33efbcf1f08b3986e55e9e35981a4c00a4cb755e2b0bcf6e7ef7a38ac16e/rate_control-3.0.1.tar.gz
+[2024-04-27 10:02:29] INFO root fetch - processPackages [rate-control]: executing diffoscope
+[2024-04-27 10:02:29] INFO root fetch - processPackages [rate-control]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rate_control-3.0.0.tar.gz tmp/rate_control-3.0.1.tar.gz --markdown 20240427/r/rate-control/3.0.0-3.0.1/README.md --exclude *.pyd
+[2024-04-27 10:02:29] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/b2/0a/41c6034fd5c224a859e4249b1b09e63d7acefba4ae5ac80d406a778a1e32/afeng-py-tools-0.0.99.tar.gz
+[2024-04-27 10:02:29] INFO root fetch - processPackages [afeng-py-tools]: executing diffoscope
+[2024-04-27 10:02:29] INFO root fetch - processPackages [afeng-py-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/afeng-py-tools-0.0.98.tar.gz tmp/afeng-py-tools-0.0.99.tar.gz --markdown 20240427/a/afeng-py-tools/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-27 10:02:30] INFO root fetch - processPackages [rate-control]: Remove: archive file [/home/abi/fetcher/tmp/rate_control-3.0.0.tar.gz]
+[2024-04-27 10:02:30] INFO root fetch - processPackages [rate-control]: Remove: archive file [/home/abi/fetcher/tmp/rate_control-3.0.1.tar.gz]
+[2024-04-27 10:02:30] INFO root fetch - main [MainThread]: End processing [rate-control]: success
+[2024-04-27 10:02:31] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.98.tar.gz]
+[2024-04-27 10:02:31] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
+[2024-04-27 10:02:31] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
+[2024-04-27 10:02:31] INFO root fetch - main [MainThread]: Store serial: [22957327]
