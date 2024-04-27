@@ -12815,3 +12815,65 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 13:18:35] INFO root fetch - processPackages [zkyhaxpy]: Remove: archive file [/home/abi/fetcher/tmp/zkyhaxpy-0.3.1.1.0.tar.gz]
 [2024-04-27 13:18:35] INFO root fetch - main [MainThread]: End processing [zkyhaxpy]: success
 [2024-04-27 13:18:35] INFO root fetch - main [MainThread]: Store serial: [22958194]
+[2024-04-27 13:20:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958194]
+[2024-04-27 13:22:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958194]
+[2024-04-27 13:22:58] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-27 13:22:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moto
+[2024-04-27 13:22:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pywikibot
+[2024-04-27 13:22:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bitcoin-safe
+[2024-04-27 13:22:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: whatshow-toolbox
+[2024-04-27 13:22:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bigdl-core-xe
+[2024-04-27 13:22:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bigdl-core-xe-21
+[2024-04-27 13:22:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: kostsample
+[2024-04-27 13:22:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pywxdump
+[2024-04-27 13:22:58] INFO root fetch - processPackages [whatshow-toolbox]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-04-27 13:22:58] INFO root fetch - processPackages [bitcoin-safe]: New version: [0.6.0a1] Old Version: [0.6.0a0]
+[2024-04-27 13:22:59] WARNING root fetch - processPackages [kostsample]: Skipping, unable to determine old version
+[2024-04-27 13:22:59] INFO root fetch - main [MainThread]: End processing [kostsample] error
+[2024-04-27 13:22:59] INFO root fetch - processPackages [whatshow-toolbox]: Downloading https://files.pythonhosted.org/packages/50/7c/af46d5e712e34f2eb603522654c42f0f53d5b75b21d098551cb3e5633e2f/whatshow_toolbox-1.0.3.tar.gz
+[2024-04-27 13:22:59] INFO root fetch - processPackages [bigdl-core-xe]: New version: [2.5.0b20240427] Old Version: [2.5.0b20240426]
+[2024-04-27 13:22:59] INFO root fetch - processPackages [pywikibot]: New version: [9.1.1] Old Version: [9.1.0]
+[2024-04-27 13:22:59] INFO root fetch - processPackages [bigdl-core-xe-21]: New version: [2.5.0b20240427] Old Version: [2.5.0b20240426]
+[2024-04-27 13:22:59] INFO root fetch - processPackages [moto]: New version: [5.0.6.dev9] Old Version: [5.0.6.dev8]
+[2024-04-27 13:22:59] INFO root fetch - processPackages [bitcoin-safe]: Downloading https://files.pythonhosted.org/packages/55/65/894d445f2fa7a689f20cc0f62ce4e1a10388ba17ed5315bfb046bf018bf3/bitcoin_safe-0.6.0a0.tar.gz
+[2024-04-27 13:22:59] INFO root fetch - processPackages [pywxdump]: New version: [3.0.8] Old Version: [3.0.6]
+[2024-04-27 13:22:59] INFO root fetch - processPackages [bigdl-core-xe]: Downloading https://files.pythonhosted.org/packages/3a/51/0061a73af5a3183a888d63d126f009f052008465043406f4d60b7a02fa36/bigdl_core_xe-2.5.0b20240426-cp39-cp39-manylinux2010_x86_64.whl
+[2024-04-27 13:22:59] WARNING root fetch - processPackages [bigdl-core-xe]: Skipping package: exceeds size limit 105557902>=10485760
+[2024-04-27 13:22:59] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe] error
+[2024-04-27 13:22:59] INFO root fetch - processPackages [bigdl-core-xe-21]: Downloading https://files.pythonhosted.org/packages/b4/ec/50d6d875b0edc604b1fca0ed0496d1fa7e68eade1ea8016ff41f2fa9a1d9/bigdl_core_xe_21-2.5.0b20240426-cp39-cp39-win_amd64.whl
+[2024-04-27 13:22:59] WARNING root fetch - processPackages [bigdl-core-xe-21]: Skipping package: exceeds size limit 28914532>=10485760
+[2024-04-27 13:22:59] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-21] error
+[2024-04-27 13:22:59] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/cc/b5/00faf7a32b2d43303224e4c85e6ca1586aa38ed6bd7c49336b7ac8cebea7/moto-5.0.6.dev8.tar.gz
+[2024-04-27 13:22:59] INFO root fetch - processPackages [pywikibot]: Downloading https://files.pythonhosted.org/packages/8b/cc/1ba77be315d7ac19d623c813c26ffbb3e7173f2dd2b007afe071bf60ebc4/pywikibot-9.1.0.tar.gz
+[2024-04-27 13:22:59] INFO root fetch - processPackages [pywxdump]: Downloading https://files.pythonhosted.org/packages/cb/78/6d75d5e0ed020d3f8e69339ff32d4be7f31fcca98e6208cff1ce6c179e86/pywxdump-3.0.6.tar.gz
+[2024-04-27 13:22:59] INFO root fetch - processPackages [bitcoin-safe]: Downloading https://files.pythonhosted.org/packages/f3/87/f4af485549b3ad0eff52fa9e66b155d7cfea2917603a090c646e56028567/bitcoin_safe-0.6.0a1.tar.gz
+[2024-04-27 13:22:59] INFO root fetch - processPackages [whatshow-toolbox]: Downloading https://files.pythonhosted.org/packages/71/a8/0fb7fb2166fd5a978dec18ca9a0b2652dfe20960675e21055b9bf475d6ff/whatshow_toolbox-1.0.4.tar.gz
+[2024-04-27 13:22:59] INFO root fetch - processPackages [whatshow-toolbox]: executing diffoscope
+[2024-04-27 13:22:59] INFO root fetch - processPackages [whatshow-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whatshow_toolbox-1.0.3.tar.gz tmp/whatshow_toolbox-1.0.4.tar.gz --markdown 20240427/w/whatshow-toolbox/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-04-27 13:22:59] INFO root fetch - processPackages [pywikibot]: Downloading https://files.pythonhosted.org/packages/fa/cc/b990849852b313fc736c985d1d58aaf7d9548b5b78d196216368ed7b7f4b/pywikibot-9.1.1.tar.gz
+[2024-04-27 13:23:00] INFO root fetch - processPackages [bitcoin-safe]: executing diffoscope
+[2024-04-27 13:23:00] INFO root fetch - processPackages [bitcoin-safe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bitcoin_safe-0.6.0a0.tar.gz tmp/bitcoin_safe-0.6.0a1.tar.gz --markdown 20240427/b/bitcoin-safe/0.6.0a0-0.6.0a1/README.md --exclude *.pyd
+[2024-04-27 13:23:00] INFO root fetch - processPackages [pywikibot]: executing diffoscope
+[2024-04-27 13:23:00] INFO root fetch - processPackages [pywikibot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywikibot-9.1.0.tar.gz tmp/pywikibot-9.1.1.tar.gz --markdown 20240427/p/pywikibot/9.1.0-9.1.1/README.md --exclude *.pyd
+[2024-04-27 13:23:00] INFO root fetch - processPackages [whatshow-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/whatshow_toolbox-1.0.3.tar.gz]
+[2024-04-27 13:23:00] INFO root fetch - processPackages [whatshow-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/whatshow_toolbox-1.0.4.tar.gz]
+[2024-04-27 13:23:00] INFO root fetch - main [MainThread]: End processing [whatshow-toolbox]: success
+[2024-04-27 13:23:00] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/67/63/03d8401d8574b4b96cd00404b9b4b0f0791e6dc794bc44ad3730b7dd8e46/moto-5.0.6.dev9.tar.gz
+[2024-04-27 13:23:00] INFO root fetch - processPackages [moto]: executing diffoscope
+[2024-04-27 13:23:00] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-5.0.6.dev8.tar.gz tmp/moto-5.0.6.dev9.tar.gz --markdown 20240427/m/moto/5.0.6.dev8-5.0.6.dev9/README.md --exclude *.pyd
+[2024-04-27 13:23:01] INFO root fetch - processPackages [pywikibot]: Remove: archive file [/home/abi/fetcher/tmp/pywikibot-9.1.0.tar.gz]
+[2024-04-27 13:23:01] INFO root fetch - processPackages [pywikibot]: Remove: archive file [/home/abi/fetcher/tmp/pywikibot-9.1.1.tar.gz]
+[2024-04-27 13:23:01] INFO root fetch - main [MainThread]: End processing [pywikibot]: success
+[2024-04-27 13:23:01] INFO root fetch - processPackages [pywxdump]: Downloading https://files.pythonhosted.org/packages/0c/2c/b244b3ba6c2cd4dc567d66ab4b6a9bca181dd34007f111e480eb1fb2f28b/pywxdump-3.0.8.tar.gz
+[2024-04-27 13:23:01] INFO root fetch - processPackages [bitcoin-safe]: Remove: archive file [/home/abi/fetcher/tmp/bitcoin_safe-0.6.0a0.tar.gz]
+[2024-04-27 13:23:01] INFO root fetch - processPackages [bitcoin-safe]: Remove: archive file [/home/abi/fetcher/tmp/bitcoin_safe-0.6.0a1.tar.gz]
+[2024-04-27 13:23:01] INFO root fetch - main [MainThread]: End processing [bitcoin-safe]: success
+[2024-04-27 13:23:03] INFO root fetch - processPackages [pywxdump]: executing diffoscope
+[2024-04-27 13:23:03] INFO root fetch - processPackages [pywxdump]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywxdump-3.0.6.tar.gz tmp/pywxdump-3.0.8.tar.gz --markdown 20240427/p/pywxdump/3.0.6-3.0.8/README.md --exclude *.pyd
+[2024-04-27 13:23:11] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.6.dev8.tar.gz]
+[2024-04-27 13:23:11] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.6.dev9.tar.gz]
+[2024-04-27 13:23:11] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2024-04-27 13:23:18] INFO root fetch - processPackages [pywxdump]: Remove: archive file [/home/abi/fetcher/tmp/pywxdump-3.0.6.tar.gz]
+[2024-04-27 13:23:18] INFO root fetch - processPackages [pywxdump]: Remove: archive file [/home/abi/fetcher/tmp/pywxdump-3.0.8.tar.gz]
+[2024-04-27 13:23:18] INFO root fetch - main [MainThread]: End processing [pywxdump]: success
+[2024-04-27 13:23:18] INFO root fetch - main [MainThread]: Store serial: [22958214]
