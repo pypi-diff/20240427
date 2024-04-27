@@ -18649,3 +18649,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 19:53:17] INFO root fetch - processPackages [stringzilla]: Remove: archive file [/home/abi/fetcher/tmp/stringzilla-3.8.4-cp311-cp311-macosx_10_9_x86_64.whl.zip]
 [2024-04-27 19:53:17] INFO root fetch - main [MainThread]: End processing [stringzilla]: success
 [2024-04-27 19:53:17] INFO root fetch - main [MainThread]: Store serial: [22960792]
+[2024-04-27 19:55:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960792]
+[2024-04-27 19:55:31] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 19:55:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: htagui
+[2024-04-27 19:55:31] INFO root fetch - processPackages [htagui]: New version: [0.5.4] Old Version: [0.5.3]
+[2024-04-27 19:55:31] INFO root fetch - processPackages [htagui]: Downloading https://files.pythonhosted.org/packages/e7/8f/2e9c322faf9cfd6c17170ac4f45580de8cee0d2142b9ebda985df8aa99a9/htagui-0.5.3.tar.gz
+[2024-04-27 19:55:31] INFO root fetch - processPackages [htagui]: Downloading https://files.pythonhosted.org/packages/e8/da/89d298357fbebdb5947575e57dc8038c202d542b0b37c22d0fd0c0a862ec/htagui-0.5.4.tar.gz
+[2024-04-27 19:55:31] INFO root fetch - processPackages [htagui]: executing diffoscope
+[2024-04-27 19:55:31] INFO root fetch - processPackages [htagui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htagui-0.5.3.tar.gz tmp/htagui-0.5.4.tar.gz --markdown 20240427/h/htagui/0.5.3-0.5.4/README.md --exclude *.pyd
+[2024-04-27 19:55:32] INFO root fetch - processPackages [htagui]: Remove: archive file [/home/abi/fetcher/tmp/htagui-0.5.3.tar.gz]
+[2024-04-27 19:55:32] INFO root fetch - processPackages [htagui]: Remove: archive file [/home/abi/fetcher/tmp/htagui-0.5.4.tar.gz]
+[2024-04-27 19:55:32] INFO root fetch - main [MainThread]: End processing [htagui]: success
+[2024-04-27 19:55:32] INFO root fetch - main [MainThread]: Store serial: [22960881]
