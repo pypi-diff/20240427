@@ -9848,3 +9848,128 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 08:43:45] INFO root fetch - processPackages [ppacls]: Remove: archive file [/home/abi/fetcher/tmp/ppacls-0.4.3-py3-none-any.whl.zip]
 [2024-04-27 08:43:45] INFO root fetch - main [MainThread]: End processing [ppacls]: success
 [2024-04-27 08:43:45] INFO root fetch - main [MainThread]: Store serial: [22956970]
+[2024-04-27 08:45:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956970]
+[2024-04-27 08:45:53] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-27 08:45:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mvector
+[2024-04-27 08:45:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: barter-auth
+[2024-04-27 08:45:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyCXpress
+[2024-04-27 08:45:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: func-adl
+[2024-04-27 08:45:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: CheeseAPI
+[2024-04-27 08:45:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: custom-erp-connector
+[2024-04-27 08:45:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ppser
+[2024-04-27 08:45:53] INFO root fetch - processPackages [barter-auth]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-27 08:45:53] WARNING root fetch - processPackages [custom-erp-connector]: Skipping, unable to determine old version
+[2024-04-27 08:45:53] INFO root fetch - main [MainThread]: End processing [custom-erp-connector] error
+[2024-04-27 08:45:53] INFO root fetch - processPackages [mvector]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-27 08:45:53] INFO root fetch - processPackages [func-adl]: New version: [3.3.1b3] Old Version: [3.3.1b2]
+[2024-04-27 08:45:53] INFO root fetch - processPackages [PyCXpress]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-27 08:45:53] INFO root fetch - processPackages [CheeseAPI]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-04-27 08:45:53] INFO root fetch - processPackages [ppser]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-27 08:45:54] INFO root fetch - processPackages [barter-auth]: Downloading https://files.pythonhosted.org/packages/dd/47/51a9351ffc5089a9b3dfe3a98d239da83039a751b06872792d9a488deb8f/barter_auth-0.2.8.tar.gz
+[2024-04-27 08:45:54] INFO root fetch - processPackages [PyCXpress]: Downloading https://files.pythonhosted.org/packages/c0/56/b1af66414cad39cd154284f9c6dc66b4795ef7cb2269c6ded92ae467a7c4/pycxpress-0.0.5.tar.gz
+[2024-04-27 08:45:54] INFO root fetch - processPackages [mvector]: Downloading https://files.pythonhosted.org/packages/ce/ff/06c9e5334ef9e4c2395cfcfa9024772fff8ba0932f19d093a0a2a019b3ea/mvector-1.0.1-py3-none-any.whl
+[2024-04-27 08:45:54] INFO root fetch - processPackages [CheeseAPI]: Downloading https://files.pythonhosted.org/packages/78/06/7693fefc286e538805163a103454dee3755d7d8d310dbd98ec4fbaa8fa1c/cheeseapi-1.1.1.tar.gz
+[2024-04-27 08:45:54] INFO root fetch - processPackages [ppser]: Downloading https://files.pythonhosted.org/packages/13/1d/beb6aa5bf3fd6f7639c2c40d5a3c37f0feda5e2c001ebe4e88a679ef4303/ppser-0.0.1-py3-none-any.whl
+[2024-04-27 08:45:54] INFO root fetch - processPackages [barter-auth]: Downloading https://files.pythonhosted.org/packages/9e/ef/f1c12bc94982038eda8911dcee0943804b63e3562bc50a320c6088f318a1/barter_auth-0.2.9.tar.gz
+[2024-04-27 08:45:54] INFO root fetch - processPackages [PyCXpress]: Downloading https://files.pythonhosted.org/packages/79/3e/1dafbbacef34f35d5ffcaba9ac1177bacc8133cd0bdf78d13fa82424fb63/pycxpress-0.0.6.tar.gz
+[2024-04-27 08:45:54] INFO root fetch - processPackages [mvector]: Downloading https://files.pythonhosted.org/packages/f2/73/50f07bb758f5e5e4dbdb5eba7dc4464400dd1accbeb1a443ae2755dac64e/mvector-1.0.2-py3-none-any.whl
+[2024-04-27 08:45:54] INFO root fetch - processPackages [barter-auth]: executing diffoscope
+[2024-04-27 08:45:54] INFO root fetch - processPackages [barter-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/barter_auth-0.2.8.tar.gz tmp/barter_auth-0.2.9.tar.gz --markdown 20240427/b/barter-auth/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-27 08:45:54] INFO root fetch - processPackages [mvector]: executing diffoscope
+[2024-04-27 08:45:54] INFO root fetch - processPackages [mvector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mvector-1.0.1-py3-none-any.whl.zip tmp/mvector-1.0.2-py3-none-any.whl.zip --markdown 20240427/m/mvector/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-27 08:45:54] INFO root fetch - processPackages [PyCXpress]: executing diffoscope
+[2024-04-27 08:45:54] INFO root fetch - processPackages [PyCXpress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycxpress-0.0.5.tar.gz tmp/pycxpress-0.0.6.tar.gz --markdown 20240427/P/PyCXpress/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-27 08:45:55] INFO root fetch - processPackages [barter-auth]: Remove: archive file [/home/abi/fetcher/tmp/barter_auth-0.2.8.tar.gz]
+[2024-04-27 08:45:55] INFO root fetch - processPackages [barter-auth]: Remove: archive file [/home/abi/fetcher/tmp/barter_auth-0.2.9.tar.gz]
+[2024-04-27 08:45:55] INFO root fetch - main [MainThread]: End processing [barter-auth]: success
+[2024-04-27 08:45:55] INFO root fetch - processPackages [mvector]: Remove: archive file [/home/abi/fetcher/tmp/mvector-1.0.1-py3-none-any.whl.zip]
+[2024-04-27 08:45:55] INFO root fetch - processPackages [mvector]: Remove: archive file [/home/abi/fetcher/tmp/mvector-1.0.2-py3-none-any.whl.zip]
+[2024-04-27 08:45:55] INFO root fetch - main [MainThread]: End processing [mvector]: success
+[2024-04-27 08:45:55] INFO root fetch - processPackages [PyCXpress]: Remove: archive file [/home/abi/fetcher/tmp/pycxpress-0.0.5.tar.gz]
+[2024-04-27 08:45:55] INFO root fetch - processPackages [PyCXpress]: Remove: archive file [/home/abi/fetcher/tmp/pycxpress-0.0.6.tar.gz]
+[2024-04-27 08:45:55] INFO root fetch - main [MainThread]: End processing [PyCXpress]: success
+[2024-04-27 08:46:03] INFO root fetch - processPackages [CheeseAPI]: Downloading https://files.pythonhosted.org/packages/26/a6/db9ac0413395dba8af8c33a8fead9f1018280220fbad58f2834f80a18290/cheeseapi-1.1.2.tar.gz
+[2024-04-27 08:46:03] INFO root fetch - processPackages [CheeseAPI]: executing diffoscope
+[2024-04-27 08:46:03] INFO root fetch - processPackages [CheeseAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cheeseapi-1.1.1.tar.gz tmp/cheeseapi-1.1.2.tar.gz --markdown 20240427/C/CheeseAPI/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-04-27 08:46:04] INFO root fetch - processPackages [CheeseAPI]: Remove: archive file [/home/abi/fetcher/tmp/cheeseapi-1.1.1.tar.gz]
+[2024-04-27 08:46:04] INFO root fetch - processPackages [CheeseAPI]: Remove: archive file [/home/abi/fetcher/tmp/cheeseapi-1.1.2.tar.gz]
+[2024-04-27 08:48:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956970]
+[2024-04-27 08:48:09] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-04-27 08:48:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mvector
+[2024-04-27 08:48:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: barter-auth
+[2024-04-27 08:48:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyCXpress
+[2024-04-27 08:48:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: func-adl
+[2024-04-27 08:48:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: CheeseAPI
+[2024-04-27 08:48:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: custom-erp-connector
+[2024-04-27 08:48:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ppser
+[2024-04-27 08:48:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: macls
+[2024-04-27 08:48:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: rstms-mailgun
+[2024-04-27 08:48:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: masr
+[2024-04-27 08:48:10] INFO root fetch - processPackages [mvector]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-27 08:48:10] INFO root fetch - processPackages [CheeseAPI]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-04-27 08:48:10] INFO root fetch - processPackages [ppser]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-27 08:48:10] WARNING root fetch - processPackages [custom-erp-connector]: Skipping, unable to determine old version
+[2024-04-27 08:48:10] INFO root fetch - main [MainThread]: End processing [custom-erp-connector] error
+[2024-04-27 08:48:10] INFO root fetch - processPackages [PyCXpress]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-27 08:48:10] INFO root fetch - processPackages [barter-auth]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-27 08:48:10] INFO root fetch - processPackages [func-adl]: New version: [3.3.1b3] Old Version: [3.3.1b2]
+[2024-04-27 08:48:10] WARNING root fetch - processPackages [rstms-mailgun]: Skipping, unable to determine old version
+[2024-04-27 08:48:10] INFO root fetch - main [MainThread]: End processing [rstms-mailgun] error
+[2024-04-27 08:48:10] INFO root fetch - processPackages [macls]: New version: [0.4.3] Old Version: [0.4.2]
+[2024-04-27 08:48:10] INFO root fetch - processPackages [mvector]: Downloading https://files.pythonhosted.org/packages/ce/ff/06c9e5334ef9e4c2395cfcfa9024772fff8ba0932f19d093a0a2a019b3ea/mvector-1.0.1-py3-none-any.whl
+[2024-04-27 08:48:10] INFO root fetch - processPackages [CheeseAPI]: Downloading https://files.pythonhosted.org/packages/78/06/7693fefc286e538805163a103454dee3755d7d8d310dbd98ec4fbaa8fa1c/cheeseapi-1.1.1.tar.gz
+[2024-04-27 08:48:10] INFO root fetch - processPackages [PyCXpress]: Downloading https://files.pythonhosted.org/packages/c0/56/b1af66414cad39cd154284f9c6dc66b4795ef7cb2269c6ded92ae467a7c4/pycxpress-0.0.5.tar.gz
+[2024-04-27 08:48:10] INFO root fetch - processPackages [barter-auth]: Downloading https://files.pythonhosted.org/packages/dd/47/51a9351ffc5089a9b3dfe3a98d239da83039a751b06872792d9a488deb8f/barter_auth-0.2.8.tar.gz
+[2024-04-27 08:48:10] INFO root fetch - processPackages [func-adl]: Downloading https://files.pythonhosted.org/packages/23/00/43b10318435a9d3befff8c7fd7fcb76ab11fb17cabf43603aa33e0a82914/func_adl-3.3.1b2.tar.gz
+[2024-04-27 08:48:10] INFO root fetch - processPackages [ppser]: Downloading https://files.pythonhosted.org/packages/22/89/bab6dedd751266382f9282e3d7ab13a3321bfca2f1031aa3dab153095c5d/ppser-0.0.2-py3-none-any.whl
+[2024-04-27 08:48:10] INFO root fetch - processPackages [macls]: Downloading https://files.pythonhosted.org/packages/c1/bd/11ddcb826bcb02830c3fab9114dbb2f548d381c950422e0ea34a2211bd1f/macls-0.4.2-py3-none-any.whl
+[2024-04-27 08:48:10] INFO root fetch - processPackages [masr]: New version: [2.3.7] Old Version: [2.3.6]
+[2024-04-27 08:48:10] INFO root fetch - processPackages [barter-auth]: Downloading https://files.pythonhosted.org/packages/9e/ef/f1c12bc94982038eda8911dcee0943804b63e3562bc50a320c6088f318a1/barter_auth-0.2.9.tar.gz
+[2024-04-27 08:48:10] INFO root fetch - processPackages [CheeseAPI]: Downloading https://files.pythonhosted.org/packages/26/a6/db9ac0413395dba8af8c33a8fead9f1018280220fbad58f2834f80a18290/cheeseapi-1.1.2.tar.gz
+[2024-04-27 08:48:10] INFO root fetch - processPackages [ppser]: executing diffoscope
+[2024-04-27 08:48:10] INFO root fetch - processPackages [ppser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ppser-0.0.1-py3-none-any.whl.zip tmp/ppser-0.0.2-py3-none-any.whl.zip --markdown 20240427/p/ppser/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-27 08:48:10] INFO root fetch - processPackages [mvector]: Downloading https://files.pythonhosted.org/packages/f2/73/50f07bb758f5e5e4dbdb5eba7dc4464400dd1accbeb1a443ae2755dac64e/mvector-1.0.2-py3-none-any.whl
+[2024-04-27 08:48:10] INFO root fetch - processPackages [PyCXpress]: Downloading https://files.pythonhosted.org/packages/79/3e/1dafbbacef34f35d5ffcaba9ac1177bacc8133cd0bdf78d13fa82424fb63/pycxpress-0.0.6.tar.gz
+[2024-04-27 08:48:10] INFO root fetch - processPackages [func-adl]: Downloading https://files.pythonhosted.org/packages/c6/df/86df6732f5d169ac398f783659c9b41f5db501abc81b77972f362ad61e38/func_adl-3.3.1b3.tar.gz
+[2024-04-27 08:48:10] INFO root fetch - processPackages [barter-auth]: executing diffoscope
+[2024-04-27 08:48:10] INFO root fetch - processPackages [barter-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/barter_auth-0.2.8.tar.gz tmp/barter_auth-0.2.9.tar.gz --markdown 20240427/b/barter-auth/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-27 08:48:10] INFO root fetch - processPackages [CheeseAPI]: executing diffoscope
+[2024-04-27 08:48:10] INFO root fetch - processPackages [CheeseAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cheeseapi-1.1.1.tar.gz tmp/cheeseapi-1.1.2.tar.gz --markdown 20240427/C/CheeseAPI/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-04-27 08:48:10] INFO root fetch - processPackages [PyCXpress]: executing diffoscope
+[2024-04-27 08:48:10] INFO root fetch - processPackages [PyCXpress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycxpress-0.0.5.tar.gz tmp/pycxpress-0.0.6.tar.gz --markdown 20240427/P/PyCXpress/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-27 08:48:10] INFO root fetch - processPackages [mvector]: executing diffoscope
+[2024-04-27 08:48:10] INFO root fetch - processPackages [mvector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mvector-1.0.1-py3-none-any.whl.zip tmp/mvector-1.0.2-py3-none-any.whl.zip --markdown 20240427/m/mvector/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-27 08:48:10] INFO root fetch - processPackages [func-adl]: executing diffoscope
+[2024-04-27 08:48:10] INFO root fetch - processPackages [func-adl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/func_adl-3.3.1b2.tar.gz tmp/func_adl-3.3.1b3.tar.gz --markdown 20240427/f/func-adl/3.3.1b2-3.3.1b3/README.md --exclude *.pyd
+[2024-04-27 08:48:10] INFO root fetch - processPackages [macls]: Downloading https://files.pythonhosted.org/packages/fc/0d/a20cfe0824e066d2c61cb8d6f3f567bad7c0fefbb153d2b845d23ce7e3d4/macls-0.4.3-py3-none-any.whl
+[2024-04-27 08:48:10] INFO root fetch - processPackages [masr]: Downloading https://files.pythonhosted.org/packages/45/d2/722f8dff2fc54597b80d49112ca3a18dfde7bcd747b9a6979c3a6cb48255/masr-2.3.6-py3-none-any.whl
+[2024-04-27 08:48:11] INFO root fetch - processPackages [macls]: executing diffoscope
+[2024-04-27 08:48:11] INFO root fetch - processPackages [macls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macls-0.4.2-py3-none-any.whl.zip tmp/macls-0.4.3-py3-none-any.whl.zip --markdown 20240427/m/macls/0.4.2-0.4.3/README.md --exclude *.pyd
+[2024-04-27 08:48:11] INFO root fetch - processPackages [masr]: Downloading https://files.pythonhosted.org/packages/b0/f4/416ee31db0bdd1945c4ed1dc37bbf5c5bece5b6e4309deab8fa7170c7084/masr-2.3.7-py3-none-any.whl
+[2024-04-27 08:48:11] INFO root fetch - processPackages [ppser]: Remove: archive file [/home/abi/fetcher/tmp/ppser-0.0.1-py3-none-any.whl.zip]
+[2024-04-27 08:48:11] INFO root fetch - processPackages [ppser]: Remove: archive file [/home/abi/fetcher/tmp/ppser-0.0.2-py3-none-any.whl.zip]
+[2024-04-27 08:48:11] INFO root fetch - main [MainThread]: End processing [ppser]: success
+[2024-04-27 08:48:11] INFO root fetch - processPackages [CheeseAPI]: Remove: archive file [/home/abi/fetcher/tmp/cheeseapi-1.1.1.tar.gz]
+[2024-04-27 08:48:11] INFO root fetch - processPackages [CheeseAPI]: Remove: archive file [/home/abi/fetcher/tmp/cheeseapi-1.1.2.tar.gz]
+[2024-04-27 08:48:11] INFO root fetch - main [MainThread]: End processing [CheeseAPI]: success
+[2024-04-27 08:48:11] INFO root fetch - processPackages [barter-auth]: Remove: archive file [/home/abi/fetcher/tmp/barter_auth-0.2.8.tar.gz]
+[2024-04-27 08:48:11] INFO root fetch - processPackages [barter-auth]: Remove: archive file [/home/abi/fetcher/tmp/barter_auth-0.2.9.tar.gz]
+[2024-04-27 08:48:11] INFO root fetch - main [MainThread]: End processing [barter-auth]: success
+[2024-04-27 08:48:11] INFO root fetch - processPackages [func-adl]: Remove: archive file [/home/abi/fetcher/tmp/func_adl-3.3.1b2.tar.gz]
+[2024-04-27 08:48:11] INFO root fetch - processPackages [func-adl]: Remove: archive file [/home/abi/fetcher/tmp/func_adl-3.3.1b3.tar.gz]
+[2024-04-27 08:48:11] INFO root fetch - main [MainThread]: End processing [func-adl]: success
+[2024-04-27 08:48:11] INFO root fetch - processPackages [mvector]: Remove: archive file [/home/abi/fetcher/tmp/mvector-1.0.1-py3-none-any.whl.zip]
+[2024-04-27 08:48:11] INFO root fetch - processPackages [mvector]: Remove: archive file [/home/abi/fetcher/tmp/mvector-1.0.2-py3-none-any.whl.zip]
+[2024-04-27 08:48:11] INFO root fetch - main [MainThread]: End processing [mvector]: success
+[2024-04-27 08:48:11] INFO root fetch - processPackages [macls]: Remove: archive file [/home/abi/fetcher/tmp/macls-0.4.2-py3-none-any.whl.zip]
+[2024-04-27 08:48:11] INFO root fetch - processPackages [macls]: Remove: archive file [/home/abi/fetcher/tmp/macls-0.4.3-py3-none-any.whl.zip]
+[2024-04-27 08:48:11] INFO root fetch - main [MainThread]: End processing [macls]: success
+[2024-04-27 08:48:11] INFO root fetch - processPackages [PyCXpress]: Remove: archive file [/home/abi/fetcher/tmp/pycxpress-0.0.5.tar.gz]
+[2024-04-27 08:48:11] INFO root fetch - processPackages [PyCXpress]: Remove: archive file [/home/abi/fetcher/tmp/pycxpress-0.0.6.tar.gz]
+[2024-04-27 08:48:11] INFO root fetch - main [MainThread]: End processing [PyCXpress]: success
+[2024-04-27 08:48:12] INFO root fetch - processPackages [masr]: executing diffoscope
+[2024-04-27 08:48:12] INFO root fetch - processPackages [masr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/masr-2.3.6-py3-none-any.whl.zip tmp/masr-2.3.7-py3-none-any.whl.zip --markdown 20240427/m/masr/2.3.6-2.3.7/README.md --exclude *.pyd
+[2024-04-27 08:48:12] INFO root fetch - processPackages [masr]: Remove: archive file [/home/abi/fetcher/tmp/masr-2.3.6-py3-none-any.whl.zip]
+[2024-04-27 08:48:12] INFO root fetch - processPackages [masr]: Remove: archive file [/home/abi/fetcher/tmp/masr-2.3.7-py3-none-any.whl.zip]
+[2024-04-27 08:48:12] INFO root fetch - main [MainThread]: End processing [masr]: success
+[2024-04-27 08:48:12] INFO root fetch - main [MainThread]: Store serial: [22956997]
