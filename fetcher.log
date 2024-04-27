@@ -17253,3 +17253,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 18:12:35] INFO root fetch - processPackages [mckinseysolvegame]: Remove: archive file [/home/abi/fetcher/tmp/mckinseysolvegame-1.0.0.tar.gz]
 [2024-04-27 18:12:35] INFO root fetch - main [MainThread]: End processing [mckinseysolvegame]: success
 [2024-04-27 18:12:35] INFO root fetch - main [MainThread]: Store serial: [22960086]
+[2024-04-27 18:14:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960086]
+[2024-04-27 18:14:46] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 18:14:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CodeBat
+[2024-04-27 18:14:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mkdocstrings
+[2024-04-27 18:14:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CheeseLog
+[2024-04-27 18:14:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tcolorpy
+[2024-04-27 18:14:46] INFO root fetch - processPackages [CodeBat]: New version: [0.0.2.5] Old Version: [0.0.2.4]
+[2024-04-27 18:14:46] INFO root fetch - processPackages [CodeBat]: Downloading https://files.pythonhosted.org/packages/50/2c/a45fe4f96f7787b34d9281a1621a8b1126977b2dbdb6a954426f856391d5/codebat-0.0.2.4.tar.gz
+[2024-04-27 18:14:46] INFO root fetch - processPackages [tcolorpy]: New version: [0.1.6] Old Version: [0.1.4]
+[2024-04-27 18:14:46] INFO root fetch - processPackages [mkdocstrings]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-27 18:14:47] INFO root fetch - processPackages [CheeseLog]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-27 18:14:47] INFO root fetch - processPackages [tcolorpy]: Downloading https://files.pythonhosted.org/packages/ba/e0/20b99847e76bb89784b68634399261d770b01054bca16cd19a06ac9c2e67/tcolorpy-0.1.4.tar.gz
+[2024-04-27 18:14:47] INFO root fetch - processPackages [mkdocstrings]: Downloading https://files.pythonhosted.org/packages/b2/4d/7904c5e13a783aed71048718a9ecfcf5d2720aec85285198a52908fdaf07/mkdocstrings-0.9.0.tar.gz
+[2024-04-27 18:14:47] INFO root fetch - processPackages [CheeseLog]: Downloading https://files.pythonhosted.org/packages/1c/11/01986432c04ea99b79f7a99f5166109ba6c700beab5fb83a2e51eae85faf/cheeselog-1.0.0.tar.gz
+[2024-04-27 18:14:47] INFO root fetch - processPackages [CodeBat]: Downloading https://files.pythonhosted.org/packages/e2/be/549749112f9931510bf3ba980d1ec608c071997169c2846eceea8d6b8785/codebat-0.0.2.5.tar.gz
+[2024-04-27 18:14:47] INFO root fetch - processPackages [CodeBat]: executing diffoscope
+[2024-04-27 18:14:47] INFO root fetch - processPackages [CodeBat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codebat-0.0.2.4.tar.gz tmp/codebat-0.0.2.5.tar.gz --markdown 20240427/C/CodeBat/0.0.2.4-0.0.2.5/README.md --exclude *.pyd
+[2024-04-27 18:14:47] INFO root fetch - processPackages [tcolorpy]: Downloading https://files.pythonhosted.org/packages/af/f6/b17885354c5addfb93c14f3ed7172c33494f989dd5f83c0340d2c8fa3b69/tcolorpy-0.1.6.tar.gz
+[2024-04-27 18:14:47] INFO root fetch - processPackages [CheeseLog]: Downloading https://files.pythonhosted.org/packages/b4/9b/cc9c3ba2bbf7d3ffa8cfe28b5a6f02193aa74b26cc208bb90622d99b393e/cheeselog-1.0.1.tar.gz
+[2024-04-27 18:14:47] INFO root fetch - processPackages [mkdocstrings]: Downloading https://files.pythonhosted.org/packages/ee/29/d819ea65169866d3fee6067c14b192756c98408b59346a6bc12b46a65d0e/mkdocstrings-0.9.1.tar.gz
+[2024-04-27 18:14:47] INFO root fetch - processPackages [CheeseLog]: executing diffoscope
+[2024-04-27 18:14:47] INFO root fetch - processPackages [CheeseLog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cheeselog-1.0.0.tar.gz tmp/cheeselog-1.0.1.tar.gz --markdown 20240427/C/CheeseLog/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-27 18:14:47] INFO root fetch - processPackages [tcolorpy]: executing diffoscope
+[2024-04-27 18:14:47] INFO root fetch - processPackages [tcolorpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcolorpy-0.1.4.tar.gz tmp/tcolorpy-0.1.6.tar.gz --markdown 20240427/t/tcolorpy/0.1.4-0.1.6/README.md --exclude *.pyd
+[2024-04-27 18:14:48] INFO root fetch - processPackages [CodeBat]: Remove: archive file [/home/abi/fetcher/tmp/codebat-0.0.2.4.tar.gz]
+[2024-04-27 18:14:48] INFO root fetch - processPackages [CheeseLog]: Remove: archive file [/home/abi/fetcher/tmp/cheeselog-1.0.0.tar.gz]
+[2024-04-27 18:14:48] INFO root fetch - processPackages [CodeBat]: Remove: archive file [/home/abi/fetcher/tmp/codebat-0.0.2.5.tar.gz]
+[2024-04-27 18:14:48] INFO root fetch - processPackages [CheeseLog]: Remove: archive file [/home/abi/fetcher/tmp/cheeselog-1.0.1.tar.gz]
+[2024-04-27 18:14:48] INFO root fetch - main [MainThread]: End processing [CodeBat]: success
+[2024-04-27 18:14:48] INFO root fetch - main [MainThread]: End processing [CheeseLog]: success
+[2024-04-27 18:14:48] INFO root fetch - processPackages [mkdocstrings]: executing diffoscope
+[2024-04-27 18:14:48] INFO root fetch - processPackages [mkdocstrings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocstrings-0.9.0.tar.gz tmp/mkdocstrings-0.9.1.tar.gz --markdown 20240427/m/mkdocstrings/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-04-27 18:14:48] INFO root fetch - processPackages [tcolorpy]: Remove: archive file [/home/abi/fetcher/tmp/tcolorpy-0.1.4.tar.gz]
+[2024-04-27 18:14:48] INFO root fetch - processPackages [tcolorpy]: Remove: archive file [/home/abi/fetcher/tmp/tcolorpy-0.1.6.tar.gz]
+[2024-04-27 18:14:48] INFO root fetch - main [MainThread]: End processing [tcolorpy]: success
+[2024-04-27 18:14:48] INFO root fetch - processPackages [mkdocstrings]: Remove: archive file [/home/abi/fetcher/tmp/mkdocstrings-0.9.0.tar.gz]
+[2024-04-27 18:14:48] INFO root fetch - processPackages [mkdocstrings]: Remove: archive file [/home/abi/fetcher/tmp/mkdocstrings-0.9.1.tar.gz]
+[2024-04-27 18:14:48] INFO root fetch - main [MainThread]: End processing [mkdocstrings]: success
+[2024-04-27 18:14:48] INFO root fetch - main [MainThread]: Store serial: [22960098]
