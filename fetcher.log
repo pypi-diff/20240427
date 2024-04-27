@@ -16268,3 +16268,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 17:05:31] INFO root fetch - processPackages [mistralrs-metal]: Remove: archive file [/home/abi/fetcher/tmp/mistralrs_metal-0.1.1.tar.gz]
 [2024-04-27 17:05:31] INFO root fetch - main [MainThread]: End processing [mistralrs-metal]: success
 [2024-04-27 17:05:31] INFO root fetch - main [MainThread]: Store serial: [22959690]
+[2024-04-27 17:07:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959690]
+[2024-04-27 17:07:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 17:07:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tcms-api
+[2024-04-27 17:07:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mypycounts
+[2024-04-27 17:07:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: py-portfolio-index
+[2024-04-27 17:07:40] INFO root fetch - processPackages [py-portfolio-index]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 17:07:40] INFO root fetch - processPackages [py-portfolio-index]: Downloading https://files.pythonhosted.org/packages/56/47/1136551b0e963bbc2d3d3fce66043142f2f536a88a5e5918b3bae66b9480/py-portfolio-index-0.0.8.tar.gz
+[2024-04-27 17:07:40] INFO root fetch - processPackages [mypycounts]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-27 17:07:40] INFO root fetch - processPackages [tcms-api]: New version: [9.0] Old Version: [8.6.0]
+[2024-04-27 17:07:40] INFO root fetch - processPackages [mypycounts]: Downloading https://files.pythonhosted.org/packages/3d/f5/e8963d369f29414dfc9c984f9740d986d5e3ad7cc3008b1a7df8e3578e88/mypycounts-0.1.0.tar.gz
+[2024-04-27 17:07:40] INFO root fetch - processPackages [tcms-api]: Downloading https://files.pythonhosted.org/packages/b8/8f/e4f456ecf417daed859183011988e4ef9541950881f21cfd2118250c357d/tcms-api-8.6.0.tar.gz
+[2024-04-27 17:07:40] INFO root fetch - processPackages [py-portfolio-index]: Downloading https://files.pythonhosted.org/packages/35/d9/e930790cd08eb7aba472719eb95421a6b5ed634f852f1eb262a0430147f6/py-portfolio-index-0.0.9.tar.gz
+[2024-04-27 17:07:40] INFO root fetch - processPackages [py-portfolio-index]: executing diffoscope
+[2024-04-27 17:07:40] INFO root fetch - processPackages [py-portfolio-index]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-portfolio-index-0.0.8.tar.gz tmp/py-portfolio-index-0.0.9.tar.gz --markdown 20240427/p/py-portfolio-index/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 17:07:40] INFO root fetch - processPackages [mypycounts]: Downloading https://files.pythonhosted.org/packages/0b/ab/29fdddb3ad5b48f378765d3baadcd04990fc1ceb42661b1ecad625b4f32a/mypycounts-0.2.0.tar.gz
+[2024-04-27 17:07:41] INFO root fetch - processPackages [mypycounts]: executing diffoscope
+[2024-04-27 17:07:41] INFO root fetch - processPackages [mypycounts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypycounts-0.1.0.tar.gz tmp/mypycounts-0.2.0.tar.gz --markdown 20240427/m/mypycounts/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-27 17:07:41] INFO root fetch - processPackages [tcms-api]: Downloading https://files.pythonhosted.org/packages/dc/9e/6511a99f4aa86dd2937a302ff81503da747e0be8a24cb2d1fee14ec00ffe/tcms-api-9.0.tar.gz
+[2024-04-27 17:07:41] INFO root fetch - processPackages [py-portfolio-index]: Remove: archive file [/home/abi/fetcher/tmp/py-portfolio-index-0.0.8.tar.gz]
+[2024-04-27 17:07:41] INFO root fetch - processPackages [py-portfolio-index]: Remove: archive file [/home/abi/fetcher/tmp/py-portfolio-index-0.0.9.tar.gz]
+[2024-04-27 17:07:41] INFO root fetch - main [MainThread]: End processing [py-portfolio-index]: success
+[2024-04-27 17:07:41] INFO root fetch - processPackages [tcms-api]: executing diffoscope
+[2024-04-27 17:07:41] INFO root fetch - processPackages [tcms-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcms-api-8.6.0.tar.gz tmp/tcms-api-9.0.tar.gz --markdown 20240427/t/tcms-api/8.6.0-9.0/README.md --exclude *.pyd
+[2024-04-27 17:07:41] INFO root fetch - processPackages [mypycounts]: Remove: archive file [/home/abi/fetcher/tmp/mypycounts-0.1.0.tar.gz]
+[2024-04-27 17:07:41] INFO root fetch - processPackages [mypycounts]: Remove: archive file [/home/abi/fetcher/tmp/mypycounts-0.2.0.tar.gz]
+[2024-04-27 17:07:41] INFO root fetch - main [MainThread]: End processing [mypycounts]: success
+[2024-04-27 17:07:42] INFO root fetch - processPackages [tcms-api]: Remove: archive file [/home/abi/fetcher/tmp/tcms-api-8.6.0.tar.gz]
+[2024-04-27 17:07:42] INFO root fetch - processPackages [tcms-api]: Remove: archive file [/home/abi/fetcher/tmp/tcms-api-9.0.tar.gz]
+[2024-04-27 17:07:42] INFO root fetch - main [MainThread]: End processing [tcms-api]: success
+[2024-04-27 17:07:42] INFO root fetch - main [MainThread]: Store serial: [22959699]
