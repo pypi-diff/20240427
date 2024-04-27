@@ -10524,3 +10524,33 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 09:44:59] INFO root fetch - processPackages [AutoRAG]: Remove: archive file [/home/abi/fetcher/tmp/autorag-0.1.6.tar.gz]
 [2024-04-27 09:44:59] INFO root fetch - main [MainThread]: End processing [AutoRAG]: success
 [2024-04-27 09:44:59] INFO root fetch - main [MainThread]: Store serial: [22957280]
+[2024-04-27 09:47:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957280]
+[2024-04-27 09:47:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 09:47:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypipr
+[2024-04-27 09:47:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-115
+[2024-04-27 09:47:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Deepurify
+[2024-04-27 09:47:09] INFO root fetch - processPackages [Deepurify]: New version: [2.3.0] Old Version: [1.2.4]
+[2024-04-27 09:47:09] INFO root fetch - processPackages [python-115]: New version: [0.0.6.8] Old Version: [0.0.6.7]
+[2024-04-27 09:47:09] INFO root fetch - processPackages [Deepurify]: Downloading https://files.pythonhosted.org/packages/1d/df/7f75f442dafd44e41865ba336123e12da39769573fd1d5cbe148d2de4b3c/Deepurify-1.2.4-py3-none-any.whl
+[2024-04-27 09:47:09] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/de/8d/ec61257ef193c865a02a5f79934cb240baa2fd76e5142c0c07b754700e38/python_115-0.0.6.7.tar.gz
+[2024-04-27 09:47:09] INFO root fetch - processPackages [pypipr]: New version: [1.0.96] Old Version: [1.0.95]
+[2024-04-27 09:47:09] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/83/1b/02c5c1573a046bb5a1366a2e00d90d412c57480b383c82e477c5c65576ee/pypipr-1.0.95.tar.gz
+[2024-04-27 09:47:09] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/0d/82/b9dc2663abe8e57bd0094c411156e50e539a5716a7046c349ddff3125ecc/python_115-0.0.6.8.tar.gz
+[2024-04-27 09:47:09] INFO root fetch - processPackages [Deepurify]: Downloading https://files.pythonhosted.org/packages/22/c0/ff1397ea39b0255e29c124503495e621f06e800cf51e7136f80c4c64a8e8/Deepurify-2.3.0.tar.gz
+[2024-04-27 09:47:10] INFO root fetch - processPackages [python-115]: executing diffoscope
+[2024-04-27 09:47:10] INFO root fetch - processPackages [python-115]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_115-0.0.6.7.tar.gz tmp/python_115-0.0.6.8.tar.gz --markdown 20240427/p/python-115/0.0.6.7-0.0.6.8/README.md --exclude *.pyd
+[2024-04-27 09:47:10] INFO root fetch - processPackages [Deepurify]: executing diffoscope
+[2024-04-27 09:47:10] INFO root fetch - processPackages [Deepurify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Deepurify-1.2.4-py3-none-any.whl.zip tmp/Deepurify-2.3.0.tar.gz --markdown 20240427/D/Deepurify/1.2.4-2.3.0/README.md --exclude *.pyd
+[2024-04-27 09:47:10] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/ea/22/1192d976370f6b960b684c7ef1f2e257012244c43bf4b155a592176d39a5/pypipr-1.0.96-py3-none-any.whl
+[2024-04-27 09:47:10] INFO root fetch - processPackages [pypipr]: executing diffoscope
+[2024-04-27 09:47:10] INFO root fetch - processPackages [pypipr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypipr-1.0.95.tar.gz tmp/pypipr-1.0.96-py3-none-any.whl.zip --markdown 20240427/p/pypipr/1.0.95-1.0.96/README.md --exclude *.pyd
+[2024-04-27 09:47:10] INFO root fetch - processPackages [Deepurify]: Remove: archive file [/home/abi/fetcher/tmp/Deepurify-1.2.4-py3-none-any.whl.zip]
+[2024-04-27 09:47:10] INFO root fetch - processPackages [Deepurify]: Remove: archive file [/home/abi/fetcher/tmp/Deepurify-2.3.0.tar.gz]
+[2024-04-27 09:47:10] INFO root fetch - main [MainThread]: End processing [Deepurify]: success
+[2024-04-27 09:47:10] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.6.7.tar.gz]
+[2024-04-27 09:47:10] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.6.8.tar.gz]
+[2024-04-27 09:47:10] INFO root fetch - main [MainThread]: End processing [python-115]: success
+[2024-04-27 09:47:10] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.95.tar.gz]
+[2024-04-27 09:47:10] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.96-py3-none-any.whl.zip]
+[2024-04-27 09:47:10] INFO root fetch - main [MainThread]: End processing [pypipr]: success
+[2024-04-27 09:47:10] INFO root fetch - main [MainThread]: Store serial: [22957288]
