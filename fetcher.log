@@ -10356,3 +10356,33 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 09:23:22] INFO root fetch - processPackages [mutechromecastads]: Remove: archive file [/home/abi/fetcher/tmp/mutechromecastads-0.1.1.tar.gz]
 [2024-04-27 09:23:22] INFO root fetch - main [MainThread]: End processing [mutechromecastads]: success
 [2024-04-27 09:23:22] INFO root fetch - main [MainThread]: Store serial: [22957205]
+[2024-04-27 09:25:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957205]
+[2024-04-27 09:25:32] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 09:25:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-fieldservice
+[2024-04-27 09:25:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jetline
+[2024-04-27 09:25:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sharded-google-photos
+[2024-04-27 09:25:32] INFO root fetch - processPackages [jetline]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-27 09:25:32] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/e5/37/824145f843c309cf2a3cb5b3a950f60324637cd646c1328501fe49e250ef/jetline-0.1.1.tar.gz
+[2024-04-27 09:25:32] INFO root fetch - processPackages [sharded-google-photos]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-04-27 09:25:32] INFO root fetch - processPackages [odoo-addon-fieldservice]: New version: [17.0.1.2.0] Old Version: [17.0.1.1.0.9]
+[2024-04-27 09:25:32] INFO root fetch - processPackages [odoo-addon-fieldservice]: Downloading https://files.pythonhosted.org/packages/2e/13/bfa19eb0f551525c779e88f1ae3b14f4e4b13798e2dee6722d120f808b73/odoo_addon_fieldservice-17.0.1.1.0.9-py3-none-any.whl
+[2024-04-27 09:25:32] INFO root fetch - processPackages [sharded-google-photos]: Downloading https://files.pythonhosted.org/packages/02/53/881f0ea746e32f9abceb0d74f2bb7928b4608fd3220cd2325c79b7b5ca99/sharded_google_photos-0.2.2.tar.gz
+[2024-04-27 09:25:32] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/b6/e6/b38dd1ba89a151f269fb2933c2ae8c7931018b8a8127636b88330ab479ca/jetline-0.1.2.tar.gz
+[2024-04-27 09:25:32] INFO root fetch - processPackages [jetline]: executing diffoscope
+[2024-04-27 09:25:32] INFO root fetch - processPackages [jetline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jetline-0.1.1.tar.gz tmp/jetline-0.1.2.tar.gz --markdown 20240427/j/jetline/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-27 09:25:32] INFO root fetch - processPackages [odoo-addon-fieldservice]: Downloading https://files.pythonhosted.org/packages/8c/65/85b0932879c1671f7fd60840c923fdafe1a5f2084cd633cd6d6935605751/odoo_addon_fieldservice-17.0.1.2.0-py3-none-any.whl
+[2024-04-27 09:25:32] INFO root fetch - processPackages [sharded-google-photos]: Downloading https://files.pythonhosted.org/packages/41/49/13b0e2f0d8f6b7e18a7adda4b4c7488df1615e3677a942505a3d95f44299/sharded_google_photos-0.2.3.tar.gz
+[2024-04-27 09:25:32] INFO root fetch - processPackages [odoo-addon-fieldservice]: executing diffoscope
+[2024-04-27 09:25:32] INFO root fetch - processPackages [odoo-addon-fieldservice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_fieldservice-17.0.1.1.0.9-py3-none-any.whl.zip tmp/odoo_addon_fieldservice-17.0.1.2.0-py3-none-any.whl.zip --markdown 20240427/o/odoo-addon-fieldservice/17.0.1.1.0.9-17.0.1.2.0/README.md --exclude *.pyd
+[2024-04-27 09:25:33] INFO root fetch - processPackages [sharded-google-photos]: executing diffoscope
+[2024-04-27 09:25:33] INFO root fetch - processPackages [sharded-google-photos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sharded_google_photos-0.2.2.tar.gz tmp/sharded_google_photos-0.2.3.tar.gz --markdown 20240427/s/sharded-google-photos/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-04-27 09:25:33] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.1.tar.gz]
+[2024-04-27 09:25:33] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.2.tar.gz]
+[2024-04-27 09:25:33] INFO root fetch - main [MainThread]: End processing [jetline]: success
+[2024-04-27 09:25:33] INFO root fetch - processPackages [sharded-google-photos]: Remove: archive file [/home/abi/fetcher/tmp/sharded_google_photos-0.2.2.tar.gz]
+[2024-04-27 09:25:33] INFO root fetch - processPackages [sharded-google-photos]: Remove: archive file [/home/abi/fetcher/tmp/sharded_google_photos-0.2.3.tar.gz]
+[2024-04-27 09:25:33] INFO root fetch - main [MainThread]: End processing [sharded-google-photos]: success
+[2024-04-27 09:25:33] INFO root fetch - processPackages [odoo-addon-fieldservice]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fieldservice-17.0.1.1.0.9-py3-none-any.whl.zip]
+[2024-04-27 09:25:33] INFO root fetch - processPackages [odoo-addon-fieldservice]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fieldservice-17.0.1.2.0-py3-none-any.whl.zip]
+[2024-04-27 09:25:33] INFO root fetch - main [MainThread]: End processing [odoo-addon-fieldservice]: success
+[2024-04-27 09:25:33] INFO root fetch - main [MainThread]: Store serial: [22957213]
