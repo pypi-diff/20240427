@@ -7489,3 +7489,15 @@ EOFError: EOF read where object expected
 [2024-04-27 05:08:10] INFO root fetch - processPackages [pytubefix]: Remove: archive file [/home/abi/fetcher/tmp/pytubefix-5.2rc1.tar.gz]
 [2024-04-27 05:08:10] INFO root fetch - main [MainThread]: End processing [pytubefix]: success
 [2024-04-27 05:08:10] INFO root fetch - main [MainThread]: Store serial: [22956169]
+[2024-04-27 05:10:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956169]
+[2024-04-27 05:10:19] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 05:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyrotgfork
+[2024-04-27 05:10:19] INFO root fetch - processPackages [pyrotgfork]: New version: [2.1.26] Old Version: [2.1.25]
+[2024-04-27 05:10:19] INFO root fetch - processPackages [pyrotgfork]: Downloading https://files.pythonhosted.org/packages/d3/42/cd0c2a8e47640c276005cde27c4ee74a46d1453e574857a8977772abcb5a/pyrotgfork-2.1.25.tar.gz
+[2024-04-27 05:10:19] INFO root fetch - processPackages [pyrotgfork]: Downloading https://files.pythonhosted.org/packages/f6/f2/bf6349e6b9604cd9aa464d1e7fab5ceae06f39dd9d170b2489ad65389992/pyrotgfork-2.1.26.tar.gz
+[2024-04-27 05:10:20] INFO root fetch - processPackages [pyrotgfork]: executing diffoscope
+[2024-04-27 05:10:20] INFO root fetch - processPackages [pyrotgfork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrotgfork-2.1.25.tar.gz tmp/pyrotgfork-2.1.26.tar.gz --markdown 20240427/p/pyrotgfork/2.1.25-2.1.26/README.md --exclude *.pyd
+[2024-04-27 05:10:21] INFO root fetch - processPackages [pyrotgfork]: Remove: archive file [/home/abi/fetcher/tmp/pyrotgfork-2.1.25.tar.gz]
+[2024-04-27 05:10:21] INFO root fetch - processPackages [pyrotgfork]: Remove: archive file [/home/abi/fetcher/tmp/pyrotgfork-2.1.26.tar.gz]
+[2024-04-27 05:10:21] INFO root fetch - main [MainThread]: End processing [pyrotgfork]: success
+[2024-04-27 05:10:21] INFO root fetch - main [MainThread]: Store serial: [22956172]
