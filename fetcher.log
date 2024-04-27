@@ -17190,3 +17190,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 18:08:08] INFO root fetch - processPackages [sage-conf]: Remove: archive file [/home/abi/fetcher/tmp/sage-conf-9.8rc0.tar.gz]
 [2024-04-27 18:08:08] INFO root fetch - main [MainThread]: End processing [sage-conf]: success
 [2024-04-27 18:08:08] INFO root fetch - main [MainThread]: Store serial: [22960065]
+[2024-04-27 18:10:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960065]
+[2024-04-27 18:10:20] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-27 18:10:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: clovers_setu_collection
+[2024-04-27 18:10:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: frost-rs
+[2024-04-27 18:10:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: maling
+[2024-04-27 18:10:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: uk-bin-collection
+[2024-04-27 18:10:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ziamath
+[2024-04-27 18:10:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: swiss-army-man
+[2024-04-27 18:10:20] WARNING root fetch - processPackages [frost-rs]: Skipping, unable to determine old version
+[2024-04-27 18:10:20] INFO root fetch - main [MainThread]: End processing [frost-rs] error
+[2024-04-27 18:10:20] INFO root fetch - processPackages [swiss-army-man]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-04-27 18:10:20] INFO root fetch - processPackages [uk-bin-collection]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-27 18:10:20] INFO root fetch - processPackages [swiss-army-man]: Downloading https://files.pythonhosted.org/packages/48/1f/294f600f1fa28cd18c161440c03fb3b30e0c131a86552d9308f61aa90137/swiss_army_man-0.1.7.tar.gz
+[2024-04-27 18:10:20] INFO root fetch - processPackages [ziamath]: New version: [0.9] Old Version: [0.8.1]
+[2024-04-27 18:10:20] INFO root fetch - processPackages [clovers_setu_collection]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-27 18:10:20] INFO root fetch - processPackages [uk-bin-collection]: Downloading https://files.pythonhosted.org/packages/f6/3c/e25a4eb0a28d67a6748fdb9acd0380565c1585a1ff833d282a9d2acc90a1/uk_bin_collection-0.8.0.tar.gz
+[2024-04-27 18:10:20] INFO root fetch - processPackages [maling]: New version: [2.2.9] Old Version: [2.2.8]
+[2024-04-27 18:10:20] INFO root fetch - processPackages [clovers_setu_collection]: Downloading https://files.pythonhosted.org/packages/e8/41/5cc655f355a2c8cf63bfcb9af5f180a71c9b86c296fa44e9c8a995669b35/clovers_setu_collection-0.1.0.tar.gz
+[2024-04-27 18:10:20] INFO root fetch - processPackages [ziamath]: Downloading https://files.pythonhosted.org/packages/60/09/1e33af8fcfa2544fb46bdf55402e00c0160682a9a5e435841e1dd9bb1063/ziamath-0.8.1.tar.gz
+[2024-04-27 18:10:20] INFO root fetch - processPackages [swiss-army-man]: Downloading https://files.pythonhosted.org/packages/56/82/24e0c66ae73179bc5f3180da018b1c49aadae130d6093a4ba1f45acd2afa/swiss_army_man-0.1.9.tar.gz
+[2024-04-27 18:10:20] INFO root fetch - processPackages [maling]: Downloading https://files.pythonhosted.org/packages/86/1b/deceab0c97c1dac341efba138237ce853f88c58360b8efe1dfb57483c957/maling-2.2.8.tar.gz
+[2024-04-27 18:10:20] INFO root fetch - processPackages [uk-bin-collection]: Downloading https://files.pythonhosted.org/packages/55/0e/a2cb2057f203540273a20c67ef245d13d61a542934302f0475c939494a96/uk_bin_collection-0.9.0.tar.gz
+[2024-04-27 18:10:20] INFO root fetch - processPackages [swiss-army-man]: executing diffoscope
+[2024-04-27 18:10:20] INFO root fetch - processPackages [swiss-army-man]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swiss_army_man-0.1.7.tar.gz tmp/swiss_army_man-0.1.9.tar.gz --markdown 20240427/s/swiss-army-man/0.1.7-0.1.9/README.md --exclude *.pyd
+[2024-04-27 18:10:20] INFO root fetch - processPackages [uk-bin-collection]: executing diffoscope
+[2024-04-27 18:10:20] INFO root fetch - processPackages [uk-bin-collection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uk_bin_collection-0.8.0.tar.gz tmp/uk_bin_collection-0.9.0.tar.gz --markdown 20240427/u/uk-bin-collection/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-27 18:10:21] INFO root fetch - processPackages [clovers_setu_collection]: Downloading https://files.pythonhosted.org/packages/71/53/0ac54a0377a8ca30fc5906f8d1731d0595de1fbb8f59c1c63a875c135ff4/clovers_setu_collection-0.1.1.tar.gz
+[2024-04-27 18:10:21] INFO root fetch - processPackages [maling]: Downloading https://files.pythonhosted.org/packages/ca/bf/64e54e99888877fd017f388e5b2d0c5531b04892e3792f7502c3ab955027/maling-2.2.9.tar.gz
+[2024-04-27 18:10:21] INFO root fetch - processPackages [clovers_setu_collection]: executing diffoscope
+[2024-04-27 18:10:21] INFO root fetch - processPackages [clovers_setu_collection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clovers_setu_collection-0.1.0.tar.gz tmp/clovers_setu_collection-0.1.1.tar.gz --markdown 20240427/c/clovers_setu_collection/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-27 18:10:21] INFO root fetch - processPackages [ziamath]: Downloading https://files.pythonhosted.org/packages/86/3e/6933c9b8bed04b9e22b288c47bc1055b2c0199bf51028dac1a2b36fe2b35/ziamath-0.9.tar.gz
+[2024-04-27 18:10:21] INFO root fetch - processPackages [maling]: executing diffoscope
+[2024-04-27 18:10:21] INFO root fetch - processPackages [maling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maling-2.2.8.tar.gz tmp/maling-2.2.9.tar.gz --markdown 20240427/m/maling/2.2.8-2.2.9/README.md --exclude *.pyd
+[2024-04-27 18:10:21] INFO root fetch - processPackages [ziamath]: executing diffoscope
+[2024-04-27 18:10:21] INFO root fetch - processPackages [ziamath]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ziamath-0.8.1.tar.gz tmp/ziamath-0.9.tar.gz --markdown 20240427/z/ziamath/0.8.1-0.9/README.md --exclude *.pyd
+[2024-04-27 18:10:21] INFO root fetch - processPackages [clovers_setu_collection]: Remove: archive file [/home/abi/fetcher/tmp/clovers_setu_collection-0.1.0.tar.gz]
+[2024-04-27 18:10:21] INFO root fetch - processPackages [clovers_setu_collection]: Remove: archive file [/home/abi/fetcher/tmp/clovers_setu_collection-0.1.1.tar.gz]
+[2024-04-27 18:10:21] INFO root fetch - main [MainThread]: End processing [clovers_setu_collection]: success
+[2024-04-27 18:10:21] INFO root fetch - processPackages [swiss-army-man]: Remove: archive file [/home/abi/fetcher/tmp/swiss_army_man-0.1.7.tar.gz]
+[2024-04-27 18:10:21] INFO root fetch - processPackages [swiss-army-man]: Remove: archive file [/home/abi/fetcher/tmp/swiss_army_man-0.1.9.tar.gz]
+[2024-04-27 18:10:21] INFO root fetch - main [MainThread]: End processing [swiss-army-man]: success
+[2024-04-27 18:10:21] INFO root fetch - processPackages [uk-bin-collection]: Remove: archive file [/home/abi/fetcher/tmp/uk_bin_collection-0.8.0.tar.gz]
+[2024-04-27 18:10:21] INFO root fetch - processPackages [uk-bin-collection]: Remove: archive file [/home/abi/fetcher/tmp/uk_bin_collection-0.9.0.tar.gz]
+[2024-04-27 18:10:21] INFO root fetch - main [MainThread]: End processing [uk-bin-collection]: success
+[2024-04-27 18:10:22] INFO root fetch - processPackages [ziamath]: Remove: archive file [/home/abi/fetcher/tmp/ziamath-0.8.1.tar.gz]
+[2024-04-27 18:10:22] INFO root fetch - processPackages [ziamath]: Remove: archive file [/home/abi/fetcher/tmp/ziamath-0.9.tar.gz]
+[2024-04-27 18:10:22] INFO root fetch - main [MainThread]: End processing [ziamath]: success
+[2024-04-27 18:10:23] INFO root fetch - processPackages [maling]: Remove: archive file [/home/abi/fetcher/tmp/maling-2.2.8.tar.gz]
+[2024-04-27 18:10:23] INFO root fetch - processPackages [maling]: Remove: archive file [/home/abi/fetcher/tmp/maling-2.2.9.tar.gz]
+[2024-04-27 18:10:23] INFO root fetch - main [MainThread]: End processing [maling]: success
+[2024-04-27 18:10:23] INFO root fetch - main [MainThread]: Store serial: [22960083]
