@@ -19201,3 +19201,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 20:25:02] INFO root fetch - processPackages [PlexTraktSync]: Remove: archive file [/home/abi/fetcher/tmp/plextraktsync-0.30.0.tar.gz]
 [2024-04-27 20:25:02] INFO root fetch - main [MainThread]: End processing [PlexTraktSync]: success
 [2024-04-27 20:25:02] INFO root fetch - main [MainThread]: Store serial: [22961062]
+[2024-04-27 20:27:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961062]
+[2024-04-27 20:27:16] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 20:27:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: timed-decorator
+[2024-04-27 20:27:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: twitch-dl
+[2024-04-27 20:27:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openav
+[2024-04-27 20:27:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: automated-interpretability
+[2024-04-27 20:27:16] INFO root fetch - processPackages [timed-decorator]: New version: [1.2.0] Old Version: [1.1.1]
+[2024-04-27 20:27:16] INFO root fetch - processPackages [openav]: New version: [1.0.0a5] Old Version: [1.0.0a4]
+[2024-04-27 20:27:16] INFO root fetch - processPackages [timed-decorator]: Downloading https://files.pythonhosted.org/packages/b0/a4/5b9583cddd55c58c59f922e4aeef721c535acf948784f709e41b413e5d7b/timed_decorator-1.1.1.tar.gz
+[2024-04-27 20:27:16] WARNING root fetch - processPackages [automated-interpretability]: Skipping, unable to determine old version
+[2024-04-27 20:27:16] INFO root fetch - main [MainThread]: End processing [automated-interpretability] error
+[2024-04-27 20:27:16] INFO root fetch - processPackages [openav]: Downloading https://files.pythonhosted.org/packages/50/c0/15b6758c801d369cc001ccac483747e0668c57c4018f0f6a0f716d4292db/openav-1.0.0a4.tar.gz
+[2024-04-27 20:27:17] INFO root fetch - processPackages [twitch-dl]: New version: [2.3.0] Old Version: [2.2.4]
+[2024-04-27 20:27:17] INFO root fetch - processPackages [timed-decorator]: Downloading https://files.pythonhosted.org/packages/34/20/510d806156b85668a40a0ccd3293dd9b33be1994f67e036eaa9e6caa668c/timed_decorator-1.2.0.tar.gz
+[2024-04-27 20:27:17] INFO root fetch - processPackages [timed-decorator]: executing diffoscope
+[2024-04-27 20:27:17] INFO root fetch - processPackages [openav]: Downloading https://files.pythonhosted.org/packages/02/da/55db671dbeeb5c6dfd71ab6d669487f09a70d0b409122751be822a36e936/openav-1.0.0a5.tar.gz
+[2024-04-27 20:27:17] INFO root fetch - processPackages [timed-decorator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/timed_decorator-1.1.1.tar.gz tmp/timed_decorator-1.2.0.tar.gz --markdown 20240427/t/timed-decorator/1.1.1-1.2.0/README.md --exclude *.pyd
+[2024-04-27 20:27:17] INFO root fetch - processPackages [twitch-dl]: Downloading https://files.pythonhosted.org/packages/b5/3e/1f31f8c94c22408a9b63078394d00db6262e0d89cec76bb4480a1c9d987c/twitch_dl-2.2.4.tar.gz
+[2024-04-27 20:27:17] INFO root fetch - processPackages [openav]: executing diffoscope
+[2024-04-27 20:27:17] INFO root fetch - processPackages [openav]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openav-1.0.0a4.tar.gz tmp/openav-1.0.0a5.tar.gz --markdown 20240427/o/openav/1.0.0a4-1.0.0a5/README.md --exclude *.pyd
+[2024-04-27 20:27:17] INFO root fetch - processPackages [twitch-dl]: Downloading https://files.pythonhosted.org/packages/31/f0/c3e6f7c77d216110a7e8c69b648c3aba70de8b747b1e6e0aa58e42849abe/twitch_dl-2.3.0.tar.gz
+[2024-04-27 20:27:17] INFO root fetch - processPackages [twitch-dl]: executing diffoscope
+[2024-04-27 20:27:17] INFO root fetch - processPackages [twitch-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitch_dl-2.2.4.tar.gz tmp/twitch_dl-2.3.0.tar.gz --markdown 20240427/t/twitch-dl/2.2.4-2.3.0/README.md --exclude *.pyd
+[2024-04-27 20:27:17] INFO root fetch - processPackages [timed-decorator]: Remove: archive file [/home/abi/fetcher/tmp/timed_decorator-1.1.1.tar.gz]
+[2024-04-27 20:27:17] INFO root fetch - processPackages [timed-decorator]: Remove: archive file [/home/abi/fetcher/tmp/timed_decorator-1.2.0.tar.gz]
+[2024-04-27 20:27:17] INFO root fetch - main [MainThread]: End processing [timed-decorator]: success
+[2024-04-27 20:27:17] INFO root fetch - processPackages [openav]: Remove: archive file [/home/abi/fetcher/tmp/openav-1.0.0a4.tar.gz]
+[2024-04-27 20:27:17] INFO root fetch - processPackages [openav]: Remove: archive file [/home/abi/fetcher/tmp/openav-1.0.0a5.tar.gz]
+[2024-04-27 20:27:17] INFO root fetch - main [MainThread]: End processing [openav]: success
+[2024-04-27 20:27:18] INFO root fetch - processPackages [twitch-dl]: Remove: archive file [/home/abi/fetcher/tmp/twitch_dl-2.2.4.tar.gz]
+[2024-04-27 20:27:18] INFO root fetch - processPackages [twitch-dl]: Remove: archive file [/home/abi/fetcher/tmp/twitch_dl-2.3.0.tar.gz]
+[2024-04-27 20:27:18] INFO root fetch - main [MainThread]: End processing [twitch-dl]: success
+[2024-04-27 20:27:18] INFO root fetch - main [MainThread]: Store serial: [22961076]
