@@ -21239,3 +21239,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 23:16:38] INFO root fetch - processPackages [multi-vector-simulator]: Remove: archive file [/home/abi/fetcher/tmp/multi-vector-simulator-1.1.0rc1.tar.gz]
 [2024-04-27 23:16:38] INFO root fetch - main [MainThread]: End processing [multi-vector-simulator]: success
 [2024-04-27 23:16:38] INFO root fetch - main [MainThread]: Store serial: [22962030]
+[2024-04-27 23:18:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962030]
+[2024-04-27 23:18:46] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 23:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: termapod
+[2024-04-27 23:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: amjd
+[2024-04-27 23:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: maling
+[2024-04-27 23:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tradedangerous
+[2024-04-27 23:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: reldplayer
+[2024-04-27 23:18:47] INFO root fetch - processPackages [amjd]: New version: [1.1] Old Version: [1.0]
+[2024-04-27 23:18:47] INFO root fetch - processPackages [tradedangerous]: New version: [11.0.6] Old Version: [11.0.5]
+[2024-04-27 23:18:47] INFO root fetch - processPackages [maling]: New version: [2.2.9] Old Version: [2.2.8]
+[2024-04-27 23:18:47] WARNING root fetch - processPackages [termapod]: Skipping, unable to determine old version
+[2024-04-27 23:18:47] INFO root fetch - main [MainThread]: End processing [termapod] error
+[2024-04-27 23:18:47] INFO root fetch - processPackages [reldplayer]: New version: [0.0.1a2] Old Version: [0.0.1a1]
+[2024-04-27 23:18:47] INFO root fetch - processPackages [tradedangerous]: Downloading https://files.pythonhosted.org/packages/97/88/b4927a80825b48684f363b315da44bb9db682b2ee926fd05b32a2fdafb47/tradedangerous-11.0.5.tar.gz
+[2024-04-27 23:18:47] INFO root fetch - processPackages [maling]: Downloading https://files.pythonhosted.org/packages/86/1b/deceab0c97c1dac341efba138237ce853f88c58360b8efe1dfb57483c957/maling-2.2.8.tar.gz
+[2024-04-27 23:18:47] INFO root fetch - processPackages [amjd]: Downloading https://files.pythonhosted.org/packages/35/5c/ee339621766420b282779c620afa798bfd03eff5573aaf66983881d4e756/amjd-1.0.tar.gz
+[2024-04-27 23:18:47] INFO root fetch - processPackages [reldplayer]: Downloading https://files.pythonhosted.org/packages/2e/7a/ee32e4a880baf149cbc34267d6ae2461bc4f0d0975815e0dd260b3a0f490/reldplayer-0.0.1a1.tar.gz
+[2024-04-27 23:18:47] INFO root fetch - processPackages [maling]: Downloading https://files.pythonhosted.org/packages/ca/bf/64e54e99888877fd017f388e5b2d0c5531b04892e3792f7502c3ab955027/maling-2.2.9.tar.gz
+[2024-04-27 23:18:47] INFO root fetch - processPackages [amjd]: Downloading https://files.pythonhosted.org/packages/cc/ce/de4b528a048a235b4891ff562f539227419c40f25eede99dd1e4e06c5fe5/amjd-1.1.tar.gz
+[2024-04-27 23:18:47] INFO root fetch - processPackages [tradedangerous]: Downloading https://files.pythonhosted.org/packages/54/cc/315e4abecbf86f31887a0c0ae32c9dfe2ceefbd5cd4f3520f8f9ff9eec9e/tradedangerous-11.0.6.tar.gz
+[2024-04-27 23:18:47] INFO root fetch - processPackages [maling]: executing diffoscope
+[2024-04-27 23:18:47] INFO root fetch - processPackages [maling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maling-2.2.8.tar.gz tmp/maling-2.2.9.tar.gz --markdown 20240427/m/maling/2.2.8-2.2.9/README.md --exclude *.pyd
+[2024-04-27 23:18:47] INFO root fetch - processPackages [amjd]: executing diffoscope
+[2024-04-27 23:18:47] INFO root fetch - processPackages [amjd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amjd-1.0.tar.gz tmp/amjd-1.1.tar.gz --markdown 20240427/a/amjd/1.0-1.1/README.md --exclude *.pyd
+[2024-04-27 23:18:47] INFO root fetch - processPackages [reldplayer]: Downloading https://files.pythonhosted.org/packages/68/06/4933f3d8d6233adfb142095eb2dad9a7b60566fe0f0c6985988883c961d6/reldplayer-0.0.1a2.tar.gz
+[2024-04-27 23:18:47] INFO root fetch - processPackages [tradedangerous]: executing diffoscope
+[2024-04-27 23:18:47] INFO root fetch - processPackages [tradedangerous]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tradedangerous-11.0.5.tar.gz tmp/tradedangerous-11.0.6.tar.gz --markdown 20240427/t/tradedangerous/11.0.5-11.0.6/README.md --exclude *.pyd
+[2024-04-27 23:18:47] INFO root fetch - processPackages [reldplayer]: executing diffoscope
+[2024-04-27 23:18:47] INFO root fetch - processPackages [reldplayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reldplayer-0.0.1a1.tar.gz tmp/reldplayer-0.0.1a2.tar.gz --markdown 20240427/r/reldplayer/0.0.1a1-0.0.1a2/README.md --exclude *.pyd
+[2024-04-27 23:18:48] INFO root fetch - processPackages [amjd]: Remove: archive file [/home/abi/fetcher/tmp/amjd-1.0.tar.gz]
+[2024-04-27 23:18:48] INFO root fetch - processPackages [amjd]: Remove: archive file [/home/abi/fetcher/tmp/amjd-1.1.tar.gz]
+[2024-04-27 23:18:48] INFO root fetch - main [MainThread]: End processing [amjd]: success
+[2024-04-27 23:18:48] INFO root fetch - processPackages [reldplayer]: Remove: archive file [/home/abi/fetcher/tmp/reldplayer-0.0.1a1.tar.gz]
+[2024-04-27 23:18:48] INFO root fetch - processPackages [reldplayer]: Remove: archive file [/home/abi/fetcher/tmp/reldplayer-0.0.1a2.tar.gz]
+[2024-04-27 23:18:48] INFO root fetch - main [MainThread]: End processing [reldplayer]: success
+[2024-04-27 23:18:48] INFO root fetch - processPackages [tradedangerous]: Remove: archive file [/home/abi/fetcher/tmp/tradedangerous-11.0.5.tar.gz]
+[2024-04-27 23:18:48] INFO root fetch - processPackages [tradedangerous]: Remove: archive file [/home/abi/fetcher/tmp/tradedangerous-11.0.6.tar.gz]
+[2024-04-27 23:18:48] INFO root fetch - main [MainThread]: End processing [tradedangerous]: success
+[2024-04-27 23:18:49] INFO root fetch - processPackages [maling]: Remove: archive file [/home/abi/fetcher/tmp/maling-2.2.8.tar.gz]
+[2024-04-27 23:18:49] INFO root fetch - processPackages [maling]: Remove: archive file [/home/abi/fetcher/tmp/maling-2.2.9.tar.gz]
+[2024-04-27 23:18:49] INFO root fetch - main [MainThread]: End processing [maling]: success
+[2024-04-27 23:18:49] INFO root fetch - main [MainThread]: Store serial: [22962046]
