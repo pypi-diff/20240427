@@ -10990,3 +10990,15 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 10:39:31] INFO root fetch - processPackages [moptipyapps]: Remove: archive file [/home/abi/fetcher/tmp/moptipyapps-0.8.9.tar.gz]
 [2024-04-27 10:39:31] INFO root fetch - main [MainThread]: End processing [moptipyapps]: success
 [2024-04-27 10:39:31] INFO root fetch - main [MainThread]: Store serial: [22957471]
+[2024-04-27 10:41:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957471]
+[2024-04-27 10:41:41] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 10:41:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: geospaNN
+[2024-04-27 10:41:41] INFO root fetch - processPackages [geospaNN]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-27 10:41:41] INFO root fetch - processPackages [geospaNN]: Downloading https://files.pythonhosted.org/packages/54/72/3915c84262b891b42101a536f96506fea07a2a6bf8042c27f376083f128a/geospann-0.1.1.tar.gz
+[2024-04-27 10:41:42] INFO root fetch - processPackages [geospaNN]: Downloading https://files.pythonhosted.org/packages/48/aa/2a25224ad2e6766787d0f8de8515f940652e95c0c40004c855876d4a02e4/geospann-0.1.2.tar.gz
+[2024-04-27 10:41:42] INFO root fetch - processPackages [geospaNN]: executing diffoscope
+[2024-04-27 10:41:42] INFO root fetch - processPackages [geospaNN]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geospann-0.1.1.tar.gz tmp/geospann-0.1.2.tar.gz --markdown 20240427/g/geospaNN/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-27 10:41:43] INFO root fetch - processPackages [geospaNN]: Remove: archive file [/home/abi/fetcher/tmp/geospann-0.1.1.tar.gz]
+[2024-04-27 10:41:43] INFO root fetch - processPackages [geospaNN]: Remove: archive file [/home/abi/fetcher/tmp/geospann-0.1.2.tar.gz]
+[2024-04-27 10:41:43] INFO root fetch - main [MainThread]: End processing [geospaNN]: success
+[2024-04-27 10:41:43] INFO root fetch - main [MainThread]: Store serial: [22957474]
