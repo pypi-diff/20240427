@@ -10756,3 +10756,29 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 10:09:00] INFO root fetch - processPackages [c4t]: Remove: archive file [/home/abi/fetcher/tmp/c4t-1.2.4.tar.gz]
 [2024-04-27 10:09:00] INFO root fetch - main [MainThread]: End processing [c4t]: success
 [2024-04-27 10:09:00] INFO root fetch - main [MainThread]: Store serial: [22957366]
+[2024-04-27 10:11:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957366]
+[2024-04-27 10:11:09] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-27 10:13:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957367]
+[2024-04-27 10:13:15] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 10:13:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pygpt-net
+[2024-04-27 10:13:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nestipy-peewee
+[2024-04-27 10:13:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sssekai
+[2024-04-27 10:13:15] INFO root fetch - processPackages [pygpt-net]: New version: [2.1.9] Old Version: [2.1.80]
+[2024-04-27 10:13:15] WARNING root fetch - processPackages [nestipy-peewee]: Skipping, unable to determine old version
+[2024-04-27 10:13:15] INFO root fetch - main [MainThread]: End processing [nestipy-peewee] error
+[2024-04-27 10:13:15] INFO root fetch - processPackages [sssekai]: New version: [0.0.8] Old Version: [0.0.6]
+[2024-04-27 10:13:15] INFO root fetch - processPackages [sssekai]: Downloading https://files.pythonhosted.org/packages/42/ea/f45378b6ddcc1e8239a339d3e645e7c7108c3554a664827402262ecd6946/sssekai-0.0.6.tar.gz
+[2024-04-27 10:13:15] INFO root fetch - processPackages [pygpt-net]: Downloading https://files.pythonhosted.org/packages/79/84/3d582253bbac85ebffa015c0677ffeb187f55b03df2c64f88b1d8a1434d1/pygpt_net-2.1.80.tar.gz
+[2024-04-27 10:13:15] INFO root fetch - processPackages [sssekai]: Downloading https://files.pythonhosted.org/packages/a7/6f/a9433202db047dc967df943e55ef7beda38270d8fc3f88ca362b14f3fe30/sssekai-0.0.8.tar.gz
+[2024-04-27 10:13:16] INFO root fetch - processPackages [pygpt-net]: Downloading https://files.pythonhosted.org/packages/b1/0c/70ca3376ad87325507daa188a0b208ac8aba51d8f326cbde31d57835c897/pygpt_net-2.1.9.tar.gz
+[2024-04-27 10:13:16] INFO root fetch - processPackages [sssekai]: executing diffoscope
+[2024-04-27 10:13:16] INFO root fetch - processPackages [sssekai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sssekai-0.0.6.tar.gz tmp/sssekai-0.0.8.tar.gz --markdown 20240427/s/sssekai/0.0.6-0.0.8/README.md --exclude *.pyd
+[2024-04-27 10:13:16] INFO root fetch - processPackages [pygpt-net]: executing diffoscope
+[2024-04-27 10:13:16] INFO root fetch - processPackages [pygpt-net]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygpt_net-2.1.80.tar.gz tmp/pygpt_net-2.1.9.tar.gz --markdown 20240427/p/pygpt-net/2.1.80-2.1.9/README.md --exclude *.pyd
+[2024-04-27 10:13:16] INFO root fetch - processPackages [sssekai]: Remove: archive file [/home/abi/fetcher/tmp/sssekai-0.0.6.tar.gz]
+[2024-04-27 10:13:16] INFO root fetch - processPackages [sssekai]: Remove: archive file [/home/abi/fetcher/tmp/sssekai-0.0.8.tar.gz]
+[2024-04-27 10:13:16] INFO root fetch - main [MainThread]: End processing [sssekai]: success
+[2024-04-27 10:13:20] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.1.80.tar.gz]
+[2024-04-27 10:13:20] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.1.9.tar.gz]
+[2024-04-27 10:13:20] INFO root fetch - main [MainThread]: End processing [pygpt-net]: success
+[2024-04-27 10:13:20] INFO root fetch - main [MainThread]: Store serial: [22957385]
