@@ -21195,3 +21195,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 23:12:00] INFO root fetch - processPackages [pyjamas-rfglab]: Remove: archive file [/home/abi/fetcher/tmp/pyjamas-rfglab-2024.4.3.tar.gz]
 [2024-04-27 23:12:00] INFO root fetch - main [MainThread]: End processing [pyjamas-rfglab]: success
 [2024-04-27 23:12:00] INFO root fetch - main [MainThread]: Store serial: [22962010]
+[2024-04-27 23:14:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962010]
+[2024-04-27 23:14:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 23:14:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: matterdelta
+[2024-04-27 23:14:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: focuscreen
+[2024-04-27 23:14:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: datadog-active-directory
+[2024-04-27 23:14:17] WARNING root fetch - processPackages [focuscreen]: Skipping, unable to determine old version
+[2024-04-27 23:14:17] INFO root fetch - main [MainThread]: End processing [focuscreen] error
+[2024-04-27 23:14:17] WARNING root fetch - processPackages [datadog-active-directory]: Skipping, unable to determine old version
+[2024-04-27 23:14:17] INFO root fetch - main [MainThread]: End processing [datadog-active-directory] error
+[2024-04-27 23:14:17] INFO root fetch - processPackages [matterdelta]: New version: [1.4.0] Old Version: [1.3.0]
+[2024-04-27 23:14:17] INFO root fetch - processPackages [matterdelta]: Downloading https://files.pythonhosted.org/packages/9b/17/dd661683fca61e71f83586a7bdc832551c29e28d5d2e482a1ff0db483fff/matterdelta-1.3.0.tar.gz
+[2024-04-27 23:14:17] INFO root fetch - processPackages [matterdelta]: Downloading https://files.pythonhosted.org/packages/1b/0a/8f0ae26654c4823f7593dc27e562a5808ec775e4abca59fb6dc98e3b29d0/matterdelta-1.4.0.tar.gz
+[2024-04-27 23:14:17] INFO root fetch - processPackages [matterdelta]: executing diffoscope
+[2024-04-27 23:14:17] INFO root fetch - processPackages [matterdelta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matterdelta-1.3.0.tar.gz tmp/matterdelta-1.4.0.tar.gz --markdown 20240427/m/matterdelta/1.3.0-1.4.0/README.md --exclude *.pyd
+[2024-04-27 23:14:18] INFO root fetch - processPackages [matterdelta]: Remove: archive file [/home/abi/fetcher/tmp/matterdelta-1.3.0.tar.gz]
+[2024-04-27 23:14:18] INFO root fetch - processPackages [matterdelta]: Remove: archive file [/home/abi/fetcher/tmp/matterdelta-1.4.0.tar.gz]
+[2024-04-27 23:14:18] INFO root fetch - main [MainThread]: End processing [matterdelta]: success
+[2024-04-27 23:14:18] INFO root fetch - main [MainThread]: Store serial: [22962020]
