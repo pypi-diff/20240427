@@ -20229,3 +20229,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 21:52:45] INFO root fetch - processPackages [llmtuner]: Remove: archive file [/home/abi/fetcher/tmp/llmtuner-0.7.0.tar.gz]
 [2024-04-27 21:52:45] INFO root fetch - main [MainThread]: End processing [llmtuner]: success
 [2024-04-27 21:52:45] INFO root fetch - main [MainThread]: Store serial: [22961527]
+[2024-04-27 21:54:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961527]
+[2024-04-27 21:55:00] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 21:55:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: webdriver-cache-manager
+[2024-04-27 21:55:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: compose-viz
+[2024-04-27 21:55:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tart-tools
+[2024-04-27 21:55:00] INFO root fetch - processPackages [tart-tools]: New version: [1.2.0b3] Old Version: [1.2.0b1]
+[2024-04-27 21:55:00] INFO root fetch - processPackages [webdriver-cache-manager]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-27 21:55:00] INFO root fetch - processPackages [compose-viz]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-04-27 21:55:00] INFO root fetch - processPackages [webdriver-cache-manager]: Downloading https://files.pythonhosted.org/packages/a1/a3/a5d4b9e5bf24b9c476e8135a7f74b156b0521cab46f9843c3a6a69c0baae/webdriver_cache_manager-0.0.4.tar.gz
+[2024-04-27 21:55:00] INFO root fetch - processPackages [compose-viz]: Downloading https://files.pythonhosted.org/packages/35/19/b828708aad87c88f3c955cf24490928cfe17b9749120be279274181c2dc9/compose_viz-0.3.1.tar.gz
+[2024-04-27 21:55:00] INFO root fetch - processPackages [tart-tools]: Downloading https://files.pythonhosted.org/packages/14/d9/0021d5019685bd0710c3178dbe2215e53251ca9b465b264bec8f1b445c88/tart_tools-1.2.0b1.tar.gz
+[2024-04-27 21:55:01] INFO root fetch - processPackages [compose-viz]: Downloading https://files.pythonhosted.org/packages/d6/a6/034740206d25721ea5c779d95b098d881b5e6a10975c05fbb402c3cb98e7/compose_viz-0.3.2.tar.gz
+[2024-04-27 21:55:01] INFO root fetch - processPackages [webdriver-cache-manager]: Downloading https://files.pythonhosted.org/packages/e5/16/688f773e56792fafc3bf7a51ecae06dd5171fcf4ff23d195f9ab7104de50/webdriver_cache_manager-0.0.5.tar.gz
+[2024-04-27 21:55:01] INFO root fetch - processPackages [tart-tools]: Downloading https://files.pythonhosted.org/packages/10/84/fe704370cb11d8bd90132eceeae5343fdfc2b33f099e584b5ab19ee09022/tart_tools-1.2.0b3.tar.gz
+[2024-04-27 21:55:01] INFO root fetch - processPackages [compose-viz]: executing diffoscope
+[2024-04-27 21:55:01] INFO root fetch - processPackages [compose-viz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/compose_viz-0.3.1.tar.gz tmp/compose_viz-0.3.2.tar.gz --markdown 20240427/c/compose-viz/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-04-27 21:55:01] INFO root fetch - processPackages [tart-tools]: executing diffoscope
+[2024-04-27 21:55:01] INFO root fetch - processPackages [tart-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tart_tools-1.2.0b1.tar.gz tmp/tart_tools-1.2.0b3.tar.gz --markdown 20240427/t/tart-tools/1.2.0b1-1.2.0b3/README.md --exclude *.pyd
+[2024-04-27 21:55:01] INFO root fetch - processPackages [webdriver-cache-manager]: executing diffoscope
+[2024-04-27 21:55:01] INFO root fetch - processPackages [webdriver-cache-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webdriver_cache_manager-0.0.4.tar.gz tmp/webdriver_cache_manager-0.0.5.tar.gz --markdown 20240427/w/webdriver-cache-manager/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-27 21:55:02] INFO root fetch - processPackages [compose-viz]: Remove: archive file [/home/abi/fetcher/tmp/compose_viz-0.3.1.tar.gz]
+[2024-04-27 21:55:02] INFO root fetch - processPackages [compose-viz]: Remove: archive file [/home/abi/fetcher/tmp/compose_viz-0.3.2.tar.gz]
+[2024-04-27 21:55:02] INFO root fetch - main [MainThread]: End processing [compose-viz]: success
+[2024-04-27 21:55:02] INFO root fetch - processPackages [webdriver-cache-manager]: Remove: archive file [/home/abi/fetcher/tmp/webdriver_cache_manager-0.0.4.tar.gz]
+[2024-04-27 21:55:02] INFO root fetch - processPackages [webdriver-cache-manager]: Remove: archive file [/home/abi/fetcher/tmp/webdriver_cache_manager-0.0.5.tar.gz]
+[2024-04-27 21:55:02] INFO root fetch - main [MainThread]: End processing [webdriver-cache-manager]: success
+[2024-04-27 21:55:02] INFO root fetch - processPackages [tart-tools]: Remove: archive file [/home/abi/fetcher/tmp/tart_tools-1.2.0b1.tar.gz]
+[2024-04-27 21:55:02] INFO root fetch - processPackages [tart-tools]: Remove: archive file [/home/abi/fetcher/tmp/tart_tools-1.2.0b3.tar.gz]
+[2024-04-27 21:55:02] INFO root fetch - main [MainThread]: End processing [tart-tools]: success
+[2024-04-27 21:55:02] INFO root fetch - main [MainThread]: Store serial: [22961536]
