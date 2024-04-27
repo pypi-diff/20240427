@@ -17241,3 +17241,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 18:10:23] INFO root fetch - processPackages [maling]: Remove: archive file [/home/abi/fetcher/tmp/maling-2.2.9.tar.gz]
 [2024-04-27 18:10:23] INFO root fetch - main [MainThread]: End processing [maling]: success
 [2024-04-27 18:10:23] INFO root fetch - main [MainThread]: Store serial: [22960083]
+[2024-04-27 18:12:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960083]
+[2024-04-27 18:12:34] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 18:12:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mckinseysolvegame
+[2024-04-27 18:12:34] INFO root fetch - processPackages [mckinseysolvegame]: New version: [1.0.0] Old Version: [0.8.4]
+[2024-04-27 18:12:34] INFO root fetch - processPackages [mckinseysolvegame]: Downloading https://files.pythonhosted.org/packages/3e/21/1663fc977fb84e124977c543de958f3eb92207e9f9afac99b59e9c2a9e4e/mckinseysolvegame-0.8.4.tar.gz
+[2024-04-27 18:12:34] INFO root fetch - processPackages [mckinseysolvegame]: Downloading https://files.pythonhosted.org/packages/fc/94/c4c7c7a74750de20bf3c4a57da2f1253c998fb12ab0af7b5296d0d824861/mckinseysolvegame-1.0.0.tar.gz
+[2024-04-27 18:12:34] INFO root fetch - processPackages [mckinseysolvegame]: executing diffoscope
+[2024-04-27 18:12:34] INFO root fetch - processPackages [mckinseysolvegame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mckinseysolvegame-0.8.4.tar.gz tmp/mckinseysolvegame-1.0.0.tar.gz --markdown 20240427/m/mckinseysolvegame/0.8.4-1.0.0/README.md --exclude *.pyd
+[2024-04-27 18:12:35] INFO root fetch - processPackages [mckinseysolvegame]: Remove: archive file [/home/abi/fetcher/tmp/mckinseysolvegame-0.8.4.tar.gz]
+[2024-04-27 18:12:35] INFO root fetch - processPackages [mckinseysolvegame]: Remove: archive file [/home/abi/fetcher/tmp/mckinseysolvegame-1.0.0.tar.gz]
+[2024-04-27 18:12:35] INFO root fetch - main [MainThread]: End processing [mckinseysolvegame]: success
+[2024-04-27 18:12:35] INFO root fetch - main [MainThread]: Store serial: [22960086]
