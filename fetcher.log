@@ -10617,3 +10617,24 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 09:53:49] INFO root fetch - processPackages [func_adl_servicex_xaodr22]: Remove: archive file [/home/abi/fetcher/tmp/func_adl_servicex_xaodr22-2.0.0.22.2.107a9.tar.gz]
 [2024-04-27 09:53:49] INFO root fetch - main [MainThread]: End processing [func_adl_servicex_xaodr22]: success
 [2024-04-27 09:53:49] INFO root fetch - main [MainThread]: Store serial: [22957305]
+[2024-04-27 09:55:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957305]
+[2024-04-27 09:55:58] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 09:55:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yes-chef
+[2024-04-27 09:55:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: func_adl_servicex_xaodr21
+[2024-04-27 09:55:58] INFO root fetch - processPackages [yes-chef]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-04-27 09:55:58] INFO root fetch - processPackages [yes-chef]: Downloading https://files.pythonhosted.org/packages/50/89/fe0e9590bd9326103f184f663a2912273a9fade9ca4726363165dfd8a68d/yes_chef-0.9.2.tar.gz
+[2024-04-27 09:55:58] INFO root fetch - processPackages [func_adl_servicex_xaodr21]: New version: [2.0.0.21.2.231a9] Old Version: [2.0.0.21.2.231a12]
+[2024-04-27 09:55:59] INFO root fetch - processPackages [func_adl_servicex_xaodr21]: Downloading https://files.pythonhosted.org/packages/76/c8/324e9fe294466af932c6e754d84c150de6beee9d5ac42f58aff242527f4b/func_adl_servicex_xaodr21-2.0.0.21.2.231a12.tar.gz
+[2024-04-27 09:55:59] INFO root fetch - processPackages [yes-chef]: Downloading https://files.pythonhosted.org/packages/83/d1/a301985214ec909e493b01fa2c5ba44d4aa57f21d3222ec55895ec468018/yes_chef-0.9.3.tar.gz
+[2024-04-27 09:55:59] INFO root fetch - processPackages [yes-chef]: executing diffoscope
+[2024-04-27 09:55:59] INFO root fetch - processPackages [yes-chef]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yes_chef-0.9.2.tar.gz tmp/yes_chef-0.9.3.tar.gz --markdown 20240427/y/yes-chef/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-04-27 09:55:59] INFO root fetch - processPackages [func_adl_servicex_xaodr21]: Downloading https://files.pythonhosted.org/packages/cd/73/777a0d99a9f817b5cebdea22f1edafa22b5d506f9b5fc22227be775b112b/func_adl_servicex_xaodr21-2.0.0.21.2.231a9.tar.gz
+[2024-04-27 09:55:59] INFO root fetch - processPackages [func_adl_servicex_xaodr21]: executing diffoscope
+[2024-04-27 09:55:59] INFO root fetch - processPackages [func_adl_servicex_xaodr21]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/func_adl_servicex_xaodr21-2.0.0.21.2.231a12.tar.gz tmp/func_adl_servicex_xaodr21-2.0.0.21.2.231a9.tar.gz --markdown 20240427/f/func_adl_servicex_xaodr21/2.0.0.21.2.231a12-2.0.0.21.2.231a9/README.md --exclude *.pyd
+[2024-04-27 09:55:59] INFO root fetch - processPackages [yes-chef]: Remove: archive file [/home/abi/fetcher/tmp/yes_chef-0.9.2.tar.gz]
+[2024-04-27 09:55:59] INFO root fetch - processPackages [yes-chef]: Remove: archive file [/home/abi/fetcher/tmp/yes_chef-0.9.3.tar.gz]
+[2024-04-27 09:55:59] INFO root fetch - main [MainThread]: End processing [yes-chef]: success
+[2024-04-27 09:56:01] INFO root fetch - processPackages [func_adl_servicex_xaodr21]: Remove: archive file [/home/abi/fetcher/tmp/func_adl_servicex_xaodr21-2.0.0.21.2.231a12.tar.gz]
+[2024-04-27 09:56:01] INFO root fetch - processPackages [func_adl_servicex_xaodr21]: Remove: archive file [/home/abi/fetcher/tmp/func_adl_servicex_xaodr21-2.0.0.21.2.231a9.tar.gz]
+[2024-04-27 09:56:01] INFO root fetch - main [MainThread]: End processing [func_adl_servicex_xaodr21]: success
+[2024-04-27 09:56:01] INFO root fetch - main [MainThread]: Store serial: [22957311]
