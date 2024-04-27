@@ -21057,3 +21057,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 22:55:50] WARNING root fetch - processPackages [webchecks]: Skipping, unable to determine old version
 [2024-04-27 22:55:50] INFO root fetch - main [MainThread]: End processing [webchecks] error
 [2024-04-27 22:55:50] INFO root fetch - main [MainThread]: Store serial: [22961948]
+[2024-04-27 22:58:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961948]
+[2024-04-27 22:58:07] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 22:58:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: asknews
+[2024-04-27 22:58:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: morebs2
+[2024-04-27 22:58:07] INFO root fetch - processPackages [morebs2]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 22:58:07] INFO root fetch - processPackages [asknews]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-27 22:58:07] INFO root fetch - processPackages [morebs2]: Downloading https://files.pythonhosted.org/packages/e2/86/40b71f4628d42b4a9db256240a4a0fb29e93e822b439500481d3f6bb435a/morebs2-0.0.8.tar.gz
+[2024-04-27 22:58:07] INFO root fetch - processPackages [asknews]: Downloading https://files.pythonhosted.org/packages/bf/3b/ea93566f4dc073b88ad2ea34074ee8240df784ad7289c8a3400a309555a0/asknews-0.5.0-py3-none-any.whl
+[2024-04-27 22:58:08] INFO root fetch - processPackages [asknews]: Downloading https://files.pythonhosted.org/packages/2f/cf/0feedeb925ee7a285be1ff7d9550048e3bd917993fbd855fc8b28e684023/asknews-0.5.1-py3-none-any.whl
+[2024-04-27 22:58:08] INFO root fetch - processPackages [morebs2]: Downloading https://files.pythonhosted.org/packages/a7/07/abb630f1fdeacea9b7d2c0b59a39aaca2c505f35ad719d9515afb8bd505a/morebs2-0.0.9.tar.gz
+[2024-04-27 22:58:08] INFO root fetch - processPackages [asknews]: executing diffoscope
+[2024-04-27 22:58:08] INFO root fetch - processPackages [asknews]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asknews-0.5.0-py3-none-any.whl.zip tmp/asknews-0.5.1-py3-none-any.whl.zip --markdown 20240427/a/asknews/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-04-27 22:58:08] INFO root fetch - processPackages [morebs2]: executing diffoscope
+[2024-04-27 22:58:08] INFO root fetch - processPackages [morebs2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/morebs2-0.0.8.tar.gz tmp/morebs2-0.0.9.tar.gz --markdown 20240427/m/morebs2/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 22:58:08] INFO root fetch - processPackages [asknews]: Remove: archive file [/home/abi/fetcher/tmp/asknews-0.5.0-py3-none-any.whl.zip]
+[2024-04-27 22:58:08] INFO root fetch - processPackages [asknews]: Remove: archive file [/home/abi/fetcher/tmp/asknews-0.5.1-py3-none-any.whl.zip]
+[2024-04-27 22:58:08] INFO root fetch - main [MainThread]: End processing [asknews]: success
+[2024-04-27 22:58:09] INFO root fetch - processPackages [morebs2]: Remove: archive file [/home/abi/fetcher/tmp/morebs2-0.0.8.tar.gz]
+[2024-04-27 22:58:09] INFO root fetch - processPackages [morebs2]: Remove: archive file [/home/abi/fetcher/tmp/morebs2-0.0.9.tar.gz]
+[2024-04-27 22:58:09] INFO root fetch - main [MainThread]: End processing [morebs2]: success
+[2024-04-27 22:58:09] INFO root fetch - main [MainThread]: Store serial: [22961957]
