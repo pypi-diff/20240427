@@ -9483,3 +9483,36 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 08:04:18] WARNING root fetch - processPackages [agixt]: Skipping package: exceeds size limit 83911974>=10485760
 [2024-04-27 08:04:18] INFO root fetch - main [MainThread]: End processing [agixt] error
 [2024-04-27 08:04:18] INFO root fetch - main [MainThread]: Store serial: [22956804]
+[2024-04-27 08:06:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956804]
+[2024-04-27 08:06:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 08:06:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: datasette-enrichments
+[2024-04-27 08:06:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: send-email-free
+[2024-04-27 08:06:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: omnata-plugin-runtime
+[2024-04-27 08:06:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: atomcarla
+[2024-04-27 08:06:27] WARNING root fetch - processPackages [send-email-free]: Skipping, unable to determine old version
+[2024-04-27 08:06:27] INFO root fetch - processPackages [datasette-enrichments]: New version: [0.4] Old Version: [0.3.2]
+[2024-04-27 08:06:27] INFO root fetch - processPackages [atomcarla]: New version: [0.6.0] Old Version: [0.5.2]
+[2024-04-27 08:06:27] INFO root fetch - main [MainThread]: End processing [send-email-free] error
+[2024-04-27 08:06:27] INFO root fetch - processPackages [omnata-plugin-runtime]: New version: [0.3.9a44] Old Version: [0.3.9a43]
+[2024-04-27 08:06:27] INFO root fetch - processPackages [atomcarla]: Downloading https://files.pythonhosted.org/packages/0a/41/33cade14cb660d2e60bda55f1f997b504994da9cb13eb23783c8ff1ef329/atomcarla-0.5.2-cp38-cp38-win_amd64.whl
+[2024-04-27 08:06:27] INFO root fetch - processPackages [datasette-enrichments]: Downloading https://files.pythonhosted.org/packages/cd/b0/a1a1bcd107dee121e5005964602446403907468b2e81e5b330a3c2a71be4/datasette-enrichments-0.3.2.tar.gz
+[2024-04-27 08:06:27] INFO root fetch - processPackages [omnata-plugin-runtime]: Downloading https://files.pythonhosted.org/packages/8e/11/abde4b4d82373bc42a84a5591bf31c6cca540ba9f13337491df615af0b6c/omnata_plugin_runtime-0.3.9a43.tar.gz
+[2024-04-27 08:06:27] INFO root fetch - processPackages [datasette-enrichments]: Downloading https://files.pythonhosted.org/packages/89/0f/cae6f2512a708e1ebe5a519eef3f9b62996e6000530d3413e86b369b1f12/datasette_enrichments-0.4.tar.gz
+[2024-04-27 08:06:28] INFO root fetch - processPackages [datasette-enrichments]: executing diffoscope
+[2024-04-27 08:06:28] INFO root fetch - processPackages [datasette-enrichments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datasette-enrichments-0.3.2.tar.gz tmp/datasette_enrichments-0.4.tar.gz --markdown 20240427/d/datasette-enrichments/0.3.2-0.4/README.md --exclude *.pyd
+[2024-04-27 08:06:28] INFO root fetch - processPackages [atomcarla]: Downloading https://files.pythonhosted.org/packages/b2/88/cb76707e93a1f867ff9e42db30895d8a702951fb8cd9702dc59d2a28858d/atomcarla-0.6.0-cp38-cp38-win_amd64.whl
+[2024-04-27 08:06:28] INFO root fetch - processPackages [omnata-plugin-runtime]: Downloading https://files.pythonhosted.org/packages/de/f5/326ad467bb560d9dc8d7cebfe2aed77d524aeaf8a8ee7c6107f202eb6d0d/omnata_plugin_runtime-0.3.9a44.tar.gz
+[2024-04-27 08:06:28] INFO root fetch - processPackages [omnata-plugin-runtime]: executing diffoscope
+[2024-04-27 08:06:28] INFO root fetch - processPackages [omnata-plugin-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omnata_plugin_runtime-0.3.9a43.tar.gz tmp/omnata_plugin_runtime-0.3.9a44.tar.gz --markdown 20240427/o/omnata-plugin-runtime/0.3.9a43-0.3.9a44/README.md --exclude *.pyd
+[2024-04-27 08:06:28] INFO root fetch - processPackages [datasette-enrichments]: Remove: archive file [/home/abi/fetcher/tmp/datasette-enrichments-0.3.2.tar.gz]
+[2024-04-27 08:06:28] INFO root fetch - processPackages [datasette-enrichments]: Remove: archive file [/home/abi/fetcher/tmp/datasette_enrichments-0.4.tar.gz]
+[2024-04-27 08:06:28] INFO root fetch - main [MainThread]: End processing [datasette-enrichments]: success
+[2024-04-27 08:06:29] INFO root fetch - processPackages [omnata-plugin-runtime]: Remove: archive file [/home/abi/fetcher/tmp/omnata_plugin_runtime-0.3.9a43.tar.gz]
+[2024-04-27 08:06:29] INFO root fetch - processPackages [omnata-plugin-runtime]: Remove: archive file [/home/abi/fetcher/tmp/omnata_plugin_runtime-0.3.9a44.tar.gz]
+[2024-04-27 08:06:29] INFO root fetch - main [MainThread]: End processing [omnata-plugin-runtime]: success
+[2024-04-27 08:06:29] INFO root fetch - processPackages [atomcarla]: executing diffoscope
+[2024-04-27 08:06:29] INFO root fetch - processPackages [atomcarla]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atomcarla-0.5.2-cp38-cp38-win_amd64.whl.zip tmp/atomcarla-0.6.0-cp38-cp38-win_amd64.whl.zip --markdown 20240427/a/atomcarla/0.5.2-0.6.0/README.md --exclude *.pyd
+[2024-04-27 08:06:29] INFO root fetch - processPackages [atomcarla]: Remove: archive file [/home/abi/fetcher/tmp/atomcarla-0.5.2-cp38-cp38-win_amd64.whl.zip]
+[2024-04-27 08:06:29] INFO root fetch - processPackages [atomcarla]: Remove: archive file [/home/abi/fetcher/tmp/atomcarla-0.6.0-cp38-cp38-win_amd64.whl.zip]
+[2024-04-27 08:06:29] INFO root fetch - main [MainThread]: End processing [atomcarla]: success
+[2024-04-27 08:06:29] INFO root fetch - main [MainThread]: Store serial: [22956818]
