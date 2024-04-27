@@ -20380,3 +20380,11 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 22:05:14] INFO root fetch - processPackages [slepc]: Remove: archive file [/home/abi/fetcher/tmp/slepc-3.9.0.tar.gz]
 [2024-04-27 22:05:14] INFO root fetch - main [MainThread]: End processing [slepc]: success
 [2024-04-27 22:05:14] INFO root fetch - main [MainThread]: Store serial: [22961589]
+[2024-04-27 22:07:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961589]
+[2024-04-27 22:07:30] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 22:07:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aim-ui
+[2024-04-27 22:07:30] INFO root fetch - processPackages [aim-ui]: New version: [4.1.0.dev20230930] Old Version: [4.1.0.dev20230929]
+[2024-04-27 22:07:30] INFO root fetch - processPackages [aim-ui]: Downloading https://files.pythonhosted.org/packages/2a/05/f8c2e155a815903b692d80c9a1647ba25d4a1f119791eaeb671026bcfa33/aim-ui-4.1.0.dev20230929.tar.gz
+[2024-04-27 22:07:30] WARNING root fetch - processPackages [aim-ui]: Skipping package: exceeds size limit 19246573>=10485760
+[2024-04-27 22:07:30] INFO root fetch - main [MainThread]: End processing [aim-ui] error
+[2024-04-27 22:07:30] INFO root fetch - main [MainThread]: Store serial: [22961591]
