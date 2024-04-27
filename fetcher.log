@@ -7371,3 +7371,15 @@ EOFError: EOF read where object expected
 [2024-04-27 04:50:58] ERROR root fetch - processPackages [netron]: Timeout during execution of pkgdiff
 [2024-04-27 04:50:58] INFO root fetch - main [MainThread]: End processing [netron] error
 [2024-04-27 04:50:58] INFO root fetch - main [MainThread]: Store serial: [22956137]
+[2024-04-27 04:53:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956137]
+[2024-04-27 04:53:07] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 04:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xl2roefact
+[2024-04-27 04:53:07] INFO root fetch - processPackages [xl2roefact]: New version: [0.6rc0] Old Version: [0.6]
+[2024-04-27 04:53:07] INFO root fetch - processPackages [xl2roefact]: Downloading https://files.pythonhosted.org/packages/e2/07/36a97eab7f6d82b8263d4c40b29aaf7057376eefec36f146725b7561ef2d/xl2roefact-0.6.tar.gz
+[2024-04-27 04:53:08] INFO root fetch - processPackages [xl2roefact]: Downloading https://files.pythonhosted.org/packages/70/3b/b8a1657912d6d15ac52803a625dec4350a7c2567ea91b4a120dada050417/xl2roefact-0.6rc0.tar.gz
+[2024-04-27 04:53:08] INFO root fetch - processPackages [xl2roefact]: executing diffoscope
+[2024-04-27 04:53:08] INFO root fetch - processPackages [xl2roefact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xl2roefact-0.6.tar.gz tmp/xl2roefact-0.6rc0.tar.gz --markdown 20240427/x/xl2roefact/0.6-0.6rc0/README.md --exclude *.pyd
+[2024-04-27 04:53:08] INFO root fetch - processPackages [xl2roefact]: Remove: archive file [/home/abi/fetcher/tmp/xl2roefact-0.6.tar.gz]
+[2024-04-27 04:53:08] INFO root fetch - processPackages [xl2roefact]: Remove: archive file [/home/abi/fetcher/tmp/xl2roefact-0.6rc0.tar.gz]
+[2024-04-27 04:53:08] INFO root fetch - main [MainThread]: End processing [xl2roefact]: success
+[2024-04-27 04:53:08] INFO root fetch - main [MainThread]: Store serial: [22956140]
