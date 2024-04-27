@@ -15791,3 +15791,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 16:28:22] WARNING root fetch - processPackages [pass50]: Skipping, unable to determine old version
 [2024-04-27 16:28:22] INFO root fetch - main [MainThread]: End processing [pass50] error
 [2024-04-27 16:28:22] INFO root fetch - main [MainThread]: Store serial: [22959479]
+[2024-04-27 16:30:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959479]
+[2024-04-27 16:30:31] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 16:30:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pass50
+[2024-04-27 16:30:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: agentic_security
+[2024-04-27 16:30:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: simplebox
+[2024-04-27 16:30:31] INFO root fetch - processPackages [agentic_security]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-27 16:30:31] WARNING root fetch - processPackages [pass50]: Skipping, unable to determine old version
+[2024-04-27 16:30:31] INFO root fetch - processPackages [simplebox]: New version: [0.0.1a200] Old Version: [0.0.1a199]
+[2024-04-27 16:30:31] INFO root fetch - main [MainThread]: End processing [pass50] error
+[2024-04-27 16:30:31] INFO root fetch - processPackages [agentic_security]: Downloading https://files.pythonhosted.org/packages/10/40/d1d225e64d2bf9836849157b41f26fec8a39495572edbacca74f0ab87c94/agentic_security-0.1.1.tar.gz
+[2024-04-27 16:30:31] INFO root fetch - processPackages [simplebox]: Downloading https://files.pythonhosted.org/packages/4e/83/c61d082ff921b125735e912522a6a5bf21218fc755a4cfd8af326f672259/simplebox-0.0.1a199-py3-none-any.whl
+[2024-04-27 16:30:31] INFO root fetch - processPackages [agentic_security]: Downloading https://files.pythonhosted.org/packages/b7/b5/5571cc6f72bfa87e126b2c6eac2395fad165385115e85ee1cdcb60207851/agentic_security-0.1.2.tar.gz
+[2024-04-27 16:30:31] INFO root fetch - processPackages [agentic_security]: executing diffoscope
+[2024-04-27 16:30:31] INFO root fetch - processPackages [agentic_security]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agentic_security-0.1.1.tar.gz tmp/agentic_security-0.1.2.tar.gz --markdown 20240427/a/agentic_security/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-27 16:30:32] INFO root fetch - processPackages [simplebox]: Downloading https://files.pythonhosted.org/packages/9d/b0/0f9c113a764409641669d06f2c7378c7656f4baebbd64327ac4d4a4f052f/simplebox-0.0.1a200-py3-none-any.whl
+[2024-04-27 16:30:32] INFO root fetch - processPackages [simplebox]: executing diffoscope
+[2024-04-27 16:30:32] INFO root fetch - processPackages [simplebox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simplebox-0.0.1a199-py3-none-any.whl.zip tmp/simplebox-0.0.1a200-py3-none-any.whl.zip --markdown 20240427/s/simplebox/0.0.1a199-0.0.1a200/README.md --exclude *.pyd
+[2024-04-27 16:30:32] INFO root fetch - processPackages [agentic_security]: Remove: archive file [/home/abi/fetcher/tmp/agentic_security-0.1.1.tar.gz]
+[2024-04-27 16:30:32] INFO root fetch - processPackages [agentic_security]: Remove: archive file [/home/abi/fetcher/tmp/agentic_security-0.1.2.tar.gz]
+[2024-04-27 16:30:32] INFO root fetch - main [MainThread]: End processing [agentic_security]: success
+[2024-04-27 16:30:32] INFO root fetch - processPackages [simplebox]: Remove: archive file [/home/abi/fetcher/tmp/simplebox-0.0.1a199-py3-none-any.whl.zip]
+[2024-04-27 16:30:32] INFO root fetch - processPackages [simplebox]: Remove: archive file [/home/abi/fetcher/tmp/simplebox-0.0.1a200-py3-none-any.whl.zip]
+[2024-04-27 16:30:33] INFO root fetch - main [MainThread]: End processing [simplebox]: success
+[2024-04-27 16:30:33] INFO root fetch - main [MainThread]: Store serial: [22959488]
