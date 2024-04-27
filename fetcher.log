@@ -18102,3 +18102,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 19:17:21] INFO root fetch - processPackages [cosmicweb-music]: Remove: archive file [/home/abi/fetcher/tmp/cosmicweb_music-0.3.0.tar.gz]
 [2024-04-27 19:17:21] INFO root fetch - main [MainThread]: End processing [cosmicweb-music]: success
 [2024-04-27 19:17:21] INFO root fetch - main [MainThread]: Store serial: [22960448]
+[2024-04-27 19:19:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960448]
+[2024-04-27 19:19:34] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-27 19:19:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arm-text-detection
+[2024-04-27 19:19:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arm-text-detection
+[2024-04-27 19:19:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: arm-text-detection
+[2024-04-27 19:19:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: greyhorse-process
+[2024-04-27 19:19:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mllm
+[2024-04-27 19:19:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: instaOS
+[2024-04-27 19:19:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: yeref
+[2024-04-27 19:19:34] WARNING root fetch - processPackages [arm-text-detection]: Skipping, unable to determine old version
+[2024-04-27 19:19:34] INFO root fetch - main [MainThread]: End processing [arm-text-detection] error
+[2024-04-27 19:19:34] WARNING root fetch - processPackages [arm-text-detection]: Skipping, unable to determine old version
+[2024-04-27 19:19:34] INFO root fetch - main [MainThread]: End processing [arm-text-detection] error
+[2024-04-27 19:19:34] INFO root fetch - processPackages [mllm]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-27 19:19:34] WARNING root fetch - processPackages [arm-text-detection]: Skipping, unable to determine old version
+[2024-04-27 19:19:34] INFO root fetch - main [MainThread]: End processing [arm-text-detection] error
+[2024-04-27 19:19:34] WARNING root fetch - processPackages [instaOS]: Skipping, unable to determine old version
+[2024-04-27 19:19:34] INFO root fetch - main [MainThread]: End processing [instaOS] error
+[2024-04-27 19:19:34] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-27 19:19:34] WARNING root fetch - processPackages [greyhorse-process]: Skipping, unable to determine old version
+[2024-04-27 19:19:34] INFO root fetch - main [MainThread]: End processing [greyhorse-process] error
+[2024-04-27 19:19:35] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-04-27 19:19:35] INFO root fetch - processPackages [mllm]: Downloading https://files.pythonhosted.org/packages/3c/03/0c8b2c6a8041b84f861da911b8b1e994a54d9d9b12e0158f1e531a1c05c9/mllm-0.1.1.tar.gz
+[2024-04-27 19:19:35] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-04-27 19:19:35] INFO root fetch - processPackages [mllm]: Downloading https://files.pythonhosted.org/packages/ee/5b/a897c6e659428ac124909bcf5cc9d8c4d43e7be6aa648d9ec55248d3b615/mllm-0.1.2.tar.gz
+[2024-04-27 19:19:35] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-04-27 19:19:35] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240427/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-27 19:19:35] INFO root fetch - processPackages [mllm]: executing diffoscope
+[2024-04-27 19:19:35] INFO root fetch - processPackages [mllm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mllm-0.1.1.tar.gz tmp/mllm-0.1.2.tar.gz --markdown 20240427/m/mllm/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-27 19:19:36] INFO root fetch - processPackages [mllm]: Remove: archive file [/home/abi/fetcher/tmp/mllm-0.1.1.tar.gz]
+[2024-04-27 19:19:36] INFO root fetch - processPackages [mllm]: Remove: archive file [/home/abi/fetcher/tmp/mllm-0.1.2.tar.gz]
+[2024-04-27 19:19:36] INFO root fetch - main [MainThread]: End processing [mllm]: success
+[2024-04-27 19:19:36] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-04-27 19:19:36] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-04-27 19:19:36] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-04-27 19:19:36] INFO root fetch - main [MainThread]: Store serial: [22960472]
