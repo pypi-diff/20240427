@@ -9455,3 +9455,23 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 07:59:57] INFO root fetch - processPackages [django-ninja-jwt]: Remove: archive file [/home/abi/fetcher/tmp/django_ninja_jwt-5.3.1.tar.gz]
 [2024-04-27 07:59:58] INFO root fetch - main [MainThread]: End processing [django-ninja-jwt]: success
 [2024-04-27 07:59:58] INFO root fetch - main [MainThread]: Store serial: [22956796]
+[2024-04-27 08:02:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956796]
+[2024-04-27 08:02:08] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 08:02:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: media-manager
+[2024-04-27 08:02:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oresat-dxwifi
+[2024-04-27 08:02:08] INFO root fetch - processPackages [oresat-dxwifi]: New version: [0.3.6] Old Version: [0.3.5]
+[2024-04-27 08:02:08] INFO root fetch - processPackages [media-manager]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-27 08:02:08] INFO root fetch - processPackages [media-manager]: Downloading https://files.pythonhosted.org/packages/75/11/acc8a436463477db369c803d9007e03acdd0b43a677cd0cbb78b7ea5b3bb/media_manager-0.8.0-py2.py3-none-any.whl
+[2024-04-27 08:02:08] INFO root fetch - processPackages [oresat-dxwifi]: Downloading https://files.pythonhosted.org/packages/d7/2e/5083396c960bcc53f1eae0b3bb486e919b8ab7521a143e16a70b576fd62d/oresat_dxwifi-0.3.6.tar.gz
+[2024-04-27 08:02:08] INFO root fetch - processPackages [media-manager]: Downloading https://files.pythonhosted.org/packages/9b/a7/1155a373b195bebb88c0274982964c45aecd8d7206b2f4731838007628fd/media_manager-0.9.0-py2.py3-none-any.whl
+[2024-04-27 08:02:08] INFO root fetch - processPackages [media-manager]: executing diffoscope
+[2024-04-27 08:02:08] INFO root fetch - processPackages [media-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/media_manager-0.8.0-py2.py3-none-any.whl.zip tmp/media_manager-0.9.0-py2.py3-none-any.whl.zip --markdown 20240427/m/media-manager/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-27 08:02:08] INFO root fetch - processPackages [oresat-dxwifi]: executing diffoscope
+[2024-04-27 08:02:08] INFO root fetch - processPackages [oresat-dxwifi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oresat_dxwifi-0.3.5.tar.gz tmp/oresat_dxwifi-0.3.6.tar.gz --markdown 20240427/o/oresat-dxwifi/0.3.5-0.3.6/README.md --exclude *.pyd
+[2024-04-27 08:02:09] INFO root fetch - processPackages [media-manager]: Remove: archive file [/home/abi/fetcher/tmp/media_manager-0.8.0-py2.py3-none-any.whl.zip]
+[2024-04-27 08:02:09] INFO root fetch - processPackages [media-manager]: Remove: archive file [/home/abi/fetcher/tmp/media_manager-0.9.0-py2.py3-none-any.whl.zip]
+[2024-04-27 08:02:09] INFO root fetch - main [MainThread]: End processing [media-manager]: success
+[2024-04-27 08:02:09] INFO root fetch - processPackages [oresat-dxwifi]: Remove: archive file [/home/abi/fetcher/tmp/oresat_dxwifi-0.3.5.tar.gz]
+[2024-04-27 08:02:09] INFO root fetch - processPackages [oresat-dxwifi]: Remove: archive file [/home/abi/fetcher/tmp/oresat_dxwifi-0.3.6.tar.gz]
+[2024-04-27 08:02:09] INFO root fetch - main [MainThread]: End processing [oresat-dxwifi]: success
+[2024-04-27 08:02:09] INFO root fetch - main [MainThread]: Store serial: [22956801]
