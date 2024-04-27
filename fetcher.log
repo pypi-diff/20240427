@@ -12548,3 +12548,24 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 13:01:04] INFO root fetch - processPackages [astrapy]: Remove: archive file [/home/abi/fetcher/tmp/astrapy-1.1.0.tar.gz]
 [2024-04-27 13:01:04] INFO root fetch - main [MainThread]: End processing [astrapy]: success
 [2024-04-27 13:01:04] INFO root fetch - main [MainThread]: Store serial: [22958117]
+[2024-04-27 13:03:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958117]
+[2024-04-27 13:03:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 13:03:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: evo
+[2024-04-27 13:03:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hurray
+[2024-04-27 13:03:13] INFO root fetch - processPackages [evo]: New version: [1.9.1] Old Version: [1.9]
+[2024-04-27 13:03:13] INFO root fetch - processPackages [evo]: Downloading https://files.pythonhosted.org/packages/fa/e5/ee49f9a9284fdc048d92a81fd7415a0edbfcdfb5cb1a4591bf861ed3ee41/evo-1.9.tar.gz
+[2024-04-27 13:03:13] INFO root fetch - processPackages [hurray]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-04-27 13:03:13] INFO root fetch - processPackages [hurray]: Downloading https://files.pythonhosted.org/packages/83/f4/11e299bf40404f7888d9f2f5dae0977a820a0e057334d8c16685f2f19c97/hurray-1.0.0.tar.gz
+[2024-04-27 13:03:13] INFO root fetch - processPackages [evo]: Downloading https://files.pythonhosted.org/packages/a2/43/5be79fe2d4ceac3509b0eabb311aa1a37ae30e1bf2a0267346548575c189/evo-1.9.1.tar.gz
+[2024-04-27 13:03:13] INFO root fetch - processPackages [evo]: executing diffoscope
+[2024-04-27 13:03:13] INFO root fetch - processPackages [evo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evo-1.9.tar.gz tmp/evo-1.9.1.tar.gz --markdown 20240427/e/evo/1.9-1.9.1/README.md --exclude *.pyd
+[2024-04-27 13:03:13] INFO root fetch - processPackages [hurray]: Downloading https://files.pythonhosted.org/packages/32/21/8c06d6b5444ddf2826eb9d0781471fe3ccf6f8839871ea82de7b1fcd47ee/hurray-1.1.0.tar.gz
+[2024-04-27 13:03:13] INFO root fetch - processPackages [hurray]: executing diffoscope
+[2024-04-27 13:03:13] INFO root fetch - processPackages [hurray]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hurray-1.0.0.tar.gz tmp/hurray-1.1.0.tar.gz --markdown 20240427/h/hurray/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-04-27 13:03:14] INFO root fetch - processPackages [evo]: Remove: archive file [/home/abi/fetcher/tmp/evo-1.9.tar.gz]
+[2024-04-27 13:03:14] INFO root fetch - processPackages [evo]: Remove: archive file [/home/abi/fetcher/tmp/evo-1.9.1.tar.gz]
+[2024-04-27 13:03:14] INFO root fetch - main [MainThread]: End processing [evo]: success
+[2024-04-27 13:03:14] INFO root fetch - processPackages [hurray]: Remove: archive file [/home/abi/fetcher/tmp/hurray-1.0.0.tar.gz]
+[2024-04-27 13:03:14] INFO root fetch - processPackages [hurray]: Remove: archive file [/home/abi/fetcher/tmp/hurray-1.1.0.tar.gz]
+[2024-04-27 13:03:14] INFO root fetch - main [MainThread]: End processing [hurray]: success
+[2024-04-27 13:03:14] INFO root fetch - main [MainThread]: Store serial: [22958123]
