@@ -21603,3 +21603,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 23:43:03] INFO root fetch - processPackages [arctix]: Remove: archive file [/home/abi/fetcher/tmp/arctix-0.0.3a1.tar.gz]
 [2024-04-27 23:43:03] INFO root fetch - main [MainThread]: End processing [arctix]: success
 [2024-04-27 23:43:03] INFO root fetch - main [MainThread]: Store serial: [22962235]
+[2024-04-27 23:45:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962235]
+[2024-04-27 23:45:12] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 23:45:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: langflow
+[2024-04-27 23:45:12] INFO root fetch - processPackages [langflow]: New version: [1.0.0a9] Old Version: [1.0.0a8]
+[2024-04-27 23:45:12] INFO root fetch - processPackages [langflow]: Downloading https://files.pythonhosted.org/packages/f1/f1/24fc8fab9078fe9a44249227b1e8c735ca2edcb3d35df1eb8fe21940eda2/langflow-1.0.0a8.tar.gz
+[2024-04-27 23:45:13] INFO root fetch - processPackages [langflow]: Downloading https://files.pythonhosted.org/packages/b0/40/f603fd33ef5b1456a6be83efd05ca28a5af58e3ed1070e760b30edb9080e/langflow-1.0.0a9.tar.gz
+[2024-04-27 23:45:13] INFO root fetch - processPackages [langflow]: executing diffoscope
+[2024-04-27 23:45:13] INFO root fetch - processPackages [langflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langflow-1.0.0a8.tar.gz tmp/langflow-1.0.0a9.tar.gz --markdown 20240427/l/langflow/1.0.0a8-1.0.0a9/README.md --exclude *.pyd
+[2024-04-27 23:45:13] INFO root fetch - processPackages [langflow]: Remove: archive file [/home/abi/fetcher/tmp/langflow-1.0.0a8.tar.gz]
+[2024-04-27 23:45:13] INFO root fetch - processPackages [langflow]: Remove: archive file [/home/abi/fetcher/tmp/langflow-1.0.0a9.tar.gz]
+[2024-04-27 23:45:13] INFO root fetch - main [MainThread]: End processing [langflow]: success
+[2024-04-27 23:45:13] INFO root fetch - main [MainThread]: Store serial: [22962238]
