@@ -15608,3 +15608,78 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 16:19:39] INFO root fetch - processPackages [kss]: Remove: archive file [/home/abi/fetcher/tmp/kss-5.3.0.dev1.tar.gz]
 [2024-04-27 16:19:39] INFO root fetch - main [MainThread]: End processing [kss]: success
 [2024-04-27 16:19:39] INFO root fetch - main [MainThread]: Store serial: [22959418]
+[2024-04-27 16:21:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959418]
+[2024-04-27 16:21:47] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-27 16:21:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: banks
+[2024-04-27 16:21:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyb-utils
+[2024-04-27 16:21:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sim_rl
+[2024-04-27 16:21:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kss
+[2024-04-27 16:21:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: puerml
+[2024-04-27 16:21:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: brplotviz
+[2024-04-27 16:21:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: jaraco.fabric
+[2024-04-27 16:21:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: agentic_security
+[2024-04-27 16:21:47] INFO root fetch - processPackages [sim_rl]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-27 16:21:48] INFO root fetch - processPackages [banks]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-27 16:21:48] INFO root fetch - processPackages [agentic_security]: New version: [0.1.1] Old Version: [0.0.4]
+[2024-04-27 16:21:48] INFO root fetch - processPackages [puerml]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-27 16:21:48] INFO root fetch - processPackages [kss]: New version: [5.3.0.dev1] Old Version: [5.3.0.dev0]
+[2024-04-27 16:21:48] INFO root fetch - processPackages [pyb-utils]: New version: [2.2.1] Old Version: [2.2.0]
+[2024-04-27 16:21:48] INFO root fetch - processPackages [sim_rl]: Downloading https://files.pythonhosted.org/packages/79/ed/573df64a2bb889b78f3b2f7de45cde169f1274d28a8238ea3dc2178f919a/sim_rl-0.1.1.tar.gz
+[2024-04-27 16:21:48] INFO root fetch - processPackages [jaraco.fabric]: New version: [6.2.0] Old Version: [6.1.1]
+[2024-04-27 16:21:48] INFO root fetch - processPackages [banks]: Downloading https://files.pythonhosted.org/packages/f3/73/91f15ca9fd0c8efdcdd1fead95f14c4f2e35108dfa95a39591e926b73174/banks-0.2.0.tar.gz
+[2024-04-27 16:21:48] INFO root fetch - processPackages [brplotviz]: New version: [0.3] Old Version: [0.2.3]
+[2024-04-27 16:21:48] INFO root fetch - processPackages [puerml]: Downloading https://files.pythonhosted.org/packages/c1/e4/523c5c69b02459ffb6e52a1a4b8f011d7875d2eed1aaeae02c5a0c948382/puerml-0.1.8.tar.gz
+[2024-04-27 16:21:48] INFO root fetch - processPackages [kss]: Downloading https://files.pythonhosted.org/packages/14/13/52b74448eb6c3e56ad43b4c2b99286f009543cc788a1b138e1bd01ec910b/kss-5.3.0.dev0.tar.gz
+[2024-04-27 16:21:48] INFO root fetch - processPackages [agentic_security]: Downloading https://files.pythonhosted.org/packages/58/dc/d7ac77f3280d0ffe94dafe4268f28bf4a95e139204abd1e3244fa7f4eb82/agentic_security-0.0.4.tar.gz
+[2024-04-27 16:21:48] INFO root fetch - processPackages [pyb-utils]: Downloading https://files.pythonhosted.org/packages/f7/06/f0e1e8c70f466db8423f293e10ac5dd06676fca0caf71a0c2027e8418766/pyb_utils-2.2.0.tar.gz
+[2024-04-27 16:21:48] INFO root fetch - processPackages [jaraco.fabric]: Downloading https://files.pythonhosted.org/packages/10/be/2a9ddb0afbcf787db0a0326c895a58bb67bfd9d4fe8fdaac16661d34bebe/jaraco.fabric-6.1.1.tar.gz
+[2024-04-27 16:21:48] INFO root fetch - processPackages [banks]: Downloading https://files.pythonhosted.org/packages/6a/8e/94a0ecc14c213dfc5237897035245eaae574cc2783f750a9b9993b2bfb24/banks-0.3.0.tar.gz
+[2024-04-27 16:21:48] INFO root fetch - processPackages [brplotviz]: Downloading https://files.pythonhosted.org/packages/e1/d2/0197d19eb5e1e39320e2f45d390cafd5a25e71db2eb2964bf4ca12b94b36/brplotviz-0.2.3.tar.gz
+[2024-04-27 16:21:48] INFO root fetch - processPackages [puerml]: Downloading https://files.pythonhosted.org/packages/17/cb/1f376cc111577cf8439db51d01dd8f17fa7c2754c4ecf4fa961fbb481835/puerml-0.1.9.tar.gz
+[2024-04-27 16:21:48] INFO root fetch - processPackages [kss]: Downloading https://files.pythonhosted.org/packages/d5/ed/e6abb5a6aaf526ed6335476a96006027518f7f73c49c77843f0d56ec9d13/kss-5.3.0.dev1.tar.gz
+[2024-04-27 16:21:48] INFO root fetch - processPackages [banks]: executing diffoscope
+[2024-04-27 16:21:48] INFO root fetch - processPackages [banks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/banks-0.2.0.tar.gz tmp/banks-0.3.0.tar.gz --markdown 20240427/b/banks/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-04-27 16:21:48] INFO root fetch - processPackages [puerml]: executing diffoscope
+[2024-04-27 16:21:48] INFO root fetch - processPackages [puerml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/puerml-0.1.8.tar.gz tmp/puerml-0.1.9.tar.gz --markdown 20240427/p/puerml/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-27 16:21:48] INFO root fetch - processPackages [pyb-utils]: Downloading https://files.pythonhosted.org/packages/23/18/dd200947ba131e635eb6c8c97ec63e28f1c4de5c4a8524d984db11107ef9/pyb_utils-2.2.1.tar.gz
+[2024-04-27 16:21:48] INFO root fetch - processPackages [sim_rl]: Downloading https://files.pythonhosted.org/packages/c5/ae/3808a44e582e8f936b8c24b638fe6cd69be9d62316ae292775ee60f85eaa/sim_rl-0.1.2.tar.gz
+[2024-04-27 16:21:48] INFO root fetch - processPackages [agentic_security]: Downloading https://files.pythonhosted.org/packages/10/40/d1d225e64d2bf9836849157b41f26fec8a39495572edbacca74f0ab87c94/agentic_security-0.1.1.tar.gz
+[2024-04-27 16:21:48] INFO root fetch - processPackages [jaraco.fabric]: Downloading https://files.pythonhosted.org/packages/4c/f6/5b5e679f2cc7ecb8eacf67e45a425039068ba7b7374b374fd50da102b8cf/jaraco_fabric-6.2.0.tar.gz
+[2024-04-27 16:21:48] INFO root fetch - processPackages [kss]: executing diffoscope
+[2024-04-27 16:21:48] INFO root fetch - processPackages [kss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kss-5.3.0.dev0.tar.gz tmp/kss-5.3.0.dev1.tar.gz --markdown 20240427/k/kss/5.3.0.dev0-5.3.0.dev1/README.md --exclude *.pyd
+[2024-04-27 16:21:48] INFO root fetch - processPackages [pyb-utils]: executing diffoscope
+[2024-04-27 16:21:48] INFO root fetch - processPackages [pyb-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyb_utils-2.2.0.tar.gz tmp/pyb_utils-2.2.1.tar.gz --markdown 20240427/p/pyb-utils/2.2.0-2.2.1/README.md --exclude *.pyd
+[2024-04-27 16:21:48] INFO root fetch - processPackages [brplotviz]: Downloading https://files.pythonhosted.org/packages/50/c7/9c98c41019b3b435b887065e76f010165a52ca8c0d87a8be88bde54a5344/brplotviz-0.3.tar.gz
+[2024-04-27 16:21:48] INFO root fetch - processPackages [jaraco.fabric]: executing diffoscope
+[2024-04-27 16:21:48] INFO root fetch - processPackages [jaraco.fabric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaraco.fabric-6.1.1.tar.gz tmp/jaraco_fabric-6.2.0.tar.gz --markdown 20240427/j/jaraco.fabric/6.1.1-6.2.0/README.md --exclude *.pyd
+[2024-04-27 16:21:48] INFO root fetch - processPackages [agentic_security]: executing diffoscope
+[2024-04-27 16:21:48] INFO root fetch - processPackages [agentic_security]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agentic_security-0.0.4.tar.gz tmp/agentic_security-0.1.1.tar.gz --markdown 20240427/a/agentic_security/0.0.4-0.1.1/README.md --exclude *.pyd
+[2024-04-27 16:21:48] INFO root fetch - processPackages [brplotviz]: executing diffoscope
+[2024-04-27 16:21:48] INFO root fetch - processPackages [brplotviz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brplotviz-0.2.3.tar.gz tmp/brplotviz-0.3.tar.gz --markdown 20240427/b/brplotviz/0.2.3-0.3/README.md --exclude *.pyd
+[2024-04-27 16:21:49] INFO root fetch - processPackages [sim_rl]: executing diffoscope
+[2024-04-27 16:21:49] INFO root fetch - processPackages [sim_rl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sim_rl-0.1.1.tar.gz tmp/sim_rl-0.1.2.tar.gz --markdown 20240427/s/sim_rl/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-27 16:21:49] INFO root fetch - processPackages [banks]: Remove: archive file [/home/abi/fetcher/tmp/banks-0.2.0.tar.gz]
+[2024-04-27 16:21:49] INFO root fetch - processPackages [banks]: Remove: archive file [/home/abi/fetcher/tmp/banks-0.3.0.tar.gz]
+[2024-04-27 16:21:49] INFO root fetch - main [MainThread]: End processing [banks]: success
+[2024-04-27 16:21:49] INFO root fetch - processPackages [puerml]: Remove: archive file [/home/abi/fetcher/tmp/puerml-0.1.8.tar.gz]
+[2024-04-27 16:21:49] INFO root fetch - processPackages [puerml]: Remove: archive file [/home/abi/fetcher/tmp/puerml-0.1.9.tar.gz]
+[2024-04-27 16:21:49] INFO root fetch - main [MainThread]: End processing [puerml]: success
+[2024-04-27 16:21:49] INFO root fetch - processPackages [pyb-utils]: Remove: archive file [/home/abi/fetcher/tmp/pyb_utils-2.2.0.tar.gz]
+[2024-04-27 16:21:49] INFO root fetch - processPackages [pyb-utils]: Remove: archive file [/home/abi/fetcher/tmp/pyb_utils-2.2.1.tar.gz]
+[2024-04-27 16:21:49] INFO root fetch - main [MainThread]: End processing [pyb-utils]: success
+[2024-04-27 16:21:49] INFO root fetch - processPackages [jaraco.fabric]: Remove: archive file [/home/abi/fetcher/tmp/jaraco.fabric-6.1.1.tar.gz]
+[2024-04-27 16:21:49] INFO root fetch - processPackages [jaraco.fabric]: Remove: archive file [/home/abi/fetcher/tmp/jaraco_fabric-6.2.0.tar.gz]
+[2024-04-27 16:21:49] INFO root fetch - main [MainThread]: End processing [jaraco.fabric]: success
+[2024-04-27 16:21:49] INFO root fetch - processPackages [brplotviz]: Remove: archive file [/home/abi/fetcher/tmp/brplotviz-0.2.3.tar.gz]
+[2024-04-27 16:21:49] INFO root fetch - processPackages [brplotviz]: Remove: archive file [/home/abi/fetcher/tmp/brplotviz-0.3.tar.gz]
+[2024-04-27 16:21:49] INFO root fetch - main [MainThread]: End processing [brplotviz]: success
+[2024-04-27 16:21:49] INFO root fetch - processPackages [agentic_security]: Remove: archive file [/home/abi/fetcher/tmp/agentic_security-0.0.4.tar.gz]
+[2024-04-27 16:21:49] INFO root fetch - processPackages [agentic_security]: Remove: archive file [/home/abi/fetcher/tmp/agentic_security-0.1.1.tar.gz]
+[2024-04-27 16:21:49] INFO root fetch - main [MainThread]: End processing [agentic_security]: success
+[2024-04-27 16:21:50] INFO root fetch - processPackages [sim_rl]: Remove: archive file [/home/abi/fetcher/tmp/sim_rl-0.1.1.tar.gz]
+[2024-04-27 16:21:50] INFO root fetch - processPackages [sim_rl]: Remove: archive file [/home/abi/fetcher/tmp/sim_rl-0.1.2.tar.gz]
+[2024-04-27 16:21:50] INFO root fetch - main [MainThread]: End processing [sim_rl]: success
+[2024-04-27 16:21:50] INFO root fetch - processPackages [kss]: Remove: archive file [/home/abi/fetcher/tmp/kss-5.3.0.dev0.tar.gz]
+[2024-04-27 16:21:50] INFO root fetch - processPackages [kss]: Remove: archive file [/home/abi/fetcher/tmp/kss-5.3.0.dev1.tar.gz]
+[2024-04-27 16:21:50] INFO root fetch - main [MainThread]: End processing [kss]: success
+[2024-04-27 16:21:50] INFO root fetch - main [MainThread]: Store serial: [22959443]
