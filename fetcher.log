@@ -20728,3 +20728,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 22:30:46] INFO root fetch - processPackages [pyayay]: Remove: archive file [/home/abi/fetcher/tmp/pyayay-0.1.1.dev0-pp39-pypy39_pp73-manylinux_2_17_i686.manylinux2014_i686.whl.zip]
 [2024-04-27 22:30:46] INFO root fetch - main [MainThread]: End processing [pyayay]: success
 [2024-04-27 22:30:46] INFO root fetch - main [MainThread]: Store serial: [22961768]
+[2024-04-27 22:32:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961768]
+[2024-04-27 22:33:02] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-27 22:33:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Robocon-24
+[2024-04-27 22:33:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: polymind
+[2024-04-27 22:33:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MatinmikkoUtils
+[2024-04-27 22:33:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dirconfig
+[2024-04-27 22:33:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: scikit-maad
+[2024-04-27 22:33:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: media-manager
+[2024-04-27 22:33:02] INFO root fetch - processPackages [Robocon-24]: New version: [0.3.1] Old Version: [0.3]
+[2024-04-27 22:33:02] INFO root fetch - processPackages [dirconfig]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-04-27 22:33:02] INFO root fetch - processPackages [media-manager]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-27 22:33:02] INFO root fetch - processPackages [Robocon-24]: Downloading https://files.pythonhosted.org/packages/c6/9b/4433d7dc9abd379715d060e30605ccd179715d37fb1378ed0637edb1b57f/Robocon_24-0.3.tar.gz
+[2024-04-27 22:33:02] INFO root fetch - processPackages [scikit-maad]: New version: [1.4.2] Old Version: [1.4.1]
+[2024-04-27 22:33:02] WARNING root fetch - processPackages [MatinmikkoUtils]: Skipping, unable to determine old version
+[2024-04-27 22:33:02] INFO root fetch - main [MainThread]: End processing [MatinmikkoUtils] error
+[2024-04-27 22:33:02] INFO root fetch - processPackages [dirconfig]: Downloading https://files.pythonhosted.org/packages/c4/bc/d35d26f291a5596e24cddcc8bb7f303e9c31ea0a6f9095c5f0b862569116/dirconfig-0.2.4.tar.gz
+[2024-04-27 22:33:02] INFO root fetch - processPackages [polymind]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-27 22:33:02] INFO root fetch - processPackages [media-manager]: Downloading https://files.pythonhosted.org/packages/75/11/acc8a436463477db369c803d9007e03acdd0b43a677cd0cbb78b7ea5b3bb/media_manager-0.8.0-py2.py3-none-any.whl
+[2024-04-27 22:33:03] INFO root fetch - processPackages [scikit-maad]: Downloading https://files.pythonhosted.org/packages/7a/ed/7b4f6e3be74a33cdc5a385f5c8251567c16184b011a775f2fc031e120d19/scikit_maad-1.4.1.tar.gz
+[2024-04-27 22:33:03] INFO root fetch - processPackages [polymind]: Downloading https://files.pythonhosted.org/packages/0e/aa/52a8f77530064a4a31bc4aa8116debc14a08e851bf5d42cd670dc896ca1c/polymind-0.0.6.tar.gz
+[2024-04-27 22:33:03] INFO root fetch - processPackages [media-manager]: Downloading https://files.pythonhosted.org/packages/9b/a7/1155a373b195bebb88c0274982964c45aecd8d7206b2f4731838007628fd/media_manager-0.9.0-py2.py3-none-any.whl
+[2024-04-27 22:33:03] INFO root fetch - processPackages [dirconfig]: Downloading https://files.pythonhosted.org/packages/0f/e9/9cf612f0098516536270bb2610c1dbb6032e81bb22172631dab5fee87806/dirconfig-0.2.5.tar.gz
+[2024-04-27 22:33:03] INFO root fetch - processPackages [Robocon-24]: Downloading https://files.pythonhosted.org/packages/bc/fe/cf803fe9c25dea952161ec4cd3cf16909864c3824641dd64078d8273584f/Robocon_24-0.3.1.tar.gz
+[2024-04-27 22:33:03] INFO root fetch - processPackages [media-manager]: executing diffoscope
+[2024-04-27 22:33:03] INFO root fetch - processPackages [media-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/media_manager-0.8.0-py2.py3-none-any.whl.zip tmp/media_manager-0.9.0-py2.py3-none-any.whl.zip --markdown 20240427/m/media-manager/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-27 22:33:03] INFO root fetch - processPackages [dirconfig]: executing diffoscope
+[2024-04-27 22:33:03] INFO root fetch - processPackages [dirconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dirconfig-0.2.4.tar.gz tmp/dirconfig-0.2.5.tar.gz --markdown 20240427/d/dirconfig/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-04-27 22:33:03] INFO root fetch - processPackages [Robocon-24]: executing diffoscope
+[2024-04-27 22:33:03] INFO root fetch - processPackages [Robocon-24]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Robocon_24-0.3.tar.gz tmp/Robocon_24-0.3.1.tar.gz --markdown 20240427/R/Robocon-24/0.3-0.3.1/README.md --exclude *.pyd
+[2024-04-27 22:33:03] INFO root fetch - processPackages [polymind]: Downloading https://files.pythonhosted.org/packages/6b/5d/85efcce46e16627c7bdb1ca311cf5e79cf132fa11e00070c1ef96f3e1aab/polymind-0.0.7.tar.gz
+[2024-04-27 22:33:03] INFO root fetch - processPackages [scikit-maad]: Downloading https://files.pythonhosted.org/packages/dc/a1/9f2c92d22c2a7a8c92ff3cf104326b6bd10296724e602083c77e5a2597f4/scikit_maad-1.4.2.tar.gz
+[2024-04-27 22:33:03] INFO root fetch - processPackages [polymind]: executing diffoscope
+[2024-04-27 22:33:03] INFO root fetch - processPackages [polymind]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polymind-0.0.6.tar.gz tmp/polymind-0.0.7.tar.gz --markdown 20240427/p/polymind/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-27 22:33:03] INFO root fetch - processPackages [scikit-maad]: executing diffoscope
+[2024-04-27 22:33:03] INFO root fetch - processPackages [scikit-maad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scikit_maad-1.4.1.tar.gz tmp/scikit_maad-1.4.2.tar.gz --markdown 20240427/s/scikit-maad/1.4.1-1.4.2/README.md --exclude *.pyd
+[2024-04-27 22:33:04] INFO root fetch - processPackages [media-manager]: Remove: archive file [/home/abi/fetcher/tmp/media_manager-0.8.0-py2.py3-none-any.whl.zip]
+[2024-04-27 22:33:04] INFO root fetch - processPackages [media-manager]: Remove: archive file [/home/abi/fetcher/tmp/media_manager-0.9.0-py2.py3-none-any.whl.zip]
+[2024-04-27 22:33:04] INFO root fetch - main [MainThread]: End processing [media-manager]: success
+[2024-04-27 22:33:04] INFO root fetch - processPackages [Robocon-24]: Remove: archive file [/home/abi/fetcher/tmp/Robocon_24-0.3.tar.gz]
+[2024-04-27 22:33:04] INFO root fetch - processPackages [Robocon-24]: Remove: archive file [/home/abi/fetcher/tmp/Robocon_24-0.3.1.tar.gz]
+[2024-04-27 22:33:04] INFO root fetch - main [MainThread]: End processing [Robocon-24]: success
+[2024-04-27 22:33:04] INFO root fetch - processPackages [dirconfig]: Remove: archive file [/home/abi/fetcher/tmp/dirconfig-0.2.4.tar.gz]
+[2024-04-27 22:33:04] INFO root fetch - processPackages [dirconfig]: Remove: archive file [/home/abi/fetcher/tmp/dirconfig-0.2.5.tar.gz]
+[2024-04-27 22:33:04] INFO root fetch - main [MainThread]: End processing [dirconfig]: success
+[2024-04-27 22:33:04] INFO root fetch - processPackages [polymind]: Remove: archive file [/home/abi/fetcher/tmp/polymind-0.0.6.tar.gz]
+[2024-04-27 22:33:04] INFO root fetch - processPackages [polymind]: Remove: archive file [/home/abi/fetcher/tmp/polymind-0.0.7.tar.gz]
+[2024-04-27 22:33:04] INFO root fetch - main [MainThread]: End processing [polymind]: success
+[2024-04-27 22:33:04] INFO root fetch - processPackages [scikit-maad]: Remove: archive file [/home/abi/fetcher/tmp/scikit_maad-1.4.1.tar.gz]
+[2024-04-27 22:33:04] INFO root fetch - processPackages [scikit-maad]: Remove: archive file [/home/abi/fetcher/tmp/scikit_maad-1.4.2.tar.gz]
+[2024-04-27 22:33:04] INFO root fetch - main [MainThread]: End processing [scikit-maad]: success
+[2024-04-27 22:33:04] INFO root fetch - main [MainThread]: Store serial: [22961792]
