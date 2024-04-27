@@ -11925,3 +11925,18 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 12:19:20] INFO root fetch - processPackages [openai-cost-logger]: Remove: archive file [/home/abi/fetcher/tmp/openai-cost-logger-0.3.0.tar.gz]
 [2024-04-27 12:19:20] INFO root fetch - main [MainThread]: End processing [openai-cost-logger]: success
 [2024-04-27 12:19:20] INFO root fetch - main [MainThread]: Store serial: [22957863]
+[2024-04-27 12:21:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957863]
+[2024-04-27 12:21:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 12:21:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tiny-dag
+[2024-04-27 12:21:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: create-app-fastapi
+[2024-04-27 12:21:29] WARNING root fetch - processPackages [create-app-fastapi]: Skipping, unable to determine old version
+[2024-04-27 12:21:29] INFO root fetch - main [MainThread]: End processing [create-app-fastapi] error
+[2024-04-27 12:21:29] INFO root fetch - processPackages [tiny-dag]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-27 12:21:29] INFO root fetch - processPackages [tiny-dag]: Downloading https://files.pythonhosted.org/packages/b3/d4/de8a8dd47656ea956bcbda3b075be5080b9a7dcbacf076fe45ae987208bc/tiny-dag-0.0.1.tar.gz
+[2024-04-27 12:21:30] INFO root fetch - processPackages [tiny-dag]: Downloading https://files.pythonhosted.org/packages/c6/42/d516489f7e388bf149b148a388c0d2d96d88b803b4bdb4f8ed2971229af4/tiny_dag-0.0.2.tar.gz
+[2024-04-27 12:21:30] INFO root fetch - processPackages [tiny-dag]: executing diffoscope
+[2024-04-27 12:21:30] INFO root fetch - processPackages [tiny-dag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tiny-dag-0.0.1.tar.gz tmp/tiny_dag-0.0.2.tar.gz --markdown 20240427/t/tiny-dag/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-27 12:21:30] INFO root fetch - processPackages [tiny-dag]: Remove: archive file [/home/abi/fetcher/tmp/tiny-dag-0.0.1.tar.gz]
+[2024-04-27 12:21:30] INFO root fetch - processPackages [tiny-dag]: Remove: archive file [/home/abi/fetcher/tmp/tiny_dag-0.0.2.tar.gz]
+[2024-04-27 12:21:30] INFO root fetch - main [MainThread]: End processing [tiny-dag]: success
+[2024-04-27 12:21:30] INFO root fetch - main [MainThread]: Store serial: [22957873]
