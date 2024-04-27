@@ -21051,3 +21051,9 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 22:53:34] INFO root fetch - processPackages [deltachat-faqbot]: Remove: archive file [/home/abi/fetcher/tmp/deltachat_faqbot-0.6.0-py3-none-any.whl.zip]
 [2024-04-27 22:53:34] INFO root fetch - main [MainThread]: End processing [deltachat-faqbot]: success
 [2024-04-27 22:53:34] INFO root fetch - main [MainThread]: Store serial: [22961943]
+[2024-04-27 22:55:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961943]
+[2024-04-27 22:55:50] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 22:55:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: webchecks
+[2024-04-27 22:55:50] WARNING root fetch - processPackages [webchecks]: Skipping, unable to determine old version
+[2024-04-27 22:55:50] INFO root fetch - main [MainThread]: End processing [webchecks] error
+[2024-04-27 22:55:50] INFO root fetch - main [MainThread]: Store serial: [22961948]
