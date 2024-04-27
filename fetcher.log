@@ -6688,3 +6688,27 @@ EOFError: EOF read where object expected
 [2024-04-27 03:21:47] INFO root fetch - processPackages [botocore-a-la-carte-robomaker]: Remove: archive file [/home/abi/fetcher/tmp/botocore_a_la_carte_robomaker-1.34.93-py3-none-any.whl.zip]
 [2024-04-27 03:21:47] INFO root fetch - main [MainThread]: End processing [botocore-a-la-carte-robomaker]: success
 [2024-04-27 03:21:47] INFO root fetch - main [MainThread]: Store serial: [22955430]
+[2024-04-27 03:24:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22955430]
+[2024-04-27 03:24:05] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 03:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bihyung
+[2024-04-27 03:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ptipython-metapackage
+[2024-04-27 03:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi
+[2024-04-27 03:24:05] WARNING root fetch - processPackages [bihyung]: Skipping, unable to determine old version
+[2024-04-27 03:24:05] INFO root fetch - main [MainThread]: End processing [bihyung] error
+[2024-04-27 03:24:05] INFO root fetch - processPackages [pulumi]: New version: [3.99.0] Old Version: [3.98.0]
+[2024-04-27 03:24:05] INFO root fetch - processPackages [ptipython-metapackage]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-04-27 03:24:05] INFO root fetch - processPackages [pulumi]: Downloading https://files.pythonhosted.org/packages/c1/38/8ac5a8420c7a95ad63a48e5881ef08233e7ce3dbe95751bfcc7746f0c383/pulumi-3.98.0-py3-none-any.whl
+[2024-04-27 03:24:05] INFO root fetch - processPackages [ptipython-metapackage]: Downloading https://files.pythonhosted.org/packages/fa/ac/59888f07b3bfb9ff30468fba11249fc839f946cc72f42a96d9bea57503d2/ptipython-metapackage-1.1.0.tar.gz
+[2024-04-27 03:24:05] INFO root fetch - processPackages [pulumi]: Downloading https://files.pythonhosted.org/packages/17/49/ac369781e6bea40b4e15ca66620d1815ffa59727e6dab5e543a8971e8cd9/pulumi-3.99.0-py3-none-any.whl
+[2024-04-27 03:24:05] INFO root fetch - processPackages [pulumi]: executing diffoscope
+[2024-04-27 03:24:05] INFO root fetch - processPackages [pulumi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi-3.98.0-py3-none-any.whl.zip tmp/pulumi-3.99.0-py3-none-any.whl.zip --markdown 20240427/p/pulumi/3.98.0-3.99.0/README.md --exclude *.pyd
+[2024-04-27 03:24:05] INFO root fetch - processPackages [ptipython-metapackage]: Downloading https://files.pythonhosted.org/packages/32/90/2245a4e750507f10061455fd8a9ce3a3694e7cd061727126ccb08f55a51c/ptipython_metapackage-1.2.0.tar.gz
+[2024-04-27 03:24:06] INFO root fetch - processPackages [ptipython-metapackage]: executing diffoscope
+[2024-04-27 03:24:06] INFO root fetch - processPackages [ptipython-metapackage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ptipython-metapackage-1.1.0.tar.gz tmp/ptipython_metapackage-1.2.0.tar.gz --markdown 20240427/p/ptipython-metapackage/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-04-27 03:24:06] INFO root fetch - processPackages [ptipython-metapackage]: Remove: archive file [/home/abi/fetcher/tmp/ptipython-metapackage-1.1.0.tar.gz]
+[2024-04-27 03:24:06] INFO root fetch - processPackages [ptipython-metapackage]: Remove: archive file [/home/abi/fetcher/tmp/ptipython_metapackage-1.2.0.tar.gz]
+[2024-04-27 03:24:06] INFO root fetch - main [MainThread]: End processing [ptipython-metapackage]: success
+[2024-04-27 03:24:06] INFO root fetch - processPackages [pulumi]: Remove: archive file [/home/abi/fetcher/tmp/pulumi-3.98.0-py3-none-any.whl.zip]
+[2024-04-27 03:24:06] INFO root fetch - processPackages [pulumi]: Remove: archive file [/home/abi/fetcher/tmp/pulumi-3.99.0-py3-none-any.whl.zip]
+[2024-04-27 03:24:06] INFO root fetch - main [MainThread]: End processing [pulumi]: success
+[2024-04-27 03:24:06] INFO root fetch - main [MainThread]: Store serial: [22955505]
