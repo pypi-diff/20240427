@@ -10915,3 +10915,37 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 10:28:27] INFO root fetch - processPackages [py4web]: Remove: archive file [/home/abi/fetcher/tmp/py4web-1.20240427.1.tar.gz]
 [2024-04-27 10:28:27] INFO root fetch - main [MainThread]: End processing [py4web]: success
 [2024-04-27 10:28:27] INFO root fetch - main [MainThread]: Store serial: [22957446]
+[2024-04-27 10:30:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957446]
+[2024-04-27 10:32:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957446]
+[2024-04-27 10:33:04] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 10:33:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ctrip-app-ui
+[2024-04-27 10:33:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lbox
+[2024-04-27 10:33:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flatpack
+[2024-04-27 10:33:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-plugin-groupmate-waifu
+[2024-04-27 10:33:04] INFO root fetch - processPackages [ctrip-app-ui]: New version: [0.3.0] Old Version: [0.2.9]
+[2024-04-27 10:33:04] INFO root fetch - processPackages [flatpack]: New version: [3.3.9] Old Version: [3.3.8]
+[2024-04-27 10:33:04] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/70/d9/8d475cde4c23487d6e5f9209a1848fce59319a318ed24795dd3eb9e3345e/ctrip-app-ui-0.2.9.tar.gz
+[2024-04-27 10:33:04] WARNING root fetch - processPackages [lbox]: Skipping, unable to determine old version
+[2024-04-27 10:33:04] INFO root fetch - main [MainThread]: End processing [lbox] error
+[2024-04-27 10:33:04] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/42/48/84e949164975b341645163f536ee4ca8329c4e3dfa6d143c2806a0849a54/flatpack-3.3.8.tar.gz
+[2024-04-27 10:33:04] INFO root fetch - processPackages [nonebot-plugin-groupmate-waifu]: New version: [1.4.2] Old Version: [1.4.1]
+[2024-04-27 10:33:04] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/11/54/065825e8640b062c83c07c97d8dea514db8a5c0ea3c272834b88c568d82e/flatpack-3.3.9.tar.gz
+[2024-04-27 10:33:04] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/25/f1/e61df16ac8d4a75dae5d554257a0e37487c572c048589b13358a35fb56c0/ctrip-app-ui-0.3.0.tar.gz
+[2024-04-27 10:33:04] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-04-27 10:33:04] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.3.8.tar.gz tmp/flatpack-3.3.9.tar.gz --markdown 20240427/f/flatpack/3.3.8-3.3.9/README.md --exclude *.pyd
+[2024-04-27 10:33:04] INFO root fetch - processPackages [ctrip-app-ui]: executing diffoscope
+[2024-04-27 10:33:04] INFO root fetch - processPackages [ctrip-app-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctrip-app-ui-0.2.9.tar.gz tmp/ctrip-app-ui-0.3.0.tar.gz --markdown 20240427/c/ctrip-app-ui/0.2.9-0.3.0/README.md --exclude *.pyd
+[2024-04-27 10:33:05] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.8.tar.gz]
+[2024-04-27 10:33:05] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.9.tar.gz]
+[2024-04-27 10:33:05] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-04-27 10:33:05] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.2.9.tar.gz]
+[2024-04-27 10:33:05] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.3.0.tar.gz]
+[2024-04-27 10:33:05] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
+[2024-04-27 10:33:06] INFO root fetch - processPackages [nonebot-plugin-groupmate-waifu]: Downloading https://files.pythonhosted.org/packages/66/bf/5643df8bede786509148009b89cc2f869d85e75b0829a74b5b819e0ebe06/nonebot_plugin_groupmate_waifu-1.4.1.tar.gz
+[2024-04-27 10:33:06] INFO root fetch - processPackages [nonebot-plugin-groupmate-waifu]: Downloading https://files.pythonhosted.org/packages/42/32/38f8b5ed184654a44d0860a4bae03d3e671ae218f8ebe2016bd601b34b5f/nonebot_plugin_groupmate_waifu-1.4.2.tar.gz
+[2024-04-27 10:33:06] INFO root fetch - processPackages [nonebot-plugin-groupmate-waifu]: executing diffoscope
+[2024-04-27 10:33:06] INFO root fetch - processPackages [nonebot-plugin-groupmate-waifu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_groupmate_waifu-1.4.1.tar.gz tmp/nonebot_plugin_groupmate_waifu-1.4.2.tar.gz --markdown 20240427/n/nonebot-plugin-groupmate-waifu/1.4.1-1.4.2/README.md --exclude *.pyd
+[2024-04-27 10:33:06] INFO root fetch - processPackages [nonebot-plugin-groupmate-waifu]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_groupmate_waifu-1.4.1.tar.gz]
+[2024-04-27 10:33:06] INFO root fetch - processPackages [nonebot-plugin-groupmate-waifu]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_groupmate_waifu-1.4.2.tar.gz]
+[2024-04-27 10:33:06] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-groupmate-waifu]: success
+[2024-04-27 10:33:06] INFO root fetch - main [MainThread]: Store serial: [22957460]
