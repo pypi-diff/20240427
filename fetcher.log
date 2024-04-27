@@ -6840,3 +6840,9 @@ EOFError: EOF read where object expected
 [2024-04-27 03:43:43] INFO root fetch - processPackages [flowdata]: Remove: archive file [/home/abi/fetcher/tmp/flowdata-0.1.4.tar.gz]
 [2024-04-27 03:43:43] INFO root fetch - main [MainThread]: End processing [flowdata]: success
 [2024-04-27 03:43:43] INFO root fetch - main [MainThread]: Store serial: [22955915]
+[2024-04-27 03:45:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22955915]
+[2024-04-27 03:45:51] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 03:45:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-utilitybox
+[2024-04-27 03:45:52] WARNING root fetch - processPackages [django-utilitybox]: Skipping, unable to determine old version
+[2024-04-27 03:45:52] INFO root fetch - main [MainThread]: End processing [django-utilitybox] error
+[2024-04-27 03:45:52] INFO root fetch - main [MainThread]: Store serial: [22955919]
