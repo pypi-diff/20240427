@@ -13972,3 +13972,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 14:39:05] INFO root fetch - processPackages [tensorcircuit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensorcircuit-nightly-0.9.1.dev20230608.tar.gz]
 [2024-04-27 14:39:05] INFO root fetch - main [MainThread]: End processing [tensorcircuit-nightly]: success
 [2024-04-27 14:39:05] INFO root fetch - main [MainThread]: Store serial: [22958715]
+[2024-04-27 14:41:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958715]
+[2024-04-27 14:41:14] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 14:41:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bigdl-llm
+[2024-04-27 14:41:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: memium
+[2024-04-27 14:41:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yaxp
+[2024-04-27 14:41:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cairocffi
+[2024-04-27 14:41:14] INFO root fetch - processPackages [memium]: New version: [0.7.0] Old Version: [0.20.0]
+[2024-04-27 14:41:14] INFO root fetch - processPackages [memium]: Downloading https://files.pythonhosted.org/packages/02/93/cedb04985edab0898cf732c13983ec21c5bae22423a211fbb395e9554b90/memium-0.20.0.tar.gz
+[2024-04-27 14:41:14] INFO root fetch - processPackages [yaxp]: New version: [1.0.1] Old Version: [1.0.0a1]
+[2024-04-27 14:41:14] INFO root fetch - processPackages [bigdl-llm]: New version: [2.5.0b20240427] Old Version: [2.5.0b20240426]
+[2024-04-27 14:41:14] INFO root fetch - processPackages [cairocffi]: New version: [1.7.0] Old Version: [1.6.1]
+[2024-04-27 14:41:14] INFO root fetch - processPackages [memium]: Downloading https://files.pythonhosted.org/packages/8a/a3/a3f5e0b58a853724e800a65c85c0df00b7d5138ea7cbb3db40d329c5f3d3/memium-0.7.0.tar.gz
+[2024-04-27 14:41:14] INFO root fetch - processPackages [bigdl-llm]: Downloading https://files.pythonhosted.org/packages/e9/d9/e7b9faabbb58e66790f964e38ab5e1897cb2f9c3894df2249fdad3b686d1/bigdl_llm-2.5.0b20240426-py3-none-win_amd64.whl
+[2024-04-27 14:41:14] INFO root fetch - processPackages [yaxp]: Downloading https://files.pythonhosted.org/packages/e6/32/1e023da133c122d49d646e14ebd224d07ba8d2a4df35ca6676abd51fb571/yaxp-1.0.0a1.tar.gz
+[2024-04-27 14:41:14] INFO root fetch - processPackages [cairocffi]: Downloading https://files.pythonhosted.org/packages/6e/37/982a8650ab8c0b3bd0021e3f7041e9707ce35f6cc43b7def2c43ff109dd9/cairocffi-1.6.1.tar.gz
+[2024-04-27 14:41:15] INFO root fetch - processPackages [memium]: executing diffoscope
+[2024-04-27 14:41:15] INFO root fetch - processPackages [memium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/memium-0.20.0.tar.gz tmp/memium-0.7.0.tar.gz --markdown 20240427/m/memium/0.20.0-0.7.0/README.md --exclude *.pyd
+[2024-04-27 14:41:15] INFO root fetch - processPackages [yaxp]: Downloading https://files.pythonhosted.org/packages/11/54/b89fa17863a86ea7fda19817ebca3344c11e9405d511b2f93d9ffabd24d8/yaxp-1.0.1.tar.gz
+[2024-04-27 14:41:15] INFO root fetch - processPackages [cairocffi]: Downloading https://files.pythonhosted.org/packages/ba/94/372aaeb17dce40a646e5a2df61d10e43a20b6d3021deeab8280eba748077/cairocffi-1.7.0.tar.gz
+[2024-04-27 14:41:15] INFO root fetch - processPackages [yaxp]: executing diffoscope
+[2024-04-27 14:41:15] INFO root fetch - processPackages [yaxp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yaxp-1.0.0a1.tar.gz tmp/yaxp-1.0.1.tar.gz --markdown 20240427/y/yaxp/1.0.0a1-1.0.1/README.md --exclude *.pyd
+[2024-04-27 14:41:15] INFO root fetch - processPackages [bigdl-llm]: Downloading https://files.pythonhosted.org/packages/a9/cd/4b4118e47b666f5ae7a8413b9551143b504aa178e88a69217d0dc370fb84/bigdl_llm-2.5.0b20240427-py3-none-win_amd64.whl
+[2024-04-27 14:41:15] INFO root fetch - processPackages [cairocffi]: executing diffoscope
+[2024-04-27 14:41:15] INFO root fetch - processPackages [cairocffi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cairocffi-1.6.1.tar.gz tmp/cairocffi-1.7.0.tar.gz --markdown 20240427/c/cairocffi/1.6.1-1.7.0/README.md --exclude *.pyd
+[2024-04-27 14:41:15] INFO root fetch - processPackages [bigdl-llm]: executing diffoscope
+[2024-04-27 14:41:15] INFO root fetch - processPackages [bigdl-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_llm-2.5.0b20240426-py3-none-win_amd64.whl.zip tmp/bigdl_llm-2.5.0b20240427-py3-none-win_amd64.whl.zip --markdown 20240427/b/bigdl-llm/2.5.0b20240426-2.5.0b20240427/README.md --exclude *.pyd
+[2024-04-27 14:41:15] INFO root fetch - processPackages [memium]: Remove: archive file [/home/abi/fetcher/tmp/memium-0.20.0.tar.gz]
+[2024-04-27 14:41:15] INFO root fetch - processPackages [memium]: Remove: archive file [/home/abi/fetcher/tmp/memium-0.7.0.tar.gz]
+[2024-04-27 14:41:15] INFO root fetch - main [MainThread]: End processing [memium]: success
+[2024-04-27 14:41:16] INFO root fetch - processPackages [yaxp]: Remove: archive file [/home/abi/fetcher/tmp/yaxp-1.0.0a1.tar.gz]
+[2024-04-27 14:41:16] INFO root fetch - processPackages [yaxp]: Remove: archive file [/home/abi/fetcher/tmp/yaxp-1.0.1.tar.gz]
+[2024-04-27 14:41:16] INFO root fetch - main [MainThread]: End processing [yaxp]: success
+[2024-04-27 14:41:16] INFO root fetch - processPackages [cairocffi]: Remove: archive file [/home/abi/fetcher/tmp/cairocffi-1.6.1.tar.gz]
+[2024-04-27 14:41:16] INFO root fetch - processPackages [cairocffi]: Remove: archive file [/home/abi/fetcher/tmp/cairocffi-1.7.0.tar.gz]
+[2024-04-27 14:41:16] INFO root fetch - main [MainThread]: End processing [cairocffi]: success
+[2024-04-27 14:41:17] INFO root fetch - processPackages [bigdl-llm]: Remove: archive file [/home/abi/fetcher/tmp/bigdl_llm-2.5.0b20240426-py3-none-win_amd64.whl.zip]
+[2024-04-27 14:41:17] INFO root fetch - processPackages [bigdl-llm]: Remove: archive file [/home/abi/fetcher/tmp/bigdl_llm-2.5.0b20240427-py3-none-win_amd64.whl.zip]
+[2024-04-27 14:41:17] INFO root fetch - main [MainThread]: End processing [bigdl-llm]: success
+[2024-04-27 14:41:17] INFO root fetch - main [MainThread]: Store serial: [22958727]
