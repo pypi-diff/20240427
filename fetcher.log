@@ -11346,3 +11346,36 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 11:23:06] INFO root fetch - processPackages [tira]: Remove: archive file [/home/abi/fetcher/tmp/tira-0.0.99.tar.gz]
 [2024-04-27 11:23:06] INFO root fetch - main [MainThread]: End processing [tira]: success
 [2024-04-27 11:23:06] INFO root fetch - main [MainThread]: Store serial: [22957643]
+[2024-04-27 11:25:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957643]
+[2024-04-27 11:25:15] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 11:25:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tbp-nightly
+[2024-04-27 11:25:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sparklines
+[2024-04-27 11:25:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyscinloopsr
+[2024-04-27 11:25:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vfs-appointment-bot
+[2024-04-27 11:25:15] INFO root fetch - processPackages [pyscinloopsr]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-27 11:25:15] INFO root fetch - processPackages [tbp-nightly]: New version: [2.9.0a20221130] Old Version: [2.9.0a20221129]
+[2024-04-27 11:25:15] INFO root fetch - processPackages [sparklines]: New version: [0.5.0] Old Version: [0.4.2]
+[2024-04-27 11:25:15] WARNING root fetch - processPackages [vfs-appointment-bot]: Skipping, unable to determine old version
+[2024-04-27 11:25:15] INFO root fetch - main [MainThread]: End processing [vfs-appointment-bot] error
+[2024-04-27 11:25:15] INFO root fetch - processPackages [pyscinloopsr]: Downloading https://files.pythonhosted.org/packages/98/21/5809d8e4c42d0207d6fd61e35cf0683da0e0cc5f1d10fa87e864b000cfa6/pyscinloopsr-1.0.8.tar.gz
+[2024-04-27 11:25:15] INFO root fetch - processPackages [tbp-nightly]: Downloading https://files.pythonhosted.org/packages/b9/6c/43a589e5ab1d1b961e5780e41057576c7abd5bf16d3f871d8ef4ebdaf461/tbp-nightly-2.9.0a20221129.tar.gz
+[2024-04-27 11:25:15] INFO root fetch - processPackages [sparklines]: Downloading https://files.pythonhosted.org/packages/04/0d/a4b03bacacb2e057680568757ec75b522077b93fa66fc14c1f2633d24b57/sparklines-0.4.2.tar.gz
+[2024-04-27 11:25:15] INFO root fetch - processPackages [pyscinloopsr]: Downloading https://files.pythonhosted.org/packages/c2/79/a3b3e1c4377a54b84d92a6ce4a8d70f9bb57364bdbe1ec2657397e8360cd/pyscinloopsr-1.0.9.tar.gz
+[2024-04-27 11:25:15] INFO root fetch - processPackages [pyscinloopsr]: executing diffoscope
+[2024-04-27 11:25:15] INFO root fetch - processPackages [pyscinloopsr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscinloopsr-1.0.8.tar.gz tmp/pyscinloopsr-1.0.9.tar.gz --markdown 20240427/p/pyscinloopsr/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-27 11:25:16] INFO root fetch - processPackages [tbp-nightly]: Downloading https://files.pythonhosted.org/packages/2e/31/c611af28c0d42c7cbb86781523f94e57796654fd8b7a7049e8a6db2eecf3/tbp-nightly-2.9.0a20221130.tar.gz
+[2024-04-27 11:25:16] INFO root fetch - processPackages [sparklines]: Downloading https://files.pythonhosted.org/packages/42/10/a55ffb7b5ae130804ebcb53ecbb711a902403fe7efe67739aceeb4daf8f5/sparklines-0.5.0.tar.gz
+[2024-04-27 11:25:16] INFO root fetch - processPackages [sparklines]: executing diffoscope
+[2024-04-27 11:25:16] INFO root fetch - processPackages [sparklines]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparklines-0.4.2.tar.gz tmp/sparklines-0.5.0.tar.gz --markdown 20240427/s/sparklines/0.4.2-0.5.0/README.md --exclude *.pyd
+[2024-04-27 11:25:16] INFO root fetch - processPackages [tbp-nightly]: executing diffoscope
+[2024-04-27 11:25:16] INFO root fetch - processPackages [tbp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tbp-nightly-2.9.0a20221129.tar.gz tmp/tbp-nightly-2.9.0a20221130.tar.gz --markdown 20240427/t/tbp-nightly/2.9.0a20221129-2.9.0a20221130/README.md --exclude *.pyd
+[2024-04-27 11:25:16] INFO root fetch - processPackages [pyscinloopsr]: Remove: archive file [/home/abi/fetcher/tmp/pyscinloopsr-1.0.8.tar.gz]
+[2024-04-27 11:25:16] INFO root fetch - processPackages [pyscinloopsr]: Remove: archive file [/home/abi/fetcher/tmp/pyscinloopsr-1.0.9.tar.gz]
+[2024-04-27 11:25:16] INFO root fetch - main [MainThread]: End processing [pyscinloopsr]: success
+[2024-04-27 11:25:16] INFO root fetch - processPackages [sparklines]: Remove: archive file [/home/abi/fetcher/tmp/sparklines-0.4.2.tar.gz]
+[2024-04-27 11:25:16] INFO root fetch - processPackages [sparklines]: Remove: archive file [/home/abi/fetcher/tmp/sparklines-0.5.0.tar.gz]
+[2024-04-27 11:25:16] INFO root fetch - main [MainThread]: End processing [sparklines]: success
+[2024-04-27 11:25:18] INFO root fetch - processPackages [tbp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tbp-nightly-2.9.0a20221129.tar.gz]
+[2024-04-27 11:25:18] INFO root fetch - processPackages [tbp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tbp-nightly-2.9.0a20221130.tar.gz]
+[2024-04-27 11:25:18] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
+[2024-04-27 11:25:18] INFO root fetch - main [MainThread]: Store serial: [22957657]
