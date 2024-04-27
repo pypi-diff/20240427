@@ -15011,3 +15011,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 15:48:37] INFO root fetch - processPackages [openai-cost-logger]: Remove: archive file [/home/abi/fetcher/tmp/openai-cost-logger-0.3.0.tar.gz]
 [2024-04-27 15:48:37] INFO root fetch - main [MainThread]: End processing [openai-cost-logger]: success
 [2024-04-27 15:48:37] INFO root fetch - main [MainThread]: Store serial: [22959203]
+[2024-04-27 15:50:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959203]
+[2024-04-27 15:50:45] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 15:50:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: talisman-dm
+[2024-04-27 15:50:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TkEasyGUI
+[2024-04-27 15:50:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rofi-rbw
+[2024-04-27 15:50:46] INFO root fetch - processPackages [rofi-rbw]: New version: [1.4.0] Old Version: [1.3.0]
+[2024-04-27 15:50:46] INFO root fetch - processPackages [TkEasyGUI]: New version: [0.2.67] Old Version: [0.2.63]
+[2024-04-27 15:50:46] INFO root fetch - processPackages [talisman-dm]: New version: [1.0.0a9] Old Version: [1.0.0a8]
+[2024-04-27 15:50:46] INFO root fetch - processPackages [rofi-rbw]: Downloading https://files.pythonhosted.org/packages/bb/80/4af9b80af613f69efe1110428febb6ebd090466c34c09d7a7d60d05a8886/rofi_rbw-1.3.0.tar.gz
+[2024-04-27 15:50:46] INFO root fetch - processPackages [TkEasyGUI]: Downloading https://files.pythonhosted.org/packages/60/cb/509ea756b3cddf1d5230ff34afcd17a485b7b2665137dd9cd09f7227a38d/tkeasygui-0.2.63.tar.gz
+[2024-04-27 15:50:46] INFO root fetch - processPackages [talisman-dm]: Downloading https://files.pythonhosted.org/packages/ed/7b/c63dab386460cedecb16ca1a9f5dbb275583d9abb2f9852eac02dc8f1139/talisman-dm-1.0.0a8.tar.gz
+[2024-04-27 15:50:46] INFO root fetch - processPackages [rofi-rbw]: Downloading https://files.pythonhosted.org/packages/1f/08/78214ca6bf4db2be97c9fef2bf4c722556566a28f3c914f661cd266185d9/rofi_rbw-1.4.0.tar.gz
+[2024-04-27 15:50:46] INFO root fetch - processPackages [talisman-dm]: Downloading https://files.pythonhosted.org/packages/bd/ef/0d2809d6ed2c72eee47f846077380162aecf867d99c7289e3fbcb3a223f9/talisman-dm-1.0.0a9.tar.gz
+[2024-04-27 15:50:46] INFO root fetch - processPackages [TkEasyGUI]: Downloading https://files.pythonhosted.org/packages/66/ec/b48d12557d16c627a7627b888398eb0ab24a9d986d28dcc7a8647e06fb68/tkeasygui-0.2.67.tar.gz
+[2024-04-27 15:50:46] INFO root fetch - processPackages [talisman-dm]: executing diffoscope
+[2024-04-27 15:50:46] INFO root fetch - processPackages [talisman-dm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/talisman-dm-1.0.0a8.tar.gz tmp/talisman-dm-1.0.0a9.tar.gz --markdown 20240427/t/talisman-dm/1.0.0a8-1.0.0a9/README.md --exclude *.pyd
+[2024-04-27 15:50:46] INFO root fetch - processPackages [rofi-rbw]: executing diffoscope
+[2024-04-27 15:50:46] INFO root fetch - processPackages [rofi-rbw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rofi_rbw-1.3.0.tar.gz tmp/rofi_rbw-1.4.0.tar.gz --markdown 20240427/r/rofi-rbw/1.3.0-1.4.0/README.md --exclude *.pyd
+[2024-04-27 15:50:46] INFO root fetch - processPackages [TkEasyGUI]: executing diffoscope
+[2024-04-27 15:50:46] INFO root fetch - processPackages [TkEasyGUI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkeasygui-0.2.63.tar.gz tmp/tkeasygui-0.2.67.tar.gz --markdown 20240427/T/TkEasyGUI/0.2.63-0.2.67/README.md --exclude *.pyd
+[2024-04-27 15:50:47] INFO root fetch - processPackages [rofi-rbw]: Remove: archive file [/home/abi/fetcher/tmp/rofi_rbw-1.3.0.tar.gz]
+[2024-04-27 15:50:47] INFO root fetch - processPackages [rofi-rbw]: Remove: archive file [/home/abi/fetcher/tmp/rofi_rbw-1.4.0.tar.gz]
+[2024-04-27 15:50:47] INFO root fetch - main [MainThread]: End processing [rofi-rbw]: success
+[2024-04-27 15:50:47] INFO root fetch - processPackages [TkEasyGUI]: Remove: archive file [/home/abi/fetcher/tmp/tkeasygui-0.2.63.tar.gz]
+[2024-04-27 15:50:47] INFO root fetch - processPackages [TkEasyGUI]: Remove: archive file [/home/abi/fetcher/tmp/tkeasygui-0.2.67.tar.gz]
+[2024-04-27 15:50:47] INFO root fetch - main [MainThread]: End processing [TkEasyGUI]: success
+[2024-04-27 15:50:47] INFO root fetch - processPackages [talisman-dm]: Remove: archive file [/home/abi/fetcher/tmp/talisman-dm-1.0.0a8.tar.gz]
+[2024-04-27 15:50:47] INFO root fetch - processPackages [talisman-dm]: Remove: archive file [/home/abi/fetcher/tmp/talisman-dm-1.0.0a9.tar.gz]
+[2024-04-27 15:50:47] INFO root fetch - main [MainThread]: End processing [talisman-dm]: success
+[2024-04-27 15:50:47] INFO root fetch - main [MainThread]: Store serial: [22959213]
