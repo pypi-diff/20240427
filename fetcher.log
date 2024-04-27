@@ -9540,3 +9540,18 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 08:10:52] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240426.tar.gz]
 [2024-04-27 08:10:52] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
 [2024-04-27 08:10:52] INFO root fetch - main [MainThread]: Store serial: [22956825]
+[2024-04-27 08:12:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956825]
+[2024-04-27 08:13:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 08:13:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rocketmq-wise
+[2024-04-27 08:13:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: byzerllm
+[2024-04-27 08:13:01] WARNING root fetch - processPackages [rocketmq-wise]: Skipping, unable to determine old version
+[2024-04-27 08:13:01] INFO root fetch - main [MainThread]: End processing [rocketmq-wise] error
+[2024-04-27 08:13:01] INFO root fetch - processPackages [byzerllm]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-27 08:13:02] INFO root fetch - processPackages [byzerllm]: Downloading https://files.pythonhosted.org/packages/98/c6/1563f4025ee67d92445c7867c7ca1ad9c523055b4708ddd5ab2dab480c51/byzerllm-0.1.8.tar.gz
+[2024-04-27 08:13:02] INFO root fetch - processPackages [byzerllm]: Downloading https://files.pythonhosted.org/packages/a0/04/10289d36794dda29e2a889dcf2e412dcd39997cf2bc11d5af1bcc4670b3d/byzerllm-0.1.9.tar.gz
+[2024-04-27 08:13:02] INFO root fetch - processPackages [byzerllm]: executing diffoscope
+[2024-04-27 08:13:02] INFO root fetch - processPackages [byzerllm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/byzerllm-0.1.8.tar.gz tmp/byzerllm-0.1.9.tar.gz --markdown 20240427/b/byzerllm/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-27 08:13:04] INFO root fetch - processPackages [byzerllm]: Remove: archive file [/home/abi/fetcher/tmp/byzerllm-0.1.8.tar.gz]
+[2024-04-27 08:13:04] INFO root fetch - processPackages [byzerllm]: Remove: archive file [/home/abi/fetcher/tmp/byzerllm-0.1.9.tar.gz]
+[2024-04-27 08:13:04] INFO root fetch - main [MainThread]: End processing [byzerllm]: success
+[2024-04-27 08:13:04] INFO root fetch - main [MainThread]: Store serial: [22956832]
