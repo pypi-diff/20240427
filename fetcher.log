@@ -21326,3 +21326,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 23:23:11] INFO root fetch - processPackages [multi-vector-simulator]: Remove: archive file [/home/abi/fetcher/tmp/multi-vector-simulator-1.1.0rc1.tar.gz]
 [2024-04-27 23:23:11] INFO root fetch - main [MainThread]: End processing [multi-vector-simulator]: success
 [2024-04-27 23:23:11] INFO root fetch - main [MainThread]: Store serial: [22962067]
+[2024-04-27 23:25:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962067]
+[2024-04-27 23:25:19] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 23:25:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: streamlit-shortcuts
+[2024-04-27 23:25:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flet-contrib-core
+[2024-04-27 23:25:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flet-contrib-embed
+[2024-04-27 23:25:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flet-contrib-pyodide
+[2024-04-27 23:25:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: flet-contrib-runtime
+[2024-04-27 23:25:20] INFO root fetch - processPackages [flet-contrib-embed]: New version: [2024.4.27.1759] Old Version: [2024.4.27.1744]
+[2024-04-27 23:25:20] INFO root fetch - processPackages [flet-contrib-runtime]: New version: [2024.4.27.1759] Old Version: [2024.4.27.1744]
+[2024-04-27 23:25:20] INFO root fetch - processPackages [flet-contrib-core]: New version: [2024.4.27.1759] Old Version: [2024.4.27.1744]
+[2024-04-27 23:25:20] INFO root fetch - processPackages [flet-contrib-pyodide]: New version: [2024.4.27.1759] Old Version: [2024.4.27.1744]
+[2024-04-27 23:25:20] INFO root fetch - processPackages [streamlit-shortcuts]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-27 23:25:20] INFO root fetch - processPackages [flet-contrib-embed]: Downloading https://files.pythonhosted.org/packages/1f/88/41e08e0a163e59d04da07fec956f8c69cfba906bad113de77d34b19623d5/flet_contrib_embed-2024.4.27.1744.tar.gz
+[2024-04-27 23:25:20] INFO root fetch - processPackages [flet-contrib-runtime]: Downloading https://files.pythonhosted.org/packages/98/2e/9ce61e856f3439c46f261328b567a3c96cbfda0c25c69b611ca01d67b65f/flet_contrib_runtime-2024.4.27.1744.tar.gz
+[2024-04-27 23:25:20] INFO root fetch - processPackages [flet-contrib-pyodide]: Downloading https://files.pythonhosted.org/packages/ca/e8/6bb1f095fc410cfe8fb9474a5018e18573924adc4e4188257c573f460b5d/flet_contrib_pyodide-2024.4.27.1744.tar.gz
+[2024-04-27 23:25:20] INFO root fetch - processPackages [flet-contrib-core]: Downloading https://files.pythonhosted.org/packages/4d/f5/3e6bed1aefc61141348150afed357763505f75159072784142ea25a25855/flet_contrib_core-2024.4.27.1744.tar.gz
+[2024-04-27 23:25:20] INFO root fetch - processPackages [streamlit-shortcuts]: Downloading https://files.pythonhosted.org/packages/ae/60/b9957bb2d1dacf65fcc7263b21c3b2acf92a8a37a9c0bccfe487ddf73092/streamlit-shortcuts-0.1.1.tar.gz
+[2024-04-27 23:25:20] INFO root fetch - processPackages [flet-contrib-pyodide]: Downloading https://files.pythonhosted.org/packages/4d/d8/555a2762baab2ee73ec6f1ab8fb7c9d00aabf9c654f9b128f91fcafc1292/flet_contrib_pyodide-2024.4.27.1759.tar.gz
+[2024-04-27 23:25:20] INFO root fetch - processPackages [flet-contrib-embed]: Downloading https://files.pythonhosted.org/packages/1d/92/aa3d004d3a01b93ce7de0276691efa6f850ac26f2239036c2d4c39cf4016/flet_contrib_embed-2024.4.27.1759.tar.gz
+[2024-04-27 23:25:20] INFO root fetch - processPackages [flet-contrib-runtime]: Downloading https://files.pythonhosted.org/packages/c5/9e/bcdd8eea4344f4a71d6dc605122a8ebba1ed6a67df5b6775497841528713/flet_contrib_runtime-2024.4.27.1759.tar.gz
+[2024-04-27 23:25:20] INFO root fetch - processPackages [flet-contrib-core]: Downloading https://files.pythonhosted.org/packages/9f/e3/397823e1f92e1dce14646d896c65572f6dfe4911ca01c729c29fd1360cb4/flet_contrib_core-2024.4.27.1759.tar.gz
+[2024-04-27 23:25:20] INFO root fetch - processPackages [flet-contrib-pyodide]: executing diffoscope
+[2024-04-27 23:25:20] INFO root fetch - processPackages [flet-contrib-pyodide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_contrib_pyodide-2024.4.27.1744.tar.gz tmp/flet_contrib_pyodide-2024.4.27.1759.tar.gz --markdown 20240427/f/flet-contrib-pyodide/2024.4.27.1744-2024.4.27.1759/README.md --exclude *.pyd
+[2024-04-27 23:25:20] INFO root fetch - processPackages [flet-contrib-embed]: executing diffoscope
+[2024-04-27 23:25:20] INFO root fetch - processPackages [flet-contrib-embed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_contrib_embed-2024.4.27.1744.tar.gz tmp/flet_contrib_embed-2024.4.27.1759.tar.gz --markdown 20240427/f/flet-contrib-embed/2024.4.27.1744-2024.4.27.1759/README.md --exclude *.pyd
+[2024-04-27 23:25:20] INFO root fetch - processPackages [streamlit-shortcuts]: Downloading https://files.pythonhosted.org/packages/d3/d2/98c2f57e73239c28adea074e0ad983b4fe9fbc90975fc427df4656333657/streamlit-shortcuts-0.1.2.tar.gz
+[2024-04-27 23:25:20] INFO root fetch - processPackages [flet-contrib-runtime]: executing diffoscope
+[2024-04-27 23:25:20] INFO root fetch - processPackages [flet-contrib-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_contrib_runtime-2024.4.27.1744.tar.gz tmp/flet_contrib_runtime-2024.4.27.1759.tar.gz --markdown 20240427/f/flet-contrib-runtime/2024.4.27.1744-2024.4.27.1759/README.md --exclude *.pyd
+[2024-04-27 23:25:20] INFO root fetch - processPackages [flet-contrib-core]: executing diffoscope
+[2024-04-27 23:25:20] INFO root fetch - processPackages [flet-contrib-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_contrib_core-2024.4.27.1744.tar.gz tmp/flet_contrib_core-2024.4.27.1759.tar.gz --markdown 20240427/f/flet-contrib-core/2024.4.27.1744-2024.4.27.1759/README.md --exclude *.pyd
+[2024-04-27 23:25:20] INFO root fetch - processPackages [streamlit-shortcuts]: executing diffoscope
+[2024-04-27 23:25:20] INFO root fetch - processPackages [streamlit-shortcuts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-shortcuts-0.1.1.tar.gz tmp/streamlit-shortcuts-0.1.2.tar.gz --markdown 20240427/s/streamlit-shortcuts/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-27 23:25:21] INFO root fetch - processPackages [flet-contrib-runtime]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_runtime-2024.4.27.1744.tar.gz]
+[2024-04-27 23:25:21] INFO root fetch - processPackages [flet-contrib-runtime]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_runtime-2024.4.27.1759.tar.gz]
+[2024-04-27 23:25:21] INFO root fetch - main [MainThread]: End processing [flet-contrib-runtime]: success
+[2024-04-27 23:25:21] INFO root fetch - processPackages [flet-contrib-embed]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_embed-2024.4.27.1744.tar.gz]
+[2024-04-27 23:25:21] INFO root fetch - processPackages [flet-contrib-embed]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_embed-2024.4.27.1759.tar.gz]
+[2024-04-27 23:25:21] INFO root fetch - main [MainThread]: End processing [flet-contrib-embed]: success
+[2024-04-27 23:25:21] INFO root fetch - processPackages [streamlit-shortcuts]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-shortcuts-0.1.1.tar.gz]
+[2024-04-27 23:25:21] INFO root fetch - processPackages [streamlit-shortcuts]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-shortcuts-0.1.2.tar.gz]
+[2024-04-27 23:25:21] INFO root fetch - main [MainThread]: End processing [streamlit-shortcuts]: success
+[2024-04-27 23:25:21] INFO root fetch - processPackages [flet-contrib-pyodide]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_pyodide-2024.4.27.1744.tar.gz]
+[2024-04-27 23:25:21] INFO root fetch - processPackages [flet-contrib-pyodide]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_pyodide-2024.4.27.1759.tar.gz]
+[2024-04-27 23:25:21] INFO root fetch - main [MainThread]: End processing [flet-contrib-pyodide]: success
+[2024-04-27 23:25:21] INFO root fetch - processPackages [flet-contrib-core]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_core-2024.4.27.1744.tar.gz]
+[2024-04-27 23:25:21] INFO root fetch - processPackages [flet-contrib-core]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_core-2024.4.27.1759.tar.gz]
+[2024-04-27 23:25:21] INFO root fetch - main [MainThread]: End processing [flet-contrib-core]: success
+[2024-04-27 23:25:21] INFO root fetch - main [MainThread]: Store serial: [22962078]
