@@ -15218,3 +15218,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 15:59:46] INFO root fetch - processPackages [anmoku]: Remove: archive file [/home/abi/fetcher/tmp/anmoku-1.0.0.dev1.tar.gz]
 [2024-04-27 15:59:46] INFO root fetch - main [MainThread]: End processing [anmoku]: success
 [2024-04-27 15:59:46] INFO root fetch - main [MainThread]: Store serial: [22959283]
+[2024-04-27 16:02:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959283]
+[2024-04-27 16:02:04] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-27 16:02:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MLXpress
+[2024-04-27 16:02:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: miniscons
+[2024-04-27 16:02:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: myPYPI9
+[2024-04-27 16:02:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: swiss-army-man
+[2024-04-27 16:02:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hydro-raster
+[2024-04-27 16:02:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: updrytwist-UpDryTwist
+[2024-04-27 16:02:04] INFO root fetch - processPackages [updrytwist-UpDryTwist]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 16:02:04] INFO root fetch - processPackages [swiss-army-man]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-04-27 16:02:04] INFO root fetch - processPackages [myPYPI9]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-04-27 16:02:04] INFO root fetch - processPackages [MLXpress]: New version: [0.1.9.0] Old Version: [0.1.8.8]
+[2024-04-27 16:02:04] INFO root fetch - processPackages [updrytwist-UpDryTwist]: Downloading https://files.pythonhosted.org/packages/1f/b5/eb031965b3b736a189906b7bf4ac2fa3721a547ed6cde73cf721ca951978/updrytwist-UpDryTwist-0.0.8.tar.gz
+[2024-04-27 16:02:04] INFO root fetch - processPackages [miniscons]: New version: [0.6.0] Old Version: [0.11.0]
+[2024-04-27 16:02:04] INFO root fetch - processPackages [swiss-army-man]: Downloading https://files.pythonhosted.org/packages/48/1f/294f600f1fa28cd18c161440c03fb3b30e0c131a86552d9308f61aa90137/swiss_army_man-0.1.7.tar.gz
+[2024-04-27 16:02:04] INFO root fetch - processPackages [myPYPI9]: Downloading https://files.pythonhosted.org/packages/d2/03/5b0462b74e5bbe20e7683813ed6047ef9b8e0e11bbf832307c81a6eb57b0/mypypi9-0.7.8.tar.gz
+[2024-04-27 16:02:05] INFO root fetch - processPackages [hydro-raster]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 16:02:05] INFO root fetch - processPackages [MLXpress]: Downloading https://files.pythonhosted.org/packages/dc/3e/87555c738c481768b5dd02e4261cfe84c292968a5e47e9ba281c53a7d47c/MLXpress-0.1.8.8.tar.gz
+[2024-04-27 16:02:05] INFO root fetch - processPackages [miniscons]: Downloading https://files.pythonhosted.org/packages/fd/17/8835457e64d4efebe382a298fd63982213d0748fc340b48411b38310f8e3/miniscons-0.11.0.tar.gz
+[2024-04-27 16:02:05] INFO root fetch - processPackages [myPYPI9]: Downloading https://files.pythonhosted.org/packages/59/50/e6ade8fa894f63707b31ffb2a965aa60c3b56b9ba31f82374779f571167e/mypypi9-0.7.9.tar.gz
+[2024-04-27 16:02:05] INFO root fetch - processPackages [updrytwist-UpDryTwist]: Downloading https://files.pythonhosted.org/packages/c9/29/eb5c8bfc3736233400efa2211b7a2a87a43398ed29ccc544e8ed3dbe5be4/updrytwist-UpDryTwist-0.0.9.tar.gz
+[2024-04-27 16:02:05] INFO root fetch - processPackages [swiss-army-man]: Downloading https://files.pythonhosted.org/packages/56/82/24e0c66ae73179bc5f3180da018b1c49aadae130d6093a4ba1f45acd2afa/swiss_army_man-0.1.9.tar.gz
+[2024-04-27 16:02:05] INFO root fetch - processPackages [myPYPI9]: executing diffoscope
+[2024-04-27 16:02:05] INFO root fetch - processPackages [myPYPI9]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypypi9-0.7.8.tar.gz tmp/mypypi9-0.7.9.tar.gz --markdown 20240427/m/myPYPI9/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-04-27 16:02:05] INFO root fetch - processPackages [updrytwist-UpDryTwist]: executing diffoscope
+[2024-04-27 16:02:05] INFO root fetch - processPackages [updrytwist-UpDryTwist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/updrytwist-UpDryTwist-0.0.8.tar.gz tmp/updrytwist-UpDryTwist-0.0.9.tar.gz --markdown 20240427/u/updrytwist-UpDryTwist/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 16:02:05] INFO root fetch - processPackages [hydro-raster]: Downloading https://files.pythonhosted.org/packages/4b/91/b6ffedac6301a7a8dc3996cd3e4170cb9d1f221649e76789e549eeed7660/hydro_raster-0.0.8.tar.gz
+[2024-04-27 16:02:05] INFO root fetch - processPackages [swiss-army-man]: executing diffoscope
+[2024-04-27 16:02:05] INFO root fetch - processPackages [swiss-army-man]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swiss_army_man-0.1.7.tar.gz tmp/swiss_army_man-0.1.9.tar.gz --markdown 20240427/s/swiss-army-man/0.1.7-0.1.9/README.md --exclude *.pyd
+[2024-04-27 16:02:05] INFO root fetch - processPackages [MLXpress]: Downloading https://files.pythonhosted.org/packages/69/ec/36434548b709b4f0148b16d9f05e0045d76ad815b4695235dd677fc33bd8/MLXpress-0.1.9.0.tar.gz
+[2024-04-27 16:02:05] INFO root fetch - processPackages [miniscons]: Downloading https://files.pythonhosted.org/packages/a1/6b/da2cfaef6508c9d0b513222a3d44aaf11df90315b816467b8932d61777ac/miniscons-0.6.0.tar.gz
+[2024-04-27 16:02:05] INFO root fetch - processPackages [miniscons]: executing diffoscope
+[2024-04-27 16:02:05] INFO root fetch - processPackages [miniscons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/miniscons-0.11.0.tar.gz tmp/miniscons-0.6.0.tar.gz --markdown 20240427/m/miniscons/0.11.0-0.6.0/README.md --exclude *.pyd
+[2024-04-27 16:02:05] INFO root fetch - processPackages [MLXpress]: executing diffoscope
+[2024-04-27 16:02:05] INFO root fetch - processPackages [MLXpress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MLXpress-0.1.8.8.tar.gz tmp/MLXpress-0.1.9.0.tar.gz --markdown 20240427/M/MLXpress/0.1.8.8-0.1.9.0/README.md --exclude *.pyd
+[2024-04-27 16:02:05] INFO root fetch - processPackages [myPYPI9]: Remove: archive file [/home/abi/fetcher/tmp/mypypi9-0.7.8.tar.gz]
+[2024-04-27 16:02:05] INFO root fetch - processPackages [myPYPI9]: Remove: archive file [/home/abi/fetcher/tmp/mypypi9-0.7.9.tar.gz]
+[2024-04-27 16:02:05] INFO root fetch - main [MainThread]: End processing [myPYPI9]: success
+[2024-04-27 16:02:06] INFO root fetch - processPackages [swiss-army-man]: Remove: archive file [/home/abi/fetcher/tmp/swiss_army_man-0.1.7.tar.gz]
+[2024-04-27 16:02:06] INFO root fetch - processPackages [swiss-army-man]: Remove: archive file [/home/abi/fetcher/tmp/swiss_army_man-0.1.9.tar.gz]
+[2024-04-27 16:02:06] INFO root fetch - main [MainThread]: End processing [swiss-army-man]: success
+[2024-04-27 16:02:06] INFO root fetch - processPackages [hydro-raster]: Downloading https://files.pythonhosted.org/packages/c1/67/632bc639f22d43eea512703a4c6a5791589ed84b879a4498512ce4faebf9/hydro_raster-0.0.9.tar.gz
+[2024-04-27 16:02:06] INFO root fetch - processPackages [updrytwist-UpDryTwist]: Remove: archive file [/home/abi/fetcher/tmp/updrytwist-UpDryTwist-0.0.8.tar.gz]
+[2024-04-27 16:02:06] INFO root fetch - processPackages [updrytwist-UpDryTwist]: Remove: archive file [/home/abi/fetcher/tmp/updrytwist-UpDryTwist-0.0.9.tar.gz]
+[2024-04-27 16:02:06] INFO root fetch - main [MainThread]: End processing [updrytwist-UpDryTwist]: success
+[2024-04-27 16:02:06] INFO root fetch - processPackages [miniscons]: Remove: archive file [/home/abi/fetcher/tmp/miniscons-0.11.0.tar.gz]
+[2024-04-27 16:02:06] INFO root fetch - processPackages [miniscons]: Remove: archive file [/home/abi/fetcher/tmp/miniscons-0.6.0.tar.gz]
+[2024-04-27 16:02:06] INFO root fetch - main [MainThread]: End processing [miniscons]: success
+[2024-04-27 16:02:06] INFO root fetch - processPackages [MLXpress]: Remove: archive file [/home/abi/fetcher/tmp/MLXpress-0.1.8.8.tar.gz]
+[2024-04-27 16:02:06] INFO root fetch - processPackages [MLXpress]: Remove: archive file [/home/abi/fetcher/tmp/MLXpress-0.1.9.0.tar.gz]
+[2024-04-27 16:02:06] INFO root fetch - main [MainThread]: End processing [MLXpress]: success
+[2024-04-27 16:02:06] INFO root fetch - processPackages [hydro-raster]: executing diffoscope
+[2024-04-27 16:02:06] INFO root fetch - processPackages [hydro-raster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hydro_raster-0.0.8.tar.gz tmp/hydro_raster-0.0.9.tar.gz --markdown 20240427/h/hydro-raster/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 16:02:07] INFO root fetch - processPackages [hydro-raster]: Remove: archive file [/home/abi/fetcher/tmp/hydro_raster-0.0.8.tar.gz]
+[2024-04-27 16:02:07] INFO root fetch - processPackages [hydro-raster]: Remove: archive file [/home/abi/fetcher/tmp/hydro_raster-0.0.9.tar.gz]
+[2024-04-27 16:02:07] INFO root fetch - main [MainThread]: End processing [hydro-raster]: success
+[2024-04-27 16:02:07] INFO root fetch - main [MainThread]: Store serial: [22959302]
