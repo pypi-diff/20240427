@@ -12474,3 +12474,15 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 12:54:24] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.1.9.tar.gz]
 [2024-04-27 12:54:24] INFO root fetch - main [MainThread]: End processing [pygpt-net]: success
 [2024-04-27 12:54:24] INFO root fetch - main [MainThread]: Store serial: [22958069]
+[2024-04-27 12:56:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958069]
+[2024-04-27 12:56:40] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 12:56:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hellosp
+[2024-04-27 12:56:40] INFO root fetch - processPackages [hellosp]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-27 12:56:40] INFO root fetch - processPackages [hellosp]: Downloading https://files.pythonhosted.org/packages/00/70/a81a1e2f2ed613ed33bfc3b738ffcd9fd68d9f4bea6abda1389cd9a49026/hellosp-0.2.1.tar.gz
+[2024-04-27 12:56:40] INFO root fetch - processPackages [hellosp]: Downloading https://files.pythonhosted.org/packages/ab/52/731ebf5fb0b4fa4301c4e423a1474037026ad031575be00af1c0b23a4930/hellosp-0.2.2.tar.gz
+[2024-04-27 12:56:41] INFO root fetch - processPackages [hellosp]: executing diffoscope
+[2024-04-27 12:56:41] INFO root fetch - processPackages [hellosp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hellosp-0.2.1.tar.gz tmp/hellosp-0.2.2.tar.gz --markdown 20240427/h/hellosp/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-04-27 12:56:41] INFO root fetch - processPackages [hellosp]: Remove: archive file [/home/abi/fetcher/tmp/hellosp-0.2.1.tar.gz]
+[2024-04-27 12:56:41] INFO root fetch - processPackages [hellosp]: Remove: archive file [/home/abi/fetcher/tmp/hellosp-0.2.2.tar.gz]
+[2024-04-27 12:56:41] INFO root fetch - main [MainThread]: End processing [hellosp]: success
+[2024-04-27 12:56:41] INFO root fetch - main [MainThread]: Store serial: [22958073]
