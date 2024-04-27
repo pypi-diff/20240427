@@ -19525,3 +19525,47 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 20:58:27] INFO root fetch - processPackages [launchflow]: Remove: archive file [/home/abi/fetcher/tmp/launchflow-0.3.9.dev8.tar.gz]
 [2024-04-27 20:58:27] INFO root fetch - main [MainThread]: End processing [launchflow]: success
 [2024-04-27 20:58:27] INFO root fetch - main [MainThread]: Store serial: [22961195]
+[2024-04-27 21:00:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961195]
+[2024-04-27 21:00:41] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 21:00:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FrustrationDynamiX
+[2024-04-27 21:00:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: grooveshop-django-api
+[2024-04-27 21:00:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pymap
+[2024-04-27 21:00:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: proxy-protocol
+[2024-04-27 21:00:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-plugin-simulator-xiuxian
+[2024-04-27 21:00:41] INFO root fetch - processPackages [FrustrationDynamiX]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-04-27 21:00:41] INFO root fetch - processPackages [grooveshop-django-api]: New version: [0.99.1] Old Version: [0.99.0]
+[2024-04-27 21:00:42] INFO root fetch - processPackages [proxy-protocol]: New version: [0.9.1] Old Version: [0.9.0rc2]
+[2024-04-27 21:00:42] INFO root fetch - processPackages [FrustrationDynamiX]: Downloading https://files.pythonhosted.org/packages/a2/9e/d67571af64d83417b8e0728f584f9b0cb04922e0ad48da0074388461c1ef/FrustrationDynamiX-0.2.3.tar.gz
+[2024-04-27 21:00:42] INFO root fetch - processPackages [nonebot-plugin-simulator-xiuxian]: New version: [1.5.32] Old Version: [0.5.31]
+[2024-04-27 21:00:42] INFO root fetch - processPackages [pymap]: New version: [0.9.7] Old Version: [0.9.6]
+[2024-04-27 21:00:42] INFO root fetch - processPackages [grooveshop-django-api]: Downloading https://files.pythonhosted.org/packages/7f/a7/0d6a615cddf282a20c5473422783b8e46581bf1c77d73c7dfc581210dc37/grooveshop_django_api-0.99.0.tar.gz
+[2024-04-27 21:00:42] WARNING root fetch - processPackages [grooveshop-django-api]: Skipping package: exceeds size limit 33783695>=10485760
+[2024-04-27 21:00:42] INFO root fetch - main [MainThread]: End processing [grooveshop-django-api] error
+[2024-04-27 21:00:42] INFO root fetch - processPackages [proxy-protocol]: Downloading https://files.pythonhosted.org/packages/08/43/4775be3e5335421b435e8515c509770916979dafe9a663fe30f49c9baca4/proxy-protocol-0.9.0rc2.tar.gz
+[2024-04-27 21:00:42] INFO root fetch - processPackages [pymap]: Downloading https://files.pythonhosted.org/packages/2a/5a/5f6cd5528d334cc9d4bef58ab2008b92d3ea2677f433cc2750f52df784c3/pymap-0.9.6.tar.gz
+[2024-04-27 21:00:42] INFO root fetch - processPackages [FrustrationDynamiX]: Downloading https://files.pythonhosted.org/packages/01/ef/93f2259598b493e25df4501706a516856c0b72210f9913d03956ef1a7cc5/FrustrationDynamiX-0.2.4.tar.gz
+[2024-04-27 21:00:42] INFO root fetch - processPackages [nonebot-plugin-simulator-xiuxian]: Downloading https://files.pythonhosted.org/packages/e9/6a/9d6a3ab8606b2850cdf1b9c920d041808c9d1674a5121ea7297e5bd35d80/nonebot_plugin_simulator_xiuxian-0.5.31.tar.gz
+[2024-04-27 21:00:42] INFO root fetch - processPackages [FrustrationDynamiX]: executing diffoscope
+[2024-04-27 21:00:42] INFO root fetch - processPackages [FrustrationDynamiX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FrustrationDynamiX-0.2.3.tar.gz tmp/FrustrationDynamiX-0.2.4.tar.gz --markdown 20240427/F/FrustrationDynamiX/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-04-27 21:00:42] INFO root fetch - processPackages [nonebot-plugin-simulator-xiuxian]: Downloading https://files.pythonhosted.org/packages/5b/cb/ea4b6c5abb14086834dcf6299fe90a66c3d2f6b1aa458bdafd286281a1c5/nonebot_plugin_simulator_xiuxian-1.5.32.tar.gz
+[2024-04-27 21:00:42] INFO root fetch - processPackages [proxy-protocol]: Downloading https://files.pythonhosted.org/packages/79/10/d039fadca5dfb9370262d5766b082cb4bafdf675935b1fed7b6d42fef532/proxy-protocol-0.9.1.tar.gz
+[2024-04-27 21:00:42] INFO root fetch - processPackages [pymap]: Downloading https://files.pythonhosted.org/packages/99/7c/f35c4b4960d80c3cf6279248e6d0b2ab6874188d4f955c4089d7905c8e31/pymap-0.9.7.tar.gz
+[2024-04-27 21:00:42] INFO root fetch - processPackages [proxy-protocol]: executing diffoscope
+[2024-04-27 21:00:42] INFO root fetch - processPackages [proxy-protocol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proxy-protocol-0.9.0rc2.tar.gz tmp/proxy-protocol-0.9.1.tar.gz --markdown 20240427/p/proxy-protocol/0.9.0rc2-0.9.1/README.md --exclude *.pyd
+[2024-04-27 21:00:42] INFO root fetch - processPackages [nonebot-plugin-simulator-xiuxian]: executing diffoscope
+[2024-04-27 21:00:42] INFO root fetch - processPackages [nonebot-plugin-simulator-xiuxian]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_simulator_xiuxian-0.5.31.tar.gz tmp/nonebot_plugin_simulator_xiuxian-1.5.32.tar.gz --markdown 20240427/n/nonebot-plugin-simulator-xiuxian/0.5.31-1.5.32/README.md --exclude *.pyd
+[2024-04-27 21:00:42] INFO root fetch - processPackages [pymap]: executing diffoscope
+[2024-04-27 21:00:42] INFO root fetch - processPackages [pymap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymap-0.9.6.tar.gz tmp/pymap-0.9.7.tar.gz --markdown 20240427/p/pymap/0.9.6-0.9.7/README.md --exclude *.pyd
+[2024-04-27 21:00:42] INFO root fetch - processPackages [FrustrationDynamiX]: Remove: archive file [/home/abi/fetcher/tmp/FrustrationDynamiX-0.2.3.tar.gz]
+[2024-04-27 21:00:42] INFO root fetch - processPackages [FrustrationDynamiX]: Remove: archive file [/home/abi/fetcher/tmp/FrustrationDynamiX-0.2.4.tar.gz]
+[2024-04-27 21:00:42] INFO root fetch - main [MainThread]: End processing [FrustrationDynamiX]: success
+[2024-04-27 21:00:43] INFO root fetch - processPackages [nonebot-plugin-simulator-xiuxian]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_simulator_xiuxian-0.5.31.tar.gz]
+[2024-04-27 21:00:43] INFO root fetch - processPackages [nonebot-plugin-simulator-xiuxian]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_simulator_xiuxian-1.5.32.tar.gz]
+[2024-04-27 21:00:43] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-simulator-xiuxian]: success
+[2024-04-27 21:00:43] INFO root fetch - processPackages [proxy-protocol]: Remove: archive file [/home/abi/fetcher/tmp/proxy-protocol-0.9.0rc2.tar.gz]
+[2024-04-27 21:00:43] INFO root fetch - processPackages [proxy-protocol]: Remove: archive file [/home/abi/fetcher/tmp/proxy-protocol-0.9.1.tar.gz]
+[2024-04-27 21:00:43] INFO root fetch - main [MainThread]: End processing [proxy-protocol]: success
+[2024-04-27 21:00:43] INFO root fetch - processPackages [pymap]: Remove: archive file [/home/abi/fetcher/tmp/pymap-0.9.6.tar.gz]
+[2024-04-27 21:00:43] INFO root fetch - processPackages [pymap]: Remove: archive file [/home/abi/fetcher/tmp/pymap-0.9.7.tar.gz]
+[2024-04-27 21:00:43] INFO root fetch - main [MainThread]: End processing [pymap]: success
+[2024-04-27 21:00:43] INFO root fetch - main [MainThread]: Store serial: [22961211]
