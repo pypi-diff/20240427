@@ -9678,3 +9678,27 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 08:24:20] INFO root fetch - processPackages [wise-utils]: Remove: archive file [/home/abi/fetcher/tmp/wise_utils-1.1.0.tar.gz]
 [2024-04-27 08:24:20] INFO root fetch - main [MainThread]: End processing [wise-utils]: success
 [2024-04-27 08:24:20] INFO root fetch - main [MainThread]: Store serial: [22956870]
+[2024-04-27 08:26:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956870]
+[2024-04-27 08:26:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 08:26:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cf2tf
+[2024-04-27 08:26:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: factorial-t3sting
+[2024-04-27 08:26:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tailucas-pylib
+[2024-04-27 08:26:28] INFO root fetch - processPackages [cf2tf]: New version: [0.7.2a1] Old Version: [0.7.2a0]
+[2024-04-27 08:26:28] WARNING root fetch - processPackages [factorial-t3sting]: Skipping, unable to determine old version
+[2024-04-27 08:26:28] INFO root fetch - main [MainThread]: End processing [factorial-t3sting] error
+[2024-04-27 08:26:28] INFO root fetch - processPackages [cf2tf]: Downloading https://files.pythonhosted.org/packages/83/37/51d1c7aa3d6944f4af4e8f452533bbe28e2ae19b22eb89de125b11d33c25/cf2tf-0.7.2a0.tar.gz
+[2024-04-27 08:26:28] INFO root fetch - processPackages [tailucas-pylib]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-04-27 08:26:29] INFO root fetch - processPackages [tailucas-pylib]: Downloading https://files.pythonhosted.org/packages/9b/99/1ecc1bb82447295f49dda1933b59c1efc0a5ac371e3fd356ae5d88f236dc/tailucas_pylib-0.2.7.tar.gz
+[2024-04-27 08:26:29] INFO root fetch - processPackages [cf2tf]: Downloading https://files.pythonhosted.org/packages/bf/28/91c36138c08b58d211815ef6d1ecfcd01e2d9ea5f5a80c0c6aea11989ab1/cf2tf-0.7.2a1.tar.gz
+[2024-04-27 08:26:29] INFO root fetch - processPackages [cf2tf]: executing diffoscope
+[2024-04-27 08:26:29] INFO root fetch - processPackages [cf2tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cf2tf-0.7.2a0.tar.gz tmp/cf2tf-0.7.2a1.tar.gz --markdown 20240427/c/cf2tf/0.7.2a0-0.7.2a1/README.md --exclude *.pyd
+[2024-04-27 08:26:29] INFO root fetch - processPackages [tailucas-pylib]: Downloading https://files.pythonhosted.org/packages/70/33/aae60a162436f18db36a349b7fd4c27d722ecab439a414e922fa6c7ed001/tailucas_pylib-0.2.8.tar.gz
+[2024-04-27 08:26:29] INFO root fetch - processPackages [tailucas-pylib]: executing diffoscope
+[2024-04-27 08:26:29] INFO root fetch - processPackages [tailucas-pylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tailucas_pylib-0.2.7.tar.gz tmp/tailucas_pylib-0.2.8.tar.gz --markdown 20240427/t/tailucas-pylib/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-04-27 08:26:29] INFO root fetch - processPackages [cf2tf]: Remove: archive file [/home/abi/fetcher/tmp/cf2tf-0.7.2a0.tar.gz]
+[2024-04-27 08:26:29] INFO root fetch - processPackages [cf2tf]: Remove: archive file [/home/abi/fetcher/tmp/cf2tf-0.7.2a1.tar.gz]
+[2024-04-27 08:26:29] INFO root fetch - main [MainThread]: End processing [cf2tf]: success
+[2024-04-27 08:26:30] INFO root fetch - processPackages [tailucas-pylib]: Remove: archive file [/home/abi/fetcher/tmp/tailucas_pylib-0.2.7.tar.gz]
+[2024-04-27 08:26:30] INFO root fetch - processPackages [tailucas-pylib]: Remove: archive file [/home/abi/fetcher/tmp/tailucas_pylib-0.2.8.tar.gz]
+[2024-04-27 08:26:30] INFO root fetch - main [MainThread]: End processing [tailucas-pylib]: success
+[2024-04-27 08:26:30] INFO root fetch - main [MainThread]: Store serial: [22956880]
