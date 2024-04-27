@@ -21099,3 +21099,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 23:02:45] WARNING root fetch - processPackages [fastflow-tensorflow]: Skipping, unable to determine old version
 [2024-04-27 23:02:45] INFO root fetch - main [MainThread]: End processing [fastflow-tensorflow] error
 [2024-04-27 23:02:45] INFO root fetch - main [MainThread]: Store serial: [22961964]
+[2024-04-27 23:04:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961964]
+[2024-04-27 23:05:02] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 23:05:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fastflow-tensorflow
+[2024-04-27 23:05:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: toolfuse
+[2024-04-27 23:05:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: que_sdk
+[2024-04-27 23:05:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: focuscreen
+[2024-04-27 23:05:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: basic-data-structure
+[2024-04-27 23:05:02] WARNING root fetch - processPackages [fastflow-tensorflow]: Skipping, unable to determine old version
+[2024-04-27 23:05:02] INFO root fetch - main [MainThread]: End processing [fastflow-tensorflow] error
+[2024-04-27 23:05:02] WARNING root fetch - processPackages [basic-data-structure]: Skipping, unable to determine old version
+[2024-04-27 23:05:02] INFO root fetch - main [MainThread]: End processing [basic-data-structure] error
+[2024-04-27 23:05:02] INFO root fetch - processPackages [toolfuse]: New version: [0.1.19] Old Version: [0.1.16]
+[2024-04-27 23:05:02] WARNING root fetch - processPackages [focuscreen]: Skipping, unable to determine old version
+[2024-04-27 23:05:02] INFO root fetch - main [MainThread]: End processing [focuscreen] error
+[2024-04-27 23:05:02] INFO root fetch - processPackages [que_sdk]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-27 23:05:02] INFO root fetch - processPackages [toolfuse]: Downloading https://files.pythonhosted.org/packages/37/76/a4d04680f6182ffc3faf73230d4636483d92c2c2bae1db4dc9ad3ae192dc/toolfuse-0.1.16.tar.gz
+[2024-04-27 23:05:02] INFO root fetch - processPackages [que_sdk]: Downloading https://files.pythonhosted.org/packages/2e/6f/776c2e03099e4317cd28ba11f4739f7452d623056d414fdb6718c858b319/que_sdk-0.1.2.tar.gz
+[2024-04-27 23:05:03] INFO root fetch - processPackages [toolfuse]: Downloading https://files.pythonhosted.org/packages/b2/f9/0f8cc1296c88ece3535f8c74589e78efd293f600cd871a9e26685669acd4/toolfuse-0.1.19.tar.gz
+[2024-04-27 23:05:03] INFO root fetch - processPackages [que_sdk]: Downloading https://files.pythonhosted.org/packages/5f/cd/c6ac2579b7b4688a295c4a0559f9078172c13ea4b4f1a7844f5c4db02f07/que_sdk-0.1.3.tar.gz
+[2024-04-27 23:05:03] INFO root fetch - processPackages [que_sdk]: executing diffoscope
+[2024-04-27 23:05:03] INFO root fetch - processPackages [que_sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/que_sdk-0.1.2.tar.gz tmp/que_sdk-0.1.3.tar.gz --markdown 20240427/q/que_sdk/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-27 23:05:03] INFO root fetch - processPackages [toolfuse]: executing diffoscope
+[2024-04-27 23:05:03] INFO root fetch - processPackages [toolfuse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toolfuse-0.1.16.tar.gz tmp/toolfuse-0.1.19.tar.gz --markdown 20240427/t/toolfuse/0.1.16-0.1.19/README.md --exclude *.pyd
+[2024-04-27 23:05:03] INFO root fetch - processPackages [toolfuse]: Remove: archive file [/home/abi/fetcher/tmp/toolfuse-0.1.16.tar.gz]
+[2024-04-27 23:05:03] INFO root fetch - processPackages [toolfuse]: Remove: archive file [/home/abi/fetcher/tmp/toolfuse-0.1.19.tar.gz]
+[2024-04-27 23:05:03] INFO root fetch - main [MainThread]: End processing [toolfuse]: success
+[2024-04-27 23:05:03] INFO root fetch - processPackages [que_sdk]: Remove: archive file [/home/abi/fetcher/tmp/que_sdk-0.1.2.tar.gz]
+[2024-04-27 23:05:03] INFO root fetch - processPackages [que_sdk]: Remove: archive file [/home/abi/fetcher/tmp/que_sdk-0.1.3.tar.gz]
+[2024-04-27 23:05:03] INFO root fetch - main [MainThread]: End processing [que_sdk]: success
+[2024-04-27 23:05:03] INFO root fetch - main [MainThread]: Store serial: [22961984]
