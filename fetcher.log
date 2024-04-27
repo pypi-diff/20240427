@@ -9772,3 +9772,24 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 08:33:02] INFO root fetch - main [MainThread]: End processing [fastlifeweb]: success
 [2024-04-27 08:33:02] INFO root fetch - main [MainThread]: End processing [myPYPI9]: success
 [2024-04-27 08:33:02] INFO root fetch - main [MainThread]: Store serial: [22956946]
+[2024-04-27 08:35:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956946]
+[2024-04-27 08:35:11] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 08:35:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sharemyai-utils
+[2024-04-27 08:35:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: radinNFP
+[2024-04-27 08:35:11] INFO root fetch - processPackages [radinNFP]: New version: [2.5] Old Version: [2.4.3]
+[2024-04-27 08:35:11] INFO root fetch - processPackages [sharemyai-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-27 08:35:11] INFO root fetch - processPackages [radinNFP]: Downloading https://files.pythonhosted.org/packages/f4/58/417ee982e5c2e84bca31ecc7766fe2492d3f4ea5cbd9170f187ebd1533b6/radinNFP-2.4.3-py3-none-any.whl
+[2024-04-27 08:35:11] INFO root fetch - processPackages [radinNFP]: Downloading https://files.pythonhosted.org/packages/57/c2/0ea8a2aa6e785743af2f73fb30dcf9c9e3291043e532205e79fcd44d8e2f/radinNFP-2.5-py3-none-any.whl
+[2024-04-27 08:35:11] INFO root fetch - processPackages [sharemyai-utils]: Downloading https://files.pythonhosted.org/packages/f9/85/4d1a239d5b2310753e3641b585d5e4ca024697cf417a14227d8f78c0763c/sharemyai_utils-0.1.8.tar.gz
+[2024-04-27 08:35:11] INFO root fetch - processPackages [radinNFP]: executing diffoscope
+[2024-04-27 08:35:11] INFO root fetch - processPackages [radinNFP]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/radinNFP-2.4.3-py3-none-any.whl.zip tmp/radinNFP-2.5-py3-none-any.whl.zip --markdown 20240427/r/radinNFP/2.4.3-2.5/README.md --exclude *.pyd
+[2024-04-27 08:35:11] INFO root fetch - processPackages [sharemyai-utils]: Downloading https://files.pythonhosted.org/packages/9b/8a/3c94dcbf0855c714ac43b9bfa2461fc9c88133f4787553d6fd263b38cfc6/sharemyai_utils-0.1.9.tar.gz
+[2024-04-27 08:35:12] INFO root fetch - processPackages [sharemyai-utils]: executing diffoscope
+[2024-04-27 08:35:12] INFO root fetch - processPackages [sharemyai-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sharemyai_utils-0.1.8.tar.gz tmp/sharemyai_utils-0.1.9.tar.gz --markdown 20240427/s/sharemyai-utils/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-27 08:35:12] INFO root fetch - processPackages [radinNFP]: Remove: archive file [/home/abi/fetcher/tmp/radinNFP-2.4.3-py3-none-any.whl.zip]
+[2024-04-27 08:35:12] INFO root fetch - processPackages [radinNFP]: Remove: archive file [/home/abi/fetcher/tmp/radinNFP-2.5-py3-none-any.whl.zip]
+[2024-04-27 08:35:12] INFO root fetch - main [MainThread]: End processing [radinNFP]: success
+[2024-04-27 08:35:12] INFO root fetch - processPackages [sharemyai-utils]: Remove: archive file [/home/abi/fetcher/tmp/sharemyai_utils-0.1.8.tar.gz]
+[2024-04-27 08:35:12] INFO root fetch - processPackages [sharemyai-utils]: Remove: archive file [/home/abi/fetcher/tmp/sharemyai_utils-0.1.9.tar.gz]
+[2024-04-27 08:35:12] INFO root fetch - main [MainThread]: End processing [sharemyai-utils]: success
+[2024-04-27 08:35:12] INFO root fetch - main [MainThread]: Store serial: [22956956]
