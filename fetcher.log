@@ -14456,3 +14456,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 15:12:55] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/fbgemm_gpu_nightly_cpu-2024.4.27-cp38-cp38-manylinux2014_x86_64.whl.zip]
 [2024-04-27 15:12:55] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
 [2024-04-27 15:12:55] INFO root fetch - main [MainThread]: Store serial: [22958988]
+[2024-04-27 15:15:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958988]
+[2024-04-27 15:15:10] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-27 15:15:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fbgemm-gpu-nightly-cpu
+[2024-04-27 15:15:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: local-rag-llm
+[2024-04-27 15:15:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ctrip-app-ui
+[2024-04-27 15:15:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zhijiang
+[2024-04-27 15:15:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: es-wait
+[2024-04-27 15:15:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyHana
+[2024-04-27 15:15:11] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: New version: [2024.4.27] Old Version: [2024.4.26]
+[2024-04-27 15:15:11] INFO root fetch - processPackages [ctrip-app-ui]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-27 15:15:11] INFO root fetch - processPackages [pyHana]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 15:15:11] INFO root fetch - processPackages [es-wait]: New version: [0.3.5] Old Version: [0.3.3]
+[2024-04-27 15:15:11] INFO root fetch - processPackages [local-rag-llm]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 15:15:11] INFO root fetch - processPackages [zhijiang]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-04-27 15:15:11] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/5d/99/e8664bc414b9b6e94e8dcc22c43abf61e51e33e21700080dd11ace5eda78/ctrip-app-ui-0.3.8.tar.gz
+[2024-04-27 15:15:11] INFO root fetch - processPackages [pyHana]: Downloading https://files.pythonhosted.org/packages/f7/bd/4413dde8ffefdc3715bfdb0e2789860ce6abd12c900ecd9bdbf3df4da977/pyHana-0.0.8-py3-none-any.whl
+[2024-04-27 15:15:11] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/05/ca/1ad969a197923aab94fafbdf04c1b5999d5e181e04017de63a3c931f2578/fbgemm_gpu_nightly_cpu-2024.4.26-cp39-cp39-manylinux2014_x86_64.whl
+[2024-04-27 15:15:11] INFO root fetch - processPackages [es-wait]: Downloading https://files.pythonhosted.org/packages/bf/a9/f6d03646d5f112d9cf0bcbb682fc28b24e45085160a719470550516660ea/es_wait-0.3.3.tar.gz
+[2024-04-27 15:15:11] INFO root fetch - processPackages [zhijiang]: Downloading https://files.pythonhosted.org/packages/26/2b/3b52e8f559267bad8b17821e8e89f41e2252b1ce785ab75849cedf0c7646/zhijiang-0.7.8-py3-none-any.whl
+[2024-04-27 15:15:11] INFO root fetch - processPackages [local-rag-llm]: Downloading https://files.pythonhosted.org/packages/47/e5/e681fffe7011785fd7a7b6d47c68c5ed670e65e570a1209d5629101b9abf/local_rag_llm-0.0.8.tar.gz
+[2024-04-27 15:15:11] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/39/fa/02e78ae42456c969e0180ec619563c793ea5f9306347abbe61b594fc4569/ctrip-app-ui-0.3.9.tar.gz
+[2024-04-27 15:15:11] INFO root fetch - processPackages [pyHana]: Downloading https://files.pythonhosted.org/packages/bf/0e/4838574234fed0b97643b3f635c68d512d1bed48aa073d330aae8d2a612b/pyHana-0.0.9-py3-none-any.whl
+[2024-04-27 15:15:11] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/c6/b7/44b1c6972c1b792b3e752f1726d99f5c5c537855cd77e327c5f0bafdcaf5/fbgemm_gpu_nightly_cpu-2024.4.27-cp38-cp38-manylinux2014_x86_64.whl
+[2024-04-27 15:15:11] INFO root fetch - processPackages [ctrip-app-ui]: executing diffoscope
+[2024-04-27 15:15:11] INFO root fetch - processPackages [ctrip-app-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctrip-app-ui-0.3.8.tar.gz tmp/ctrip-app-ui-0.3.9.tar.gz --markdown 20240427/c/ctrip-app-ui/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-27 15:15:11] INFO root fetch - processPackages [pyHana]: executing diffoscope
+[2024-04-27 15:15:11] INFO root fetch - processPackages [pyHana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyHana-0.0.8-py3-none-any.whl.zip tmp/pyHana-0.0.9-py3-none-any.whl.zip --markdown 20240427/p/pyHana/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 15:15:11] INFO root fetch - processPackages [es-wait]: Downloading https://files.pythonhosted.org/packages/96/29/cf8ee97bf8a41c0da6d0027eb67b857817bbc9af62581d00f7fe996ad242/es_wait-0.3.5.tar.gz
+[2024-04-27 15:15:11] INFO root fetch - processPackages [local-rag-llm]: Downloading https://files.pythonhosted.org/packages/50/eb/1c59a18537e299c44773c4b799d52b69bc745cf7d7b224e6fe5d71e2ab1c/local_rag_llm-0.0.9.tar.gz
+[2024-04-27 15:15:11] INFO root fetch - processPackages [zhijiang]: Downloading https://files.pythonhosted.org/packages/05/cf/ace85687f35b8c78491564744658a0392ee9c2b6187d7bd6d001fcc18b2c/zhijiang-0.7.9-py3-none-any.whl
+[2024-04-27 15:15:11] INFO root fetch - processPackages [es-wait]: executing diffoscope
+[2024-04-27 15:15:11] INFO root fetch - processPackages [es-wait]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/es_wait-0.3.3.tar.gz tmp/es_wait-0.3.5.tar.gz --markdown 20240427/e/es-wait/0.3.3-0.3.5/README.md --exclude *.pyd
+[2024-04-27 15:15:11] INFO root fetch - processPackages [local-rag-llm]: executing diffoscope
+[2024-04-27 15:15:11] INFO root fetch - processPackages [local-rag-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/local_rag_llm-0.0.8.tar.gz tmp/local_rag_llm-0.0.9.tar.gz --markdown 20240427/l/local-rag-llm/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 15:15:12] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: executing diffoscope
+[2024-04-27 15:15:12] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fbgemm_gpu_nightly_cpu-2024.4.26-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/fbgemm_gpu_nightly_cpu-2024.4.27-cp38-cp38-manylinux2014_x86_64.whl.zip --markdown 20240427/f/fbgemm-gpu-nightly-cpu/2024.4.26-2024.4.27/README.md --exclude *.pyd
+[2024-04-27 15:15:12] INFO root fetch - processPackages [zhijiang]: executing diffoscope
+[2024-04-27 15:15:12] INFO root fetch - processPackages [zhijiang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zhijiang-0.7.8-py3-none-any.whl.zip tmp/zhijiang-0.7.9-py3-none-any.whl.zip --markdown 20240427/z/zhijiang/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-04-27 15:15:12] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.3.8.tar.gz]
+[2024-04-27 15:15:12] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.3.9.tar.gz]
+[2024-04-27 15:15:12] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
+[2024-04-27 15:15:12] INFO root fetch - processPackages [pyHana]: Remove: archive file [/home/abi/fetcher/tmp/pyHana-0.0.8-py3-none-any.whl.zip]
+[2024-04-27 15:15:12] INFO root fetch - processPackages [pyHana]: Remove: archive file [/home/abi/fetcher/tmp/pyHana-0.0.9-py3-none-any.whl.zip]
+[2024-04-27 15:15:12] INFO root fetch - main [MainThread]: End processing [pyHana]: success
+[2024-04-27 15:15:12] INFO root fetch - processPackages [local-rag-llm]: Remove: archive file [/home/abi/fetcher/tmp/local_rag_llm-0.0.8.tar.gz]
+[2024-04-27 15:15:12] INFO root fetch - processPackages [local-rag-llm]: Remove: archive file [/home/abi/fetcher/tmp/local_rag_llm-0.0.9.tar.gz]
+[2024-04-27 15:15:12] INFO root fetch - main [MainThread]: End processing [local-rag-llm]: success
+[2024-04-27 15:15:12] INFO root fetch - processPackages [es-wait]: Remove: archive file [/home/abi/fetcher/tmp/es_wait-0.3.3.tar.gz]
+[2024-04-27 15:15:12] INFO root fetch - processPackages [es-wait]: Remove: archive file [/home/abi/fetcher/tmp/es_wait-0.3.5.tar.gz]
+[2024-04-27 15:15:12] INFO root fetch - main [MainThread]: End processing [es-wait]: success
+[2024-04-27 15:15:13] INFO root fetch - processPackages [zhijiang]: Remove: archive file [/home/abi/fetcher/tmp/zhijiang-0.7.8-py3-none-any.whl.zip]
+[2024-04-27 15:15:13] INFO root fetch - processPackages [zhijiang]: Remove: archive file [/home/abi/fetcher/tmp/zhijiang-0.7.9-py3-none-any.whl.zip]
+[2024-04-27 15:15:13] INFO root fetch - main [MainThread]: End processing [zhijiang]: success
+[2024-04-27 15:15:51] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/fbgemm_gpu_nightly_cpu-2024.4.26-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-04-27 15:15:51] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/fbgemm_gpu_nightly_cpu-2024.4.27-cp38-cp38-manylinux2014_x86_64.whl.zip]
+[2024-04-27 15:15:51] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
+[2024-04-27 15:15:51] INFO root fetch - main [MainThread]: Store serial: [22959006]
