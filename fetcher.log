@@ -10314,3 +10314,15 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 09:16:49] INFO root fetch - processPackages [m3-cli]: Remove: archive file [/home/abi/fetcher/tmp/m3_cli-3.112.4.tar.gz]
 [2024-04-27 09:16:49] INFO root fetch - main [MainThread]: End processing [m3-cli]: success
 [2024-04-27 09:16:49] INFO root fetch - main [MainThread]: Store serial: [22957188]
+[2024-04-27 09:18:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957188]
+[2024-04-27 09:18:59] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 09:18:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yes-chef
+[2024-04-27 09:18:59] INFO root fetch - processPackages [yes-chef]: New version: [0.8.2] Old Version: [0.8.1]
+[2024-04-27 09:19:00] INFO root fetch - processPackages [yes-chef]: Downloading https://files.pythonhosted.org/packages/08/9f/bc1d3f48422b1aee22e4d6d94de44df25425e6ada732697423927b5125c1/yes-chef-0.8.1.tar.gz
+[2024-04-27 09:19:00] INFO root fetch - processPackages [yes-chef]: Downloading https://files.pythonhosted.org/packages/10/61/0bfb0db08ff48caf0de078d360e2ad4624437202e73480c0c6a0db23240c/yes_chef-0.8.2.tar.gz
+[2024-04-27 09:19:00] INFO root fetch - processPackages [yes-chef]: executing diffoscope
+[2024-04-27 09:19:00] INFO root fetch - processPackages [yes-chef]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yes-chef-0.8.1.tar.gz tmp/yes_chef-0.8.2.tar.gz --markdown 20240427/y/yes-chef/0.8.1-0.8.2/README.md --exclude *.pyd
+[2024-04-27 09:19:01] INFO root fetch - processPackages [yes-chef]: Remove: archive file [/home/abi/fetcher/tmp/yes-chef-0.8.1.tar.gz]
+[2024-04-27 09:19:01] INFO root fetch - processPackages [yes-chef]: Remove: archive file [/home/abi/fetcher/tmp/yes_chef-0.8.2.tar.gz]
+[2024-04-27 09:19:01] INFO root fetch - main [MainThread]: End processing [yes-chef]: success
+[2024-04-27 09:19:01] INFO root fetch - main [MainThread]: Store serial: [22957191]
