@@ -18138,3 +18138,38 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 19:19:36] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
 [2024-04-27 19:19:36] INFO root fetch - main [MainThread]: End processing [yeref]: success
 [2024-04-27 19:19:36] INFO root fetch - main [MainThread]: Store serial: [22960472]
+[2024-04-27 19:21:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960472]
+[2024-04-27 19:21:50] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 19:21:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hgraph
+[2024-04-27 19:21:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: darkseid
+[2024-04-27 19:21:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rooms-shared-services
+[2024-04-27 19:21:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gloe
+[2024-04-27 19:21:50] INFO root fetch - processPackages [gloe]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-04-27 19:21:50] INFO root fetch - processPackages [hgraph]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-27 19:21:50] INFO root fetch - processPackages [darkseid]: New version: [4.0.3] Old Version: [4.0.2]
+[2024-04-27 19:21:50] INFO root fetch - processPackages [rooms-shared-services]: New version: [0.1.99] Old Version: [0.1.97]
+[2024-04-27 19:21:51] INFO root fetch - processPackages [hgraph]: Downloading https://files.pythonhosted.org/packages/da/ad/e83b1d8661a0e583d3a8e4e301911d6797358607dad40d27057574e75081/hgraph-0.2.8.tar.gz
+[2024-04-27 19:21:51] INFO root fetch - processPackages [rooms-shared-services]: Downloading https://files.pythonhosted.org/packages/16/6e/7a35dabe25e96c04274cbd9f69a6e68b4f36dc149e22451fb099f79d153e/rooms_shared_services-0.1.97.tar.gz
+[2024-04-27 19:21:51] INFO root fetch - processPackages [darkseid]: Downloading https://files.pythonhosted.org/packages/95/cc/7dbdb26495b9599145e388623914689c1a38a9fcc9820f25f3139e92d34f/darkseid-4.0.2.tar.gz
+[2024-04-27 19:21:51] INFO root fetch - processPackages [gloe]: Downloading https://files.pythonhosted.org/packages/1b/71/6eae2f38fa5d566c67ea962d0586475f0de19d03a697727bb85080662ed4/gloe-0.5.8.tar.gz
+[2024-04-27 19:21:51] WARNING root fetch - processPackages [darkseid]: Skipping package: exceeds size limit 19533062>=10485760
+[2024-04-27 19:21:51] INFO root fetch - main [MainThread]: End processing [darkseid] error
+[2024-04-27 19:21:51] INFO root fetch - processPackages [rooms-shared-services]: Downloading https://files.pythonhosted.org/packages/69/d1/238526d33d58183ec73b9cb900a4aea16c13e7618af0394e6c55838d4395/rooms_shared_services-0.1.99.tar.gz
+[2024-04-27 19:21:51] INFO root fetch - processPackages [gloe]: Downloading https://files.pythonhosted.org/packages/96/a8/21399617849910427fbb8ae506b717fc1123badf043b8cfc2da7d0754d0e/gloe-0.5.9.tar.gz
+[2024-04-27 19:21:51] INFO root fetch - processPackages [hgraph]: Downloading https://files.pythonhosted.org/packages/22/05/43ea3ada7d538f8592b51d36721d624366793ada729a497eaaff2db9b540/hgraph-0.2.9.tar.gz
+[2024-04-27 19:21:51] INFO root fetch - processPackages [rooms-shared-services]: executing diffoscope
+[2024-04-27 19:21:51] INFO root fetch - processPackages [rooms-shared-services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rooms_shared_services-0.1.97.tar.gz tmp/rooms_shared_services-0.1.99.tar.gz --markdown 20240427/r/rooms-shared-services/0.1.97-0.1.99/README.md --exclude *.pyd
+[2024-04-27 19:21:51] INFO root fetch - processPackages [hgraph]: executing diffoscope
+[2024-04-27 19:21:51] INFO root fetch - processPackages [hgraph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hgraph-0.2.8.tar.gz tmp/hgraph-0.2.9.tar.gz --markdown 20240427/h/hgraph/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-27 19:21:51] INFO root fetch - processPackages [gloe]: executing diffoscope
+[2024-04-27 19:21:51] INFO root fetch - processPackages [gloe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gloe-0.5.8.tar.gz tmp/gloe-0.5.9.tar.gz --markdown 20240427/g/gloe/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-04-27 19:21:52] INFO root fetch - processPackages [rooms-shared-services]: Remove: archive file [/home/abi/fetcher/tmp/rooms_shared_services-0.1.97.tar.gz]
+[2024-04-27 19:21:52] INFO root fetch - processPackages [rooms-shared-services]: Remove: archive file [/home/abi/fetcher/tmp/rooms_shared_services-0.1.99.tar.gz]
+[2024-04-27 19:21:52] INFO root fetch - main [MainThread]: End processing [rooms-shared-services]: success
+[2024-04-27 19:21:52] INFO root fetch - processPackages [gloe]: Remove: archive file [/home/abi/fetcher/tmp/gloe-0.5.8.tar.gz]
+[2024-04-27 19:21:52] INFO root fetch - processPackages [gloe]: Remove: archive file [/home/abi/fetcher/tmp/gloe-0.5.9.tar.gz]
+[2024-04-27 19:21:52] INFO root fetch - main [MainThread]: End processing [gloe]: success
+[2024-04-27 19:21:52] INFO root fetch - processPackages [hgraph]: Remove: archive file [/home/abi/fetcher/tmp/hgraph-0.2.8.tar.gz]
+[2024-04-27 19:21:52] INFO root fetch - processPackages [hgraph]: Remove: archive file [/home/abi/fetcher/tmp/hgraph-0.2.9.tar.gz]
+[2024-04-27 19:21:52] INFO root fetch - main [MainThread]: End processing [hgraph]: success
+[2024-04-27 19:21:52] INFO root fetch - main [MainThread]: Store serial: [22960484]
