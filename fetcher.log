@@ -6858,3 +6858,18 @@ EOFError: EOF read where object expected
 [2024-04-27 03:48:02] INFO root fetch - processPackages [tool-use]: Remove: archive file [/home/abi/fetcher/tmp/tool_use-0.2.0.tar.gz]
 [2024-04-27 03:48:02] INFO root fetch - main [MainThread]: End processing [tool-use]: success
 [2024-04-27 03:48:02] INFO root fetch - main [MainThread]: Store serial: [22955928]
+[2024-04-27 03:50:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22955928]
+[2024-04-27 03:50:11] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 03:50:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: seqlog
+[2024-04-27 03:50:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-ssi-stock-promotion-operation
+[2024-04-27 03:50:11] WARNING root fetch - processPackages [odoo14-addon-ssi-stock-promotion-operation]: Skipping, unable to determine old version
+[2024-04-27 03:50:11] INFO root fetch - main [MainThread]: End processing [odoo14-addon-ssi-stock-promotion-operation] error
+[2024-04-27 03:50:11] INFO root fetch - processPackages [seqlog]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-27 03:50:12] INFO root fetch - processPackages [seqlog]: Downloading https://files.pythonhosted.org/packages/73/21/20f0898ed182938ff4913ac36d6d1591410c5028f1acab9ccb90dff29e55/seqlog-0.3.8.tar.gz
+[2024-04-27 03:50:12] INFO root fetch - processPackages [seqlog]: Downloading https://files.pythonhosted.org/packages/e1/ee/7c74c848c3cad6d5e14390e1e103451a8079c6d787d63a54fb6252fcede1/seqlog-0.3.9-py2.py3-none-any.whl
+[2024-04-27 03:50:12] INFO root fetch - processPackages [seqlog]: executing diffoscope
+[2024-04-27 03:50:12] INFO root fetch - processPackages [seqlog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seqlog-0.3.8.tar.gz tmp/seqlog-0.3.9-py2.py3-none-any.whl.zip --markdown 20240427/s/seqlog/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-27 03:50:13] INFO root fetch - processPackages [seqlog]: Remove: archive file [/home/abi/fetcher/tmp/seqlog-0.3.8.tar.gz]
+[2024-04-27 03:50:13] INFO root fetch - processPackages [seqlog]: Remove: archive file [/home/abi/fetcher/tmp/seqlog-0.3.9-py2.py3-none-any.whl.zip]
+[2024-04-27 03:50:13] INFO root fetch - main [MainThread]: End processing [seqlog]: success
+[2024-04-27 03:50:13] INFO root fetch - main [MainThread]: Store serial: [22955936]
