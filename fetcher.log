@@ -10326,3 +10326,21 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 09:19:01] INFO root fetch - processPackages [yes-chef]: Remove: archive file [/home/abi/fetcher/tmp/yes_chef-0.8.2.tar.gz]
 [2024-04-27 09:19:01] INFO root fetch - main [MainThread]: End processing [yes-chef]: success
 [2024-04-27 09:19:01] INFO root fetch - main [MainThread]: Store serial: [22957191]
+[2024-04-27 09:21:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957191]
+[2024-04-27 09:21:11] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 09:21:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: safe-llm
+[2024-04-27 09:21:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pydal
+[2024-04-27 09:21:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rstms-mailgun
+[2024-04-27 09:21:11] WARNING root fetch - processPackages [rstms-mailgun]: Skipping, unable to determine old version
+[2024-04-27 09:21:11] INFO root fetch - main [MainThread]: End processing [rstms-mailgun] error
+[2024-04-27 09:21:11] INFO root fetch - processPackages [pydal]: New version: [20240427.1] Old Version: [20231114.3]
+[2024-04-27 09:21:11] WARNING root fetch - processPackages [safe-llm]: Skipping, unable to determine old version
+[2024-04-27 09:21:11] INFO root fetch - main [MainThread]: End processing [safe-llm] error
+[2024-04-27 09:21:11] INFO root fetch - processPackages [pydal]: Downloading https://files.pythonhosted.org/packages/0b/3b/86302e165af07bc3d9225aea6ed8f52386270220e4aac1aad0101a48aac1/pydal-20231114.3.tar.gz
+[2024-04-27 09:21:11] INFO root fetch - processPackages [pydal]: Downloading https://files.pythonhosted.org/packages/4c/9f/0e81d3a84228ce5c09d4cb792452bd34227cbad4227d924b52357cf1e456/pydal-20240427.1.tar.gz
+[2024-04-27 09:21:11] INFO root fetch - processPackages [pydal]: executing diffoscope
+[2024-04-27 09:21:11] INFO root fetch - processPackages [pydal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydal-20231114.3.tar.gz tmp/pydal-20240427.1.tar.gz --markdown 20240427/p/pydal/20231114.3-20240427.1/README.md --exclude *.pyd
+[2024-04-27 09:21:12] INFO root fetch - processPackages [pydal]: Remove: archive file [/home/abi/fetcher/tmp/pydal-20231114.3.tar.gz]
+[2024-04-27 09:21:12] INFO root fetch - processPackages [pydal]: Remove: archive file [/home/abi/fetcher/tmp/pydal-20240427.1.tar.gz]
+[2024-04-27 09:21:12] INFO root fetch - main [MainThread]: End processing [pydal]: success
+[2024-04-27 09:21:12] INFO root fetch - main [MainThread]: Store serial: [22957202]
