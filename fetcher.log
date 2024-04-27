@@ -19760,3 +19760,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 21:16:32] INFO root fetch - processPackages [MODApy]: Remove: archive file [/home/abi/fetcher/tmp/MODApy-0.8.1.tar.gz]
 [2024-04-27 21:16:32] INFO root fetch - main [MainThread]: End processing [MODApy]: success
 [2024-04-27 21:16:32] INFO root fetch - main [MainThread]: Store serial: [22961331]
+[2024-04-27 21:18:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961331]
+[2024-04-27 21:18:46] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 21:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kfish
+[2024-04-27 21:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: malevich-coretools
+[2024-04-27 21:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: release-feed-mediola
+[2024-04-27 21:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: structifyai
+[2024-04-27 21:18:46] INFO root fetch - processPackages [structifyai]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-27 21:18:46] INFO root fetch - processPackages [structifyai]: Downloading https://files.pythonhosted.org/packages/fb/48/d8ae9d97526f9fe8aaa87dbd3738a9f0181f42d8069e6296ef3dc95ba011/structifyai-0.8.0.tar.gz
+[2024-04-27 21:18:46] INFO root fetch - processPackages [malevich-coretools]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-27 21:18:46] INFO root fetch - processPackages [release-feed-mediola]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-04-27 21:18:46] INFO root fetch - processPackages [kfish]: New version: [99.0.202404271916] Old Version: [99.0.202404261318]
+[2024-04-27 21:18:46] INFO root fetch - processPackages [release-feed-mediola]: Downloading https://files.pythonhosted.org/packages/f7/e2/563f11b1712d32e70ba699f1971224a06fa84eb820f103122d509bd15215/release_feed_mediola-0.2.3.tar.gz
+[2024-04-27 21:18:46] INFO root fetch - processPackages [structifyai]: Downloading https://files.pythonhosted.org/packages/a2/30/35ee236f19dac5e3f595bedeabbbb3e29fee055ddc18222df1f7e833f066/structifyai-0.9.0.tar.gz
+[2024-04-27 21:18:46] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/2a/76/fc80cebde878fea9fe0d1188e2071876dba7db57638bb5234f67668e953a/kfish-99.0.202404261318-py3-none-any.whl
+[2024-04-27 21:18:47] INFO root fetch - processPackages [structifyai]: executing diffoscope
+[2024-04-27 21:18:47] INFO root fetch - processPackages [structifyai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/structifyai-0.8.0.tar.gz tmp/structifyai-0.9.0.tar.gz --markdown 20240427/s/structifyai/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-27 21:18:47] INFO root fetch - processPackages [malevich-coretools]: Downloading https://files.pythonhosted.org/packages/19/2b/be0cf01b7951184161da03cc56b1973a03c69f9df961482e7f4d54c3e67f/malevich-coretools-0.3.8.tar.gz
+[2024-04-27 21:18:47] INFO root fetch - processPackages [release-feed-mediola]: Downloading https://files.pythonhosted.org/packages/78/e6/6d93fbea3bc57cb57ec9fb04939615dc9a5d924e58caaa7e417d16264371/release_feed_mediola-0.2.4.tar.gz
+[2024-04-27 21:18:47] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/75/da/1249ae8e0daa8dd10fdb36a059ba9d69a561da107258282eaf49d7b676fd/kfish-99.0.202404271916-py3-none-any.whl
+[2024-04-27 21:18:47] INFO root fetch - processPackages [release-feed-mediola]: executing diffoscope
+[2024-04-27 21:18:47] INFO root fetch - processPackages [release-feed-mediola]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/release_feed_mediola-0.2.3.tar.gz tmp/release_feed_mediola-0.2.4.tar.gz --markdown 20240427/r/release-feed-mediola/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-04-27 21:18:47] INFO root fetch - processPackages [kfish]: executing diffoscope
+[2024-04-27 21:18:47] INFO root fetch - processPackages [kfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfish-99.0.202404261318-py3-none-any.whl.zip tmp/kfish-99.0.202404271916-py3-none-any.whl.zip --markdown 20240427/k/kfish/99.0.202404261318-99.0.202404271916/README.md --exclude *.pyd
+[2024-04-27 21:18:47] INFO root fetch - processPackages [malevich-coretools]: Downloading https://files.pythonhosted.org/packages/bc/dc/3e56dcdbfb2b5a97eefc8722426aff37a862de6e6a2beaa02472053ebe7d/malevich-coretools-0.3.9.tar.gz
+[2024-04-27 21:18:47] INFO root fetch - processPackages [structifyai]: Remove: archive file [/home/abi/fetcher/tmp/structifyai-0.8.0.tar.gz]
+[2024-04-27 21:18:47] INFO root fetch - processPackages [structifyai]: Remove: archive file [/home/abi/fetcher/tmp/structifyai-0.9.0.tar.gz]
+[2024-04-27 21:18:47] INFO root fetch - main [MainThread]: End processing [structifyai]: success
+[2024-04-27 21:18:47] INFO root fetch - processPackages [malevich-coretools]: executing diffoscope
+[2024-04-27 21:18:47] INFO root fetch - processPackages [malevich-coretools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/malevich-coretools-0.3.8.tar.gz tmp/malevich-coretools-0.3.9.tar.gz --markdown 20240427/m/malevich-coretools/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-27 21:18:47] INFO root fetch - processPackages [release-feed-mediola]: Remove: archive file [/home/abi/fetcher/tmp/release_feed_mediola-0.2.3.tar.gz]
+[2024-04-27 21:18:47] INFO root fetch - processPackages [release-feed-mediola]: Remove: archive file [/home/abi/fetcher/tmp/release_feed_mediola-0.2.4.tar.gz]
+[2024-04-27 21:18:47] INFO root fetch - main [MainThread]: End processing [release-feed-mediola]: success
+[2024-04-27 21:18:47] INFO root fetch - processPackages [kfish]: Remove: archive file [/home/abi/fetcher/tmp/kfish-99.0.202404261318-py3-none-any.whl.zip]
+[2024-04-27 21:18:47] INFO root fetch - processPackages [kfish]: Remove: archive file [/home/abi/fetcher/tmp/kfish-99.0.202404271916-py3-none-any.whl.zip]
+[2024-04-27 21:18:47] INFO root fetch - main [MainThread]: End processing [kfish]: success
+[2024-04-27 21:18:48] INFO root fetch - processPackages [malevich-coretools]: Remove: archive file [/home/abi/fetcher/tmp/malevich-coretools-0.3.8.tar.gz]
+[2024-04-27 21:18:48] INFO root fetch - processPackages [malevich-coretools]: Remove: archive file [/home/abi/fetcher/tmp/malevich-coretools-0.3.9.tar.gz]
+[2024-04-27 21:18:48] INFO root fetch - main [MainThread]: End processing [malevich-coretools]: success
+[2024-04-27 21:18:48] INFO root fetch - main [MainThread]: Store serial: [22961343]
