@@ -11325,3 +11325,24 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 11:20:56] INFO root fetch - processPackages [clovers-leafgame]: Remove: archive file [/home/abi/fetcher/tmp/clovers_leafgame-0.1.5.post1.tar.gz]
 [2024-04-27 11:20:56] INFO root fetch - main [MainThread]: End processing [clovers-leafgame]: success
 [2024-04-27 11:20:56] INFO root fetch - main [MainThread]: Store serial: [22957636]
+[2024-04-27 11:23:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957636]
+[2024-04-27 11:23:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 11:23:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wise-utils
+[2024-04-27 11:23:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tira
+[2024-04-27 11:23:05] INFO root fetch - processPackages [wise-utils]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-04-27 11:23:05] INFO root fetch - processPackages [wise-utils]: Downloading https://files.pythonhosted.org/packages/59/b3/8dfa4892259ef7046de4532cdaa9243c0459f01a486df6b32c421f7694e2/wise_utils-1.1.0.tar.gz
+[2024-04-27 11:23:05] INFO root fetch - processPackages [tira]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-27 11:23:05] INFO root fetch - processPackages [tira]: Downloading https://files.pythonhosted.org/packages/4b/d0/2e61e71a65015785af087e247c1a0fb86643b1a1315e058857f4c30e93d1/tira-0.0.98.tar.gz
+[2024-04-27 11:23:05] INFO root fetch - processPackages [wise-utils]: Downloading https://files.pythonhosted.org/packages/26/97/ecc7fcaf9343ff08a832f70b45b13732cab6cf68b4b037ba7993063dda04/wise_utils-1.1.1.tar.gz
+[2024-04-27 11:23:06] INFO root fetch - processPackages [wise-utils]: executing diffoscope
+[2024-04-27 11:23:06] INFO root fetch - processPackages [wise-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wise_utils-1.1.0.tar.gz tmp/wise_utils-1.1.1.tar.gz --markdown 20240427/w/wise-utils/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-04-27 11:23:06] INFO root fetch - processPackages [tira]: Downloading https://files.pythonhosted.org/packages/2d/31/b9af5a5b67ff777b2c9209808c8e4e18c7fd17c6348a13651170d8884d62/tira-0.0.99.tar.gz
+[2024-04-27 11:23:06] INFO root fetch - processPackages [tira]: executing diffoscope
+[2024-04-27 11:23:06] INFO root fetch - processPackages [tira]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tira-0.0.98.tar.gz tmp/tira-0.0.99.tar.gz --markdown 20240427/t/tira/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-27 11:23:06] INFO root fetch - processPackages [wise-utils]: Remove: archive file [/home/abi/fetcher/tmp/wise_utils-1.1.0.tar.gz]
+[2024-04-27 11:23:06] INFO root fetch - processPackages [wise-utils]: Remove: archive file [/home/abi/fetcher/tmp/wise_utils-1.1.1.tar.gz]
+[2024-04-27 11:23:06] INFO root fetch - main [MainThread]: End processing [wise-utils]: success
+[2024-04-27 11:23:06] INFO root fetch - processPackages [tira]: Remove: archive file [/home/abi/fetcher/tmp/tira-0.0.98.tar.gz]
+[2024-04-27 11:23:06] INFO root fetch - processPackages [tira]: Remove: archive file [/home/abi/fetcher/tmp/tira-0.0.99.tar.gz]
+[2024-04-27 11:23:06] INFO root fetch - main [MainThread]: End processing [tira]: success
+[2024-04-27 11:23:06] INFO root fetch - main [MainThread]: Store serial: [22957643]
