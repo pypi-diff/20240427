@@ -21374,3 +21374,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 23:25:21] INFO root fetch - processPackages [flet-contrib-core]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_core-2024.4.27.1759.tar.gz]
 [2024-04-27 23:25:21] INFO root fetch - main [MainThread]: End processing [flet-contrib-core]: success
 [2024-04-27 23:25:21] INFO root fetch - main [MainThread]: Store serial: [22962078]
+[2024-04-27 23:27:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962078]
+[2024-04-27 23:27:30] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 23:27:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edsl
+[2024-04-27 23:27:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: langflow-base
+[2024-04-27 23:27:31] INFO root fetch - processPackages [edsl]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-27 23:27:31] INFO root fetch - processPackages [langflow-base]: New version: [0.0.38] Old Version: [0.0.37]
+[2024-04-27 23:27:31] INFO root fetch - processPackages [edsl]: Downloading https://files.pythonhosted.org/packages/a7/b4/ca2ddafd1ecd31e28b2974e932e58274993e658c949b77ae37d057d7c856/edsl-0.1.8.tar.gz
+[2024-04-27 23:27:31] INFO root fetch - processPackages [langflow-base]: Downloading https://files.pythonhosted.org/packages/21/6f/c035a5e2269f449b8bd9d1f61a32c428218a1b9cfe3591b7dabc4ede705c/langflow_base-0.0.37.tar.gz
+[2024-04-27 23:27:31] INFO root fetch - processPackages [edsl]: Downloading https://files.pythonhosted.org/packages/f7/d4/f0e4527adeb00ef9119790d25c4faad0d3fa62ee7c189076b9b09f11e7f4/edsl-0.1.9.tar.gz
+[2024-04-27 23:27:31] INFO root fetch - processPackages [edsl]: executing diffoscope
+[2024-04-27 23:27:31] INFO root fetch - processPackages [edsl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edsl-0.1.8.tar.gz tmp/edsl-0.1.9.tar.gz --markdown 20240427/e/edsl/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-27 23:27:31] INFO root fetch - processPackages [langflow-base]: Downloading https://files.pythonhosted.org/packages/d8/cc/a18a93956f8fb4490bf07b6aff30dcf29985d66f3c3197803c0f28655815/langflow_base-0.0.38.tar.gz
+[2024-04-27 23:27:32] INFO root fetch - processPackages [edsl]: Remove: archive file [/home/abi/fetcher/tmp/edsl-0.1.8.tar.gz]
+[2024-04-27 23:27:32] INFO root fetch - processPackages [edsl]: Remove: archive file [/home/abi/fetcher/tmp/edsl-0.1.9.tar.gz]
+[2024-04-27 23:27:32] INFO root fetch - main [MainThread]: End processing [edsl]: success
+[2024-04-27 23:27:32] INFO root fetch - processPackages [langflow-base]: executing diffoscope
+[2024-04-27 23:27:32] INFO root fetch - processPackages [langflow-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langflow_base-0.0.37.tar.gz tmp/langflow_base-0.0.38.tar.gz --markdown 20240427/l/langflow-base/0.0.37-0.0.38/README.md --exclude *.pyd
+[2024-04-27 23:27:36] INFO root fetch - processPackages [langflow-base]: Remove: archive file [/home/abi/fetcher/tmp/langflow_base-0.0.37.tar.gz]
+[2024-04-27 23:27:36] INFO root fetch - processPackages [langflow-base]: Remove: archive file [/home/abi/fetcher/tmp/langflow_base-0.0.38.tar.gz]
+[2024-04-27 23:27:37] INFO root fetch - main [MainThread]: End processing [langflow-base]: success
+[2024-04-27 23:27:37] INFO root fetch - main [MainThread]: Store serial: [22962086]
