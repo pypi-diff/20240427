@@ -14269,3 +14269,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 15:01:18] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev8.tar.gz]
 [2024-04-27 15:01:18] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
 [2024-04-27 15:01:18] INFO root fetch - main [MainThread]: Store serial: [22958879]
+[2024-04-27 15:03:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958879]
+[2024-04-27 15:03:27] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 15:03:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pipelinechain
+[2024-04-27 15:03:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: beeize-sdk-python
+[2024-04-27 15:03:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yeref
+[2024-04-27 15:03:27] WARNING root fetch - processPackages [pipelinechain]: Skipping, unable to determine old version
+[2024-04-27 15:03:27] INFO root fetch - main [MainThread]: End processing [pipelinechain] error
+[2024-04-27 15:03:27] INFO root fetch - processPackages [beeize-sdk-python]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-27 15:03:27] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-27 15:03:27] INFO root fetch - processPackages [beeize-sdk-python]: Downloading https://files.pythonhosted.org/packages/8a/9b/7e4640b434c7f4824dc34cbdb8794d6b3ae24ca833bee0f5bdc2cc28c5b0/beeize-sdk-python-0.1.0.tar.gz
+[2024-04-27 15:03:27] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-04-27 15:03:27] INFO root fetch - processPackages [beeize-sdk-python]: Downloading https://files.pythonhosted.org/packages/3b/3f/5b72aa1e8211e44970be89c6097359e834950bc7055f38a107058616d2f1/beeize-sdk-python-0.1.1.tar.gz
+[2024-04-27 15:03:27] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-04-27 15:03:27] INFO root fetch - processPackages [beeize-sdk-python]: executing diffoscope
+[2024-04-27 15:03:27] INFO root fetch - processPackages [beeize-sdk-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beeize-sdk-python-0.1.0.tar.gz tmp/beeize-sdk-python-0.1.1.tar.gz --markdown 20240427/b/beeize-sdk-python/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-27 15:03:27] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-04-27 15:03:27] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240427/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-27 15:03:28] INFO root fetch - processPackages [beeize-sdk-python]: Remove: archive file [/home/abi/fetcher/tmp/beeize-sdk-python-0.1.0.tar.gz]
+[2024-04-27 15:03:28] INFO root fetch - processPackages [beeize-sdk-python]: Remove: archive file [/home/abi/fetcher/tmp/beeize-sdk-python-0.1.1.tar.gz]
+[2024-04-27 15:03:28] INFO root fetch - main [MainThread]: End processing [beeize-sdk-python]: success
+[2024-04-27 15:03:28] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-04-27 15:03:28] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-04-27 15:03:28] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-04-27 15:03:28] INFO root fetch - main [MainThread]: Store serial: [22958886]
