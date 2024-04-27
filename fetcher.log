@@ -6971,3 +6971,17 @@ EOFError: EOF read where object expected
 [2024-04-27 04:06:34] INFO root fetch - processPackages [oaklib]: Remove: archive file [/home/abi/fetcher/tmp/oaklib-0.6.5.tar.gz]
 [2024-04-27 04:06:34] INFO root fetch - main [MainThread]: End processing [oaklib]: success
 [2024-04-27 04:06:34] INFO root fetch - main [MainThread]: Store serial: [22955978]
+[2024-04-27 04:08:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22955978]
+[2024-04-27 04:08:43] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-27 04:10:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22955978]
+[2024-04-27 04:10:49] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 04:10:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TidalPy
+[2024-04-27 04:10:49] INFO root fetch - processPackages [TidalPy]: New version: [0.5.3] Old Version: [0.5.2]
+[2024-04-27 04:10:49] INFO root fetch - processPackages [TidalPy]: Downloading https://files.pythonhosted.org/packages/37/95/15c0b0361e4b7ee6b4c4ac6e7896b45d1a23d6826fad7bbe845baf7beb69/TidalPy-0.5.2.tar.gz
+[2024-04-27 04:10:50] INFO root fetch - processPackages [TidalPy]: Downloading https://files.pythonhosted.org/packages/cf/33/6950c8ead832013006af2333b59f2814a43666536f48450f084e1d086832/TidalPy-0.5.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-27 04:10:55] INFO root fetch - processPackages [TidalPy]: executing diffoscope
+[2024-04-27 04:10:55] INFO root fetch - processPackages [TidalPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TidalPy-0.5.2.tar.gz tmp/TidalPy-0.5.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240427/T/TidalPy/0.5.2-0.5.3/README.md --exclude *.pyd
+[2024-04-27 04:10:57] INFO root fetch - processPackages [TidalPy]: Remove: archive file [/home/abi/fetcher/tmp/TidalPy-0.5.2.tar.gz]
+[2024-04-27 04:10:57] INFO root fetch - processPackages [TidalPy]: Remove: archive file [/home/abi/fetcher/tmp/TidalPy-0.5.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-27 04:10:57] INFO root fetch - main [MainThread]: End processing [TidalPy]: success
+[2024-04-27 04:10:57] INFO root fetch - main [MainThread]: Store serial: [22955982]
