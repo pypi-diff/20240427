@@ -7653,3 +7653,15 @@ EOFError: EOF read where object expected
 [2024-04-27 05:21:18] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_nightly-3.3.3.dev2024042703.tar.gz]
 [2024-04-27 05:21:18] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
 [2024-04-27 05:21:18] INFO root fetch - main [MainThread]: Store serial: [22956218]
+[2024-04-27 05:23:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956218]
+[2024-04-27 05:23:26] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 05:23:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: streamlit-ldap-authenticator
+[2024-04-27 05:23:27] INFO root fetch - processPackages [streamlit-ldap-authenticator]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-04-27 05:23:27] INFO root fetch - processPackages [streamlit-ldap-authenticator]: Downloading https://files.pythonhosted.org/packages/e9/ed/af2cd385feac852804fc6961838ebd94e72b15ace3e6f266cf5562f2066d/streamlit-ldap-authenticator-0.2.4.tar.gz
+[2024-04-27 05:23:27] INFO root fetch - processPackages [streamlit-ldap-authenticator]: Downloading https://files.pythonhosted.org/packages/4a/cb/a817ebf5eee7090ee4866a5ab8cb0c4bc46882923ea3fdeeac5572e87884/streamlit-ldap-authenticator-0.2.5.tar.gz
+[2024-04-27 05:23:27] INFO root fetch - processPackages [streamlit-ldap-authenticator]: executing diffoscope
+[2024-04-27 05:23:27] INFO root fetch - processPackages [streamlit-ldap-authenticator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-ldap-authenticator-0.2.4.tar.gz tmp/streamlit-ldap-authenticator-0.2.5.tar.gz --markdown 20240427/s/streamlit-ldap-authenticator/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-04-27 05:23:28] INFO root fetch - processPackages [streamlit-ldap-authenticator]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-ldap-authenticator-0.2.4.tar.gz]
+[2024-04-27 05:23:28] INFO root fetch - processPackages [streamlit-ldap-authenticator]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-ldap-authenticator-0.2.5.tar.gz]
+[2024-04-27 05:23:28] INFO root fetch - main [MainThread]: End processing [streamlit-ldap-authenticator]: success
+[2024-04-27 05:23:28] INFO root fetch - main [MainThread]: Store serial: [22956221]
