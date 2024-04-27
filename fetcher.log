@@ -18397,3 +18397,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 19:39:40] ERROR root fetch - processPackages [praanscribe]: Unable to fetch info: No such project/version 'praanscribe' 1.0.4
 [2024-04-27 19:39:40] INFO root fetch - main [MainThread]: End processing [praanscribe] error
 [2024-04-27 19:39:40] INFO root fetch - main [MainThread]: Store serial: [22960653]
+[2024-04-27 19:41:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960653]
+[2024-04-27 19:41:54] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 19:41:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arrayutilities
+[2024-04-27 19:41:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: telebot-components
+[2024-04-27 19:41:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: unicodecheck
+[2024-04-27 19:41:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vulnstick
+[2024-04-27 19:41:54] INFO root fetch - processPackages [telebot-components]: New version: [0.9.0] Old Version: [0.8.9]
+[2024-04-27 19:41:54] INFO root fetch - processPackages [unicodecheck]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-04-27 19:41:54] WARNING root fetch - processPackages [arrayutilities]: Skipping, unable to determine old version
+[2024-04-27 19:41:54] INFO root fetch - main [MainThread]: End processing [arrayutilities] error
+[2024-04-27 19:41:54] INFO root fetch - processPackages [telebot-components]: Downloading https://files.pythonhosted.org/packages/3a/da/e1a7548f1c8197cc3f9e3f2536ffb60ff45538ac1b8299ad48cbc0442a41/telebot_components-0.8.9.tar.gz
+[2024-04-27 19:41:54] WARNING root fetch - processPackages [vulnstick]: Skipping, unable to determine old version
+[2024-04-27 19:41:54] INFO root fetch - main [MainThread]: End processing [vulnstick] error
+[2024-04-27 19:41:54] INFO root fetch - processPackages [telebot-components]: Downloading https://files.pythonhosted.org/packages/3d/a4/65f9b53df957f27dcf95b9842b09357aea3c698526cb565a12fb29da6d39/telebot_components-0.9.0.tar.gz
+[2024-04-27 19:41:54] INFO root fetch - processPackages [unicodecheck]: Downloading https://files.pythonhosted.org/packages/47/f1/34620bb74de46d9d941e7d692215738cc5253de84a35f6f76ca9fcee0230/unicodecheck-1.2.0.tar.gz
+[2024-04-27 19:41:55] INFO root fetch - processPackages [telebot-components]: executing diffoscope
+[2024-04-27 19:41:55] INFO root fetch - processPackages [telebot-components]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telebot_components-0.8.9.tar.gz tmp/telebot_components-0.9.0.tar.gz --markdown 20240427/t/telebot-components/0.8.9-0.9.0/README.md --exclude *.pyd
+[2024-04-27 19:41:55] INFO root fetch - processPackages [unicodecheck]: Downloading https://files.pythonhosted.org/packages/99/cb/b3db363662749cd06ac908699554c918d68b1d8c53e685000612461d378c/unicodecheck-1.2.1.tar.gz
+[2024-04-27 19:41:55] INFO root fetch - processPackages [unicodecheck]: executing diffoscope
+[2024-04-27 19:41:55] INFO root fetch - processPackages [unicodecheck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unicodecheck-1.2.0.tar.gz tmp/unicodecheck-1.2.1.tar.gz --markdown 20240427/u/unicodecheck/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-04-27 19:41:55] INFO root fetch - processPackages [telebot-components]: Remove: archive file [/home/abi/fetcher/tmp/telebot_components-0.8.9.tar.gz]
+[2024-04-27 19:41:55] INFO root fetch - processPackages [telebot-components]: Remove: archive file [/home/abi/fetcher/tmp/telebot_components-0.9.0.tar.gz]
+[2024-04-27 19:41:55] INFO root fetch - main [MainThread]: End processing [telebot-components]: success
+[2024-04-27 19:41:55] INFO root fetch - processPackages [unicodecheck]: Remove: archive file [/home/abi/fetcher/tmp/unicodecheck-1.2.0.tar.gz]
+[2024-04-27 19:41:55] INFO root fetch - processPackages [unicodecheck]: Remove: archive file [/home/abi/fetcher/tmp/unicodecheck-1.2.1.tar.gz]
+[2024-04-27 19:41:55] INFO root fetch - main [MainThread]: End processing [unicodecheck]: success
+[2024-04-27 19:41:55] INFO root fetch - main [MainThread]: Store serial: [22960669]
