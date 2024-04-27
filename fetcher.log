@@ -7197,3 +7197,96 @@ EOFError: EOF read where object expected
 [2024-04-27 04:32:38] INFO root fetch - processPackages [dragonfly-energy]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-energy-1.9.9.tar.gz]
 [2024-04-27 04:32:38] INFO root fetch - main [MainThread]: End processing [dragonfly-energy]: success
 [2024-04-27 04:32:38] INFO root fetch - main [MainThread]: Store serial: [22956069]
+[2024-04-27 04:34:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956069]
+[2024-04-27 04:34:46] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-04-27 04:34:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: modelgauge
+[2024-04-27 04:34:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: modelgauge-demo-plugin
+[2024-04-27 04:34:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: modelgauge-together
+[2024-04-27 04:34:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: modelgauge-perspective-api
+[2024-04-27 04:34:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: modelgauge-huggingface
+[2024-04-27 04:34:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: modelgauge-standard-tests
+[2024-04-27 04:34:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: modelgauge-openai
+[2024-04-27 04:34:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: bihyung
+[2024-04-27 04:34:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ctrip-app-ui
+[2024-04-27 04:34:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pyscinloopsr
+[2024-04-27 04:34:46] INFO root fetch - processPackages [bihyung]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-27 04:34:46] INFO root fetch - processPackages [ctrip-app-ui]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-04-27 04:34:46] INFO root fetch - processPackages [pyscinloopsr]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-27 04:34:46] INFO root fetch - processPackages [modelgauge-demo-plugin]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-27 04:34:46] INFO root fetch - processPackages [modelgauge]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-27 04:34:46] INFO root fetch - processPackages [modelgauge-together]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-27 04:34:46] INFO root fetch - processPackages [modelgauge-huggingface]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-27 04:34:46] INFO root fetch - processPackages [modelgauge-perspective-api]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-27 04:34:46] INFO root fetch - processPackages [modelgauge-standard-tests]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-27 04:34:46] INFO root fetch - processPackages [modelgauge-openai]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-27 04:34:46] INFO root fetch - processPackages [pyscinloopsr]: Downloading https://files.pythonhosted.org/packages/98/21/5809d8e4c42d0207d6fd61e35cf0683da0e0cc5f1d10fa87e864b000cfa6/pyscinloopsr-1.0.8.tar.gz
+[2024-04-27 04:34:46] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/cd/37/798881b2b3e125158ffb58b505a1eedcb1ffd07baa1b17f3e16a1e325626/ctrip-app-ui-0.2.6.tar.gz
+[2024-04-27 04:34:46] INFO root fetch - processPackages [bihyung]: Downloading https://files.pythonhosted.org/packages/42/83/f29723a4f7d187bc0a56158b2d01b3caa7fc9399c1861b9520d050c0896b/bihyung-0.1.0-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-27 04:34:47] INFO root fetch - processPackages [modelgauge-perspective-api]: Downloading https://files.pythonhosted.org/packages/7c/8e/f8f2ed2c34ba3a2c4f8e105bb610c42299b9515672df07227c9799475c2c/modelgauge_perspective_api-0.5.0.tar.gz
+[2024-04-27 04:34:47] INFO root fetch - processPackages [modelgauge-demo-plugin]: Downloading https://files.pythonhosted.org/packages/ed/1d/c886b86413161db00e85f6a2e8d492fa91bfc7c5db97f903d859a8892804/modelgauge_demo_plugin-0.5.0.tar.gz
+[2024-04-27 04:34:47] INFO root fetch - processPackages [modelgauge-together]: Downloading https://files.pythonhosted.org/packages/73/77/21f7cac0fdf4050a05fbe7f38a281d315d4bf0b7b2b6ec4dce99643d7b56/modelgauge_together-0.5.0.tar.gz
+[2024-04-27 04:34:47] INFO root fetch - processPackages [modelgauge]: Downloading https://files.pythonhosted.org/packages/f2/0d/b72ec86d6160d2a2468201d5199ebc715ea3835d58ea2f996364c677eff6/modelgauge-0.5.0.tar.gz
+[2024-04-27 04:34:47] INFO root fetch - processPackages [modelgauge-standard-tests]: Downloading https://files.pythonhosted.org/packages/b6/63/69b9e918e9b6e849ec7384b440fd1ce29a0d89537ebbbeea14e94313934f/modelgauge_standard_tests-0.5.0.tar.gz
+[2024-04-27 04:34:47] INFO root fetch - processPackages [modelgauge-huggingface]: Downloading https://files.pythonhosted.org/packages/8d/12/7673b8eab2d67a4042c1f82d477d1c1c6d770867bcf2cb816cf647839a88/modelgauge_huggingface-0.5.0.tar.gz
+[2024-04-27 04:34:47] INFO root fetch - processPackages [pyscinloopsr]: Downloading https://files.pythonhosted.org/packages/c2/79/a3b3e1c4377a54b84d92a6ce4a8d70f9bb57364bdbe1ec2657397e8360cd/pyscinloopsr-1.0.9.tar.gz
+[2024-04-27 04:34:47] INFO root fetch - processPackages [modelgauge-openai]: Downloading https://files.pythonhosted.org/packages/9c/2a/2340c87a63b17231cc14d18c76f73410a26450157ef8a19151d79975b6f2/modelgauge_openai-0.5.0.tar.gz
+[2024-04-27 04:34:47] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/9e/76/860bbf775d46ddffb69309ca6989eaf6e2e759a02f36a1840182d462d337/ctrip-app-ui-0.2.7.tar.gz
+[2024-04-27 04:34:47] INFO root fetch - processPackages [pyscinloopsr]: executing diffoscope
+[2024-04-27 04:34:47] INFO root fetch - processPackages [pyscinloopsr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscinloopsr-1.0.8.tar.gz tmp/pyscinloopsr-1.0.9.tar.gz --markdown 20240427/p/pyscinloopsr/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-27 04:34:47] INFO root fetch - processPackages [modelgauge-perspective-api]: Downloading https://files.pythonhosted.org/packages/55/f7/93d79578681ceae8c98f865e748b1fadef33910363800edcb18a67ccb5e2/modelgauge_perspective_api-0.5.1.tar.gz
+[2024-04-27 04:34:47] INFO root fetch - processPackages [modelgauge-demo-plugin]: Downloading https://files.pythonhosted.org/packages/be/39/4fab397ddcef8e6705cef637ba31e363289a5cc469c2a3dd17d913b53e33/modelgauge_demo_plugin-0.5.1.tar.gz
+[2024-04-27 04:34:47] INFO root fetch - processPackages [ctrip-app-ui]: executing diffoscope
+[2024-04-27 04:34:47] INFO root fetch - processPackages [ctrip-app-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctrip-app-ui-0.2.6.tar.gz tmp/ctrip-app-ui-0.2.7.tar.gz --markdown 20240427/c/ctrip-app-ui/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-04-27 04:34:47] INFO root fetch - processPackages [modelgauge-together]: Downloading https://files.pythonhosted.org/packages/92/35/a208a5e8c49574fbddab179dbc326b585efa024063afabb9f1387fb9e60a/modelgauge_together-0.5.1.tar.gz
+[2024-04-27 04:34:47] INFO root fetch - processPackages [modelgauge-standard-tests]: Downloading https://files.pythonhosted.org/packages/a6/f6/d281927267f49f936a1fbfb8004e34ae966013fc5559916f11212e090191/modelgauge_standard_tests-0.5.1.tar.gz
+[2024-04-27 04:34:47] INFO root fetch - processPackages [modelgauge]: Downloading https://files.pythonhosted.org/packages/24/21/f072f8a00f8fa5ca9f6b4c72430170c4884fb580edfe098ebcba755c10b4/modelgauge-0.5.1.tar.gz
+[2024-04-27 04:34:47] INFO root fetch - processPackages [modelgauge-huggingface]: Downloading https://files.pythonhosted.org/packages/99/23/dca861698a63c7a27859e34a52bb4428193c2777b6f97b255ae6902bb5e7/modelgauge_huggingface-0.5.1.tar.gz
+[2024-04-27 04:34:47] INFO root fetch - processPackages [modelgauge-openai]: Downloading https://files.pythonhosted.org/packages/c3/60/e7a66ed121a2d400fc9554a6d80b279f03505baaf8ee4712daed314a6069/modelgauge_openai-0.5.1.tar.gz
+[2024-04-27 04:34:47] INFO root fetch - processPackages [modelgauge-perspective-api]: executing diffoscope
+[2024-04-27 04:34:47] INFO root fetch - processPackages [modelgauge-perspective-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modelgauge_perspective_api-0.5.0.tar.gz tmp/modelgauge_perspective_api-0.5.1.tar.gz --markdown 20240427/m/modelgauge-perspective-api/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-04-27 04:34:47] INFO root fetch - processPackages [modelgauge-demo-plugin]: executing diffoscope
+[2024-04-27 04:34:47] INFO root fetch - processPackages [modelgauge-demo-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modelgauge_demo_plugin-0.5.0.tar.gz tmp/modelgauge_demo_plugin-0.5.1.tar.gz --markdown 20240427/m/modelgauge-demo-plugin/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-04-27 04:34:47] INFO root fetch - processPackages [bihyung]: Downloading https://files.pythonhosted.org/packages/e2/e4/859afe72a327fbd3e8d565a6a17513145e9ad01ebb9271e8fcfc48235e3e/bihyung-0.1.1.tar.gz
+[2024-04-27 04:34:47] INFO root fetch - processPackages [modelgauge-together]: executing diffoscope
+[2024-04-27 04:34:47] INFO root fetch - processPackages [modelgauge-together]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modelgauge_together-0.5.0.tar.gz tmp/modelgauge_together-0.5.1.tar.gz --markdown 20240427/m/modelgauge-together/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-04-27 04:34:47] INFO root fetch - processPackages [modelgauge-standard-tests]: executing diffoscope
+[2024-04-27 04:34:47] INFO root fetch - processPackages [modelgauge-standard-tests]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modelgauge_standard_tests-0.5.0.tar.gz tmp/modelgauge_standard_tests-0.5.1.tar.gz --markdown 20240427/m/modelgauge-standard-tests/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-04-27 04:34:47] INFO root fetch - processPackages [modelgauge-huggingface]: executing diffoscope
+[2024-04-27 04:34:47] INFO root fetch - processPackages [modelgauge-huggingface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modelgauge_huggingface-0.5.0.tar.gz tmp/modelgauge_huggingface-0.5.1.tar.gz --markdown 20240427/m/modelgauge-huggingface/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-04-27 04:34:47] INFO root fetch - processPackages [modelgauge]: executing diffoscope
+[2024-04-27 04:34:47] INFO root fetch - processPackages [modelgauge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modelgauge-0.5.0.tar.gz tmp/modelgauge-0.5.1.tar.gz --markdown 20240427/m/modelgauge/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-04-27 04:34:47] INFO root fetch - processPackages [modelgauge-openai]: executing diffoscope
+[2024-04-27 04:34:47] INFO root fetch - processPackages [modelgauge-openai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modelgauge_openai-0.5.0.tar.gz tmp/modelgauge_openai-0.5.1.tar.gz --markdown 20240427/m/modelgauge-openai/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-04-27 04:34:47] INFO root fetch - processPackages [bihyung]: executing diffoscope
+[2024-04-27 04:34:47] INFO root fetch - processPackages [bihyung]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bihyung-0.1.0-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/bihyung-0.1.1.tar.gz --markdown 20240427/b/bihyung/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-27 04:34:48] INFO root fetch - processPackages [pyscinloopsr]: Remove: archive file [/home/abi/fetcher/tmp/pyscinloopsr-1.0.8.tar.gz]
+[2024-04-27 04:34:48] INFO root fetch - processPackages [pyscinloopsr]: Remove: archive file [/home/abi/fetcher/tmp/pyscinloopsr-1.0.9.tar.gz]
+[2024-04-27 04:34:48] INFO root fetch - main [MainThread]: End processing [pyscinloopsr]: success
+[2024-04-27 04:34:48] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.2.6.tar.gz]
+[2024-04-27 04:34:48] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.2.7.tar.gz]
+[2024-04-27 04:34:48] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
+[2024-04-27 04:34:48] INFO root fetch - processPackages [modelgauge-perspective-api]: Remove: archive file [/home/abi/fetcher/tmp/modelgauge_perspective_api-0.5.0.tar.gz]
+[2024-04-27 04:34:48] INFO root fetch - processPackages [modelgauge-perspective-api]: Remove: archive file [/home/abi/fetcher/tmp/modelgauge_perspective_api-0.5.1.tar.gz]
+[2024-04-27 04:34:48] INFO root fetch - main [MainThread]: End processing [modelgauge-perspective-api]: success
+[2024-04-27 04:34:48] INFO root fetch - processPackages [modelgauge-huggingface]: Remove: archive file [/home/abi/fetcher/tmp/modelgauge_huggingface-0.5.0.tar.gz]
+[2024-04-27 04:34:48] INFO root fetch - processPackages [modelgauge-huggingface]: Remove: archive file [/home/abi/fetcher/tmp/modelgauge_huggingface-0.5.1.tar.gz]
+[2024-04-27 04:34:48] INFO root fetch - main [MainThread]: End processing [modelgauge-huggingface]: success
+[2024-04-27 04:34:48] INFO root fetch - processPackages [modelgauge-standard-tests]: Remove: archive file [/home/abi/fetcher/tmp/modelgauge_standard_tests-0.5.0.tar.gz]
+[2024-04-27 04:34:48] INFO root fetch - processPackages [modelgauge-standard-tests]: Remove: archive file [/home/abi/fetcher/tmp/modelgauge_standard_tests-0.5.1.tar.gz]
+[2024-04-27 04:34:48] INFO root fetch - main [MainThread]: End processing [modelgauge-standard-tests]: success
+[2024-04-27 04:34:48] INFO root fetch - processPackages [modelgauge]: Remove: archive file [/home/abi/fetcher/tmp/modelgauge-0.5.0.tar.gz]
+[2024-04-27 04:34:48] INFO root fetch - processPackages [modelgauge]: Remove: archive file [/home/abi/fetcher/tmp/modelgauge-0.5.1.tar.gz]
+[2024-04-27 04:34:48] INFO root fetch - main [MainThread]: End processing [modelgauge]: success
+[2024-04-27 04:34:48] INFO root fetch - processPackages [modelgauge-demo-plugin]: Remove: archive file [/home/abi/fetcher/tmp/modelgauge_demo_plugin-0.5.0.tar.gz]
+[2024-04-27 04:34:48] INFO root fetch - processPackages [modelgauge-demo-plugin]: Remove: archive file [/home/abi/fetcher/tmp/modelgauge_demo_plugin-0.5.1.tar.gz]
+[2024-04-27 04:34:48] INFO root fetch - main [MainThread]: End processing [modelgauge-demo-plugin]: success
+[2024-04-27 04:34:48] INFO root fetch - processPackages [modelgauge-openai]: Remove: archive file [/home/abi/fetcher/tmp/modelgauge_openai-0.5.0.tar.gz]
+[2024-04-27 04:34:48] INFO root fetch - processPackages [modelgauge-openai]: Remove: archive file [/home/abi/fetcher/tmp/modelgauge_openai-0.5.1.tar.gz]
+[2024-04-27 04:34:48] INFO root fetch - main [MainThread]: End processing [modelgauge-openai]: success
+[2024-04-27 04:34:48] INFO root fetch - processPackages [modelgauge-together]: Remove: archive file [/home/abi/fetcher/tmp/modelgauge_together-0.5.0.tar.gz]
+[2024-04-27 04:34:48] INFO root fetch - processPackages [modelgauge-together]: Remove: archive file [/home/abi/fetcher/tmp/modelgauge_together-0.5.1.tar.gz]
+[2024-04-27 04:34:48] INFO root fetch - main [MainThread]: End processing [modelgauge-together]: success
+[2024-04-27 04:34:51] INFO root fetch - processPackages [bihyung]: Remove: archive file [/home/abi/fetcher/tmp/bihyung-0.1.0-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-27 04:34:51] INFO root fetch - processPackages [bihyung]: Remove: archive file [/home/abi/fetcher/tmp/bihyung-0.1.1.tar.gz]
+[2024-04-27 04:34:51] INFO root fetch - main [MainThread]: End processing [bihyung]: success
+[2024-04-27 04:34:51] INFO root fetch - main [MainThread]: Store serial: [22956111]
