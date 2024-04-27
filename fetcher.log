@@ -17017,3 +17017,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 18:03:34] INFO root fetch - processPackages [test-packaging-chmforte]: Remove: archive file [/home/abi/fetcher/tmp/test_packaging_chmforte-0.0.5.tar.gz]
 [2024-04-27 18:03:34] INFO root fetch - main [MainThread]: End processing [test-packaging-chmforte]: success
 [2024-04-27 18:03:34] INFO root fetch - main [MainThread]: Store serial: [22960023]
+[2024-04-27 18:05:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960023]
+[2024-04-27 18:05:45] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 18:05:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: prisoners-dilemma-sdk
+[2024-04-27 18:05:45] INFO root fetch - processPackages [prisoners-dilemma-sdk]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-27 18:05:45] INFO root fetch - processPackages [prisoners-dilemma-sdk]: Downloading https://files.pythonhosted.org/packages/55/e3/7f64f8d1ccf8a0bb5ec510c14d28c21c99554775dfc795f912bb4fab1c48/prisoners_dilemma_sdk-0.0.1.tar.gz
+[2024-04-27 18:05:45] INFO root fetch - processPackages [prisoners-dilemma-sdk]: Downloading https://files.pythonhosted.org/packages/dc/32/f31956cad69faf9c9538efe5a1ba921962ff92ac456201c6f969046379b1/prisoners_dilemma_sdk-0.0.2.tar.gz
+[2024-04-27 18:05:46] INFO root fetch - processPackages [prisoners-dilemma-sdk]: executing diffoscope
+[2024-04-27 18:05:46] INFO root fetch - processPackages [prisoners-dilemma-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prisoners_dilemma_sdk-0.0.1.tar.gz tmp/prisoners_dilemma_sdk-0.0.2.tar.gz --markdown 20240427/p/prisoners-dilemma-sdk/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-27 18:05:46] INFO root fetch - processPackages [prisoners-dilemma-sdk]: Remove: archive file [/home/abi/fetcher/tmp/prisoners_dilemma_sdk-0.0.1.tar.gz]
+[2024-04-27 18:05:46] INFO root fetch - processPackages [prisoners-dilemma-sdk]: Remove: archive file [/home/abi/fetcher/tmp/prisoners_dilemma_sdk-0.0.2.tar.gz]
+[2024-04-27 18:05:46] INFO root fetch - main [MainThread]: End processing [prisoners-dilemma-sdk]: success
+[2024-04-27 18:05:46] INFO root fetch - main [MainThread]: Store serial: [22960026]
