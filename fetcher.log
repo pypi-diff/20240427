@@ -13639,3 +13639,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 14:16:44] INFO root fetch - processPackages [spongebox]: Remove: archive file [/home/abi/fetcher/tmp/spongebox-0.3.8.tar.gz]
 [2024-04-27 14:16:44] INFO root fetch - main [MainThread]: End processing [spongebox]: success
 [2024-04-27 14:16:44] INFO root fetch - main [MainThread]: Store serial: [22958568]
+[2024-04-27 14:18:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958568]
+[2024-04-27 14:18:53] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 14:18:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: snailshell
+[2024-04-27 14:18:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: uv
+[2024-04-27 14:18:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: stream-gears
+[2024-04-27 14:18:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: llm-structured-output
+[2024-04-27 14:18:53] INFO root fetch - processPackages [snailshell]: New version: [0.3.0] Old Version: [0.2.9]
+[2024-04-27 14:18:53] INFO root fetch - processPackages [snailshell]: Downloading https://files.pythonhosted.org/packages/71/9f/b99191b0a59da68e371d48cedcea65ef2bbe17b981e11133e2eeb1d69f46/snailshell-0.2.9.tar.gz
+[2024-04-27 14:18:53] INFO root fetch - processPackages [uv]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-27 14:18:53] INFO root fetch - processPackages [stream-gears]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-27 14:18:53] INFO root fetch - processPackages [llm-structured-output]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 14:18:53] INFO root fetch - processPackages [uv]: Downloading https://files.pythonhosted.org/packages/a0/e6/3098c0e5986919287a41a4a1134b67f94b93da18b3c007875932e6844d8e/uv-0.1.8.tar.gz
+[2024-04-27 14:18:54] INFO root fetch - processPackages [stream-gears]: Downloading https://files.pythonhosted.org/packages/13/81/79efb8e292403dc0e02ea78b266635644e038eac384fbfe481a2a8a68074/stream_gears-0.1.8.tar.gz
+[2024-04-27 14:18:54] INFO root fetch - processPackages [llm-structured-output]: Downloading https://files.pythonhosted.org/packages/23/58/a6fe6fd07d1ec5c2791f5a5db0ed3b196c60d87bd8e17cc0afa3bc420f68/llm_structured_output-0.0.8.tar.gz
+[2024-04-27 14:18:54] INFO root fetch - processPackages [snailshell]: Downloading https://files.pythonhosted.org/packages/a6/33/fb7891334f528cf8a5d1871db6e3fd9c0dd65026e186ac9d4b49676793e3/snailshell-0.3.0.tar.gz
+[2024-04-27 14:18:54] INFO root fetch - processPackages [llm-structured-output]: Downloading https://files.pythonhosted.org/packages/77/03/dc0e6c04dafdfdb4b262825150f7096497f03fe68be63f79635f7f47383a/llm_structured_output-0.0.9.tar.gz
+[2024-04-27 14:18:54] WARNING root fetch - processPackages [snailshell]: Skipping package: exceeds size limit 10640467>=10485760
+[2024-04-27 14:18:54] INFO root fetch - main [MainThread]: End processing [snailshell] error
+[2024-04-27 14:18:54] INFO root fetch - processPackages [stream-gears]: Downloading https://files.pythonhosted.org/packages/8c/e7/74a603e774f52cb59d3b1b07ce874ef8180426c14aa6f1316a255772b5c7/stream_gears-0.1.9.tar.gz
+[2024-04-27 14:18:54] INFO root fetch - processPackages [uv]: Downloading https://files.pythonhosted.org/packages/d2/e8/e726e0b0cf2dac9c89f3871c8c19bd673273f3cf9711d91e4902ee67a0d0/uv-0.1.9.tar.gz
+[2024-04-27 14:18:54] INFO root fetch - processPackages [llm-structured-output]: executing diffoscope
+[2024-04-27 14:18:54] INFO root fetch - processPackages [llm-structured-output]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_structured_output-0.0.8.tar.gz tmp/llm_structured_output-0.0.9.tar.gz --markdown 20240427/l/llm-structured-output/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 14:18:54] INFO root fetch - processPackages [stream-gears]: executing diffoscope
+[2024-04-27 14:18:54] INFO root fetch - processPackages [stream-gears]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stream_gears-0.1.8.tar.gz tmp/stream_gears-0.1.9.tar.gz --markdown 20240427/s/stream-gears/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-27 14:18:54] INFO root fetch - processPackages [uv]: executing diffoscope
+[2024-04-27 14:18:54] INFO root fetch - processPackages [uv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uv-0.1.8.tar.gz tmp/uv-0.1.9.tar.gz --markdown 20240427/u/uv/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-27 14:18:55] INFO root fetch - processPackages [llm-structured-output]: Remove: archive file [/home/abi/fetcher/tmp/llm_structured_output-0.0.8.tar.gz]
+[2024-04-27 14:18:55] INFO root fetch - processPackages [llm-structured-output]: Remove: archive file [/home/abi/fetcher/tmp/llm_structured_output-0.0.9.tar.gz]
+[2024-04-27 14:18:55] INFO root fetch - main [MainThread]: End processing [llm-structured-output]: success
+[2024-04-27 14:18:55] INFO root fetch - processPackages [stream-gears]: Remove: archive file [/home/abi/fetcher/tmp/stream_gears-0.1.8.tar.gz]
+[2024-04-27 14:18:55] INFO root fetch - processPackages [stream-gears]: Remove: archive file [/home/abi/fetcher/tmp/stream_gears-0.1.9.tar.gz]
+[2024-04-27 14:18:55] INFO root fetch - main [MainThread]: End processing [stream-gears]: success
+[2024-04-27 14:18:56] INFO root fetch - processPackages [uv]: Remove: archive file [/home/abi/fetcher/tmp/uv-0.1.8.tar.gz]
+[2024-04-27 14:18:56] INFO root fetch - processPackages [uv]: Remove: archive file [/home/abi/fetcher/tmp/uv-0.1.9.tar.gz]
+[2024-04-27 14:18:56] INFO root fetch - main [MainThread]: End processing [uv]: success
+[2024-04-27 14:18:56] INFO root fetch - main [MainThread]: Store serial: [22958605]
