@@ -6930,3 +6930,15 @@ EOFError: EOF read where object expected
 [2024-04-27 03:59:59] INFO root fetch - processPackages [egglog]: Remove: archive file [/home/abi/fetcher/tmp/egglog-7.0.0.tar.gz]
 [2024-04-27 03:59:59] INFO root fetch - main [MainThread]: End processing [egglog]: success
 [2024-04-27 03:59:59] INFO root fetch - main [MainThread]: Store serial: [22955967]
+[2024-04-27 04:02:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22955967]
+[2024-04-27 04:02:10] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 04:02:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyDecision
+[2024-04-27 04:02:10] INFO root fetch - processPackages [pyDecision]: New version: [4.5.1] Old Version: [4.4.7]
+[2024-04-27 04:02:10] INFO root fetch - processPackages [pyDecision]: Downloading https://files.pythonhosted.org/packages/e8/3e/746a0b94b2faa4a0ca97866017aed46a432d5bf6d09f99b6e3c3fbbf8b9a/pyDecision-4.4.7.tar.gz
+[2024-04-27 04:02:10] INFO root fetch - processPackages [pyDecision]: Downloading https://files.pythonhosted.org/packages/52/a5/a5f5bd6aa9d244b27914c01fab96f74629a9d32f0f277902870bf17bebda/pyDecision-4.5.1.tar.gz
+[2024-04-27 04:02:10] INFO root fetch - processPackages [pyDecision]: executing diffoscope
+[2024-04-27 04:02:10] INFO root fetch - processPackages [pyDecision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyDecision-4.4.7.tar.gz tmp/pyDecision-4.5.1.tar.gz --markdown 20240427/p/pyDecision/4.4.7-4.5.1/README.md --exclude *.pyd
+[2024-04-27 04:02:11] INFO root fetch - processPackages [pyDecision]: Remove: archive file [/home/abi/fetcher/tmp/pyDecision-4.4.7.tar.gz]
+[2024-04-27 04:02:11] INFO root fetch - processPackages [pyDecision]: Remove: archive file [/home/abi/fetcher/tmp/pyDecision-4.5.1.tar.gz]
+[2024-04-27 04:02:11] INFO root fetch - main [MainThread]: End processing [pyDecision]: success
+[2024-04-27 04:02:11] INFO root fetch - main [MainThread]: Store serial: [22955970]
