@@ -11379,3 +11379,26 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 11:25:18] INFO root fetch - processPackages [tbp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tbp-nightly-2.9.0a20221130.tar.gz]
 [2024-04-27 11:25:18] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
 [2024-04-27 11:25:18] INFO root fetch - main [MainThread]: Store serial: [22957657]
+[2024-04-27 11:27:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957657]
+[2024-04-27 11:27:28] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-27 11:29:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957657]
+[2024-04-27 11:29:33] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 11:29:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: werag
+[2024-04-27 11:29:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vbproblemcomposer
+[2024-04-27 11:29:33] INFO root fetch - processPackages [werag]: New version: [0.0.1] Old Version: [0.0.0]
+[2024-04-27 11:29:33] INFO root fetch - processPackages [vbproblemcomposer]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-27 11:29:33] INFO root fetch - processPackages [vbproblemcomposer]: Downloading https://files.pythonhosted.org/packages/6a/56/8ed85213e4af0caed94ecb11a987d8fbd10c0e6bd906465378da28f3c7ec/vbproblemcomposer-0.1.1.tar.gz
+[2024-04-27 11:29:33] INFO root fetch - processPackages [werag]: Downloading https://files.pythonhosted.org/packages/99/5a/c8b0812d06275f06688afcd314ab172c31edef7a905b84a73f72089dfbf4/werag-0.0.0.tar.gz
+[2024-04-27 11:29:34] INFO root fetch - processPackages [vbproblemcomposer]: Downloading https://files.pythonhosted.org/packages/73/c4/cbf22e22499e81afa5bbfbc5096d35b5a439440427d4feeb8ed1b3e65eea/vbproblemcomposer-0.1.2.tar.gz
+[2024-04-27 11:29:34] INFO root fetch - processPackages [vbproblemcomposer]: executing diffoscope
+[2024-04-27 11:29:34] INFO root fetch - processPackages [vbproblemcomposer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vbproblemcomposer-0.1.1.tar.gz tmp/vbproblemcomposer-0.1.2.tar.gz --markdown 20240427/v/vbproblemcomposer/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-27 11:29:34] INFO root fetch - processPackages [werag]: Downloading https://files.pythonhosted.org/packages/bf/c3/6539faadb179253fd41a51b39a361d91078c01a58600fb9d0e0e7d143a4a/werag-0.0.1.tar.gz
+[2024-04-27 11:29:34] INFO root fetch - processPackages [werag]: executing diffoscope
+[2024-04-27 11:29:34] INFO root fetch - processPackages [werag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/werag-0.0.0.tar.gz tmp/werag-0.0.1.tar.gz --markdown 20240427/w/werag/0.0.0-0.0.1/README.md --exclude *.pyd
+[2024-04-27 11:29:34] INFO root fetch - processPackages [vbproblemcomposer]: Remove: archive file [/home/abi/fetcher/tmp/vbproblemcomposer-0.1.1.tar.gz]
+[2024-04-27 11:29:34] INFO root fetch - processPackages [vbproblemcomposer]: Remove: archive file [/home/abi/fetcher/tmp/vbproblemcomposer-0.1.2.tar.gz]
+[2024-04-27 11:29:34] INFO root fetch - main [MainThread]: End processing [vbproblemcomposer]: success
+[2024-04-27 11:29:35] INFO root fetch - processPackages [werag]: Remove: archive file [/home/abi/fetcher/tmp/werag-0.0.0.tar.gz]
+[2024-04-27 11:29:35] INFO root fetch - processPackages [werag]: Remove: archive file [/home/abi/fetcher/tmp/werag-0.0.1.tar.gz]
+[2024-04-27 11:29:35] INFO root fetch - main [MainThread]: End processing [werag]: success
+[2024-04-27 11:29:35] INFO root fetch - main [MainThread]: Store serial: [22957663]
