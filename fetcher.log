@@ -11065,3 +11065,24 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 10:48:31] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240427-cp39-cp39-win_amd64.whl.zip]
 [2024-04-27 10:48:31] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
 [2024-04-27 10:48:31] INFO root fetch - main [MainThread]: Store serial: [22957534]
+[2024-04-27 10:50:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957534]
+[2024-04-27 10:50:39] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 10:50:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bgutils-hddly
+[2024-04-27 10:50:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: drf-spectacular-websocket
+[2024-04-27 10:50:40] INFO root fetch - processPackages [drf-spectacular-websocket]: New version: [1.2.3] Old Version: [1.2.1]
+[2024-04-27 10:50:40] INFO root fetch - processPackages [drf-spectacular-websocket]: Downloading https://files.pythonhosted.org/packages/5f/ac/7d7646d405f06608cb152beac3f9b6534dc52e259e6688b7f44143bd4d96/drf_spectacular_websocket-1.2.1.tar.gz
+[2024-04-27 10:50:40] INFO root fetch - processPackages [bgutils-hddly]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-27 10:50:40] INFO root fetch - processPackages [bgutils-hddly]: Downloading https://files.pythonhosted.org/packages/07/22/a69a45ea0621e457373043238ae8172d597dde38054d258752459d22fd6a/bgutils_hddly-1.1.8-py3-none-any.whl
+[2024-04-27 10:50:40] INFO root fetch - processPackages [drf-spectacular-websocket]: Downloading https://files.pythonhosted.org/packages/09/25/4f062cfba1a9435f1282284793334fa634f916da36f17aa5a3acb9305e88/drf_spectacular_websocket-1.2.3.tar.gz
+[2024-04-27 10:50:40] INFO root fetch - processPackages [drf-spectacular-websocket]: executing diffoscope
+[2024-04-27 10:50:40] INFO root fetch - processPackages [drf-spectacular-websocket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drf_spectacular_websocket-1.2.1.tar.gz tmp/drf_spectacular_websocket-1.2.3.tar.gz --markdown 20240427/d/drf-spectacular-websocket/1.2.1-1.2.3/README.md --exclude *.pyd
+[2024-04-27 10:50:40] INFO root fetch - processPackages [bgutils-hddly]: Downloading https://files.pythonhosted.org/packages/68/b8/73eaefe5a7f9214b0aa5443f4083f56d3a6492768411b1a003302b66bf45/bgutils_hddly-1.1.9.tar.gz
+[2024-04-27 10:50:40] INFO root fetch - processPackages [bgutils-hddly]: executing diffoscope
+[2024-04-27 10:50:40] INFO root fetch - processPackages [bgutils-hddly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bgutils_hddly-1.1.8-py3-none-any.whl.zip tmp/bgutils_hddly-1.1.9.tar.gz --markdown 20240427/b/bgutils-hddly/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-04-27 10:50:40] INFO root fetch - processPackages [drf-spectacular-websocket]: Remove: archive file [/home/abi/fetcher/tmp/drf_spectacular_websocket-1.2.1.tar.gz]
+[2024-04-27 10:50:40] INFO root fetch - processPackages [drf-spectacular-websocket]: Remove: archive file [/home/abi/fetcher/tmp/drf_spectacular_websocket-1.2.3.tar.gz]
+[2024-04-27 10:50:40] INFO root fetch - main [MainThread]: End processing [drf-spectacular-websocket]: success
+[2024-04-27 10:50:41] INFO root fetch - processPackages [bgutils-hddly]: Remove: archive file [/home/abi/fetcher/tmp/bgutils_hddly-1.1.8-py3-none-any.whl.zip]
+[2024-04-27 10:50:41] INFO root fetch - processPackages [bgutils-hddly]: Remove: archive file [/home/abi/fetcher/tmp/bgutils_hddly-1.1.9.tar.gz]
+[2024-04-27 10:50:41] INFO root fetch - main [MainThread]: End processing [bgutils-hddly]: success
+[2024-04-27 10:50:41] INFO root fetch - main [MainThread]: Store serial: [22957548]
