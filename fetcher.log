@@ -11668,3 +11668,15 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 11:51:22] INFO root fetch - processPackages [pyscript-ltk]: Remove: archive file [/home/abi/fetcher/tmp/pyscript-ltk-0.1.9.tar.gz]
 [2024-04-27 11:51:22] INFO root fetch - main [MainThread]: End processing [pyscript-ltk]: success
 [2024-04-27 11:51:22] INFO root fetch - main [MainThread]: Store serial: [22957769]
+[2024-04-27 11:53:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957769]
+[2024-04-27 11:53:31] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 11:53:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-graphql-jwt-oauth2
+[2024-04-27 11:53:31] INFO root fetch - processPackages [django-graphql-jwt-oauth2]: New version: [1.2.3] Old Version: [1.2.2]
+[2024-04-27 11:53:31] INFO root fetch - processPackages [django-graphql-jwt-oauth2]: Downloading https://files.pythonhosted.org/packages/05/41/f4d92a4e6bfd2b42c020daa80980f24ae4b502c74c3fd933d1211e36f530/django_graphql_jwt_oauth2-1.2.2.tar.gz
+[2024-04-27 11:53:32] INFO root fetch - processPackages [django-graphql-jwt-oauth2]: Downloading https://files.pythonhosted.org/packages/0e/b3/9d6661f81dc1c438767b096aaa5f3361a9d624b4d8cfe8d4eab4ec6c677f/django_graphql_jwt_oauth2-1.2.3.tar.gz
+[2024-04-27 11:53:32] INFO root fetch - processPackages [django-graphql-jwt-oauth2]: executing diffoscope
+[2024-04-27 11:53:32] INFO root fetch - processPackages [django-graphql-jwt-oauth2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_graphql_jwt_oauth2-1.2.2.tar.gz tmp/django_graphql_jwt_oauth2-1.2.3.tar.gz --markdown 20240427/d/django-graphql-jwt-oauth2/1.2.2-1.2.3/README.md --exclude *.pyd
+[2024-04-27 11:53:33] INFO root fetch - processPackages [django-graphql-jwt-oauth2]: Remove: archive file [/home/abi/fetcher/tmp/django_graphql_jwt_oauth2-1.2.2.tar.gz]
+[2024-04-27 11:53:33] INFO root fetch - processPackages [django-graphql-jwt-oauth2]: Remove: archive file [/home/abi/fetcher/tmp/django_graphql_jwt_oauth2-1.2.3.tar.gz]
+[2024-04-27 11:53:33] INFO root fetch - main [MainThread]: End processing [django-graphql-jwt-oauth2]: success
+[2024-04-27 11:53:33] INFO root fetch - main [MainThread]: Store serial: [22957772]
