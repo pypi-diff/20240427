@@ -19605,3 +19605,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 21:05:13] INFO root fetch - processPackages [openav]: Remove: archive file [/home/abi/fetcher/tmp/openav-1.0.0a6.tar.gz]
 [2024-04-27 21:05:13] INFO root fetch - main [MainThread]: End processing [openav]: success
 [2024-04-27 21:05:13] INFO root fetch - main [MainThread]: Store serial: [22961225]
+[2024-04-27 21:07:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961225]
+[2024-04-27 21:07:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 21:07:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: grss
+[2024-04-27 21:07:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ng-data-pipelines-sdk
+[2024-04-27 21:07:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mat-ceng
+[2024-04-27 21:07:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: FrustrationDynamiX
+[2024-04-27 21:07:27] INFO root fetch - processPackages [FrustrationDynamiX]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-04-27 21:07:27] WARNING root fetch - processPackages [mat-ceng]: Skipping, unable to determine old version
+[2024-04-27 21:07:27] INFO root fetch - main [MainThread]: End processing [mat-ceng] error
+[2024-04-27 21:07:27] INFO root fetch - processPackages [ng-data-pipelines-sdk]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-04-27 21:07:27] INFO root fetch - processPackages [FrustrationDynamiX]: Downloading https://files.pythonhosted.org/packages/c7/23/0f7761475ef735b89987e112aabf0c49c8c59fb6f95cf734a7cbae439832/FrustrationDynamiX-0.2.5.tar.gz
+[2024-04-27 21:07:27] INFO root fetch - processPackages [grss]: New version: [4.0.2] Old Version: [4.0.1]
+[2024-04-27 21:07:27] INFO root fetch - processPackages [ng-data-pipelines-sdk]: Downloading https://files.pythonhosted.org/packages/6c/ec/1f9ed3ea65897b1c6754c1ab525c00352aad3b93186a9710a9c767456e73/ng_data_pipelines_sdk-0.4.1.tar.gz
+[2024-04-27 21:07:27] INFO root fetch - processPackages [grss]: Downloading https://files.pythonhosted.org/packages/b8/13/423cba8c32d80829b48f5f2066d7f6082e3b005b787c271af640a9ee364b/grss-4.0.1.tar.gz
+[2024-04-27 21:07:27] INFO root fetch - processPackages [FrustrationDynamiX]: Downloading https://files.pythonhosted.org/packages/08/47/27fd5adaa96f2d4610baadd7943bcfee8267d595d6c6eb6ecfc6a2c93e20/FrustrationDynamiX-0.2.6.tar.gz
+[2024-04-27 21:07:27] INFO root fetch - processPackages [ng-data-pipelines-sdk]: Downloading https://files.pythonhosted.org/packages/4a/d8/d53501c3245b1d334c2ba732bf28cd2c64ac4ebb1c910b12d9741acfa92d/ng_data_pipelines_sdk-0.4.2.tar.gz
+[2024-04-27 21:07:27] INFO root fetch - processPackages [FrustrationDynamiX]: executing diffoscope
+[2024-04-27 21:07:27] INFO root fetch - processPackages [FrustrationDynamiX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FrustrationDynamiX-0.2.5.tar.gz tmp/FrustrationDynamiX-0.2.6.tar.gz --markdown 20240427/F/FrustrationDynamiX/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-04-27 21:07:27] INFO root fetch - processPackages [ng-data-pipelines-sdk]: executing diffoscope
+[2024-04-27 21:07:27] INFO root fetch - processPackages [ng-data-pipelines-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ng_data_pipelines_sdk-0.4.1.tar.gz tmp/ng_data_pipelines_sdk-0.4.2.tar.gz --markdown 20240427/n/ng-data-pipelines-sdk/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-04-27 21:07:28] INFO root fetch - processPackages [grss]: Downloading https://files.pythonhosted.org/packages/f2/47/3f4a7147be7fa97ff3337eb4db81b065f9f704ded1e0164977c8dbef7727/grss-4.0.2.tar.gz
+[2024-04-27 21:07:28] INFO root fetch - processPackages [FrustrationDynamiX]: Remove: archive file [/home/abi/fetcher/tmp/FrustrationDynamiX-0.2.5.tar.gz]
+[2024-04-27 21:07:28] INFO root fetch - processPackages [FrustrationDynamiX]: Remove: archive file [/home/abi/fetcher/tmp/FrustrationDynamiX-0.2.6.tar.gz]
+[2024-04-27 21:07:28] INFO root fetch - main [MainThread]: End processing [FrustrationDynamiX]: success
+[2024-04-27 21:07:28] INFO root fetch - processPackages [ng-data-pipelines-sdk]: Remove: archive file [/home/abi/fetcher/tmp/ng_data_pipelines_sdk-0.4.1.tar.gz]
+[2024-04-27 21:07:28] INFO root fetch - processPackages [ng-data-pipelines-sdk]: Remove: archive file [/home/abi/fetcher/tmp/ng_data_pipelines_sdk-0.4.2.tar.gz]
+[2024-04-27 21:07:28] INFO root fetch - main [MainThread]: End processing [ng-data-pipelines-sdk]: success
+[2024-04-27 21:07:28] INFO root fetch - processPackages [grss]: executing diffoscope
+[2024-04-27 21:07:28] INFO root fetch - processPackages [grss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grss-4.0.1.tar.gz tmp/grss-4.0.2.tar.gz --markdown 20240427/g/grss/4.0.1-4.0.2/README.md --exclude *.pyd
+[2024-04-27 21:07:29] INFO root fetch - processPackages [grss]: Remove: archive file [/home/abi/fetcher/tmp/grss-4.0.1.tar.gz]
+[2024-04-27 21:07:29] INFO root fetch - processPackages [grss]: Remove: archive file [/home/abi/fetcher/tmp/grss-4.0.2.tar.gz]
+[2024-04-27 21:07:29] INFO root fetch - main [MainThread]: End processing [grss]: success
+[2024-04-27 21:07:29] INFO root fetch - main [MainThread]: Store serial: [22961265]
