@@ -17558,3 +17558,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 18:39:23] INFO root fetch - processPackages [i2cylib]: Remove: archive file [/home/abi/fetcher/tmp/i2cylib-1.9.5.tar.gz]
 [2024-04-27 18:39:23] INFO root fetch - main [MainThread]: End processing [i2cylib]: success
 [2024-04-27 18:39:23] INFO root fetch - main [MainThread]: Store serial: [22960230]
+[2024-04-27 18:41:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960230]
+[2024-04-27 18:41:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 18:41:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: swiss-army-man
+[2024-04-27 18:41:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: prisoners-dilemma-sdk
+[2024-04-27 18:41:36] INFO root fetch - processPackages [swiss-army-man]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-04-27 18:41:36] INFO root fetch - processPackages [prisoners-dilemma-sdk]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-27 18:41:36] INFO root fetch - processPackages [prisoners-dilemma-sdk]: Downloading https://files.pythonhosted.org/packages/6a/3a/74f51d762c58085c31ed471957c384d65a275c2dff2d36c0e80394809610/prisoners_dilemma_sdk-0.0.3.tar.gz
+[2024-04-27 18:41:36] INFO root fetch - processPackages [swiss-army-man]: Downloading https://files.pythonhosted.org/packages/48/1f/294f600f1fa28cd18c161440c03fb3b30e0c131a86552d9308f61aa90137/swiss_army_man-0.1.7.tar.gz
+[2024-04-27 18:41:36] INFO root fetch - processPackages [swiss-army-man]: Downloading https://files.pythonhosted.org/packages/56/82/24e0c66ae73179bc5f3180da018b1c49aadae130d6093a4ba1f45acd2afa/swiss_army_man-0.1.9.tar.gz
+[2024-04-27 18:41:36] INFO root fetch - processPackages [prisoners-dilemma-sdk]: Downloading https://files.pythonhosted.org/packages/bb/ee/caf20ef84fac4db361812941a2249bb0088e1d19edd465bfd2c0aec7aa40/prisoners_dilemma_sdk-0.0.4.tar.gz
+[2024-04-27 18:41:36] INFO root fetch - processPackages [swiss-army-man]: executing diffoscope
+[2024-04-27 18:41:36] INFO root fetch - processPackages [swiss-army-man]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swiss_army_man-0.1.7.tar.gz tmp/swiss_army_man-0.1.9.tar.gz --markdown 20240427/s/swiss-army-man/0.1.7-0.1.9/README.md --exclude *.pyd
+[2024-04-27 18:41:36] INFO root fetch - processPackages [prisoners-dilemma-sdk]: executing diffoscope
+[2024-04-27 18:41:36] INFO root fetch - processPackages [prisoners-dilemma-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prisoners_dilemma_sdk-0.0.3.tar.gz tmp/prisoners_dilemma_sdk-0.0.4.tar.gz --markdown 20240427/p/prisoners-dilemma-sdk/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-27 18:41:37] INFO root fetch - processPackages [swiss-army-man]: Remove: archive file [/home/abi/fetcher/tmp/swiss_army_man-0.1.7.tar.gz]
+[2024-04-27 18:41:37] INFO root fetch - processPackages [swiss-army-man]: Remove: archive file [/home/abi/fetcher/tmp/swiss_army_man-0.1.9.tar.gz]
+[2024-04-27 18:41:37] INFO root fetch - main [MainThread]: End processing [swiss-army-man]: success
+[2024-04-27 18:41:37] INFO root fetch - processPackages [prisoners-dilemma-sdk]: Remove: archive file [/home/abi/fetcher/tmp/prisoners_dilemma_sdk-0.0.3.tar.gz]
+[2024-04-27 18:41:37] INFO root fetch - processPackages [prisoners-dilemma-sdk]: Remove: archive file [/home/abi/fetcher/tmp/prisoners_dilemma_sdk-0.0.4.tar.gz]
+[2024-04-27 18:41:37] INFO root fetch - main [MainThread]: End processing [prisoners-dilemma-sdk]: success
+[2024-04-27 18:41:37] INFO root fetch - main [MainThread]: Store serial: [22960236]
