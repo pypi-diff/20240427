@@ -9288,3 +9288,17 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 07:40:30] INFO root fetch - processPackages [media-manager]: Remove: archive file [/home/abi/fetcher/tmp/media_manager-0.9.0-py2.py3-none-any.whl.zip]
 [2024-04-27 07:40:30] INFO root fetch - main [MainThread]: End processing [media-manager]: success
 [2024-04-27 07:40:30] INFO root fetch - main [MainThread]: Store serial: [22956723]
+[2024-04-27 07:42:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956723]
+[2024-04-27 07:42:38] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-27 07:44:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956723]
+[2024-04-27 07:44:44] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 07:44:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: googlesearch-python
+[2024-04-27 07:44:44] INFO root fetch - processPackages [googlesearch-python]: New version: [1.2.4] Old Version: [1.2.3]
+[2024-04-27 07:44:44] INFO root fetch - processPackages [googlesearch-python]: Downloading https://files.pythonhosted.org/packages/b0/e3/50560f6432da8c1dfbc3d1d9d465ac6069a5dd6c81fe92b98793c97e540c/googlesearch-python-1.2.3.tar.gz
+[2024-04-27 07:44:44] INFO root fetch - processPackages [googlesearch-python]: Downloading https://files.pythonhosted.org/packages/9e/b3/bc157f87387e8fbcce1a381ec703da9187352cf05f5b70166fb00eaa47b0/googlesearch_python-1.2.4.tar.gz
+[2024-04-27 07:44:45] INFO root fetch - processPackages [googlesearch-python]: executing diffoscope
+[2024-04-27 07:44:45] INFO root fetch - processPackages [googlesearch-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/googlesearch-python-1.2.3.tar.gz tmp/googlesearch_python-1.2.4.tar.gz --markdown 20240427/g/googlesearch-python/1.2.3-1.2.4/README.md --exclude *.pyd
+[2024-04-27 07:44:45] INFO root fetch - processPackages [googlesearch-python]: Remove: archive file [/home/abi/fetcher/tmp/googlesearch-python-1.2.3.tar.gz]
+[2024-04-27 07:44:45] INFO root fetch - processPackages [googlesearch-python]: Remove: archive file [/home/abi/fetcher/tmp/googlesearch_python-1.2.4.tar.gz]
+[2024-04-27 07:44:45] INFO root fetch - main [MainThread]: End processing [googlesearch-python]: success
+[2024-04-27 07:44:45] INFO root fetch - main [MainThread]: Store serial: [22956726]
