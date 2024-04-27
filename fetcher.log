@@ -18824,3 +18824,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 20:02:19] INFO root fetch - processPackages [bigxml]: Remove: archive file [/home/abi/fetcher/tmp/bigxml-1.0.1.tar.gz]
 [2024-04-27 20:02:19] INFO root fetch - main [MainThread]: End processing [bigxml]: success
 [2024-04-27 20:02:19] INFO root fetch - main [MainThread]: Store serial: [22960948]
+[2024-04-27 20:04:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960948]
+[2024-04-27 20:04:33] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 20:04:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sphinx-pyreverse
+[2024-04-27 20:04:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: blinker
+[2024-04-27 20:04:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: data-prep-lab
+[2024-04-27 20:04:33] INFO root fetch - processPackages [blinker]: New version: [1.7.0] Old Version: [1.6.3]
+[2024-04-27 20:04:33] INFO root fetch - processPackages [sphinx-pyreverse]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 20:04:33] INFO root fetch - processPackages [data-prep-lab]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-27 20:04:33] INFO root fetch - processPackages [blinker]: Downloading https://files.pythonhosted.org/packages/ea/96/ed1420a974540da7419094f2553bc198c454cee5f72576e7c7629dd12d6e/blinker-1.6.3.tar.gz
+[2024-04-27 20:04:33] INFO root fetch - processPackages [sphinx-pyreverse]: Downloading https://files.pythonhosted.org/packages/43/4f/1c2441f9b4ce192045d5d2ecd89096beadc46b95983c022b5f375fc77501/sphinx-pyreverse-0.0.8.tar.gz
+[2024-04-27 20:04:34] INFO root fetch - processPackages [data-prep-lab]: Downloading https://files.pythonhosted.org/packages/ba/67/3d4f8f412e6b5eac13c44bccb47fee050e84be926ce87060016c7e8877da/data_prep_lab-0.1.4.tar.gz
+[2024-04-27 20:04:34] INFO root fetch - processPackages [blinker]: Downloading https://files.pythonhosted.org/packages/a1/13/6df5fc090ff4e5d246baf1f45fe9e5623aa8565757dfa5bd243f6a545f9e/blinker-1.7.0.tar.gz
+[2024-04-27 20:04:34] INFO root fetch - processPackages [blinker]: executing diffoscope
+[2024-04-27 20:04:34] INFO root fetch - processPackages [blinker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blinker-1.6.3.tar.gz tmp/blinker-1.7.0.tar.gz --markdown 20240427/b/blinker/1.6.3-1.7.0/README.md --exclude *.pyd
+[2024-04-27 20:04:34] INFO root fetch - processPackages [sphinx-pyreverse]: Downloading https://files.pythonhosted.org/packages/95/ae/0466efc219236d2198e43ddb6f824c21d1f6310a318ab8b2078fa9dfeb11/sphinx-pyreverse-0.0.9.tar.gz
+[2024-04-27 20:04:34] INFO root fetch - processPackages [data-prep-lab]: Downloading https://files.pythonhosted.org/packages/d7/9f/2d97f16dbc6a096d412ebebd9fc36bd51a3696884d3ac8e77e8a39e63180/data_prep_lab-0.1.5-py3-none-any.whl
+[2024-04-27 20:04:34] INFO root fetch - processPackages [sphinx-pyreverse]: executing diffoscope
+[2024-04-27 20:04:34] INFO root fetch - processPackages [sphinx-pyreverse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinx-pyreverse-0.0.8.tar.gz tmp/sphinx-pyreverse-0.0.9.tar.gz --markdown 20240427/s/sphinx-pyreverse/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 20:04:34] INFO root fetch - processPackages [blinker]: Remove: archive file [/home/abi/fetcher/tmp/blinker-1.6.3.tar.gz]
+[2024-04-27 20:04:34] INFO root fetch - processPackages [blinker]: Remove: archive file [/home/abi/fetcher/tmp/blinker-1.7.0.tar.gz]
+[2024-04-27 20:04:34] INFO root fetch - main [MainThread]: End processing [blinker]: success
+[2024-04-27 20:04:35] INFO root fetch - processPackages [data-prep-lab]: executing diffoscope
+[2024-04-27 20:04:35] INFO root fetch - processPackages [data-prep-lab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_prep_lab-0.1.4.tar.gz tmp/data_prep_lab-0.1.5-py3-none-any.whl.zip --markdown 20240427/d/data-prep-lab/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-27 20:04:35] INFO root fetch - processPackages [sphinx-pyreverse]: Remove: archive file [/home/abi/fetcher/tmp/sphinx-pyreverse-0.0.8.tar.gz]
+[2024-04-27 20:04:35] INFO root fetch - processPackages [sphinx-pyreverse]: Remove: archive file [/home/abi/fetcher/tmp/sphinx-pyreverse-0.0.9.tar.gz]
+[2024-04-27 20:04:35] INFO root fetch - main [MainThread]: End processing [sphinx-pyreverse]: success
+[2024-04-27 20:04:35] INFO root fetch - processPackages [data-prep-lab]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_lab-0.1.4.tar.gz]
+[2024-04-27 20:04:35] INFO root fetch - processPackages [data-prep-lab]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_lab-0.1.5-py3-none-any.whl.zip]
+[2024-04-27 20:04:35] INFO root fetch - main [MainThread]: End processing [data-prep-lab]: success
+[2024-04-27 20:04:35] INFO root fetch - main [MainThread]: Store serial: [22960956]
