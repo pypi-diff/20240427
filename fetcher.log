@@ -16817,3 +16817,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 17:45:52] INFO root fetch - processPackages [pyvisjs]: Remove: archive file [/home/abi/fetcher/tmp/pyvisjs-0.0.0.dev5.tar.gz]
 [2024-04-27 17:45:52] INFO root fetch - main [MainThread]: End processing [pyvisjs]: success
 [2024-04-27 17:45:52] INFO root fetch - main [MainThread]: Store serial: [22959947]
+[2024-04-27 17:47:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959947]
+[2024-04-27 17:48:03] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 17:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flatpack
+[2024-04-27 17:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-utz
+[2024-04-27 17:48:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: uk-bin-collection
+[2024-04-27 17:48:03] INFO root fetch - processPackages [django-utz]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-04-27 17:48:03] INFO root fetch - processPackages [flatpack]: New version: [3.3.9] Old Version: [3.3.8]
+[2024-04-27 17:48:03] INFO root fetch - processPackages [uk-bin-collection]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-27 17:48:03] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/42/48/84e949164975b341645163f536ee4ca8329c4e3dfa6d143c2806a0849a54/flatpack-3.3.8.tar.gz
+[2024-04-27 17:48:03] INFO root fetch - processPackages [django-utz]: Downloading https://files.pythonhosted.org/packages/14/07/ae0a6cac5029899bd93bb416765202de5e0c0fa1ab153377985ec80ea1d6/django_utz-0.1.9.tar.gz
+[2024-04-27 17:48:03] INFO root fetch - processPackages [uk-bin-collection]: Downloading https://files.pythonhosted.org/packages/f6/3c/e25a4eb0a28d67a6748fdb9acd0380565c1585a1ff833d282a9d2acc90a1/uk_bin_collection-0.8.0.tar.gz
+[2024-04-27 17:48:03] INFO root fetch - processPackages [django-utz]: Downloading https://files.pythonhosted.org/packages/3e/86/a075dbf875b9edee6c12edb3ea2d42bf14c81dcbe079c93a4695336489bc/django_utz-0.2.0.tar.gz
+[2024-04-27 17:48:03] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/11/54/065825e8640b062c83c07c97d8dea514db8a5c0ea3c272834b88c568d82e/flatpack-3.3.9.tar.gz
+[2024-04-27 17:48:03] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-04-27 17:48:03] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.3.8.tar.gz tmp/flatpack-3.3.9.tar.gz --markdown 20240427/f/flatpack/3.3.8-3.3.9/README.md --exclude *.pyd
+[2024-04-27 17:48:03] INFO root fetch - processPackages [django-utz]: executing diffoscope
+[2024-04-27 17:48:03] INFO root fetch - processPackages [django-utz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_utz-0.1.9.tar.gz tmp/django_utz-0.2.0.tar.gz --markdown 20240427/d/django-utz/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-04-27 17:48:03] INFO root fetch - processPackages [uk-bin-collection]: Downloading https://files.pythonhosted.org/packages/55/0e/a2cb2057f203540273a20c67ef245d13d61a542934302f0475c939494a96/uk_bin_collection-0.9.0.tar.gz
+[2024-04-27 17:48:04] INFO root fetch - processPackages [uk-bin-collection]: executing diffoscope
+[2024-04-27 17:48:04] INFO root fetch - processPackages [uk-bin-collection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uk_bin_collection-0.8.0.tar.gz tmp/uk_bin_collection-0.9.0.tar.gz --markdown 20240427/u/uk-bin-collection/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-27 17:48:04] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.8.tar.gz]
+[2024-04-27 17:48:04] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.9.tar.gz]
+[2024-04-27 17:48:04] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-04-27 17:48:04] INFO root fetch - processPackages [django-utz]: Remove: archive file [/home/abi/fetcher/tmp/django_utz-0.1.9.tar.gz]
+[2024-04-27 17:48:04] INFO root fetch - processPackages [django-utz]: Remove: archive file [/home/abi/fetcher/tmp/django_utz-0.2.0.tar.gz]
+[2024-04-27 17:48:04] INFO root fetch - main [MainThread]: End processing [django-utz]: success
+[2024-04-27 17:48:04] INFO root fetch - processPackages [uk-bin-collection]: Remove: archive file [/home/abi/fetcher/tmp/uk_bin_collection-0.8.0.tar.gz]
+[2024-04-27 17:48:04] INFO root fetch - processPackages [uk-bin-collection]: Remove: archive file [/home/abi/fetcher/tmp/uk_bin_collection-0.9.0.tar.gz]
+[2024-04-27 17:48:04] INFO root fetch - main [MainThread]: End processing [uk-bin-collection]: success
+[2024-04-27 17:48:04] INFO root fetch - main [MainThread]: Store serial: [22959956]
