@@ -16298,3 +16298,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 17:07:42] INFO root fetch - processPackages [tcms-api]: Remove: archive file [/home/abi/fetcher/tmp/tcms-api-9.0.tar.gz]
 [2024-04-27 17:07:42] INFO root fetch - main [MainThread]: End processing [tcms-api]: success
 [2024-04-27 17:07:42] INFO root fetch - main [MainThread]: Store serial: [22959699]
+[2024-04-27 17:09:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959699]
+[2024-04-27 17:09:50] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 17:09:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ipex-llm
+[2024-04-27 17:09:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flaxkv
+[2024-04-27 17:09:50] INFO root fetch - processPackages [ipex-llm]: New version: [2.1.0b20240426] Old Version: [2.1.0b20240425]
+[2024-04-27 17:09:50] INFO root fetch - processPackages [ipex-llm]: Downloading https://files.pythonhosted.org/packages/99/46/12a2a4a101e88b834e0966ded500b763925eb326a13afee2ac7df1936dd1/ipex_llm-2.1.0b20240425-py3-none-win_amd64.whl
+[2024-04-27 17:09:50] INFO root fetch - processPackages [flaxkv]: New version: [0.2.8] Old Version: [0.2.7a0]
+[2024-04-27 17:09:51] INFO root fetch - processPackages [flaxkv]: Downloading https://files.pythonhosted.org/packages/e5/e3/8bd2d97e44e608a997b45162a0bb5868258ca27084a6d57558c2d6bb0a9d/flaxkv-0.2.7a0.tar.gz
+[2024-04-27 17:09:51] INFO root fetch - processPackages [flaxkv]: Downloading https://files.pythonhosted.org/packages/1c/b9/3a6553fe3e3c98464f016c614d9807dfc2f46d74a0418cfcfc14cf1dfc1b/flaxkv-0.2.8.tar.gz
+[2024-04-27 17:09:51] INFO root fetch - processPackages [ipex-llm]: Downloading https://files.pythonhosted.org/packages/59/ff/2c267529fe88fc90e8fe998f88fd038a344b6ebd2988247790fc0e9c61ef/ipex_llm-2.1.0b20240426-py3-none-win_amd64.whl
+[2024-04-27 17:09:51] INFO root fetch - processPackages [flaxkv]: executing diffoscope
+[2024-04-27 17:09:51] INFO root fetch - processPackages [flaxkv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flaxkv-0.2.7a0.tar.gz tmp/flaxkv-0.2.8.tar.gz --markdown 20240427/f/flaxkv/0.2.7a0-0.2.8/README.md --exclude *.pyd
+[2024-04-27 17:09:51] INFO root fetch - processPackages [ipex-llm]: executing diffoscope
+[2024-04-27 17:09:51] INFO root fetch - processPackages [ipex-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipex_llm-2.1.0b20240425-py3-none-win_amd64.whl.zip tmp/ipex_llm-2.1.0b20240426-py3-none-win_amd64.whl.zip --markdown 20240427/i/ipex-llm/2.1.0b20240425-2.1.0b20240426/README.md --exclude *.pyd
+[2024-04-27 17:09:52] INFO root fetch - processPackages [flaxkv]: Remove: archive file [/home/abi/fetcher/tmp/flaxkv-0.2.7a0.tar.gz]
+[2024-04-27 17:09:52] INFO root fetch - processPackages [flaxkv]: Remove: archive file [/home/abi/fetcher/tmp/flaxkv-0.2.8.tar.gz]
+[2024-04-27 17:09:52] INFO root fetch - main [MainThread]: End processing [flaxkv]: success
+[2024-04-27 17:10:21] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240425-py3-none-win_amd64.whl.zip]
+[2024-04-27 17:10:21] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240426-py3-none-win_amd64.whl.zip]
+[2024-04-27 17:10:21] INFO root fetch - main [MainThread]: End processing [ipex-llm]: success
+[2024-04-27 17:10:21] INFO root fetch - main [MainThread]: Store serial: [22959705]
