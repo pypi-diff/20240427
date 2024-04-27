@@ -2301,3 +2301,24 @@ EOFError: EOF read where object expected
 [2024-04-27 02:11:00] INFO root fetch - processPackages [openbb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/openbb_nightly-4.1.7.dev202404260009.tar.gz]
 [2024-04-27 02:11:00] INFO root fetch - main [MainThread]: End processing [openbb-nightly]: success
 [2024-04-27 02:11:00] INFO root fetch - main [MainThread]: Store serial: [22954182]
+[2024-04-27 02:13:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22954182]
+[2024-04-27 02:13:09] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 02:13:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiotgbot
+[2024-04-27 02:13:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-events-notify
+[2024-04-27 02:13:09] INFO root fetch - processPackages [aiotgbot]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-04-27 02:13:09] INFO root fetch - processPackages [cdk-events-notify]: New version: [2.2.99] Old Version: [2.2.98]
+[2024-04-27 02:13:09] INFO root fetch - processPackages [aiotgbot]: Downloading https://files.pythonhosted.org/packages/2c/b4/eb1fcd2ce7e71bb09e5b555b150815f457fe43c9877f345e57ee8a732c2a/aiotgbot-0.9.5.tar.gz
+[2024-04-27 02:13:09] INFO root fetch - processPackages [cdk-events-notify]: Downloading https://files.pythonhosted.org/packages/b7/7d/50ca1bff3db85ede28826faf2d11bb449770cac87fe89483636e0fe57d94/cdk-events-notify-2.2.98.tar.gz
+[2024-04-27 02:13:09] INFO root fetch - processPackages [aiotgbot]: Downloading https://files.pythonhosted.org/packages/0f/85/301c585e2f01d3a250660e7afb2c7cefe9ffbc63b809bca915b8c5868450/aiotgbot-0.9.6.tar.gz
+[2024-04-27 02:13:09] INFO root fetch - processPackages [cdk-events-notify]: Downloading https://files.pythonhosted.org/packages/56/4a/9c2a145913d7a35ac252cb2bddabca89cdc95c802a8e342f192100f709be/cdk-events-notify-2.2.99.tar.gz
+[2024-04-27 02:13:09] INFO root fetch - processPackages [aiotgbot]: executing diffoscope
+[2024-04-27 02:13:09] INFO root fetch - processPackages [aiotgbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiotgbot-0.9.5.tar.gz tmp/aiotgbot-0.9.6.tar.gz --markdown 20240427/a/aiotgbot/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-04-27 02:13:09] INFO root fetch - processPackages [cdk-events-notify]: executing diffoscope
+[2024-04-27 02:13:09] INFO root fetch - processPackages [cdk-events-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-events-notify-2.2.98.tar.gz tmp/cdk-events-notify-2.2.99.tar.gz --markdown 20240427/c/cdk-events-notify/2.2.98-2.2.99/README.md --exclude *.pyd
+[2024-04-27 02:13:10] INFO root fetch - processPackages [cdk-events-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-events-notify-2.2.98.tar.gz]
+[2024-04-27 02:13:10] INFO root fetch - processPackages [cdk-events-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-events-notify-2.2.99.tar.gz]
+[2024-04-27 02:13:10] INFO root fetch - main [MainThread]: End processing [cdk-events-notify]: success
+[2024-04-27 02:13:10] INFO root fetch - processPackages [aiotgbot]: Remove: archive file [/home/abi/fetcher/tmp/aiotgbot-0.9.5.tar.gz]
+[2024-04-27 02:13:10] INFO root fetch - processPackages [aiotgbot]: Remove: archive file [/home/abi/fetcher/tmp/aiotgbot-0.9.6.tar.gz]
+[2024-04-27 02:13:10] INFO root fetch - main [MainThread]: End processing [aiotgbot]: success
+[2024-04-27 02:13:10] INFO root fetch - main [MainThread]: Store serial: [22954191]
