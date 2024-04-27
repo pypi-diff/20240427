@@ -7441,3 +7441,9 @@ EOFError: EOF read where object expected
 [2024-04-27 05:01:41] INFO root fetch - processPackages [odoo-addon-account-reconcile-oca]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_reconcile_oca-17.0.1.0.0.20-py3-none-any.whl.zip]
 [2024-04-27 05:01:41] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-reconcile-oca]: success
 [2024-04-27 05:01:41] INFO root fetch - main [MainThread]: Store serial: [22956157]
+[2024-04-27 05:03:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956157]
+[2024-04-27 05:03:50] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 05:03:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addons-oca-automation
+[2024-04-27 05:03:50] WARNING root fetch - processPackages [odoo-addons-oca-automation]: Skipping, unable to determine old version
+[2024-04-27 05:03:50] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-automation] error
+[2024-04-27 05:03:50] INFO root fetch - main [MainThread]: Store serial: [22956161]
