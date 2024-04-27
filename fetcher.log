@@ -18488,3 +18488,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 19:46:27] INFO root fetch - processPackages [flet-contrib-core]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_core-2024.4.27.1744.tar.gz]
 [2024-04-27 19:46:27] INFO root fetch - main [MainThread]: End processing [flet-contrib-core]: success
 [2024-04-27 19:46:27] INFO root fetch - main [MainThread]: Store serial: [22960710]
+[2024-04-27 19:48:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960710]
+[2024-04-27 19:48:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 19:48:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tormail
+[2024-04-27 19:48:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: biliup
+[2024-04-27 19:48:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: arrayutilities
+[2024-04-27 19:48:40] INFO root fetch - processPackages [tormail]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-27 19:48:40] INFO root fetch - processPackages [arrayutilities]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-27 19:48:40] INFO root fetch - processPackages [biliup]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-04-27 19:48:40] INFO root fetch - processPackages [tormail]: Downloading https://files.pythonhosted.org/packages/a9/e8/c4b2c1be0a886ceca675f140602d424e2be4c72f9b7efcc3a8b99dfeccaf/tormail-0.0.2.tar.gz
+[2024-04-27 19:48:40] INFO root fetch - processPackages [biliup]: Downloading https://files.pythonhosted.org/packages/33/26/87446b9e80024414938248abd6d5d23524d52b9a0e07980909695db33a0a/biliup-0.4.8.tar.gz
+[2024-04-27 19:48:40] INFO root fetch - processPackages [arrayutilities]: Downloading https://files.pythonhosted.org/packages/06/a4/65ec72cd7cd94264c9ac1dc9e235668b3538a649302b907f93787a5e9546/arrayutilities-1.0.0.tar.gz
+[2024-04-27 19:48:41] INFO root fetch - processPackages [biliup]: Downloading https://files.pythonhosted.org/packages/ca/50/28c81627954370eeba7075b44c9ef20597ed8f140a1390c814dd976e6c70/biliup-0.4.9.tar.gz
+[2024-04-27 19:48:41] INFO root fetch - processPackages [arrayutilities]: Downloading https://files.pythonhosted.org/packages/62/83/5b15386d9730c17b2a56630410c2c387bb3fb101ccef4a03c7151f87042f/arrayutilities-1.0.1.tar.gz
+[2024-04-27 19:48:41] INFO root fetch - processPackages [tormail]: Downloading https://files.pythonhosted.org/packages/42/93/3ebf9948e9785152bd830b9448226a6539076c8bc74b781fdd38db80316a/tormail-0.0.3.tar.gz
+[2024-04-27 19:48:41] INFO root fetch - processPackages [biliup]: executing diffoscope
+[2024-04-27 19:48:41] INFO root fetch - processPackages [biliup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biliup-0.4.8.tar.gz tmp/biliup-0.4.9.tar.gz --markdown 20240427/b/biliup/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-04-27 19:48:41] INFO root fetch - processPackages [arrayutilities]: executing diffoscope
+[2024-04-27 19:48:41] INFO root fetch - processPackages [arrayutilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arrayutilities-1.0.0.tar.gz tmp/arrayutilities-1.0.1.tar.gz --markdown 20240427/a/arrayutilities/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-27 19:48:41] INFO root fetch - processPackages [tormail]: executing diffoscope
+[2024-04-27 19:48:41] INFO root fetch - processPackages [tormail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tormail-0.0.2.tar.gz tmp/tormail-0.0.3.tar.gz --markdown 20240427/t/tormail/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-27 19:48:41] INFO root fetch - processPackages [tormail]: Remove: archive file [/home/abi/fetcher/tmp/tormail-0.0.2.tar.gz]
+[2024-04-27 19:48:41] INFO root fetch - processPackages [tormail]: Remove: archive file [/home/abi/fetcher/tmp/tormail-0.0.3.tar.gz]
+[2024-04-27 19:48:41] INFO root fetch - main [MainThread]: End processing [tormail]: success
+[2024-04-27 19:48:42] INFO root fetch - processPackages [arrayutilities]: Remove: archive file [/home/abi/fetcher/tmp/arrayutilities-1.0.0.tar.gz]
+[2024-04-27 19:48:42] INFO root fetch - processPackages [arrayutilities]: Remove: archive file [/home/abi/fetcher/tmp/arrayutilities-1.0.1.tar.gz]
+[2024-04-27 19:48:42] INFO root fetch - main [MainThread]: End processing [arrayutilities]: success
+[2024-04-27 19:48:42] INFO root fetch - processPackages [biliup]: Remove: archive file [/home/abi/fetcher/tmp/biliup-0.4.8.tar.gz]
+[2024-04-27 19:48:42] INFO root fetch - processPackages [biliup]: Remove: archive file [/home/abi/fetcher/tmp/biliup-0.4.9.tar.gz]
+[2024-04-27 19:48:42] INFO root fetch - main [MainThread]: End processing [biliup]: success
+[2024-04-27 19:48:42] INFO root fetch - main [MainThread]: Store serial: [22960719]
