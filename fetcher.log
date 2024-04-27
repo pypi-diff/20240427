@@ -8152,3 +8152,15 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 06:06:41] INFO root fetch - processPackages [bbm25-haystack]: Remove: archive file [/home/abi/fetcher/tmp/bbm25_haystack-0.2.1.tar.gz]
 [2024-04-27 06:06:41] INFO root fetch - main [MainThread]: End processing [bbm25-haystack]: success
 [2024-04-27 06:06:41] INFO root fetch - main [MainThread]: Store serial: [22956322]
+[2024-04-27 06:08:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956322]
+[2024-04-27 06:08:50] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 06:08:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mocca2
+[2024-04-27 06:08:50] INFO root fetch - processPackages [mocca2]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-27 06:08:51] INFO root fetch - processPackages [mocca2]: Downloading https://files.pythonhosted.org/packages/85/59/37e86256b721373831bd7236d039478160854fa6278649fc1871c971aef6/mocca2-0.1.1.tar.gz
+[2024-04-27 06:08:51] INFO root fetch - processPackages [mocca2]: Downloading https://files.pythonhosted.org/packages/16/ef/13c8d68a53c3783995e09bcf155dd41c3755ba046e8cfcfa0bd6918ef578/mocca2-0.1.2.tar.gz
+[2024-04-27 06:08:51] INFO root fetch - processPackages [mocca2]: executing diffoscope
+[2024-04-27 06:08:51] INFO root fetch - processPackages [mocca2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mocca2-0.1.1.tar.gz tmp/mocca2-0.1.2.tar.gz --markdown 20240427/m/mocca2/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-27 06:08:52] INFO root fetch - processPackages [mocca2]: Remove: archive file [/home/abi/fetcher/tmp/mocca2-0.1.1.tar.gz]
+[2024-04-27 06:08:52] INFO root fetch - processPackages [mocca2]: Remove: archive file [/home/abi/fetcher/tmp/mocca2-0.1.2.tar.gz]
+[2024-04-27 06:08:52] INFO root fetch - main [MainThread]: End processing [mocca2]: success
+[2024-04-27 06:08:52] INFO root fetch - main [MainThread]: Store serial: [22956325]
