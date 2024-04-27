@@ -7009,3 +7009,36 @@ EOFError: EOF read where object expected
 [2024-04-27 04:15:16] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.2.6.tar.gz]
 [2024-04-27 04:15:16] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
 [2024-04-27 04:15:16] INFO root fetch - main [MainThread]: Store serial: [22956004]
+[2024-04-27 04:17:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956004]
+[2024-04-27 04:17:25] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 04:17:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-kubernetes-the-hard-way
+[2024-04-27 04:17:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mkdocs-sample-plugin
+[2024-04-27 04:17:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: thepipe-api
+[2024-04-27 04:17:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: exllamav2
+[2024-04-27 04:17:25] WARNING root fetch - processPackages [mkdocs-sample-plugin]: Skipping, unable to determine old version
+[2024-04-27 04:17:25] INFO root fetch - main [MainThread]: End processing [mkdocs-sample-plugin] error
+[2024-04-27 04:17:25] INFO root fetch - processPackages [thepipe-api]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-04-27 04:17:25] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: New version: [0.0.21a1714182624] Old Version: [0.0.21a1714170756]
+[2024-04-27 04:17:25] INFO root fetch - processPackages [thepipe-api]: Downloading https://files.pythonhosted.org/packages/f5/de/0f1177da06a84fd82283c4f8b26b43dd6841b6f3de46c4c9bec028e15d2e/thepipe_api-0.3.0.tar.gz
+[2024-04-27 04:17:25] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/6d/3d/3b6ecb81b65488ac5db56b9ea400ee07a95d3f714850da5d265611c9614e/pulumi_kubernetes_the_hard_way-0.0.21a1714170756.tar.gz
+[2024-04-27 04:17:25] INFO root fetch - processPackages [exllamav2]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 04:17:25] INFO root fetch - processPackages [thepipe-api]: Downloading https://files.pythonhosted.org/packages/a5/97/9f4ba9b6ef4174e58e1a2663e6b5c928f6000043214d27c1633c444b8606/thepipe_api-0.3.1.tar.gz
+[2024-04-27 04:17:25] INFO root fetch - processPackages [exllamav2]: Downloading https://files.pythonhosted.org/packages/a0/6c/bb8613bcf4288ed911d39f136486cef750a7ba5c05892052ef83422ccfa7/exllamav2-0.0.8-py3-none-any.whl
+[2024-04-27 04:17:25] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/fa/c5/a808ebfdf662bdc410b6f49768b58706099ca85ea3b865752593d4b9f03e/pulumi_kubernetes_the_hard_way-0.0.21a1714182624.tar.gz
+[2024-04-27 04:17:25] INFO root fetch - processPackages [thepipe-api]: executing diffoscope
+[2024-04-27 04:17:25] INFO root fetch - processPackages [thepipe-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thepipe_api-0.3.0.tar.gz tmp/thepipe_api-0.3.1.tar.gz --markdown 20240427/t/thepipe-api/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-04-27 04:17:26] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: executing diffoscope
+[2024-04-27 04:17:26] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kubernetes_the_hard_way-0.0.21a1714170756.tar.gz tmp/pulumi_kubernetes_the_hard_way-0.0.21a1714182624.tar.gz --markdown 20240427/p/pulumi-kubernetes-the-hard-way/0.0.21a1714170756-0.0.21a1714182624/README.md --exclude *.pyd
+[2024-04-27 04:17:26] INFO root fetch - processPackages [exllamav2]: Downloading https://files.pythonhosted.org/packages/f2/79/8956771fb34831200a9ccf6ba088252e3efccd09220c6197d8fca522fd2c/exllamav2-0.0.9-py3-none-any.whl
+[2024-04-27 04:17:26] INFO root fetch - processPackages [thepipe-api]: Remove: archive file [/home/abi/fetcher/tmp/thepipe_api-0.3.0.tar.gz]
+[2024-04-27 04:17:26] INFO root fetch - processPackages [thepipe-api]: Remove: archive file [/home/abi/fetcher/tmp/thepipe_api-0.3.1.tar.gz]
+[2024-04-27 04:17:26] INFO root fetch - main [MainThread]: End processing [thepipe-api]: success
+[2024-04-27 04:17:26] INFO root fetch - processPackages [exllamav2]: executing diffoscope
+[2024-04-27 04:17:26] INFO root fetch - processPackages [exllamav2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exllamav2-0.0.8-py3-none-any.whl.zip tmp/exllamav2-0.0.9-py3-none-any.whl.zip --markdown 20240427/e/exllamav2/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 04:17:26] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.21a1714170756.tar.gz]
+[2024-04-27 04:17:26] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.21a1714182624.tar.gz]
+[2024-04-27 04:17:26] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
+[2024-04-27 04:17:27] INFO root fetch - processPackages [exllamav2]: Remove: archive file [/home/abi/fetcher/tmp/exllamav2-0.0.8-py3-none-any.whl.zip]
+[2024-04-27 04:17:27] INFO root fetch - processPackages [exllamav2]: Remove: archive file [/home/abi/fetcher/tmp/exllamav2-0.0.9-py3-none-any.whl.zip]
+[2024-04-27 04:17:27] INFO root fetch - main [MainThread]: End processing [exllamav2]: success
+[2024-04-27 04:17:27] INFO root fetch - main [MainThread]: Store serial: [22956016]
