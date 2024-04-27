@@ -18758,3 +18758,69 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 20:00:04] INFO root fetch - main [MainThread]: End processing [smartboiler]: success
 [2024-04-27 20:00:04] INFO root fetch - main [MainThread]: End processing [gpti]: success
 [2024-04-27 20:00:04] INFO root fetch - main [MainThread]: Store serial: [22960923]
+[2024-04-27 20:02:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960923]
+[2024-04-27 20:02:17] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-27 20:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: instructor
+[2024-04-27 20:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flet-contrib-core
+[2024-04-27 20:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flet-contrib-embed
+[2024-04-27 20:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flet-contrib-pyodide
+[2024-04-27 20:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: flet-contrib-runtime
+[2024-04-27 20:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: flet-contribute
+[2024-04-27 20:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: geoplanar
+[2024-04-27 20:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: bigxml
+[2024-04-27 20:02:17] INFO root fetch - processPackages [flet-contrib-runtime]: New version: [2024.4.27.1744] Old Version: [2024.4.27.1724]
+[2024-04-27 20:02:17] INFO root fetch - processPackages [flet-contrib-core]: New version: [2024.4.27.1744] Old Version: [2024.4.27.1724]
+[2024-04-27 20:02:17] INFO root fetch - processPackages [flet-contrib-embed]: New version: [2024.4.27.1744] Old Version: [2024.4.27.1724]
+[2024-04-27 20:02:17] INFO root fetch - processPackages [flet-contrib-pyodide]: New version: [2024.4.27.1744] Old Version: [2024.4.27.1724]
+[2024-04-27 20:02:17] INFO root fetch - processPackages [instructor]: New version: [1.2.3] Old Version: [1.2.2]
+[2024-04-27 20:02:17] WARNING root fetch - processPackages [flet-contribute]: Skipping, unable to determine old version
+[2024-04-27 20:02:17] INFO root fetch - main [MainThread]: End processing [flet-contribute] error
+[2024-04-27 20:02:17] INFO root fetch - processPackages [flet-contrib-core]: Downloading https://files.pythonhosted.org/packages/63/b4/668ad7ee81ab305a7b6db73e633159fbab1b1d54a602c64739c700437d12/flet_contrib_core-2024.4.27.1724-py3-none-any.whl
+[2024-04-27 20:02:17] INFO root fetch - processPackages [geoplanar]: New version: [0.3.1] Old Version: [0.1.0]
+[2024-04-27 20:02:17] INFO root fetch - processPackages [bigxml]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-27 20:02:17] INFO root fetch - processPackages [flet-contrib-runtime]: Downloading https://files.pythonhosted.org/packages/9d/0d/2e2cbb0586c26725f78fc25da5ac6d4037fc61da20acfca95e935200813d/flet_contrib_runtime-2024.4.27.1724-py3-none-any.whl
+[2024-04-27 20:02:17] INFO root fetch - processPackages [flet-contrib-embed]: Downloading https://files.pythonhosted.org/packages/3f/c7/c1c99a7160dd5761938e9c8bd9844ac474ff4ead0c087b675caab34913eb/flet_contrib_embed-2024.4.27.1724-py3-none-any.whl
+[2024-04-27 20:02:17] INFO root fetch - processPackages [flet-contrib-pyodide]: Downloading https://files.pythonhosted.org/packages/93/92/4e4fdc196c27d40decc20e400e85310b3a601c68d4409e09fb35f6e7d63a/flet_contrib_pyodide-2024.4.27.1724-py3-none-any.whl
+[2024-04-27 20:02:17] INFO root fetch - processPackages [instructor]: Downloading https://files.pythonhosted.org/packages/a9/84/316f8fb79719b4906e29c28e130a9f57a2be30f1586081b049c1e951839e/instructor-1.2.2.tar.gz
+[2024-04-27 20:02:17] INFO root fetch - processPackages [bigxml]: Downloading https://files.pythonhosted.org/packages/c4/78/3e06f98a0227f679ef12d9f07b3a054228a477ff957de55f43757c6a49e0/bigxml-1.0.0.tar.gz
+[2024-04-27 20:02:17] INFO root fetch - processPackages [geoplanar]: Downloading https://files.pythonhosted.org/packages/f9/ea/e5da52143ae59c4b0d74ad8d919bf1ca6b797caa0918e58cd5eec038ef00/geoplanar-0.1.0.tar.gz
+[2024-04-27 20:02:17] INFO root fetch - processPackages [flet-contrib-core]: Downloading https://files.pythonhosted.org/packages/4d/f5/3e6bed1aefc61141348150afed357763505f75159072784142ea25a25855/flet_contrib_core-2024.4.27.1744.tar.gz
+[2024-04-27 20:02:18] INFO root fetch - processPackages [flet-contrib-runtime]: Downloading https://files.pythonhosted.org/packages/98/2e/9ce61e856f3439c46f261328b567a3c96cbfda0c25c69b611ca01d67b65f/flet_contrib_runtime-2024.4.27.1744.tar.gz
+[2024-04-27 20:02:18] INFO root fetch - processPackages [flet-contrib-embed]: Downloading https://files.pythonhosted.org/packages/1f/88/41e08e0a163e59d04da07fec956f8c69cfba906bad113de77d34b19623d5/flet_contrib_embed-2024.4.27.1744.tar.gz
+[2024-04-27 20:02:18] INFO root fetch - processPackages [flet-contrib-pyodide]: Downloading https://files.pythonhosted.org/packages/ca/e8/6bb1f095fc410cfe8fb9474a5018e18573924adc4e4188257c573f460b5d/flet_contrib_pyodide-2024.4.27.1744.tar.gz
+[2024-04-27 20:02:18] INFO root fetch - processPackages [instructor]: Downloading https://files.pythonhosted.org/packages/d9/24/1747a7ddb90f3f1aa5e1e65e8e6d5920d4a6cfaac8a3dd9677c6432e7a92/instructor-1.2.3.tar.gz
+[2024-04-27 20:02:18] INFO root fetch - processPackages [flet-contrib-core]: executing diffoscope
+[2024-04-27 20:02:18] INFO root fetch - processPackages [flet-contrib-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_contrib_core-2024.4.27.1724-py3-none-any.whl.zip tmp/flet_contrib_core-2024.4.27.1744.tar.gz --markdown 20240427/f/flet-contrib-core/2024.4.27.1724-2024.4.27.1744/README.md --exclude *.pyd
+[2024-04-27 20:02:18] INFO root fetch - processPackages [geoplanar]: Downloading https://files.pythonhosted.org/packages/ca/36/90db641df9584b2c271431dbb34b7f0a6f149b3b16c6bca09ac39cfecfa9/geoplanar-0.3.1.tar.gz
+[2024-04-27 20:02:18] INFO root fetch - processPackages [flet-contrib-runtime]: executing diffoscope
+[2024-04-27 20:02:18] INFO root fetch - processPackages [flet-contrib-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_contrib_runtime-2024.4.27.1724-py3-none-any.whl.zip tmp/flet_contrib_runtime-2024.4.27.1744.tar.gz --markdown 20240427/f/flet-contrib-runtime/2024.4.27.1724-2024.4.27.1744/README.md --exclude *.pyd
+[2024-04-27 20:02:18] INFO root fetch - processPackages [bigxml]: Downloading https://files.pythonhosted.org/packages/6e/66/e2de79e5d3326053d4c4660fee9f0879236242a910693e8d3b9c459e635b/bigxml-1.0.1.tar.gz
+[2024-04-27 20:02:18] INFO root fetch - processPackages [flet-contrib-embed]: executing diffoscope
+[2024-04-27 20:02:18] INFO root fetch - processPackages [flet-contrib-embed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_contrib_embed-2024.4.27.1724-py3-none-any.whl.zip tmp/flet_contrib_embed-2024.4.27.1744.tar.gz --markdown 20240427/f/flet-contrib-embed/2024.4.27.1724-2024.4.27.1744/README.md --exclude *.pyd
+[2024-04-27 20:02:18] INFO root fetch - processPackages [flet-contrib-pyodide]: executing diffoscope
+[2024-04-27 20:02:18] INFO root fetch - processPackages [flet-contrib-pyodide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_contrib_pyodide-2024.4.27.1724-py3-none-any.whl.zip tmp/flet_contrib_pyodide-2024.4.27.1744.tar.gz --markdown 20240427/f/flet-contrib-pyodide/2024.4.27.1724-2024.4.27.1744/README.md --exclude *.pyd
+[2024-04-27 20:02:18] WARNING root fetch - processPackages [geoplanar]: Skipping package: exceeds size limit 33008881>=10485760
+[2024-04-27 20:02:18] INFO root fetch - processPackages [bigxml]: executing diffoscope
+[2024-04-27 20:02:18] INFO root fetch - main [MainThread]: End processing [geoplanar] error
+[2024-04-27 20:02:18] INFO root fetch - processPackages [bigxml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigxml-1.0.0.tar.gz tmp/bigxml-1.0.1.tar.gz --markdown 20240427/b/bigxml/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-27 20:02:18] INFO root fetch - processPackages [instructor]: executing diffoscope
+[2024-04-27 20:02:18] INFO root fetch - processPackages [instructor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/instructor-1.2.2.tar.gz tmp/instructor-1.2.3.tar.gz --markdown 20240427/i/instructor/1.2.2-1.2.3/README.md --exclude *.pyd
+[2024-04-27 20:02:18] INFO root fetch - processPackages [flet-contrib-embed]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_embed-2024.4.27.1724-py3-none-any.whl.zip]
+[2024-04-27 20:02:18] INFO root fetch - processPackages [flet-contrib-runtime]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_runtime-2024.4.27.1724-py3-none-any.whl.zip]
+[2024-04-27 20:02:18] INFO root fetch - processPackages [flet-contrib-embed]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_embed-2024.4.27.1744.tar.gz]
+[2024-04-27 20:02:18] INFO root fetch - processPackages [flet-contrib-runtime]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_runtime-2024.4.27.1744.tar.gz]
+[2024-04-27 20:02:18] INFO root fetch - main [MainThread]: End processing [flet-contrib-embed]: success
+[2024-04-27 20:02:18] INFO root fetch - main [MainThread]: End processing [flet-contrib-runtime]: success
+[2024-04-27 20:02:19] INFO root fetch - processPackages [flet-contrib-pyodide]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_pyodide-2024.4.27.1724-py3-none-any.whl.zip]
+[2024-04-27 20:02:19] INFO root fetch - processPackages [flet-contrib-pyodide]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_pyodide-2024.4.27.1744.tar.gz]
+[2024-04-27 20:02:19] INFO root fetch - main [MainThread]: End processing [flet-contrib-pyodide]: success
+[2024-04-27 20:02:19] INFO root fetch - processPackages [instructor]: Remove: archive file [/home/abi/fetcher/tmp/instructor-1.2.2.tar.gz]
+[2024-04-27 20:02:19] INFO root fetch - processPackages [instructor]: Remove: archive file [/home/abi/fetcher/tmp/instructor-1.2.3.tar.gz]
+[2024-04-27 20:02:19] INFO root fetch - main [MainThread]: End processing [instructor]: success
+[2024-04-27 20:02:19] INFO root fetch - processPackages [flet-contrib-core]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_core-2024.4.27.1724-py3-none-any.whl.zip]
+[2024-04-27 20:02:19] INFO root fetch - processPackages [flet-contrib-core]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_core-2024.4.27.1744.tar.gz]
+[2024-04-27 20:02:19] INFO root fetch - main [MainThread]: End processing [flet-contrib-core]: success
+[2024-04-27 20:02:19] INFO root fetch - processPackages [bigxml]: Remove: archive file [/home/abi/fetcher/tmp/bigxml-1.0.0.tar.gz]
+[2024-04-27 20:02:19] INFO root fetch - processPackages [bigxml]: Remove: archive file [/home/abi/fetcher/tmp/bigxml-1.0.1.tar.gz]
+[2024-04-27 20:02:19] INFO root fetch - main [MainThread]: End processing [bigxml]: success
+[2024-04-27 20:02:19] INFO root fetch - main [MainThread]: Store serial: [22960948]
