@@ -7898,3 +7898,42 @@ EOFError: EOF read where object expected
 [2024-04-27 05:57:57] INFO root fetch - processPackages [CodeBat]: Remove: archive file [/home/abi/fetcher/tmp/codebat-0.0.2.tar.gz]
 [2024-04-27 05:57:57] INFO root fetch - main [MainThread]: End processing [CodeBat]: success
 [2024-04-27 05:57:57] INFO root fetch - main [MainThread]: Store serial: [22956283]
+[2024-04-27 06:00:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956283]
+[2024-04-27 06:00:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 06:00:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: opentrons-http-api-client
+[2024-04-27 06:00:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: keble-helpers
+[2024-04-27 06:00:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mns-scheduler
+[2024-04-27 06:00:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonicDISORT
+[2024-04-27 06:00:06] INFO root fetch - processPackages [opentrons-http-api-client]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-27 06:00:06] INFO root fetch - processPackages [mns-scheduler]: New version: [1.0.3.5] Old Version: [1.0.3.3]
+[2024-04-27 06:00:06] INFO root fetch - processPackages [keble-helpers]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-27 06:00:06] INFO root fetch - processPackages [PythonicDISORT]: New version: [0.7.0] Old Version: [0.6.2]
+[2024-04-27 06:00:07] INFO root fetch - processPackages [opentrons-http-api-client]: Downloading https://files.pythonhosted.org/packages/2e/cb/efacaf732c8c6b3910f0690b62995510eb9a61adc24181f49a764eaff4e4/opentrons_http_api_client-0.1.4.tar.gz
+[2024-04-27 06:00:07] INFO root fetch - processPackages [mns-scheduler]: Downloading https://files.pythonhosted.org/packages/43/3b/fc63a5312795679c3c07f58ec121db35bc9261076fa7dd149f41a804b8aa/mns-scheduler-1.0.3.3.tar.gz
+[2024-04-27 06:00:07] INFO root fetch - processPackages [PythonicDISORT]: Downloading https://files.pythonhosted.org/packages/37/3f/f007ce8212f2d9fb30390f6e0fbf92a5bf554d2cdaaf838096be0af51df2/PythonicDISORT-0.6.2.tar.gz
+[2024-04-27 06:00:07] INFO root fetch - processPackages [keble-helpers]: Downloading https://files.pythonhosted.org/packages/de/6b/568d59c986d9d97369cc1b9c8e11afaff79cd8e39b8f140a8b86b3dd09ac/keble_helpers-0.0.8.tar.gz
+[2024-04-27 06:00:07] INFO root fetch - processPackages [opentrons-http-api-client]: Downloading https://files.pythonhosted.org/packages/d1/73/ebc4943a75378863ae6a9dd969d48ab0cf33fbcb635fce1e032b7e25206b/opentrons_http_api_client-0.1.5-py3-none-any.whl
+[2024-04-27 06:00:07] INFO root fetch - processPackages [mns-scheduler]: Downloading https://files.pythonhosted.org/packages/b8/76/bd9c2f36e6d5c9dc9c1242e4c32814be0bfcdde46e77f1dd95bd9e6626d6/mns-scheduler-1.0.3.5.tar.gz
+[2024-04-27 06:00:07] INFO root fetch - processPackages [PythonicDISORT]: Downloading https://files.pythonhosted.org/packages/6c/34/a8346cc415c0240116db2a361409044e4b44c964317251cd18d5b05a9776/pythonicdisort-0.7.0.tar.gz
+[2024-04-27 06:00:07] INFO root fetch - processPackages [opentrons-http-api-client]: executing diffoscope
+[2024-04-27 06:00:07] INFO root fetch - processPackages [opentrons-http-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opentrons_http_api_client-0.1.4.tar.gz tmp/opentrons_http_api_client-0.1.5-py3-none-any.whl.zip --markdown 20240427/o/opentrons-http-api-client/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-27 06:00:07] INFO root fetch - processPackages [keble-helpers]: Downloading https://files.pythonhosted.org/packages/4d/91/c66434faf6806657edb568c043b530bf781144225fd27b657022fa958558/keble_helpers-0.0.9.tar.gz
+[2024-04-27 06:00:07] INFO root fetch - processPackages [mns-scheduler]: executing diffoscope
+[2024-04-27 06:00:07] INFO root fetch - processPackages [mns-scheduler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mns-scheduler-1.0.3.3.tar.gz tmp/mns-scheduler-1.0.3.5.tar.gz --markdown 20240427/m/mns-scheduler/1.0.3.3-1.0.3.5/README.md --exclude *.pyd
+[2024-04-27 06:00:07] INFO root fetch - processPackages [keble-helpers]: executing diffoscope
+[2024-04-27 06:00:07] INFO root fetch - processPackages [keble-helpers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keble_helpers-0.0.8.tar.gz tmp/keble_helpers-0.0.9.tar.gz --markdown 20240427/k/keble-helpers/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-27 06:00:07] INFO root fetch - processPackages [PythonicDISORT]: executing diffoscope
+[2024-04-27 06:00:07] INFO root fetch - processPackages [PythonicDISORT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PythonicDISORT-0.6.2.tar.gz tmp/pythonicdisort-0.7.0.tar.gz --markdown 20240427/P/PythonicDISORT/0.6.2-0.7.0/README.md --exclude *.pyd
+[2024-04-27 06:00:08] INFO root fetch - processPackages [opentrons-http-api-client]: Remove: archive file [/home/abi/fetcher/tmp/opentrons_http_api_client-0.1.4.tar.gz]
+[2024-04-27 06:00:08] INFO root fetch - processPackages [opentrons-http-api-client]: Remove: archive file [/home/abi/fetcher/tmp/opentrons_http_api_client-0.1.5-py3-none-any.whl.zip]
+[2024-04-27 06:00:08] INFO root fetch - main [MainThread]: End processing [opentrons-http-api-client]: success
+[2024-04-27 06:00:08] INFO root fetch - processPackages [keble-helpers]: Remove: archive file [/home/abi/fetcher/tmp/keble_helpers-0.0.8.tar.gz]
+[2024-04-27 06:00:08] INFO root fetch - processPackages [keble-helpers]: Remove: archive file [/home/abi/fetcher/tmp/keble_helpers-0.0.9.tar.gz]
+[2024-04-27 06:00:08] INFO root fetch - main [MainThread]: End processing [keble-helpers]: success
+[2024-04-27 06:00:08] INFO root fetch - processPackages [mns-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/mns-scheduler-1.0.3.3.tar.gz]
+[2024-04-27 06:00:08] INFO root fetch - processPackages [mns-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/mns-scheduler-1.0.3.5.tar.gz]
+[2024-04-27 06:00:08] INFO root fetch - main [MainThread]: End processing [mns-scheduler]: success
+[2024-04-27 06:00:08] INFO root fetch - processPackages [PythonicDISORT]: Remove: archive file [/home/abi/fetcher/tmp/PythonicDISORT-0.6.2.tar.gz]
+[2024-04-27 06:00:08] INFO root fetch - processPackages [PythonicDISORT]: Remove: archive file [/home/abi/fetcher/tmp/pythonicdisort-0.7.0.tar.gz]
+[2024-04-27 06:00:08] INFO root fetch - main [MainThread]: End processing [PythonicDISORT]: success
+[2024-04-27 06:00:08] INFO root fetch - main [MainThread]: Store serial: [22956294]
