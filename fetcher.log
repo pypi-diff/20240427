@@ -15071,3 +15071,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 15:52:58] INFO root fetch - processPackages [genomeshader]: Remove: archive file [/home/abi/fetcher/tmp/genomeshader-0.1.9.tar.gz]
 [2024-04-27 15:52:58] INFO root fetch - main [MainThread]: End processing [genomeshader]: success
 [2024-04-27 15:52:58] INFO root fetch - main [MainThread]: Store serial: [22959223]
+[2024-04-27 15:55:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959223]
+[2024-04-27 15:55:08] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 15:55:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: EnhancedWebdriver
+[2024-04-27 15:55:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tormail
+[2024-04-27 15:55:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tensordict-nightly
+[2024-04-27 15:55:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: swiss-army-man
+[2024-04-27 15:55:08] INFO root fetch - processPackages [swiss-army-man]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-04-27 15:55:08] INFO root fetch - processPackages [swiss-army-man]: Downloading https://files.pythonhosted.org/packages/48/1f/294f600f1fa28cd18c161440c03fb3b30e0c131a86552d9308f61aa90137/swiss_army_man-0.1.7.tar.gz
+[2024-04-27 15:55:08] WARNING root fetch - processPackages [tormail]: Skipping, unable to determine old version
+[2024-04-27 15:55:08] INFO root fetch - main [MainThread]: End processing [tormail] error
+[2024-04-27 15:55:08] INFO root fetch - processPackages [EnhancedWebdriver]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-27 15:55:08] INFO root fetch - processPackages [tensordict-nightly]: New version: [2024.4.9] Old Version: [2024.4.8]
+[2024-04-27 15:55:08] INFO root fetch - processPackages [EnhancedWebdriver]: Downloading https://files.pythonhosted.org/packages/2e/9d/4816ba0cdf25141bb1acb1ad041e8e8b8f85a63aaceebf9bfa823e672525/enhancedwebdriver-0.1.5.tar.gz
+[2024-04-27 15:55:08] INFO root fetch - processPackages [swiss-army-man]: Downloading https://files.pythonhosted.org/packages/56/82/24e0c66ae73179bc5f3180da018b1c49aadae130d6093a4ba1f45acd2afa/swiss_army_man-0.1.9.tar.gz
+[2024-04-27 15:55:08] INFO root fetch - processPackages [tensordict-nightly]: Downloading https://files.pythonhosted.org/packages/cd/1c/8579b410faa082f73f4c5e15b9f2df9564f5500baeca12f401c71c95762b/tensordict_nightly-2024.4.8-cp39-cp39-win_amd64.whl
+[2024-04-27 15:55:08] INFO root fetch - processPackages [swiss-army-man]: executing diffoscope
+[2024-04-27 15:55:08] INFO root fetch - processPackages [swiss-army-man]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swiss_army_man-0.1.7.tar.gz tmp/swiss_army_man-0.1.9.tar.gz --markdown 20240427/s/swiss-army-man/0.1.7-0.1.9/README.md --exclude *.pyd
+[2024-04-27 15:55:08] INFO root fetch - processPackages [EnhancedWebdriver]: Downloading https://files.pythonhosted.org/packages/07/b1/81fd06aeecb0d062285237c4f89baa9d81419a35c4ef28730373784a20a3/enhancedwebdriver-0.1.6.tar.gz
+[2024-04-27 15:55:08] INFO root fetch - processPackages [tensordict-nightly]: Downloading https://files.pythonhosted.org/packages/07/82/e5cb687b1d6b19f6d3c57c14285a0e891743c0fd72b7d62c9298fc937736/tensordict_nightly-2024.4.9-cp39-cp39-win_amd64.whl
+[2024-04-27 15:55:08] INFO root fetch - processPackages [EnhancedWebdriver]: executing diffoscope
+[2024-04-27 15:55:08] INFO root fetch - processPackages [EnhancedWebdriver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enhancedwebdriver-0.1.5.tar.gz tmp/enhancedwebdriver-0.1.6.tar.gz --markdown 20240427/E/EnhancedWebdriver/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-27 15:55:09] INFO root fetch - processPackages [tensordict-nightly]: executing diffoscope
+[2024-04-27 15:55:09] INFO root fetch - processPackages [tensordict-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensordict_nightly-2024.4.8-cp39-cp39-win_amd64.whl.zip tmp/tensordict_nightly-2024.4.9-cp39-cp39-win_amd64.whl.zip --markdown 20240427/t/tensordict-nightly/2024.4.8-2024.4.9/README.md --exclude *.pyd
+[2024-04-27 15:55:09] INFO root fetch - processPackages [swiss-army-man]: Remove: archive file [/home/abi/fetcher/tmp/swiss_army_man-0.1.7.tar.gz]
+[2024-04-27 15:55:09] INFO root fetch - processPackages [swiss-army-man]: Remove: archive file [/home/abi/fetcher/tmp/swiss_army_man-0.1.9.tar.gz]
+[2024-04-27 15:55:09] INFO root fetch - main [MainThread]: End processing [swiss-army-man]: success
+[2024-04-27 15:55:09] INFO root fetch - processPackages [EnhancedWebdriver]: Remove: archive file [/home/abi/fetcher/tmp/enhancedwebdriver-0.1.5.tar.gz]
+[2024-04-27 15:55:09] INFO root fetch - processPackages [EnhancedWebdriver]: Remove: archive file [/home/abi/fetcher/tmp/enhancedwebdriver-0.1.6.tar.gz]
+[2024-04-27 15:55:09] INFO root fetch - main [MainThread]: End processing [EnhancedWebdriver]: success
+[2024-04-27 15:55:09] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.4.8-cp39-cp39-win_amd64.whl.zip]
+[2024-04-27 15:55:09] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.4.9-cp39-cp39-win_amd64.whl.zip]
+[2024-04-27 15:55:09] INFO root fetch - main [MainThread]: End processing [tensordict-nightly]: success
+[2024-04-27 15:55:09] INFO root fetch - main [MainThread]: Store serial: [22959241]
