@@ -2117,3 +2117,36 @@ EOFError: EOF read where object expected
 [2024-04-27 02:02:14] INFO root fetch - processPackages [moptipy]: Remove: archive file [/home/abi/fetcher/tmp/moptipy-0.9.99.tar.gz]
 [2024-04-27 02:02:14] INFO root fetch - main [MainThread]: End processing [moptipy]: success
 [2024-04-27 02:02:14] INFO root fetch - main [MainThread]: Store serial: [22954120]
+[2024-04-27 02:04:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22954120]
+[2024-04-27 02:04:23] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 02:04:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moptipy
+[2024-04-27 02:04:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kickthespypet-api
+[2024-04-27 02:04:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kkpyai
+[2024-04-27 02:04:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gnwmanager
+[2024-04-27 02:04:23] INFO root fetch - processPackages [moptipy]: New version: [0.9.99] Old Version: [0.9.98]
+[2024-04-27 02:04:23] ERROR root fetch - processPackages [kickthespypet-api]: Unable to get metadata: No such project 'kickthespypet-api'
+[2024-04-27 02:04:23] INFO root fetch - main [MainThread]: End processing [kickthespypet-api] error
+[2024-04-27 02:04:23] INFO root fetch - processPackages [gnwmanager]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-04-27 02:04:23] INFO root fetch - processPackages [kkpyai]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-27 02:04:24] INFO root fetch - processPackages [moptipy]: Downloading https://files.pythonhosted.org/packages/79/ff/c02163781ada2fee4bba702ad69e5a4f2f4c03a9cfd912ff8123846ab35e/moptipy-0.9.98.tar.gz
+[2024-04-27 02:04:24] INFO root fetch - processPackages [kkpyai]: Downloading https://files.pythonhosted.org/packages/41/d3/9eaff2d61cda5a93cc3aa554dac6f205851c8b6303358abc745bc574c29b/kkpyai-0.8.0.tar.gz
+[2024-04-27 02:04:24] INFO root fetch - processPackages [gnwmanager]: Downloading https://files.pythonhosted.org/packages/08/54/ceffec0bb40141e47b4935890a8d9357f3d15662812cb1e1c1bbf98d2e4c/gnwmanager-0.9.2.tar.gz
+[2024-04-27 02:04:24] INFO root fetch - processPackages [moptipy]: Downloading https://files.pythonhosted.org/packages/2a/cf/498083d5cae469a295d1f70ea131664c0ac6641c8a08698dee5e01d2204b/moptipy-0.9.99.tar.gz
+[2024-04-27 02:04:24] INFO root fetch - processPackages [kkpyai]: Downloading https://files.pythonhosted.org/packages/5d/fb/68ee41a5230bff7f50616754d4177eecd0f6602c85b5310d16ae044f2361/kkpyai-0.9.0.tar.gz
+[2024-04-27 02:04:24] INFO root fetch - processPackages [kkpyai]: executing diffoscope
+[2024-04-27 02:04:24] INFO root fetch - processPackages [kkpyai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kkpyai-0.8.0.tar.gz tmp/kkpyai-0.9.0.tar.gz --markdown 20240427/k/kkpyai/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-27 02:04:24] INFO root fetch - processPackages [moptipy]: executing diffoscope
+[2024-04-27 02:04:24] INFO root fetch - processPackages [moptipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moptipy-0.9.98.tar.gz tmp/moptipy-0.9.99.tar.gz --markdown 20240427/m/moptipy/0.9.98-0.9.99/README.md --exclude *.pyd
+[2024-04-27 02:04:24] INFO root fetch - processPackages [gnwmanager]: Downloading https://files.pythonhosted.org/packages/51/f6/b1bccd7e1ec44ce7873a4f7d0adeb585c548fc5c6c97568ee963efa9c3b0/gnwmanager-0.9.3.tar.gz
+[2024-04-27 02:04:24] INFO root fetch - processPackages [gnwmanager]: executing diffoscope
+[2024-04-27 02:04:24] INFO root fetch - processPackages [gnwmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gnwmanager-0.9.2.tar.gz tmp/gnwmanager-0.9.3.tar.gz --markdown 20240427/g/gnwmanager/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-04-27 02:04:25] INFO root fetch - processPackages [kkpyai]: Remove: archive file [/home/abi/fetcher/tmp/kkpyai-0.8.0.tar.gz]
+[2024-04-27 02:04:25] INFO root fetch - processPackages [kkpyai]: Remove: archive file [/home/abi/fetcher/tmp/kkpyai-0.9.0.tar.gz]
+[2024-04-27 02:04:25] INFO root fetch - main [MainThread]: End processing [kkpyai]: success
+[2024-04-27 02:04:25] INFO root fetch - processPackages [gnwmanager]: Remove: archive file [/home/abi/fetcher/tmp/gnwmanager-0.9.2.tar.gz]
+[2024-04-27 02:04:25] INFO root fetch - processPackages [gnwmanager]: Remove: archive file [/home/abi/fetcher/tmp/gnwmanager-0.9.3.tar.gz]
+[2024-04-27 02:04:25] INFO root fetch - main [MainThread]: End processing [gnwmanager]: success
+[2024-04-27 02:04:25] INFO root fetch - processPackages [moptipy]: Remove: archive file [/home/abi/fetcher/tmp/moptipy-0.9.98.tar.gz]
+[2024-04-27 02:04:25] INFO root fetch - processPackages [moptipy]: Remove: archive file [/home/abi/fetcher/tmp/moptipy-0.9.99.tar.gz]
+[2024-04-27 02:04:25] INFO root fetch - main [MainThread]: End processing [moptipy]: success
+[2024-04-27 02:04:25] INFO root fetch - main [MainThread]: Store serial: [22954135]
