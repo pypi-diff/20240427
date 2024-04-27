@@ -13396,3 +13396,117 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 14:01:22] INFO root fetch - processPackages [qg_toolkit]: Remove: archive file [/home/abi/fetcher/tmp/qg_toolkit-1.0.5.tar.gz]
 [2024-04-27 14:01:22] INFO root fetch - main [MainThread]: End processing [qg_toolkit]: success
 [2024-04-27 14:01:22] INFO root fetch - main [MainThread]: Store serial: [22958484]
+[2024-04-27 14:03:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958484]
+[2024-04-27 14:03:32] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 14:03:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: puerml
+[2024-04-27 14:03:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bigdl-core-xe-esimd
+[2024-04-27 14:03:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: novas
+[2024-04-27 14:03:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: SimpleTKMessageBox
+[2024-04-27 14:03:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fastbench
+[2024-04-27 14:03:32] INFO root fetch - processPackages [SimpleTKMessageBox]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-27 14:03:32] INFO root fetch - processPackages [fastbench]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-27 14:03:32] INFO root fetch - processPackages [SimpleTKMessageBox]: Downloading https://files.pythonhosted.org/packages/1b/24/de5e9ecec082f393382b4b9d7c96d73e4914654cf881d4ca0ec96558e38b/SimpleTKMessageBox-0.2.1.tar.gz
+[2024-04-27 14:03:32] INFO root fetch - processPackages [fastbench]: Downloading https://files.pythonhosted.org/packages/c5/78/4912daaf097e245ff83db776e52e6999d0153251c52e1dc96175ea92e154/fastbench-0.1.1.tar.gz
+[2024-04-27 14:03:32] INFO root fetch - processPackages [bigdl-core-xe-esimd]: New version: [2.5.0b20240427] Old Version: [2.5.0b20240426]
+[2024-04-27 14:03:32] INFO root fetch - processPackages [novas]: New version: [3.1.1.6] Old Version: [3.1.1.5]
+[2024-04-27 14:03:33] INFO root fetch - processPackages [puerml]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-27 14:03:33] INFO root fetch - processPackages [fastbench]: Downloading https://files.pythonhosted.org/packages/5c/4a/3aecb7be554ec6159f35418879a6bb9cc184f7a230aa8fcdffa798e7be15/fastbench-0.1.2.tar.gz
+[2024-04-27 14:03:33] INFO root fetch - processPackages [SimpleTKMessageBox]: Downloading https://files.pythonhosted.org/packages/65/f9/c81c87cd7589f241122de63dc0f6393e5028d2348f4861f3058ff478ee45/SimpleTKMessageBox-0.2.2.tar.gz
+[2024-04-27 14:03:33] INFO root fetch - processPackages [fastbench]: executing diffoscope
+[2024-04-27 14:03:33] INFO root fetch - processPackages [fastbench]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastbench-0.1.1.tar.gz tmp/fastbench-0.1.2.tar.gz --markdown 20240427/f/fastbench/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-27 14:03:33] INFO root fetch - processPackages [SimpleTKMessageBox]: executing diffoscope
+[2024-04-27 14:03:33] INFO root fetch - processPackages [SimpleTKMessageBox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SimpleTKMessageBox-0.2.1.tar.gz tmp/SimpleTKMessageBox-0.2.2.tar.gz --markdown 20240427/S/SimpleTKMessageBox/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-04-27 14:03:33] INFO root fetch - processPackages [fastbench]: Remove: archive file [/home/abi/fetcher/tmp/fastbench-0.1.1.tar.gz]
+[2024-04-27 14:03:33] INFO root fetch - processPackages [fastbench]: Remove: archive file [/home/abi/fetcher/tmp/fastbench-0.1.2.tar.gz]
+[2024-04-27 14:03:33] INFO root fetch - main [MainThread]: End processing [fastbench]: success
+[2024-04-27 14:03:33] INFO root fetch - processPackages [SimpleTKMessageBox]: Remove: archive file [/home/abi/fetcher/tmp/SimpleTKMessageBox-0.2.1.tar.gz]
+[2024-04-27 14:03:33] INFO root fetch - processPackages [SimpleTKMessageBox]: Remove: archive file [/home/abi/fetcher/tmp/SimpleTKMessageBox-0.2.2.tar.gz]
+[2024-04-27 14:03:33] INFO root fetch - main [MainThread]: End processing [SimpleTKMessageBox]: success
+[2024-04-27 14:03:34] INFO root fetch - processPackages [bigdl-core-xe-esimd]: Downloading https://files.pythonhosted.org/packages/a6/7f/28e66b7c752dd5df84d38d9f55d75e55007695a4bb23e4d98e1dd724d3ef/bigdl_core_xe_esimd-2.5.0b20240426-cp39-cp39-manylinux2010_x86_64.whl
+[2024-04-27 14:03:34] INFO root fetch - processPackages [novas]: Downloading https://files.pythonhosted.org/packages/42/95/a05bc35cb119925e10f9faa8a2bd17020b0a585744a38921a709acdd9a14/novas-3.1.1.5.tar.gz
+[2024-04-27 14:03:34] WARNING root fetch - processPackages [bigdl-core-xe-esimd]: Skipping package: exceeds size limit 61871661>=10485760
+[2024-04-27 14:03:34] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-esimd] error
+[2024-04-27 14:03:34] INFO root fetch - processPackages [novas]: Downloading https://files.pythonhosted.org/packages/e4/6c/5326de4b709794e4235e11436b9200017ce504644124fafcc3d82d57be00/novas-3.1.1.6.tar.gz
+[2024-04-27 14:03:34] INFO root fetch - processPackages [novas]: executing diffoscope
+[2024-04-27 14:03:34] INFO root fetch - processPackages [novas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/novas-3.1.1.5.tar.gz tmp/novas-3.1.1.6.tar.gz --markdown 20240427/n/novas/3.1.1.5-3.1.1.6/README.md --exclude *.pyd
+[2024-04-27 14:03:35] INFO root fetch - processPackages [novas]: Remove: archive file [/home/abi/fetcher/tmp/novas-3.1.1.5.tar.gz]
+[2024-04-27 14:03:35] INFO root fetch - processPackages [novas]: Remove: archive file [/home/abi/fetcher/tmp/novas-3.1.1.6.tar.gz]
+[2024-04-27 14:03:35] INFO root fetch - main [MainThread]: End processing [novas]: success
+[2024-04-27 14:05:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958484]
+[2024-04-27 14:05:48] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-27 14:05:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: puerml
+[2024-04-27 14:05:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bigdl-core-xe-esimd
+[2024-04-27 14:05:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: novas
+[2024-04-27 14:05:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: SimpleTKMessageBox
+[2024-04-27 14:05:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fastbench
+[2024-04-27 14:05:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: qg_toolkit
+[2024-04-27 14:05:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: PasteScript
+[2024-04-27 14:05:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: puerml
+[2024-04-27 14:05:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cometx
+[2024-04-27 14:05:48] INFO root fetch - processPackages [bigdl-core-xe-esimd]: New version: [2.5.0b20240427] Old Version: [2.5.0b20240426]
+[2024-04-27 14:05:48] INFO root fetch - processPackages [puerml]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-27 14:05:48] INFO root fetch - processPackages [novas]: New version: [3.1.1.6] Old Version: [3.1.1.5]
+[2024-04-27 14:05:48] INFO root fetch - processPackages [SimpleTKMessageBox]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-04-27 14:05:48] INFO root fetch - processPackages [cometx]: New version: [2.0.3] Old Version: [2.0.2]
+[2024-04-27 14:05:48] INFO root fetch - processPackages [fastbench]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-27 14:05:48] INFO root fetch - processPackages [qg_toolkit]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-04-27 14:05:48] INFO root fetch - processPackages [puerml]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-27 14:05:48] INFO root fetch - processPackages [PasteScript]: New version: [3.6.0] Old Version: [3.5.1]
+[2024-04-27 14:05:48] INFO root fetch - processPackages [bigdl-core-xe-esimd]: Downloading https://files.pythonhosted.org/packages/a6/7f/28e66b7c752dd5df84d38d9f55d75e55007695a4bb23e4d98e1dd724d3ef/bigdl_core_xe_esimd-2.5.0b20240426-cp39-cp39-manylinux2010_x86_64.whl
+[2024-04-27 14:05:48] INFO root fetch - processPackages [puerml]: Downloading https://files.pythonhosted.org/packages/c1/e4/523c5c69b02459ffb6e52a1a4b8f011d7875d2eed1aaeae02c5a0c948382/puerml-0.1.8.tar.gz
+[2024-04-27 14:05:48] INFO root fetch - processPackages [novas]: Downloading https://files.pythonhosted.org/packages/42/95/a05bc35cb119925e10f9faa8a2bd17020b0a585744a38921a709acdd9a14/novas-3.1.1.5.tar.gz
+[2024-04-27 14:05:48] INFO root fetch - processPackages [SimpleTKMessageBox]: Downloading https://files.pythonhosted.org/packages/65/f9/c81c87cd7589f241122de63dc0f6393e5028d2348f4861f3058ff478ee45/SimpleTKMessageBox-0.2.2.tar.gz
+[2024-04-27 14:05:48] INFO root fetch - processPackages [puerml]: Downloading https://files.pythonhosted.org/packages/c1/e4/523c5c69b02459ffb6e52a1a4b8f011d7875d2eed1aaeae02c5a0c948382/puerml-0.1.8.tar.gz
+[2024-04-27 14:05:48] INFO root fetch - processPackages [cometx]: Downloading https://files.pythonhosted.org/packages/18/61/ec19a7232e3624419895e6999065d3c86232e458fbd7b841a2061540d972/cometx-2.0.2-py3-none-any.whl
+[2024-04-27 14:05:49] WARNING root fetch - processPackages [bigdl-core-xe-esimd]: Skipping package: exceeds size limit 61871661>=10485760
+[2024-04-27 14:05:49] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-esimd] error
+[2024-04-27 14:05:49] INFO root fetch - processPackages [fastbench]: Downloading https://files.pythonhosted.org/packages/5c/4a/3aecb7be554ec6159f35418879a6bb9cc184f7a230aa8fcdffa798e7be15/fastbench-0.1.2.tar.gz
+[2024-04-27 14:05:49] INFO root fetch - processPackages [qg_toolkit]: Downloading https://files.pythonhosted.org/packages/87/c4/eaa9ee4795acbd748a7dd209759db89811fba56c3c0ae5d602b948c8eaa3/qg_toolkit-1.0.5.tar.gz
+[2024-04-27 14:05:49] INFO root fetch - processPackages [PasteScript]: Downloading https://files.pythonhosted.org/packages/f6/89/8bf28a3a3f76df3e23fee6e2d821c356af257cce392b65440681ddead04a/PasteScript-3.5.1.tar.gz
+[2024-04-27 14:05:49] INFO root fetch - processPackages [novas]: Downloading https://files.pythonhosted.org/packages/e4/6c/5326de4b709794e4235e11436b9200017ce504644124fafcc3d82d57be00/novas-3.1.1.6.tar.gz
+[2024-04-27 14:05:49] INFO root fetch - processPackages [cometx]: Downloading https://files.pythonhosted.org/packages/35/e5/cd7fd84f6a17c2a2736f85511f21e816f639d4e4ba848383794bedf9f644/cometx-2.0.3-py3-none-any.whl
+[2024-04-27 14:05:49] INFO root fetch - processPackages [SimpleTKMessageBox]: Downloading https://files.pythonhosted.org/packages/87/cc/e123cab353514c770957cce81af9942c6f1e60effe8989cf98db86f4bb02/SimpleTKMessageBox-0.2.3.tar.gz
+[2024-04-27 14:05:49] INFO root fetch - processPackages [fastbench]: Downloading https://files.pythonhosted.org/packages/8c/90/c85a1ae5d0dcd55c990f623e5cff26e5682a7d3524d4c9d72c0c5654746f/fastbench-0.1.3.tar.gz
+[2024-04-27 14:05:49] INFO root fetch - processPackages [puerml]: Downloading https://files.pythonhosted.org/packages/17/cb/1f376cc111577cf8439db51d01dd8f17fa7c2754c4ecf4fa961fbb481835/puerml-0.1.9.tar.gz
+[2024-04-27 14:05:49] INFO root fetch - processPackages [puerml]: Downloading https://files.pythonhosted.org/packages/17/cb/1f376cc111577cf8439db51d01dd8f17fa7c2754c4ecf4fa961fbb481835/puerml-0.1.9.tar.gz
+[2024-04-27 14:05:49] INFO root fetch - processPackages [qg_toolkit]: Downloading https://files.pythonhosted.org/packages/47/aa/6fe9d9dfb4f17e0ee3fa22b04a9fefa4d4772f97f1f455634fa7399bc475/qg_toolkit-1.0.6.tar.gz
+[2024-04-27 14:05:49] INFO root fetch - processPackages [cometx]: executing diffoscope
+[2024-04-27 14:05:49] INFO root fetch - processPackages [cometx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cometx-2.0.2-py3-none-any.whl.zip tmp/cometx-2.0.3-py3-none-any.whl.zip --markdown 20240427/c/cometx/2.0.2-2.0.3/README.md --exclude *.pyd
+[2024-04-27 14:05:49] INFO root fetch - processPackages [novas]: executing diffoscope
+[2024-04-27 14:05:49] INFO root fetch - processPackages [novas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/novas-3.1.1.5.tar.gz tmp/novas-3.1.1.6.tar.gz --markdown 20240427/n/novas/3.1.1.5-3.1.1.6/README.md --exclude *.pyd
+[2024-04-27 14:05:49] INFO root fetch - processPackages [SimpleTKMessageBox]: executing diffoscope
+[2024-04-27 14:05:49] INFO root fetch - processPackages [SimpleTKMessageBox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SimpleTKMessageBox-0.2.2.tar.gz tmp/SimpleTKMessageBox-0.2.3.tar.gz --markdown 20240427/S/SimpleTKMessageBox/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-04-27 14:05:49] INFO root fetch - processPackages [PasteScript]: Downloading https://files.pythonhosted.org/packages/d2/fb/b269173681c98ad124474179fd23bc47e43f00953b4857b4247c52efa420/PasteScript-3.6.0.tar.gz
+[2024-04-27 14:05:49] INFO root fetch - processPackages [fastbench]: executing diffoscope
+[2024-04-27 14:05:49] INFO root fetch - processPackages [fastbench]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastbench-0.1.2.tar.gz tmp/fastbench-0.1.3.tar.gz --markdown 20240427/f/fastbench/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-27 14:05:49] INFO root fetch - processPackages [puerml]: executing diffoscope
+[2024-04-27 14:05:49] INFO root fetch - processPackages [puerml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/puerml-0.1.8.tar.gz tmp/puerml-0.1.9.tar.gz --markdown 20240427/p/puerml/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-27 14:05:49] INFO root fetch - processPackages [puerml]: executing diffoscope
+[2024-04-27 14:05:49] INFO root fetch - processPackages [puerml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/puerml-0.1.8.tar.gz tmp/puerml-0.1.9.tar.gz --markdown 20240427/p/puerml/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-27 14:05:49] INFO root fetch - processPackages [qg_toolkit]: executing diffoscope
+[2024-04-27 14:05:49] INFO root fetch - processPackages [qg_toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qg_toolkit-1.0.5.tar.gz tmp/qg_toolkit-1.0.6.tar.gz --markdown 20240427/q/qg_toolkit/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-04-27 14:05:49] INFO root fetch - processPackages [PasteScript]: executing diffoscope
+[2024-04-27 14:05:49] INFO root fetch - processPackages [PasteScript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PasteScript-3.5.1.tar.gz tmp/PasteScript-3.6.0.tar.gz --markdown 20240427/P/PasteScript/3.5.1-3.6.0/README.md --exclude *.pyd
+[2024-04-27 14:05:50] INFO root fetch - processPackages [SimpleTKMessageBox]: Remove: archive file [/home/abi/fetcher/tmp/SimpleTKMessageBox-0.2.2.tar.gz]
+[2024-04-27 14:05:50] INFO root fetch - processPackages [SimpleTKMessageBox]: Remove: archive file [/home/abi/fetcher/tmp/SimpleTKMessageBox-0.2.3.tar.gz]
+[2024-04-27 14:05:50] INFO root fetch - main [MainThread]: End processing [SimpleTKMessageBox]: success
+[2024-04-27 14:05:50] INFO root fetch - processPackages [puerml]: Remove: archive file [/home/abi/fetcher/tmp/puerml-0.1.8.tar.gz]
+[2024-04-27 14:05:50] INFO root fetch - processPackages [puerml]: Remove: archive file [/home/abi/fetcher/tmp/puerml-0.1.9.tar.gz]
+[2024-04-27 14:05:50] INFO root fetch - main [MainThread]: End processing [puerml]: success
+[2024-04-27 14:05:50] INFO root fetch - processPackages [novas]: Remove: archive file [/home/abi/fetcher/tmp/novas-3.1.1.5.tar.gz]
+[2024-04-27 14:05:50] INFO root fetch - processPackages [novas]: Remove: archive file [/home/abi/fetcher/tmp/novas-3.1.1.6.tar.gz]
+[2024-04-27 14:05:50] INFO root fetch - main [MainThread]: End processing [novas]: success
+[2024-04-27 14:05:50] INFO root fetch - processPackages [cometx]: Remove: archive file [/home/abi/fetcher/tmp/cometx-2.0.2-py3-none-any.whl.zip]
+[2024-04-27 14:05:50] INFO root fetch - processPackages [cometx]: Remove: archive file [/home/abi/fetcher/tmp/cometx-2.0.3-py3-none-any.whl.zip]
+[2024-04-27 14:05:50] INFO root fetch - main [MainThread]: End processing [cometx]: success
+[2024-04-27 14:05:50] INFO root fetch - processPackages [fastbench]: Remove: archive file [/home/abi/fetcher/tmp/fastbench-0.1.2.tar.gz]
+[2024-04-27 14:05:50] INFO root fetch - processPackages [fastbench]: Remove: archive file [/home/abi/fetcher/tmp/fastbench-0.1.3.tar.gz]
+[2024-04-27 14:05:50] INFO root fetch - main [MainThread]: End processing [fastbench]: success
+[2024-04-27 14:05:50] INFO root fetch - main [MainThread]: End processing [puerml]: success
+[2024-04-27 14:05:50] INFO root fetch - processPackages [qg_toolkit]: Remove: archive file [/home/abi/fetcher/tmp/qg_toolkit-1.0.5.tar.gz]
+[2024-04-27 14:05:50] INFO root fetch - processPackages [qg_toolkit]: Remove: archive file [/home/abi/fetcher/tmp/qg_toolkit-1.0.6.tar.gz]
+[2024-04-27 14:05:50] INFO root fetch - main [MainThread]: End processing [qg_toolkit]: success
+[2024-04-27 14:05:50] INFO root fetch - processPackages [PasteScript]: Remove: archive file [/home/abi/fetcher/tmp/PasteScript-3.5.1.tar.gz]
+[2024-04-27 14:05:50] INFO root fetch - processPackages [PasteScript]: Remove: archive file [/home/abi/fetcher/tmp/PasteScript-3.6.0.tar.gz]
+[2024-04-27 14:05:50] INFO root fetch - main [MainThread]: End processing [PasteScript]: success
+[2024-04-27 14:05:50] INFO root fetch - main [MainThread]: Store serial: [22958509]
