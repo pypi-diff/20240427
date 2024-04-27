@@ -14435,3 +14435,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 15:10:04] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.1.1.tar.gz]
 [2024-04-27 15:10:04] INFO root fetch - main [MainThread]: End processing [freegenius]: success
 [2024-04-27 15:10:04] INFO root fetch - main [MainThread]: Store serial: [22958980]
+[2024-04-27 15:12:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22958980]
+[2024-04-27 15:12:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 15:12:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: requesto-py
+[2024-04-27 15:12:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fbgemm-gpu-nightly-cpu
+[2024-04-27 15:12:13] INFO root fetch - processPackages [requesto-py]: New version: [1.2.0.1] Old Version: [1.2.0]
+[2024-04-27 15:12:13] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: New version: [2024.4.27] Old Version: [2024.4.26]
+[2024-04-27 15:12:13] INFO root fetch - processPackages [requesto-py]: Downloading https://files.pythonhosted.org/packages/9f/69/d01e69a4f09c1ffc292749cefbfb1e0106b17688c09bec31a49432b1bc25/requesto-py-1.2.0.tar.gz
+[2024-04-27 15:12:13] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/05/ca/1ad969a197923aab94fafbdf04c1b5999d5e181e04017de63a3c931f2578/fbgemm_gpu_nightly_cpu-2024.4.26-cp39-cp39-manylinux2014_x86_64.whl
+[2024-04-27 15:12:14] INFO root fetch - processPackages [requesto-py]: Downloading https://files.pythonhosted.org/packages/0f/e4/46b6093dd7b6f0d64ff636b3ff94be697d27e7d5e6995432fc97ca8f25c3/requesto_py-1.2.0.1.tar.gz
+[2024-04-27 15:12:14] INFO root fetch - processPackages [requesto-py]: executing diffoscope
+[2024-04-27 15:12:14] INFO root fetch - processPackages [requesto-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/requesto-py-1.2.0.tar.gz tmp/requesto_py-1.2.0.1.tar.gz --markdown 20240427/r/requesto-py/1.2.0-1.2.0.1/README.md --exclude *.pyd
+[2024-04-27 15:12:14] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/c6/b7/44b1c6972c1b792b3e752f1726d99f5c5c537855cd77e327c5f0bafdcaf5/fbgemm_gpu_nightly_cpu-2024.4.27-cp38-cp38-manylinux2014_x86_64.whl
+[2024-04-27 15:12:14] INFO root fetch - processPackages [requesto-py]: Remove: archive file [/home/abi/fetcher/tmp/requesto-py-1.2.0.tar.gz]
+[2024-04-27 15:12:14] INFO root fetch - processPackages [requesto-py]: Remove: archive file [/home/abi/fetcher/tmp/requesto_py-1.2.0.1.tar.gz]
+[2024-04-27 15:12:14] INFO root fetch - main [MainThread]: End processing [requesto-py]: success
+[2024-04-27 15:12:16] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: executing diffoscope
+[2024-04-27 15:12:16] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fbgemm_gpu_nightly_cpu-2024.4.26-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/fbgemm_gpu_nightly_cpu-2024.4.27-cp38-cp38-manylinux2014_x86_64.whl.zip --markdown 20240427/f/fbgemm-gpu-nightly-cpu/2024.4.26-2024.4.27/README.md --exclude *.pyd
+[2024-04-27 15:12:55] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/fbgemm_gpu_nightly_cpu-2024.4.26-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-04-27 15:12:55] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/fbgemm_gpu_nightly_cpu-2024.4.27-cp38-cp38-manylinux2014_x86_64.whl.zip]
+[2024-04-27 15:12:55] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
+[2024-04-27 15:12:55] INFO root fetch - main [MainThread]: Store serial: [22958988]
