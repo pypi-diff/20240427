@@ -11429,3 +11429,27 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 11:33:55] INFO root fetch - processPackages [ALLMDEV]: Remove: archive file [/home/abi/fetcher/tmp/ALLMDEV-1.2.5-py3-none-any.whl.zip]
 [2024-04-27 11:33:55] INFO root fetch - main [MainThread]: End processing [ALLMDEV]: success
 [2024-04-27 11:33:55] INFO root fetch - main [MainThread]: Store serial: [22957674]
+[2024-04-27 11:35:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22957674]
+[2024-04-27 11:36:03] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 11:36:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: werag
+[2024-04-27 11:36:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: anycorn
+[2024-04-27 11:36:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: projectZ
+[2024-04-27 11:36:03] INFO root fetch - processPackages [werag]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-27 11:36:03] INFO root fetch - processPackages [werag]: Downloading https://files.pythonhosted.org/packages/bf/c3/6539faadb179253fd41a51b39a361d91078c01a58600fb9d0e0e7d143a4a/werag-0.0.1.tar.gz
+[2024-04-27 11:36:03] INFO root fetch - processPackages [anycorn]: New version: [0.17.1] Old Version: [0.17.0]
+[2024-04-27 11:36:03] WARNING root fetch - processPackages [projectZ]: Skipping, unable to determine old version
+[2024-04-27 11:36:03] INFO root fetch - main [MainThread]: End processing [projectZ] error
+[2024-04-27 11:36:03] INFO root fetch - processPackages [anycorn]: Downloading https://files.pythonhosted.org/packages/88/33/2946844bc70fd5c27bc7b4a5d99a09ddd83fd1053033b56ddddcbe53b399/anycorn-0.17.0.tar.gz
+[2024-04-27 11:36:04] INFO root fetch - processPackages [werag]: Downloading https://files.pythonhosted.org/packages/d7/ba/da0f62a3cb1256cce95dbe71921bfdaf4aeb80caaf4fbfd9e1bdba4266eb/werag-0.0.2.tar.gz
+[2024-04-27 11:36:04] INFO root fetch - processPackages [werag]: executing diffoscope
+[2024-04-27 11:36:04] INFO root fetch - processPackages [werag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/werag-0.0.1.tar.gz tmp/werag-0.0.2.tar.gz --markdown 20240427/w/werag/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-27 11:36:04] INFO root fetch - processPackages [anycorn]: Downloading https://files.pythonhosted.org/packages/87/07/b516b7211521a29ed79681c05669d67ba3a2e5729d1e8a5f43de901886fb/anycorn-0.17.1.tar.gz
+[2024-04-27 11:36:04] INFO root fetch - processPackages [anycorn]: executing diffoscope
+[2024-04-27 11:36:04] INFO root fetch - processPackages [anycorn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anycorn-0.17.0.tar.gz tmp/anycorn-0.17.1.tar.gz --markdown 20240427/a/anycorn/0.17.0-0.17.1/README.md --exclude *.pyd
+[2024-04-27 11:36:04] INFO root fetch - processPackages [werag]: Remove: archive file [/home/abi/fetcher/tmp/werag-0.0.1.tar.gz]
+[2024-04-27 11:36:04] INFO root fetch - processPackages [werag]: Remove: archive file [/home/abi/fetcher/tmp/werag-0.0.2.tar.gz]
+[2024-04-27 11:36:04] INFO root fetch - main [MainThread]: End processing [werag]: success
+[2024-04-27 11:36:04] INFO root fetch - processPackages [anycorn]: Remove: archive file [/home/abi/fetcher/tmp/anycorn-0.17.0.tar.gz]
+[2024-04-27 11:36:04] INFO root fetch - processPackages [anycorn]: Remove: archive file [/home/abi/fetcher/tmp/anycorn-0.17.1.tar.gz]
+[2024-04-27 11:36:04] INFO root fetch - main [MainThread]: End processing [anycorn]: success
+[2024-04-27 11:36:04] INFO root fetch - main [MainThread]: Store serial: [22957685]
