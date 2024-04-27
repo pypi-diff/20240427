@@ -9475,3 +9475,11 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 08:02:09] INFO root fetch - processPackages [oresat-dxwifi]: Remove: archive file [/home/abi/fetcher/tmp/oresat_dxwifi-0.3.6.tar.gz]
 [2024-04-27 08:02:09] INFO root fetch - main [MainThread]: End processing [oresat-dxwifi]: success
 [2024-04-27 08:02:09] INFO root fetch - main [MainThread]: Store serial: [22956801]
+[2024-04-27 08:04:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956801]
+[2024-04-27 08:04:18] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 08:04:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: agixt
+[2024-04-27 08:04:18] INFO root fetch - processPackages [agixt]: New version: [1.5.3] Old Version: [1.5.2]
+[2024-04-27 08:04:18] INFO root fetch - processPackages [agixt]: Downloading https://files.pythonhosted.org/packages/1d/fa/21235fbf921d8e732ec0da1678bec9e8c755081b49dc98ceb5f5a0c03d5d/agixt-1.5.2.tar.gz
+[2024-04-27 08:04:18] WARNING root fetch - processPackages [agixt]: Skipping package: exceeds size limit 83911974>=10485760
+[2024-04-27 08:04:18] INFO root fetch - main [MainThread]: End processing [agixt] error
+[2024-04-27 08:04:18] INFO root fetch - main [MainThread]: Store serial: [22956804]
