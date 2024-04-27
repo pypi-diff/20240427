@@ -21078,3 +21078,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 22:58:09] INFO root fetch - processPackages [morebs2]: Remove: archive file [/home/abi/fetcher/tmp/morebs2-0.0.9.tar.gz]
 [2024-04-27 22:58:09] INFO root fetch - main [MainThread]: End processing [morebs2]: success
 [2024-04-27 22:58:09] INFO root fetch - main [MainThread]: Store serial: [22961957]
+[2024-04-27 23:00:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961957]
+[2024-04-27 23:00:26] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 23:00:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pycis-cli
+[2024-04-27 23:00:26] INFO root fetch - processPackages [pycis-cli]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-27 23:00:26] INFO root fetch - processPackages [pycis-cli]: Downloading https://files.pythonhosted.org/packages/a6/b8/39d0aa038c5099129a02d37e8724908ec417b3ce23cd66def1b928f27046/pycis_cli-0.1.1.tar.gz
+[2024-04-27 23:00:26] INFO root fetch - processPackages [pycis-cli]: Downloading https://files.pythonhosted.org/packages/7b/ee/d1dd0afff5da88b5cd35c092500f133a7a63bbee7d5a0d555aa6e6066365/pycis_cli-0.1.2.tar.gz
+[2024-04-27 23:00:26] INFO root fetch - processPackages [pycis-cli]: executing diffoscope
+[2024-04-27 23:00:26] INFO root fetch - processPackages [pycis-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycis_cli-0.1.1.tar.gz tmp/pycis_cli-0.1.2.tar.gz --markdown 20240427/p/pycis-cli/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-27 23:00:27] INFO root fetch - processPackages [pycis-cli]: Remove: archive file [/home/abi/fetcher/tmp/pycis_cli-0.1.1.tar.gz]
+[2024-04-27 23:00:27] INFO root fetch - processPackages [pycis-cli]: Remove: archive file [/home/abi/fetcher/tmp/pycis_cli-0.1.2.tar.gz]
+[2024-04-27 23:00:27] INFO root fetch - main [MainThread]: End processing [pycis-cli]: success
+[2024-04-27 23:00:27] INFO root fetch - main [MainThread]: Store serial: [22961960]
