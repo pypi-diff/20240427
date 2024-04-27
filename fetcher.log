@@ -2986,3 +2986,15 @@ EOFError: EOF read where object expected
 [2024-04-27 02:57:11] INFO root fetch - processPackages [hebill]: Remove: archive file [/home/abi/fetcher/tmp/hebill-1.2.6.tar.gz]
 [2024-04-27 02:57:11] INFO root fetch - main [MainThread]: End processing [hebill]: success
 [2024-04-27 02:57:11] INFO root fetch - main [MainThread]: Store serial: [22954534]
+[2024-04-27 02:59:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22954534]
+[2024-04-27 02:59:19] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 02:59:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hebill
+[2024-04-27 02:59:19] INFO root fetch - processPackages [hebill]: New version: [1.2.6] Old Version: [1.2.5]
+[2024-04-27 02:59:19] INFO root fetch - processPackages [hebill]: Downloading https://files.pythonhosted.org/packages/be/d4/d1d43aad7a8a7d3d135150bdd3526bf0efbb8b446db0101a964d0937a29a/hebill-1.2.5.tar.gz
+[2024-04-27 02:59:20] INFO root fetch - processPackages [hebill]: Downloading https://files.pythonhosted.org/packages/98/5e/fb494267fe53c0206d7d589811dee2053edc91df7e554651a1dd2bf51acf/hebill-1.2.6.tar.gz
+[2024-04-27 02:59:20] INFO root fetch - processPackages [hebill]: executing diffoscope
+[2024-04-27 02:59:20] INFO root fetch - processPackages [hebill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hebill-1.2.5.tar.gz tmp/hebill-1.2.6.tar.gz --markdown 20240427/h/hebill/1.2.5-1.2.6/README.md --exclude *.pyd
+[2024-04-27 02:59:21] INFO root fetch - processPackages [hebill]: Remove: archive file [/home/abi/fetcher/tmp/hebill-1.2.5.tar.gz]
+[2024-04-27 02:59:21] INFO root fetch - processPackages [hebill]: Remove: archive file [/home/abi/fetcher/tmp/hebill-1.2.6.tar.gz]
+[2024-04-27 02:59:21] INFO root fetch - main [MainThread]: End processing [hebill]: success
+[2024-04-27 02:59:21] INFO root fetch - main [MainThread]: Store serial: [22954537]
