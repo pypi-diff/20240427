@@ -20991,3 +20991,12 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 22:46:40] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.6.dev9.tar.gz]
 [2024-04-27 22:46:40] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2024-04-27 22:46:40] INFO root fetch - main [MainThread]: Store serial: [22961866]
+[2024-04-27 22:48:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961866]
+[2024-04-27 22:48:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 22:48:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: betterpathlib
+[2024-04-27 22:48:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: adi-py-repacked
+[2024-04-27 22:48:56] WARNING root fetch - processPackages [adi-py-repacked]: Skipping, unable to determine old version
+[2024-04-27 22:48:56] INFO root fetch - main [MainThread]: End processing [adi-py-repacked] error
+[2024-04-27 22:48:56] WARNING root fetch - processPackages [betterpathlib]: Skipping, unable to determine old version
+[2024-04-27 22:48:56] INFO root fetch - main [MainThread]: End processing [betterpathlib] error
+[2024-04-27 22:48:56] INFO root fetch - main [MainThread]: Store serial: [22961873]
