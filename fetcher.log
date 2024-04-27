@@ -20031,3 +20031,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 21:36:49] INFO root fetch - processPackages [pytapo]: Remove: archive file [/home/abi/fetcher/tmp/pytapo-3.3.9.tar.gz]
 [2024-04-27 21:36:49] INFO root fetch - main [MainThread]: End processing [pytapo]: success
 [2024-04-27 21:36:49] INFO root fetch - main [MainThread]: Store serial: [22961463]
+[2024-04-27 21:38:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961463]
+[2024-04-27 21:39:04] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 21:39:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bice
+[2024-04-27 21:39:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lusid-express
+[2024-04-27 21:39:04] INFO root fetch - processPackages [lusid-express]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-04-27 21:39:04] INFO root fetch - processPackages [bice]: New version: [0.3.8] Old Version: [0.3.7]
+[2024-04-27 21:39:04] INFO root fetch - processPackages [lusid-express]: Downloading https://files.pythonhosted.org/packages/4e/15/1b9ca20b68aa1c206f2cf16739f898b7fa5af9ac26c9de5ba37a9506d985/lusid_express-1.0.5.tar.gz
+[2024-04-27 21:39:04] INFO root fetch - processPackages [bice]: Downloading https://files.pythonhosted.org/packages/ac/79/d3c5d832c4071cbd7e428dbfd0abbf0ebadc85c07d57e96e067e6c78fc2c/bice-0.3.7.tar.gz
+[2024-04-27 21:39:04] INFO root fetch - processPackages [lusid-express]: Downloading https://files.pythonhosted.org/packages/f9/02/d02f278b17479010ce86b58bf2df06daf597046462f4b7c22cd54b975a19/lusid_express-1.0.6.tar.gz
+[2024-04-27 21:39:04] INFO root fetch - processPackages [lusid-express]: executing diffoscope
+[2024-04-27 21:39:04] INFO root fetch - processPackages [lusid-express]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid_express-1.0.5.tar.gz tmp/lusid_express-1.0.6.tar.gz --markdown 20240427/l/lusid-express/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-04-27 21:39:04] INFO root fetch - processPackages [bice]: Downloading https://files.pythonhosted.org/packages/02/55/df0c715286dddab126c0484db2acb986579ad095f3feffd0561c187d1acc/bice-0.3.8.tar.gz
+[2024-04-27 21:39:05] INFO root fetch - processPackages [bice]: executing diffoscope
+[2024-04-27 21:39:05] INFO root fetch - processPackages [bice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bice-0.3.7.tar.gz tmp/bice-0.3.8.tar.gz --markdown 20240427/b/bice/0.3.7-0.3.8/README.md --exclude *.pyd
+[2024-04-27 21:39:05] INFO root fetch - processPackages [lusid-express]: Remove: archive file [/home/abi/fetcher/tmp/lusid_express-1.0.5.tar.gz]
+[2024-04-27 21:39:05] INFO root fetch - processPackages [lusid-express]: Remove: archive file [/home/abi/fetcher/tmp/lusid_express-1.0.6.tar.gz]
+[2024-04-27 21:39:05] INFO root fetch - main [MainThread]: End processing [lusid-express]: success
+[2024-04-27 21:39:05] INFO root fetch - processPackages [bice]: Remove: archive file [/home/abi/fetcher/tmp/bice-0.3.7.tar.gz]
+[2024-04-27 21:39:05] INFO root fetch - processPackages [bice]: Remove: archive file [/home/abi/fetcher/tmp/bice-0.3.8.tar.gz]
+[2024-04-27 21:39:05] INFO root fetch - main [MainThread]: End processing [bice]: success
+[2024-04-27 21:39:05] INFO root fetch - main [MainThread]: Store serial: [22961468]
