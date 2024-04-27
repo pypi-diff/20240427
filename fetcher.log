@@ -18518,3 +18518,96 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 19:48:42] INFO root fetch - processPackages [biliup]: Remove: archive file [/home/abi/fetcher/tmp/biliup-0.4.9.tar.gz]
 [2024-04-27 19:48:42] INFO root fetch - main [MainThread]: End processing [biliup]: success
 [2024-04-27 19:48:42] INFO root fetch - main [MainThread]: Store serial: [22960719]
+[2024-04-27 19:50:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960719]
+[2024-04-27 19:50:57] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-04-27 19:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-torque
+[2024-04-27 19:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torqueclient
+[2024-04-27 19:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: arrayutilities
+[2024-04-27 19:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: data-diff-viewer
+[2024-04-27 19:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nested-grid-plotter
+[2024-04-27 19:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: infodesreg
+[2024-04-27 19:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gai-lib
+[2024-04-27 19:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mojo-credentials
+[2024-04-27 19:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: deltachat2
+[2024-04-27 19:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: datadreamer
+[2024-04-27 19:50:57] INFO root fetch - processPackages [gai-lib]: New version: [0.99] Old Version: [0.98]
+[2024-04-27 19:50:57] INFO root fetch - processPackages [arrayutilities]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-27 19:50:57] INFO root fetch - processPackages [data-diff-viewer]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-04-27 19:50:57] INFO root fetch - processPackages [infodesreg]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-27 19:50:57] INFO root fetch - processPackages [mojo-credentials]: New version: [1.3.5] Old Version: [1.3.4]
+[2024-04-27 19:50:57] INFO root fetch - processPackages [deltachat2]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-27 19:50:57] INFO root fetch - processPackages [torqueclient]: New version: [0.6.0] Old Version: [0.5.7]
+[2024-04-27 19:50:57] INFO root fetch - processPackages [gai-lib]: Downloading https://files.pythonhosted.org/packages/d7/ec/73324c4782c5a7d475e0473a63a34aefe2a50c28e3e95e74572ba8e24319/gai-lib-0.98.tar.gz
+[2024-04-27 19:50:57] INFO root fetch - processPackages [nested-grid-plotter]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-04-27 19:50:57] INFO root fetch - processPackages [django-torque]: New version: [0.6.0] Old Version: [0.5.7]
+[2024-04-27 19:50:57] INFO root fetch - processPackages [arrayutilities]: Downloading https://files.pythonhosted.org/packages/62/83/5b15386d9730c17b2a56630410c2c387bb3fb101ccef4a03c7151f87042f/arrayutilities-1.0.1.tar.gz
+[2024-04-27 19:50:57] INFO root fetch - processPackages [data-diff-viewer]: Downloading https://files.pythonhosted.org/packages/11/61/02d10fb3a661f1ba26d79b776615d0bac2605333982788e64b253440d069/data_diff_viewer-0.3.0.tar.gz
+[2024-04-27 19:50:57] INFO root fetch - processPackages [datadreamer]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-27 19:50:57] INFO root fetch - processPackages [mojo-credentials]: Downloading https://files.pythonhosted.org/packages/57/a1/59835f7fd11e0f5b021bafdc4f41778d0dc8d3b97003f73d51d17040d643/mojo_credentials-1.3.4.tar.gz
+[2024-04-27 19:50:57] INFO root fetch - processPackages [infodesreg]: Downloading https://files.pythonhosted.org/packages/53/27/4a92c67e97ea84c813ff0f73b6a68b7e827f0b69b5d18b454f4017d55765/infodesreg-0.0.4.tar.gz
+[2024-04-27 19:50:57] INFO root fetch - processPackages [torqueclient]: Downloading https://files.pythonhosted.org/packages/88/5e/227630e98e68ae4c6c9c94e5725d2397064c848d15fe9d6e8d0c43f0d0bd/torqueclient-0.5.7.tar.gz
+[2024-04-27 19:50:57] INFO root fetch - processPackages [django-torque]: Downloading https://files.pythonhosted.org/packages/ad/71/03f4866cd18c019b53f6513e0eb8fdd3f1bd0662ee3569a2670810faa399/django-torque-0.5.7.tar.gz
+[2024-04-27 19:50:57] INFO root fetch - processPackages [nested-grid-plotter]: Downloading https://files.pythonhosted.org/packages/0d/74/d8ba27914478c62648618d207c4ba1a9e5bf0bee8cdb047766560d9c91f8/nested_grid_plotter-1.1.1.tar.gz
+[2024-04-27 19:50:57] INFO root fetch - processPackages [deltachat2]: Downloading https://files.pythonhosted.org/packages/08/8d/5399f431d7833ce3faf093723d9e55e7500b1cf2a9b6ef3b52d4dfbecf46/deltachat2-0.4.0.tar.gz
+[2024-04-27 19:50:57] INFO root fetch - processPackages [gai-lib]: Downloading https://files.pythonhosted.org/packages/fd/52/02eb2fe55760540c73b1796ab0f903f7b077179fa1269206b0ff8d4909cf/gai-lib-0.99.tar.gz
+[2024-04-27 19:50:57] INFO root fetch - processPackages [datadreamer]: Downloading https://files.pythonhosted.org/packages/01/e4/88716c4f0e0f981e0d00904b51643b4795c8747da1430d0726d736382b84/datadreamer-0.1.4.tar.gz
+[2024-04-27 19:50:57] INFO root fetch - processPackages [data-diff-viewer]: Downloading https://files.pythonhosted.org/packages/0a/47/d524e4f36f3159064a428f097060519cbbd6d3c4a0c585480bdd39af8c91/data_diff_viewer-0.3.1.tar.gz
+[2024-04-27 19:50:57] INFO root fetch - processPackages [mojo-credentials]: Downloading https://files.pythonhosted.org/packages/f6/7a/6b69099cd76124d8a7017f42fb0be219a5afe83cf28150a97d09ecba1d72/mojo_credentials-1.3.5.tar.gz
+[2024-04-27 19:50:57] INFO root fetch - processPackages [arrayutilities]: Downloading https://files.pythonhosted.org/packages/bb/73/1983e9082bbb4a3902b025266f33f123ae3e0dd09ab53f0224ed1e1caa2f/arrayutilities-1.0.2.tar.gz
+[2024-04-27 19:50:57] INFO root fetch - processPackages [infodesreg]: Downloading https://files.pythonhosted.org/packages/43/c9/e49c01176e88f749ea6bfe2ed74cea7efc22e676c3d234bf3aa55f8eb174/infodesreg-0.0.5.tar.gz
+[2024-04-27 19:50:57] INFO root fetch - processPackages [gai-lib]: executing diffoscope
+[2024-04-27 19:50:57] INFO root fetch - processPackages [gai-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gai-lib-0.98.tar.gz tmp/gai-lib-0.99.tar.gz --markdown 20240427/g/gai-lib/0.98-0.99/README.md --exclude *.pyd
+[2024-04-27 19:50:58] INFO root fetch - processPackages [mojo-credentials]: executing diffoscope
+[2024-04-27 19:50:58] INFO root fetch - processPackages [mojo-credentials]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mojo_credentials-1.3.4.tar.gz tmp/mojo_credentials-1.3.5.tar.gz --markdown 20240427/m/mojo-credentials/1.3.4-1.3.5/README.md --exclude *.pyd
+[2024-04-27 19:50:58] INFO root fetch - processPackages [data-diff-viewer]: executing diffoscope
+[2024-04-27 19:50:58] INFO root fetch - processPackages [data-diff-viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_diff_viewer-0.3.0.tar.gz tmp/data_diff_viewer-0.3.1.tar.gz --markdown 20240427/d/data-diff-viewer/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-04-27 19:50:58] INFO root fetch - processPackages [torqueclient]: Downloading https://files.pythonhosted.org/packages/dc/92/aebff4d760ce75b2e71f6c333c1be49cf97d4be2ee8754afbfc57861f65c/torqueclient-0.6.0.tar.gz
+[2024-04-27 19:50:58] INFO root fetch - processPackages [infodesreg]: executing diffoscope
+[2024-04-27 19:50:58] INFO root fetch - processPackages [infodesreg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/infodesreg-0.0.4.tar.gz tmp/infodesreg-0.0.5.tar.gz --markdown 20240427/i/infodesreg/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-27 19:50:58] INFO root fetch - processPackages [arrayutilities]: executing diffoscope
+[2024-04-27 19:50:58] INFO root fetch - processPackages [arrayutilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arrayutilities-1.0.1.tar.gz tmp/arrayutilities-1.0.2.tar.gz --markdown 20240427/a/arrayutilities/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-27 19:50:58] INFO root fetch - processPackages [nested-grid-plotter]: Downloading https://files.pythonhosted.org/packages/19/93/4e76e4804ba2493d77bf6d449a7361ec92d5ecb4fb7f6bcdb4f4181383b7/nested_grid_plotter-1.1.2.tar.gz
+[2024-04-27 19:50:58] INFO root fetch - processPackages [django-torque]: Downloading https://files.pythonhosted.org/packages/23/7a/412c2cd97b47ad9e30d306aa201715a7c31ae00d80cf20d1820718b67bc3/django_torque-0.6.0.tar.gz
+[2024-04-27 19:50:58] INFO root fetch - processPackages [deltachat2]: Downloading https://files.pythonhosted.org/packages/b1/5b/5a82306176d8fa8c48018f0ba149c6b675a2b54851764ea4bfcb54d98764/deltachat2-0.5.0.tar.gz
+[2024-04-27 19:50:58] INFO root fetch - processPackages [torqueclient]: executing diffoscope
+[2024-04-27 19:50:58] INFO root fetch - processPackages [torqueclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torqueclient-0.5.7.tar.gz tmp/torqueclient-0.6.0.tar.gz --markdown 20240427/t/torqueclient/0.5.7-0.6.0/README.md --exclude *.pyd
+[2024-04-27 19:50:58] INFO root fetch - processPackages [django-torque]: executing diffoscope
+[2024-04-27 19:50:58] INFO root fetch - processPackages [django-torque]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-torque-0.5.7.tar.gz tmp/django_torque-0.6.0.tar.gz --markdown 20240427/d/django-torque/0.5.7-0.6.0/README.md --exclude *.pyd
+[2024-04-27 19:50:58] INFO root fetch - processPackages [datadreamer]: Downloading https://files.pythonhosted.org/packages/21/47/a5ebc3f0b8aaf07ddde9b0e76161edc9c18e1204f03b2cf451cffb5f78db/datadreamer-0.1.5.tar.gz
+[2024-04-27 19:50:58] INFO root fetch - processPackages [deltachat2]: executing diffoscope
+[2024-04-27 19:50:58] INFO root fetch - processPackages [deltachat2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deltachat2-0.4.0.tar.gz tmp/deltachat2-0.5.0.tar.gz --markdown 20240427/d/deltachat2/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-04-27 19:50:58] INFO root fetch - processPackages [nested-grid-plotter]: executing diffoscope
+[2024-04-27 19:50:58] INFO root fetch - processPackages [nested-grid-plotter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nested_grid_plotter-1.1.1.tar.gz tmp/nested_grid_plotter-1.1.2.tar.gz --markdown 20240427/n/nested-grid-plotter/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-04-27 19:50:58] INFO root fetch - processPackages [infodesreg]: Remove: archive file [/home/abi/fetcher/tmp/infodesreg-0.0.4.tar.gz]
+[2024-04-27 19:50:58] INFO root fetch - processPackages [infodesreg]: Remove: archive file [/home/abi/fetcher/tmp/infodesreg-0.0.5.tar.gz]
+[2024-04-27 19:50:58] INFO root fetch - main [MainThread]: End processing [infodesreg]: success
+[2024-04-27 19:50:58] INFO root fetch - processPackages [mojo-credentials]: Remove: archive file [/home/abi/fetcher/tmp/mojo_credentials-1.3.4.tar.gz]
+[2024-04-27 19:50:58] INFO root fetch - processPackages [mojo-credentials]: Remove: archive file [/home/abi/fetcher/tmp/mojo_credentials-1.3.5.tar.gz]
+[2024-04-27 19:50:58] INFO root fetch - main [MainThread]: End processing [mojo-credentials]: success
+[2024-04-27 19:50:58] INFO root fetch - processPackages [gai-lib]: Remove: archive file [/home/abi/fetcher/tmp/gai-lib-0.98.tar.gz]
+[2024-04-27 19:50:58] INFO root fetch - processPackages [gai-lib]: Remove: archive file [/home/abi/fetcher/tmp/gai-lib-0.99.tar.gz]
+[2024-04-27 19:50:58] INFO root fetch - main [MainThread]: End processing [gai-lib]: success
+[2024-04-27 19:50:59] INFO root fetch - processPackages [torqueclient]: Remove: archive file [/home/abi/fetcher/tmp/torqueclient-0.5.7.tar.gz]
+[2024-04-27 19:50:59] INFO root fetch - processPackages [torqueclient]: Remove: archive file [/home/abi/fetcher/tmp/torqueclient-0.6.0.tar.gz]
+[2024-04-27 19:50:59] INFO root fetch - main [MainThread]: End processing [torqueclient]: success
+[2024-04-27 19:50:59] INFO root fetch - processPackages [arrayutilities]: Remove: archive file [/home/abi/fetcher/tmp/arrayutilities-1.0.1.tar.gz]
+[2024-04-27 19:50:59] INFO root fetch - processPackages [arrayutilities]: Remove: archive file [/home/abi/fetcher/tmp/arrayutilities-1.0.2.tar.gz]
+[2024-04-27 19:50:59] INFO root fetch - main [MainThread]: End processing [arrayutilities]: success
+[2024-04-27 19:50:59] INFO root fetch - processPackages [data-diff-viewer]: Remove: archive file [/home/abi/fetcher/tmp/data_diff_viewer-0.3.0.tar.gz]
+[2024-04-27 19:50:59] INFO root fetch - processPackages [data-diff-viewer]: Remove: archive file [/home/abi/fetcher/tmp/data_diff_viewer-0.3.1.tar.gz]
+[2024-04-27 19:50:59] INFO root fetch - main [MainThread]: End processing [data-diff-viewer]: success
+[2024-04-27 19:50:59] INFO root fetch - processPackages [deltachat2]: Remove: archive file [/home/abi/fetcher/tmp/deltachat2-0.4.0.tar.gz]
+[2024-04-27 19:50:59] INFO root fetch - processPackages [deltachat2]: Remove: archive file [/home/abi/fetcher/tmp/deltachat2-0.5.0.tar.gz]
+[2024-04-27 19:50:59] INFO root fetch - main [MainThread]: End processing [deltachat2]: success
+[2024-04-27 19:50:59] INFO root fetch - processPackages [django-torque]: Remove: archive file [/home/abi/fetcher/tmp/django-torque-0.5.7.tar.gz]
+[2024-04-27 19:50:59] INFO root fetch - processPackages [django-torque]: Remove: archive file [/home/abi/fetcher/tmp/django_torque-0.6.0.tar.gz]
+[2024-04-27 19:50:59] INFO root fetch - main [MainThread]: End processing [django-torque]: success
+[2024-04-27 19:50:59] INFO root fetch - processPackages [nested-grid-plotter]: Remove: archive file [/home/abi/fetcher/tmp/nested_grid_plotter-1.1.1.tar.gz]
+[2024-04-27 19:50:59] INFO root fetch - processPackages [nested-grid-plotter]: Remove: archive file [/home/abi/fetcher/tmp/nested_grid_plotter-1.1.2.tar.gz]
+[2024-04-27 19:50:59] INFO root fetch - main [MainThread]: End processing [nested-grid-plotter]: success
+[2024-04-27 19:51:01] INFO root fetch - processPackages [datadreamer]: executing diffoscope
+[2024-04-27 19:51:01] INFO root fetch - processPackages [datadreamer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datadreamer-0.1.4.tar.gz tmp/datadreamer-0.1.5.tar.gz --markdown 20240427/d/datadreamer/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-27 19:51:02] INFO root fetch - processPackages [datadreamer]: Remove: archive file [/home/abi/fetcher/tmp/datadreamer-0.1.4.tar.gz]
+[2024-04-27 19:51:02] INFO root fetch - processPackages [datadreamer]: Remove: archive file [/home/abi/fetcher/tmp/datadreamer-0.1.5.tar.gz]
+[2024-04-27 19:51:02] INFO root fetch - main [MainThread]: End processing [datadreamer]: success
+[2024-04-27 19:51:02] INFO root fetch - main [MainThread]: Store serial: [22960745]
