@@ -17318,3 +17318,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 18:17:02] INFO root fetch - processPackages [mlops-api-gemstack]: Remove: archive file [/home/abi/fetcher/tmp/mlops_api_gemstack-0.3.5.tar.gz]
 [2024-04-27 18:17:02] INFO root fetch - main [MainThread]: End processing [mlops-api-gemstack]: success
 [2024-04-27 18:17:02] INFO root fetch - main [MainThread]: Store serial: [22960107]
+[2024-04-27 18:19:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960107]
+[2024-04-27 18:19:14] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 18:19:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PgQueuer
+[2024-04-27 18:19:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: helper-for-maxi
+[2024-04-27 18:19:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rtorrent-rpc
+[2024-04-27 18:19:14] WARNING root fetch - processPackages [PgQueuer]: Skipping, unable to determine old version
+[2024-04-27 18:19:14] INFO root fetch - processPackages [helper-for-maxi]: New version: [1.1.3] Old Version: [1.1.2]
+[2024-04-27 18:19:14] INFO root fetch - main [MainThread]: End processing [PgQueuer] error
+[2024-04-27 18:19:14] INFO root fetch - processPackages [helper-for-maxi]: Downloading https://files.pythonhosted.org/packages/ca/60/ed58d5f02433123743e1f1adb87df916b19562c49a746116c9132187a8c1/helper_for_maxi-1.1.2.tar.gz
+[2024-04-27 18:19:14] INFO root fetch - processPackages [rtorrent-rpc]: New version: [0.6.1] Old Version: [0.6.0]
+[2024-04-27 18:19:15] INFO root fetch - processPackages [helper-for-maxi]: Downloading https://files.pythonhosted.org/packages/0a/dc/87dfd0474050c86b55510d9e9d35d7582af3be1f0879f3c73d058dbd7d87/helper_for_maxi-1.1.3.tar.gz
+[2024-04-27 18:19:15] INFO root fetch - processPackages [rtorrent-rpc]: Downloading https://files.pythonhosted.org/packages/1e/0c/66b395f6d7f426b990f8c061d04504a14d6e92f1f813381c1e3cab314a96/rtorrent_rpc-0.6.0.tar.gz
+[2024-04-27 18:19:15] INFO root fetch - processPackages [helper-for-maxi]: executing diffoscope
+[2024-04-27 18:19:15] INFO root fetch - processPackages [helper-for-maxi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/helper_for_maxi-1.1.2.tar.gz tmp/helper_for_maxi-1.1.3.tar.gz --markdown 20240427/h/helper-for-maxi/1.1.2-1.1.3/README.md --exclude *.pyd
+[2024-04-27 18:19:15] INFO root fetch - processPackages [rtorrent-rpc]: Downloading https://files.pythonhosted.org/packages/53/42/9c00ecc131b74eccc9081350a3f4ccfc06c9e2f9410232d60aee08288971/rtorrent_rpc-0.6.1.tar.gz
+[2024-04-27 18:19:15] INFO root fetch - processPackages [rtorrent-rpc]: executing diffoscope
+[2024-04-27 18:19:15] INFO root fetch - processPackages [rtorrent-rpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rtorrent_rpc-0.6.0.tar.gz tmp/rtorrent_rpc-0.6.1.tar.gz --markdown 20240427/r/rtorrent-rpc/0.6.0-0.6.1/README.md --exclude *.pyd
+[2024-04-27 18:19:15] INFO root fetch - processPackages [helper-for-maxi]: Remove: archive file [/home/abi/fetcher/tmp/helper_for_maxi-1.1.2.tar.gz]
+[2024-04-27 18:19:15] INFO root fetch - processPackages [helper-for-maxi]: Remove: archive file [/home/abi/fetcher/tmp/helper_for_maxi-1.1.3.tar.gz]
+[2024-04-27 18:19:15] INFO root fetch - main [MainThread]: End processing [helper-for-maxi]: success
+[2024-04-27 18:19:16] INFO root fetch - processPackages [rtorrent-rpc]: Remove: archive file [/home/abi/fetcher/tmp/rtorrent_rpc-0.6.0.tar.gz]
+[2024-04-27 18:19:16] INFO root fetch - processPackages [rtorrent-rpc]: Remove: archive file [/home/abi/fetcher/tmp/rtorrent_rpc-0.6.1.tar.gz]
+[2024-04-27 18:19:16] INFO root fetch - main [MainThread]: End processing [rtorrent-rpc]: success
+[2024-04-27 18:19:16] INFO root fetch - main [MainThread]: Store serial: [22960118]
