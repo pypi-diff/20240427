@@ -9196,3 +9196,36 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 07:27:06] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.99.tar.gz]
 [2024-04-27 07:27:06] INFO root fetch - main [MainThread]: End processing [lbt-dragonfly]: success
 [2024-04-27 07:27:06] INFO root fetch - main [MainThread]: Store serial: [22956678]
+[2024-04-27 07:29:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956678]
+[2024-04-27 07:29:15] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-27 07:29:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: runtimepy
+[2024-04-27 07:29:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nleis
+[2024-04-27 07:29:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-steam-info
+[2024-04-27 07:29:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: crazy-thursday
+[2024-04-27 07:29:15] INFO root fetch - processPackages [runtimepy]: New version: [4.3.4] Old Version: [4.3.3]
+[2024-04-27 07:29:15] INFO root fetch - processPackages [crazy-thursday]: New version: [2024.4.27.0] Old Version: [2024.4.26.1]
+[2024-04-27 07:29:15] INFO root fetch - processPackages [runtimepy]: Downloading https://files.pythonhosted.org/packages/ec/22/cd1fdf28fbcc867ea42266e56b13c1c098da485a8a2e01ad08b491ce4a4a/runtimepy-4.3.3.tar.gz
+[2024-04-27 07:29:15] INFO root fetch - processPackages [nonebot-plugin-steam-info]: New version: [0.2.0] Old Version: [0.1.4]
+[2024-04-27 07:29:15] WARNING root fetch - processPackages [nleis]: Skipping, unable to determine old version
+[2024-04-27 07:29:15] INFO root fetch - main [MainThread]: End processing [nleis] error
+[2024-04-27 07:29:15] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/e0/7f/152a85b40a8a269f71364a1a87291091c27cbed9e3694ef904bf207e03d3/crazy_thursday-2024.4.26.1.tar.gz
+[2024-04-27 07:29:15] INFO root fetch - processPackages [nonebot-plugin-steam-info]: Downloading https://files.pythonhosted.org/packages/f0/1d/2a19f66cc7eaf4ec73d464cedaa8b4f629b8689e608da7d98903314d2cbc/nonebot_plugin_steam_info-0.1.4.tar.gz
+[2024-04-27 07:29:15] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/47/5d/5fc5a2818ef034fcd1b2deb368545ef99a91c33303f790b29d8fe784b709/crazy_thursday-2024.4.27.0.tar.gz
+[2024-04-27 07:29:15] INFO root fetch - processPackages [runtimepy]: Downloading https://files.pythonhosted.org/packages/0d/26/98fd44a17005dc38f8f56f6752cedbffaee9412a9a89b9ee12b628869c5f/runtimepy-4.3.4.tar.gz
+[2024-04-27 07:29:15] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2024-04-27 07:29:15] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy_thursday-2024.4.26.1.tar.gz tmp/crazy_thursday-2024.4.27.0.tar.gz --markdown 20240427/c/crazy-thursday/2024.4.26.1-2024.4.27.0/README.md --exclude *.pyd
+[2024-04-27 07:29:15] INFO root fetch - processPackages [runtimepy]: executing diffoscope
+[2024-04-27 07:29:15] INFO root fetch - processPackages [runtimepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/runtimepy-4.3.3.tar.gz tmp/runtimepy-4.3.4.tar.gz --markdown 20240427/r/runtimepy/4.3.3-4.3.4/README.md --exclude *.pyd
+[2024-04-27 07:29:15] INFO root fetch - processPackages [nonebot-plugin-steam-info]: Downloading https://files.pythonhosted.org/packages/21/aa/1423a68c6d843bd262a09c110b2ef4d4d441d21720734b6912c07a029c36/nonebot_plugin_steam_info-0.2.0.tar.gz
+[2024-04-27 07:29:15] INFO root fetch - processPackages [nonebot-plugin-steam-info]: executing diffoscope
+[2024-04-27 07:29:15] INFO root fetch - processPackages [nonebot-plugin-steam-info]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_steam_info-0.1.4.tar.gz tmp/nonebot_plugin_steam_info-0.2.0.tar.gz --markdown 20240427/n/nonebot-plugin-steam-info/0.1.4-0.2.0/README.md --exclude *.pyd
+[2024-04-27 07:29:16] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.4.26.1.tar.gz]
+[2024-04-27 07:29:16] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.4.27.0.tar.gz]
+[2024-04-27 07:29:16] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2024-04-27 07:29:16] INFO root fetch - processPackages [nonebot-plugin-steam-info]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_steam_info-0.1.4.tar.gz]
+[2024-04-27 07:29:16] INFO root fetch - processPackages [nonebot-plugin-steam-info]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_steam_info-0.2.0.tar.gz]
+[2024-04-27 07:29:16] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-steam-info]: success
+[2024-04-27 07:29:16] INFO root fetch - processPackages [runtimepy]: Remove: archive file [/home/abi/fetcher/tmp/runtimepy-4.3.3.tar.gz]
+[2024-04-27 07:29:16] INFO root fetch - processPackages [runtimepy]: Remove: archive file [/home/abi/fetcher/tmp/runtimepy-4.3.4.tar.gz]
+[2024-04-27 07:29:16] INFO root fetch - main [MainThread]: End processing [runtimepy]: success
+[2024-04-27 07:29:16] INFO root fetch - main [MainThread]: Store serial: [22956697]
