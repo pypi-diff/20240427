@@ -20259,3 +20259,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 21:55:02] INFO root fetch - processPackages [tart-tools]: Remove: archive file [/home/abi/fetcher/tmp/tart_tools-1.2.0b3.tar.gz]
 [2024-04-27 21:55:02] INFO root fetch - main [MainThread]: End processing [tart-tools]: success
 [2024-04-27 21:55:02] INFO root fetch - main [MainThread]: Store serial: [22961536]
+[2024-04-27 21:57:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22961536]
+[2024-04-27 21:57:16] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-27 21:57:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sqlite-vec
+[2024-04-27 21:57:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: datasette-sqlite-vec
+[2024-04-27 21:57:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sqlite-utils-sqlite-vec
+[2024-04-27 21:57:16] WARNING root fetch - processPackages [sqlite-vec]: Skipping, unable to determine old version
+[2024-04-27 21:57:16] INFO root fetch - main [MainThread]: End processing [sqlite-vec] error
+[2024-04-27 21:57:16] WARNING root fetch - processPackages [sqlite-utils-sqlite-vec]: Skipping, unable to determine old version
+[2024-04-27 21:57:16] INFO root fetch - main [MainThread]: End processing [sqlite-utils-sqlite-vec] error
+[2024-04-27 21:57:16] WARNING root fetch - processPackages [datasette-sqlite-vec]: Skipping, unable to determine old version
+[2024-04-27 21:57:16] INFO root fetch - main [MainThread]: End processing [datasette-sqlite-vec] error
+[2024-04-27 21:57:16] INFO root fetch - main [MainThread]: Store serial: [22961551]
