@@ -6918,3 +6918,15 @@ EOFError: EOF read where object expected
 [2024-04-27 03:55:44] INFO root fetch - processPackages [Mira-SimPEG]: Remove: archive file [/home/abi/fetcher/tmp/mira_simpeg-0.19.0.dev8.tar.gz]
 [2024-04-27 03:55:44] INFO root fetch - main [MainThread]: End processing [Mira-SimPEG]: success
 [2024-04-27 03:55:44] INFO root fetch - main [MainThread]: Store serial: [22955956]
+[2024-04-27 03:57:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22955956]
+[2024-04-27 03:57:54] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-27 03:57:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: egglog
+[2024-04-27 03:57:54] INFO root fetch - processPackages [egglog]: New version: [7.0.0] Old Version: [6.1.0]
+[2024-04-27 03:57:54] INFO root fetch - processPackages [egglog]: Downloading https://files.pythonhosted.org/packages/82/76/93e447f1b49edae9d102f0672e233c20ef51576a849ec2f776097306fdc0/egglog-6.1.0.tar.gz
+[2024-04-27 03:57:55] INFO root fetch - processPackages [egglog]: Downloading https://files.pythonhosted.org/packages/54/42/9966eaf45bbe96d3dc68f56fad7f8b9cae87f9a2e9bbbce87e9027fd7dae/egglog-7.0.0.tar.gz
+[2024-04-27 03:57:55] INFO root fetch - processPackages [egglog]: executing diffoscope
+[2024-04-27 03:57:55] INFO root fetch - processPackages [egglog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/egglog-6.1.0.tar.gz tmp/egglog-7.0.0.tar.gz --markdown 20240427/e/egglog/6.1.0-7.0.0/README.md --exclude *.pyd
+[2024-04-27 03:59:59] INFO root fetch - processPackages [egglog]: Remove: archive file [/home/abi/fetcher/tmp/egglog-6.1.0.tar.gz]
+[2024-04-27 03:59:59] INFO root fetch - processPackages [egglog]: Remove: archive file [/home/abi/fetcher/tmp/egglog-7.0.0.tar.gz]
+[2024-04-27 03:59:59] INFO root fetch - main [MainThread]: End processing [egglog]: success
+[2024-04-27 03:59:59] INFO root fetch - main [MainThread]: Store serial: [22955967]
