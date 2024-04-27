@@ -17665,3 +17665,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 18:48:19] INFO root fetch - processPackages [caroa04]: Remove: archive file [/home/abi/fetcher/tmp/caroa04-1.0.1.tar.gz]
 [2024-04-27 18:48:19] INFO root fetch - main [MainThread]: End processing [caroa04]: success
 [2024-04-27 18:48:19] INFO root fetch - main [MainThread]: Store serial: [22960273]
+[2024-04-27 18:50:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22960273]
+[2024-04-27 18:50:32] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-27 18:50:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gai-lib
+[2024-04-27 18:50:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: z4d-certified-devices
+[2024-04-27 18:50:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mlops-api-gemstack
+[2024-04-27 18:50:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: libdev
+[2024-04-27 18:50:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: DeFiLlama
+[2024-04-27 18:50:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: secured
+[2024-04-27 18:50:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: django-azure-auth
+[2024-04-27 18:50:32] INFO root fetch - processPackages [mlops-api-gemstack]: New version: [0.3.6] Old Version: [0.3.5]
+[2024-04-27 18:50:32] INFO root fetch - processPackages [gai-lib]: New version: [0.99] Old Version: [0.98]
+[2024-04-27 18:50:32] INFO root fetch - processPackages [z4d-certified-devices]: New version: [4.259] Old Version: [4.258]
+[2024-04-27 18:50:32] INFO root fetch - processPackages [mlops-api-gemstack]: Downloading https://files.pythonhosted.org/packages/3c/ec/9eda348233114f4d794b19c9e5e4382b7833058ed5b2219ef390746cc87c/mlops_api_gemstack-0.3.5.tar.gz
+[2024-04-27 18:50:32] INFO root fetch - processPackages [gai-lib]: Downloading https://files.pythonhosted.org/packages/d7/ec/73324c4782c5a7d475e0473a63a34aefe2a50c28e3e95e74572ba8e24319/gai-lib-0.98.tar.gz
+[2024-04-27 18:50:32] INFO root fetch - processPackages [DeFiLlama]: New version: [2.2.0] Old Version: [2.1.0]
+[2024-04-27 18:50:32] ERROR root fetch - processPackages [secured]: Unable to get metadata: No such project 'secured'
+[2024-04-27 18:50:32] INFO root fetch - main [MainThread]: End processing [secured] error
+[2024-04-27 18:50:32] INFO root fetch - processPackages [libdev]: New version: [0.9] Old Version: [0.8]
+[2024-04-27 18:50:32] INFO root fetch - processPackages [django-azure-auth]: New version: [1.3.0] Old Version: [1.2.2]
+[2024-04-27 18:50:32] INFO root fetch - processPackages [z4d-certified-devices]: Downloading https://files.pythonhosted.org/packages/12/8c/c7d1be153479e9b990baeb3ca5961e2404b358e47d0ea909f526211e4309/z4d_certified_devices-4.258.tar.gz
+[2024-04-27 18:50:32] INFO root fetch - processPackages [DeFiLlama]: Downloading https://files.pythonhosted.org/packages/dc/41/571422919f28e508f0b5d4dc80473173b8f4d6ca88e61ecdee8edafab585/DeFiLlama-2.1.0.tar.gz
+[2024-04-27 18:50:32] INFO root fetch - processPackages [libdev]: Downloading https://files.pythonhosted.org/packages/e2/8d/bcacab1d4f911d6fbf6c411dfb5a06ce836e521ccc40dc8175441fdb80b8/libdev-0.8.tar.gz
+[2024-04-27 18:50:32] INFO root fetch - processPackages [gai-lib]: Downloading https://files.pythonhosted.org/packages/fd/52/02eb2fe55760540c73b1796ab0f903f7b077179fa1269206b0ff8d4909cf/gai-lib-0.99.tar.gz
+[2024-04-27 18:50:32] INFO root fetch - processPackages [django-azure-auth]: Downloading https://files.pythonhosted.org/packages/ff/7a/fe7a7b3b4100e6d8436d8055ba2b1650b1893c3545dc2aa5e5b8aa0c8bdd/django_azure_auth-1.2.2.tar.gz
+[2024-04-27 18:50:32] INFO root fetch - processPackages [mlops-api-gemstack]: Downloading https://files.pythonhosted.org/packages/88/45/531354bd762a87544035860a46c0158f90d3acd2da5de74f2a5439f74bbe/mlops_api_gemstack-0.3.6.tar.gz
+[2024-04-27 18:50:33] INFO root fetch - processPackages [gai-lib]: executing diffoscope
+[2024-04-27 18:50:33] INFO root fetch - processPackages [gai-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gai-lib-0.98.tar.gz tmp/gai-lib-0.99.tar.gz --markdown 20240427/g/gai-lib/0.98-0.99/README.md --exclude *.pyd
+[2024-04-27 18:50:33] INFO root fetch - processPackages [mlops-api-gemstack]: executing diffoscope
+[2024-04-27 18:50:33] INFO root fetch - processPackages [mlops-api-gemstack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlops_api_gemstack-0.3.5.tar.gz tmp/mlops_api_gemstack-0.3.6.tar.gz --markdown 20240427/m/mlops-api-gemstack/0.3.5-0.3.6/README.md --exclude *.pyd
+[2024-04-27 18:50:33] INFO root fetch - processPackages [z4d-certified-devices]: Downloading https://files.pythonhosted.org/packages/b8/c0/25f572bce1d217eeb8a7bd39c4ab67bbd217fd065e0acdb15679f4cfc558/z4d_certified_devices-4.259.tar.gz
+[2024-04-27 18:50:33] INFO root fetch - processPackages [DeFiLlama]: Downloading https://files.pythonhosted.org/packages/a2/ce/b931bd67e2ddf0196a1ab991005a7db8e823846d3ee8efa60dbe63173c8c/defillama-2.2.0.tar.gz
+[2024-04-27 18:50:33] INFO root fetch - processPackages [django-azure-auth]: Downloading https://files.pythonhosted.org/packages/5f/22/31e58fc0e991b25afee6dc78f1d6481546e074fdb90b517b776730cdd78d/django_azure_auth-1.3.0.tar.gz
+[2024-04-27 18:50:33] INFO root fetch - processPackages [z4d-certified-devices]: executing diffoscope
+[2024-04-27 18:50:33] INFO root fetch - processPackages [z4d-certified-devices]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/z4d_certified_devices-4.258.tar.gz tmp/z4d_certified_devices-4.259.tar.gz --markdown 20240427/z/z4d-certified-devices/4.258-4.259/README.md --exclude *.pyd
+[2024-04-27 18:50:33] INFO root fetch - processPackages [DeFiLlama]: executing diffoscope
+[2024-04-27 18:50:33] INFO root fetch - processPackages [DeFiLlama]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DeFiLlama-2.1.0.tar.gz tmp/defillama-2.2.0.tar.gz --markdown 20240427/D/DeFiLlama/2.1.0-2.2.0/README.md --exclude *.pyd
+[2024-04-27 18:50:33] INFO root fetch - processPackages [django-azure-auth]: executing diffoscope
+[2024-04-27 18:50:33] INFO root fetch - processPackages [django-azure-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_azure_auth-1.2.2.tar.gz tmp/django_azure_auth-1.3.0.tar.gz --markdown 20240427/d/django-azure-auth/1.2.2-1.3.0/README.md --exclude *.pyd
+[2024-04-27 18:50:33] INFO root fetch - processPackages [libdev]: Downloading https://files.pythonhosted.org/packages/7d/2f/227c058dbbd649c3bb70bbd6d279691828eba2b5bac3cf27685382669b09/libdev-0.9.tar.gz
+[2024-04-27 18:50:33] INFO root fetch - processPackages [mlops-api-gemstack]: Remove: archive file [/home/abi/fetcher/tmp/mlops_api_gemstack-0.3.5.tar.gz]
+[2024-04-27 18:50:33] INFO root fetch - processPackages [mlops-api-gemstack]: Remove: archive file [/home/abi/fetcher/tmp/mlops_api_gemstack-0.3.6.tar.gz]
+[2024-04-27 18:50:33] INFO root fetch - main [MainThread]: End processing [mlops-api-gemstack]: success
+[2024-04-27 18:50:33] INFO root fetch - processPackages [gai-lib]: Remove: archive file [/home/abi/fetcher/tmp/gai-lib-0.98.tar.gz]
+[2024-04-27 18:50:33] INFO root fetch - processPackages [gai-lib]: Remove: archive file [/home/abi/fetcher/tmp/gai-lib-0.99.tar.gz]
+[2024-04-27 18:50:33] INFO root fetch - main [MainThread]: End processing [gai-lib]: success
+[2024-04-27 18:50:33] INFO root fetch - processPackages [libdev]: executing diffoscope
+[2024-04-27 18:50:33] INFO root fetch - processPackages [libdev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libdev-0.8.tar.gz tmp/libdev-0.9.tar.gz --markdown 20240427/l/libdev/0.8-0.9/README.md --exclude *.pyd
+[2024-04-27 18:50:34] INFO root fetch - processPackages [django-azure-auth]: Remove: archive file [/home/abi/fetcher/tmp/django_azure_auth-1.2.2.tar.gz]
+[2024-04-27 18:50:34] INFO root fetch - processPackages [django-azure-auth]: Remove: archive file [/home/abi/fetcher/tmp/django_azure_auth-1.3.0.tar.gz]
+[2024-04-27 18:50:34] INFO root fetch - main [MainThread]: End processing [django-azure-auth]: success
+[2024-04-27 18:50:34] INFO root fetch - processPackages [DeFiLlama]: Remove: archive file [/home/abi/fetcher/tmp/DeFiLlama-2.1.0.tar.gz]
+[2024-04-27 18:50:34] INFO root fetch - processPackages [DeFiLlama]: Remove: archive file [/home/abi/fetcher/tmp/defillama-2.2.0.tar.gz]
+[2024-04-27 18:50:34] INFO root fetch - main [MainThread]: End processing [DeFiLlama]: success
+[2024-04-27 18:50:34] INFO root fetch - processPackages [libdev]: Remove: archive file [/home/abi/fetcher/tmp/libdev-0.8.tar.gz]
+[2024-04-27 18:50:34] INFO root fetch - processPackages [libdev]: Remove: archive file [/home/abi/fetcher/tmp/libdev-0.9.tar.gz]
+[2024-04-27 18:50:34] INFO root fetch - main [MainThread]: End processing [libdev]: success
+[2024-04-27 18:50:34] INFO root fetch - processPackages [z4d-certified-devices]: Remove: archive file [/home/abi/fetcher/tmp/z4d_certified_devices-4.258.tar.gz]
+[2024-04-27 18:50:34] INFO root fetch - processPackages [z4d-certified-devices]: Remove: archive file [/home/abi/fetcher/tmp/z4d_certified_devices-4.259.tar.gz]
+[2024-04-27 18:50:34] INFO root fetch - main [MainThread]: End processing [z4d-certified-devices]: success
+[2024-04-27 18:50:34] INFO root fetch - main [MainThread]: Store serial: [22960292]
