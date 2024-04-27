@@ -9793,3 +9793,26 @@ libarchive.exception.ArchiveError: Unrecognized archive format (errno=84, retcod
 [2024-04-27 08:35:12] INFO root fetch - processPackages [sharemyai-utils]: Remove: archive file [/home/abi/fetcher/tmp/sharemyai_utils-0.1.9.tar.gz]
 [2024-04-27 08:35:12] INFO root fetch - main [MainThread]: End processing [sharemyai-utils]: success
 [2024-04-27 08:35:12] INFO root fetch - main [MainThread]: Store serial: [22956956]
+[2024-04-27 08:37:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956956]
+[2024-04-27 08:37:22] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-27 08:39:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22956956]
+[2024-04-27 08:39:27] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-27 08:39:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arctix
+[2024-04-27 08:39:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyscinloopsr
+[2024-04-27 08:39:28] INFO root fetch - processPackages [pyscinloopsr]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-27 08:39:28] INFO root fetch - processPackages [pyscinloopsr]: Downloading https://files.pythonhosted.org/packages/98/21/5809d8e4c42d0207d6fd61e35cf0683da0e0cc5f1d10fa87e864b000cfa6/pyscinloopsr-1.0.8.tar.gz
+[2024-04-27 08:39:28] INFO root fetch - processPackages [arctix]: New version: [0.0.3a0] Old Version: [0.0.2a17]
+[2024-04-27 08:39:28] INFO root fetch - processPackages [arctix]: Downloading https://files.pythonhosted.org/packages/d9/a2/bd40eff5b7effc9de9cbd731606ad5e05ac13b1b7d94b0ca08c4107d76f9/arctix-0.0.2a17.tar.gz
+[2024-04-27 08:39:28] INFO root fetch - processPackages [pyscinloopsr]: Downloading https://files.pythonhosted.org/packages/c2/79/a3b3e1c4377a54b84d92a6ce4a8d70f9bb57364bdbe1ec2657397e8360cd/pyscinloopsr-1.0.9.tar.gz
+[2024-04-27 08:39:28] INFO root fetch - processPackages [pyscinloopsr]: executing diffoscope
+[2024-04-27 08:39:28] INFO root fetch - processPackages [pyscinloopsr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscinloopsr-1.0.8.tar.gz tmp/pyscinloopsr-1.0.9.tar.gz --markdown 20240427/p/pyscinloopsr/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-27 08:39:28] INFO root fetch - processPackages [arctix]: Downloading https://files.pythonhosted.org/packages/4f/1f/3561e1269756a82588509b793f8df9c7e9987ed4fe4b1250b0e747201507/arctix-0.0.3a0.tar.gz
+[2024-04-27 08:39:28] INFO root fetch - processPackages [arctix]: executing diffoscope
+[2024-04-27 08:39:28] INFO root fetch - processPackages [arctix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arctix-0.0.2a17.tar.gz tmp/arctix-0.0.3a0.tar.gz --markdown 20240427/a/arctix/0.0.2a17-0.0.3a0/README.md --exclude *.pyd
+[2024-04-27 08:39:29] INFO root fetch - processPackages [pyscinloopsr]: Remove: archive file [/home/abi/fetcher/tmp/pyscinloopsr-1.0.8.tar.gz]
+[2024-04-27 08:39:29] INFO root fetch - processPackages [pyscinloopsr]: Remove: archive file [/home/abi/fetcher/tmp/pyscinloopsr-1.0.9.tar.gz]
+[2024-04-27 08:39:29] INFO root fetch - main [MainThread]: End processing [pyscinloopsr]: success
+[2024-04-27 08:39:29] INFO root fetch - processPackages [arctix]: Remove: archive file [/home/abi/fetcher/tmp/arctix-0.0.2a17.tar.gz]
+[2024-04-27 08:39:29] INFO root fetch - processPackages [arctix]: Remove: archive file [/home/abi/fetcher/tmp/arctix-0.0.3a0.tar.gz]
+[2024-04-27 08:39:29] INFO root fetch - main [MainThread]: End processing [arctix]: success
+[2024-04-27 08:39:29] INFO root fetch - main [MainThread]: Store serial: [22956962]
