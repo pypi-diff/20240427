@@ -14621,3 +14621,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-27 15:22:31] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
 [2024-04-27 15:22:31] INFO root fetch - main [MainThread]: End processing [yeref]: success
 [2024-04-27 15:22:31] INFO root fetch - main [MainThread]: Store serial: [22959054]
+[2024-04-27 15:24:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22959054]
+[2024-04-27 15:24:40] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-27 15:24:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: myPYPI9
+[2024-04-27 15:24:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-115
+[2024-04-27 15:24:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PySDM
+[2024-04-27 15:24:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PySDM-examples
+[2024-04-27 15:24:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: geoparser
+[2024-04-27 15:24:40] INFO root fetch - processPackages [geoparser]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-27 15:24:40] INFO root fetch - processPackages [python-115]: New version: [0.0.6.9] Old Version: [0.0.6.8]
+[2024-04-27 15:24:40] INFO root fetch - processPackages [myPYPI9]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-04-27 15:24:40] INFO root fetch - processPackages [geoparser]: Downloading https://files.pythonhosted.org/packages/bb/58/f5e52a3aea5b6151ff8a44d8379ad0dc16026853383d46a668af4cac3629/geoparser-0.1.1.tar.gz
+[2024-04-27 15:24:40] INFO root fetch - processPackages [PySDM-examples]: New version: [2.9] Old Version: [2.8]
+[2024-04-27 15:24:40] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/0d/82/b9dc2663abe8e57bd0094c411156e50e539a5716a7046c349ddff3125ecc/python_115-0.0.6.8.tar.gz
+[2024-04-27 15:24:40] INFO root fetch - processPackages [myPYPI9]: Downloading https://files.pythonhosted.org/packages/d2/03/5b0462b74e5bbe20e7683813ed6047ef9b8e0e11bbf832307c81a6eb57b0/mypypi9-0.7.8.tar.gz
+[2024-04-27 15:24:40] INFO root fetch - processPackages [PySDM]: New version: [2.9] Old Version: [2.8]
+[2024-04-27 15:24:40] INFO root fetch - processPackages [myPYPI9]: Downloading https://files.pythonhosted.org/packages/59/50/e6ade8fa894f63707b31ffb2a965aa60c3b56b9ba31f82374779f571167e/mypypi9-0.7.9.tar.gz
+[2024-04-27 15:24:40] INFO root fetch - processPackages [PySDM-examples]: Downloading https://files.pythonhosted.org/packages/4c/5f/2e48117f41afb88b71fd3561ca8f6ef534989001f0cc583f5af2f7a56fa1/PySDM-examples-2.8.tar.gz
+[2024-04-27 15:24:40] INFO root fetch - processPackages [PySDM]: Downloading https://files.pythonhosted.org/packages/17/d1/08e0d17cbe649fc4b7076f8d101822c798dbbb7083219645877912e8855e/PySDM-2.8.tar.gz
+[2024-04-27 15:24:40] INFO root fetch - processPackages [myPYPI9]: executing diffoscope
+[2024-04-27 15:24:40] INFO root fetch - processPackages [myPYPI9]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypypi9-0.7.8.tar.gz tmp/mypypi9-0.7.9.tar.gz --markdown 20240427/m/myPYPI9/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-04-27 15:24:40] INFO root fetch - processPackages [geoparser]: Downloading https://files.pythonhosted.org/packages/d6/83/256b9712343e7b4467b7babd0ce9cfc6e7338d7fa1636a0b35e6384f5a68/geoparser-0.1.2.tar.gz
+[2024-04-27 15:24:40] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/6d/47/bfe72207e79c7a6549a4b4536eb72aaf5ca1421c08a97018e0e3bbcd89dd/python_115-0.0.6.9.tar.gz
+[2024-04-27 15:24:40] INFO root fetch - processPackages [geoparser]: executing diffoscope
+[2024-04-27 15:24:40] INFO root fetch - processPackages [geoparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geoparser-0.1.1.tar.gz tmp/geoparser-0.1.2.tar.gz --markdown 20240427/g/geoparser/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-27 15:24:40] INFO root fetch - processPackages [python-115]: executing diffoscope
+[2024-04-27 15:24:40] INFO root fetch - processPackages [python-115]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_115-0.0.6.8.tar.gz tmp/python_115-0.0.6.9.tar.gz --markdown 20240427/p/python-115/0.0.6.8-0.0.6.9/README.md --exclude *.pyd
+[2024-04-27 15:24:41] INFO root fetch - processPackages [PySDM]: Downloading https://files.pythonhosted.org/packages/a0/87/500d29854c171383aeec947323457a0e9a4b56dad81353ffeb13c855c1af/PySDM-2.9.tar.gz
+[2024-04-27 15:24:41] INFO root fetch - processPackages [PySDM-examples]: Downloading https://files.pythonhosted.org/packages/38/cd/e8c43c853d105d7b3cb064085b972b191719b91b54e18c66a563a2361203/PySDM-examples-2.9.tar.gz
+[2024-04-27 15:24:41] INFO root fetch - processPackages [myPYPI9]: Remove: archive file [/home/abi/fetcher/tmp/mypypi9-0.7.8.tar.gz]
+[2024-04-27 15:24:41] INFO root fetch - processPackages [myPYPI9]: Remove: archive file [/home/abi/fetcher/tmp/mypypi9-0.7.9.tar.gz]
+[2024-04-27 15:24:41] INFO root fetch - main [MainThread]: End processing [myPYPI9]: success
+[2024-04-27 15:24:41] INFO root fetch - processPackages [PySDM]: executing diffoscope
+[2024-04-27 15:24:41] INFO root fetch - processPackages [PySDM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySDM-2.8.tar.gz tmp/PySDM-2.9.tar.gz --markdown 20240427/P/PySDM/2.8-2.9/README.md --exclude *.pyd
+[2024-04-27 15:24:41] INFO root fetch - processPackages [geoparser]: Remove: archive file [/home/abi/fetcher/tmp/geoparser-0.1.1.tar.gz]
+[2024-04-27 15:24:41] INFO root fetch - processPackages [geoparser]: Remove: archive file [/home/abi/fetcher/tmp/geoparser-0.1.2.tar.gz]
+[2024-04-27 15:24:41] INFO root fetch - main [MainThread]: End processing [geoparser]: success
+[2024-04-27 15:24:41] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.6.8.tar.gz]
+[2024-04-27 15:24:41] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.6.9.tar.gz]
+[2024-04-27 15:24:41] INFO root fetch - main [MainThread]: End processing [python-115]: success
+[2024-04-27 15:24:41] INFO root fetch - processPackages [PySDM-examples]: executing diffoscope
+[2024-04-27 15:24:41] INFO root fetch - processPackages [PySDM-examples]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240427:/home/abi/fetcher/20240427:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySDM-examples-2.8.tar.gz tmp/PySDM-examples-2.9.tar.gz --markdown 20240427/P/PySDM-examples/2.8-2.9/README.md --exclude *.pyd
+[2024-04-27 15:24:42] INFO root fetch - processPackages [PySDM]: Remove: archive file [/home/abi/fetcher/tmp/PySDM-2.8.tar.gz]
+[2024-04-27 15:24:42] INFO root fetch - processPackages [PySDM]: Remove: archive file [/home/abi/fetcher/tmp/PySDM-2.9.tar.gz]
+[2024-04-27 15:24:42] INFO root fetch - main [MainThread]: End processing [PySDM]: success
+[2024-04-27 15:24:42] INFO root fetch - processPackages [PySDM-examples]: Remove: archive file [/home/abi/fetcher/tmp/PySDM-examples-2.8.tar.gz]
+[2024-04-27 15:24:42] INFO root fetch - processPackages [PySDM-examples]: Remove: archive file [/home/abi/fetcher/tmp/PySDM-examples-2.9.tar.gz]
+[2024-04-27 15:24:42] INFO root fetch - main [MainThread]: End processing [PySDM-examples]: success
+[2024-04-27 15:24:42] INFO root fetch - main [MainThread]: Store serial: [22959069]
